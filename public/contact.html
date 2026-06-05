@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ancient Atlas</title>
+<meta name="description" content="Report an error, suggest a site, or reach the Ancient Atlas team.">
+<link rel="icon" href="/favicon.png" type="image/png">
+<meta property="og:title" content="Contact — Ancient Atlas">
+<meta property="og:description" content="Report an error, suggest a site, or reach the team behind Ancient Atlas.">
+<meta property="og:url" content="https://theancientatlas.com/contact.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --obsidian:#0D0D12;
+    --obsidian-2:#15151C;
+    --obsidian-3:#1D1D26;
+    --champagne:#C9A84C;
+    --champagne-dim:#8A6E2F;
+    --champagne-glow:#F0D69B;
+    --text:#F0EEE9;
+    --text-dim:#C5C5D0;
+    --text-faint:#7A7A85;
+    --border:rgba(201,168,76,0.18);
+    --border-strong:rgba(201,168,76,0.4);
+    --error:#E57373;
+    --success:#86C18E;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--obsidian);color:var(--text);font-family:'Inter',system-ui,-apple-system,sans-serif;min-height:100%}
+  body{
+    background:
+      radial-gradient(ellipse at top, rgba(58,45,29,0.35) 0%, transparent 55%),
+      radial-gradient(ellipse at bottom, rgba(201,168,76,0.05) 0%, transparent 50%),
+      var(--obsidian);
+    background-attachment:fixed;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+  }
+  /* Header */
+  header{
+    padding:24px 32px;
+    border-bottom:1px solid var(--border);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:rgba(13,13,18,0.7);
+    backdrop-filter:blur(8px);
+    position:sticky;top:0;z-index:10;
+  }
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text)}
+  .brand-mark{
+    width:36px;height:36px;
+    background:radial-gradient(circle at 50% 42%, #221911 0%, #0d0a07 55%, #040303 100%);
+    border:1px solid var(--border);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .brand-mark svg{width:22px;height:22px}
+  .brand-name{font-family:'Fraunces',serif;font-size:22px;font-weight:600;letter-spacing:-0.5px}
+  .brand-tag{font-family:'Fraunces',serif;font-style:italic;font-size:13px;color:var(--champagne);opacity:0.85;margin-top:1px}
+  .back-link{
+    color:var(--text-dim);text-decoration:none;font-size:14px;
+    padding:8px 16px;border:1px solid var(--border);border-radius:6px;
+    transition:all 0.2s;
+  }
+  .back-link:hover{color:var(--champagne);border-color:var(--border-strong);background:rgba(201,168,76,0.05)}
+  /* Main */
+  main{flex:1;padding:64px 32px;display:flex;align-items:flex-start;justify-content:center}
+  .card{
+    max-width:640px;width:100%;
+    background:rgba(21,21,28,0.6);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:48px 48px 40px;
+    box-shadow:0 24px 64px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.03);
+  }
+  h1{
+    font-family:'Fraunces',serif;
+    font-size:42px;
+    font-weight:600;
+    letter-spacing:-1.2px;
+    margin-bottom:8px;
+  }
+  .intro{
+    color:var(--text-dim);
+    font-size:16px;
+    line-height:1.55;
+    margin-bottom:32px;
+  }
+  .intro a{color:var(--champagne);text-decoration:none;border-bottom:1px dotted var(--champagne-dim)}
+  .intro a:hover{color:var(--champagne-glow)}
+  /* Form */
+  form{display:flex;flex-direction:column;gap:20px}
+  .row{display:flex;flex-direction:column;gap:6px}
+  label{
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:1.4px;
+    color:var(--text-faint);
+    font-weight:500;
+  }
+  label .req{color:var(--champagne);margin-left:2px}
+  input,select,textarea{
+    background:rgba(13,13,18,0.7);
+    border:1px solid var(--border);
+    border-radius:6px;
+    padding:12px 14px;
+    color:var(--text);
+    font-family:inherit;
+    font-size:15px;
+    transition:border 0.15s, background 0.15s;
+  }
+  input:focus,select:focus,textarea:focus{
+    outline:none;
+    border-color:var(--champagne);
+    background:rgba(13,13,18,0.9);
+  }
+  textarea{resize:vertical;min-height:120px;line-height:1.5}
+  select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='%23C9A84C' d='M6 8.5L1.5 4h9z'/></svg>");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+  .row-inline{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .hint{font-size:12px;color:var(--text-faint);margin-top:2px}
+  /* Honeypot */
+  .gotcha{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+  /* Submit */
+  .actions{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:8px}
+  button[type="submit"]{
+    background:linear-gradient(180deg, #D9BD92 0%, #C9A84C 50%, #8E7234 100%);
+    color:#1a1410;
+    border:none;
+    padding:13px 28px;
+    border-radius:6px;
+    font-family:'Fraunces',serif;
+    font-size:16px;
+    font-weight:600;
+    letter-spacing:0.3px;
+    cursor:pointer;
+    transition:transform 0.1s, box-shadow 0.2s;
+    box-shadow:0 4px 12px rgba(201,168,76,0.18);
+  }
+  button[type="submit"]:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(201,168,76,0.28)}
+  button[type="submit"]:active{transform:translateY(0)}
+  button[type="submit"]:disabled{opacity:0.5;cursor:not-allowed;transform:none}
+  .privacy{font-size:12px;color:var(--text-faint);line-height:1.4;max-width:280px;text-align:right}
+  /* Error inline */
+  .field-error{color:var(--error);font-size:12px;margin-top:2px;display:none}
+  .row.has-error input,.row.has-error select,.row.has-error textarea{border-color:var(--error)}
+  .row.has-error .field-error{display:block}
+  /* Modal */
+  .modal-overlay{
+    position:fixed;inset:0;
+    background:rgba(13,13,18,0.85);
+    backdrop-filter:blur(8px);
+    display:none;
+    align-items:center;justify-content:center;
+    z-index:100;
+    opacity:0;
+    transition:opacity 0.25s;
+  }
+  .modal-overlay.show{display:flex;opacity:1}
+  .modal{
+    background:var(--obsidian-2);
+    border:1px solid var(--border-strong);
+    border-radius:12px;
+    padding:40px 44px;
+    max-width:440px;width:90%;
+    text-align:center;
+    box-shadow:0 32px 80px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.04);
+    transform:translateY(8px) scale(0.98);
+    transition:transform 0.25s;
+  }
+  .modal-overlay.show .modal{transform:translateY(0) scale(1)}
+  .modal-icon{
+    width:64px;height:64px;margin:0 auto 20px;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(201,168,76,0.18) 0%, transparent 70%);
+    border:1px solid var(--champagne);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .modal-icon svg{width:32px;height:32px;stroke:var(--champagne);fill:none;stroke-width:2}
+  .modal h2{font-family:'Fraunces',serif;font-size:26px;font-weight:600;margin-bottom:8px;letter-spacing:-0.5px}
+  .modal p{color:var(--text-dim);font-size:15px;line-height:1.5;margin-bottom:24px}
+  .modal button{
+    background:transparent;color:var(--champagne);
+    border:1px solid var(--champagne-dim);
+    padding:10px 22px;border-radius:6px;cursor:pointer;
+    font-family:inherit;font-size:14px;letter-spacing:0.4px;
+    transition:all 0.15s;
+  }
+  .modal button:hover{background:rgba(201,168,76,0.08);border-color:var(--champagne)}
+  /* Footer */
+  footer{
+    text-align:center;padding:32px;
+    color:var(--text-faint);font-size:13px;
+    border-top:1px solid var(--border);
+  }
+  footer a{color:var(--champagne);text-decoration:none}
+  footer a:hover{color:var(--champagne-glow)}
+  footer .copyright{margin-top:10px;font-size:11px;color:var(--text-faint);opacity:0.65;letter-spacing:0.04em}
+  /* Responsive */
+  @media (max-width:640px){
+    main{padding:32px 16px}
+    .card{padding:32px 24px}
+    h1{font-size:32px}
+    .row-inline{grid-template-columns:1fr}
+    .actions{flex-direction:column;align-items:stretch}
+    .privacy{text-align:left}
+    button[type="submit"]{width:100%}
+    header{padding:16px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="brand">
+    <div class="brand-mark">
+      <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hm_gold" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#F5DCA0"/>
+            <stop offset="100%" stop-color="#8E7234"/>
+          </linearGradient>
+        </defs>
+        <g fill="url(#hm_gold)">
+          <polygon points="0,0 -10,-10 0,-90 10,-10"/>
+          <polygon points="0,0 -8,8 0,72 8,8"/>
+          <polygon points="0,0 8,-8 80,0 8,8"/>
+          <polygon points="0,0 -8,-8 -80,0 -8,8"/>
+        </g>
+        <circle cx="0" cy="0" r="6" fill="#F5DCA0"/>
+      </svg>
+    </div>
+    <div>
+      <div class="brand-name">Ancient Atlas</div>
+      <div class="brand-tag">A map of the deep past</div>
+    </div>
+  </a>
+  <a href="/" class="back-link">← Back to the atlas</a>
+</header>
+
+<main>
+  <div class="card">
+    <h1>Get in touch.</h1>
+    <p class="intro">
+      Spot an error? Know a site we should add? Want to flag a creator worth featuring? Write us — this atlas grows by what its readers notice. We read everything that lands at <a href="mailto:hello@theancientatlas.com">hello@theancientatlas.com</a>.
+    </p>
+
+    <form id="contactForm"
+          name="atlas-contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          novalidate>
+
+      <!-- Required by Netlify Forms — identifies which form this is -->
+      <input type="hidden" name="form-name" value="atlas-contact">
+
+      <!-- Netlify honeypot — bots fill this, humans never see it -->
+      <div class="gotcha" aria-hidden="true">
+        <label for="bot-field">Don't fill this out if you're human:</label>
+        <input type="text" name="bot-field" id="bot-field" tabindex="-1" autocomplete="off">
+      </div>
+
+      <!-- Subject tag for inbox triage (surfaces in Netlify notification email body) -->
+      <input type="hidden" name="subject" id="formSubject" value="Ancient Atlas — Contact form">
+
+      <div class="row-inline">
+        <div class="row">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" autocomplete="name" placeholder="Optional">
+        </div>
+        <div class="row" id="emailRow">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" required placeholder="So we can reply">
+          <div class="field-error">Please enter a valid email address.</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="reason">What's this about? <span class="req">*</span></label>
+        <select id="reason" name="reason" required>
+          <option value="">Choose one…</option>
+          <option value="Site suggestion">Suggest a site to add</option>
+          <option value="Error report">Report an error or correction</option>
+          <option value="Creator suggestion">Suggest a creator / walkthrough</option>
+          <option value="Partnership">Partnership or collaboration</option>
+          <option value="General">Something else</option>
+        </select>
+      </div>
+
+      <div class="row" id="siteRow" style="display:none">
+        <label for="site">Site name (if applicable)</label>
+        <input type="text" id="site" name="site" placeholder="e.g. Göbekli Tepe, Easter Island…">
+        <div class="hint">If you're flagging an error or suggesting an addition, naming the site helps us route it.</div>
+      </div>
+
+      <div class="row" id="messageRow">
+        <label for="message">Your message <span class="req">*</span></label>
+        <textarea id="message" name="message" required placeholder="What did you notice? What should we know?"></textarea>
+        <div class="field-error">Please write a brief message.</div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" id="submitBtn">Send message</button>
+        <div class="privacy">
+          We only use your email to reply. No lists, no resale, no spam.
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+
+<!-- Confirmation modal -->
+<div class="modal-overlay" id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div class="modal-icon">
+      <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h2 id="modalTitle">Message received.</h2>
+    <p>Thank you — your note is on its way to the Ancient Atlas team. We read every message and try to reply within a few days.</p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<footer>
+  <a href="/">theancientatlas.com</a> · Hand-curated. Ad-free. Free to explore.
+  <div class="copyright">© <span class="year">2026</span> The Ancient Atlas. All rights reserved.</div>
+</footer>
+<script>document.querySelectorAll('.year').forEach(el => { el.textContent = new Date().getFullYear(); });</script>
+
+<script>
+(function(){
+  const form = document.getElementById('contactForm');
+  const modal = document.getElementById('confirmModal');
+  const reasonEl = document.getElementById('reason');
+  const siteRow = document.getElementById('siteRow');
+  const subjectEl = document.getElementById('formSubject');
+  const emailEl = document.getElementById('email');
+  const messageEl = document.getElementById('message');
+  const submitBtn = document.getElementById('submitBtn');
+
+  // Show "Site name" field only when relevant
+  reasonEl.addEventListener('change', () => {
+    const r = reasonEl.value;
+    siteRow.style.display = (r === 'Site suggestion' || r === 'Error report') ? 'flex' : 'none';
+    subjectEl.value = r ? `Ancient Atlas — ${r}` : 'Ancient Atlas — Contact form';
+  });
+
+  // Deep-link pre-fill from URL params (e.g. /contact.html?site=Osaka%20Castle&reason=Error%20report)
+  const params = new URLSearchParams(window.location.search);
+  const preReason = params.get('reason');
+  const preSite = params.get('site');
+  if (preReason) {
+    // Match value against existing options
+    const matched = Array.from(reasonEl.options).find(o => o.value === preReason);
+    if (matched) {
+      reasonEl.value = preReason;
+      reasonEl.dispatchEvent(new Event('change'));
+    }
+  }
+  if (preSite) {
+    const siteInput = document.getElementById('site');
+    if (siteInput) {
+      siteInput.value = preSite;
+      siteRow.style.display = 'flex';
+    }
+  }
+
+  // Inline validation helpers
+  function setError(rowId, hasErr){
+    const row = document.getElementById(rowId);
+    if(!row) return;
+    row.classList.toggle('has-error', hasErr);
+  }
+
+  emailEl.addEventListener('blur', () => {
+    setError('emailRow', emailEl.value && !emailEl.checkValidity());
+  });
+  messageEl.addEventListener('blur', () => {
+    setError('messageRow', messageEl.value.trim().length < 3);
+  });
+
+  // Submit handler — submits via fetch to Formspree, shows modal on success
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Validate
+    let hasErr = false;
+    if(!emailEl.value || !emailEl.checkValidity()){ setError('emailRow', true); hasErr = true; }
+    if(messageEl.value.trim().length < 3){ setError('messageRow', true); hasErr = true; }
+    if(!reasonEl.value){ reasonEl.focus(); hasErr = true; }
+    if(hasErr) return;
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+
+    try {
+      // Netlify Forms expects URL-encoded body POSTed to the page itself
+      const data = new FormData(form);
+      const body = new URLSearchParams();
+      data.forEach((val, key) => body.append(key, val));
+
+      const res = await fetch('/', {
+        method: 'POST',
+        body: body.toString(),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      });
+      if(res.ok){
+        form.reset();
+        siteRow.style.display = 'none';
+        openModal();
+      } else {
+        // Fall back: mailto so the message isn't lost
+        const txt = encodeURIComponent(
+          `Reason: ${reasonEl.value}\nSite: ${document.getElementById('site').value || '(n/a)'}\nFrom: ${document.getElementById('name').value || '(anonymous)'} <${emailEl.value}>\n\n${messageEl.value}`
+        );
+        window.location.href = `mailto:hello@theancientatlas.com?subject=${encodeURIComponent(subjectEl.value)}&body=${txt}`;
+      }
+    } catch (err) {
+      alert('Sorry — we couldn\'t reach the server. Email us directly at hello@theancientatlas.com');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send message';
+    }
+  });
+
+  window.openModal = function(){
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  };
+  window.closeModal = function(){
+    modal.classList.remove('show');
+    document.body.style.overflow = '';
+  };
+  // Close modal on overlay click or Esc
+  modal.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if(e.key === 'Escape' && modal.classList.contains('show')) closeModal(); });
+})();
+</script>
+</body>
+</html>
+</content>
+</invoke>

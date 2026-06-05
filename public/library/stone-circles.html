@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stone Circles — The Ancient Atlas Library</title>
+<meta name="description" content="A working frame for reading the stone circles of Britain, Europe, and the world. Pythagorean geometry, Thom's megalithic yard, archaeoastronomy, and the anomalies that don't fit the standard story.">
+<link rel="icon" href="../favicon-32.png" type="image/png">
+<meta property="og:title" content="Stone Circles — The Ancient Atlas Library">
+<meta property="og:description" content="A working frame for reading the stone circles of Britain, Europe, and the world. Pythagorean geometry, the megalithic yard, archaeoastronomy.">
+<meta property="og:url" content="https://theancientatlas.com/library/stone-circles">
+<meta property="og:image" content="/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --obsidian:#0D0D12;
+    --obsidian-2:#15151C;
+    --obsidian-3:#1D1D26;
+    --champagne:#C9A84C;
+    --champagne-pale:#E8D5A0;
+    --champagne-dim:#8A6E2F;
+    --champagne-glow:#F0D69B;
+    --text:#F0EEE9;
+    --text-dim:#C5C5D0;
+    --text-faint:#8A8A9A;
+    --border:rgba(201,168,76,0.18);
+    --border-strong:rgba(201,168,76,0.4);
+    --mono:'JetBrains Mono', ui-monospace, monospace;
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'Inter', system-ui, -apple-system, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:
+      radial-gradient(ellipse at top, rgba(58,45,29,0.35) 0%, transparent 55%),
+      radial-gradient(ellipse at bottom, rgba(201,168,76,0.04) 0%, transparent 60%),
+      var(--obsidian);
+    background-attachment:fixed;
+    color:var(--text);
+    font-family:var(--sans);
+    font-size:17px;
+    line-height:1.6;
+    min-height:100vh;
+  }
+
+  /* HEADER */
+  header.site{
+    padding:22px 40px;
+    border-bottom:1px solid var(--border);
+    display:flex;align-items:center;justify-content:space-between;
+    background:rgba(13,13,18,0.7);
+    backdrop-filter:blur(8px);
+    position:sticky;top:0;z-index:10;
+  }
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text)}
+  .brand-mark{
+    width:36px;height:36px;
+    background:radial-gradient(circle at 50% 42%, #221911 0%, #0d0a07 55%, #040303 100%);
+    border:1px solid var(--border);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .brand-mark svg{width:22px;height:22px}
+  .brand-name{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:-0.5px}
+  .brand-tag{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--champagne);opacity:0.85;margin-top:1px}
+  .header-nav{display:flex;align-items:center;gap:18px}
+  .header-nav a{color:var(--text-dim);text-decoration:none;font-size:13px;letter-spacing:0.05em;text-transform:uppercase;transition:color .15s}
+  .header-nav a:hover{color:var(--champagne)}
+  .header-nav a.cur{color:var(--champagne)}
+  .back-link{
+    color:var(--text-dim);text-decoration:none;font-size:13px;
+    padding:7px 14px;border:1px solid var(--border);border-radius:6px;
+    transition:all .15s;
+  }
+  .back-link:hover{color:var(--champagne);border-color:var(--border-strong);background:rgba(201,168,76,0.05)}
+
+  /* HERO */
+  .container{max-width:760px;margin:0 auto;padding:0 32px}
+  .container-wide{max-width:1080px;margin:0 auto;padding:0 32px}
+  .hero{padding:96px 0 64px;text-align:center}
+  .eyebrow{
+    font-family:var(--mono);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;
+    color:var(--champagne);margin-bottom:24px;opacity:0.85;
+  }
+  h1{
+    font-family:var(--serif);font-size:64px;line-height:1.05;font-weight:500;
+    letter-spacing:-1.8px;margin-bottom:24px;font-variation-settings:"opsz" 96;
+  }
+  .lede{
+    font-family:var(--serif);font-size:22px;font-weight:400;line-height:1.45;color:var(--text-dim);
+    max-width:620px;margin:0 auto;font-variation-settings:"opsz" 22;
+  }
+  .hero-divider{width:60px;height:1px;background:var(--champagne);margin:48px auto 0;opacity:0.6}
+
+  /* SECTIONS */
+  section{padding:64px 0;border-top:1px solid rgba(201,168,76,0.08)}
+  section:first-of-type{border-top:none}
+  h2{
+    font-family:var(--serif);font-size:40px;font-weight:500;line-height:1.1;letter-spacing:-1px;
+    margin-bottom:32px;color:var(--text);font-variation-settings:"opsz" 56;
+  }
+  h2 .sec-num{
+    display:block;font-family:var(--mono);font-size:11px;color:var(--champagne);
+    letter-spacing:0.22em;margin-bottom:10px;font-weight:400;opacity:0.8;
+  }
+  h3{
+    font-family:var(--serif);font-size:24px;font-weight:600;margin:40px 0 14px;
+    color:var(--text);letter-spacing:-0.3px;
+  }
+  p{margin-bottom:20px;color:var(--text-dim);font-size:17px;line-height:1.65}
+  p strong{color:var(--text);font-weight:500}
+  p em{font-style:italic;color:var(--champagne-pale)}
+  a.inline{color:var(--champagne);text-decoration:none;border-bottom:1px dotted var(--champagne-dim);transition:color .15s}
+  a.inline:hover{color:var(--champagne-glow)}
+
+  /* UNDERTONE BULLETS (same pattern as megalith page) */
+  ul.undertone{list-style:none;margin:24px 0 0;padding:0;border-top:1px solid rgba(201,168,76,0.12)}
+  ul.undertone li{border-bottom:1px solid rgba(201,168,76,0.08);transition:background .15s}
+  ul.undertone li:hover{background:rgba(201,168,76,0.03)}
+  ul.undertone li a{
+    display:grid;grid-template-columns:36px 1fr;gap:20px;align-items:center;
+    padding:16px 12px 16px 8px;color:var(--text-dim);text-decoration:none;
+    font-size:16px;line-height:1.45;transition:color .15s,padding-left .15s;
+    font-family:var(--serif);font-variation-settings:"opsz" 18;
+  }
+  ul.undertone li a:hover{color:var(--champagne-pale);padding-left:14px}
+  .undertone-icon{
+    width:28px;height:28px;color:var(--champagne);opacity:0.65;
+    transition:opacity .2s,transform .2s;display:flex;align-items:center;justify-content:center;
+  }
+  .undertone-icon svg{width:100%;height:100%;display:block}
+  ul.undertone li a:hover .undertone-icon{opacity:1;transform:scale(1.05)}
+
+  /* CIRCLE TYPOLOGY GRID */
+  .type-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:32px 0}
+  .type{
+    background:rgba(21,21,28,0.55);border:1px solid var(--border);border-radius:10px;
+    padding:24px 26px;transition:border-color .15s;
+  }
+  .type:hover{border-color:var(--border-strong)}
+  .type-icon{width:36px;height:36px;margin-bottom:14px;color:var(--champagne);opacity:0.85}
+  .type-icon svg{width:100%;height:100%}
+  .type-name{
+    font-family:var(--serif);font-size:20px;font-weight:600;color:var(--text);
+    margin-bottom:6px;letter-spacing:-0.2px;
+  }
+  .type-sub{
+    font-family:var(--mono);font-size:10px;letter-spacing:0.18em;color:var(--champagne);
+    text-transform:uppercase;margin-bottom:12px;opacity:0.85;
+  }
+  .type-body{font-size:14px;color:var(--text-dim);line-height:1.55}
+
+  /* SITE INVENTORY */
+  .site-list{margin:28px 0;display:flex;flex-direction:column;gap:0;border-top:1px solid var(--border)}
+  .site-row{
+    display:grid;grid-template-columns:1.4fr 90px 1fr;gap:18px;
+    padding:14px 4px;border-bottom:1px solid rgba(201,168,76,0.08);
+    align-items:baseline;
+  }
+  .site-name{font-family:var(--serif);font-size:18px;font-weight:500;color:var(--text);letter-spacing:-0.1px}
+  .site-name a{color:var(--champagne);text-decoration:none}
+  .site-name a:hover{color:var(--champagne-glow)}
+  .site-when{
+    font-family:var(--mono);font-size:11px;color:var(--champagne-pale);text-align:right;letter-spacing:0.05em;
+  }
+  .site-note{font-size:13px;color:var(--text-dim);line-height:1.5}
+
+  /* WHY-BUILT CARDS */
+  .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:32px 0}
+  .why{
+    background:rgba(21,21,28,0.55);border:1px solid var(--border);border-radius:10px;
+    padding:24px 26px;transition:border-color .15s;
+  }
+  .why:hover{border-color:var(--border-strong)}
+  .why-tag{
+    font-family:var(--mono);font-size:10px;letter-spacing:0.2em;color:var(--champagne);
+    text-transform:uppercase;margin-bottom:8px;opacity:0.85;
+  }
+  .why-title{
+    font-family:var(--serif);font-size:21px;font-weight:600;color:var(--text);
+    margin-bottom:10px;letter-spacing:-0.2px;line-height:1.2;
+  }
+  .why-body{font-size:14px;color:var(--text-dim);line-height:1.55}
+
+  /* PULL QUOTE */
+  .pull{
+    font-family:var(--serif);font-size:30px;line-height:1.3;color:var(--champagne-pale);
+    font-style:italic;text-align:center;margin:56px auto;padding:0 32px;
+    max-width:680px;font-weight:500;letter-spacing:-0.3px;
+  }
+
+  /* SOURCES */
+  .sources-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:24px 0 0}
+  .source{background:rgba(21,21,28,0.45);border:1px solid var(--border);border-radius:8px;padding:18px 20px;transition:border-color .15s}
+  .source:hover{border-color:var(--border-strong)}
+  .source-title{font-family:var(--serif);font-size:17px;font-weight:600;color:var(--text);margin-bottom:4px;letter-spacing:-0.2px;line-height:1.25}
+  .source-meta{font-family:var(--mono);font-size:10px;letter-spacing:0.15em;color:var(--champagne);text-transform:uppercase;margin-bottom:10px;opacity:0.85}
+  .source-body{font-size:13px;color:var(--text-dim);line-height:1.5}
+
+  /* RELATED + FOOTER */
+  .related{padding:64px 0 80px;border-top:1px solid var(--border);margin-top:64px}
+  .related-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--champagne);text-align:center;margin-bottom:32px;opacity:0.8}
+  .related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:780px;margin:0 auto}
+  .related-card{display:block;background:rgba(21,21,28,0.5);border:1px solid var(--border);border-radius:10px;padding:24px 28px;text-decoration:none;transition:all .15s}
+  .related-card:hover{border-color:var(--border-strong);background:rgba(21,21,28,0.75);transform:translateY(-1px)}
+  .related-card h4{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--text);margin-bottom:6px;letter-spacing:-0.2px}
+  .related-card p{font-size:14px;color:var(--text-dim);margin:0;line-height:1.45}
+  .related-card.soon{opacity:0.55}
+  .related-card.soon h4::after{content:" — coming soon";font-size:11px;color:var(--champagne);text-transform:uppercase;letter-spacing:0.15em;font-family:var(--mono);font-weight:400}
+
+  footer.site{text-align:center;padding:36px;color:var(--text-faint);font-size:13px;border-top:1px solid var(--border)}
+  footer.site a{color:var(--champagne);text-decoration:none}
+  footer.site .copyright{margin-top:10px;font-size:11px;color:var(--text-faint);opacity:0.65;letter-spacing:0.04em}
+
+  /* RESPONSIVE */
+  @media (max-width:840px){
+    .type-grid{grid-template-columns:1fr}
+    .why-grid{grid-template-columns:1fr}
+    .related-grid{grid-template-columns:1fr}
+    .sources-grid{grid-template-columns:1fr}
+    .site-row{grid-template-columns:1fr 70px;gap:8px}
+    .site-note{grid-column:span 2;font-size:12px;padding-top:4px}
+  }
+  @media (max-width:640px){
+    .container,.container-wide{padding:0 20px}
+    header.site{padding:16px 20px;flex-wrap:wrap;gap:12px}
+    .header-nav{order:3;width:100%;justify-content:flex-start;border-top:1px solid var(--border);padding-top:12px}
+    h1{font-size:42px;letter-spacing:-1px}
+    h2{font-size:30px}
+    .lede{font-size:18px}
+    .pull{font-size:22px;padding:0 12px;margin:36px auto}
+    ul.undertone li a{font-size:14px}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <a href="../index.html" class="brand">
+    <div class="brand-mark">
+      <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hm_gold" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#F5DCA0"/>
+            <stop offset="100%" stop-color="#8E7234"/>
+          </linearGradient>
+        </defs>
+        <g fill="url(#hm_gold)">
+          <polygon points="0,0 -10,-10 0,-90 10,-10"/>
+          <polygon points="0,0 -8,8 0,72 8,8"/>
+          <polygon points="0,0 8,-8 80,0 8,8"/>
+          <polygon points="0,0 -8,-8 -80,0 -8,8"/>
+        </g>
+        <circle cx="0" cy="0" r="6" fill="#F5DCA0"/>
+      </svg>
+    </div>
+    <div>
+      <div class="brand-name">Ancient Atlas</div>
+      <div class="brand-tag">A map of the deep past</div>
+    </div>
+  </a>
+  <nav class="header-nav">
+    <a href="../index.html">Atlas</a>
+    <a href="index.html" class="cur">Library</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+  <a href="index.html" class="back-link">← Library</a>
+</header>
+
+<!-- HERO -->
+<div class="container">
+  <div class="hero">
+    <div class="eyebrow">Library · Entry 02</div>
+    <h1>Stone Circles.</h1>
+    <p class="lede">More than a thousand survive in the British Isles alone. They were instruments long before they were ruins : : calendars, meeting places, sound chambers, and proofs that Pythagorean geometry was practiced two thousand years before Pythagoras.</p>
+    <div class="hero-divider"></div>
+  </div>
+</div>
+
+<!-- §01 FRAME -->
+<div class="container">
+  <section>
+    <h2><span class="sec-num">§ 01 · The frame</span>Stone circles are instruments, not ornaments.</h2>
+    <p>The standard tourist phrase is "ancient ritual site." It is technically true and almost entirely useless. The stone circles of Britain, Brittany, Scandinavia, the Levant, and beyond were precision-engineered to do specific work : : tracking solstices, predicting eclipses, marking the lunar standstills that recur on a 18.6-year cycle, recording units of measurement, and (where the geophysics has been done) producing acoustic and electromagnetic effects no one can yet fully explain. The lens this entry builds is the difference between seeing "old rocks in a field" and seeing instruments that took centuries to design and millennia to forget.</p>
+
+    <p>Six properties recur across the strongest sites in the catalog. Hold them in mind:</p>
+
+    <ul class="undertone">
+      <li>
+        <a href="#sec-astro">
+          <span class="undertone-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2 L12 5 M12 19 L12 22 M2 12 L5 12 M19 12 L22 12 M5 5 L7.5 7.5 M16.5 16.5 L19 19 M5 19 L7.5 16.5 M16.5 7.5 L19 5" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>Solar, lunar, and stellar alignments calibrated to within a fraction of a degree.</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec-yard">
+          <span class="undertone-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round">
+              <path d="M3 9 L21 9 L21 15 L3 15 Z"/>
+              <path d="M7 9 L7 12 M11 9 L11 13 M15 9 L15 12 M19 9 L19 13" stroke-width="0.8"/>
+            </svg>
+          </span>
+          <span>A common unit of measurement (~2.72 feet) appearing at 500+ unrelated sites.</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec-pythag">
+          <span class="undertone-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round">
+              <path d="M4 20 L4 6 L20 20 Z"/>
+              <path d="M4 16 L8 16 L8 20" stroke-width="0.7" opacity="0.7"/>
+            </svg>
+          </span>
+          <span>Pythagorean triangles laid out in the ground 2,000 years before Pythagoras was born.</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec-scope">
+          <span class="undertone-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <circle cx="7" cy="7" r="3"/>
+              <circle cx="17" cy="7" r="3"/>
+              <circle cx="7" cy="17" r="3"/>
+              <circle cx="17" cy="17" r="3"/>
+            </svg>
+          </span>
+          <span>1,000+ circles documented in Britain alone, and the practice spans six continents.</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec-acoustic">
+          <span class="undertone-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+              <circle cx="6" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+              <path d="M10 8 Q12 12 10 16"/>
+              <path d="M14 6 Q17 12 14 18"/>
+              <path d="M18 4 Q22 12 18 20"/>
+            </svg>
+          </span>
+          <span>Acoustic and electromagnetic anomalies measured at multiple rings, replicable on instruments.</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec-genesis">
+          <span class="undertone-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1">
+              <circle cx="12" cy="12" r="2"/>
+              <circle cx="12" cy="12" r="6" opacity="0.65"/>
+              <circle cx="12" cy="12" r="10" opacity="0.4"/>
+            </svg>
+          </span>
+          <span>A coherent practice traceable back to Göbekli Tepe, 11,500 years ago — the genesis layer.</span>
+        </a>
+      </li>
+    </ul>
+
+    <p style="margin-top:32px;color:var(--text-faint);font-size:14px;font-style:italic">Read end to end, or pull any one thread. The entry stands on its own, and the sections do too.</p>
+  </section>
+</div>
+
+<!-- §02 GENESIS -->
+<div class="container">
+  <section id="sec-genesis">
+    <h2><span class="sec-num">§ 02 · Genesis</span>The story starts at Göbekli Tepe.</h2>
+    <p>Every account of the stone circle tradition has to begin with the same site, for the same reason : : it is the deepest stratum we have. Göbekli Tepe, on a hilltop near Şanlıurfa in southeastern Türkiye, was building monumental circular enclosures of T-shaped megalithic pillars roughly <strong>11,500 years ago</strong>. That is 6,500 years before Stonehenge. 7,000 years before the Pyramids. 5,000 years before the agricultural revolution conventional history treats as the prerequisite for monumental construction. Göbekli Tepe is the falsification, in stone, of the "settled agriculture first, monuments later" narrative.</p>
+    <p>The catalog of what is already present at the site is striking. Up to 60 circular enclosures, the largest 65 feet across. T-pillars 10 to 20 feet tall, weighing 10 to 20 tons each, with the largest unfinished pillar still in the quarry at 24 feet. Carved animal reliefs (lions, scorpions, boars), abstract human figures wearing belts with enigmatic H and U glyphs, and astronomical alignments embedded in the construction. Engravings on the so-called Vulture Stone may be the earliest known representations of constellations, including Cygnus. Several of the oldest enclosures point toward the precessional position of the pole star at the date of construction, suggesting a 25,800-year astronomical awareness encoded thousands of years before any culture is supposed to have had it.</p>
+    <p>The pattern that recurs across the rest of the catalog applies here too, and harder than anywhere else: <em>the oldest enclosures at Göbekli Tepe are the largest and most sophisticated.</em> Later phases of the site are smaller, cruder, and use poorer-quality stone. Around 8,000 BCE the entire complex was deliberately buried under earth. The decision was made by people who had inherited it and chose to seal it. Why is one of the open questions the rest of this entry circles back to. </p>
+    <p class="pull">The deepest layer is the best work.</p>
+  </section>
+</div>
+
+<!-- §03 TYPOLOGY -->
+<div class="container">
+  <section id="sec-types">
+    <h2><span class="sec-num">§ 03 · Typology</span>Not all "circles" are circles.</h2>
+    <p>Alexander Thom's survey work (covered in detail in §05) demonstrated that the megalithic tradition built five distinct geometric forms, only one of which is a true circle. The rest are deliberately distorted, and the distortions are precise. Knowing the type tells you what the builders were doing.</p>
+
+    <div class="type-grid">
+      <div class="type">
+        <div class="type-icon">
+          <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle cx="18" cy="18" r="14"/>
+          </svg>
+        </div>
+        <div class="type-name">True circle</div>
+        <div class="type-sub">Type I</div>
+        <div class="type-body">A single radius, a single rope, a single peg at the center. The simplest construction. Two-thirds of Thom's surveyed sites use it. Examples: most Cumbrian rings, the Sarsen Circle at Stonehenge, the inner sanctum at Avebury.</div>
+      </div>
+      <div class="type">
+        <div class="type-icon">
+          <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M4 18 Q4 4 18 4 Q32 4 32 18 Q28 32 18 32 Q8 32 4 18 Z"/>
+          </svg>
+        </div>
+        <div class="type-name">Flattened circle (Type A &amp; B)</div>
+        <div class="type-sub">Castlerigg pattern</div>
+        <div class="type-body">A circle deliberately flattened along one diameter, with the flat arc constructed from a 1:3:√10 triangle in Type A, and 1:3:√13 in Type B. Castlerigg (Cumbria) is the canonical Type A; Barbrook in Derbyshire is the canonical Type B.</div>
+      </div>
+      <div class="type">
+        <div class="type-icon">
+          <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.2">
+            <ellipse cx="18" cy="18" rx="14" ry="11"/>
+          </svg>
+        </div>
+        <div class="type-name">Ellipse</div>
+        <div class="type-sub">Two foci, one rope</div>
+        <div class="type-body">Constructed by tying a rope between two pegs and tracing the limit of a third peg held taut. Several Scottish recumbent stone circles follow this geometry. Rare but unmistakable when surveyed.</div>
+      </div>
+      <div class="type">
+        <div class="type-icon">
+          <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M5 22 Q5 4 18 4 Q31 4 31 22 Q25 32 18 32 Q11 32 5 22 Z"/>
+          </svg>
+        </div>
+        <div class="type-name">Egg (Type 1 &amp; 2)</div>
+        <div class="type-sub">Pythagorean construction</div>
+        <div class="type-body">Asymmetric ovoids built from back-to-back 3-4-5 triangles. Type 1 places the triangles point-to-point; Type 2 base-to-base. Le Menec at Carnac is the canonical Type 1 Egg. Why anyone would build a deliberately egg-shaped "circle" is exactly what makes the form interesting.</div>
+      </div>
+    </div>
+
+    <p>A fifth form, the <strong>compound circle</strong>, is occasionally seen: multiple radii joined at tangent points, creating a smooth but deliberately non-uniform perimeter. Thom found at least a dozen examples. The distinction is not aesthetic. It changes which astronomical alignments are possible from which marked stones around the ring. Every variant solves a different observational problem.</p>
+  </section>
+</div>
+
+<!-- §04 ARCHAEOASTRONOMY -->
+<div class="container">
+  <section id="sec-astro">
+    <h2><span class="sec-num">§ 04 · Archaeoastronomy</span>Calendars built in stone.</h2>
+    <p>The case that stone circles were observational instruments was first made publicly by <strong>Sir Norman Lockyer</strong> (1836–1920), the founder of <em>Nature</em> magazine and the man who discovered helium in the spectrum of the sun. Lockyer surveyed Stonehenge in 1901 and demonstrated that the structure was aligned to the summer solstice sunrise with sub-degree precision. He was dismissed for decades by establishment archaeologists who preferred ritual explanations. He has since been almost entirely vindicated.</p>
+    <p>The alignments documented across the British megalithic corpus include all of the following, depending on the site:</p>
+
+    <div class="why-grid">
+      <div class="why">
+        <div class="why-tag">Solar</div>
+        <div class="why-title">Solstices and equinoxes</div>
+        <div class="why-body">Summer solstice sunrise (Stonehenge, Newgrange-related sites). Winter solstice sunrise (Newgrange, Maeshowe). Equinoctial alignments at Callanish and elsewhere. Marker stones placed to indicate the exact horizon position of sunrise or sunset on the relevant day.</div>
+      </div>
+      <div class="why">
+        <div class="why-tag">Lunar</div>
+        <div class="why-title">The 18.6-year standstill cycle</div>
+        <div class="why-body">The Moon's monthly track shifts northward and southward over an 18.6-year cycle. At its extremes (the "major" and "minor" lunar standstills) the Moon rises and sets at unusual horizon positions. Multiple British circles are aligned to one or both standstills. Callanish on Lewis is the most famous example.</div>
+      </div>
+      <div class="why">
+        <div class="why-tag">Eclipses</div>
+        <div class="why-title">Aubrey Holes as eclipse predictor</div>
+        <div class="why-body">Gerald Hawkins, then Fred Hoyle, proposed that the 56 Aubrey Holes ringing the outer Stonehenge enclosure functioned as an eclipse-prediction mechanism. By moving counters around the holes, the builders could anticipate solar and lunar eclipses years in advance. The math works. Whether they used it that way is debated; the math working is not.</div>
+      </div>
+      <div class="why">
+        <div class="why-tag">Stellar</div>
+        <div class="why-title">Polar precession</div>
+        <div class="why-body">Some sites appear aligned to the position of the pole star <em>at the date of construction</em>, which differs from the modern pole-star direction by the slow 25,800-year precession of Earth's axis. At Göbekli Tepe the alignment is preserved 11,500 years deep. The implication is that the builders understood precession.</div>
+      </div>
+    </div>
+
+    <p>The conventional skeptical move is that any old structure can be retro-fit to <em>some</em> astronomical event, given enough freedom to choose. Lockyer, Hawkins, and Thom all addressed this directly: the alignments at the surveyed sites are not statistically explained by chance. They cluster too tightly on the small set of astronomically meaningful directions. The argument is settled in the surveyed corpus. The remaining question is what to make of it.</p>
+  </section>
+</div>
+
+<!-- §05 THOM'S YARD -->
+<div class="container">
+  <section id="sec-yard">
+    <h2><span class="sec-num">§ 05 · Thom's megalithic yard</span>A shared unit, across a thousand miles.</h2>
+    <p>The most rigorous evidence for a coordinated megalithic tradition comes from a Scottish professor of engineering science, <strong>Alexander Thom</strong> (1894–1985). Working from 1957 to 1985, Thom personally surveyed over <strong>500 stone circles</strong> across Britain, Ireland, and Brittany, with the precision of his professional discipline. The results are published in three books: <em>Megalithic Sites in Britain</em> (1967), <em>Megalithic Lunar Observatories</em> (1971), and <em>Megalithic Remains in Britain and Brittany</em> (1978).</p>
+
+    <p>Thom found four things the standard archaeology of his time was unprepared for:</p>
+
+    <p><strong>First, a common unit of measurement.</strong> Across his entire surveyed corpus, distances and diameters recurred in whole multiples of <strong>2.72 feet (0.829 meters)</strong>. The pattern was statistically significant beyond reasonable doubt. He called the unit the <em>megalithic yard</em>. The 2.5-multiple, ~6.8 feet, he called the <em>megalithic rod</em>. The fact that an unwritten Bronze Age population, scattered across hundreds of thousands of square miles over more than a thousand years of construction activity, somehow shared a standard unit to within a few percent is the part later researchers have most struggled to explain. Thom himself suspected coordinated transmission of a measuring rod.</p>
+
+    <p><strong>Second, Pythagorean geometry.</strong> Roughly one third of Thom's surveyed "circles" turned out to be precise constructions based on 3-4-5 triangles, 5-12-13 triangles, and other Pythagorean ratios. The construction was being practiced in stone two thousand years before Pythagoras of Samos was born.</p>
+
+    <p><strong>Third, lunar precision.</strong> Multiple sites included observational baselines tuned to the 18.6-year lunar standstill cycle to within minutes of arc. To detect that cycle at all requires an unbroken observational record across at least one full standstill period. The implication is multi-generational coordinated record-keeping in a pre-literate culture.</p>
+
+    <p><strong>Fourth, landscape integration.</strong> Many of Thom's circles use distant horizon features (notches between hills, conspicuous boulders, the rise of a distant ridge) as their actual sighting line, with the stones serving as the foreground reference. The circles were the foresight; the landscape was the backsight. The "site" extended for miles.</p>
+
+    <p>None of Thom's four findings has been refuted. Archaeology has, in places, declined to engage with them. The megalithic yard remains the cleanest single piece of evidence that the British and European megalithic builders were a coherent technical culture, not a scattered population of locals each doing their own thing.</p>
+  </section>
+</div>
+
+<!-- §06 PYTHAG -->
+<div class="container">
+  <section id="sec-pythag">
+    <h2><span class="sec-num">§ 06 · Pythagorean geometry</span>The triangles in the ground.</h2>
+    <p>The strongest single Pythagorean construction in the corpus is at <strong>Le Menec</strong> at Carnac, surveyed by Howard Crowhurst and others. The Le Menec cromlech is built on two back-to-back 3-4-5 right triangles forming a Type 1 Egg, with a well at the geometric center. Eleven separate alignments of standing stones radiate outward from the cromlech, the longest extending over a kilometer across the Breton landscape. The triangle's angles are oriented to specific astronomical positions. The math is exact, the geometry is intentional, and the date is roughly <strong>4,500 BCE</strong> : : two thousand years before the first known written reference to the 3-4-5 relationship in the Babylonian tablets, and roughly the same gap before Pythagoras taught it as a theorem.</p>
+
+    <p>The interpretive options are limited:</p>
+    <p>(1) Independent rediscovery of the relationship by multiple Neolithic cultures.</p>
+    <p>(2) A continuous transmission of a much older body of geometric knowledge that the Pythagorean Greeks were the inheritors of, not the originators of.</p>
+    <p>The Pythagoreans themselves were explicit on the matter. They credited their geometry to earlier sources : : the Egyptians, the Babylonians, and a vague but recurring reference to "the priests of the deep past." Pythagoras did not claim to have discovered the theorem. He claimed to have systematized it. The stone circle record supports the second option more readily than the first.</p>
+  </section>
+</div>
+
+<!-- §07 SCOPE -->
+<div class="container">
+  <section id="sec-scope">
+    <h2><span class="sec-num">§ 07 · The corpus</span>A practice on six continents.</h2>
+    <p>The British Isles preserve the densest concentration of surviving stone circles in the world, more than a thousand documented examples between roughly 3,500 BCE and 1,500 BCE. They are not the only ones. The practice appears on every continent that had stone and population, often with no plausible mechanism of contact between the practitioners.</p>
+
+    <div class="site-list">
+      <div class="site-row">
+        <div class="site-name"><a href="../index.html?site=G%C3%B6bekli%20Tepe">Göbekli Tepe</a> · Türkiye</div>
+        <div class="site-when">~9,500 BCE</div>
+        <div class="site-note">The deepest layer. Up to 60 enclosures of T-pillars on a hilltop. The oldest known monumental architecture.</div>
+      </div>
+      <div class="site-row">
+        <div class="site-name"><a href="../index.html?site=Karahan%20Tepe">Karahan Tepe</a> · Türkiye</div>
+        <div class="site-when">~9,500 BCE</div>
+        <div class="site-note">Göbekli's sister site, 35 km southeast. Similar T-pillar circles, less excavated, almost certainly part of the same culture.</div>
+      </div>
+      <div class="site-row">
+        <div class="site-name"><a href="../index.html?site=Nabta%20Playa">Nabta Playa</a> · Egypt</div>
+        <div class="site-when">~6,500 BCE</div>
+        <div class="site-note">In the Sahara, predating the Egyptian dynasties by thousands of years. A calendar circle aligned to summer solstice sunrise. Found in the 1990s.</div>
+      </div>
+      <div class="site-row">
+        <div class="site-name"><a href="../index.html?site=Carnac%20Stones">Carnac</a> · Brittany</div>
+        <div class="site-when">~4,500 BCE</div>
+        <div class="site-note">The most extensive single megalithic site on Earth: ~3,000 standing stones in alignments over four kilometers long. The Le Menec cromlech is the Pythagorean centerpiece.</div>
+      </div>
+      <div class="site-row">
+        <div class="site-name"><a href="../index.html?site=Newgrange">Newgrange</a> · Ireland</div>
+        <div class="site-when">~3,200 BCE</div>
+        <div class="site-note">A passage tomb older than Stonehenge and the Great Pyramid, with an interior chamber lit by the winter solstice sunrise for seventeen minutes a year and no other.</div>
+      </div>
+      <div class="site-row">
+        <div class="site-name"><a href="../index.html?site=Stonehenge">Stonehenge</a> · England</div>
+        <div class="site-when">~3,000 BCE</div>
+        <div class="site-note">The most famous. Sarsen Circle, trilithons, Aubrey Holes, summer solstice alignment, 56-hole eclipse-prediction array. The icon.</div>
+      </div>
+      <div class="site-row">
+        <div class="site-name"><a href="../index.html?site=Avebury">Avebury</a> · England</div>
+        <div class="site-when">~2,600 BCE</div>
+        <div class="site-note">A 5,200-year-old henge enclosing 28 acres, large enough that a village sits inside it. Required an estimated 1.5 million man-hours to build.</div>
+      </div>
+      <div class="site-row">
+        <div class="site-name"><a href="../index.html?site=Callanish">Callanish</a> · Outer Hebrides</div>
+        <div class="site-when">~2,900 BCE</div>
+        <div class="site-note">Cruciform stone setting on the Isle of Lewis. Aligned to the southern lunar standstill, which occurs in a spectacular grazing pass behind the Cailleach na Mòintich hills every 18.6 years.</div>
+      </div>
+      <div class="site-row">
+        <div class="site-name"><a href="../index.html?site=Karahunj%20(Zorats%20Karer)">Karahunj (Zorats Karer)</a> · Armenia</div>
+        <div class="site-when">~5,500 BCE</div>
+        <div class="site-note">"The Armenian Stonehenge." 223 standing stones, many with bored holes pointing at specific stars. Claims of astronomical sophistication on par with Stonehenge or older.</div>
+      </div>
+      <div class="site-row">
+        <div class="site-name"><a href="../index.html?site=Senegambian%20Stone%20Circles">Senegambian Stone Circles</a> · Senegal / Gambia</div>
+        <div class="site-when">~300 BCE – 1500 CE</div>
+        <div class="site-note">A 1,000-site complex stretching 350 km along the Gambia River. UNESCO World Heritage. The largest concentration of stone circles outside Europe.</div>
+      </div>
+    </div>
+
+    <p>The American continents have less surviving evidence (the Wheel of Bighorn Medicine in Wyoming is the most studied case, late Holocene), and Australia preserves the Wurdi Youang circle near Melbourne, possibly the oldest astronomical observatory in the world if the dating holds. The practice was nearly universal. The interpretation, in every culture, included calendrical timekeeping and spiritual gathering. The technical sophistication varied. The British and Breton corpus is the densest single sample.</p>
+  </section>
+</div>
+
+<!-- §08 ACOUSTIC -->
+<div class="container">
+  <section id="sec-acoustic">
+    <h2><span class="sec-num">§ 08 · Anomalies</span>Effects measured at the sites.</h2>
+    <p>From the 1970s onward, a small group of researchers ran instrumented surveys at stone circles, looking for measurable physical effects. The results have not entered mainstream textbooks but they are reproducible. Two categories of phenomenon recur:</p>
+
+    <div class="why-grid">
+      <div class="why">
+        <div class="why-tag">Acoustic</div>
+        <div class="why-title">The stones reverberate.</div>
+        <div class="why-body">Many circle stones, when struck with the open hand or a wooden hammer, produce sustained tones that ring inside the stone for several seconds. Some rings produce standing-wave acoustic patterns within their interior, locating the human voice in ways that defy normal expectation. The work of Aaron Watson and the Acoustic Archaeology Group has documented this at Avebury, Stonehenge, and Maes Howe. The implication is that the rings were designed, at least in part, to do something to sound.</div>
+      </div>
+      <div class="why">
+        <div class="why-tag">Electromagnetic</div>
+        <div class="why-title">Telluric currents and EM anomalies.</div>
+        <div class="why-body">Beginning with Paul Devereux's 1970s work and continuing through John Burke's 2000s research, instrumented surveys have measured statistically anomalous magnetic, electrical, and ionizing-radiation patterns inside certain circles, particularly at dawn and dusk. Burke proposed that the circle builders were locating their structures specifically on telluric current convergence zones, possibly to "charge" seed grain for higher yields. The pattern is real. The mechanism is contested.</div>
+      </div>
+    </div>
+
+    <p>Folk memory at many British rings preserves the same observations long before any instrumented survey: T. C. Lethbridge reported being electrically shocked when he touched stones at the Merry Maidens in Cornwall. Horses at Scorhill on Dartmoor and at Avebury (1823) reportedly refused to enter the rings. Men-an-Tol in Cornwall has a long history as a healing stone for sick infants. These are anecdotes, not evidence. They do, however, line up with what the instruments now measure.</p>
+
+    <p>The honest editorial position is the same as everywhere else on this page: the phenomena are documented, the mechanisms are not fully understood, and the standard "ritual site" framing fails to account for them. Either the builders selected their sites carefully for physical properties they had detected by means we no longer practice, or there is a body of geophysics that ancient builders understood and we have not yet recovered. Both options are open.</p>
+  </section>
+</div>
+
+<!-- §09 WHY -->
+<div class="container">
+  <section id="sec-why">
+    <h2><span class="sec-num">§ 09 · Why were they built?</span>Five plausible answers, all probably right.</h2>
+    <p>"What were the stone circles for?" is the question every visitor asks, and the assumption baked into the question is that there must be one answer. The evidence supports a different assumption: the circles served several distinct purposes simultaneously, and the same site was used differently at different times.</p>
+
+    <p><strong>Calendar.</strong> The alignments demonstrate calendrical function across most of the surveyed corpus. The annual cycle (solstices, equinoxes) and the lunar standstill cycle were tracked. This was useful work for a Neolithic farming population that needed to predict planting and harvest dates.</p>
+
+    <p><strong>Gathering place.</strong> Archaeological evidence at Durrington Walls (next to Stonehenge) shows that thousands of people travelled from across Britain to feast at the winter solstice. Compacted earth inside many smaller rings supports folk memories of dancing and ceremony. The stones marked a social calendar, not just an astronomical one.</p>
+
+    <p><strong>Court of judgement.</strong> Boscawen-Un in Cornwall served as a <em>gorsedd</em>, a place of judgement where tribal leaders settled legal matters, into the 7th century CE. The practice may be much older. Several sites carry similar place-names.</p>
+
+    <p><strong>Acoustic instrument.</strong> The rings amplify, sustain, and locate the human voice in ways that no naive arrangement of stones could produce. Whatever ceremony took place at them seems to have been designed for an acoustic environment that the architecture provided.</p>
+
+    <p><strong>Geophysical instrument.</strong> The telluric and electromagnetic measurements suggest that some sites were sited on, or designed to interact with, specific subterranean conditions. The hypothesis that the builders used these properties to influence biological systems (seed germination, healing, altered states) is unproven but consistent with the measurements.</p>
+
+    <p>All five purposes overlap in time and at the same sites. The right question is not "what was it for" but "what wasn't it for." The instruments did multiple things at once. This is also how modern instruments work : : a telescope is also a teaching device is also a museum piece is also a community asset. The circles were the same.</p>
+  </section>
+</div>
+
+<!-- §10 USE -->
+<div class="container">
+  <section id="sec-instrument">
+    <h2><span class="sec-num">§ 10 · How to read a circle</span>What to do at the site.</h2>
+    <p>The diagnostic moves to make when standing inside a stone circle:</p>
+    <p><strong>Count the stones and look at the type.</strong> If the count is unusually exact (12, 19, 28, 56), suspect a calendrical or eclipse-prediction function. Use the §03 typology to identify whether the ring is a true circle, a flattened circle, an egg, or an ellipse. The geometry tells you what the builders were doing.</p>
+    <p><strong>Stand at the center and find the foresight.</strong> Most aligned circles have one or two stones marking specific directions. Find the tallest, the most isolated, or the one set in a notable spot off to the side. These are usually the alignment stones. The targeting direction will often be to a distant horizon feature, not to the nearest hill.</p>
+    <p><strong>Strike a stone and listen.</strong> If the ring's stones are granite or igneous rock, they will often reverberate when struck with the open hand. The longer the tone, the more carefully the stone was chosen. The most "rung" stones in a circle are usually the ones at the alignment points.</p>
+    <p><strong>Walk the perimeter.</strong> Look for spacing irregularities, doubled stones, or unusual gaps. These often mark the lunar or eclipse-related positions that the seasonal solar alignments alone do not account for.</p>
+
+    <p style="margin-top:32px;color:var(--champagne);font-style:italic">Apply the frame to the atlas. <a class="inline" href="../index.html">Open the map →</a></p>
+  </section>
+</div>
+
+<!-- SOURCES -->
+<div class="container">
+  <section style="border-top:1px solid var(--border);padding:48px 0 32px">
+    <h2 style="font-size:30px;margin-bottom:24px"><span class="sec-num">Sources &amp; further reading</span>The texts behind this entry.</h2>
+    <div class="sources-grid">
+      <div class="source">
+        <div class="source-title">Hugh Newman · Stone Circles</div>
+        <div class="source-meta">Wooden Books · 2017</div>
+        <div class="source-body">The single-volume global survey of stone circles, organized by geography. Newman is the principal source for §02 (Genesis), §07 (Corpus), and §09 (Why). His tour-leading work overlaps directly with the atlas's Creators directory.</div>
+      </div>
+      <div class="source">
+        <div class="source-title">Alexander Thom · Megalithic Sites in Britain</div>
+        <div class="source-meta">Oxford University Press · 1967</div>
+        <div class="source-body">The foundational engineering survey behind §03 (Typology), §04 (Astronomy), and §05 (Megalithic Yard). Over 500 sites measured to professional tolerance, with follow-on volumes in 1971 and 1978.</div>
+      </div>
+      <div class="source">
+        <div class="source-title">Howard Crowhurst · Carnac</div>
+        <div class="source-meta">Wooden Books · 2018</div>
+        <div class="source-body">The Pythagorean geometry of Le Menec is Crowhurst's specialty. Primary source for §06 and the Type 1 Egg construction.</div>
+      </div>
+      <div class="source">
+        <div class="source-title">Robin Heath · Stonehenge</div>
+        <div class="source-meta">Wooden Books · 2007</div>
+        <div class="source-body">The Sun-Moon-Earth ratio work and Aubrey-Hole eclipse-prediction analysis underwriting §04. Heath has continued this work for decades in collaboration with John Michell and others.</div>
+      </div>
+      <div class="source">
+        <div class="source-title">Aaron Watson · Acoustic Archaeology</div>
+        <div class="source-meta">Various publications · 1990s–present</div>
+        <div class="source-body">The instrumented acoustic measurements at Avebury, Stonehenge, and Maes Howe behind §08. Watson's standing-wave findings inside the rings are widely reproducible.</div>
+      </div>
+      <div class="source">
+        <div class="source-title">Paul Devereux · The Sacred Place</div>
+        <div class="source-meta">Cassell · 2000</div>
+        <div class="source-body">The synthesis of geophysical anomaly measurements at British stone circles, plus the earth-mysteries tradition that produced the original "telluric currents" frame in §08.</div>
+      </div>
+    </div>
+    <p style="margin-top:28px;color:var(--text-faint);font-size:13px;font-style:italic;text-align:center">
+      Suggest additions or corrections through <a href="../contact.html" style="color:var(--champagne);text-decoration:none;border-bottom:1px dotted rgba(201,168,76,.5)">the Contact form</a>.
+    </p>
+  </section>
+</div>
+
+<!-- RELATED -->
+<div class="container-wide">
+  <div class="related">
+    <div class="related-eyebrow">Other Library entries</div>
+    <div class="related-grid">
+      <a class="related-card" href="megaliths.html">
+        <h4>What is a Megalith?</h4>
+        <p>The vocabulary of deep stone : : cyclopean, polygonal, monolithic, mortarless. The Mohs scale. The heaviest stones ever moved. Sacred geometry. The Gamarra-Foerster three ages.</p>
+      </a>
+      <a class="related-card soon" href="#">
+        <h4>The Cosmological Pacha</h4>
+        <p>The classical Andean spiritual frame: condor, puma, serpent. The cosmos system that runs parallel to Gamarra's stone classification.</p>
+      </a>
+      <a class="related-card soon" href="#">
+        <h4>Polygonal Masonry: A Field Guide</h4>
+        <p>What to measure, what to photograph, and how to distinguish polygonal joinery from cyclopean work in ten seconds of looking.</p>
+      </a>
+      <a class="related-card soon" href="#">
+        <h4>The Convergence Question</h4>
+        <p>Independent invention, lost predecessor, or something else? The strongest evidence for and against a shared origin behind the patterns that cross continents.</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="site">
+  <a href="../index.html">theancientatlas.com</a> · Hand-curated. Ad-free. Free to explore. · <a href="../contact.html">Contact</a>
+  <div class="copyright">© <span class="year">2026</span> The Ancient Atlas. All rights reserved.</div>
+</footer>
+<script>document.querySelectorAll('.year').forEach(el => { el.textContent = new Date().getFullYear(); });</script>
+
+</body>
+</html>
+</content>
+</invoke>

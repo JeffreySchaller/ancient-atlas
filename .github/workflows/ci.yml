@@ -1,0 +1,51 @@
+name: PR validation
+
+# Phase 2 of the automation roadmap.
+# Runs on every PR against main. All checks must pass before merge.
+#
+# Checks:
+#   1. oEmbed verification — every new video ID maps to its claimed creator
+#   2. Duplicate detection — no site key appears twice
+#   3. Schema validation — every entry has required fields with correct types
+#
+# This file is a placeholder until Phase 2 scripts are written.
+# Enable it by uncommenting the steps below once scripts/verify-pr.py is ready.
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'data/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: Validate PR contents
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # === Placeholder for Phase 2 — uncomment when scripts/verify-pr.py exists ===
+      #
+      # - name: Install dependencies
+      #   run: pip install requests
+      #
+      # - name: oEmbed verification (creators + titles)
+      #   run: python3 scripts/verify-pr.py --check oembed
+      #
+      # - name: Duplicate detection (audit-videos.py)
+      #   run: python3 scripts/audit-videos.py --strict
+      #
+      # - name: Schema validation
+      #   run: python3 scripts/verify-pr.py --check schema
+
+      - name: Placeholder check
+        run: |
+          echo "CI validation will run here in Phase 2."
+          echo "For now, manual review is required."

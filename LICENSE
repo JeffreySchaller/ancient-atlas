@@ -1,0 +1,57 @@
+MIT License (for code only — editorial content is © Jeff Schaller, see below)
+
+Copyright (c) 2026 Jeff Schaller
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+EDITORIAL CONTENT NOTICE
+
+The MIT license above covers the CODE in this repository (Python scripts,
+HTML structure, CSS, JavaScript implementations, build tooling).
+
+The EDITORIAL CONTENT of the Ancient Atlas — including but not limited to :
+
+- All site descriptions, era attributions, and civilization annotations
+- The Library entries (Megaliths, Stone Circles, and forthcoming)
+- The custom SVG illustrations (icons, wall comparison strip, stratigraphy diagram,
+  sacred geometry constructions, lexicon icons, T-pillar)
+- The Mohs animation design and copy
+- The Gamarra/Foerster framework treatment
+- The Plato's Forms framing
+- The brand identity (compass mark, wordmark, tagline, color palette)
+- The og-image.png as designed
+
+— are © 2026 Jeff Schaller, all rights reserved.
+
+You may NOT redistribute, mirror, fork-as-an-editorial-clone, or commercially
+use the editorial content without written permission.
+
+You MAY :
+- Fork this repository for contribution purposes (submitting PRs back upstream)
+- Reference the atlas as a source with attribution
+- Use the open code (scripts, infrastructure) under the MIT terms above
+
+If you want to use the editorial content for educational, journalistic, or
+non-commercial purposes, get in touch : hello@theancientatlas.com
+
+The compromise this license strikes : open infrastructure so contributors can
+participate, protected editorial work so the atlas's voice and rigor don't get
+cloned and diluted.

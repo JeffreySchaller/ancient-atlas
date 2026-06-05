@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Library — The Ancient Atlas</title>
+<meta name="description" content="The metacognitive layer of the Ancient Atlas: working frameworks, vocabularies, and field guides for reading deep-history sites well.">
+<link rel="icon" href="../favicon-32.png" type="image/png">
+<meta property="og:title" content="The Library — The Ancient Atlas">
+<meta property="og:description" content="Working frameworks and vocabularies for reading deep-history sites well.">
+<meta property="og:url" content="https://theancientatlas.com/library">
+<meta property="og:image" content="/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --obsidian:#0D0D12;
+    --obsidian-2:#15151C;
+    --champagne:#C9A84C;
+    --champagne-pale:#E8D5A0;
+    --champagne-dim:#8A6E2F;
+    --champagne-glow:#F0D69B;
+    --text:#F0EEE9;
+    --text-dim:#C5C5D0;
+    --text-faint:#8A8A9A;
+    --border:rgba(201,168,76,0.18);
+    --border-strong:rgba(201,168,76,0.4);
+    --mono:'JetBrains Mono', ui-monospace, monospace;
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'Inter', system-ui, -apple-system, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:
+      radial-gradient(ellipse at top, rgba(58,45,29,0.35) 0%, transparent 55%),
+      radial-gradient(ellipse at bottom, rgba(201,168,76,0.04) 0%, transparent 60%),
+      var(--obsidian);
+    background-attachment:fixed;
+    color:var(--text);
+    font-family:var(--sans);
+    font-size:17px;
+    line-height:1.6;
+    min-height:100vh;
+    display:flex;flex-direction:column;
+  }
+
+  header.site{
+    padding:22px 40px;
+    border-bottom:1px solid var(--border);
+    display:flex;align-items:center;justify-content:space-between;
+    background:rgba(13,13,18,0.7);
+    backdrop-filter:blur(8px);
+    position:sticky;top:0;z-index:10;
+  }
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text)}
+  .brand-mark{
+    width:36px;height:36px;
+    background:radial-gradient(circle at 50% 42%, #221911 0%, #0d0a07 55%, #040303 100%);
+    border:1px solid var(--border);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .brand-mark svg{width:22px;height:22px}
+  .brand-name{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:-0.5px}
+  .brand-tag{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--champagne);opacity:0.85;margin-top:1px}
+  .header-nav{display:flex;align-items:center;gap:18px}
+  .header-nav a{color:var(--text-dim);text-decoration:none;font-size:13px;letter-spacing:0.05em;text-transform:uppercase;transition:color .15s}
+  .header-nav a:hover{color:var(--champagne)}
+  .header-nav a.cur{color:var(--champagne)}
+  .back-link{
+    color:var(--text-dim);text-decoration:none;font-size:13px;
+    padding:7px 14px;border:1px solid var(--border);border-radius:6px;
+    transition:all .15s;
+  }
+  .back-link:hover{color:var(--champagne);border-color:var(--border-strong);background:rgba(201,168,76,0.05)}
+
+  main{flex:1}
+  .container{max-width:1080px;margin:0 auto;padding:0 32px}
+  .container-narrow{max-width:760px;margin:0 auto;padding:0 32px}
+
+  .hero{padding:96px 0 56px;text-align:center}
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--champagne);
+    margin-bottom:24px;
+    opacity:0.85;
+  }
+  h1{
+    font-family:var(--serif);
+    font-size:72px;
+    line-height:1.02;
+    font-weight:500;
+    letter-spacing:-2px;
+    margin-bottom:28px;
+    font-variation-settings:"opsz" 96;
+  }
+  .lede{
+    font-family:var(--serif);
+    font-size:22px;
+    font-weight:400;
+    line-height:1.45;
+    color:var(--text-dim);
+    max-width:620px;
+    margin:0 auto;
+    font-variation-settings:"opsz" 22;
+  }
+  .hero-divider{
+    width:60px;height:1px;
+    background:var(--champagne);
+    margin:48px auto 0;
+    opacity:0.6;
+  }
+
+  .section-eyebrow{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--champagne);
+    margin:64px 0 32px;
+    opacity:0.85;
+    text-align:center;
+  }
+
+  .entries{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding-bottom:64px}
+  .entry{
+    display:block;
+    background:rgba(21,21,28,0.55);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:32px 34px;
+    text-decoration:none;
+    transition:all .18s;
+    position:relative;
+  }
+  .entry:hover{
+    border-color:var(--border-strong);
+    background:rgba(21,21,28,0.85);
+    transform:translateY(-2px);
+    box-shadow:0 16px 36px rgba(0,0,0,0.35);
+  }
+  .entry-meta{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--champagne);
+    margin-bottom:14px;
+    opacity:0.8;
+  }
+  .entry h3{
+    font-family:var(--serif);
+    font-size:30px;
+    font-weight:600;
+    color:var(--text);
+    margin-bottom:10px;
+    line-height:1.15;
+    letter-spacing:-0.6px;
+  }
+  .entry p{
+    font-size:15px;
+    color:var(--text-dim);
+    line-height:1.55;
+    margin-bottom:0;
+  }
+  .entry-arrow{
+    color:var(--champagne);
+    font-family:var(--mono);
+    font-size:13px;
+    margin-top:18px;
+    display:inline-block;
+    letter-spacing:0.1em;
+  }
+  .entry.soon{opacity:0.55;cursor:default}
+  .entry.soon:hover{transform:none;box-shadow:none;background:rgba(21,21,28,0.55);border-color:var(--border)}
+  .entry.soon .entry-meta::after{content:" · in development"}
+
+  .future{padding:32px 0 80px;text-align:center}
+  .future p{
+    font-family:var(--serif);
+    font-style:italic;
+    color:var(--text-faint);
+    font-size:15px;
+    line-height:1.5;
+    max-width:520px;
+    margin:0 auto;
+  }
+  .future a{color:var(--champagne);text-decoration:none;border-bottom:1px dotted var(--champagne-dim)}
+  .future a:hover{color:var(--champagne-glow)}
+
+  footer.site{
+    text-align:center;padding:36px;
+    color:var(--text-faint);font-size:13px;
+    border-top:1px solid var(--border);
+  }
+  footer.site a{color:var(--champagne);text-decoration:none}
+  footer.site .copyright{margin-top:10px;font-size:11px;color:var(--text-faint);opacity:0.65;letter-spacing:0.04em}
+
+  @media (max-width:840px){
+    .entries{grid-template-columns:1fr}
+    h1{font-size:48px;letter-spacing:-1.2px}
+  }
+  @media (max-width:640px){
+    .container,.container-narrow{padding:0 20px}
+    header.site{padding:16px 20px;flex-wrap:wrap;gap:12px}
+    .header-nav{order:3;width:100%;justify-content:flex-start;border-top:1px solid var(--border);padding-top:12px}
+    h1{font-size:38px}
+    .lede{font-size:17px}
+    .entry{padding:24px}
+    .entry h3{font-size:22px}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <a href="../index.html" class="brand">
+    <div class="brand-mark">
+      <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hm_gold" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#F5DCA0"/>
+            <stop offset="100%" stop-color="#8E7234"/>
+          </linearGradient>
+        </defs>
+        <g fill="url(#hm_gold)">
+          <polygon points="0,0 -10,-10 0,-90 10,-10"/>
+          <polygon points="0,0 -8,8 0,72 8,8"/>
+          <polygon points="0,0 8,-8 80,0 8,8"/>
+          <polygon points="0,0 -8,-8 -80,0 -8,8"/>
+        </g>
+        <circle cx="0" cy="0" r="6" fill="#F5DCA0"/>
+      </svg>
+    </div>
+    <div>
+      <div class="brand-name">Ancient Atlas</div>
+      <div class="brand-tag">A map of the deep past</div>
+    </div>
+  </a>
+  <nav class="header-nav">
+    <a href="../index.html">Atlas</a>
+    <a href="index.html" class="cur">Library</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+  <a href="../index.html" class="back-link">← Back to the atlas</a>
+</header>
+
+<main>
+  <div class="container-narrow">
+    <div class="hero">
+      <div class="eyebrow">The Library</div>
+      <h1>Frameworks for reading deep history.</h1>
+      <p class="lede">The map shows you where the sites are. The Library shows you what to look at when you arrive : : the vocabularies, the frames, and the patterns that make the atlas a thinking instrument.</p>
+      <div class="hero-divider"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section-eyebrow">Available entries</div>
+    <div class="entries">
+
+      <a class="entry" href="megaliths.html">
+        <div class="entry-meta">Entry 01 · Vocabulary</div>
+        <h3>What is a megalith?</h3>
+        <p>A working vocabulary of deep stone. Cyclopean, polygonal, monolithic, mortarless: what these terms mean, the Mohs scale that frames them, the heaviest stones ever moved, and the pattern that repeats across continents.</p>
+        <div class="entry-arrow">Read entry →</div>
+      </a>
+
+      <a class="entry" href="stone-circles.html">
+        <div class="entry-meta">Entry 02 · British &amp; world corpus</div>
+        <h3>Stone Circles</h3>
+        <p>The Wooden Books anthology in working form. Göbekli Tepe genesis, Thom's megalithic yard, Pythagorean geometry 2,000 years before Pythagoras, the acoustic and telluric anomalies measured at British rings. A field guide to one of the oldest practices on the planet.</p>
+        <div class="entry-arrow">Read entry →</div>
+      </a>
+
+      <div class="entry soon">
+        <div class="entry-meta">Entry 03 · Andean frame</div>
+        <h3>The Cosmological Pacha</h3>
+        <p>The classical Andean spiritual cosmology: Hanan, Kay, and Uku Pacha as condor, puma, and serpent. The parallel framework to Gamarra's stone classification, used in living Andean practice.</p>
+      </div>
+
+      <div class="entry soon">
+        <div class="entry-meta">Entry 04 · Engineering</div>
+        <h3>How Ancient People Moved Mountains</h3>
+        <p>Quarry to wall: the case studies behind the heaviest stones ever transported. Baalbek's trilithon, Aswan's obelisks, Yangshan's abandoned stele, and the Octopus Stone of Osaka Castle.</p>
+      </div>
+
+      <div class="entry soon">
+        <div class="entry-meta">Entry 05 · Method</div>
+        <h3>The Convergence Question</h3>
+        <p>Independent invention, lost predecessor, or something else? The strongest evidence for and against a shared origin behind the polygonal pattern that crosses continents.</p>
+      </div>
+
+      <div class="entry soon">
+        <div class="entry-meta">Entry 06 · Catastrophe</div>
+        <h3>The Younger Dryas Window</h3>
+        <p>The ~1,200-year impact-and-meltwater event at the close of the last ice age. What the geology shows, what the megalithic record may preserve, and why so many origin myths describe the same catastrophe.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-narrow">
+    <div class="future">
+      <p>The Library will grow as the atlas does. Have a topic you'd want covered? <a href="../contact.html">Tell us</a>.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <a href="../index.html">theancientatlas.com</a> · Hand-curated. Ad-free. Free to explore. · <a href="../contact.html">Contact</a>
+  <div class="copyright">© <span class="year">2026</span> The Ancient Atlas. All rights reserved.</div>
+</footer>
+<script>document.querySelectorAll('.year').forEach(el => { el.textContent = new Date().getFullYear(); });</script>
+
+</body>
+</html>
+</content>
+</invoke>

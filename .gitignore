@@ -1,0 +1,48 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Node (if we add JS tooling later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+.npm/
+
+# Build artifacts
+dist/
+build/
+*.tmp
+*.bak
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# iCloud / Mobile Documents legacy paths (we're outside iCloud now)
+**/Mobile\ Documents/**
+
+# Netlify
+.netlify/
+
+# OS thumbnails
+Thumbs.db
+ehthumbs.db

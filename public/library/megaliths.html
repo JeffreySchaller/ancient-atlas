@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What is a Megalith? — The Ancient Atlas Library</title>
+<meta name="description" content="A working vocabulary of deep stone. Cyclopean, polygonal, monolithic, mortarless: what these terms mean, the Mohs scale that frames them, the heaviest stones ever moved, and the pattern that repeats across continents.">
+<link rel="icon" href="../favicon-32.png" type="image/png">
+<meta property="og:title" content="What is a Megalith? — The Ancient Atlas Library">
+<meta property="og:description" content="A working vocabulary of deep stone. Cyclopean, polygonal, monolithic, mortarless: what these terms mean, why they matter, and the patterns that repeat across continents.">
+<meta property="og:url" content="https://theancientatlas.com/library/megaliths">
+<meta property="og:image" content="/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --obsidian:#0D0D12;
+    --obsidian-2:#15151C;
+    --obsidian-3:#1D1D26;
+    --champagne:#C9A84C;
+    --champagne-pale:#E8D5A0;
+    --champagne-dim:#8A6E2F;
+    --champagne-glow:#F0D69B;
+    --text:#F0EEE9;
+    --text-dim:#C5C5D0;
+    --text-faint:#8A8A9A;
+    --border:rgba(201,168,76,0.18);
+    --border-strong:rgba(201,168,76,0.4);
+    --mono:'JetBrains Mono', ui-monospace, monospace;
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'Inter', system-ui, -apple-system, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:
+      radial-gradient(ellipse at top, rgba(58,45,29,0.35) 0%, transparent 55%),
+      radial-gradient(ellipse at bottom, rgba(201,168,76,0.04) 0%, transparent 60%),
+      var(--obsidian);
+    background-attachment:fixed;
+    color:var(--text);
+    font-family:var(--sans);
+    font-size:17px;
+    line-height:1.6;
+    min-height:100vh;
+  }
+
+  /* ============ HEADER ============ */
+  header.site{
+    padding:22px 40px;
+    border-bottom:1px solid var(--border);
+    display:flex;align-items:center;justify-content:space-between;
+    background:rgba(13,13,18,0.7);
+    backdrop-filter:blur(8px);
+    position:sticky;top:0;z-index:10;
+  }
+  .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text)}
+  .brand-mark{
+    width:36px;height:36px;
+    background:radial-gradient(circle at 50% 42%, #221911 0%, #0d0a07 55%, #040303 100%);
+    border:1px solid var(--border);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .brand-mark svg{width:22px;height:22px}
+  .brand-name{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:-0.5px}
+  .brand-tag{font-family:var(--serif);font-style:italic;font-size:13px;color:var(--champagne);opacity:0.85;margin-top:1px}
+  .header-nav{display:flex;align-items:center;gap:18px}
+  .header-nav a{color:var(--text-dim);text-decoration:none;font-size:13px;letter-spacing:0.05em;text-transform:uppercase;transition:color .15s}
+  .header-nav a:hover{color:var(--champagne)}
+  .header-nav a.cur{color:var(--champagne)}
+  .back-link{
+    color:var(--text-dim);text-decoration:none;font-size:13px;
+    padding:7px 14px;border:1px solid var(--border);border-radius:6px;
+    transition:all .15s;
+  }
+  .back-link:hover{color:var(--champagne);border-color:var(--border-strong);background:rgba(201,168,76,0.05)}
+
+  /* ============ EYEBROW + HERO ============ */
+  .container{max-width:760px;margin:0 auto;padding:0 32px}
+  .container-wide{max-width:1080px;margin:0 auto;padding:0 32px}
+  .hero{padding:96px 0 64px;text-align:center}
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--champagne);
+    margin-bottom:24px;
+    opacity:0.85;
+  }
+  h1{
+    font-family:var(--serif);
+    font-size:64px;
+    line-height:1.05;
+    font-weight:500;
+    letter-spacing:-1.8px;
+    margin-bottom:24px;
+    font-variation-settings:"opsz" 96;
+  }
+  .lede{
+    font-family:var(--serif);
+    font-size:22px;
+    font-weight:400;
+    line-height:1.45;
+    color:var(--text-dim);
+    max-width:620px;
+    margin:0 auto;
+    font-variation-settings:"opsz" 22;
+  }
+  .hero-divider{
+    width:60px;height:1px;
+    background:var(--champagne);
+    margin:48px auto 0;
+    opacity:0.6;
+  }
+
+  /* ============ BODY SECTIONS ============ */
+  section{padding:64px 0;border-top:1px solid rgba(201,168,76,0.08)}
+  section:first-of-type{border-top:none}
+  h2{
+    font-family:var(--serif);
+    font-size:40px;
+    font-weight:500;
+    line-height:1.1;
+    letter-spacing:-1px;
+    margin-bottom:32px;
+    color:var(--text);
+    font-variation-settings:"opsz" 56;
+  }
+  h2 .sec-num{
+    display:block;
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--champagne);
+    letter-spacing:0.22em;
+    margin-bottom:10px;
+    font-weight:400;
+    opacity:0.8;
+  }
+  h3{
+    font-family:var(--serif);
+    font-size:24px;
+    font-weight:600;
+    margin:40px 0 14px;
+    color:var(--text);
+    letter-spacing:-0.3px;
+  }
+  p{margin-bottom:20px;color:var(--text-dim);font-size:17px;line-height:1.65}
+  p strong{color:var(--text);font-weight:500}
+  p em{font-style:italic;color:var(--champagne-pale)}
+  a.inline{color:var(--champagne);text-decoration:none;border-bottom:1px dotted var(--champagne-dim);transition:color .15s}
+  a.inline:hover{color:var(--champagne-glow)}
+
+  /* ============ UNDERTONE BULLETS (NLP-framed, Minto MECE) ============ */
+  ul.undertone{
+    list-style:none;
+    margin:24px 0 0;
+    padding:0;
+    border-top:1px solid rgba(201,168,76,0.12);
+  }
+  ul.undertone li{
+    border-bottom:1px solid rgba(201,168,76,0.08);
+    transition:background .15s;
+  }
+  ul.undertone li:hover{background:rgba(201,168,76,0.03)}
+  ul.undertone li a{
+    display:grid;
+    grid-template-columns:36px 1fr;
+    gap:20px;
+    align-items:center;
+    padding:16px 12px 16px 8px;
+    color:var(--text-dim);
+    text-decoration:none;
+    font-size:16px;
+    line-height:1.45;
+    transition:color .15s, padding-left .15s;
+    font-family:var(--serif);
+    font-variation-settings:"opsz" 18;
+  }
+  ul.undertone li a:hover{
+    color:var(--champagne-pale);
+    padding-left:14px;
+  }
+  .undertone-icon{
+    width:28px;height:28px;
+    color:var(--champagne);
+    opacity:0.65;
+    transition:opacity .2s, transform .2s;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .undertone-icon svg{width:100%;height:100%;display:block}
+  ul.undertone li a:hover .undertone-icon{
+    opacity:1;
+    transform:scale(1.05);
+  }
+  .undertone-text{display:block}
+
+  /* ============ LEXICON CARDS ============ */
+  .lex-grid{display:grid;grid-template-columns:repeat(2, 1fr);gap:16px;margin:32px 0}
+  .lex{
+    background:rgba(21,21,28,0.5);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:24px 26px;
+    transition:border-color .15s, background .15s;
+  }
+  .lex:hover{border-color:var(--border-strong);background:rgba(21,21,28,0.7)}
+  .lex-icon{
+    width:60px;height:40px;
+    color:var(--champagne);opacity:0.78;
+    margin-bottom:12px;
+    transition:opacity .2s, color .2s;
+  }
+  .lex:hover .lex-icon{opacity:1;color:var(--champagne-glow)}
+  .lex-term{
+    font-family:var(--serif);
+    font-size:22px;
+    font-weight:600;
+    color:var(--champagne);
+    margin-bottom:8px;
+    letter-spacing:-0.2px;
+  }
+  .lex-pron{
+    font-family:var(--mono);
+    font-size:11px;
+    color:var(--text-faint);
+    margin-bottom:12px;
+    letter-spacing:0.05em;
+  }
+  .lex-def{font-size:15px;color:var(--text-dim);line-height:1.55;margin-bottom:10px}
+  .lex-ex{font-size:13px;color:var(--text-faint);font-style:italic}
+  .lex-ex a{color:var(--champagne-pale);text-decoration:none;border-bottom:1px dotted rgba(232,213,160,.35)}
+  .lex-ex a:hover{color:var(--champagne)}
+
+  /* ============ MORTAR GRID ============ */
+  .mortar-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:32px 0 24px}
+  .mortar{
+    background:rgba(21,21,28,0.55);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:24px 26px;
+    transition:border-color .15s;
+  }
+  .mortar:hover{border-color:var(--border-strong)}
+  .mortar-where{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:0.2em;
+    color:var(--champagne);
+    text-transform:uppercase;
+    margin-bottom:8px;
+    opacity:0.85;
+  }
+  .mortar-title{
+    font-family:var(--serif);
+    font-size:20px;
+    font-weight:600;
+    color:var(--text);
+    margin-bottom:10px;
+    letter-spacing:-0.2px;
+  }
+  .mortar-body{font-size:14px;color:var(--text-dim);line-height:1.55}
+  .mortar-body em{color:var(--champagne-pale)}
+
+  /* ============ MOHS MOTION GRAPHIC ============ */
+  .mohs-anim{margin:36px 0;padding:28px 28px 24px;background:rgba(21,21,28,0.55);border:1px solid var(--border);border-radius:12px}
+  .mohs-anim-legend{
+    display:flex;gap:24px;align-items:center;justify-content:center;
+    font-family:var(--mono);font-size:10px;letter-spacing:0.15em;text-transform:uppercase;
+    color:var(--text-faint);margin-bottom:24px;
+  }
+  .leg-rank::before, .leg-real::before{
+    content:'';display:inline-block;width:14px;height:8px;margin-right:8px;border-radius:2px;vertical-align:middle;
+  }
+  .leg-rank::before{background:#5B7A99}
+  .leg-real::before{background:linear-gradient(90deg,#8E7234,#C9A84C,#F5DCA0)}
+  .mohs-anim-rows{display:flex;flex-direction:column;gap:7px}
+  .ma-row{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:center}
+  .ma-num{
+    font-family:var(--mono);font-size:12px;font-weight:600;color:var(--champagne);
+    text-align:center;background:rgba(201,168,76,0.08);padding:4px 0;border-radius:3px;
+  }
+  .ma-bars{display:flex;flex-direction:column;gap:3px}
+  .ma-bar{height:7px;border-radius:3px;position:relative;overflow:hidden;background:rgba(255,255,255,0.04)}
+  .ma-bar-fill{
+    position:absolute;top:0;left:0;bottom:0;width:0;
+    transition:width 1.4s cubic-bezier(.22,1,.36,1);
+    border-radius:3px;
+  }
+  .ma-bar-rank .ma-bar-fill{background:linear-gradient(90deg,#3D5673,#5B7A99)}
+  .ma-bar-real .ma-bar-fill{background:linear-gradient(90deg,#8E7234,#C9A84C,#F5DCA0)}
+  .ma-label{
+    font-family:var(--serif);font-size:13px;color:var(--text-dim);
+    margin-top:2px;letter-spacing:0;
+  }
+  .ma-label strong{color:var(--text);font-weight:500}
+  .mohs-anim.in-view .ma-bar-fill{width:var(--w, 0%)}
+  .mohs-anim-caption{
+    margin-top:24px;padding-top:20px;border-top:1px solid rgba(201,168,76,0.1);
+    font-family:var(--serif);font-style:italic;font-size:15px;line-height:1.5;
+    color:var(--text-dim);text-align:center;
+  }
+  .mohs-anim-caption em{color:var(--champagne-pale);font-style:italic}
+
+  /* ============ MOHS SCALE ============ */
+  .mohs-wrap{margin:36px 0}
+  .mohs-row{
+    display:grid;
+    grid-template-columns:48px 1fr 200px;
+    gap:14px;
+    padding:10px 0;
+    border-bottom:1px solid rgba(201,168,76,0.06);
+    align-items:center;
+  }
+  .mohs-num{
+    font-family:var(--mono);
+    font-size:14px;
+    font-weight:600;
+    color:var(--champagne);
+    text-align:center;
+    background:rgba(201,168,76,0.08);
+    padding:6px 0;
+    border-radius:4px;
+  }
+  .mohs-mineral{font-family:var(--serif);font-size:17px;color:var(--text);font-weight:500}
+  .mohs-mineral em{font-size:13px;color:var(--text-faint);display:block;font-style:normal;font-family:var(--sans);font-weight:400;margin-top:2px}
+  .mohs-stones{font-size:13px;color:var(--text-dim);font-style:italic}
+
+  /* ============ HEAVIEST STONES ============ */
+  .heavy-list{margin:36px 0;display:flex;flex-direction:column;gap:2px}
+  .heavy-row{
+    display:grid;
+    grid-template-columns:56px 1fr auto;
+    gap:18px;
+    padding:18px 0;
+    border-bottom:1px solid rgba(201,168,76,0.08);
+    align-items:baseline;
+  }
+  .heavy-rank{
+    font-family:var(--mono);
+    font-size:13px;
+    color:var(--champagne);
+    letter-spacing:0.1em;
+    padding-top:4px;
+  }
+  .heavy-main h4{
+    font-family:var(--serif);
+    font-size:21px;
+    font-weight:500;
+    color:var(--text);
+    margin-bottom:4px;
+    letter-spacing:-0.2px;
+  }
+  .heavy-main h4 a{color:var(--champagne);text-decoration:none}
+  .heavy-main h4 a:hover{color:var(--champagne-glow)}
+  .heavy-desc{font-size:14px;color:var(--text-dim);line-height:1.5}
+  .heavy-weight{
+    font-family:var(--serif);
+    font-size:32px;
+    font-weight:500;
+    color:var(--champagne-pale);
+    letter-spacing:-0.5px;
+    text-align:right;
+    white-space:nowrap;
+  }
+  .heavy-weight em{
+    display:block;
+    font-family:var(--mono);
+    font-size:10px;
+    color:var(--text-faint);
+    font-style:normal;
+    letter-spacing:0.15em;
+    margin-top:2px;
+    text-transform:uppercase;
+  }
+
+  /* ============ EQUIPMENT LIST ============ */
+  .equip-list{margin:24px 0 28px;display:flex;flex-direction:column;gap:0;border-top:1px solid var(--border)}
+  .equip-row{
+    display:grid;
+    grid-template-columns:1fr 110px 1.5fr;
+    gap:18px;
+    padding:14px 4px;
+    border-bottom:1px solid rgba(201,168,76,0.08);
+    align-items:center;
+  }
+  .equip-name{font-family:var(--serif);font-size:16px;font-weight:500;color:var(--text);letter-spacing:-0.1px;display:flex;flex-direction:column;gap:4px}
+  .equip-year{
+    font-family:var(--mono);
+    font-size:9px;
+    letter-spacing:0.18em;
+    color:var(--champagne);
+    text-transform:uppercase;
+    opacity:0.85;
+    font-weight:400;
+  }
+  .equip-cap{
+    font-family:var(--mono);font-size:18px;font-weight:600;color:var(--champagne-pale);
+    text-align:right;letter-spacing:0;
+  }
+  .equip-note{font-size:13px;color:var(--text-dim);line-height:1.5}
+  .equip-highlight{background:rgba(201,168,76,0.04)}
+  .equip-highlight .equip-name{color:var(--champagne)}
+  .equip-highlight .equip-cap{color:var(--champagne);font-size:20px}
+
+  /* ============ WALL COMPARISON STRIP (Platonic Forms) ============ */
+  .wall-strip{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+    margin:36px 0 12px;
+  }
+  .wall{
+    background:rgba(21,21,28,0.55);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:18px 16px 20px;
+    display:flex;
+    flex-direction:column;
+    transition:border-color .2s, transform .2s;
+  }
+  .wall:hover{border-color:var(--border-strong);transform:translateY(-2px)}
+  .wall svg{
+    width:100%;
+    height:auto;
+    color:var(--champagne);
+    opacity:0.92;
+    margin-bottom:14px;
+    transition:opacity .2s, color .2s;
+  }
+  .wall:hover svg{opacity:1;color:var(--champagne-glow)}
+  .wall figcaption{display:flex;flex-direction:column;gap:6px}
+  .wall-region{
+    font-family:var(--mono);
+    font-size:9px;
+    letter-spacing:0.22em;
+    color:var(--champagne);
+    text-transform:uppercase;
+    opacity:0.85;
+  }
+  .wall-site{
+    font-family:var(--serif);
+    font-size:15px;
+    font-weight:600;
+    color:var(--text);
+    letter-spacing:-0.1px;
+    line-height:1.2;
+  }
+  .wall-note{
+    font-size:12px;
+    color:var(--text-dim);
+    line-height:1.45;
+    margin-top:4px;
+  }
+
+  /* ============ COMPARISON STRIP ============ */
+  .compare-strip{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    margin:32px 0;
+  }
+  .compare-card{
+    background:rgba(21,21,28,0.5);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:24px;
+  }
+  .compare-where{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:0.2em;
+    color:var(--champagne);
+    text-transform:uppercase;
+    margin-bottom:10px;
+  }
+  .compare-title{
+    font-family:var(--serif);
+    font-size:22px;
+    font-weight:600;
+    color:var(--text);
+    margin-bottom:8px;
+    line-height:1.2;
+  }
+  .compare-when{font-size:12px;color:var(--text-faint);margin-bottom:14px;font-style:italic}
+  .compare-body{font-size:14px;color:var(--text-dim);line-height:1.55}
+
+  /* ============ GEOMETRY GRID ============ */
+  .geom-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:28px 0 24px}
+  .geom{
+    background:rgba(21,21,28,0.55);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:22px 24px;
+    transition:border-color .15s, transform .2s;
+  }
+  .geom:hover{border-color:var(--border-strong);transform:translateY(-1px)}
+  .geom-icon{width:54px;height:54px;color:var(--champagne);opacity:0.85;margin-bottom:14px;transition:opacity .2s,color .2s}
+  .geom:hover .geom-icon{opacity:1;color:var(--champagne-glow)}
+  .geom-label{
+    font-family:var(--serif);
+    font-size:24px;
+    font-weight:600;
+    color:var(--champagne);
+    margin-bottom:10px;
+    letter-spacing:-0.2px;
+  }
+  .geom-body{font-size:14px;color:var(--text-dim);line-height:1.55}
+
+  /* ============ PULL QUOTE ============ */
+  .pull{
+    font-family:var(--serif);
+    font-size:30px;
+    line-height:1.3;
+    color:var(--champagne-pale);
+    font-style:italic;
+    text-align:center;
+    margin:56px auto;
+    padding:0 32px;
+    max-width:680px;
+    font-weight:500;
+    letter-spacing:-0.3px;
+  }
+
+  /* ============ PACHA DIAGRAM ============ */
+  /* ============ STRATIGRAPHY DIAGRAM ============ */
+  .strata-wrap{margin:36px 0 24px}
+  .strata{
+    width:100%;height:auto;display:block;
+    color:var(--champagne);opacity:0.9;
+    background:rgba(13,13,18,0.45);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:14px 18px;
+    transition:opacity .2s, border-color .2s;
+  }
+  .strata:hover{opacity:1;border-color:var(--border-strong)}
+  .strata-caption{
+    margin-top:14px;
+    font-family:var(--serif);font-style:italic;
+    font-size:14px;line-height:1.55;color:var(--text-dim);
+    text-align:center;
+    max-width:640px;margin-left:auto;margin-right:auto;
+  }
+  .strata-caption em{color:var(--champagne-pale);font-style:italic}
+
+  .pacha-grid{display:grid;grid-template-columns:1fr;gap:1px;margin:32px 0;background:var(--border);border-radius:10px;overflow:hidden;border:1px solid var(--border)}
+  .pacha-row{background:rgba(21,21,28,0.6);padding:28px 30px;display:grid;grid-template-columns:220px 1fr;gap:28px;align-items:start}
+  .pacha-name{font-family:var(--serif);font-size:24px;font-weight:600;color:var(--champagne);letter-spacing:-0.3px;line-height:1.15}
+  .pacha-name em{display:block;font-size:12px;font-style:italic;font-family:var(--serif);color:var(--text-faint);letter-spacing:0;margin-top:8px;line-height:1.3;font-variation-settings:"opsz" 12}
+  .pacha-era{
+    display:block;
+    font-family:var(--mono);
+    font-size:9px;
+    font-style:normal;
+    color:var(--champagne-pale);
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    margin-bottom:10px;
+    opacity:0.9;
+    font-weight:400;
+  }
+  .pacha-body{font-size:15px;color:var(--text-dim);line-height:1.6}
+  .pacha-body strong{color:var(--text);font-weight:500}
+  .pacha-body em{color:var(--champagne-pale);font-style:italic}
+  .pacha-where{
+    display:block;
+    margin-top:14px;padding-top:12px;
+    border-top:1px dashed rgba(201,168,76,0.18);
+    font-size:13px;font-style:italic;color:var(--text-faint);line-height:1.5;
+  }
+
+  /* ============ SOURCES GRID ============ */
+  .sources-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:24px 0 0}
+  .source{
+    background:rgba(21,21,28,0.45);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:18px 20px;
+    transition:border-color .15s;
+  }
+  .source:hover{border-color:var(--border-strong)}
+  .source-title{
+    font-family:var(--serif);
+    font-size:17px;
+    font-weight:600;
+    color:var(--text);
+    margin-bottom:4px;
+    letter-spacing:-0.2px;
+    line-height:1.25;
+  }
+  .source-meta{
+    font-family:var(--mono);
+    font-size:10px;
+    letter-spacing:0.15em;
+    color:var(--champagne);
+    text-transform:uppercase;
+    margin-bottom:10px;
+    opacity:0.85;
+  }
+  .source-body{font-size:13px;color:var(--text-dim);line-height:1.5}
+
+  /* ============ FOOTER NAV ============ */
+  .related{padding:64px 0 80px;border-top:1px solid var(--border);margin-top:64px}
+  .related-eyebrow{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--champagne);
+    text-align:center;
+    margin-bottom:32px;
+    opacity:0.8;
+  }
+  .related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:780px;margin:0 auto}
+  .related-card{
+    display:block;
+    background:rgba(21,21,28,0.5);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:24px 28px;
+    text-decoration:none;
+    transition:all .15s;
+  }
+  .related-card:hover{border-color:var(--border-strong);background:rgba(21,21,28,0.75);transform:translateY(-1px)}
+  .related-card h4{
+    font-family:var(--serif);font-size:20px;font-weight:600;color:var(--text);
+    margin-bottom:6px;letter-spacing:-0.2px;
+  }
+  .related-card p{font-size:14px;color:var(--text-dim);margin:0;line-height:1.45}
+  .related-card.soon{opacity:0.55}
+  .related-card.soon h4::after{content:" — coming soon";font-size:11px;color:var(--champagne);text-transform:uppercase;letter-spacing:0.15em;font-family:var(--mono);font-weight:400}
+
+  footer.site{
+    text-align:center;padding:36px;
+    color:var(--text-faint);font-size:13px;
+    border-top:1px solid var(--border);
+  }
+  footer.site a{color:var(--champagne);text-decoration:none}
+  footer.site .copyright{margin-top:10px;font-size:11px;color:var(--text-faint);opacity:0.65;letter-spacing:0.04em}
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width:840px){
+    .lex-grid{grid-template-columns:1fr}
+    .compare-strip{grid-template-columns:1fr}
+    .related-grid{grid-template-columns:1fr}
+    .pacha-row{grid-template-columns:1fr;gap:12px}
+    .mortar-grid{grid-template-columns:1fr}
+    .geom-grid{grid-template-columns:1fr}
+    .sources-grid{grid-template-columns:1fr}
+    .wall-strip{grid-template-columns:repeat(2,1fr)}
+    .equip-row{grid-template-columns:1fr 80px;gap:8px}
+    .equip-note{grid-column:span 2;font-size:12px;padding-top:4px}
+  }
+  @media (max-width:640px){
+    .container,.container-wide{padding:0 20px}
+    header.site{padding:16px 20px;flex-wrap:wrap;gap:12px}
+    .header-nav{order:3;width:100%;justify-content:flex-start;border-top:1px solid var(--border);padding-top:12px}
+    h1{font-size:42px;letter-spacing:-1px}
+    h2{font-size:30px}
+    .lede{font-size:18px}
+    .heavy-row{grid-template-columns:1fr;gap:8px}
+    .heavy-weight{text-align:left;font-size:24px}
+    .mohs-row{grid-template-columns:38px 1fr;gap:10px}
+    .mohs-stones{grid-column:span 2;font-size:12px;padding-left:48px}
+    .pull{font-size:22px;padding:0 12px;margin:36px auto}
+    .mohs-anim{padding:20px 16px}
+    .mohs-anim-legend{flex-direction:column;gap:6px;font-size:9px}
+    .ma-row{grid-template-columns:32px 1fr;gap:10px}
+    ul.undertone li a{font-size:14px;padding-left:24px}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <a href="../index.html" class="brand">
+    <div class="brand-mark">
+      <svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="hm_gold" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stop-color="#F5DCA0"/>
+            <stop offset="100%" stop-color="#8E7234"/>
+          </linearGradient>
+        </defs>
+        <g fill="url(#hm_gold)">
+          <polygon points="0,0 -10,-10 0,-90 10,-10"/>
+          <polygon points="0,0 -8,8 0,72 8,8"/>
+          <polygon points="0,0 8,-8 80,0 8,8"/>
+          <polygon points="0,0 -8,-8 -80,0 -8,8"/>
+        </g>
+        <circle cx="0" cy="0" r="6" fill="#F5DCA0"/>
+      </svg>
+    </div>
+    <div>
+      <div class="brand-name">Ancient Atlas</div>
+      <div class="brand-tag">A map of the deep past</div>
+    </div>
+  </a>
+  <nav class="header-nav">
+    <a href="../index.html">Atlas</a>
+    <a href="index.html" class="cur">Library</a>
+    <a href="../contact.html">Contact</a>
+  </nav>
+  <a href="index.html" class="back-link">← Library</a>
+</header>
+
+<!-- ============ HERO ============ -->
+<div class="container">
+  <div class="hero">
+    <div class="eyebrow">Library · Entry 01</div>
+    <h1>What is a megalith?</h1>
+    <p class="lede">A working vocabulary of deep stone : : the words you need before you can compare the work the world's oldest builders actually did.</p>
+    <div class="hero-divider"></div>
+  </div>
+</div>
+
+<!-- ============ §01 FRAME ============ -->
+<div class="container">
+  <section>
+    <h2><span class="sec-num">§ 01 · The frame</span>Once you have the vocabulary, the past reorganizes itself.</h2>
+    <p>A megalith is not just a big stone. It is a deliberate act of engineering whose scale, joinery, finish, and placement force a question modern history is still working out how to answer. The vocabulary on this page is the difference between seeing a "big rock" and seeing a system. By the time you reach the bottom of this entry, the atlas reads differently. Sites you scrolled past begin to disclose themselves.</p>
+
+    <p>Six properties tend to repeat at the most demanding sites in the catalog. None of them is decoration. Each one is a question worth holding in mind while you read:</p>
+
+    <ul class="undertone">
+      <li>
+        <a href="#sec-mortar">
+          <span class="undertone-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round">
+              <path d="M3 19 L3 8 L7 5 L11 5 L13 9 L13 19 Z"/>
+              <path d="M21 19 L21 6 L17 6 L13 9 L13 19 Z"/>
+            </svg>
+          </span>
+          <span class="undertone-text">Stones fitted without mortar, often with tolerances tighter than a knife blade.</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec-hardness">
+          <span class="undertone-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round">
+              <path d="M9 3 L15 3 L15 14 L12 21 L9 14 Z"/>
+              <path d="M9 7 L15 7"/>
+            </svg>
+          </span>
+          <span class="undertone-text">Stone harder than steel.</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec-weight">
+          <span class="undertone-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round">
+              <path d="M4 8 L12 4 L20 8 L20 18 L12 22 L4 18 Z"/>
+              <path d="M4 8 L12 12 L20 8 M12 12 L12 22"/>
+            </svg>
+          </span>
+          <span class="undertone-text">Blocks heavier than anything steam, diesel, or pre-modern hydraulic equipment could lift, with the largest still beyond what the heaviest cranes built since the 1970s can match.</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec-pattern">
+          <span class="undertone-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.05" stroke-linejoin="round">
+              <path d="M10 2 L14 2 L15.5 5 L13 7 L9 7 L8.5 4 Z"/>
+              <path d="M3 13 L7 12 L9 15 L7 19 L3 18 L2 15 Z"/>
+              <path d="M16 14 L20 13 L22 16 L20 20 L17 20 L15 17 Z"/>
+            </svg>
+          </span>
+          <span class="undertone-text">The same polygonal interlock pattern appearing on three continents that should have no contact.</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec-pacha">
+          <span class="undertone-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round">
+              <path d="M3 5 L21 5" stroke-width="0.7" opacity="0.5"/>
+              <path d="M3 10 L21 10" stroke-width="0.9" opacity="0.7"/>
+              <path d="M3 15 L21 15" stroke-width="1.2" opacity="0.85"/>
+              <path d="M3 20 L21 20" stroke-width="1.7"/>
+            </svg>
+          </span>
+          <span class="undertone-text">Stratigraphy that runs backwards: the deeper the layer, the more advanced the technology.</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec-geometry">
+          <span class="undertone-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.05">
+              <circle cx="9" cy="12" r="7"/>
+              <circle cx="15" cy="12" r="7"/>
+            </svg>
+          </span>
+          <span class="undertone-text">Geometry that encodes astronomy, the proportions of the Earth, and the dimensions of the human form.</span>
+        </a>
+      </li>
+    </ul>
+
+    <p style="margin-top:32px;color:var(--text-faint);font-size:14px;font-style:italic">Read end to end, or follow any one thread down and back. The page is built so the parts also work in isolation.</p>
+
+    <h3>The root</h3>
+    <p><em>Megalith</em> comes from Greek: <strong>mega</strong> (great) and <strong>lithos</strong> (stone). The literal sense is just "big stone." The technical sense is narrower and more useful: a megalith is a stone, or a structure made from stones, large enough that its handling, shaping, and placement cannot be casually explained by ordinary human labor. Where casual ends and extraordinary begins is exactly where this lexicon lives.</p>
+    <p>Two further distinctions matter. A <strong>monolith</strong> is a single stone, worked or unworked, that stands alone or has been shaped from one piece. The Aswan Obelisk would have been a monolith. The Easter Island moai are monoliths. A megalithic <em>structure</em> is many large stones assembled into something, usually without mortar. Stonehenge is megalithic. The walls of Sacsayhuamán are megalithic. The Baalbek trilithon is both: three monoliths arranged into a megalithic foundation.</p>
+    <p>The third distinction is the one most readers miss. <strong>Mortarless</strong> does not mean unfinished or primitive. It means precise. Stones cut to fit each other directly, edge to edge, with tolerances often tighter than what modern masonry achieves with mortar to forgive the gaps. The skill is not in the size. The skill is in the joinery.</p>
+  </section>
+</div>
+
+<!-- ============ §02 LEXICON ============ -->
+<div class="container">
+  <section>
+    <h2><span class="sec-num">§ 02 · Lexicon</span>The terms you'll see most often.</h2>
+    <p>Each of these words names a specific phenomenon. Confusing them flattens the work. Distinguishing them sharpens what you notice.</p>
+
+    <div class="lex-grid">
+      <div class="lex">
+        <svg class="lex-icon" viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" aria-hidden="true">
+          <!-- Cyclopean: huge irregular blocks, rough -->
+          <path d="M2 38 L2 18 L14 8 L28 4 L46 10 L58 6 L58 38 Z"/>
+          <path d="M14 8 L18 22 L36 25 L46 10"/>
+          <path d="M18 22 L2 28 M36 25 L58 22 M28 4 L18 22"/>
+          <path d="M2 28 L18 38 M18 22 L24 38 M36 25 L42 38 M58 22 L42 38"/>
+        </svg>
+        <div class="lex-term">Cyclopean</div>
+        <div class="lex-pron">/saɪˈkloʊ.pi.ən/</div>
+        <div class="lex-def">Massive irregular blocks, often unfinished on their outer face, fitted without mortar. Named by the ancient Greeks, who could not believe their Bronze Age ancestors had built the walls of Mycenae and assumed the Cyclopes had done it.</div>
+        <div class="lex-ex">See: <a href="../index.html?site=Mycenae">Mycenae</a>, <a href="../index.html?site=Tiryns">Tiryns</a>, <a href="../index.html?site=Hattusa">Hattusa</a>.</div>
+      </div>
+
+      <div class="lex">
+        <svg class="lex-icon" viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" aria-hidden="true">
+          <!-- Polygonal: many-sided cell, central centerpiece -->
+          <path d="M2 14 L20 4 L40 6 L58 14 L52 28 L40 38 L18 36 L8 26 Z"/>
+          <path d="M2 14 L20 18 L20 4"/>
+          <path d="M20 18 L40 6 M20 18 L40 18 L40 38 M40 18 L58 14 M40 18 L52 28 M20 18 L18 36 M20 18 L8 26"/>
+        </svg>
+        <div class="lex-term">Polygonal</div>
+        <div class="lex-pron">/pəˈlɪɡ.ə.nəl/</div>
+        <div class="lex-def">Many-sided stones, each cut to interlock with several neighbors, joined without mortar. The blocks may be enormous, the seams are typically razor-tight, and the geometry rarely repeats. The Cusco pattern, but also Japanese castle walls and parts of Easter Island.</div>
+        <div class="lex-ex">See: <a href="../index.html?site=Sacsayhuam%C3%A1n">Sacsayhuamán</a>, <a href="../index.html?site=Cusco%2012-Angled%20Stone">Cusco</a>, <a href="../index.html?site=Osaka%20Castle">Osaka Castle</a>.</div>
+      </div>
+
+      <div class="lex">
+        <svg class="lex-icon" viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" aria-hidden="true">
+          <!-- Trilithon: two uprights + horizontal lintel -->
+          <path d="M2 38 L62 38" opacity="0.4"/>
+          <rect x="8" y="14" width="10" height="24"/>
+          <rect x="42" y="14" width="10" height="24"/>
+          <rect x="4" y="6" width="52" height="10"/>
+        </svg>
+        <div class="lex-term">Trilithon</div>
+        <div class="lex-pron">/ˈtraɪ.lɪ.θɒn/</div>
+        <div class="lex-def">Three stones: two uprights and a horizontal lintel. The most efficient possible monumental form. Stonehenge made it iconic. Baalbek made it impossible, with three lintel-equivalents weighing roughly 800 tons each, set 22 meters above the ground.</div>
+        <div class="lex-ex">See: <a href="../index.html?site=Stonehenge">Stonehenge</a>, <a href="../index.html?site=Baalbek">Baalbek</a>.</div>
+      </div>
+
+      <div class="lex">
+        <svg class="lex-icon" viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" aria-hidden="true">
+          <!-- Ashlar: regular rectangular grid -->
+          <rect x="2" y="2" width="56" height="36"/>
+          <path d="M2 14 L58 14 M2 26 L58 26"/>
+          <path d="M16 2 L16 14 M36 2 L36 14"/>
+          <path d="M10 14 L10 26 M28 14 L28 26 M46 14 L46 26"/>
+          <path d="M16 26 L16 38 M36 26 L36 38"/>
+        </svg>
+        <div class="lex-term">Ashlar</div>
+        <div class="lex-pron">/ˈæʃ.lər/</div>
+        <div class="lex-def">Cut stone shaped into rectangular blocks with squared faces and uniform courses. Visually the calmest of the masonry types. Egypt's pyramid casing, the upper courses of Inca temples, and most Greek architecture work in ashlar.</div>
+        <div class="lex-ex">See: <a href="../index.html?site=Great%20Pyramid">Giza</a>, <a href="../index.html?site=Qorikancha">Qorikancha</a>.</div>
+      </div>
+
+      <div class="lex">
+        <svg class="lex-icon" viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" aria-hidden="true">
+          <!-- Monolithic: one single carved shape (obelisk-like) -->
+          <path d="M2 38 L58 38" opacity="0.4"/>
+          <path d="M20 38 L20 8 L26 4 L34 4 L40 8 L40 38 Z"/>
+        </svg>
+        <div class="lex-term">Monolithic</div>
+        <div class="lex-pron">/ˌmɒn.əˈlɪð.ɪk/</div>
+        <div class="lex-def">Carved from a single block, however large. The Great Sphinx is monolithic. So is each Easter Island moai. So is the Kailasa Temple at Ellora, which is somehow a complete multi-story temple sculpted downward out of one mountain face.</div>
+        <div class="lex-ex">See: <a href="../index.html?site=Moai%20of%20Easter%20Island%20(Rapa%20Nui)">Moai</a>, <a href="../index.html?site=Ellora%20Caves">Ellora Kailasa</a>.</div>
+      </div>
+
+      <div class="lex">
+        <svg class="lex-icon" viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" aria-hidden="true">
+          <!-- Menhir + Dolmen: an upright + a portal-tomb table -->
+          <path d="M2 38 L58 38" opacity="0.4"/>
+          <!-- menhir on the left -->
+          <path d="M8 38 L8 12 L14 6 L18 12 L18 38 Z"/>
+          <!-- dolmen on the right (two uprights + cap) -->
+          <rect x="32" y="18" width="6" height="20"/>
+          <rect x="48" y="18" width="6" height="20"/>
+          <path d="M28 14 L58 12 L56 18 L30 20 Z"/>
+        </svg>
+        <div class="lex-term">Megalith vs Menhir vs Dolmen</div>
+        <div class="lex-pron">/ˈmɛɡ.ə.lɪθ/ /ˈmɛn.hɪər/ /ˈdɒl.mɛn/</div>
+        <div class="lex-def">A <strong>menhir</strong> is a single upright stone standing alone (think Carnac in France). A <strong>dolmen</strong> is a portal tomb: two or more uprights capped by a horizontal slab. Both are subsets of megalithic construction. The terms come from Breton.</div>
+        <div class="lex-ex">See: <a href="../index.html?site=Carnac%20Stones">Carnac</a>, dolmen fields across the Atlantic façade and Korea.</div>
+      </div>
+
+      <div class="lex">
+        <svg class="lex-icon" viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+          <!-- Ground line -->
+          <path d="M0 38 L60 38" opacity="0.4"/>
+          <!-- T-Pillar as ONE continuous monolithic outline (no internal seams — it's a single carved block) -->
+          <path d="M14 38 L14 14 L4 14 L4 4 L36 4 L36 14 L26 14 L26 38 Z"/>
+          <!-- Carved belt detail at waist (relief) -->
+          <path d="M14 22 L26 22" stroke-width="0.55" opacity="0.55"/>
+          <!-- Animal in relief on the shaft (stylized fox/boar) -->
+          <path d="M16 27 L17 26 Q18 25 19 26 L21 26 Q22 25 23 26 L24 26 L24 29 L23 30 L17 30 L16 29 Z" stroke-width="0.6" opacity="0.78"/>
+          <!-- Tiny eye on the animal -->
+          <circle cx="22.5" cy="27.3" r="0.4" fill="currentColor" stroke="none" opacity="0.78"/>
+          <!-- Tiny human silhouette for scale (about 1/4 the height of the pillar) -->
+          <!-- Head -->
+          <circle cx="48" cy="32" r="1.3" stroke-width="0.85"/>
+          <!-- Torso -->
+          <path d="M48 33.3 L48 36" stroke-width="0.85"/>
+          <!-- Arms -->
+          <path d="M45.5 34.2 L48 33.6 L50.5 34.2" stroke-width="0.7"/>
+          <!-- Legs -->
+          <path d="M48 36 L46.7 38" stroke-width="0.7"/>
+          <path d="M48 36 L49.3 38" stroke-width="0.7"/>
+        </svg>
+        <div class="lex-term">T-Pillar</div>
+        <div class="lex-pron">/tiː ˈpɪl.ər/</div>
+        <div class="lex-def">Anthropomorphic monolith carved into a stylized "T" silhouette, often with carved arms, belts, and animal reliefs along the sides. The defining form of Göbekli Tepe and Karahan Tepe in southeastern Türkiye. The world's oldest known monumental architecture, roughly <strong>11,500 years old</strong>, predating Stonehenge by 7,000 years and the Pyramids by 7,000 years. The site contains as many as 60 stone enclosures, and the rule that recurs across the whole catalog applies here too: <em>the oldest rings are the largest and most sophisticated.</em> The deepest layer is the best work.</div>
+        <div class="lex-ex">See: <a href="../index.html?site=G%C3%B6bekli%20Tepe">Göbekli Tepe</a>, <a href="../index.html?site=Karahan%20Tepe">Karahan Tepe</a>.</div>
+      </div>
+
+      <div class="lex">
+        <svg class="lex-icon" viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" aria-hidden="true">
+          <!-- Anastylosis: rebuilding from fragments, dashed reconstruction lines -->
+          <path d="M2 38 L58 38" opacity="0.4"/>
+          <!-- Existing fragments (solid) -->
+          <path d="M8 38 L8 22 L18 22 L18 38 Z"/>
+          <path d="M40 38 L40 24 L52 24 L52 38 Z"/>
+          <!-- Reconstructed/inferred portions (dashed) -->
+          <path d="M18 22 L18 8 L40 8 L40 24" stroke-dasharray="2.5 2.5" opacity="0.7"/>
+          <path d="M22 8 L22 22 M30 8 L30 22 M36 8 L36 22" stroke-dasharray="1.5 2" opacity="0.5"/>
+        </svg>
+        <div class="lex-term">Anastylosis</div>
+        <div class="lex-pron">/ˌæn.əˈstaɪ.lə.sɪs/</div>
+        <div class="lex-def">The archaeological practice of rebuilding a ruined monument using only its original surviving material, fitting the rediscovered blocks back into their inferred positions. Most "intact" megalithic sites you walk through have undergone partial anastylosis. The skill of the reconstruction often determines how much of what you're reading is original.</div>
+        <div class="lex-ex">Widely used at <a href="../index.html?site=Stonehenge">Stonehenge</a>, <a href="../index.html?site=Knossos">Knossos</a>, and across the Khmer corpus.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="container">
+  <p class="pull">"The skill is not in the size. The skill is in the joinery."</p>
+</div>
+
+<!-- ============ §03 MORTAR ============ -->
+<div class="container">
+  <section id="sec-mortar">
+    <h2><span class="sec-num">§ 03 · Mortar</span>The rule, and the four telling exceptions.</h2>
+    <p>"Usually without mortar" is doing a lot of work in the definitions above. The honest answer is that the most demanding megalithic sites in the world were assembled <strong>dry</strong>: stone on stone, no binder, the geometry of the cut doing all the load transfer. The work survives 6,000 to 12,000 years of seismic stress because the joinery is the structural system. Mortar would have been a confession of imprecision. The builders did not confess.</p>
+    <p>The clearest test is the knife-blade test, and visitors at Sacsayhuamán, Ollantaytambo, and Cusco's downtown walls have been performing it for 500 years. A modern credit card cannot be inserted into the seams of the lower-course polygonal blocks. A piece of paper, in many places, gets you stopped a millimeter in.</p>
+    <p>And yet : : mortar does appear in the ancient record, just rarely at the demanding tier. The four cleanest examples:</p>
+
+    <div class="mortar-grid">
+      <div class="mortar">
+        <div class="mortar-where">Rome (and the empire's reach)</div>
+        <div class="mortar-title">Pozzolana concrete</div>
+        <div class="mortar-body">The Romans made one of the most durable mortars in history by combining volcanic ash from Pozzuoli with lime and seawater. The Pantheon dome and the upper structures at Baalbek's Roman period rest on it. The trick is that Roman concrete improves with time : : it self-heals as seawater interacts with the lime. Modern Portland cement degrades in centuries; the Roman walls have not.</div>
+      </div>
+      <div class="mortar">
+        <div class="mortar-where">Mesoamerica</div>
+        <div class="mortar-title">Maya lime mortar &amp; stucco</div>
+        <div class="mortar-body">At Tikal, Palenque, Calakmul, and Copán, the Maya used a lime-and-sascab mortar between limestone blocks, often coated in thick lime stucco. The mortar gave them broad architectural freedom (corbel vaults, large interior spaces) but it also dates the work : : the lime-bearing surfaces are easy to read against stratigraphy.</div>
+      </div>
+      <div class="mortar">
+        <div class="mortar-where">Egypt</div>
+        <div class="mortar-title">Gypsum as a lubricant, not glue</div>
+        <div class="mortar-body">The Egyptians used gypsum mortar between Great Pyramid casing stones and at certain dynastic temples. The function was not adhesion : : modern study (Lehner, Edwards) suggests it acted as a lubricant that let masons slide each block into final position before the gypsum set, locking the dry joint at maximum tightness. Once cured, the mortar provided almost no shear resistance. The joinery still does the work.</div>
+      </div>
+      <div class="mortar">
+        <div class="mortar-where">Andes (late Inca)</div>
+        <div class="mortar-title">Mud infill on the upper courses</div>
+        <div class="mortar-body">The Inca, building <em>onto</em> earlier polygonal foundations they had not made, often used clay or mud infill behind the visible ashlar of their upper courses. The deep foundations stayed dry-fit. The new walls above used the easier method. Reading both at the same site is one of the clearest ways to see the two-period pattern at Cusco, Pisac, and Ollantaytambo.</div>
+      </div>
+    </div>
+
+    <p>What about Göbekli Tepe, the oldest megalithic site in the world? The T-pillars (~11,500 years old, some weighing 10–20 tons) are set into the bedrock and stabilized with <strong>compacted earth and small packing stones</strong>. No mortar. The technique is the same one used at Ollantaytambo eight thousand years later. Mortar is not what made megalithic construction durable. Geometry is.</p>
+
+    <p style="margin-top:36px;padding:18px 22px;background:rgba(21,21,28,0.45);border-left:2px solid var(--champagne-dim);border-radius:0 8px 8px 0;color:var(--text-dim);font-size:14px;font-style:italic;line-height:1.6">
+      A modern footnote worth keeping in mind. From 1923 to 1951, a 5-foot-tall Latvian immigrant named <strong>Edward Leedskalnin</strong> built <a class="inline" href="https://en.wikipedia.org/wiki/Coral_Castle" target="_blank" rel="noopener">Coral Castle</a> in southern Florida — a complex of multi-ton coral-limestone megaliths, including a 9-ton swinging gate balanced so precisely it could be pushed with a finger. He worked alone, at night, with no power tools, no helpers, and no witnesses. He took his methods with him. The standing claim "we know how the ancients did it" has to share the floor with the standing fact that we don't actually know how Leedskalnin did it last century. The capacity to move stone without industrial equipment is not as lost as the textbooks assume.
+    </p>
+  </section>
+</div>
+
+<!-- ============ §04 MOHS ============ -->
+<div class="container">
+  <section id="sec-hardness">
+    <h2><span class="sec-num">§ 04 · Hardness</span>The Mohs scale, and why it changes the question.</h2>
+    <p>Friedrich Mohs proposed his ten-point hardness scale in 1812. The scale is <strong>ordinal, not linear</strong>: a mineral scratches anything below it on the list, but the actual hardness gap between rungs widens dramatically at the top end. The visualization below makes the difference visible. The blue bar is the rank. The gold bar is the real-world scratch-resistance, measured against the same reference. Notice how the gap between 9 and 10 dwarfs the entire bottom half of the scale.</p>
+
+    <!-- ============ Mohs scroll-driven motion graphic ============ -->
+    <div class="mohs-anim" id="mohsAnim">
+      <div class="mohs-anim-legend">
+        <span class="leg-rank">Ordinal rank (linear)</span>
+        <span class="leg-real">Real scratch resistance (exponential)</span>
+      </div>
+      <div class="mohs-anim-rows"></div>
+      <div class="mohs-anim-caption">
+        The Mohs scale tells you the <em>order</em>. It deliberately does not tell you the <em>magnitude</em>. Granite (Mohs 6–7) is roughly forty times harder than gypsum (Mohs 2). Diamond (Mohs 10) is roughly forty times harder than corundum (Mohs 9). Each new rung at the top is a different universe of difficulty.
+      </div>
+    </div>
+
+    <p>Most casual readers assume the ancients worked stone the way modern stonemasons do: slowly, with chisels, over years. That intuition works for limestone and sandstone, which are soft. It does not survive contact with granite, basalt, diorite, or quartzite. Those stones are roughly as hard as <em>steel</em>. Working them with copper or bronze tools should not produce the precision the surviving evidence shows, and yet the evidence shows it.</p>
+
+    <div class="mohs-wrap">
+      <div class="mohs-row"><div class="mohs-num">1</div><div class="mohs-mineral">Talc<em>scratched by a fingernail</em></div><div class="mohs-stones">Soapstone</div></div>
+      <div class="mohs-row"><div class="mohs-num">2</div><div class="mohs-mineral">Gypsum<em>fingernail scratches it</em></div><div class="mohs-stones">Alabaster, salt</div></div>
+      <div class="mohs-row"><div class="mohs-num">3</div><div class="mohs-mineral">Calcite<em>copper coin scratches it</em></div><div class="mohs-stones">Limestone, marble</div></div>
+      <div class="mohs-row"><div class="mohs-num">4</div><div class="mohs-mineral">Fluorite<em>scratched by knife</em></div><div class="mohs-stones">Most weathered sandstones</div></div>
+      <div class="mohs-row"><div class="mohs-num">5</div><div class="mohs-mineral">Apatite<em>knife with difficulty</em></div><div class="mohs-stones">Tuff, some volcanic stone</div></div>
+      <div class="mohs-row"><div class="mohs-num">6</div><div class="mohs-mineral">Orthoclase<em>steel file scratches it</em></div><div class="mohs-stones">Basalt, andesite, granite</div></div>
+      <div class="mohs-row"><div class="mohs-num">7</div><div class="mohs-mineral">Quartz<em>scratches steel</em></div><div class="mohs-stones">Diorite, quartzite, hard granite</div></div>
+      <div class="mohs-row"><div class="mohs-num">8</div><div class="mohs-mineral">Topaz<em>scratches quartz</em></div><div class="mohs-stones">Industrial cutting only</div></div>
+      <div class="mohs-row"><div class="mohs-num">9</div><div class="mohs-mineral">Corundum<em>sapphire, ruby</em></div><div class="mohs-stones">Gemstones, abrasives</div></div>
+      <div class="mohs-row"><div class="mohs-num">10</div><div class="mohs-mineral">Diamond<em>scratches everything</em></div><div class="mohs-stones">Modern cutting heads</div></div>
+    </div>
+
+    <p>The atlas's most demanding sites work in stone above Mohs 6. The Aswan obelisks, the Ramesseum colossi, the Cusco lower courses, the Yangshan stele: all granite, andesite, or diorite. Once you know the hardness, the achievement gets harder to wave away as "just primitive labor scaled up." Time alone does not get a copper chisel through granite. Something else was happening, and the honest position is that we are still working out what.</p>
+  </section>
+</div>
+
+<!-- ============ §05 HEAVIEST STONES ============ -->
+<div class="container">
+  <section id="sec-weight">
+    <h2><span class="sec-num">§ 05 · Weight</span>The heaviest stones ever moved.</h2>
+    <p>This list ranks stones that were quarried, transported, and set in place. Stones that were started but never moved (the Yangshan stele in China at ~16,000 tons, the Stone of the South at Baalbek at ~1,650 tons) are noted as a separate category at the bottom: the things they almost did. The list is calibrated to what historians and engineers can defend, which means several long-circulating numbers (the Trilithon at "1,000 tons each," etc.) appear here at their more conservative estimates.</p>
+
+    <div class="heavy-list">
+      <div class="heavy-row">
+        <div class="heavy-rank">№ 01</div>
+        <div class="heavy-main">
+          <h4><a href="../index.html?site=Ramesseum">Ramesseum Colossus (Egypt)</a></h4>
+          <div class="heavy-desc">Statue of Ramses II at his mortuary temple in Thebes. Carved from a single block of granite and transported from Aswan, roughly 270 km upstream. Now broken; the head and torso fragment alone weighs hundreds of tons.</div>
+        </div>
+        <div class="heavy-weight">~1,000<em>tons</em></div>
+      </div>
+
+      <div class="heavy-row">
+        <div class="heavy-rank">№ 02</div>
+        <div class="heavy-main">
+          <h4><a href="../index.html?site=Baalbek">Baalbek Trilithon (Lebanon)</a></h4>
+          <div class="heavy-desc">Three monolithic blocks in the foundation of the Roman Jupiter temple, set six courses up at roughly 22 meters above grade. Each block measures approximately 19 × 4 × 4 meters.</div>
+        </div>
+        <div class="heavy-weight">~800<em>tons each</em></div>
+      </div>
+
+      <div class="heavy-row">
+        <div class="heavy-rank">№ 03</div>
+        <div class="heavy-main">
+          <h4><a href="../index.html?site=Colossi%20of%20Memnon">Colossi of Memnon (Egypt)</a></h4>
+          <div class="heavy-desc">Two seated statues of Amenhotep III, quarried near Cairo and transported ~675 km south to Thebes against the Nile current. Each stands roughly 18 meters tall.</div>
+        </div>
+        <div class="heavy-weight">~720<em>tons each</em></div>
+      </div>
+
+      <div class="heavy-row">
+        <div class="heavy-rank">№ 04</div>
+        <div class="heavy-main">
+          <h4>Western Stone, Jerusalem</h4>
+          <div class="heavy-desc">A foundation block in the Western Wall of the Temple Mount. Approximately 13.6 × 3 × 3.3 meters. Set in place during Herod the Great's expansion, ~20 BCE.</div>
+        </div>
+        <div class="heavy-weight">~570<em>tons</em></div>
+      </div>
+
+      <div class="heavy-row">
+        <div class="heavy-rank">№ 05</div>
+        <div class="heavy-main">
+          <h4><a href="../index.html?site=Ollantaytambo">Ollantaytambo Wall of Six Monoliths (Peru)</a></h4>
+          <div class="heavy-desc">Six tightly-jointed rose-granite slabs forming a single wall on top of the temple mountain, quarried from a mountain across the Urubamba Valley.</div>
+        </div>
+        <div class="heavy-weight">50–80<em>tons each</em></div>
+      </div>
+
+      <div class="heavy-row">
+        <div class="heavy-rank">№ 06</div>
+        <div class="heavy-main">
+          <h4><a href="../index.html?site=Sacsayhuam%C3%A1n">Sacsayhuamán largest block (Peru)</a></h4>
+          <div class="heavy-desc">The biggest stone in the zigzag lower wall. Polygonal, granite, fitted to perhaps a dozen neighbors. The wall sits above Cusco at 3,700 meters.</div>
+        </div>
+        <div class="heavy-weight">~125<em>tons</em></div>
+      </div>
+
+      <div class="heavy-row">
+        <div class="heavy-rank">№ 07</div>
+        <div class="heavy-main">
+          <h4><a href="../index.html?site=Osaka%20Castle">Osaka Castle Octopus Stone (Japan)</a></h4>
+          <div class="heavy-desc">The <em>Takoishi</em>, the largest single block in the castle's main wall, quarried on Shōdoshima island and floated 60 km across the Inland Sea in the early 1600s.</div>
+        </div>
+        <div class="heavy-weight">~130<em>tons</em></div>
+      </div>
+
+      <div class="heavy-row">
+        <div class="heavy-rank">№ 08</div>
+        <div class="heavy-main">
+          <h4><a href="../index.html?site=Mycenae">Lion Gate Lintel (Mycenae)</a></h4>
+          <div class="heavy-desc">The horizontal slab spanning the main entrance to the citadel at Mycenae, surmounted by the iconic lion relief. Limestone, ~Late Bronze Age (~1250 BCE).</div>
+        </div>
+        <div class="heavy-weight">~20<em>tons</em></div>
+      </div>
+
+      <div class="heavy-row">
+        <div class="heavy-rank">№ 09</div>
+        <div class="heavy-main">
+          <h4><a href="../index.html?site=Moai%20of%20Easter%20Island%20(Rapa%20Nui)">Paro (Easter Island)</a></h4>
+          <div class="heavy-desc">The largest moai ever raised on an ahu platform, on the northeast coast of Rapa Nui. Quarried at Rano Raraku and transported by means still actively debated.</div>
+        </div>
+        <div class="heavy-weight">~82<em>tons</em></div>
+      </div>
+
+      <div class="heavy-row">
+        <div class="heavy-rank">№ 10</div>
+        <div class="heavy-main">
+          <h4><a href="../index.html?site=Stonehenge">Stonehenge Sarsen Stones (England)</a></h4>
+          <div class="heavy-desc">The outer ring's vertical sarsens, with their lintels still spanning two adjacent uprights. Quarried at West Woods, transported ~25 km south.</div>
+        </div>
+        <div class="heavy-weight">25–40<em>tons each</em></div>
+      </div>
+    </div>
+
+    <h3>What they almost did</h3>
+    <p>Two stones outrank everything above, but they never moved. The <strong>Stone of the South</strong> at Baalbek (Hajar al-Hibla, "the Stone of the Pregnant Woman") sits in the quarry still attached at one corner, weighing roughly 1,650 tons. A third Baalbek block found buried beneath it in 2014 may be even heavier, perhaps 1,800–2,000 tons. The <strong>Yangshan Stele</strong> in China was cut from solid bedrock as a single piece intended for the tomb of the Yongle Emperor (1402–1424 CE). It would have weighed roughly 16,250 tons. It was abandoned in place after the engineers concluded it could not be moved. Both are reminders that the upper limit of what ancient quarrymen attempted was much higher than the upper limit of what they actually transported.</p>
+
+    <h3>What modern equipment can do</h3>
+    <p>The Baalbek trilithon (each block ~800 tons, placed at 22 meters above grade) sits right at the upper edge of what today's heaviest construction equipment can lift, and beyond what most projects ever attempt. The reference table below also makes the historical point: <strong>every machine in the modern column was introduced within the last 20 years.</strong> Before 2007, no crane in production could lift a Baalbek trilithon block. Before 2010, no production crawler could match what the Romans (or whoever built the foundation) did in stone at 22 meters.</p>
+
+    <div class="equip-list">
+      <div class="equip-row">
+        <div class="equip-name"><span class="equip-year">Introduced 2010</span>Liebherr LR 13000 (crawler crane)</div>
+        <div class="equip-cap">~3,000 t</div>
+        <div class="equip-note">The largest production crawler crane in the world today. Used in petrochemical and nuclear construction.</div>
+      </div>
+      <div class="equip-row">
+        <div class="equip-name"><span class="equip-year">Introduced 2007</span>Liebherr LTM 11200-9.1 (mobile)</div>
+        <div class="equip-cap">~1,200 t</div>
+        <div class="equip-note">The largest mobile (rubber-tired) crane in production. Highest practical load on a road-moveable platform.</div>
+      </div>
+      <div class="equip-row">
+        <div class="equip-name"><span class="equip-year">Introduced 2018</span>Mammoet PTC 200-DS heavy-lift</div>
+        <div class="equip-cap">~5,000 t</div>
+        <div class="equip-note">A purpose-built ring crane requiring weeks of assembly. Used only on major industrial projects.</div>
+      </div>
+      <div class="equip-row equip-highlight">
+        <div class="equip-name">Baalbek Trilithon (each block)</div>
+        <div class="equip-cap">~800 t</div>
+        <div class="equip-note">Placed at 22m height on a finished masonry foundation. Within the LR 13000's capacity. Pre-Roman date contested.</div>
+      </div>
+      <div class="equip-row equip-highlight">
+        <div class="equip-name">Stone of the South (Baalbek quarry)</div>
+        <div class="equip-cap">~1,650 t</div>
+        <div class="equip-note">Half-cut from the bedrock. Within the PTC 200-DS's specialized ring-crane capacity if it could be rigged, which it cannot be at the quarry site.</div>
+      </div>
+      <div class="equip-row equip-highlight">
+        <div class="equip-name">Yangshan Stele (China quarry)</div>
+        <div class="equip-cap">~16,250 t</div>
+        <div class="equip-note">Roughly five times heavier than the largest crane in existence. Abandoned in place by its Ming-era engineers for the same reason.</div>
+      </div>
+    </div>
+
+    <h3>The precision question</h3>
+    <p>The weight, on its own, is a problem. The weight <em>plus</em> the precision is the deeper one. Many of the largest blocks in the catalog were not just moved : : they were finished to fit their neighbors with tolerances tighter than modern industrial masonry achieves.</p>
+    <p>Three observations about the work pattern recur across the most demanding sites, and they sharpen the puzzle:</p>
+    <p><strong>The paper test.</strong> At Sacsayhuamán, at Ollantaytambo, at the Twelve-Angled Stone in downtown Cusco, at Osaka Castle's main wall, at the Lower Tier of Karahan Tepe: a piece of paper, slid against the seam between two polygonal blocks, will not enter. Some sections refuse even a thinned razor blade. This is not figurative. It is the standard tourist demonstration. The stones meet each other directly, with no gap to plug.</p>
+    <p><strong>Transported rough, finished in place.</strong> The most demanding Andean walls were not pre-cut to a final shape at the quarry and then assembled. The evidence (asymmetric block geometries, locally-customized joint geometry, in-situ tool marks on the contact faces) suggests the stones arrived rough, and the final shaping happened against the actual neighbors after delivery. Each face was cut to its specific partner, not to a generic plan. This is wildly more difficult than dry-stack assembly and changes what kind of process must be inferred.</p>
+    <p><strong>The same signature appears at Giza.</strong> The lower courses of <a class="inline" href="../index.html?site=Pyramid%20of%20Khafre">Khafre's pyramid</a> and the surviving granite casing on <a class="inline" href="../index.html?site=Pyramid%20of%20Menkaure">Menkaure's</a> are wrapped in rose granite quarried at the <a class="inline" href="../index.html?site=Unfinished%20Obelisk%20(Aswan)">Aswan quarry</a>, transported ~900 km down the Nile, and set against the pyramid core. The blocks have a characteristic <em>cushioned, pillow-shaped</em> outer face : : rounded, irregular, conspicuously not pre-cut to a uniform plan. The seams between them, however, are razor-tight, each one individually shaped to match its specific neighbor's curvature. The only way to produce that combination is to deliver rough blocks and finish the cushion face against the in-place neighbors. The same in-situ joinery method that produced the Cusco walls produced the granite casing at Giza, on a different continent, by a different culture, with no plausible mechanism of contact between them. The pattern is not regional. It is technological.</p>
+    <p><strong>Rose-granite specifically.</strong> Many of the Andean polygonal foundation blocks are <em>rose granite</em>, Mohs 6–7, harder than the steel chisels we know the Inca did not have. Sacsayhuamán's largest stones are quarried from Rumiqolqa, several kilometers away across a valley. They were transported, shaped to fit unique adjacent geometry on site, and finished to paper tolerance. With copper-bronze tools and stone hammers, according to the official account. The granite at Khafre and Menkaure is the same material, finished with the same method, by a culture that supposedly never met the one in the Andes.</p>
+  </section>
+</div>
+
+<div class="container">
+  <p class="pull">"Time alone does not get a copper chisel through granite. Something else was happening."</p>
+</div>
+
+<!-- ============ §06 POLYGONAL PATTERN ============ -->
+<div class="container">
+  <section id="sec-pattern">
+    <h2><span class="sec-num">§ 06 · The pattern that repeats</span>The wall as a Platonic form.</h2>
+    <p>Plato proposed that ideal forms exist independently of their specific cultural expressions : : a triangle remains a triangle whether drawn in Athens or Cusco. The premise is hard to apply to most of human-made history, where local style and material dominate. It is unusually easy to apply to the megalithic wall. There is something like an <em>ideal</em> polygonal wall, an abstract form characterized by many-sided blocks meeting at custom-cut seams, mortarless, at scale. The expression of that form varies by culture, era, and material. The form itself recurs. Four cultures, on four continents, with no plausible mechanism of contact, built variants of the same wall.</p>
+
+    <div class="wall-strip">
+      <figure class="wall">
+        <svg viewBox="0 0 240 160" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+          <!-- EGYPT — Khafre cushion granite casing: 5 horizontal courses with cushion bulges -->
+          <!-- Course 1 -->
+          <path d="M4 10 L4 38 M58 10 L58 38 M115 10 L115 38 M170 10 L170 38 M232 10 L232 38"/>
+          <path d="M4 10 Q31 6 58 10 Q86 6 115 10 Q142 6 170 10 Q201 6 232 10"/>
+          <path d="M4 38 Q31 42 58 38 Q86 42 115 38 Q142 42 170 38 Q201 42 232 38"/>
+          <!-- Course 2 staggered -->
+          <path d="M4 38 L4 70 M48 38 L48 70 M105 38 L105 70 M158 38 L158 70 M210 38 L210 70 M232 38 L232 70"/>
+          <path d="M4 70 Q26 74 48 70 Q76 74 105 70 Q131 74 158 70 Q184 74 210 70 Q221 72 232 70"/>
+          <!-- Course 3 -->
+          <path d="M4 70 L4 100 M66 70 L66 100 M125 70 L125 100 M188 70 L188 100 M232 70 L232 100"/>
+          <path d="M4 100 Q35 104 66 100 Q95 104 125 100 Q156 104 188 100 Q210 103 232 100"/>
+          <!-- Course 4 -->
+          <path d="M4 100 L4 132 M55 100 L55 132 M115 100 L115 132 M180 100 L180 132 M232 100 L232 132"/>
+          <path d="M4 132 Q29 137 55 132 Q85 137 115 132 Q147 137 180 132 Q206 136 232 132"/>
+          <!-- Course 5 (bottom) -->
+          <path d="M4 132 L4 158 M62 132 L62 158 M128 132 L128 158 M188 132 L188 158 M232 132 L232 158"/>
+        </svg>
+        <figcaption>
+          <span class="wall-region">Egypt</span>
+          <span class="wall-site">Khafre · ~2,570 BCE</span>
+          <span class="wall-note">Cushion-faced rose-granite casing, quarried at Aswan, finished against neighbors in place. Horizontal courses, staggered seams.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="wall">
+        <svg viewBox="0 0 240 160" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+          <!-- PERU — Sacsayhuamán polygonal: many-sided irregular blocks, no two alike -->
+          <path d="M4 10 L80 6 L160 12 L232 6"/>
+          <path d="M4 10 L4 158 L232 158 L232 6"/>
+          <!-- Internal polygonal divisions -->
+          <path d="M4 45 L42 38 L80 6"/>
+          <path d="M42 38 L65 52 L92 32 L160 12"/>
+          <path d="M92 32 L122 50 L165 38 L195 24 L232 6"/>
+          <path d="M165 38 L188 70 L232 70"/>
+          <path d="M195 24 L232 35"/>
+          <!-- Middle row -->
+          <path d="M4 45 L35 80 L62 88 L65 52"/>
+          <path d="M62 88 L98 78 L122 50"/>
+          <path d="M98 78 L135 95 L172 80 L188 70"/>
+          <path d="M172 80 L210 95 L232 88"/>
+          <!-- Lower middle -->
+          <path d="M4 105 L35 80"/>
+          <path d="M4 105 L42 122 L65 110 L62 88"/>
+          <path d="M65 110 L102 128 L130 115 L98 78"/>
+          <path d="M130 115 L165 130 L195 118 L172 80"/>
+          <path d="M195 118 L232 122 L232 88"/>
+          <!-- Bottom row -->
+          <path d="M4 105 L4 158"/>
+          <path d="M42 122 L48 158"/>
+          <path d="M102 128 L108 158"/>
+          <path d="M165 130 L170 158"/>
+          <path d="M232 122 L232 158"/>
+        </svg>
+        <figcaption>
+          <span class="wall-region">South America</span>
+          <span class="wall-site">Sacsayhuamán · pre-Inca?</span>
+          <span class="wall-note">Many-sided polygons, each cut to interlock with five or more neighbors. No two blocks alike. The form at its purest expression.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="wall">
+        <svg viewBox="0 0 240 160" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+          <!-- INDIA — Hampi / Brihadeeswarar: regular ashlar above, polygonal at base -->
+          <!-- Stepped top suggesting temple gopuram -->
+          <path d="M30 14 L60 8 L100 14 L140 8 L180 14 L210 8"/>
+          <path d="M4 22 L30 14 M210 8 L232 22"/>
+          <!-- Course 1 regular ashlar -->
+          <path d="M4 22 L4 50 L232 50 L232 22"/>
+          <path d="M52 22 L52 50 M112 22 L112 50 M175 22 L175 50"/>
+          <!-- Course 2 staggered -->
+          <path d="M4 50 L4 78 L232 78 L232 50"/>
+          <path d="M30 50 L30 78 M85 50 L85 78 M148 50 L148 78 M205 50 L205 78"/>
+          <!-- Course 3 -->
+          <path d="M4 78 L4 105 L232 105 L232 78"/>
+          <path d="M62 78 L62 105 M125 78 L125 105 M188 78 L188 105"/>
+          <!-- Course 4 - transitioning to slightly larger/more polygonal -->
+          <path d="M4 105 L4 135 L232 135 L232 105"/>
+          <path d="M70 105 L72 135 M148 105 L150 135"/>
+          <!-- Course 5 - foundation, hint of polygonal with angled joints -->
+          <path d="M4 135 L4 158 M232 135 L232 158 M4 158 L232 158"/>
+          <path d="M55 135 L72 158 M115 138 L100 135 L100 158 M115 138 L160 138 L155 158 M160 138 L195 158"/>
+        </svg>
+        <figcaption>
+          <span class="wall-region">India</span>
+          <span class="wall-site">Hampi / Brihadeeswarar</span>
+          <span class="wall-note">Regular ashlar courses above, with the lower foundation work shifting to the same polygonal joinery as Cusco. The pattern reads as a layered timeline.</span>
+        </figcaption>
+      </figure>
+
+      <figure class="wall">
+        <svg viewBox="0 0 240 160" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+          <!-- JAPAN — Osaka Castle: large polygonal blocks, slight wall batter -->
+          <!-- Slightly battered outer profile (Japanese castle walls curve inward) -->
+          <path d="M14 8 Q11 80 4 158"/>
+          <path d="M222 8 Q231 80 232 158"/>
+          <path d="M14 8 L222 8"/>
+          <path d="M4 158 L232 158"/>
+          <!-- Top course: 4 polygonal blocks -->
+          <path d="M14 8 L70 12 L65 48 L20 52 Z"/>
+          <path d="M70 12 L135 8 L142 45 L100 52 L65 48 Z"/>
+          <path d="M135 8 L195 12 L200 50 L142 45 Z"/>
+          <path d="M195 12 L222 8 L225 50 L200 50 Z"/>
+          <!-- Middle course: 3 large blocks -->
+          <path d="M20 52 L65 48 L100 52 L92 100 L40 105 L18 100 Z"/>
+          <path d="M100 52 L142 45 L200 50 L195 102 L130 108 L92 100 Z"/>
+          <path d="M200 50 L225 50 L228 102 L195 102 Z"/>
+          <!-- Bottom course: large foundation blocks -->
+          <path d="M18 100 L40 105 L92 100 L88 158 L8 158 L9 102 Z"/>
+          <path d="M92 100 L130 108 L195 102 L200 158 L88 158 Z"/>
+          <path d="M195 102 L228 102 L232 158 L200 158 Z"/>
+        </svg>
+        <figcaption>
+          <span class="wall-region">Japan</span>
+          <span class="wall-site">Osaka Castle · early 1600s on older foundations</span>
+          <span class="wall-note">Larger blocks, fewer per area, with the slight inward batter characteristic of Japanese castle walls. Polygonal interlock, paper-tight seams.</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p style="margin-top:32px;font-style:italic;color:var(--text-faint);text-align:center;font-size:14px">Four cultures. Four materials. The same form. The dialects vary; the language does not.</p>
+
+    <h3>Three case studies in detail</h3>
+    <p>One of the strongest reasons to read the atlas as a comparative instrument, not a list of curiosities, is that the same engineering signature appears in places that should have no contact with one another. Polygonal mortarless masonry, with stones cut to interlock against multiple neighbors at razor-tight seams, shows up in highland Peru, in Japan, in Bronze Age Anatolia, on Easter Island, and in fragments along the Mediterranean and the Black Sea. The cultures are unrelated. The technique is identical.</p>
+
+    <div class="compare-strip">
+      <div class="compare-card">
+        <div class="compare-where">Andes</div>
+        <div class="compare-title">Sacsayhuamán</div>
+        <div class="compare-when">Cusco, Peru · uncertain (pre-Inca core?)</div>
+        <div class="compare-body">Zigzag walls of polygonal granite blocks, the largest exceeding 100 tons, fitted at angles that vary across every face. The Inca did not build the lower courses; they built upward from them in noticeably simpler ashlar.</div>
+      </div>
+      <div class="compare-card">
+        <div class="compare-where">Japan</div>
+        <div class="compare-title">Osaka Castle</div>
+        <div class="compare-when">early 1600s, on older foundations</div>
+        <div class="compare-body">Polygonal granite blocks up to 130 tons, fitted to the same multi-sided interlock as the Andean walls. Official history dates the castle to Hideyoshi's reconstruction; the engineering pattern is much older.</div>
+      </div>
+      <div class="compare-card">
+        <div class="compare-where">Anatolia</div>
+        <div class="compare-title">Hattusa</div>
+        <div class="compare-when">Hittite capital · ~1600 BCE</div>
+        <div class="compare-body">Cyclopean polygonal blocks at the Lion Gate and Yerkapı, fitted without mortar at a moment when the Hittites should not have had the metallurgy to cut them. The technique predates the empire that occupied the site.</div>
+      </div>
+    </div>
+
+    <p>The conventional explanation is convergent evolution: independent cultures solving the same problem (mortarless durability under seismic stress) the same way. The skeptical reply is that convergent solutions usually carry visible regional fingerprints (different tool marks, different finish patterns, different geometric preferences) and these don't. Stones at Sacsayhuamán and stones at Osaka Castle, photographed without scale or caption, are easy to confuse.</p>
+    <p>The atlas presents the comparison and lets readers form their own view. The point of cataloging the same pattern across continents is not to claim a unified origin, only to refuse the easy story that each site is sui generis.</p>
+  </section>
+</div>
+
+<!-- ============ §07 PACHA — Gamarra / Foerster framework ============ -->
+<div class="container">
+  <section id="sec-pacha">
+    <h2><span class="sec-num">§ 07 · A frame from the Andes</span>Three ages of stone : : the Gamarra-Foerster classification.</h2>
+    <p>Peruvian researcher <strong>Alfredo Gamarra</strong> (1924–2010), working from a lifetime of fieldwork at the Andean megalithic sites, proposed that what is universally called "Inca architecture" is in fact three distinct construction technologies, layered on top of each other, separated by long gaps in time. The classification has been carried into the English-language literature by <strong>Brien Foerster</strong>, whose Hidden Inca Tours have walked it through Cusco, Saqsaywaman, Ollantaytambo, and Machu Picchu for two decades. This is one of the strongest reading instruments the atlas points to. Once you have it loaded, the foundations of half the catalog disclose themselves.</p>
+    <p>Gamarra named the three ages after the Quechua term <em>Pacha</em>, which means "world" or "epoch." Each names a different position relative to "the heaven":</p>
+
+    <!-- STRATIGRAPHY CROSS-SECTION DIAGRAM -->
+    <div class="strata-wrap">
+      <svg class="strata" viewBox="0 0 720 360" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+        <!-- Ground line marker at top -->
+        <path d="M0 8 L720 8" stroke-dasharray="3 4" opacity="0.4"/>
+        <text x="12" y="22" font-family="JetBrains Mono, monospace" font-size="9" fill="currentColor" stroke="none" opacity="0.7">GROUND LEVEL · TODAY</text>
+
+        <!-- ============ LAYER 4: SPANISH / MODERN (top, crude rubble) ============ -->
+        <text x="640" y="35" font-family="JetBrains Mono, monospace" font-size="9" fill="currentColor" stroke="none" letter-spacing="0.15em" opacity="0.85">SPANISH</text>
+        <path d="M0 28 L720 28"/>
+        <!-- crude irregular rubble blocks -->
+        <path d="M0 60 L25 50 L52 62 L80 48 L110 56 L138 46 L165 58 L195 50 L220 60 L248 48 L275 56 L300 50 L328 58 L355 48 L380 56 L408 50 L432 60 L460 48 L485 56 L510 48 L538 60 L562 50 L590 56 L616 48 L640 56 L668 50 L690 56 L720 50"/>
+        <!-- vertical seams in Spanish layer -->
+        <path d="M25 50 L25 28 M80 48 L80 28 M138 46 L138 28 M195 50 L195 28 M248 48 L248 28 M300 50 L300 28 M355 48 L355 28 M408 50 L408 28 M460 48 L460 28 M510 48 L510 28 M562 50 L562 28 M616 48 L616 28 M668 50 L668 28"/>
+        <!-- crack marks (fracture lines from earthquake) -->
+        <path d="M52 62 L52 28 M110 56 L106 28 M220 60 L218 28 M380 56 L376 28 M538 60 L536 28" stroke-dasharray="3 2" opacity="0.6"/>
+
+        <!-- ============ LAYER 3: UKUN PACHA / INCA (regular ashlar) ============ -->
+        <text x="600" y="80" font-family="JetBrains Mono, monospace" font-size="9" fill="currentColor" stroke="none" letter-spacing="0.15em" opacity="0.85">UKUN PACHA</text>
+        <path d="M0 70 L720 70" stroke-width="1.3"/>
+        <!-- horizontal courses -->
+        <path d="M0 100 L720 100"/>
+        <path d="M0 132 L720 132"/>
+        <path d="M0 164 L720 164" stroke-width="1.3"/>
+        <!-- vertical seams: regular staggered ashlar -->
+        <path d="M60 70 L60 100 M125 70 L125 100 M190 70 L190 100 M255 70 L255 100 M320 70 L320 100 M385 70 L385 100 M450 70 L450 100 M515 70 L515 100 M580 70 L580 100 M650 70 L650 100"/>
+        <path d="M28 100 L28 132 M92 100 L92 132 M158 100 L158 132 M222 100 L222 132 M285 100 L285 132 M350 100 L350 132 M412 100 L412 132 M478 100 L478 132 M540 100 L540 132 M608 100 L608 132 M680 100 L680 132"/>
+        <path d="M55 132 L55 164 M120 132 L120 164 M185 132 L185 164 M250 132 L250 164 M315 132 L315 164 M380 132 L380 164 M445 132 L445 164 M510 132 L510 164 M575 132 L575 164 M645 132 L645 164"/>
+        <!-- light cracks (some Inca cracking) -->
+        <path d="M125 70 L125 164 M385 70 L385 164" stroke-dasharray="2 3" opacity="0.45"/>
+
+        <!-- ============ LAYER 2: URAN PACHA (massive polygonal) ============ -->
+        <text x="585" y="180" font-family="JetBrains Mono, monospace" font-size="9" fill="currentColor" stroke="none" letter-spacing="0.15em" opacity="0.85">URAN PACHA</text>
+        <!-- polygonal blocks: many-sided, irregular -->
+        <path d="M0 200 L70 192 L120 210 L185 196 L250 215 L320 200 L395 220 L460 205 L530 218 L598 200 L665 215 L720 205"/>
+        <path d="M0 250 L60 245 L130 260 L200 245 L265 265 L335 248 L408 270 L478 252 L545 270 L610 250 L678 268 L720 255"/>
+        <path d="M0 164 L0 270" stroke-width="1.3"/>
+        <path d="M720 164 L720 270" stroke-width="1.3"/>
+        <!-- inner polygonal seams (custom-fitted) -->
+        <path d="M70 192 L60 245 M120 210 L130 260 M185 196 L200 245 M250 215 L265 265 M320 200 L335 248 M395 220 L408 270 M460 205 L478 252 M530 218 L545 270 M598 200 L610 250 M665 215 L678 268"/>
+        <path d="M60 245 L0 270 M130 260 L70 290 M200 245 L155 285 M265 265 L215 295 M335 248 L290 290 M408 270 L370 305 M478 252 L425 295 M545 270 L500 305 M610 250 L570 295 M678 268 L640 300 M720 270 L700 295"/>
+        <path d="M0 270 L720 270" stroke-width="1.3"/>
+
+        <!-- ============ LAYER 1 (DEEPEST): HANAN PACHA (molded bedrock) ============ -->
+        <text x="585" y="295" font-family="JetBrains Mono, monospace" font-size="9" fill="currentColor" stroke="none" letter-spacing="0.18em" opacity="0.9">HANAN PACHA</text>
+        <!-- organic flowing curves: molded bedrock -->
+        <path d="M0 310 Q50 295 100 310 Q160 322 220 308 Q280 295 340 312 Q400 325 460 308 Q520 295 580 310 Q640 322 720 308"/>
+        <path d="M0 340 Q60 332 120 342 Q190 350 260 338 Q330 330 400 342 Q470 352 540 340 Q610 332 720 342"/>
+        <!-- carved feature suggestions: zigzag canal, basin, organic geometries -->
+        <path d="M80 310 Q90 320 100 315 Q110 312 115 318" opacity="0.6"/>
+        <path d="M280 305 Q295 312 310 308 Q325 305 335 312" opacity="0.6"/>
+        <path d="M450 310 L460 318 L470 312 L480 320 L490 315 L500 322" opacity="0.6"/>
+        <path d="M620 310 Q635 320 650 315 Q665 312 678 318" opacity="0.6"/>
+        <!-- deeper reference line -->
+        <path d="M0 360 L720 360" stroke-dasharray="3 4" opacity="0.4"/>
+        <text x="12" y="356" font-family="JetBrains Mono, monospace" font-size="9" fill="currentColor" stroke="none" opacity="0.7">BEDROCK</text>
+      </svg>
+      <p class="strata-caption">A cross-section of any major Sacred Valley site. The Spanish layer fragments first under seismic load (dashed cracks). The Inca ashlar cracks but holds. The Uran Pacha polygonal courses and the Hanan Pacha molded bedrock have not been displaced in five hundred years of recorded earthquakes. <em>The deeper you go, the more advanced the technology.</em></p>
+    </div>
+
+    <div class="pacha-grid">
+      <div class="pacha-row pacha-age">
+        <div class="pacha-name">
+          <span class="pacha-era">Oldest · Pre-Inca</span>
+          Hanan Pacha
+          <em>"Land of the heaven above"</em>
+        </div>
+        <div class="pacha-body">
+          <strong>Bedrock that appears molded rather than cut.</strong> Single-stone formations carved into organic, flowing geometries: seats, basins, zigzag canals, serpentine reliefs. Surfaces show signs of vitrification, where stone has been brought to a glass-like finish by extreme heat. Foerster and others argue for some form of <em>geopolymer technology</em>, a softening or recasting of the stone in place. Look for: fingerprint-like grooves, "Dr. Seuss" surreal rock landscapes, caves opened directly into the bedrock.
+          <span class="pacha-where">Best seen at: lower Saqsaywaman, the molded outcrops at Q'enqo, the bedrock at Pisac and Ollantaytambo's quarry side.</span>
+        </div>
+      </div>
+
+      <div class="pacha-row pacha-age">
+        <div class="pacha-name">
+          <span class="pacha-era">Middle · Pre-Inca / early Inca</span>
+          Uran Pacha
+          <em>"Land of the heaven below"</em>
+        </div>
+        <div class="pacha-body">
+          <strong>Massive polygonal megalithic walls.</strong> Perfectly fitted irregular blocks, some over 100 tons, no mortar. The "impossible" precision joinery that refuses a razor blade between stones. Cushion-faced blocks, multi-angled fits, earthquake-proof construction. Almost always built around, over, or onto a Hanan Pacha foundation. Look for: paper-thin seams, blocks meeting six or more neighbors, slight pillow-curvature on the exposed faces.
+          <span class="pacha-where">Best seen at: the zigzag walls of Saqsaywaman, the six monoliths at Ollantaytambo, the Twelve-Angled Stone at Hatun Rumiyoq Cusco, the lower courses of Coricancha.</span>
+        </div>
+      </div>
+
+      <div class="pacha-row pacha-age">
+        <div class="pacha-name">
+          <span class="pacha-era">Recent · Inca era</span>
+          Ukun Pacha
+          <em>"Land of the heaven inside"</em>
+        </div>
+        <div class="pacha-body">
+          <strong>Smaller rectangular ashlar blocks.</strong> Good but not perfect fits. Mud or clay mortar appears at the joints. Trapezoidal doorways and niches. Agricultural terraces. Most of what tourists call "Inca architecture" is this layer. This is what the Inca actually built, and it is built on top of the older two styles wherever both occur. Look for: regular rectangular blocks, trapezoidal openings, mortared seams, weathering consistent with ~600 years.
+          <span class="pacha-where">Best seen at: most of Machu Picchu's residential structures, the agricultural terraces across the Sacred Valley, the upper courses at Saqsaywaman and Coricancha.</span>
+        </div>
+      </div>
+    </div>
+
+    <h3>The stratigraphy rule</h3>
+    <p>Foerster's key insight is structural, not interpretive: <strong>at every multi-period site in the Andes, the three layers always stack in the same order.</strong> Hanan Pacha at the bottom. Uran Pacha built on top of or around it. Ukun Pacha (Inca) on top of both. Spanish colonial work is the crudest layer on top of everything. The deeper you go, the more advanced the technology gets.</p>
+    <p>The earthquakes that periodically level Cusco provide the falsifiable test. When the Andes shake, the Spanish layer collapses. The Inca ashlar cracks. The Uran Pacha polygonal foundations and the Hanan Pacha bedrock remain untouched. This is not theoretical. It is what visitors have photographed after every major event for five centuries. The technology gets <em>better</em> as it gets older. That single observation is what makes the Gamarra-Foerster frame difficult to dismiss : : it provides a test that the conventional "all Inca" narrative cannot account for.</p>
+
+    <h3>How to use it</h3>
+    <p>The diagnostic move is to walk Saqsaywaman, Ollantaytambo, or any major Sacred Valley site with the three-ages frame loaded. The shifts in stone size, finish, geometry, and weathering between layers will become obvious once you know to look. Reading the entire site as a single Inca construction misses what the Inca themselves seem to have understood: they were building Ukun Pacha on top of an existing Uran Pacha and Hanan Pacha that they had inherited and did not have the tools to replicate.</p>
+
+    <p style="margin-top:32px;color:var(--text-faint);font-size:14px;font-style:italic">A note on terminology. The classical cosmological Pacha — Hanan Pacha as the upper world of sky and condor, Kay Pacha as the world of the living and puma, Uku Pacha as the underworld of ancestors and serpent — is a separate framework, used in living Andean spiritual practice. The two systems share vocabulary but classify different things: one organizes cosmos, the other organizes stone. Both are useful in the field. The deeper treatment of each lives in its own Library entry. This is the orientation.</p>
+  </section>
+</div>
+
+<!-- ============ §08 SACRED GEOMETRY ============ -->
+<div class="container">
+  <section id="sec-geometry">
+    <h2><span class="sec-num">§ 08 · Sacred geometry</span>The Great Pyramid is math.</h2>
+    <p>The final dimension of megalithic precision is the one most often dismissed and the hardest to dismiss after sustained looking. The most demanding sites are not arbitrary stone. They encode geometric and astronomical relationships that show up too consistently to ignore : : ratios that recur, measurements that match Earth's own dimensions, and alignments that work as instruments for tracking solar, lunar, and stellar cycles.</p>
+    <p>The medieval Quadrivium named the four classical sciences of pattern: <strong>arithmetic, geometry, music, and astronomy</strong>. Pythagoras taught that all four were aspects of the same underlying order. The Quadrivium is not a fringe frame. It was the standard curriculum of the European university from Bede through Roger Bacon, and a version of it appears in every culture that built monumentally in stone. Reading the great sites through this lens is closer to reading them as they were designed than the modern habit of treating them as decorative.</p>
+
+    <h3>The Great Pyramid as case study</h3>
+    <p>The Great Pyramid at Giza is a single object that contains, at minimum, the following relationships, all encoded in its dimensions:</p>
+
+    <div class="geom-grid">
+      <div class="geom">
+        <svg class="geom-icon" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" aria-hidden="true">
+          <!-- Square = pyramid base / footprint -->
+          <rect x="10" y="10" width="60" height="60"/>
+          <!-- Inscribed circle of equal perimeter — the classical squaring-the-circle relationship -->
+          <circle cx="40" cy="40" r="30"/>
+          <!-- Vertical axis (pyramid height) -->
+          <path d="M40 10 L40 70" stroke-dasharray="2 3" opacity="0.55"/>
+          <!-- Center mark -->
+          <circle cx="40" cy="40" r="1.4" fill="currentColor" stroke="none"/>
+        </svg>
+        <div class="geom-label">π (pi)</div>
+        <div class="geom-body">Half the base perimeter divided by the height equals π to within a fraction of a percent. The ratio 22/7, the classical approximation of π, falls out of the pyramid's geometry directly.</div>
+      </div>
+      <div class="geom">
+        <svg class="geom-icon" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" aria-hidden="true">
+          <!-- Golden rectangle (ratio 1:1.618 → roughly 64:40 here) -->
+          <rect x="8" y="20" width="64" height="40"/>
+          <!-- The phi-cut: cuts off a square (40×40), leaving a smaller golden rectangle (40 × 24) -->
+          <path d="M48 20 L48 60"/>
+          <!-- The inscribed square -->
+          <rect x="8" y="20" width="40" height="40" stroke-dasharray="1.5 2.5" opacity="0.55"/>
+          <!-- Phi spiral hint, a quarter-arc -->
+          <path d="M8 60 Q8 20 48 20" stroke-dasharray="2 2" opacity="0.6"/>
+        </svg>
+        <div class="geom-label">φ (phi, the golden ratio)</div>
+        <div class="geom-body">The ratio of the slant height to half the base equals φ (1.618...) to four decimal places. Whether or not the designers knew the constant by name, the relationship is mathematically present in the stone.</div>
+      </div>
+      <div class="geom">
+        <svg class="geom-icon" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" aria-hidden="true">
+          <!-- Earth circle -->
+          <circle cx="40" cy="42" r="28"/>
+          <!-- Equator -->
+          <path d="M12 42 L68 42" opacity="0.45"/>
+          <!-- Polar axis -->
+          <path d="M40 14 L40 70" opacity="0.45"/>
+          <!-- Latitude curves to suggest sphere -->
+          <ellipse cx="40" cy="42" rx="28" ry="10" opacity="0.35"/>
+          <!-- Pyramid silhouette at top (Giza scaled at 1:43,200) -->
+          <path d="M34 17 L40 7 L46 17 Z" fill="currentColor" stroke="none" opacity="0.85"/>
+          <path d="M34 17 L46 17"/>
+        </svg>
+        <div class="geom-label">Earth's dimensions</div>
+        <div class="geom-body">The pyramid's base perimeter, multiplied by 43,200, equals the equatorial circumference of the Earth. The height multiplied by 43,200 equals the polar radius. 43,200 is also the rate of precession in seconds-per-degree of arc.</div>
+      </div>
+      <div class="geom">
+        <svg class="geom-icon" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+          <!-- Pyramid base square (plan view) -->
+          <rect x="22" y="22" width="36" height="36"/>
+          <!-- Inner diagonals -->
+          <path d="M22 22 L58 58 M58 22 L22 58" opacity="0.35"/>
+          <!-- Cardinal arrows -->
+          <path d="M40 4 L40 18 M37 8 L40 4 L43 8"/>
+          <path d="M40 76 L40 62 M37 72 L40 76 L43 72"/>
+          <path d="M4 40 L18 40 M8 37 L4 40 L8 43"/>
+          <path d="M76 40 L62 40 M72 37 L76 40 L72 43"/>
+          <!-- N label -->
+          <text x="40" y="3" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="7" fill="currentColor" stroke="none">N</text>
+        </svg>
+        <div class="geom-label">Cardinal alignment</div>
+        <div class="geom-body">The four faces align to true north, south, east, and west with an error of less than 0.05 degrees. This is more accurate than the alignment of the modern Mexico City cathedral built five thousand years later with industrial surveying tools.</div>
+      </div>
+    </div>
+
+    <p>The hypothesis behind the official explanation is that these are coincidences, accumulated by trial and error over multiple iterations of pyramid design. The hypothesis behind the alternative reading is that they are not coincidences at all : : they are the design intent, executed by builders who understood the relationships even if they did not have our notation for them. The atlas does not adjudicate. It catalogs the work and lets readers do the reading.</p>
+
+    <h3>The pattern beyond Giza</h3>
+    <p>Similar mathematics is encoded at other top-tier sites in the catalog. Stonehenge functions as a solar and lunar calendar, with stones aligned to summer and winter solstice sunrise and to the major and minor lunar standstills. The Cusco temple precinct is laid out as a stylized puma whose dimensions track astronomical events. Angkor Wat encodes the precession of the equinoxes in the spacing of its bridge causeways and the layout of its galleries. Newgrange in Ireland (~3,200 BCE, older than Stonehenge and Giza both) admits a single beam of sunrise light into its inner chamber for seventeen minutes on the winter solstice, and no other day. The same geometric vocabulary appears at very different sites built by very different cultures over six thousand years.</p>
+
+    <h3>Thom's megalithic yard</h3>
+    <p>The most rigorous evidence for a shared geometric system comes from Scottish engineer <strong>Alexander Thom</strong> (1894–1985), who surveyed over 500 stone circles across Britain, Ireland, and France between 1957 and 1985. Working with the precision of a professional surveyor, Thom identified a unit of measurement that recurred across the sites at statistical significance no chance explanation could account for: <strong>2.72 feet</strong> (0.829 meters). He called it the <em>megalithic yard</em>.</p>
+    <p>Roughly a third of Thom's surveyed "circles" were not actually circles. They were precise constructions of Pythagorean triangles laid out in whole numbers of megalithic yards, with the key intersection points marked by stones. The Le Menec alignment at Carnac is built on two back-to-back 3-4-5 triangles. Castlerigg in Cumbria is laid out around a similar geometry. Stonehenge's Sarsen Circle has the same diameter as the Rollright Stones in Oxfordshire to within a few inches, despite being separated by 80 miles and centuries.</p>
+    <p>The deeper question Thom's work raises is this: how did unrelated communities, spread across thousands of square miles of pre-literate Britain over 2,000+ years of construction activity, share a standard unit of measurement to within a tolerance most modern carpenters would accept? Either the megalithic yard was the natural output of a body-based metrology that converged independently across many sites (which is plausible but doesn't easily account for the precision), or there was a coordinated transmission of a shared standard. Thom himself favored the latter. His successors have not refuted him.</p>
+
+    <p>That recurrence is the deeper puzzle. Either the relationships are inherent to the cosmos and any sufficiently careful civilization will rediscover them (which is the position the Pythagoreans, the Vedic mathematicians, and the Maya astronomers all explicitly took), or there is a transmission record we haven't yet pieced together. Reading the Quadrivium back into the atlas makes both possibilities testable. It also makes the work feel less like architecture and more like instrumentation : : <em>tools for thinking</em>, built in stone because stone is what lasts.</p>
+  </section>
+</div>
+
+<!-- ============ §09 HOW TO READ ============ -->
+<div class="container">
+  <section id="sec-instrument">
+    <h2><span class="sec-num">§ 09 · The atlas as instrument</span>How to read the map now.</h2>
+    <p>The atlas is calibrated to reward attention. Each site card lists its category (megalithic, pyramid, temple, rock-cut, underground, city, tomb, settlement, geoglyph). Once you have the lexicon above, the categories stop being neutral labels and start being a question: <em>which megalithic style does this site work in, what is the stone, how heavy are the blocks, and what frame is the most useful to read it through?</em></p>
+    <p>A few sharpened reading habits worth trying:</p>
+    <p><strong>Look at the lowest course first.</strong> At many Andean and Mediterranean sites the largest, oldest, most precisely-fitted stones are at the bottom. The work above gets simpler, looser, and easier to date. Anything in the lower courses that contradicts the official date is the more interesting story.</p>
+    <p><strong>Identify the stone by hardness, not appearance.</strong> A weathered surface looks soft. The unweathered interior is often Mohs 6 or higher. Look at the site's geology before you accept that "they just had a lot of time."</p>
+    <p><strong>Notice the joint geometry.</strong> Polygonal joints with three or more neighbors per stone are evidence of design, not chance. The neighbor count is one of the clearest signals that you are looking at a deliberate engineering choice, not a pile.</p>
+    <p><strong>Cross-reference the pattern.</strong> Use the search to find other sites where the same technique appears. The atlas is built to support this kind of comparative reading; it's the reason the catalog spans continents instead of focusing on one region.</p>
+
+    <p style="margin-top:32px;color:var(--champagne);font-style:italic">Return to the map with the vocabulary loaded. <a class="inline" href="../index.html">Open the Atlas →</a></p>
+  </section>
+</div>
+
+<!-- ============ SOURCES & FURTHER READING ============ -->
+<div class="container">
+  <section style="border-top:1px solid var(--border);padding:48px 0 32px">
+    <h2 style="font-size:30px;margin-bottom:24px"><span class="sec-num">Sources &amp; further reading</span>The texts behind this entry.</h2>
+    <div class="sources-grid">
+      <div class="source">
+        <div class="source-title">Megalith: Studies in Stone</div>
+        <div class="source-meta">Wooden Books anthology · 2018</div>
+        <div class="source-body">Compilation of eight monographs by Hugh Newman, Howard Crowhurst, Robin Heath, Evelyn Francis, Gordon Strong, Gerald Ponting, Chris Mansell, and Alexander Thom. Edited by John Martineau. The deepest single-volume reference on the British and European megalithic corpus.</div>
+      </div>
+      <div class="source">
+        <div class="source-title">Quadrivium: The Four Classical Liberal Arts</div>
+        <div class="source-meta">Wooden Books · 2010</div>
+        <div class="source-body">Lundy, Sutton, Ashton, Martineau, and others. The arithmetic, geometry, music, and astronomy frame that underwrites §08. Required reading for the sacred-geometry layer of the catalog.</div>
+      </div>
+      <div class="source">
+        <div class="source-title">Brien Foerster · Hidden Inca Tours</div>
+        <div class="source-meta">Hiddenincatours.com · ongoing</div>
+        <div class="source-body">Two decades of boots-on-the-ground tours and lectures applying Alfredo Gamarra's three-ages-of-stone classification to the Andean sites covered in §07. Foerster's video work is also indexed in the atlas's Creators directory.</div>
+      </div>
+      <div class="source">
+        <div class="source-title">Alfredo Gamarra (1924–2010)</div>
+        <div class="source-meta">Cuzco, Peru · published in Spanish</div>
+        <div class="source-body">The Peruvian researcher whose decades of fieldwork at Saqsaywaman, Ollantaytambo, and the Sacred Valley produced the Hanan / Uran / Ukun Pacha classification used throughout §07. Primary source for the stratigraphy rule.</div>
+      </div>
+      <div class="source">
+        <div class="source-title">Alexander Thom · Megalithic Sites in Britain</div>
+        <div class="source-meta">Oxford University Press · 1967</div>
+        <div class="source-body">The founding survey work behind the megalithic yard hypothesis in §08. Over 500 stone circles measured to professional engineering tolerance. Followed by Megalithic Lunar Observatories (1971) and Megalithic Remains in Britain and Brittany (1978).</div>
+      </div>
+      <div class="source">
+        <div class="source-title">Mark Lehner · The Complete Pyramids</div>
+        <div class="source-meta">Thames &amp; Hudson · 1997</div>
+        <div class="source-body">Standard reference for the Giza geometry, the gypsum-mortar-as-lubricant finding in §03, and the conventional engineering account against which §05 sets its weights.</div>
+      </div>
+    </div>
+    <p style="margin-top:28px;color:var(--text-faint);font-size:13px;font-style:italic;text-align:center">
+      This list is the working bibliography behind the entry. Each entry in the Library will carry its own list. Suggest additions through <a href="../contact.html" style="color:var(--champagne);text-decoration:none;border-bottom:1px dotted rgba(201,168,76,.5)">the Contact form</a>.
+    </p>
+  </section>
+</div>
+
+<!-- ============ RELATED / FOOTER NAV ============ -->
+<div class="container-wide">
+  <div class="related">
+    <div class="related-eyebrow">Other Library entries</div>
+    <div class="related-grid">
+      <a class="related-card" href="stone-circles.html">
+        <h4>Stone Circles</h4>
+        <p>Göbekli Tepe genesis, Thom's megalithic yard, Pythagorean geometry 2,000 years before Pythagoras, the acoustic and telluric anomalies measured at British rings.</p>
+      </a>
+      <a class="related-card soon" href="#">
+        <h4>The Cosmological Pacha</h4>
+        <p>The classical Andean spiritual frame: Hanan, Kay, and Uku Pacha as condor, puma, and serpent. The cosmos system that runs parallel to Gamarra's stone classification.</p>
+      </a>
+      <a class="related-card soon" href="#">
+        <h4>How Ancient People Moved Mountains</h4>
+        <p>The engineering case studies behind the heaviest stones ever transported: Baalbek, Aswan, Yangshan, Osaka.</p>
+      </a>
+      <a class="related-card soon" href="#">
+        <h4>The Convergence Question</h4>
+        <p>Independent invention, lost predecessor, or something else? The strongest cases for and against shared origin.</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="site">
+  <a href="../index.html">theancientatlas.com</a> · Hand-curated. Ad-free. Free to explore. · <a href="../contact.html">Contact</a>
+  <div class="copyright">© <span class="year">2026</span> The Ancient Atlas. All rights reserved.</div>
+</footer>
+<script>document.querySelectorAll('.year').forEach(el => { el.textContent = new Date().getFullYear(); });</script>
+
+<script>
+/* ============ MOHS SCROLL-TRIGGERED MOTION GRAPHIC ============ */
+(function() {
+  // Mohs data: rank (1-10), label, common stones, AND real-world scratch resistance (logarithmic scale).
+  // Real resistance values from Rosiwal grinding hardness tests, normalized so diamond = 100.
+  const mohsData = [
+    { n:1,  label:'Talc',       stones:'Soapstone',                              real:0.03 },
+    { n:2,  label:'Gypsum',     stones:'Alabaster, salt',                        real:1.25 },
+    { n:3,  label:'Calcite',    stones:'Limestone, marble',                      real:4.5 },
+    { n:4,  label:'Fluorite',   stones:'Weathered sandstones',                   real:5 },
+    { n:5,  label:'Apatite',    stones:'Tuff, volcanic stone',                   real:6.5 },
+    { n:6,  label:'Orthoclase', stones:'Basalt, andesite, granite',              real:37 },
+    { n:7,  label:'Quartz',     stones:'Diorite, quartzite, hard granite',       real:120 },
+    { n:8,  label:'Topaz',      stones:'Industrial cutting only',                real:175 },
+    { n:9,  label:'Corundum',   stones:'Sapphire, ruby',                         real:1000 },
+    { n:10, label:'Diamond',    stones:'Modern cutting heads',                   real:140000 }
+  ];
+
+  const anim = document.getElementById('mohsAnim');
+  if (!anim) return;
+  const rowsContainer = anim.querySelector('.mohs-anim-rows');
+  if (!rowsContainer) return;
+
+  // Calculate widths: rank bar is linear (n*10%), real bar uses log scale capped at 100%
+  const maxRealLog = Math.log10(140000); // log of diamond's real value
+  mohsData.forEach(d => {
+    const rankPct = d.n * 10;
+    const realPct = (Math.log10(d.real + 1) / maxRealLog) * 100;
+    const row = document.createElement('div');
+    row.className = 'ma-row';
+    row.innerHTML = `
+      <div class="ma-num">${d.n}</div>
+      <div class="ma-bars">
+        <div class="ma-bar ma-bar-rank"><div class="ma-bar-fill" style="--w:${rankPct}%"></div></div>
+        <div class="ma-bar ma-bar-real"><div class="ma-bar-fill" style="--w:${realPct}%"></div></div>
+        <div class="ma-label"><strong>${d.label}</strong> · ${d.stones}</div>
+      </div>
+    `;
+    rowsContainer.appendChild(row);
+  });
+
+  // After bars are in the DOM, set their width via the --w custom property when in view
+  // Need to actually apply width:var(--w) — but in our CSS we only do that when .in-view is set
+  // Update CSS rule via direct style application since CSS variable resolution timing matters
+  const applyWidths = () => {
+    anim.querySelectorAll('.ma-bar-fill').forEach(el => {
+      const w = el.style.getPropertyValue('--w');
+      el.style.width = w;
+    });
+  };
+
+  // IntersectionObserver to trigger the animation when the graphic enters the viewport
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          anim.classList.add('in-view');
+          // Stagger the bar fills slightly so it reads as a sequence, not a snap
+          const fills = anim.querySelectorAll('.ma-bar-fill');
+          fills.forEach((el, i) => {
+            setTimeout(() => {
+              const w = el.style.getPropertyValue('--w');
+              el.style.width = w;
+            }, i * 60);
+          });
+          obs.unobserve(anim);
+        }
+      });
+    }, { threshold: 0.2, rootMargin: '0px 0px -10% 0px' });
+    obs.observe(anim);
+  } else {
+    // Fallback: just show the bars at full width
+    applyWidths();
+  }
+})();
+</script>
+
+</body>
+</html>
+</content>
+</invoke>
