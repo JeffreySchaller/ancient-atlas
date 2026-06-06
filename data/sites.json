@@ -2732,5 +2732,20 @@
       "polygonal"
     ],
     "desc": "A polygonal stonework retaining wall ~85 meters long and up to 4 meters high along the Chusovaya River in the Middle Urals (Sverdlovsk Oblast). Built from granite blocks, some over 2 meters in length and weighing in excess of 10 tons, fitted along irregular but tight seams in the concave-convex joinery characteristic of mortarless megalithic construction at Cusco, Ahu Vinapu (Easter Island), the Osirion (Egypt), and Osaka Castle (Japan). Conventionally attributed to the 1720s-1730s Demidov iron-smelting factory. Three engineering signals resist that attribution: the wall is absent from the surviving 1735 factory plans, the surrounding geology contains no granite source within transport range, and a pin hole on one block matches the bronze-rod joinery technique documented at Baalbek and the Osirion. Independent investigators argue the structure was inherited rather than built by the Demidovs. Brought to wider attention by the 2014 documentary 'The Miracle of Chusovoe.'"
+  },
+  {
+    "n": "Spean Praptos (Kampong Kdei Bridge)",
+    "lat": 13.0989,
+    "lng": 104.8053,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "precision"
+    ],
+    "desc": "12th-century corbel-arch bridge spanning the Chikreng River in Cambodia's Siem Reap Province, roughly 65 km east of Angkor. 87 meters long, 30 feet wide, supported by 21 piers spaced to slow floodwater while restricting passage of large boats — embedded military chokepoint. Laterite structural core with a sandstone facade : the same composite logic modern engineers use with rebar in concrete, executed 900 years before reinforced concrete. Pier height engineered to 23 feet, three times the historical maximum flood level. A T-54 tank (36 tons) crossed during the Khmer Rouge era without structural failure. Featured on Cambodia's 5,000 riel banknote, still in daily local use. The carved human figures on the naga balustrades have had their faces deliberately removed : selectively, by intent, with bodies and poses left intact."
   }
 ]
