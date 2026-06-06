@@ -1,0 +1,2621 @@
+[
+  {
+    "n": "Derinkuyu Underground City",
+    "lat": 38.3746,
+    "lng": 34.734,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 1,
+    "desc": "Massive underground city extending 60m deep with 18 levels. Could shelter 20,000 people with livestock and food stores. Features ventilation shafts, wells, and a cruciform church on the lowest level."
+  },
+  {
+    "n": "Kaymakli Underground City",
+    "lat": 38.4573,
+    "lng": 34.7539,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 1,
+    "desc": "Connected to Derinkuyu by an 8km tunnel. Four of its eight floors are open to visitors, featuring stables, wineries, and storage rooms carved from soft volcanic tuff."
+  },
+  {
+    "n": "Özkonak Underground City",
+    "lat": 38.7208,
+    "lng": 34.765,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Discovered in 1972 when a farmer noticed water disappearing into the ground. Features communication holes between floors and rolling stone doors."
+  },
+  {
+    "n": "Mazi Underground City",
+    "lat": 38.4158,
+    "lng": 34.8397,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "One of the largest and oldest underground cities in Cappadocia. Less touristy, with an enormous capacity spanning multiple levels."
+  },
+  {
+    "n": "Tatlarin Underground City",
+    "lat": 38.4997,
+    "lng": 34.6939,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Features uniquely well-preserved latrines and kitchen areas. Contains frescoed church dating to the 7th century."
+  },
+  {
+    "n": "Gaziemir Underground City",
+    "lat": 38.265,
+    "lng": 34.5733,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Located south of the main cluster. Features an underground church and connects to surface-level rock-cut structures."
+  },
+  {
+    "n": "Saratli Underground City",
+    "lat": 38.555,
+    "lng": 34.805,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Also called Muskovit. Multiple levels with corridors connecting living quarters, storage, and defense chambers."
+  },
+  {
+    "n": "Güzelyurt Underground City",
+    "lat": 38.3083,
+    "lng": 34.3108,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Ancient name Gelveri. Underground complex beneath a town known for its Greek and Ottoman heritage. Connected cave churches above."
+  },
+  {
+    "n": "Nevşehir Underground City",
+    "lat": 38.6244,
+    "lng": 34.7122,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 1,
+    "desc": "Discovered in 2014 during urban construction. Estimated to be the largest underground city ever found, potentially holding 100,000+ people with tunnel access to a distant water source."
+  },
+  {
+    "n": "Acigöl Underground City",
+    "lat": 38.553,
+    "lng": 34.51,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 3,
+    "desc": "Small underground shelter near a volcanic crater lake. Likely used as temporary refuge."
+  },
+  {
+    "n": "Özlüce Underground City",
+    "lat": 38.485,
+    "lng": 34.72,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 3,
+    "desc": "Smaller underground complex connected to the broader Cappadocian network of carved shelters."
+  },
+  {
+    "n": "Sivasa (Gökçetoprak) Underground City",
+    "lat": 38.5,
+    "lng": 34.78,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 3,
+    "desc": "Underground complex near Gülşehir with multiple levels and defense mechanisms."
+  },
+  {
+    "n": "Çardak Underground City",
+    "lat": 38.31,
+    "lng": 34.76,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 3,
+    "desc": "Partially explored underground settlement southeast of Derinkuyu."
+  },
+  {
+    "n": "Göreme Open Air Museum",
+    "lat": 38.6431,
+    "lng": 34.8289,
+    "cat": "rock-cut",
+    "region": "Türkiye",
+    "tier": 1,
+    "desc": "UNESCO World Heritage complex of rock-cut churches, chapels, and monasteries with stunning Byzantine frescoes dating from the 10th-12th centuries."
+  },
+  {
+    "n": "Zelve Open Air Museum",
+    "lat": 38.67,
+    "lng": 34.8522,
+    "cat": "rock-cut",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "One of the oldest inhabited settlements in Cappadocia. Three interconnected valleys with cave dwellings occupied until 1952."
+  },
+  {
+    "n": "Selime Cathedral",
+    "lat": 38.3114,
+    "lng": 34.2778,
+    "cat": "rock-cut",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "The largest rock-cut cathedral in Cappadocia, carved into a volcanic cliff face. Multiple levels with kitchen, living quarters, and a massive nave."
+  },
+  {
+    "n": "Uçhisar Castle",
+    "lat": 38.63,
+    "lng": 34.8033,
+    "cat": "rock-cut",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "The highest point in Cappadocia. A massive rock formation riddled with tunnels and rooms used as a fortress since the Hittite era."
+  },
+  {
+    "n": "Ortahisar Castle",
+    "lat": 38.6197,
+    "lng": 34.8569,
+    "cat": "rock-cut",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Towering rock citadel with carved rooms and tunnels. Once served as a defense stronghold overlooking the surrounding valleys."
+  },
+  {
+    "n": "Ihlara Valley",
+    "lat": 38.2522,
+    "lng": 34.2928,
+    "cat": "rock-cut",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "14km canyon with over 100 rock-cut churches and thousands of carved dwellings along the Melendiz River. One of the deepest canyons in Türkiye."
+  },
+  {
+    "n": "Göbekli Tepe",
+    "lat": 37.2233,
+    "lng": 38.9225,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 1,
+    "desc": "The world's oldest known monumental sanctuary, dating to ~9600 BCE. Massive T-shaped pillars carved with animal reliefs predate agriculture and permanent settlement."
+  },
+  {
+    "n": "Karahan Tepe",
+    "lat": 37.06,
+    "lng": 39.2344,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 1,
+    "desc": "Sister site to Göbekli Tepe, discovered in 1997 with systematic excavation beginning in 2019. Features carved stone pillars and enigmatic human head sculptures."
+  },
+  {
+    "n": "Çatalhöyük",
+    "lat": 37.6661,
+    "lng": 32.8278,
+    "cat": "settlement",
+    "region": "Türkiye",
+    "tier": 1,
+    "desc": "One of the earliest urban settlements (7500-5700 BCE). A packed honeycomb of mudbrick houses with no streets, entered through roof openings. Population estimated at 3,000-8,000."
+  },
+  {
+    "n": "Hattusa",
+    "lat": 40.0189,
+    "lng": 34.6153,
+    "cat": "city",
+    "region": "Türkiye",
+    "tier": 1,
+    "desc": "Capital of the Hittite Empire (1600-1178 BCE). Massive fortification walls with lion and sphinx gates, temples, and a royal archive of 30,000+ cuneiform tablets."
+  },
+  {
+    "n": "Ephesus",
+    "lat": 37.9492,
+    "lng": 27.3639,
+    "cat": "city",
+    "region": "Türkiye",
+    "tier": 1,
+    "desc": "One of the greatest cities of the ancient world. Site of the Temple of Artemis (one of the Seven Wonders), the Library of Celsus, and a 25,000-seat theater."
+  },
+  {
+    "n": "Troy (Hisarlik)",
+    "lat": 39.9575,
+    "lng": 26.2389,
+    "cat": "city",
+    "region": "Türkiye",
+    "tier": 1,
+    "desc": "Nine layers of settlement spanning 3000+ years, including Homer's legendary Troy. Schliemann's 1870s excavations revealed 'Priam's Treasure' and massive fortification walls."
+  },
+  {
+    "n": "Nemrut Dağı",
+    "lat": 37.9811,
+    "lng": 38.7414,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 1,
+    "desc": "2,134m summit topped with colossal statues of gods and a pyramid tumulus built by Antiochus I of Commagene (62 BCE). Heads toppled by earthquakes now rest at the bases."
+  },
+  {
+    "n": "Ani",
+    "lat": 40.5072,
+    "lng": 43.5728,
+    "cat": "city",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Medieval Armenian capital on the Turkish-Armenian border. Known as the 'City of 1,001 Churches.' Population reached 200,000 in the 11th century."
+  },
+  {
+    "n": "Hierapolis",
+    "lat": 37.9231,
+    "lng": 29.1244,
+    "cat": "city",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Ancient thermal spa city built above the white calcium travertines of Pamukkale. Features a vast necropolis, theater, and the Plutonium (gateway to the underworld)."
+  },
+  {
+    "n": "Perge",
+    "lat": 36.9606,
+    "lng": 30.8536,
+    "cat": "city",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "One of the richest cities of ancient Pamphylia. Massive Hellenistic gates, a 15,000-seat theater, and colonnaded streets lined with mosaics."
+  },
+  {
+    "n": "Myra",
+    "lat": 36.2589,
+    "lng": 29.9833,
+    "cat": "rock-cut",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Lycian rock-cut tombs carved into cliff faces resembling a miniature city of the dead. Features ornate temple-style facades and a large Roman theater."
+  },
+  {
+    "n": "Xanthos",
+    "lat": 36.3553,
+    "lng": 29.3186,
+    "cat": "city",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Ancient capital of Lycia. Famous for the Nereid Monument and pillar tombs. Citizens twice chose mass suicide over surrender to invading forces."
+  },
+  {
+    "n": "Patara",
+    "lat": 36.2675,
+    "lng": 29.315,
+    "cat": "city",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Birthplace of St. Nicholas and capital of the Lycian League. Features the world's oldest known lighthouse and a 5,000-seat parliament building."
+  },
+  {
+    "n": "Sagalassos",
+    "lat": 37.6783,
+    "lng": 30.5194,
+    "cat": "city",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Mountain city at 1,500m altitude in the Taurus range. Exceptionally preserved Upper Agora, massive Antonine Nymphaeum, and 9,000-seat theater."
+  },
+  {
+    "n": "Aphrodisias",
+    "lat": 37.7086,
+    "lng": 28.7236,
+    "cat": "city",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Ancient center of Aphrodite worship and a renowned marble-sculpting school. Features an exceptionally preserved 30,000-seat stadium and Sebasteion."
+  },
+  {
+    "n": "Sardis",
+    "lat": 38.49,
+    "lng": 28.0408,
+    "cat": "city",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Capital of ancient Lydia where coinage was invented (~600 BCE). Features a massive Temple of Artemis, a restored Roman gymnasium, and a 4th century synagogue."
+  },
+  {
+    "n": "Boncuklu Tarla",
+    "lat": 37.1375,
+    "lng": 41.0747,
+    "cat": "settlement",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Predating Göbekli Tepe by ~1,000 years. Neolithic settlement with T-shaped pillars, stone bracelets, and clay beads, suggesting a wider Pre-Pottery network."
+  },
+  {
+    "n": "Taş Tepeler (Stone Hills)",
+    "lat": 37.15,
+    "lng": 39.0,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Umbrella name for 12+ Neolithic sites near Göbekli Tepe including Karahan Tepe, Harbetsuvan, Sayburç. Rewriting the origin of civilization."
+  },
+  {
+    "n": "Sayburç",
+    "lat": 37.2,
+    "lng": 38.6,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "Discovered 2021. Features the earliest known narrative scene: a man grasping a bull and a man holding a leopard, carved 11,000+ years ago."
+  },
+  {
+    "n": "Great Pyramid of Giza (Khufu)",
+    "lat": 29.9792,
+    "lng": 31.1342,
+    "cat": "pyramid",
+    "region": "Egypt",
+    "tier": 1,
+    "desc": "Last surviving Wonder of the Ancient World. 146m tall, 2.3 million blocks averaging 2.5 tons each. Built ~2560 BCE with precision that still defies full explanation."
+  },
+  {
+    "n": "Pyramid of Khafre",
+    "lat": 29.9761,
+    "lng": 31.1308,
+    "cat": "pyramid",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Second largest pyramid at Giza. Retains part of its original limestone casing at the apex. Its mortuary complex includes the Great Sphinx."
+  },
+  {
+    "n": "Pyramid of Menkaure",
+    "lat": 29.9726,
+    "lng": 31.1278,
+    "cat": "pyramid",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Smallest of the three main Giza pyramids. Originally partially cased in Aswan granite, some of which remains in place."
+  },
+  {
+    "n": "Great Sphinx of Giza",
+    "lat": 29.9753,
+    "lng": 31.1376,
+    "cat": "megalithic",
+    "region": "Egypt",
+    "tier": 1,
+    "desc": "Largest monolith statue in the world, 73m long and 20m high. Water erosion patterns suggest a potentially much older date than the conventional ~2500 BCE."
+  },
+  {
+    "n": "Step Pyramid of Djoser",
+    "lat": 29.8713,
+    "lng": 31.2164,
+    "cat": "pyramid",
+    "region": "Egypt",
+    "tier": 1,
+    "desc": "The earliest colossal stone building in Egypt (~2670 BCE). Designed by Imhotep at Saqqara, with a vast underground network of passages and chambers."
+  },
+  {
+    "n": "Bent Pyramid (Dahshur)",
+    "lat": 29.7903,
+    "lng": 31.2094,
+    "cat": "pyramid",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Unique dual-angle profile: 54° lower section shifting to 43° upper. Transitional form between step and true pyramids. Original casing largely intact."
+  },
+  {
+    "n": "Red Pyramid (Dahshur)",
+    "lat": 29.8092,
+    "lng": 31.2061,
+    "cat": "pyramid",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Egypt's first successful true pyramid. Named for the reddish hue of its limestone core. Contains three corbelled chambers accessible via a narrow descending passage."
+  },
+  {
+    "n": "Black Pyramid (Dahshur)",
+    "lat": 29.7875,
+    "lng": 31.2228,
+    "cat": "pyramid",
+    "region": "Egypt",
+    "tier": 3,
+    "desc": "Mudbrick pyramid of Amenemhat III. Now a dark, eroded mound. Its internal labyrinth of passages was an anti-theft innovation."
+  },
+  {
+    "n": "Pyramid of Meidum",
+    "lat": 29.3881,
+    "lng": 31.1567,
+    "cat": "pyramid",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Three-stepped tower rising from rubble. Either collapsed or was deliberately dismantled in antiquity. Represents the transition from step to true pyramids."
+  },
+  {
+    "n": "Abu Simbel",
+    "lat": 22.3369,
+    "lng": 31.6256,
+    "cat": "rock-cut",
+    "region": "Egypt",
+    "tier": 1,
+    "desc": "Four colossal statues of Ramesses II guard this rock-cut temple. The entire complex was relocated 65m uphill in 1968 to save it from the Aswan Dam's rising waters."
+  },
+  {
+    "n": "Karnak Temple Complex",
+    "lat": 25.7188,
+    "lng": 32.6573,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 1,
+    "desc": "The largest ancient religious complex ever built. 200+ acres of temples, pylons, and obelisks developed over 2,000 years. The Hypostyle Hall contains 134 massive columns."
+  },
+  {
+    "n": "Luxor Temple",
+    "lat": 25.6996,
+    "lng": 32.6392,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 1,
+    "desc": "Temple of the living, connected to Karnak by a 3km avenue of sphinxes recently excavated. Built primarily by Amenhotep III and Ramesses II."
+  },
+  {
+    "n": "Valley of the Kings",
+    "lat": 25.7402,
+    "lng": 32.6014,
+    "cat": "tomb",
+    "region": "Egypt",
+    "tier": 1,
+    "desc": "63 known royal tombs cut deep into limestone cliffs, including Tutankhamun's intact tomb discovered in 1922. New chambers continue to be found."
+  },
+  {
+    "n": "Temple of Hatshepsut",
+    "lat": 25.738,
+    "lng": 32.6069,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 1,
+    "desc": "Dramatic colonnaded temple built into towering cliffs at Deir el-Bahari by Egypt's most successful female pharaoh (~1470 BCE)."
+  },
+  {
+    "n": "Dendera Temple Complex",
+    "lat": 26.1425,
+    "lng": 32.67,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Remarkably preserved Ptolemaic temple to Hathor. Features the famous zodiac ceiling (now in the Louvre) and enigmatic 'Dendera Light' reliefs that spark alternative theories."
+  },
+  {
+    "n": "Edfu Temple (Temple of Horus)",
+    "lat": 24.9781,
+    "lng": 32.8733,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Best-preserved ancient temple in Egypt. Built 237-57 BCE with inscriptions describing mythical origins and the 'Building Texts' detailing temple construction principles."
+  },
+  {
+    "n": "Temple of Kom Ombo",
+    "lat": 24.4522,
+    "lng": 32.9283,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Unique double temple dedicated to both Sobek and Horus. Features ancient surgical instruments carved in relief and a Nilometer for measuring floods."
+  },
+  {
+    "n": "Philae Temple (Temple of Isis)",
+    "lat": 24.0261,
+    "lng": 32.8844,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Island temple relocated to Agilkia Island during the Aswan Dam project. Last active site of ancient Egyptian religion, with hieroglyphs written as late as 394 CE."
+  },
+  {
+    "n": "Abydos (Temple of Seti I)",
+    "lat": 26.185,
+    "lng": 31.9189,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 1,
+    "desc": "One of the most important archaeological sites in Egypt. Features the Abydos King List, the mysterious Osireion, and reliefs that conspiracy theorists claim show helicopters."
+  },
+  {
+    "n": "Colossi of Memnon",
+    "lat": 25.7205,
+    "lng": 32.6103,
+    "cat": "megalithic",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Twin 18m statues of Amenhotep III weighing 720 tons each. Once guarded a mortuary temple larger than Karnak. The northern statue was famed for 'singing' at dawn."
+  },
+  {
+    "n": "Unfinished Obelisk (Aswan)",
+    "lat": 24.0769,
+    "lng": 32.8972,
+    "cat": "megalithic",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Would have been the largest obelisk ever: 42m tall, 1,168 tons. Abandoned in its quarry after a crack appeared, revealing ancient stone-cutting techniques."
+  },
+  {
+    "n": "Siwa Oracle Temple (Amun)",
+    "lat": 29.2028,
+    "lng": 25.5161,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Remote desert oracle consulted by Alexander the Great in 331 BCE, where he was proclaimed son of Amun-Ra. Located in the isolated Siwa Oasis."
+  },
+  {
+    "n": "Osireion (Abydos)",
+    "lat": 26.1847,
+    "lng": 31.9183,
+    "cat": "megalithic",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Subterranean structure behind the Temple of Seti I using massive granite blocks in a style resembling much older construction. One of Egypt's most debated monuments."
+  },
+  {
+    "n": "Hawara Pyramid & Labyrinth",
+    "lat": 29.2772,
+    "lng": 30.8994,
+    "cat": "pyramid",
+    "region": "Egypt",
+    "tier": 3,
+    "desc": "Pyramid of Amenemhat III with the legendary Labyrinth, described by Herodotus as surpassing even the pyramids. Ground-penetrating radar has confirmed massive substructures."
+  },
+  {
+    "n": "Nabta Playa",
+    "lat": 22.5167,
+    "lng": 30.7167,
+    "cat": "megalithic",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Stone circle in the western desert aligned to summer solstice, dating to ~5000 BCE. One of the earliest known astronomical alignments, predating Stonehenge by 1,000+ years."
+  },
+  {
+    "n": "Serapeum of Saqqara",
+    "lat": 29.8706,
+    "lng": 31.2136,
+    "cat": "tomb",
+    "region": "Egypt",
+    "tier": 1,
+    "desc": "Underground gallery of 24 massive granite sarcophagi, each weighing up to 70 tons with precision-machined lids. Officially bull tombs, but their extreme precision raises questions."
+  },
+  {
+    "n": "Pyramid of Unas",
+    "lat": 29.8681,
+    "lng": 31.2153,
+    "cat": "pyramid",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Smallest Old Kingdom pyramid at Saqqara but first to contain the Pyramid Texts: the oldest known religious writings in the world (~2350 BCE)."
+  },
+  {
+    "n": "Saqqara Necropolis",
+    "lat": 29.8711,
+    "lng": 31.2167,
+    "cat": "tomb",
+    "region": "Egypt",
+    "tier": 1,
+    "desc": "Vast burial ground spanning 3,000 years of Egyptian history. Home to the Step Pyramid, Serapeum, and hundreds of tombs with new discoveries still emerging annually."
+  },
+  {
+    "n": "Medinet Habu",
+    "lat": 25.7193,
+    "lng": 32.6008,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Mortuary temple of Ramesses III with vivid battle reliefs depicting victory over the Sea Peoples. Best-preserved New Kingdom temple complex on the west bank."
+  },
+  {
+    "n": "Machu Picchu",
+    "lat": -13.1631,
+    "lng": -72.545,
+    "cat": "city",
+    "region": "South America",
+    "tier": 1,
+    "desc": "Inca citadel at 2,430m in the Andes, built ~1450 CE. Precisely cut granite blocks fitted without mortar. Rediscovered by Hiram Bingham in 1911."
+  },
+  {
+    "n": "Sacsayhuamán",
+    "lat": -13.5086,
+    "lng": -71.9822,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 1,
+    "desc": "Massive fortress above Cusco with zigzag walls of perfectly fitted polygonal stones, some weighing 200+ tons. Construction method remains unexplained."
+  },
+  {
+    "n": "Ollantaytambo",
+    "lat": -13.2581,
+    "lng": -72.2636,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 1,
+    "desc": "Temple hill features six monolithic red porphyry stones transported from a quarry 6km away across a river valley. Precision joints between massive blocks defy easy explanation."
+  },
+  {
+    "n": "Tiwanaku",
+    "lat": -16.5546,
+    "lng": -68.6733,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 1,
+    "desc": "Pre-Inca city at 3,850m on the Altiplano near Lake Titicaca. Features the Gateway of the Sun, Akapana Pyramid, and H-blocks with precision-machined interlocking joints."
+  },
+  {
+    "n": "Puma Punku",
+    "lat": -16.5617,
+    "lng": -68.68,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 1,
+    "desc": "Part of the Tiwanaku complex. H-shaped diorite blocks with machine-like precision: identical angles, smooth surfaces, and interlocking joints that seem impossible for the era."
+  },
+  {
+    "n": "Nazca Lines",
+    "lat": -14.735,
+    "lng": -75.13,
+    "cat": "geoglyph",
+    "region": "South America",
+    "tier": 1,
+    "desc": "Hundreds of enormous geoglyphs etched into the desert, visible only from altitude. Figures include a hummingbird, spider, and monkey spanning up to 370m. Purpose remains debated."
+  },
+  {
+    "n": "Moray",
+    "lat": -13.3294,
+    "lng": -72.1969,
+    "cat": "settlement",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Concentric circular terraces descending into natural sinkholes, creating microclimates with temperature differences of 15°C between top and bottom. Likely an agricultural laboratory."
+  },
+  {
+    "n": "Pisac",
+    "lat": -13.4117,
+    "lng": -71.8492,
+    "cat": "city",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Inca citadel with military, religious, and agricultural sectors. Terraces follow the natural contours of the hillside. Features an Intihuatana (sun-hitching post)."
+  },
+  {
+    "n": "Qenqo",
+    "lat": -13.4978,
+    "lng": -71.9614,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Massive limestone outcrop carved with zigzag channels, an amphitheater, and subterranean chambers. Likely used for ceremonies involving chicha or sacrificial blood."
+  },
+  {
+    "n": "Tambomachay",
+    "lat": -13.4875,
+    "lng": -71.9589,
+    "cat": "settlement",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Inca site of ritual water worship. Aqueducts and cascading waterfall channels still flow through precisely fitted stone walls."
+  },
+  {
+    "n": "Chavín de Huántar",
+    "lat": -9.5947,
+    "lng": -77.1772,
+    "cat": "temple",
+    "region": "South America",
+    "tier": 1,
+    "desc": "Pre-Inca ceremonial center (900-200 BCE). Underground labyrinth with the Lanzón monolith: a 4.5m carved stone deity in a cruciform chamber designed for acoustic manipulation."
+  },
+  {
+    "n": "Chan Chan",
+    "lat": -8.1067,
+    "lng": -79.0747,
+    "cat": "city",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Largest adobe city in the world, capital of the Chimú Empire. 20 sq km of walled citadels, with elaborately decorated walls and sophisticated water management."
+  },
+  {
+    "n": "Caral",
+    "lat": -10.8928,
+    "lng": -77.5203,
+    "cat": "city",
+    "region": "South America",
+    "tier": 1,
+    "desc": "Oldest known city in the Americas (~3000 BCE), contemporary with Egyptian pyramids. Six large pyramids and residential architecture without any evidence of warfare."
+  },
+  {
+    "n": "Kuélap",
+    "lat": -6.4161,
+    "lng": -77.9225,
+    "cat": "city",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Chachapoyas fortress at 3,000m altitude predating the Inca. Massive limestone walls up to 19m high enclosing 400+ buildings. Called the 'Machu Picchu of the north.'"
+  },
+  {
+    "n": "Sillustani",
+    "lat": -15.7303,
+    "lng": -70.1561,
+    "cat": "tomb",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Pre-Inca funerary towers (chullpas) overlooking Lake Umayo near Puno. Built by the Colla people, these cylindrical towers stored mummified remains of nobility."
+  },
+  {
+    "n": "Tipón",
+    "lat": -13.5667,
+    "lng": -71.7883,
+    "cat": "settlement",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Inca royal estate with the most sophisticated surviving hydraulic engineering. Terraces with fountains and channels that still function perfectly after 500+ years."
+  },
+  {
+    "n": "Raqchi (Temple of Wiracocha)",
+    "lat": -14.175,
+    "lng": -71.37,
+    "cat": "temple",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Massive temple with the tallest known Inca wall (12m high). Dedicated to the creator god Wiracocha, with 200+ circular storage buildings."
+  },
+  {
+    "n": "Choquequirao",
+    "lat": -13.3928,
+    "lng": -72.8606,
+    "cat": "city",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Sister city to Machu Picchu, accessible only by a two-day trek. Sprawling Inca complex at 3,050m that is only 30% excavated."
+  },
+  {
+    "n": "Gate of the Sun (Tiwanaku)",
+    "lat": -16.5533,
+    "lng": -68.6753,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Monolithic archway carved from a single block of andesite, featuring a central figure (Viracocha or sun god) surrounded by 48 winged attendants."
+  },
+  {
+    "n": "Huaca del Sol",
+    "lat": -8.1422,
+    "lng": -78.9986,
+    "cat": "pyramid",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Largest pre-Columbian adobe structure in the Americas. Built by the Moche civilization using an estimated 130 million bricks."
+  },
+  {
+    "n": "Huaca de la Luna",
+    "lat": -8.1378,
+    "lng": -78.9969,
+    "cat": "temple",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Moche temple opposite Huaca del Sol with vivid polychrome murals of Ai Apaec (the Decapitator God) and scenes of ritual combat and sacrifice."
+  },
+  {
+    "n": "Líneas de Palpa",
+    "lat": -14.6833,
+    "lng": -75.1833,
+    "cat": "geoglyph",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Older and more complex than the Nazca Lines. Includes the 'Familia Real' (Royal Family) geoglyph and geometric patterns on hillsides visible from the ground."
+  },
+  {
+    "n": "Stonehenge",
+    "lat": 51.1789,
+    "lng": -1.8262,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "The world's most famous stone circle, built in stages from ~3000-2000 BCE. Bluestones transported 250km from Wales. Aligned to summer solstice sunrise and winter solstice sunset."
+  },
+  {
+    "n": "Avebury",
+    "lat": 51.4288,
+    "lng": -1.8544,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "Largest stone circle in the world by diameter (420m), enclosing a village. Part of a vast Neolithic landscape including Silbury Hill and the West Kennet Long Barrow."
+  },
+  {
+    "n": "Newgrange",
+    "lat": 53.6947,
+    "lng": -6.4756,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "5,200-year-old passage tomb older than the pyramids. A roof box allows sunlight to illuminate the inner chamber only during winter solstice, an effect lasting 17 minutes."
+  },
+  {
+    "n": "Skara Brae",
+    "lat": 59.0488,
+    "lng": -3.3413,
+    "cat": "settlement",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "Neolithic village on Orkney, occupied ~3100-2500 BCE. Stone furniture, bed frames, and dressers preserved under sand dunes until a storm exposed them in 1850."
+  },
+  {
+    "n": "Ring of Brodgar",
+    "lat": 59.0017,
+    "lng": -3.2292,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Neolithic henge and stone circle on Orkney. 27 of the original 60 stones still stand in a circle 104m across, surrounded by a rock-cut ditch."
+  },
+  {
+    "n": "Callanish Stones",
+    "lat": 58.1975,
+    "lng": -6.7456,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Cruciform stone setting on the Isle of Lewis, erected ~2900-2600 BCE. Central stone circle with radiating avenues aligned to lunar cycles."
+  },
+  {
+    "n": "Knowth",
+    "lat": 53.7014,
+    "lng": -6.4908,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Passage tomb in the Brú na Bóinne complex. Contains the largest collection of megalithic art in Western Europe with over 200 decorated stones."
+  },
+  {
+    "n": "Dowth",
+    "lat": 53.7028,
+    "lng": -6.4536,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Third great passage tomb at Brú na Bóinne, aligned to winter solstice sunset. Less excavated and visited than Newgrange or Knowth."
+  },
+  {
+    "n": "Silbury Hill",
+    "lat": 51.4156,
+    "lng": -1.8572,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Largest artificial mound in Europe (40m high), built ~2400 BCE near Avebury. Its purpose remains completely unknown despite multiple excavations."
+  },
+  {
+    "n": "West Kennet Long Barrow",
+    "lat": 51.4086,
+    "lng": -1.8517,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "One of the largest Neolithic tombs in Britain (100m long). Five burial chambers held at least 46 individuals deposited over 1,000+ years of use."
+  },
+  {
+    "n": "Maeshowe",
+    "lat": 58.9964,
+    "lng": -3.1878,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Neolithic chambered cairn on Orkney. Aligned so that the setting sun on winter solstice shines down the entrance passage. Contains the largest collection of Norse runes outside Scandinavia."
+  },
+  {
+    "n": "Castlerigg Stone Circle",
+    "lat": 54.6025,
+    "lng": -3.0981,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "One of the earliest stone circles in Britain (~3200 BCE), set in a natural amphitheater of Cumbrian mountains. 38 stones in an oval arrangement."
+  },
+  {
+    "n": "Carnac Stones",
+    "lat": 47.5847,
+    "lng": -3.0778,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "Over 3,000 standing stones in parallel alignments stretching 4km across the Brittany countryside. The densest concentration of megaliths anywhere on Earth."
+  },
+  {
+    "n": "Gavrinis",
+    "lat": 47.5706,
+    "lng": -2.8969,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Island passage tomb in the Gulf of Morbihan with extraordinary carved stone surfaces. Every stone in the passage is covered in swirling patterns and concentric arcs."
+  },
+  {
+    "n": "Locmariaquer",
+    "lat": 47.5714,
+    "lng": -2.9458,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Home of the Grand Menhir Brisé: once the largest standing stone in Europe at 20m tall and 330 tons, now broken into four pieces."
+  },
+  {
+    "n": "Ġgantija Temples",
+    "lat": 36.0475,
+    "lng": 14.2689,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "Megalithic temples on Gozo, Malta, dating to ~3600 BCE. Older than Stonehenge and the pyramids. Massive limestone blocks (some 50+ tons) with corbelled ceilings."
+  },
+  {
+    "n": "Ħaġar Qim",
+    "lat": 35.8275,
+    "lng": 14.4419,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Maltese megalithic temple (~3600-3200 BCE) on a clifftop above the sea. Features a 5.2m megalith weighing 20 tons, the largest in any Maltese temple."
+  },
+  {
+    "n": "Mnajdra",
+    "lat": 35.8264,
+    "lng": 14.4361,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Three megalithic temples aligned to equinox and solstice sunrises, functioning as a solar calendar. Located near Ħaġar Qim on the southern Malta coast."
+  },
+  {
+    "n": "Hypogeum of Ħal Saflieni",
+    "lat": 35.8692,
+    "lng": 14.5075,
+    "cat": "underground",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "Underground Neolithic temple/necropolis on three levels. Carved ~4000-2500 BCE. Holds remains of 7,000+ individuals. Acoustic properties amplify low-frequency sound dramatically."
+  },
+  {
+    "n": "Knossos",
+    "lat": 35.2978,
+    "lng": 25.1631,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "Bronze Age capital of Minoan Crete (~1900-1100 BCE). Multi-story palace complex with running water, flush toilets, and the legendary Labyrinth of the Minotaur."
+  },
+  {
+    "n": "Phaistos",
+    "lat": 35.0511,
+    "lng": 24.8147,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Second largest Minoan palace on Crete. Discovery site of the Phaistos Disc, a fired clay disc with 242 undeciphered symbols stamped in a spiral."
+  },
+  {
+    "n": "Mycenae",
+    "lat": 37.7306,
+    "lng": 22.7569,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "Bronze Age citadel and center of Mycenaean civilization. Features the Lion Gate, Treasury of Atreus (a massive tholos tomb), and Schliemann's 'Mask of Agamemnon.'"
+  },
+  {
+    "n": "Delphi",
+    "lat": 38.4824,
+    "lng": 22.5012,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "Ancient Greeks considered this the center of the world (omphalos). Home of the Oracle of Apollo, whose prophecies influenced wars and politics for 1,000 years."
+  },
+  {
+    "n": "Epidaurus",
+    "lat": 37.5963,
+    "lng": 23.0792,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Ancient healing center of Asclepius with a 14,000-seat theater renowned for perfect acoustics. A coin dropped at the center can be heard in the last row."
+  },
+  {
+    "n": "Tiryns",
+    "lat": 37.5992,
+    "lng": 22.7989,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Mycenaean citadel with Cyclopean walls so massive the Greeks believed they were built by giants. Corbelled galleries within the walls remain intact."
+  },
+  {
+    "n": "Baalbek (Heliopolis)",
+    "lat": 34.0069,
+    "lng": 36.2039,
+    "cat": "megalithic",
+    "region": "Middle East",
+    "tier": 1,
+    "desc": "Roman temple complex built on a platform of stones so massive they defy explanation. The Trilithon: three 800-ton blocks. The Stone of the Pregnant Woman: 1,000 tons, still in its quarry."
+  },
+  {
+    "n": "Petra",
+    "lat": 30.3285,
+    "lng": 35.4444,
+    "cat": "rock-cut",
+    "region": "Middle East",
+    "tier": 1,
+    "desc": "Nabataean capital carved into rose-red sandstone cliffs. The Treasury (Al-Khazneh) is just the entrance to a vast city of 800+ carved structures, tombs, and water channels."
+  },
+  {
+    "n": "Ur",
+    "lat": 30.9625,
+    "lng": 46.1031,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 1,
+    "desc": "Sumerian city-state with the Great Ziggurat (~2100 BCE). Birthplace of Abraham. Royal tombs yielded stunning gold artifacts and evidence of mass human sacrifice."
+  },
+  {
+    "n": "Persepolis",
+    "lat": 29.9352,
+    "lng": 52.8914,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 1,
+    "desc": "Ceremonial capital of the Achaemenid Empire (515-330 BCE). Monumental staircases with relief carvings of 23 subject nations. Burned by Alexander the Great."
+  },
+  {
+    "n": "Palmyra",
+    "lat": 34.5515,
+    "lng": 38.2688,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 1,
+    "desc": "Oasis city that controlled Silk Road trade between Rome and Persia. Temple of Bel and colonnaded streets, partially destroyed by ISIS in 2015."
+  },
+  {
+    "n": "Göbekli Tepe (Potbelly Hill)",
+    "lat": 37.2233,
+    "lng": 38.9225,
+    "cat": "megalithic",
+    "region": "Middle East",
+    "tier": 1,
+    "desc": "Already listed under Türkiye but part of the broader Fertile Crescent Neolithic revolution."
+  },
+  {
+    "n": "Jericho (Tell es-Sultan)",
+    "lat": 31.871,
+    "lng": 35.4441,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 1,
+    "desc": "Oldest continuously inhabited city on Earth, with fortification walls and a stone tower dating to ~8000 BCE. 10,000+ years of layered human occupation."
+  },
+  {
+    "n": "Jerash (Gerasa)",
+    "lat": 32.2811,
+    "lng": 35.8908,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 2,
+    "desc": "One of the best-preserved Roman cities outside Italy. Complete colonnaded streets, two theaters, temples, and a unique oval forum."
+  },
+  {
+    "n": "Nimrud",
+    "lat": 36.0983,
+    "lng": 43.3278,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 2,
+    "desc": "Assyrian capital (~880 BCE) with massive winged bull lamassu sculptures. Palace reliefs now in the British Museum. Heavily damaged by ISIS in 2015."
+  },
+  {
+    "n": "Hatra",
+    "lat": 35.5875,
+    "lng": 42.7175,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 2,
+    "desc": "Fortified Parthian city that withstood Roman sieges. Blend of Hellenistic and Eastern architecture. Damaged by ISIS in 2015."
+  },
+  {
+    "n": "Angkor Wat",
+    "lat": 13.4125,
+    "lng": 103.867,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Largest religious monument ever built (162.6 hectares). Hindu-then-Buddhist temple with towers representing Mt. Meru, surrounded by a vast moat. Built by Suryavarman II (~1150 CE)."
+  },
+  {
+    "n": "Angkor Thom",
+    "lat": 13.4411,
+    "lng": 103.8586,
+    "cat": "city",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Walled city enclosing 9 sq km, centered on the Bayon temple with its 216 massive smiling stone faces. Last capital of the Khmer Empire."
+  },
+  {
+    "n": "Borobudur",
+    "lat": -7.6079,
+    "lng": 110.2038,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "World's largest Buddhist temple (9th century). Nine stacked platforms with 2,672 relief panels and 504 Buddha statues. Buried under volcanic ash for centuries."
+  },
+  {
+    "n": "Sigiriya",
+    "lat": 7.9572,
+    "lng": 80.7603,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "5th century fortress atop a 200m rock column in Sri Lanka. Features mirror wall, lion's paw gateway, frescoes, and one of the oldest landscaped gardens in the world."
+  },
+  {
+    "n": "Mohenjo-daro",
+    "lat": 27.3242,
+    "lng": 68.1361,
+    "cat": "city",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Indus Valley metropolis (~2500 BCE) with grid-planned streets, the Great Bath, advanced drainage, and standardized weights. Population ~40,000. Writing remains undeciphered."
+  },
+  {
+    "n": "Harappa",
+    "lat": 30.6317,
+    "lng": 72.8647,
+    "cat": "city",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Co-capital of the Indus Valley Civilization alongside Mohenjo-daro. First discovered site of this Bronze Age culture, with sophisticated urban planning and craft specialization."
+  },
+  {
+    "n": "Sanchi Stupa",
+    "lat": 23.4793,
+    "lng": 77.7398,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Oldest surviving Buddhist stupa, commissioned by Emperor Ashoka in the 3rd century BCE. Hemispherical dome 36m wide, surrounded by four ornate gateways depicting Buddha's life through symbol (the Buddha himself is never shown). UNESCO World Heritage."
+  },
+  {
+    "n": "Hampi",
+    "lat": 15.335,
+    "lng": 76.46,
+    "cat": "city",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Ruins of the Vijayanagara Empire capital (14th-16th century). Scattered across 26 sq km of boulder-strewn landscape, with over 1,600 surviving monuments."
+  },
+  {
+    "n": "Ajanta Caves",
+    "lat": 20.5519,
+    "lng": 75.7033,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "30 Buddhist cave temples carved from a horseshoe-shaped cliff face (2nd century BCE to 6th century CE). Frescoes and sculptures considered masterpieces of world art."
+  },
+  {
+    "n": "Ellora Caves",
+    "lat": 20.0258,
+    "lng": 75.1792,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "34 caves spanning Buddhist, Hindu, and Jain traditions. The Kailasa temple (Cave 16) is the largest monolithic rock excavation in the world, carved top-down from a single basalt cliff."
+  },
+  {
+    "n": "Konark Sun Temple",
+    "lat": 19.8876,
+    "lng": 86.0945,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "13th century temple shaped as a massive stone chariot with 24 carved wheels and 7 horses. Originally 70m tall before partial collapse. Erotic sculptures and astronomical precision."
+  },
+  {
+    "n": "Madain Saleh (Hegra)",
+    "lat": 26.7667,
+    "lng": 37.9533,
+    "cat": "rock-cut",
+    "region": "Middle East",
+    "tier": 1,
+    "desc": "Nabataean city in Saudi Arabia, sister site to Petra. 131 monumental rock-cut tombs with inscriptions dating from the 1st century. Saudi Arabia's first UNESCO World Heritage Site."
+  },
+  {
+    "n": "Jiroft",
+    "lat": 28.6767,
+    "lng": 57.7406,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 2,
+    "desc": "Bronze Age civilization (3rd millennium BCE) with distinctive chlorite vessels depicting mythological scenes. May be the lost 'Aratta' mentioned in Sumerian texts."
+  },
+  {
+    "n": "Moai of Easter Island (Rapa Nui)",
+    "lat": -27.1127,
+    "lng": -109.3497,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 1,
+    "desc": "Nearly 1,000 monolithic statues averaging 4m tall and 12.5 tons. Carved from volcanic tuff at Rano Raraku quarry. How they were transported across the island remains debated."
+  },
+  {
+    "n": "Nan Madol",
+    "lat": 6.8444,
+    "lng": 158.3356,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 1,
+    "desc": "Artificial island city built on a coral reef off Pohnpei, Micronesia. 92 islands connected by canals, built from an estimated 750,000 tons of basalt columns. Called the 'Venice of the Pacific.'"
+  },
+  {
+    "n": "Yonaguni Monument",
+    "lat": 24.435,
+    "lng": 122.9342,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Submerged rock formation off Japan with apparent terraces, right angles, and carved features. Debated: natural geology or a 10,000-year-old man-made structure lost to rising seas."
+  },
+  {
+    "n": "Osaka Castle",
+    "lat": 34.6873,
+    "lng": 135.5262,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Massive granite megaliths in the castle walls, the largest weighing ~130 tons (the 'Octopus Stone' / Takoishi). Quarried from islands 60+ km away and moved across water without modern equipment in the early 1600s."
+  },
+  {
+    "n": "Ishi-no-Hoden",
+    "lat": 34.7833,
+    "lng": 134.7833,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "The 'Floating Stone' on the grounds of Ōshiko Jinja shrine in Takasago, Hyogo Prefecture (near Himeji). A 500-ton granite monolith carved from the hillside, appearing to hover above its base. Era of creation unknown; some attribute it to the Jomon civilization."
+  },
+  {
+    "n": "Masuda no Iwafune",
+    "lat": 34.4716,
+    "lng": 135.791,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "The 'Stone Ship of Masuda' in Asuka, Nara. An 800-ton boat-shaped megalith on a hilltop, precisely carved with grooves and twin square holes. Origin and purpose unknown. Pre-dates the Asuka period's recorded histories."
+  },
+  {
+    "n": "Ishibutai Kofun",
+    "lat": 34.4669,
+    "lng": 135.8254,
+    "cat": "tomb",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "7th-century megalithic burial chamber attributed to Soga no Umako. Its 77-ton ceiling stone is the largest used in any kofun. The earth mound was removed centuries ago, exposing the megalithic core."
+  },
+  {
+    "n": "Sakafune-ishi",
+    "lat": 34.4694,
+    "lng": 135.8202,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 3,
+    "desc": "The 'Sake Boat Stone' of Asuka. A carved granite slab with mysterious grooves, basins, and channels. Theories range from sake production to astronomical observation to ritual function. Still debated."
+  },
+  {
+    "n": "Daisen Kofun",
+    "lat": 34.5644,
+    "lng": 135.4881,
+    "cat": "tomb",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Japan's largest tomb and the centerpiece of the Mozu-Furuichi Kofun Group (UNESCO World Heritage). Keyhole-shaped earth mound 486m long, attributed to Emperor Nintoku (~5th century CE). Comparable in volume to the Great Pyramid of Giza. Three concentric moats. Largely unexcavated by Imperial Household Agency restriction."
+  },
+  {
+    "n": "Sannai-Maruyama",
+    "lat": 40.8111,
+    "lng": 140.6953,
+    "cat": "settlement",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Major Jomon-era settlement in Aomori, occupied 5500–4000 years ago. Massive timber pillar structures up to 17m tall, sophisticated trade networks, evidence of forest management. Predates rice agriculture in Japan."
+  },
+  {
+    "n": "Ōyu Stone Circles",
+    "lat": 40.2667,
+    "lng": 140.8,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Two large Jomon stone circles in Akita (~4000 years old): Manno-Tai and Nonakado-Tai. Aligned to solstice sunrise and sunset. Evidence of organized religious life and burial practices among hunter-gatherers."
+  },
+  {
+    "n": "Mt. Kuromata",
+    "lat": 40.28,
+    "lng": 140.865,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 3,
+    "desc": "The 'Pyramid of Japan' — a near-perfect pyramidal hill in Akita Prefecture, close to the Ōyu Stone Circles. Locals consider it sacred. Alt-archaeology research suggests artificial construction or modification; mainstream geology argues natural erosion. Ground-penetrating radar has revealed unusual internal structure."
+  },
+  {
+    "n": "Oya Stone Quarry",
+    "lat": 36.5811,
+    "lng": 139.8456,
+    "cat": "underground",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Vast hand-carved subterranean quarry in Tochigi Prefecture, now the Oya History Museum. Cathedral-scale chambers, 60m deep, cut from soft volcanic tuff (oya stone). Official records date carving 1919-1986, but alt-archaeology suggests the original excavation may be far older."
+  },
+  {
+    "n": "Gunung Padang",
+    "lat": -6.9944,
+    "lng": 107.0564,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Indonesian megalithic site dated controversially to as early as 25,000 BCE by ground-penetrating radar studies. If confirmed, it would be the oldest pyramid structure on Earth."
+  },
+  {
+    "n": "Terracotta Army",
+    "lat": 34.3842,
+    "lng": 109.2785,
+    "cat": "tomb",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "8,000+ life-size terracotta warriors guarding the tomb of Qin Shi Huang (210 BCE). Each face unique. The emperor's main tomb chamber remains unopened."
+  },
+  {
+    "n": "Longyou Caves",
+    "lat": 29.03,
+    "lng": 119.17,
+    "cat": "underground",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "24 man-made caverns in China discovered in 1992, carved from siltstone. No historical records of their construction. Uniform chisel marks across enormous chambers."
+  },
+  {
+    "n": "Sanxingdui",
+    "lat": 31.0,
+    "lng": 104.2,
+    "cat": "city",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Mysterious Bronze Age site in Sichuan (1200-1000 BCE) with gold masks, bronze trees 4m tall, and artifacts unlike anything else in Chinese archaeology. No writing found."
+  },
+  {
+    "n": "Yangshan Quarry",
+    "lat": 32.05,
+    "lng": 118.9333,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Ming Dynasty quarry near Nanjing (commissioned by the Yongle Emperor, 1405). Three unfinished megalithic steles intended for the Xiaoling Mausoleum, the largest weighing an estimated 16,000+ tons. Abandoned mid-carving. Why and how transport was attempted at this scale remains unexplained."
+  },
+  {
+    "n": "Xi'an Pyramids",
+    "lat": 34.4,
+    "lng": 108.7,
+    "cat": "pyramid",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Over 200 pyramidal earth mounds across Shaanxi Province, including the Great White Pyramid (sometimes claimed twice the size of Giza). Officially identified as Han Dynasty imperial tombs, but their true age and the precision of cardinal-direction alignment have prompted alt-archaeology arguments for far older origins. Many remain unexcavated by government restriction."
+  },
+  {
+    "n": "Huashan Grottoes",
+    "lat": 29.7,
+    "lng": 118.2,
+    "cat": "underground",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "36 hand-carved sandstone caverns near the Yellow River, similar in technique to Longyou Caves. Vast interiors with millions of cubic feet of stone removed, no historical record of construction, no debris pile in the surrounding landscape. Many chambers remain unexplored."
+  },
+  {
+    "n": "Guyaju Caves",
+    "lat": 40.5,
+    "lng": 116.0,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Largest cliff dwelling complex in China, ~50 miles northwest of Beijing. 117 caves and 350 chambers carved from solid granite across 25 acres. Discovered 1984. No historical record of builders. Architectural sophistication (staircases, drainage, stone furniture) suggests advanced engineering."
+  },
+  {
+    "n": "Tomb of the General",
+    "lat": 41.1322,
+    "lng": 126.1819,
+    "cat": "pyramid",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Stepped pyramid in Ji'an, Jilin Province. Officially a Goguryeo-era tomb (~5th century CE), but the seven-tier granite block construction parallels Mesoamerican pyramid forms and may predate the Goguryeo Kingdom that reused it as a burial monument."
+  },
+  {
+    "n": "Baigong Pipes",
+    "lat": 36.6,
+    "lng": 96.5,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 3,
+    "desc": "Iron pipe-like structures embedded in rock formations on Mount Baigong, Qinghai Province. Discovered 1996. Estimated 5,000+ years old, predating known iron smelting in China. Conventional explanation: natural pseudomorphs of fossilized trees. Alt-archaeology: remnants of an ancient water-management system. Documented radioactivity adds to the mystery."
+  },
+  {
+    "n": "Hejin City Fortress",
+    "lat": 35.6,
+    "lng": 110.7,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 3,
+    "desc": "Cliff-top fortress in Shanxi Province, hidden by deep loess gorges and nearly invisible from below. Carved chambers and a monumental 30-foot doorway suggest construction beyond simple defensive needs. Officially attributed to local farmers, but the scale and tool marks parallel Longyou Caves and other unexplained Chinese excavations."
+  },
+  {
+    "n": "Guanlin Temple",
+    "lat": 34.6,
+    "lng": 112.4,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "desc": "Temple complex near Luoyang in Henan Province, traditionally a memorial to the warlord Guan Yu. Some of the underlying stone structures suggest a far older origin, possibly predating the historical Guan Yu cult. Cited by Joseph de Guignes (1785) in his theory linking ancient China to Egypt via shared pyramid architecture."
+  },
+  {
+    "n": "Mamallapuram",
+    "lat": 12.6167,
+    "lng": 80.1944,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "7th-8th century Pallava monolithic temples and granite-carved monuments on India's Coromandel Coast. Includes the Shore Temple, the Five Rathas (chariots carved from single boulders), the Descent of the Ganges relief, and Krishna's Butterball — a 250-ton granite boulder that has rested on a sloped rock for at least 1,300 years without rolling."
+  },
+  {
+    "n": "Vettuvan Koil",
+    "lat": 9.0833,
+    "lng": 77.7333,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 3,
+    "desc": "Incomplete 8th-9th century rock-cut temple in Tamil Nadu, carved top-down from a single granite hill. Often called the 'Kailasa Temple Prototype' for its similar excavation technique. Abandoned before completion. Mystery remains why."
+  },
+  {
+    "n": "Kalavantin Durg",
+    "lat": 18.9333,
+    "lng": 73.3333,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 3,
+    "desc": "Pinnacle fortress in Maharashtra with a stairway cut directly into vertical rock face, ascending to the summit. Origin and purpose disputed — neither dating nor builders confirmed. Local mythology dates it to ancient Hindu period; alt-archaeology proposes far older origins."
+  },
+  {
+    "n": "Great Zimbabwe",
+    "lat": -20.2674,
+    "lng": 30.934,
+    "cat": "city",
+    "region": "Africa",
+    "tier": 1,
+    "desc": "Medieval stone city (11th-15th century) in southern Africa. Massive granite walls built without mortar, up to 11m high and 5m thick. Capital of a trading empire linking Africa to Asia."
+  },
+  {
+    "n": "Lalibela Rock-Hewn Churches",
+    "lat": 12.0319,
+    "lng": 39.0422,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 1,
+    "desc": "11 medieval churches carved top-down from solid rock in Ethiopia. The Church of St. George is a perfect cruciform cut 12m into the ground. Called the 'Eighth Wonder of the World.'"
+  },
+  {
+    "n": "Aksum Obelisks",
+    "lat": 14.1308,
+    "lng": 38.7189,
+    "cat": "megalithic",
+    "region": "Africa",
+    "tier": 1,
+    "desc": "Giant stelae up to 33m tall carved from single granite blocks. The largest (fallen) weighs 520 tons. Aksumite civilization was one of the four great powers of the ancient world."
+  },
+  {
+    "n": "Meroe Pyramids",
+    "lat": 16.9381,
+    "lng": 33.7489,
+    "cat": "pyramid",
+    "region": "Africa",
+    "tier": 1,
+    "desc": "Over 200 steep-sided pyramids built by the Kingdom of Kush (800 BCE - 350 CE). More pyramids than Egypt, with distinctive narrow proportions and chapel entrances."
+  },
+  {
+    "n": "Tassili n'Ajjer",
+    "lat": 25.5,
+    "lng": 9.0,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 2,
+    "desc": "15,000+ rock paintings and engravings in the Sahara, some dating to 12,000 years ago. Depict a green Sahara with rivers, hippos, cattle, and enigmatic 'round-headed' humanoid figures."
+  },
+  {
+    "n": "Adam's Calendar",
+    "lat": -25.8872,
+    "lng": 30.7617,
+    "cat": "megalithic",
+    "region": "Africa",
+    "tier": 2,
+    "desc": "Controversial stone circle in South Africa, claimed to be 75,000 years old by some researchers. Aligned to cardinal points and solstices. Mainstream dating and significance debated."
+  },
+  {
+    "n": "Teotihuacán",
+    "lat": 19.6925,
+    "lng": -98.8438,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 1,
+    "desc": "City of the Gods with the Pyramid of the Sun (3rd largest pyramid on Earth) and Pyramid of the Moon along the Avenue of the Dead. Population peaked at 125,000. Builders unknown."
+  },
+  {
+    "n": "Chichén Itzá",
+    "lat": 20.6843,
+    "lng": -88.5678,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 1,
+    "desc": "Maya-Toltec city with the Kukulkan Pyramid, which casts a serpent shadow during equinoxes. Features the largest ball court in Mesoamerica and a cenote used for offerings."
+  },
+  {
+    "n": "Palenque",
+    "lat": 17.4838,
+    "lng": -92.0461,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 1,
+    "desc": "Classic Maya city in the Chiapas jungle. The Temple of Inscriptions contains the sarcophagus of Pakal the Great, with a controversial lid carving some interpret as an astronaut."
+  },
+  {
+    "n": "Monte Albán",
+    "lat": 17.0436,
+    "lng": -96.7678,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 1,
+    "desc": "Zapotec capital atop a flattened mountaintop in Oaxaca. Occupied 500 BCE - 800 CE. The Danzantes stones depict figures in contorted poses, possibly conquest victims."
+  },
+  {
+    "n": "Copán",
+    "lat": 14.8386,
+    "lng": -89.1411,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 1,
+    "desc": "Maya city in Honduras renowned for its Hieroglyphic Stairway: the longest known Maya text with 2,200 glyphs recording the dynasty's history."
+  },
+  {
+    "n": "Tikal",
+    "lat": 17.222,
+    "lng": -89.6237,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 1,
+    "desc": "One of the largest Maya cities, with temples rising 70m above the jungle canopy. Population estimated at 100,000. Temple IV offers sunrise views across the Petén basin."
+  },
+  {
+    "n": "Uxmal",
+    "lat": 20.3594,
+    "lng": -89.7715,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "desc": "Puuc-style Maya city with the Pyramid of the Magician (unusual rounded edges) and the Governor's Palace, considered one of the finest examples of pre-Columbian architecture."
+  },
+  {
+    "n": "Tulum",
+    "lat": 20.2145,
+    "lng": -87.4291,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "desc": "Walled Maya city perched on a cliff above the Caribbean Sea. One of the last cities built by the Maya, still inhabited when Spanish arrived in the 1500s."
+  },
+  {
+    "n": "La Venta",
+    "lat": 18.1033,
+    "lng": -94.0419,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "desc": "Olmec ceremonial center (900-400 BCE). Home of the colossal stone heads, 3m tall and up to 50 tons, carved from basalt transported 80+ km. The Olmec writing system remains undeciphered."
+  },
+  {
+    "n": "San Lorenzo Tenochtitlán",
+    "lat": 17.7539,
+    "lng": -94.7614,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "desc": "Earliest Olmec center (1500-900 BCE) with 10 colossal heads. The site sits on a partially artificial plateau, with a sophisticated drainage system of buried basalt aqueducts."
+  },
+  {
+    "n": "El Mirador",
+    "lat": 17.7556,
+    "lng": -89.9208,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 1,
+    "desc": "Preclassic Maya megacity in the Guatemalan jungle. La Danta pyramid is the largest by volume in the ancient world. Accessible only by helicopter or multi-day jungle trek."
+  },
+  {
+    "n": "Calakmul",
+    "lat": 18.1056,
+    "lng": -89.8108,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "desc": "Maya superpower rival to Tikal. 6,750+ structures across 70 sq km of jungle. Two massive pyramids emerge above the rainforest canopy."
+  },
+  {
+    "n": "Cholula",
+    "lat": 19.0575,
+    "lng": -98.3019,
+    "cat": "pyramid",
+    "region": "Central America",
+    "tier": 2,
+    "desc": "Great Pyramid of Cholula: the largest pyramid by volume in the world (4.45 million cubic meters), now hidden under a hill with a church on top. Built in layers over 1,000+ years."
+  },
+  {
+    "n": "Mitla",
+    "lat": 16.9264,
+    "lng": -96.3606,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "desc": "Zapotec/Mixtec city known as the 'Place of the Dead.' Features elaborate geometric stone mosaics assembled from thousands of precisely cut stone pieces without mortar."
+  },
+  {
+    "n": "Göbekli Tepe Visitor Center",
+    "lat": 37.223,
+    "lng": 38.923,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 3,
+    "desc": "Modern visitor interpretation center adjacent to the main excavation site."
+  },
+  {
+    "n": "Barnenez",
+    "lat": 48.6672,
+    "lng": -3.8581,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "One of the oldest man-made structures on Earth (~4800 BCE). Massive cairn on the Brittany coast predating the Egyptian pyramids by 2,000 years."
+  },
+  {
+    "n": "Bru na Boinne (Boyne Valley)",
+    "lat": 53.6944,
+    "lng": -6.475,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "UNESCO complex containing Newgrange, Knowth, and Dowth. The densest concentration of megalithic passage tombs in Western Europe."
+  },
+  {
+    "n": "Tarxien Temples",
+    "lat": 35.8686,
+    "lng": 14.5117,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Maltese temple complex (~3150 BCE) with elaborate stone carvings including a massive 'Fat Lady' statue. Evidence of animal sacrifice and oracle practices."
+  },
+  {
+    "n": "Sardinia Nuraghi (Su Nuraxi)",
+    "lat": 39.7081,
+    "lng": 8.5717,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "Over 7,000 nuraghi (stone towers) dot Sardinia. Su Nuraxi di Barumini is the finest: a central tower surrounded by four corner towers and a village. Unique to the Nuragic civilization."
+  },
+  {
+    "n": "Externsteine",
+    "lat": 51.8681,
+    "lng": 8.9172,
+    "cat": "rock-cut",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Dramatic sandstone rock pillars in Germany with carved chambers, relief sculptures, and a chapel. Used from prehistoric times through the medieval period."
+  },
+  {
+    "n": "Bagan",
+    "lat": 21.1717,
+    "lng": 94.8585,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Over 2,200 surviving temples and pagodas across a 104 sq km plain in Myanmar. At its peak (11th-13th century), over 10,000 Buddhist temples stood here."
+  },
+  {
+    "n": "Prambanan",
+    "lat": -7.752,
+    "lng": 110.4914,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Largest Hindu temple complex in Southeast Asia (9th century). 240 temples with the central Shiva temple rising 47m. UNESCO World Heritage Site in Java."
+  },
+  {
+    "n": "My Son Sanctuary",
+    "lat": 15.7644,
+    "lng": 108.1222,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Champa kingdom Hindu temple complex (4th-14th century) in central Vietnam. Once contained over 70 temples, many damaged during the Vietnam War."
+  },
+  {
+    "n": "Derinkuyu-Kaymakli Tunnel",
+    "lat": 38.41,
+    "lng": 34.74,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 3,
+    "desc": "8km tunnel connecting the two largest underground cities. Only partially explored. Demonstrates the vast interconnected network beneath Cappadocia."
+  },
+  {
+    "n": "Uchisar Fairy Chimneys",
+    "lat": 38.6333,
+    "lng": 34.8,
+    "cat": "rock-cut",
+    "region": "Türkiye",
+    "tier": 3,
+    "desc": "Iconic volcanic rock formations with carved rooms and passages. Natural erosion sculpted the 'fairy chimneys' while humans carved the interiors."
+  },
+  {
+    "n": "Pasargadae",
+    "lat": 30.1936,
+    "lng": 53.1669,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 2,
+    "desc": "First capital of the Achaemenid Empire and site of the Tomb of Cyrus the Great. The tomb's stepped stone platform design influenced architecture across the ancient world."
+  },
+  {
+    "n": "Jiahu",
+    "lat": 33.6167,
+    "lng": 113.6667,
+    "cat": "settlement",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Neolithic Chinese site (7000-5700 BCE). Yielded the world's oldest playable musical instruments (bone flutes), earliest evidence of fermented beverages, and proto-writing symbols."
+  },
+  {
+    "n": "Dolmen of Menga",
+    "lat": 37.0236,
+    "lng": -4.5483,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "One of the largest megalithic structures in Europe. Passage tomb near Antequera, Spain with a capstone weighing 180 tons. Part of a UNESCO complex with Viera and El Romeral."
+  },
+  {
+    "n": "Cairn of Barclodiad y Gawres",
+    "lat": 53.22,
+    "lng": -4.58,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Neolithic passage tomb on Anglesey, Wales. Contains decorated stones with spiral and zigzag patterns similar to those at Newgrange."
+  },
+  {
+    "n": "Bryn Celli Ddu",
+    "lat": 53.2067,
+    "lng": -4.2361,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Neolithic passage tomb on Anglesey aligned to summer solstice sunrise. Built over an earlier henge with a mysterious decorated 'Pattern Stone.'"
+  },
+  {
+    "n": "Loughcrew Cairns",
+    "lat": 53.7444,
+    "lng": -7.1139,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Complex of 30+ passage tombs on hilltops in County Meath, Ireland. The equinox sunrise illuminates Neolithic carvings inside Cairn T."
+  },
+  {
+    "n": "Rujm el-Hiri (Gilgal Refaim)",
+    "lat": 32.9956,
+    "lng": 35.8167,
+    "cat": "megalithic",
+    "region": "Middle East",
+    "tier": 2,
+    "desc": "Massive stone circles in the Golan Heights visible only from above, dating to ~3000 BCE. Five concentric rings with a central cairn. Purpose unknown."
+  },
+  {
+    "n": "Göbekli Tepe Layer III",
+    "lat": 37.2235,
+    "lng": 38.922,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 2,
+    "desc": "The oldest excavated layer (9600-8800 BCE) contains the largest T-pillars, up to 5.5m tall and 10 tons. Enclosures A-D with the most elaborate animal carvings."
+  },
+  {
+    "n": "Bete Medhane Alem",
+    "lat": 12.0322,
+    "lng": 39.0413,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 1,
+    "desc": "The largest monolithic church in the world, supported by 36 exterior and 36 interior columns, all carved from a single block of pink volcanic tuff during the reign of King Lalibela in the 12th-13th century."
+  },
+  {
+    "n": "Bete Maryam",
+    "lat": 12.032,
+    "lng": 39.0415,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 2,
+    "desc": "Possibly the oldest of the Lalibela churches and the most decorated, with frescoed ceilings and intricate interlocking arches dedicated to the Virgin Mary."
+  },
+  {
+    "n": "Bete Golgotha",
+    "lat": 12.0319,
+    "lng": 39.0416,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 2,
+    "desc": "Contains the tomb traditionally believed to hold King Lalibela himself, alongside seven life-sized stone reliefs of the saints carved into the walls."
+  },
+  {
+    "n": "Bete Mikael",
+    "lat": 12.0321,
+    "lng": 39.0414,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 3,
+    "desc": "Hidden chapel adjoining Bete Golgotha, considered one of the most sacred spots in the entire Lalibela complex. Houses the Selassie Chapel."
+  },
+  {
+    "n": "Bete Denagel",
+    "lat": 12.032,
+    "lng": 39.0412,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 3,
+    "desc": "Modest chapel said to commemorate Roman virgin nuns martyred during the 4th-century reign of Julian the Apostate."
+  },
+  {
+    "n": "Bete Giyorgis (St. George)",
+    "lat": 12.0314,
+    "lng": 39.041,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 1,
+    "desc": "The iconic cross-shaped monolith, carved 12 meters down into the bedrock and visible from above as a perfect Greek cross. Tradition holds King Lalibela carved it last after a vision of St. George."
+  },
+  {
+    "n": "Bete Amanuel",
+    "lat": 12.0309,
+    "lng": 39.042,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 2,
+    "desc": "The only freestanding monolithic church among the Lalibela complex. Possibly the former royal chapel of the Zagwe dynasty before its consecration."
+  },
+  {
+    "n": "Bete Merkorios",
+    "lat": 12.0307,
+    "lng": 39.0421,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 3,
+    "desc": "Originally a courthouse before conversion to a church, with worn floors stained from generations of devotional foot traffic."
+  },
+  {
+    "n": "Bete Abba Libanos",
+    "lat": 12.0308,
+    "lng": 39.0422,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 3,
+    "desc": "Tradition holds it was carved in a single night by King Lalibela's wife Meskel Kibra with the assistance of angels."
+  },
+  {
+    "n": "Bete Gabriel-Rufael",
+    "lat": 12.0312,
+    "lng": 39.0418,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 2,
+    "desc": "Twin sanctuary connected by an underground tunnel, possibly originally a royal palace before its conversion to a church."
+  },
+  {
+    "n": "Bete Lehem",
+    "lat": 12.031,
+    "lng": 39.042,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 3,
+    "desc": "Small chapel where the holy bread (Eucharist) was traditionally baked for the entire Lalibela complex."
+  },
+  {
+    "n": "Yemrehana Krestos",
+    "lat": 12.1233,
+    "lng": 39.1817,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 1,
+    "desc": "12th-century church built (not carved) inside a vast cave near Lalibela, using alternating layers of wood and white gypsum stone. Predates the Lalibela rock-hewn complex and considered one of Ethiopia's most beautiful religious structures."
+  },
+  {
+    "n": "Abuna Yemata Guh",
+    "lat": 13.9483,
+    "lng": 39.1606,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 1,
+    "desc": "Carved into a sheer sandstone pinnacle requiring a 250-meter rope-and-handhold climb to reach. Interior frescoes from the 5th-6th century are exceptionally well preserved."
+  },
+  {
+    "n": "Mikael Imba",
+    "lat": 13.4283,
+    "lng": 39.1683,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 2,
+    "desc": "Monolithic church carved into the slopes of Mount Imba, accessed by a steep climb. Houses ancient illuminated manuscripts and original murals."
+  },
+  {
+    "n": "Wukro Cherkos",
+    "lat": 13.7891,
+    "lng": 39.6011,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 2,
+    "desc": "Semi-monolithic church from the late 6th century with a cruciform plan, surviving original murals depicting the four evangelists, and a sunken courtyard carved into volcanic rock."
+  },
+  {
+    "n": "Abreha we Atsbeha",
+    "lat": 13.8,
+    "lng": 39.55,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 1,
+    "desc": "Named after the 4th-century twin kings who introduced Christianity to Aksum. The largest rock-hewn church in Tigray, with elaborate cruciform geometry and original frescoes."
+  },
+  {
+    "n": "Maryam Korkor",
+    "lat": 13.9442,
+    "lng": 39.1322,
+    "cat": "rock-cut",
+    "region": "Africa",
+    "tier": 2,
+    "desc": "Multi-chamber sanctuary carved into the Gheralta cliffs, with painted ceiling and pilgrimage paths to the smaller adjacent Daniel Korkor church."
+  },
+  {
+    "n": "Tall el-Hammam",
+    "lat": 31.8456,
+    "lng": 35.6794,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 2,
+    "desc": "Bronze Age city in the Jordan Valley, possibly the biblical Sodom. A 2021 Scientific Reports paper proposed a ~1650 BCE cosmic airburst caused the destruction layer of melted brick, vitrified pottery, and shocked quartz."
+  },
+  {
+    "n": "Barabar Caves",
+    "lat": 25.0044,
+    "lng": 85.0617,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "India's oldest surviving rock-cut caves, commissioned by Emperor Ashoka in the 3rd century BCE for the Ajivika ascetic sect. Mirror-polished granite interiors achieve acoustic resonance precision not replicated elsewhere in ancient stonework."
+  },
+  {
+    "n": "Abu Hureyra",
+    "lat": 35.8667,
+    "lng": 38.3833,
+    "cat": "settlement",
+    "region": "Middle East",
+    "tier": 3,
+    "desc": "Neolithic settlement in northern Syria with destruction layer dated to ~12,800 BP — coincident with the Younger Dryas onset. Contains meltglass and platinum spikes cited as evidence for the Younger Dryas Impact Hypothesis. Submerged under Lake Assad reservoir in 1973."
+  },
+  {
+    "n": "Naupa Huaca",
+    "lat": -13.2667,
+    "lng": -72.2667,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Small but precisely-carved rock-cut shrine in the Sacred Valley, Peru. Features a perfectly geometric stepped altar, lightning-cut niches, and inverted-V doorway. Pre-Inca origin disputed."
+  },
+  {
+    "n": "Vat Phou",
+    "lat": 14.8475,
+    "lng": 105.8211,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Pre-Angkorian Khmer temple complex in southern Laos, dating to the 5th century CE. Built on a holy mountain. UNESCO World Heritage. Stylistic precursor to Angkor Wat. Megalithic foundations remain unexplained."
+  },
+  {
+    "n": "El Tajín",
+    "lat": 20.4467,
+    "lng": -97.3781,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "desc": "Classic Veracruz ceremonial center, ~600-1200 CE. Famous for the Pyramid of the Niches with 365 recessed openings — one for each day of the solar year. UNESCO World Heritage."
+  },
+  {
+    "n": "Sambor Prei Kuk",
+    "lat": 12.8669,
+    "lng": 105.05,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Pre-Angkorian Khmer capital of Chenla (~600-700 CE), 200+ years older than Angkor Wat. Brick towers with intricate carvings hidden in jungle. UNESCO World Heritage 2017."
+  },
+  {
+    "n": "Ta Keo",
+    "lat": 13.447,
+    "lng": 103.8861,
+    "cat": "pyramid",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Cambodia's 'Lightning Pyramid' — a five-tier pyramid built from an unusually hard, near-white sandstone found nowhere else in the Khmer corpus. Officially dated to 975 CE, attributed to Jayavarman V, and said to be unfinished after a lightning strike. Tight moat, hundreds of lathed spindles, carved mounting sockets, and a direct hydrological link to the East Baray suggest a far more deliberate (and possibly earlier) function."
+  },
+  {
+    "n": "Koh Ker",
+    "lat": 13.7833,
+    "lng": 104.5333,
+    "cat": "pyramid",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "20,000-acre megalithic complex 100 km NE of Angkor, anchored by a solid stone seven-tier pyramid (Prasat Thom). Officially built in 20 years by Jayavarman IV (~928 CE), with 150+ structures, 7 km man-made dam, and a 2,000-acre reservoir — the largest artificial lake in the ancient world. Polygonal stonework reminiscent of Cusco. Home to colossal lingas and the 7-ton Dancing Shiva."
+  },
+  {
+    "n": "Ta Prohm",
+    "lat": 13.435,
+    "lng": 103.8892,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "'Tomb Raider Temple' inside the Angkor complex (~1186 CE), famous for the strangler figs and silk-cotton trees that have fused with its walls. Contains the controversial 'Stegosaurus' relief — a carved creature on a column whose dorsal plates have no accepted explanation. Soft-sandstone construction; one of the most heavily-weathered late-Khmer temples."
+  },
+  {
+    "n": "Beng Mealea",
+    "lat": 13.475,
+    "lng": 104.2375,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Massive 12th-century Khmer temple 40 km east of Angkor, contemporary in style to Angkor Wat but left largely unrestored and consumed by jungle. LiDAR revealed the same engineered mound-fields and spiral embankments documented at Angkor, suggesting an integrated regional hydraulic-ritual landscape rather than isolated temples."
+  },
+  {
+    "n": "Preah Khan of Kompong Svay",
+    "lat": 13.4264,
+    "lng": 104.8794,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Largest single temple enclosure ever built by the Khmer (5 km × 5 km), 100 km east of Angkor along the ancient royal road. Reservoirs, mound-grids, and spiral earthworks mirror the Angkor and Beng Mealea layouts — same hand, same scale, same unexplained engineering signature. Almost entirely unrestored."
+  },
+  {
+    "n": "Chalcatzingo",
+    "lat": 18.6764,
+    "lng": -98.7589,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Olmec-influenced ceremonial center in Morelos, Mexico (~1500-500 BCE). Features 'The Earth Monster' — a giant carved relief of a serpent-mouth cave with figures emerging. Critical site for understanding Olmec religious symbolism."
+  },
+  {
+    "n": "Chankillo",
+    "lat": -9.5614,
+    "lng": -78.2306,
+    "cat": "temple",
+    "region": "South America",
+    "tier": 1,
+    "desc": "World's oldest known solar astronomical observatory. Thirteen towers along a north-south ridge mark sunrise and sunset positions across the year, calibrating the agricultural calendar. Dates to ~250 BCE. UNESCO World Heritage 2021."
+  },
+  {
+    "n": "Casma Valley Geoglyphs",
+    "lat": -9.48,
+    "lng": -78.27,
+    "cat": "geoglyph",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Pre-Inca geoglyphs and ground figures scattered across the Casma Valley, contemporaneous with the Casma-Sechin culture (3500-200 BCE). Far less studied than the Nazca Lines but spanning similar geometric and figural forms."
+  },
+  {
+    "n": "Lima Geoglyphs",
+    "lat": -12.205,
+    "lng": -76.88,
+    "cat": "geoglyph",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Lesser-known pre-Columbian geoglyphs across the desert pampas south of Lima, including the Lurín valley. Attributed to the Lima culture (200-700 CE) and later Wari peoples. Geometric patterns and figural designs visible from elevated terrain."
+  },
+  {
+    "n": "Pikillaqta",
+    "lat": -13.6219,
+    "lng": -71.7042,
+    "cat": "city",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Largest Wari administrative center in southern Peru, ~600-1100 CE. Geometric grid plan covering 2 km² with 700+ structures and walls up to 12 meters high. Predates and influenced Inca urban planning."
+  },
+  {
+    "n": "Mahabalipuram (Shore Temple)",
+    "lat": 12.6164,
+    "lng": 80.1991,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "7th-century Pallava coastal complex south of Chennai. Features the Shore Temple, the Five Rathas (monolithic temples carved from single boulders), Krishna's Butterball, and the world's largest open-air bas-relief 'Arjuna's Penance.' UNESCO World Heritage."
+  },
+  {
+    "n": "Khajuraho Temples",
+    "lat": 24.8528,
+    "lng": 79.9199,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Chandela-dynasty temple complex (~950-1050 CE) in Madhya Pradesh. Famous for nagara-style towers and intricate erotic and devotional sculptures across 25 surviving temples. Aligned to celestial events. UNESCO World Heritage."
+  },
+  {
+    "n": "Brihadeeswarar Temple (Thanjavur)",
+    "lat": 10.7828,
+    "lng": 79.1314,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "The 'Big Temple' of the Chola dynasty (~1010 CE). 66-meter vimana topped by an 80-ton single granite capstone hauled into place without explanation. Largest temple tower in India when built. UNESCO World Heritage."
+  },
+  {
+    "n": "Rani ki Vav (Queen's Stepwell)",
+    "lat": 23.8587,
+    "lng": 72.1019,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Subterranean inverted temple in Patan, Gujarat, built ~1063 CE by Queen Udayamati of the Solanki dynasty in memory of her husband Bhima I. Seven stories deep, 27 m down, 64 m long. Over 500 principal sculptures and a thousand smaller carvings line the descent. Buried by Saraswati River floods for centuries, excavated 1980s. UNESCO World Heritage 2014."
+  },
+  {
+    "n": "Lepakshi (Veerabhadra Temple)",
+    "lat": 13.809,
+    "lng": 77.6053,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "16th-century Vijayanagara temple in Andhra Pradesh, famous for the 'hanging pillar' that doesn't touch the ground, the world's largest monolithic Nandi bull (granite, single block), and ceiling frescoes covering 14m × 4m."
+  },
+  {
+    "n": "Elephanta Caves",
+    "lat": 18.9633,
+    "lng": 72.9314,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Rock-cut temple complex on Elephanta Island near Mumbai (~600 CE). Centered on the Trimurti Sadashiva — a 6m three-headed Shiva sculpture in basalt. UNESCO World Heritage. Origin and dating contested."
+  },
+  {
+    "n": "Bakong",
+    "lat": 13.3361,
+    "lng": 103.9772,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "First state temple of the Khmer Empire (~881 CE), in the Roluos group near Siem Reap. The earliest large pyramid-temple in Khmer architecture, foreshadowing the form of Angkor Wat. Sandstone over laterite, surrounded by a moat."
+  },
+  {
+    "n": "Banteay Srei",
+    "lat": 13.598,
+    "lng": 103.9622,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "'Citadel of the Women' (967 CE), 25 km northeast of Angkor. Built from pink sandstone with exceptionally fine relief carvings — Cambodia's most exquisitely detailed temple. Modest size, extraordinary execution."
+  },
+  {
+    "n": "Preah Ko",
+    "lat": 13.3411,
+    "lng": 103.9719,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "desc": "'Sacred Bull' temple (879 CE), the earliest in the Roluos group. Six brick prasats (towers) in two rows, dedicated to ancestors of King Indravarman I. Reliefs show lathing-precision carving rare elsewhere in Khmer architecture."
+  },
+  {
+    "n": "Sukhothai",
+    "lat": 17.0193,
+    "lng": 99.7039,
+    "cat": "city",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "First capital of the unified Thai kingdom (~1238-1438 CE). The 'Dawn of Happiness' — birthplace of Thai script, art, and architecture. Vast ruined complex of monasteries, palaces, and walking-Buddha statues. UNESCO World Heritage."
+  },
+  {
+    "n": "My Son",
+    "lat": 15.7639,
+    "lng": 108.1242,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Cham religious center in central Vietnam, active from the 4th to 13th centuries CE. Hindu temple complex in a valley surrounded by mountains. Heavily damaged in the Vietnam War but the surviving brick towers retain extraordinary craftsmanship. UNESCO World Heritage."
+  },
+  {
+    "n": "Plain of Jars",
+    "lat": 19.4329,
+    "lng": 103.1542,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Hundreds of massive stone jars, some 3 meters tall and 14 tons, scattered across the Xiangkhoang Plateau in Laos. Iron Age (~500 BCE - 500 CE). Purpose unknown — funerary, water storage, or distillation theorized. UNESCO World Heritage 2019."
+  },
+  {
+    "n": "Si Thep (Khao Klang Nok)",
+    "lat": 15.4633,
+    "lng": 101.1454,
+    "cat": "city",
+    "region": "Asia",
+    "tier": 3,
+    "desc": "Dvaravati-period (~600-900 CE) twin-walled city in Phetchabun, Thailand. Khao Klang Nok is a 64m-wide pyramid-platform of fired brick. UNESCO World Heritage 2023. Architectural style suggests cross-cultural Indian influence."
+  },
+  {
+    "n": "Abu Rawash",
+    "lat": 30.0322,
+    "lng": 31.0744,
+    "cat": "pyramid",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Pyramid of Djedefre, son and successor of Khufu. The northernmost pyramid in Egypt and the highest in elevation. Now largely a quarried-stub of its original ~67m height. Polygonal Tura limestone casing fragments survive."
+  },
+  {
+    "n": "Abu Ghorab",
+    "lat": 29.9056,
+    "lng": 31.1939,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 3,
+    "desc": "5th Dynasty sun temple of Niuserre (~2440 BCE), one of only two surviving sun temples. Features the mysterious 'Hotep' offering basin — a black basalt object with unexplained precision-machined features."
+  },
+  {
+    "n": "Tell el Roba (Mendes)",
+    "lat": 30.9628,
+    "lng": 31.5158,
+    "cat": "city",
+    "region": "Egypt",
+    "tier": 3,
+    "desc": "Ancient capital Per-Banebdjedet in the Nile Delta, occupied from Predynastic times (~4000 BCE) through the Late Period. Briefly the capital of Egypt during the 29th Dynasty. Massive megalithic naos (shrine) blocks remain unexplained."
+  },
+  {
+    "n": "Hierakonpolis (Nekhen)",
+    "lat": 25.0975,
+    "lng": 32.7811,
+    "cat": "city",
+    "region": "Egypt",
+    "tier": 2,
+    "desc": "Predynastic Egyptian capital (~3500-3100 BCE). The Narmer Palette was excavated here. Contains the oldest known mummification (5,500 BCE), the oldest temple in Egypt, and elite tombs with the earliest evidence of state formation."
+  },
+  {
+    "n": "Naqada",
+    "lat": 25.8964,
+    "lng": 32.7222,
+    "cat": "settlement",
+    "region": "Egypt",
+    "tier": 3,
+    "desc": "Predynastic settlement that named the Naqada culture (~4400-3000 BCE), which preceded and seeded pharaonic Egypt. Black-topped pottery, painted vessels, and early hieroglyphic precursors found here."
+  },
+  {
+    "n": "Zawyet el-Aryan",
+    "lat": 29.9586,
+    "lng": 31.1739,
+    "cat": "pyramid",
+    "region": "Egypt",
+    "tier": 3,
+    "desc": "Two unfinished pyramids of the 3rd or 4th Dynasty: the Layer Pyramid (Khaba) and the Unfinished Pyramid (sometimes attributed to Baka). The latter's burial pit contains a single sealed granite vessel of unknown function. Closed to the public for nearly a century; remains poorly excavated."
+  },
+  {
+    "n": "Al Rajajil Standing Stones",
+    "lat": 29.9667,
+    "lng": 40.2167,
+    "cat": "megalithic",
+    "region": "Middle East",
+    "tier": 2,
+    "desc": "'The Standing Men of Saudi Arabia.' Over 50 clusters of standing sandstone slabs in the northern Saudi desert, some over 3m tall, dated to ~4,000 BCE. The function is unclear. The site is contemporary with Carnac, on a continent and culture with no known megalithic tradition."
+  },
+  {
+    "n": "Senegambian Stone Circles",
+    "lat": 13.7333,
+    "lng": -15.5167,
+    "cat": "megalithic",
+    "region": "Africa",
+    "tier": 1,
+    "desc": "Roughly 1,000 stone circles stretching 350 km along the Gambia River across Senegal and the Gambia. Built between ~300 BCE and 1500 CE from precisely cut laterite blocks. The largest concentration of stone circles in the world outside Europe. UNESCO World Heritage."
+  },
+  {
+    "n": "Madghacen (Algerian Pyramids)",
+    "lat": 35.6128,
+    "lng": 6.4811,
+    "cat": "tomb",
+    "region": "Africa",
+    "tier": 3,
+    "desc": "Numidian royal mausoleum in eastern Algeria, ~3rd century BCE. A 19m-tall stepped circular tomb with 60 Doric columns. Contemporary with the larger Berber pyramid-tomb at Tipasa. Both pre-date Roman occupation of North Africa."
+  },
+  {
+    "n": "Bimini Road",
+    "lat": 25.7639,
+    "lng": -79.2667,
+    "cat": "megalithic",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Underwater rock formation off North Bimini in the Bahamas, ~6m deep. Linear strip of rectangular megalithic blocks ~800m long. Discovered 1968. Geological versus man-made origin debated for over 50 years. Edgar Cayce's predicted 'edge of Atlantis' site."
+  },
+  {
+    "n": "Cumbe Mayo",
+    "lat": -7.1714,
+    "lng": -78.5808,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Pre-Inca aqueduct system in the highlands above Cajamarca, Peru, ~1500 BCE. ~9 km of zigzag channels carved with millimeter precision through living rock, with 90-degree turns that defy the standard hydraulic explanation. Among the oldest engineered structures in the Andes."
+  },
+  {
+    "n": "Cahuachi Pyramids",
+    "lat": -14.8156,
+    "lng": -75.1267,
+    "cat": "pyramid",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Adobe pyramid complex of the Nazca culture (~200 BCE – 600 CE), 28 km southwest of the city of Nazca. Mostly buried under millennia of sand. The Great Temple Pyramid is the largest mud structure in the world. The ceremonial center of the culture that built the Nazca Lines."
+  },
+  {
+    "n": "Aramu Muru",
+    "lat": -16.0958,
+    "lng": -69.4833,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 3,
+    "desc": "'The Gate of the Gods' near Lake Titicaca, Peru. A 7m × 7m rectangular niche carved into a sheer cliff face, with a smaller H-shaped doorway at its center. Local Aymara tradition describes it as a portal. Officially unfinished pre-Inca work; the tool marks and finish are inconsistent with the standard date."
+  },
+  {
+    "n": "Samaipata (El Fuerte)",
+    "lat": -18.1775,
+    "lng": -63.8181,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Pre-Inca rock-cut megalithic complex on a sandstone outcrop in eastern Bolivia. The 220m × 60m carved surface includes serpentine canals, animal reliefs, and ceremonial seats. Used continuously from ~300 CE through the Spanish conquest. UNESCO World Heritage."
+  },
+  {
+    "n": "Templo Mayor (Tenochtitlan)",
+    "lat": 19.4347,
+    "lng": -99.1322,
+    "cat": "temple",
+    "region": "Central America",
+    "tier": 1,
+    "desc": "Main temple of the Aztec capital, in present-day central Mexico City. Twin pyramids dedicated to Tlaloc and Huitzilopochtli. Built over the older Chichimec / Tlatelolco substrate. Razed and buried by the Spanish; rediscovered 1978 during subway construction."
+  },
+  {
+    "n": "San Agustín Archaeological Park",
+    "lat": 1.8869,
+    "lng": -76.2722,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 2,
+    "desc": "Largest concentration of pre-Columbian megalithic statuary in South America. Over 500 carved volcanic stone figures (humans, jaguars, eagles, snakes) and dolmen tombs in southern Colombia, dating from ~1 CE to 900 CE. The culture that produced them remains anonymous. UNESCO World Heritage."
+  },
+  {
+    "n": "Leshan Giant Buddha",
+    "lat": 29.5447,
+    "lng": 103.7733,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "71m-tall stone Buddha carved into the cliff at the confluence of three rivers in Sichuan, China. Construction begun 713 CE under Tang Dynasty, completed 803 CE. The largest stone Buddha in the world. UNESCO World Heritage."
+  },
+  {
+    "n": "Bada Valley Megaliths",
+    "lat": -1.7833,
+    "lng": 120.2167,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Hundreds of anthropomorphic megalithic statues scattered across the Bada, Besoa, and Napu Valleys of central Sulawesi, Indonesia. Dating contested (estimates range 3000 BCE – 1300 CE). No known culture in the region took credit. The largest, 'Palindo,' stands 4.5m tall and weighs ~50 tons."
+  },
+  {
+    "n": "Ganghwa Dolmens",
+    "lat": 37.73,
+    "lng": 126.4514,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Part of the Korean dolmen corpus, one of the largest in the world: roughly 35,000 dolmens across the peninsula. The Ganghwa cluster contains some of the oldest (~7th century BCE) and most monumental (the Bugeun-ri dolmen weighs ~50 tons). UNESCO World Heritage 2000."
+  },
+  {
+    "n": "Tiger Cave (Saluvankuppam)",
+    "lat": 12.7344,
+    "lng": 80.2369,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 3,
+    "desc": "Pallava-era rock-cut shrine on the Tamil Nadu coast, ~700 CE. A carved tiger-head opening above an interior chamber, sited directly on the Indian Ocean. Local tradition holds it predates the Pallava work by millennia. The cave structure withstood the 2004 tsunami."
+  },
+  {
+    "n": "Bhaja Caves",
+    "lat": 18.729,
+    "lng": 73.4794,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "22 rock-cut Buddhist caves in the Western Ghats of Maharashtra, India, ~200 BCE. Among the earliest examples of Indian rock-cut architecture, predating Ajanta and Ellora. Vaulted chaitya hall with carved wooden-style ribs cut from solid basalt."
+  },
+  {
+    "n": "Willong Khullen Megaliths",
+    "lat": 25.4,
+    "lng": 94.15,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 3,
+    "desc": "Field of over 100 standing stones near Willong village in Manipur, northeast India. Largest stones reach 8m. The living Naga people maintain an unbroken tradition of megalith erection, the only such tradition on Earth. New stones were last raised in the 20th century."
+  },
+  {
+    "n": "Alatri Acropolis",
+    "lat": 41.7283,
+    "lng": 13.3422,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Cyclopean polygonal megalithic walls in central Italy, southeast of Rome. The acropolis enclosure is roughly 2 km in perimeter, with blocks weighing 20–30 tons fitted without mortar. Officially Hernican / 6th century BCE; the masonry style and weathering suggest a far older substrate."
+  },
+  {
+    "n": "Alba Fucens",
+    "lat": 42.0764,
+    "lng": 13.4129,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Roman colony founded 303 BCE on top of a much older polygonal megalithic citadel in the Abruzzo highlands. The cyclopean lower walls, attributed to the pre-Roman Aequi, share the joinery signature with Alatri, Segni, and the Andean polygonal corpus."
+  },
+  {
+    "n": "Segni (Signia)",
+    "lat": 41.6928,
+    "lng": 13.0233,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Hilltop town in Lazio, Italy, with cyclopean polygonal walls comparable to Alatri's. Traditional date: 6th century BCE Volscian. Some sections show finishing precision matching Sacsayhuamán. The 'opus polygonale' walls remain the most-discussed megalithic structures in central Italy."
+  },
+  {
+    "n": "Cosa",
+    "lat": 42.4061,
+    "lng": 11.2867,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Roman colony on the Tyrrhenian coast of Tuscany, founded 273 BCE on a pre-existing megalithic substrate. The polygonal foundation walls and acropolis platform pre-date the Roman period. Etruscan or pre-Etruscan origin contested."
+  },
+  {
+    "n": "Pyramid of Bomarzo",
+    "lat": 42.475,
+    "lng": 12.2486,
+    "cat": "pyramid",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Stepped pyramid altar carved from a single tuff outcrop in the woods of central Italy, near Viterbo. Discovered in 1991. Officially Etruscan (~7th century BCE), though no other Etruscan structure matches its form. Channels, basins, and steps cut with surprising precision."
+  },
+  {
+    "n": "Filitosa (Corsica)",
+    "lat": 41.7372,
+    "lng": 8.9408,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Megalithic complex on the southern French island of Corsica, occupied from ~3300 BCE. Anthropomorphic statue-menhirs depicting armed warriors, some of the earliest representations of the human figure in European megalithic art. Distinct from but contemporary with Carnac."
+  },
+  {
+    "n": "Daorson",
+    "lat": 43.0833,
+    "lng": 17.9667,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Cyclopean polygonal stone walls in southern Bosnia and Herzegovina, dated to the 4th–1st century BCE. Capital of the Illyrian Daors tribe. The masonry signature is identical to Mycenaean cyclopean work 1,500 years older, and to the Italian polygonal corpus contemporary with it."
+  },
+  {
+    "n": "Thracian Megaliths (Buzovgrad)",
+    "lat": 42.5,
+    "lng": 25.45,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Bronze Age megalithic complex in central Bulgaria, including the Buzovgrad menhir and the carved 'Magura Dolmen.' Among ~750 documented Thracian megalithic structures, mostly dolmens, dated 18th–6th century BCE. The Thracian megalithic tradition is the most extensive in southeastern Europe."
+  },
+  {
+    "n": "Arcadian Gate (Messene)",
+    "lat": 37.1689,
+    "lng": 21.9128,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Monumental gate of ancient Messene in the Peloponnese, built ~369 BCE. Two massive polygonal blocks form the gate uprights; the surviving threshold preserves chariot-wheel ruts cut into the stone. Part of one of the largest surviving classical fortification systems in Greece."
+  },
+  {
+    "n": "Nekromanteion of Acheron",
+    "lat": 39.2367,
+    "lng": 20.53,
+    "cat": "underground",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "'Oracle of the Dead' in Epirus, northwestern Greece. An underground sanctuary built ~3rd century BCE on much older foundations, dedicated to Hades and Persephone. Visitors descended through labyrinthine chambers to communicate with the dead. Mentioned by Homer in the Odyssey."
+  },
+  {
+    "n": "Pnyx",
+    "lat": 37.9714,
+    "lng": 23.7197,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Hill in Athens that served as the meeting place of the Athenian democratic assembly from the 6th century BCE. The bema (speaker's platform) is cut from living bedrock and surrounded by a curving polygonal retaining wall. The literal birthplace of public political speech."
+  },
+  {
+    "n": "Panoias Sanctuary",
+    "lat": 41.3392,
+    "lng": -7.7361,
+    "cat": "rock-cut",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Pre-Roman and Roman rock-cut religious sanctuary in northern Portugal. Three large granite outcrops carved with basins, channels, and steps, with Latin inscriptions identifying them as dedicated to Serapis and the dii Severi. Continuous use 4th century BCE through 3rd century CE."
+  },
+  {
+    "n": "Hosn Suleiman",
+    "lat": 35.0764,
+    "lng": 36.0989,
+    "cat": "temple",
+    "region": "Middle East",
+    "tier": 3,
+    "desc": "Massive Phoenician / Roman-era temple complex in the Syrian mountains north of Tartus. Cyclopean megalithic foundation walls with individual blocks up to 10m long. The site predates the surviving Roman superstructure; the megalithic substrate origin is unresolved."
+  },
+  {
+    "n": "Naqsh-e Rustam",
+    "lat": 29.9889,
+    "lng": 52.8742,
+    "cat": "rock-cut",
+    "region": "Middle East",
+    "tier": 1,
+    "desc": "Achaemenid rock-cut royal necropolis 12 km northwest of Persepolis, Iran. Four massive cruciform tombs cut into the cliff face (Darius I, Xerxes I, Artaxerxes I, Darius II), 5th century BCE. Below them, Sassanid relief carvings document the founding of the later Persian empire. Among the most ambitious rock-cut works on Earth."
+  },
+  {
+    "n": "Karahunj (Zorats Karer)",
+    "lat": 39.55,
+    "lng": 46.025,
+    "cat": "megalithic",
+    "region": "Middle East",
+    "tier": 1,
+    "desc": "'Armenian Stonehenge' in southern Armenia. 223 standing basalt stones, many with bored holes pointing at specific stars. Claimed astronomical observatory dating to ~5500 BCE, which would make it one of the oldest observatories on Earth. Date contested by mainstream archaeology; the bored holes themselves are not."
+  },
+  {
+    "n": "Vishap Stones",
+    "lat": 40.5,
+    "lng": 44.8,
+    "cat": "megalithic",
+    "region": "Middle East",
+    "tier": 3,
+    "desc": "'Dragon stones' of the Armenian highlands: tall basalt menhirs carved as stylized fish or bull-horn forms, often near water sources at altitudes above 2,000m. Dated to ~3rd–2nd millennium BCE. Over 150 examples documented. The earliest known association of monumental stone with water-deity worship in Western Asia."
+  },
+  {
+    "n": "Morongo Uta (Rapa Iti)",
+    "lat": -27.6225,
+    "lng": -144.3469,
+    "cat": "city",
+    "region": "Pacific",
+    "tier": 3,
+    "desc": "Polynesian fortified hilltop settlement on Rapa Iti in French Polynesia. Terraced earthwork pā with stone retaining walls covering an entire mountain ridge. Built and occupied ~1300–1800 CE. The most elaborate Polynesian fortification on Earth, and one of the most isolated."
+  },
+  {
+    "n": "Ha'amonga 'a Maui (Tonga Trilithon)",
+    "lat": -21.1394,
+    "lng": -175.0394,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 1,
+    "desc": "Polynesian trilithon on the island of Tongatapu, Tonga. Three coral-limestone blocks (two uprights + lintel) weighing ~30–40 tons each, joined by precision-cut mortise and tenon. Built ~1200 CE under the Tu'i Tonga dynasty. Astronomically aligned to solstice sunrise. The only known Polynesian trilithon, on the same form as Stonehenge and Baalbek."
+  }
+]

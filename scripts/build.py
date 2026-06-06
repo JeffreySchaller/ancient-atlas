@@ -18,7 +18,7 @@ Pre-flight validations:
     - Every video creator key maps to a known creator
     - No duplicate site keys in any map
 """
-import re, json, sys, os
+import re, json, sys, os, shutil
 from pathlib import Path
 
 # In the GitHub repo structure: scripts/build.py is at repo root + scripts/
@@ -26,6 +26,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).parent.parent
 DATA_DIR = REPO_ROOT / 'data'
 SRC_HTML = REPO_ROOT / 'public' / 'index.html'
+PUBLIC_DATA_DIR = REPO_ROOT / 'public' / 'data'
 
 # ============================================================
 # Mapping: data file → const NAME inside HTML
@@ -216,13 +217,23 @@ def main():
         except Exception as e:
             sys.exit(f"  ✗ {const_name}: {e}")
 
-    # Write
+    # Write rebuilt HTML
     with open(SRC_HTML, 'w') as f:
         f.write(html)
+
+    # Mirror data/ → public/data/ so deployed pages (contribute.html, future
+    # client-side tools) can fetch them at runtime. Netlify only publishes
+    # public/, so files outside it are unreachable from the deployed site.
+    PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    mirrored = 0
+    for filename, _, _ in BLOCKS:
+        shutil.copy2(DATA_DIR / filename, PUBLIC_DATA_DIR / filename)
+        mirrored += 1
 
     # Print summary
     sz = os.path.getsize(SRC_HTML)
     print(f"\n✓ Built: {SRC_HTML} ({sz:,} bytes)")
+    print(f"✓ Mirrored: {mirrored} JSON files → public/data/")
     print(f"  Sites:       {len(data['SITES'])}")
     print(f"  Creators:    {len(data['CREATORS'])}")
     print(f"  Walkthroughs: {sum(len(v) for v in data['VIDEOS'].values())}")

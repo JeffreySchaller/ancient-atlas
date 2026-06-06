@@ -1,0 +1,241 @@
+{
+  "mountainbeast": {
+    "name": "Mr.mountainbeast",
+    "handle": "@Mr.mountainbeast.adventure",
+    "subs": "Türkiye specialist · cinematic walkthroughs",
+    "color": "#E57373",
+    "tier": 1
+  },
+  "secretsinstone": {
+    "name": "Secrets in Stone",
+    "handle": "@CassieCoppersmith",
+    "subs": "Megalithic mysteries · evidence-rich exploration",
+    "color": "#CE93D8",
+    "tier": 1,
+    "tours": "Group expeditions"
+  },
+  "unchartedx": {
+    "name": "UnchartedX",
+    "handle": "@UnchartedX",
+    "subs": "Precision engineering · Egyptian stonework",
+    "color": "#64B5F6",
+    "tier": 1,
+    "tours": "Egypt & Peru expeditions"
+  },
+  "brienf": {
+    "name": "Brien Foerster",
+    "handle": "@brienfoerster",
+    "subs": "Peru · Bolivia · megalithic anomalies",
+    "color": "#81C784",
+    "tier": 1,
+    "tours": "Hidden Inca Tours"
+  },
+  "megalithomania": {
+    "name": "Hugh Newman / Megalithomania",
+    "handle": "@MegalithomaniaUK",
+    "subs": "Megalith research · Gobekli & Karahan Tepe",
+    "color": "#9C7CB1",
+    "tier": 1,
+    "tours": "Megalithomania Tours"
+  },
+  "randallcarlson": {
+    "name": "Randall Carlson",
+    "handle": "@TheRandallCarlson",
+    "subs": "Geology · catastrophism · Younger Dryas",
+    "color": "#A1887F",
+    "tier": 1,
+    "tours": "Sacred Geometry & Geocosmic tours"
+  },
+  "praveenmohan": {
+    "name": "Praveen Mohan",
+    "handle": "@RealPraveenMohan",
+    "subs": "Megalithic mysteries · India · Japan · SE Asia",
+    "color": "#DB6A6B",
+    "tier": 1
+  },
+  "brightinsight": {
+    "name": "Bright Insight",
+    "handle": "@BrightInsight",
+    "subs": "Lost civilizations · alt-history",
+    "color": "#FFD54F",
+    "tier": 2
+  },
+  "michaelbutton": {
+    "name": "Michael Button",
+    "handle": "@MichaelButton1",
+    "subs": "Ancient mysteries · narrative documentaries",
+    "color": "#FF8A65",
+    "tier": 2
+  },
+  "cosmicsummit": {
+    "name": "The Cosmic Summit",
+    "handle": "@cosmicsummit",
+    "subs": "Annual conference · multi-speaker presentations",
+    "color": "#4DD0E1",
+    "tier": 2
+  },
+  "ombio": {
+    "name": "Ombio Productions",
+    "handle": "@ombiofilms",
+    "subs": "Cinematic archaeology · South America · Japan · evergreen documentaries",
+    "color": "#B89D60",
+    "tier": 2
+  },
+  "lukecaverns": {
+    "name": "Luke Caverns",
+    "handle": "@LukeCaverns",
+    "subs": "Mesoamerica · Olmec · Maya field reports",
+    "color": "#7BAE7B",
+    "tier": 2
+  },
+  "botsop": {
+    "name": "Brothers of the Serpent",
+    "handle": "@BrothersOfTheSerpent",
+    "subs": "Catastrophism · ancient sites · podcast format",
+    "color": "#C29545",
+    "tier": 2
+  },
+  "projectunity": {
+    "name": "Project Unity",
+    "handle": "@ProjectUnity",
+    "subs": "Investigative archaeology · Malta · suppressed history",
+    "color": "#BC6FA8",
+    "tier": 2
+  },
+  "grahamhancock": {
+    "name": "Graham Hancock",
+    "handle": "@grahamhancock",
+    "subs": "Lost civilizations · alternative archaeology · widely influential, contested in academia",
+    "color": "#7AB0E0",
+    "tier": 2,
+    "series": [
+      {
+        "platform": "Netflix",
+        "name": "Ancient Apocalypse",
+        "seasons": "Seasons 1 & 2",
+        "url": "https://www.netflix.com/title/81211003",
+        "desc": "Documentary series investigating Göbekli Tepe, Sacsayhuamán, Cholula, Bimini, Malta and more.",
+        "color": "#E50914"
+      }
+    ]
+  },
+  "funnyoldeworld": {
+    "name": "Jahannah James (Funny Olde World)",
+    "handle": "@FunnyOldeWorld",
+    "subs": "Exploration · rock-cut caves · alt-history",
+    "color": "#E89B5C",
+    "tier": 3
+  },
+  "wanderingwolf": {
+    "name": "Wandering Wolf",
+    "handle": "@WanderingWolf",
+    "subs": "Ancient mysteries · cinematic storytelling · global sites",
+    "color": "#5B9BD5",
+    "tier": 3
+  },
+  "lifesbiggestq": {
+    "name": "Life's Biggest Questions",
+    "handle": "@LifesBiggestQuestions",
+    "subs": "Mainstream-reach alt-archaeology · pre-flood narratives · documentary edits",
+    "color": "#D4845C",
+    "tier": 2
+  },
+  "archaeoalchemy": {
+    "name": "Archaeoalchemy",
+    "handle": "@archaeoalchemy",
+    "subs": "Lex Levie · field expeditions · Egypt and Japan · personal theory pieces",
+    "color": "#6FA89C",
+    "tier": 3
+  },
+  "didyouknowdisc": {
+    "name": "Did You Know Discovery",
+    "handle": "@DidYouKnowDiscovery",
+    "subs": "Documentary-style ancient mysteries · global coverage · evergreen archive pieces",
+    "color": "#5C9EAD",
+    "tier": 2
+  },
+  "gingerdip": {
+    "name": "gingerdip",
+    "handle": "@gingerdip",
+    "subs": "On-the-ground travel diaries · Japan + Asia heritage sites · personal voice",
+    "color": "#B0826C",
+    "tier": 3
+  },
+  "ancientarch": {
+    "name": "Ancient Architects",
+    "handle": "@AncientArchitects",
+    "subs": "Matt Sibson · 635K subs · measured deep-history analysis · Egypt, megaliths, archaeological debates",
+    "color": "#7BA899",
+    "tier": 1
+  },
+  "bbcglobal": {
+    "name": "BBC Global",
+    "handle": "@BBCGlobal",
+    "subs": "Mainstream broadcaster · BBC Reel archaeology documentaries · authoritative reach",
+    "color": "#B5453D",
+    "tier": 2
+  },
+  "tholoshistory": {
+    "name": "Tholos History",
+    "handle": "@TholosHistory",
+    "subs": "Emerging voice · ancient tombs and burial structures · concise educational",
+    "color": "#968670",
+    "tier": 3
+  },
+  "wasabi": {
+    "name": "WASABI｜和作美",
+    "handle": "@WASABIfilms",
+    "subs": "Japanese heritage cinematography · 4K UHD walkthroughs of UNESCO and prefectural sites",
+    "color": "#7A9B6A",
+    "tier": 2
+  },
+  "freediverhd": {
+    "name": "Freediver HD",
+    "handle": "@FreediverHD",
+    "subs": "Underwater walkthroughs · submerged sites · freediving cinematography",
+    "color": "#4A8FA8",
+    "tier": 3
+  },
+  "megamarvels": {
+    "name": "Megalithic Marvels",
+    "handle": "@MegalithicMarvels",
+    "subs": "Derek Olson · 644K subs · ancient artifact mysteries · alt-archaeology storytelling",
+    "color": "#A07566",
+    "tier": 2
+  },
+  "universeinside": {
+    "name": "Universe Inside You",
+    "handle": "@UniverseInsideYou",
+    "subs": "2.12M subs · sweeping documentary essays · global megalithic surveys · pre-Egyptian and pre-flood narratives",
+    "color": "#5E80B8",
+    "tier": 2
+  },
+  "marklei": {
+    "name": "Mark Leithead",
+    "handle": "@MarkLeithead",
+    "subs": "Boots-on-ground walkthroughs · long-form unedited gimbal tours of Chinese megalithic sites",
+    "color": "#8C7B5C",
+    "tier": 3
+  },
+  "curiousbeing": {
+    "name": "Curious Being",
+    "handle": "@CuriousBeingbyTina",
+    "subs": "Tina · independent researcher · 'Logic. Evidence. Lost Civilizations.' · cross-cultural megalithic analysis",
+    "color": "#6B9BAA",
+    "tier": 3
+  },
+  "prehistoryguys": {
+    "name": "The Prehistory Guys",
+    "handle": "@ThePrehistoryGuys",
+    "subs": "107K subs · Rupert Soskin & Michael Bott · prehistoric archaeology with on-site interviews and original-paper deep-dives",
+    "color": "#8DAE6B",
+    "tier": 2
+  },
+  "anthrologic": {
+    "name": "AnthroLogic",
+    "handle": "@AnthroLogic",
+    "subs": "Neolithic engineering analysis · construction reconstruction · stonework methodology",
+    "color": "#B68A56",
+    "tier": 3
+  }
+}

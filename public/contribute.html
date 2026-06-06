@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<!--
+  Ancient Atlas · Contribute page (Phase 2e)
+  JSON snippet generator for adding YouTube walkthroughs.
+  Pure client-side. Loads data/{sites,creators,videos}.json from same origin.
+  YouTube oEmbed (with noembed fallback) for title + channel verification.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contribute · The Ancient Atlas</title>
+<meta name="description" content="Add a YouTube walkthrough to the Ancient Atlas. Generates the JSON snippet you'll paste into a pull request." />
+<meta name="theme-color" content="#0D0D12" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --obsidian:#0D0D12;--charcoal:#16161D;--slate:#1E1E28;--stone:#2A2A35;
+  --mist:#8A8A9A;--cloud:#C5C5D0;--ivory:#F0EEE9;--champagne:#C9A84C;
+  --champagne-glow:rgba(201,168,76,0.15);--amber:#E8B960;
+  --moss:#7B9F8E;--clay:#B87356;--ocean:#6BA3BE;--violet:#8B7DB8;--rose:#C97B7B;
+  --moonlight:#B5C5D8;--moonlight-dim:#8FA0B5;
+  --font-sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --font-serif:'Fraunces',Georgia,serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+html,body{min-height:100%;font-family:var(--font-sans);background:var(--obsidian);color:var(--ivory);-webkit-font-smoothing:antialiased}
+body::before{content:'';position:fixed;inset:0;opacity:0.03;pointer-events:none;z-index:9999;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+::selection{background:var(--champagne);color:var(--obsidian)}
+::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--stone);border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#3a3a48}
+
+/* ===== Header (matches main atlas) ===== */
+header{position:sticky;top:0;z-index:100;background:linear-gradient(180deg,rgba(13,13,18,.98),rgba(13,13,18,.9));backdrop-filter:blur(20px);border-bottom:1px solid rgba(42,42,53,.4);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.logo-box{width:40px;height:40px;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 2px 8px rgba(201,168,76,.18))}
+.logo-box svg{width:100%;height:100%}
+.brand h1{font-family:var(--font-serif);font-size:24px;font-weight:600;line-height:1;letter-spacing:-.015em;font-variation-settings:"opsz" 36}
+.brand p{font-family:var(--font-serif);font-style:italic;font-size:13px;color:var(--cloud);margin-top:3px;opacity:.82}
+.nav-links{display:flex;gap:8px;align-items:center}
+.nav-links a{color:var(--cloud);text-decoration:none;font-size:12px;font-weight:500;padding:8px 14px;border-radius:8px;border:1px solid transparent;transition:all .15s;letter-spacing:.02em}
+.nav-links a:hover{background:rgba(201,168,76,.07);border-color:rgba(201,168,76,.22);color:var(--ivory)}
+.nav-links a.primary{color:var(--champagne);background:rgba(201,168,76,.06);border-color:rgba(201,168,76,.22)}
+.nav-links a.primary:hover{background:rgba(201,168,76,.12);color:var(--amber)}
+
+/* ===== Layout ===== */
+main{max-width:880px;margin:0 auto;padding:48px 24px 96px}
+.page-head{margin-bottom:40px}
+.eyebrow{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--champagne);margin-bottom:14px;font-weight:600}
+h2.page-title{font-family:var(--font-serif);font-size:42px;font-weight:600;letter-spacing:-.02em;line-height:1.1;margin-bottom:16px;font-variation-settings:"opsz" 72}
+.page-lede{font-family:var(--font-serif);font-size:17px;font-style:italic;color:var(--cloud);line-height:1.55;max-width:640px;font-variation-settings:"opsz" 18}
+
+.principles{margin-top:24px;padding:20px 22px;background:rgba(22,22,29,.6);border:1px solid rgba(42,42,53,.6);border-left:3px solid var(--champagne);border-radius:10px}
+.principles strong{font-family:var(--font-serif);color:var(--champagne);font-size:13px;letter-spacing:.02em;display:block;margin-bottom:8px;font-weight:600}
+.principles ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.principles li{font-size:13px;color:var(--cloud);line-height:1.5;padding-left:18px;position:relative}
+.principles li::before{content:'·';position:absolute;left:6px;top:0;color:var(--champagne);font-weight:700;font-size:16px;line-height:1.4}
+
+/* ===== Mode toggle (Single / Bulk) ===== */
+.mode-toggle{display:inline-flex;background:rgba(22,22,29,.8);border:1px solid rgba(42,42,53,.8);border-radius:10px;padding:4px;margin:40px 0 24px}
+.mode-btn{padding:9px 22px;border:none;background:transparent;color:var(--mist);font-family:var(--font-sans);font-size:13px;font-weight:500;cursor:pointer;border-radius:7px;transition:all .15s;letter-spacing:.02em}
+.mode-btn.on{background:rgba(201,168,76,.14);color:var(--champagne);box-shadow:inset 0 0 0 1px rgba(201,168,76,.3)}
+.mode-btn:hover:not(.on){color:var(--cloud)}
+
+/* ===== Form panels ===== */
+.panel{background:rgba(22,22,29,.6);border:1px solid rgba(42,42,53,.6);border-radius:14px;padding:28px;margin-bottom:20px}
+.panel-head{display:flex;align-items:center;gap:10px;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid rgba(42,42,53,.5)}
+.panel-num{width:24px;height:24px;border-radius:50%;background:rgba(201,168,76,.12);color:var(--champagne);font-family:var(--font-mono);font-size:11px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.panel-title{font-family:var(--font-serif);font-size:18px;color:var(--ivory);font-weight:600;letter-spacing:-.01em}
+.panel-hint{font-size:12px;color:var(--mist);margin-top:2px;font-family:var(--font-sans)}
+
+.field{margin-bottom:16px}
+.field:last-child{margin-bottom:0}
+.field label{display:block;font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--mist);margin-bottom:8px;font-weight:600}
+.input,.textarea,.select{width:100%;padding:11px 14px;background:rgba(13,13,18,.7);border:1px solid rgba(42,42,53,.8);border-radius:10px;color:var(--ivory);font-family:var(--font-mono);font-size:13px;outline:none;transition:all .15s;line-height:1.5}
+.input:focus,.textarea:focus,.select:focus{border-color:rgba(201,168,76,.5);background:rgba(20,20,28,.9)}
+.input::placeholder,.textarea::placeholder{color:var(--mist);opacity:.7}
+.textarea{min-height:120px;resize:vertical;font-family:var(--font-mono);font-size:12px}
+
+.btn{padding:11px 22px;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.35);color:var(--champagne);font-family:var(--font-sans);font-size:13px;font-weight:600;letter-spacing:.02em;border-radius:10px;cursor:pointer;transition:all .15s;display:inline-flex;align-items:center;gap:8px}
+.btn:hover{background:rgba(201,168,76,.2);border-color:rgba(201,168,76,.55);color:var(--amber);transform:translateY(-1px)}
+.btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
+.btn.ghost{background:transparent;border-color:rgba(42,42,53,.8);color:var(--cloud)}
+.btn.ghost:hover{border-color:rgba(201,168,76,.35);color:var(--champagne);background:rgba(201,168,76,.05)}
+.btn.full{width:100%;justify-content:center}
+
+/* ===== Video card (after oEmbed fetch) ===== */
+.vid-card{display:flex;gap:14px;padding:14px;background:rgba(13,13,18,.6);border:1px solid rgba(42,42,53,.6);border-radius:10px;margin-bottom:14px}
+.vid-thumb{width:120px;aspect-ratio:16/9;border-radius:7px;background:#1a1a22 center/cover;flex-shrink:0;overflow:hidden;position:relative}
+.vid-thumb::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at center, rgba(0,0,0,.3) 100%, transparent 70%)}
+.vid-meta{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.vid-title{font-family:var(--font-serif);font-size:14px;color:var(--ivory);line-height:1.35;font-weight:500;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vid-channel{font-family:var(--font-mono);font-size:11px;color:var(--moonlight);display:flex;align-items:center;gap:6px}
+.vid-channel .ch-dot{width:5px;height:5px;border-radius:50%;background:var(--moonlight-dim)}
+.vid-id{font-family:var(--font-mono);font-size:10px;color:var(--mist)}
+.vid-warn{margin-top:8px;padding:8px 10px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.25);border-radius:7px;font-size:11px;color:var(--amber);font-family:var(--font-sans);line-height:1.4}
+.vid-warn strong{color:var(--champagne)}
+
+/* ===== Combobox (site picker, creator picker) ===== */
+.combo{position:relative}
+.combo-input{padding-right:36px}
+.combo-arrow{position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--mist);font-size:10px;pointer-events:none}
+.combo-list{position:absolute;top:calc(100% + 4px);left:0;right:0;background:rgba(13,13,18,.98);backdrop-filter:blur(20px);border:1px solid rgba(201,168,76,.25);border-radius:10px;max-height:280px;overflow-y:auto;z-index:200;display:none;box-shadow:0 12px 36px rgba(0,0,0,.6)}
+.combo-list.open{display:block}
+.combo-opt{padding:8px 14px;cursor:pointer;font-size:13px;color:var(--cloud);display:flex;align-items:center;gap:10px;border-bottom:1px solid rgba(42,42,53,.3);font-family:var(--font-sans);transition:background .1s}
+.combo-opt:last-child{border-bottom:none}
+.combo-opt:hover,.combo-opt.active{background:rgba(201,168,76,.1);color:var(--ivory)}
+.combo-opt .opt-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.combo-opt .opt-meta{margin-left:auto;font-family:var(--font-mono);font-size:10px;color:var(--mist)}
+.combo-opt em{font-style:normal;color:var(--champagne);font-weight:600}
+.combo-empty{padding:14px;text-align:center;font-size:12px;color:var(--mist);font-family:var(--font-sans);line-height:1.5}
+.combo-empty strong{color:var(--champagne)}
+.combo-empty a{color:var(--champagne);text-decoration:underline}
+
+/* ===== Output / Snippet ===== */
+#output{margin-top:32px;display:none}
+#output.show{display:block;animation:fadeUp .3s ease-out}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+.output-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px;gap:16px;flex-wrap:wrap}
+.output-title{font-family:var(--font-serif);font-size:22px;color:var(--ivory);font-weight:600;letter-spacing:-.01em}
+.output-summary{font-family:var(--font-mono);font-size:11px;color:var(--moonlight);background:rgba(181,197,216,.08);padding:4px 10px;border-radius:7px;border:1px solid rgba(181,197,216,.2)}
+
+.snippet-wrap{position:relative;background:rgba(13,13,18,.8);border:1px solid rgba(42,42,53,.6);border-radius:12px;overflow:hidden}
+.snippet-pre{padding:20px;font-family:var(--font-mono);font-size:12px;color:var(--ivory);line-height:1.6;overflow-x:auto;white-space:pre;max-height:480px}
+.snippet-pre .k{color:var(--moonlight)}
+.snippet-pre .s{color:var(--moss)}
+.snippet-pre .c{color:var(--mist);font-style:italic}
+.snippet-pre .n{color:var(--amber)}
+
+.actions-row{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+
+.instructions{margin-top:24px;padding:22px;background:rgba(22,22,29,.5);border:1px solid rgba(42,42,53,.5);border-radius:12px}
+.instructions h3{font-family:var(--font-serif);font-size:16px;color:var(--ivory);margin-bottom:14px;font-weight:600;letter-spacing:-.01em}
+.instructions ol{list-style:none;counter-reset:step;display:flex;flex-direction:column;gap:12px}
+.instructions li{counter-increment:step;padding-left:34px;position:relative;font-size:13px;color:var(--cloud);line-height:1.55;font-family:var(--font-sans)}
+.instructions li::before{content:counter(step);position:absolute;left:0;top:0;width:24px;height:24px;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.3);border-radius:50%;color:var(--champagne);font-family:var(--font-mono);font-size:11px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.instructions code{font-family:var(--font-mono);font-size:12px;background:rgba(13,13,18,.7);padding:2px 7px;border-radius:5px;color:var(--amber);border:1px solid rgba(232,185,96,.2)}
+.instructions a{color:var(--champagne);text-decoration:none;border-bottom:1px solid rgba(201,168,76,.4)}
+.instructions a:hover{color:var(--amber);border-bottom-color:rgba(232,185,96,.7)}
+
+/* ===== Bulk mode: row table ===== */
+.bulk-rows{display:flex;flex-direction:column;gap:14px}
+.bulk-row{padding:16px;background:rgba(13,13,18,.5);border:1px solid rgba(42,42,53,.5);border-radius:10px;display:flex;flex-direction:column;gap:12px}
+.bulk-row.error{border-color:rgba(201,75,75,.5);background:rgba(201,75,75,.05)}
+.bulk-row .vid-card{margin-bottom:0;padding:0;border:none;background:transparent}
+.bulk-row .vid-thumb{width:96px}
+.bulk-row-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.bulk-error{font-size:12px;color:var(--rose);font-family:var(--font-mono);padding:8px 10px;background:rgba(201,75,75,.1);border:1px solid rgba(201,75,75,.3);border-radius:7px}
+
+/* ===== Toast ===== */
+#toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(60px);background:rgba(13,13,18,.96);backdrop-filter:blur(20px);border:1px solid rgba(201,168,76,.4);color:var(--champagne);padding:12px 22px;border-radius:10px;font-family:var(--font-sans);font-size:13px;font-weight:500;box-shadow:0 12px 36px rgba(0,0,0,.6);opacity:0;transition:all .3s ease;z-index:10000;pointer-events:none}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ===== Mobile ===== */
+@media (max-width:680px){
+  header{padding:12px 16px}
+  .brand h1{font-size:20px}.brand p{display:none}
+  .nav-links a{padding:7px 10px;font-size:11px}
+  main{padding:32px 16px 64px}
+  h2.page-title{font-size:32px}
+  .page-lede{font-size:15px}
+  .panel{padding:20px}
+  .vid-card{flex-direction:column}
+  .vid-thumb{width:100%;max-width:200px}
+  .bulk-row-grid{grid-template-columns:1fr}
+}
+
+.loading{display:inline-block;width:14px;height:14px;border:2px solid rgba(201,168,76,.2);border-top-color:var(--champagne);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="/">
+    <div class="logo-box">
+      <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="22" r="20" fill="none" stroke="#C9A84C" stroke-width="1.5" opacity="0.4"/>
+        <circle cx="22" cy="22" r="14" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.6"/>
+        <path d="M22 6 L24 22 L22 38 L20 22 Z" fill="#C9A84C" opacity="0.9"/>
+        <path d="M6 22 L22 20 L38 22 L22 24 Z" fill="#C9A84C" opacity="0.7"/>
+        <circle cx="22" cy="22" r="2" fill="#0D0D12"/>
+      </svg>
+    </div>
+    <div>
+      <h1>The Ancient Atlas</h1>
+      <p>Contribute a walkthrough</p>
+    </div>
+  </a>
+  <nav class="nav-links">
+    <a href="/">Atlas</a>
+    <a href="/library/">Library</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="page-head">
+    <div class="eyebrow">Phase 2 · Contributor flow</div>
+    <h2 class="page-title">Add a walkthrough</h2>
+    <p class="page-lede">Paste a YouTube URL : : pick the site and creator : : copy the JSON snippet : : open a pull request. The atlas grows by hand, one walkthrough at a time.</p>
+
+    <div class="principles">
+      <strong>Before you start</strong>
+      <ul>
+        <li>The video must be a credible walkthrough or analysis of an ancient site already in the catalog. New sites go through the <a href="https://github.com/JeffreySchaller/ancient-atlas/issues/new?template=new-site-proposal.md" style="color:var(--champagne)">site proposal</a> flow first.</li>
+        <li>This page generates the JSON. You'll paste it into <code style="font-family:var(--font-mono);background:rgba(13,13,18,.7);padding:1px 6px;border-radius:4px;color:var(--amber);font-size:12px">data/videos.json</code> on GitHub and open a pull request.</li>
+        <li>If you're not familiar with GitHub, that's fine. The final step links you directly to the right file with an in-browser editor.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mode-toggle" role="tablist">
+    <button class="mode-btn on" data-mode="single">Single URL</button>
+    <button class="mode-btn" data-mode="bulk">Bulk URLs</button>
+  </div>
+
+  <!-- ===== SINGLE MODE ===== -->
+  <div id="single-mode">
+
+    <div class="panel">
+      <div class="panel-head">
+        <div class="panel-num">1</div>
+        <div>
+          <div class="panel-title">Paste the YouTube URL</div>
+          <div class="panel-hint">We'll fetch the title, channel, and thumbnail.</div>
+        </div>
+      </div>
+      <div class="field">
+        <input type="text" class="input" id="s-url" placeholder="https://www.youtube.com/watch?v=..." autocomplete="off" spellcheck="false" />
+      </div>
+      <button class="btn" id="s-fetch">
+        <span id="s-fetch-text">Fetch video info</span>
+      </button>
+      <div id="s-video" style="margin-top:18px;display:none"></div>
+    </div>
+
+    <div class="panel" id="s-panel-site" style="display:none">
+      <div class="panel-head">
+        <div class="panel-num">2</div>
+        <div>
+          <div class="panel-title">Which site does this walkthrough cover?</div>
+          <div class="panel-hint">Search the catalog. Most YouTube descriptions name the site clearly.</div>
+        </div>
+      </div>
+      <div class="field combo" data-combo="site">
+        <input type="text" class="input combo-input" id="s-site" placeholder="Start typing a site name…" autocomplete="off" />
+        <span class="combo-arrow">▾</span>
+        <div class="combo-list" id="s-site-list"></div>
+      </div>
+    </div>
+
+    <div class="panel" id="s-panel-creator" style="display:none">
+      <div class="panel-head">
+        <div class="panel-num">3</div>
+        <div>
+          <div class="panel-title">Confirm the creator</div>
+          <div class="panel-hint">We try to match the YouTube channel to a known creator. Override if needed.</div>
+        </div>
+      </div>
+      <div class="field combo" data-combo="creator">
+        <input type="text" class="input combo-input" id="s-creator" placeholder="Pick a creator…" autocomplete="off" />
+        <span class="combo-arrow">▾</span>
+        <div class="combo-list" id="s-creator-list"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== BULK MODE ===== -->
+  <div id="bulk-mode" style="display:none">
+
+    <div class="panel">
+      <div class="panel-head">
+        <div class="panel-num">1</div>
+        <div>
+          <div class="panel-title">Paste YouTube URLs (one per line)</div>
+          <div class="panel-hint">We'll fetch each video's info in parallel and surface any issues.</div>
+        </div>
+      </div>
+      <div class="field">
+        <textarea class="textarea" id="b-urls" placeholder="https://www.youtube.com/watch?v=...&#10;https://youtu.be/...&#10;https://www.youtube.com/watch?v=..." spellcheck="false"></textarea>
+      </div>
+      <button class="btn" id="b-fetch">
+        <span id="b-fetch-text">Process all URLs</span>
+      </button>
+    </div>
+
+    <div id="b-rows-wrap" style="display:none">
+      <div class="panel">
+        <div class="panel-head">
+          <div class="panel-num">2</div>
+          <div>
+            <div class="panel-title">Confirm site + creator for each video</div>
+            <div class="panel-hint">Errored URLs (private/deleted/typo) are flagged in red. They'll be skipped.</div>
+          </div>
+        </div>
+        <div class="bulk-rows" id="b-rows"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===== OUTPUT ===== -->
+  <div id="output">
+    <div class="panel">
+      <div class="output-head">
+        <div>
+          <div class="output-title">Generated snippet</div>
+          <div class="panel-hint" id="out-hint">Paste this under the matching site in data/videos.json.</div>
+        </div>
+        <div class="output-summary" id="out-summary"></div>
+      </div>
+      <div class="snippet-wrap">
+        <pre class="snippet-pre" id="snippet"></pre>
+      </div>
+      <div class="actions-row">
+        <button class="btn" id="copy-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          Copy snippet
+        </button>
+        <a class="btn ghost" id="github-link" href="https://github.com/JeffreySchaller/ancient-atlas/edit/main/data/videos.json" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          Open videos.json on GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <h3>What happens next</h3>
+      <ol>
+        <li>Click <strong>Open videos.json on GitHub</strong>. If you're not signed in, GitHub will prompt you.</li>
+        <li>GitHub will offer to <em>fork the repo</em> on your first edit. Accept it. This makes a personal copy in your account so you can suggest changes without affecting the main atlas.</li>
+        <li>In the editor, find the site name your video belongs to (Cmd+F to search). Each site has an array : <code>"Site Name": [ ... ]</code>. Paste your new entry inside the brackets, comma-separated from the others.</li>
+        <li>Scroll down and click <strong>Propose changes</strong>. Add a short note like "Add Praveen Mohan walkthrough for Karahan Tepe."</li>
+        <li>Click <strong>Create pull request</strong>. A maintainer reviews within 48 hours. Automated checks verify the YouTube ID is valid before merge.</li>
+      </ol>
+    </div>
+  </div>
+
+</main>
+
+<div id="toast"></div>
+
+<script>
+// ============================================================
+// Data loading
+// ============================================================
+let SITES = [], CREATORS = {}, VIDEOS = {};
+let CATS = {};
+let dataReady = false;
+
+async function loadData(){
+  try{
+    const [s, c, v, cats] = await Promise.all([
+      fetch('/data/sites.json').then(r=>r.json()),
+      fetch('/data/creators.json').then(r=>r.json()),
+      fetch('/data/videos.json').then(r=>r.json()),
+      fetch('/data/categories.json').then(r=>r.json()).catch(()=>({}))
+    ]);
+    SITES = s; CREATORS = c; VIDEOS = v; CATS = cats;
+    dataReady = true;
+  }catch(e){
+    toast('Could not load atlas data. Refresh the page?');
+    console.error(e);
+  }
+}
+loadData();
+
+// ============================================================
+// YouTube URL parsing
+// ============================================================
+function parseYouTubeId(url){
+  if(!url) return null;
+  url = url.trim();
+  const patterns = [
+    /[?&]v=([a-zA-Z0-9_-]{11})/,
+    /youtu\.be\/([a-zA-Z0-9_-]{11})/,
+    /youtube\.com\/embed\/([a-zA-Z0-9_-]{11})/,
+    /youtube\.com\/shorts\/([a-zA-Z0-9_-]{11})/,
+    /^([a-zA-Z0-9_-]{11})$/   // raw ID
+  ];
+  for(const p of patterns){
+    const m = url.match(p);
+    if(m) return m[1];
+  }
+  return null;
+}
+
+// ============================================================
+// YouTube oEmbed fetch (with noembed fallback)
+// ============================================================
+async function fetchVideoInfo(videoId){
+  const ytUrl = `https://www.youtube.com/watch?v=${videoId}`;
+  // Try YouTube oEmbed first
+  try{
+    const r = await fetch(`https://www.youtube.com/oembed?url=${encodeURIComponent(ytUrl)}&format=json`);
+    if(r.ok){
+      const j = await r.json();
+      return {
+        id: videoId,
+        title: j.title,
+        channel: j.author_name,
+        channelUrl: j.author_url,
+        thumb: j.thumbnail_url || `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`,
+        source: 'youtube'
+      };
+    }
+  }catch(e){ /* fall through */ }
+  // Fallback: noembed.com (CORS-friendly proxy)
+  try{
+    const r = await fetch(`https://noembed.com/embed?url=${encodeURIComponent(ytUrl)}`);
+    const j = await r.json();
+    if(j.error) throw new Error(j.error);
+    return {
+      id: videoId,
+      title: j.title,
+      channel: j.author_name,
+      channelUrl: j.author_url,
+      thumb: j.thumbnail_url || `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`,
+      source: 'noembed'
+    };
+  }catch(e){
+    throw new Error(`Could not fetch video info. The video may be private, deleted, or the URL is malformed.`);
+  }
+}
+
+// ============================================================
+// Creator key matching
+// ============================================================
+function matchCreatorKey(channelName){
+  if(!channelName) return null;
+  const lower = channelName.toLowerCase().trim();
+  // Try exact name match
+  for(const [key, c] of Object.entries(CREATORS)){
+    if(c.name && c.name.toLowerCase() === lower) return key;
+  }
+  // Try contains
+  for(const [key, c] of Object.entries(CREATORS)){
+    if(c.name && (c.name.toLowerCase().includes(lower) || lower.includes(c.name.toLowerCase()))) return key;
+  }
+  // Try handle match
+  for(const [key, c] of Object.entries(CREATORS)){
+    if(c.handle && c.handle.toLowerCase().replace('@','') === lower.replace('@','')) return key;
+  }
+  return null;
+}
+
+// ============================================================
+// Duplicate detection
+// ============================================================
+function findDuplicate(videoId){
+  for(const [site, vids] of Object.entries(VIDEOS)){
+    for(const v of vids){
+      if(v.id === videoId) return {site, title: v.title};
+    }
+  }
+  return null;
+}
+
+// ============================================================
+// Video card rendering
+// ============================================================
+function renderVideoCard(info, dupInfo){
+  const channelHtml = info.channelUrl
+    ? `<a href="${info.channelUrl}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">${escapeHtml(info.channel)}</a>`
+    : escapeHtml(info.channel || 'Unknown');
+  const dupWarn = dupInfo
+    ? `<div class="vid-warn"><strong>Already in atlas :</strong> this video is wired to <em>${escapeHtml(dupInfo.site)}</em>. If it covers multiple sites, you can still add it to another site too.</div>`
+    : '';
+  return `
+    <div class="vid-card">
+      <div class="vid-thumb" style="background-image:url('${info.thumb}')"></div>
+      <div class="vid-meta">
+        <div class="vid-title">${escapeHtml(info.title)}</div>
+        <div class="vid-channel"><span class="ch-dot"></span>${channelHtml}</div>
+        <div class="vid-id">id : ${info.id}</div>
+      </div>
+    </div>
+    ${dupWarn}
+  `;
+}
+
+function escapeHtml(s){
+  return String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
+}
+
+// ============================================================
+// Combobox (site / creator picker)
+// ============================================================
+function buildSiteOptions(query){
+  query = (query||'').toLowerCase().trim();
+  let list = SITES;
+  if(query){
+    list = SITES.filter(s => s.n.toLowerCase().includes(query));
+    // Sort: starts-with first, then includes
+    list.sort((a,b) => {
+      const aStarts = a.n.toLowerCase().startsWith(query);
+      const bStarts = b.n.toLowerCase().startsWith(query);
+      if(aStarts !== bStarts) return aStarts ? -1 : 1;
+      return a.n.localeCompare(b.n);
+    });
+  } else {
+    list = [...SITES].sort((a,b)=>a.n.localeCompare(b.n));
+  }
+  return list.slice(0, 100);
+}
+
+function buildCreatorOptions(query){
+  query = (query||'').toLowerCase().trim();
+  const entries = Object.entries(CREATORS);
+  let list = entries;
+  if(query){
+    list = entries.filter(([k,c]) => (c.name||'').toLowerCase().includes(query) || k.toLowerCase().includes(query));
+    list.sort(([ka,a],[kb,b]) => {
+      const an = (a.name||'').toLowerCase();
+      const bn = (b.name||'').toLowerCase();
+      const aStarts = an.startsWith(query);
+      const bStarts = bn.startsWith(query);
+      if(aStarts !== bStarts) return aStarts ? -1 : 1;
+      return an.localeCompare(bn);
+    });
+  } else {
+    list = [...entries].sort(([,a],[,b]) => (a.name||'').localeCompare(b.name||''));
+  }
+  return list.slice(0, 80);
+}
+
+function setupCombo(inputId, listId, type, onPick){
+  const input = document.getElementById(inputId);
+  const list = document.getElementById(listId);
+  let activeIdx = -1;
+  let currentOpts = [];
+
+  function render(opts){
+    currentOpts = opts;
+    activeIdx = -1;
+    if(opts.length === 0){
+      const q = input.value.trim();
+      list.innerHTML = `<div class="combo-empty">No match for <strong>"${escapeHtml(q)}"</strong>.<br><br>${type==='site' ? 'New sites go through <a href="https://github.com/JeffreySchaller/ancient-atlas/issues/new?template=new-site-proposal.md" target="_blank">site proposal</a>.' : 'New creator? <a href="https://github.com/JeffreySchaller/ancient-atlas/edit/main/data/creators.json" target="_blank">Add to creators.json</a>.'}</div>`;
+    } else if(type==='site'){
+      list.innerHTML = opts.map((s,i) => {
+        const cat = CATS[s.cat] || {color:'#666'};
+        return `<div class="combo-opt" data-idx="${i}"><span class="opt-dot" style="background:${cat.color||'#666'}"></span>${escapeHtml(s.n)}<span class="opt-meta">${escapeHtml(s.region||'')}</span></div>`;
+      }).join('');
+    } else {
+      list.innerHTML = opts.map(([k,c],i) =>
+        `<div class="combo-opt" data-idx="${i}"><span class="opt-dot" style="background:${c.color||'var(--champagne)'}"></span>${escapeHtml(c.name||k)}<span class="opt-meta">${escapeHtml(c.handle||k)}</span></div>`
+      ).join('');
+    }
+    list.classList.add('open');
+  }
+
+  input.addEventListener('focus', () => render(type==='site' ? buildSiteOptions(input.value) : buildCreatorOptions(input.value)));
+  input.addEventListener('input', () => render(type==='site' ? buildSiteOptions(input.value) : buildCreatorOptions(input.value)));
+  input.addEventListener('keydown', e => {
+    if(!list.classList.contains('open')) return;
+    if(e.key==='ArrowDown'){ e.preventDefault(); activeIdx = Math.min(activeIdx+1, currentOpts.length-1); updateActive(); }
+    else if(e.key==='ArrowUp'){ e.preventDefault(); activeIdx = Math.max(activeIdx-1, 0); updateActive(); }
+    else if(e.key==='Enter'){ e.preventDefault(); if(activeIdx>=0) pick(activeIdx); }
+    else if(e.key==='Escape'){ list.classList.remove('open'); }
+  });
+  function updateActive(){
+    Array.from(list.children).forEach((el,i)=>el.classList.toggle('active', i===activeIdx));
+    const el = list.children[activeIdx];
+    if(el) el.scrollIntoView({block:'nearest'});
+  }
+  function pick(i){
+    const v = currentOpts[i];
+    if(!v) return;
+    if(type==='site'){
+      input.value = v.n;
+      onPick(v.n);
+    } else {
+      input.value = v[1].name || v[0];
+      onPick(v[0]);
+    }
+    list.classList.remove('open');
+  }
+  list.addEventListener('click', e => {
+    const opt = e.target.closest('.combo-opt');
+    if(opt){
+      const i = parseInt(opt.dataset.idx);
+      pick(i);
+    }
+  });
+  document.addEventListener('click', e => {
+    if(!input.contains(e.target) && !list.contains(e.target)) list.classList.remove('open');
+  });
+
+  return { setValue(v){ input.value=v; }, getValue(){ return input.value; } };
+}
+
+// ============================================================
+// SINGLE MODE
+// ============================================================
+const singleState = { info: null, site: null, creator: null };
+let siteCombo, creatorCombo;
+
+document.getElementById('s-fetch').addEventListener('click', async () => {
+  const url = document.getElementById('s-url').value.trim();
+  const id = parseYouTubeId(url);
+  if(!id){
+    toast('That doesn\'t look like a valid YouTube URL.');
+    return;
+  }
+  const btn = document.getElementById('s-fetch');
+  const btnText = document.getElementById('s-fetch-text');
+  btn.disabled = true;
+  btnText.innerHTML = '<span class="loading"></span> Fetching…';
+  try{
+    const info = await fetchVideoInfo(id);
+    const dup = findDuplicate(id);
+    singleState.info = info;
+    document.getElementById('s-video').innerHTML = renderVideoCard(info, dup);
+    document.getElementById('s-video').style.display = 'block';
+    document.getElementById('s-panel-site').style.display = 'block';
+    document.getElementById('s-panel-creator').style.display = 'block';
+    // Auto-suggest creator
+    const matchedKey = matchCreatorKey(info.channel);
+    if(matchedKey){
+      creatorCombo.setValue(CREATORS[matchedKey].name || matchedKey);
+      singleState.creator = matchedKey;
+    } else {
+      creatorCombo.setValue('');
+      singleState.creator = null;
+    }
+    maybeShowOutput();
+  }catch(e){
+    toast(e.message);
+  }finally{
+    btn.disabled = false;
+    btnText.textContent = 'Fetch video info';
+  }
+});
+
+// Initialize combos once data is ready
+function initSingleCombos(){
+  siteCombo = setupCombo('s-site', 's-site-list', 'site', (siteName) => {
+    singleState.site = siteName;
+    maybeShowOutput();
+  });
+  creatorCombo = setupCombo('s-creator', 's-creator-list', 'creator', (key) => {
+    singleState.creator = key;
+    maybeShowOutput();
+  });
+}
+
+function maybeShowOutput(){
+  if(document.querySelector('.mode-btn.on').dataset.mode !== 'single') return;
+  const { info, site, creator } = singleState;
+  if(info && site && creator){
+    renderSingleOutput();
+  }
+}
+
+function renderSingleOutput(){
+  const { info, site, creator } = singleState;
+  const newEntry = { id: info.id, title: info.title, cr: creator };
+  const existing = VIDEOS[site] || [];
+  const merged = [...existing, newEntry];
+  const snippet = `"${site}": ${JSON.stringify(merged, null, 2)}`;
+  document.getElementById('snippet').innerHTML = highlightJson(snippet);
+  document.getElementById('out-summary').textContent = `1 walkthrough · ${site}`;
+  document.getElementById('out-hint').textContent = `Find "${site}" in data/videos.json and replace its array with the block below.`;
+  document.getElementById('output').classList.add('show');
+  document.getElementById('output').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+// ============================================================
+// BULK MODE
+// ============================================================
+const bulkState = []; // [{ info, site, creator, error }]
+
+document.getElementById('b-fetch').addEventListener('click', async () => {
+  const text = document.getElementById('b-urls').value.trim();
+  if(!text){ toast('Paste at least one URL.'); return; }
+  const urls = text.split('\n').map(s=>s.trim()).filter(Boolean);
+  const btn = document.getElementById('b-fetch');
+  const btnText = document.getElementById('b-fetch-text');
+  btn.disabled = true;
+  btnText.innerHTML = `<span class="loading"></span> Fetching ${urls.length}…`;
+  bulkState.length = 0;
+  for(const url of urls){
+    const id = parseYouTubeId(url);
+    if(!id){ bulkState.push({ url, error: 'Not a valid YouTube URL.' }); continue; }
+    try{
+      const info = await fetchVideoInfo(id);
+      const matchedKey = matchCreatorKey(info.channel);
+      bulkState.push({ info, site: null, creator: matchedKey });
+    }catch(e){
+      bulkState.push({ url, error: e.message });
+    }
+  }
+  renderBulkRows();
+  btn.disabled = false;
+  btnText.textContent = 'Process all URLs';
+});
+
+function renderBulkRows(){
+  const wrap = document.getElementById('b-rows-wrap');
+  const container = document.getElementById('b-rows');
+  if(bulkState.length === 0){ wrap.style.display='none'; return; }
+  wrap.style.display = 'block';
+  container.innerHTML = bulkState.map((row, i) => {
+    if(row.error){
+      return `<div class="bulk-row error">
+        <div class="vid-id" style="word-break:break-all">${escapeHtml(row.url||'?')}</div>
+        <div class="bulk-error">${escapeHtml(row.error)}</div>
+      </div>`;
+    }
+    const dup = findDuplicate(row.info.id);
+    return `<div class="bulk-row" data-idx="${i}">
+      ${renderVideoCard(row.info, dup)}
+      <div class="bulk-row-grid">
+        <div class="field combo" style="margin:0">
+          <input type="text" class="input combo-input b-site" data-idx="${i}" placeholder="Pick site…" autocomplete="off" value="${escapeHtml(row.site||'')}" />
+          <span class="combo-arrow">▾</span>
+          <div class="combo-list b-site-list" data-idx="${i}"></div>
+        </div>
+        <div class="field combo" style="margin:0">
+          <input type="text" class="input combo-input b-creator" data-idx="${i}" placeholder="Pick creator…" autocomplete="off" value="${escapeHtml(row.creator ? (CREATORS[row.creator]?.name || row.creator) : '')}" />
+          <span class="combo-arrow">▾</span>
+          <div class="combo-list b-creator-list" data-idx="${i}"></div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  // Wire up combos for each row
+  container.querySelectorAll('.b-site').forEach(input => {
+    const idx = parseInt(input.dataset.idx);
+    const list = container.querySelector(`.b-site-list[data-idx="${idx}"]`);
+    wireBulkCombo(input, list, 'site', (val) => { bulkState[idx].site = val; renderBulkOutput(); });
+  });
+  container.querySelectorAll('.b-creator').forEach(input => {
+    const idx = parseInt(input.dataset.idx);
+    const list = container.querySelector(`.b-creator-list[data-idx="${idx}"]`);
+    wireBulkCombo(input, list, 'creator', (val) => { bulkState[idx].creator = val; renderBulkOutput(); });
+  });
+  renderBulkOutput();
+}
+
+function wireBulkCombo(input, list, type, onPick){
+  let activeIdx = -1, currentOpts = [];
+  function render(opts){
+    currentOpts = opts; activeIdx = -1;
+    if(opts.length === 0){
+      list.innerHTML = `<div class="combo-empty">No match. ${type==='site' ? '<a href="https://github.com/JeffreySchaller/ancient-atlas/issues/new?template=new-site-proposal.md" target="_blank">Propose a site</a>.' : '<a href="https://github.com/JeffreySchaller/ancient-atlas/edit/main/data/creators.json" target="_blank">Add a creator</a>.'}</div>`;
+    } else if(type==='site'){
+      list.innerHTML = opts.map((s,i) => {
+        const cat = CATS[s.cat] || {color:'#666'};
+        return `<div class="combo-opt" data-idx="${i}"><span class="opt-dot" style="background:${cat.color||'#666'}"></span>${escapeHtml(s.n)}<span class="opt-meta">${escapeHtml(s.region||'')}</span></div>`;
+      }).join('');
+    } else {
+      list.innerHTML = opts.map(([k,c],i) =>
+        `<div class="combo-opt" data-idx="${i}"><span class="opt-dot" style="background:${c.color||'var(--champagne)'}"></span>${escapeHtml(c.name||k)}<span class="opt-meta">${escapeHtml(c.handle||k)}</span></div>`
+      ).join('');
+    }
+    list.classList.add('open');
+  }
+  input.addEventListener('focus', () => render(type==='site' ? buildSiteOptions(input.value) : buildCreatorOptions(input.value)));
+  input.addEventListener('input', () => render(type==='site' ? buildSiteOptions(input.value) : buildCreatorOptions(input.value)));
+  input.addEventListener('keydown', e => {
+    if(!list.classList.contains('open')) return;
+    if(e.key==='ArrowDown'){ e.preventDefault(); activeIdx = Math.min(activeIdx+1, currentOpts.length-1); updateActive(); }
+    else if(e.key==='ArrowUp'){ e.preventDefault(); activeIdx = Math.max(activeIdx-1, 0); updateActive(); }
+    else if(e.key==='Enter'){ e.preventDefault(); if(activeIdx>=0) pick(activeIdx); }
+    else if(e.key==='Escape'){ list.classList.remove('open'); }
+  });
+  function updateActive(){
+    Array.from(list.children).forEach((el,i)=>el.classList.toggle('active', i===activeIdx));
+    const el = list.children[activeIdx];
+    if(el) el.scrollIntoView({block:'nearest'});
+  }
+  function pick(i){
+    const v = currentOpts[i];
+    if(!v) return;
+    if(type==='site'){
+      input.value = v.n;
+      onPick(v.n);
+    } else {
+      input.value = v[1].name || v[0];
+      onPick(v[0]);
+    }
+    list.classList.remove('open');
+  }
+  list.addEventListener('click', e => {
+    const opt = e.target.closest('.combo-opt');
+    if(opt) pick(parseInt(opt.dataset.idx));
+  });
+  document.addEventListener('click', e => {
+    if(!input.contains(e.target) && !list.contains(e.target)) list.classList.remove('open');
+  });
+}
+
+function renderBulkOutput(){
+  // Group by site
+  const bySite = {};
+  let ready = 0, total = 0;
+  for(const row of bulkState){
+    if(row.error) continue;
+    total++;
+    if(!row.site || !row.creator) continue;
+    ready++;
+    (bySite[row.site] = bySite[row.site] || []).push({ id: row.info.id, title: row.info.title, cr: row.creator });
+  }
+  if(ready === 0){
+    document.getElementById('output').classList.remove('show');
+    return;
+  }
+  // Build snippet: each site shows its merged array
+  const sites = Object.keys(bySite).sort();
+  const parts = sites.map(site => {
+    const existing = VIDEOS[site] || [];
+    const merged = [...existing, ...bySite[site]];
+    return `"${site}": ${JSON.stringify(merged, null, 2)}`;
+  });
+  const snippet = parts.join(',\n\n');
+  document.getElementById('snippet').innerHTML = highlightJson(snippet);
+  const siteCount = sites.length;
+  document.getElementById('out-summary').textContent = `${ready} of ${total} walkthroughs · ${siteCount} site${siteCount===1?'':'s'}`;
+  document.getElementById('out-hint').textContent = `Find each site below in data/videos.json and replace its array with the matching block.`;
+  document.getElementById('output').classList.add('show');
+}
+
+// ============================================================
+// JSON syntax highlighting
+// ============================================================
+function highlightJson(s){
+  return escapeHtml(s)
+    .replace(/(&quot;)([^&]*?)(&quot;)(\s*:)/g, '<span class="k">$1$2$3</span>$4')
+    .replace(/:\s*(&quot;)([^&]*?)(&quot;)/g, ': <span class="s">$1$2$3</span>')
+    .replace(/\b(\d+\.?\d*)\b/g, '<span class="n">$1</span>');
+}
+
+// ============================================================
+// Mode toggle
+// ============================================================
+document.querySelectorAll('.mode-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    const mode = btn.dataset.mode;
+    document.getElementById('single-mode').style.display = mode==='single' ? 'block' : 'none';
+    document.getElementById('bulk-mode').style.display = mode==='bulk' ? 'block' : 'none';
+    document.getElementById('output').classList.remove('show');
+    if(mode==='single') maybeShowOutput();
+    else renderBulkOutput();
+  });
+});
+
+// ============================================================
+// Copy snippet
+// ============================================================
+document.getElementById('copy-btn').addEventListener('click', async () => {
+  const pre = document.getElementById('snippet');
+  const text = pre.textContent;
+  try{
+    await navigator.clipboard.writeText(text);
+    toast('Copied : paste into data/videos.json');
+  }catch{
+    // Fallback
+    const ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); toast('Copied : paste into data/videos.json'); }
+    catch{ toast('Copy failed. Select the snippet manually.'); }
+    document.body.removeChild(ta);
+  }
+});
+
+// ============================================================
+// Toast
+// ============================================================
+let toastTimer;
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// ============================================================
+// Init combos once data loads
+// ============================================================
+(async function init(){
+  while(!dataReady){ await new Promise(r=>setTimeout(r,80)); }
+  initSingleCombos();
+})();
+
+// ============================================================
+// Keyboard: Enter in URL field = fetch
+// ============================================================
+document.getElementById('s-url').addEventListener('keydown', e => {
+  if(e.key === 'Enter'){ e.preventDefault(); document.getElementById('s-fetch').click(); }
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "brienf": [
+    {
+      "name": "Hidden Inca Tours",
+      "url": "https://hiddenincatours.com/tours/",
+      "region": "Peru · Bolivia · multi-region",
+      "partnership": "discovery"
+    }
+  ],
+  "megalithomania": [
+    {
+      "name": "Megalithomania Tours",
+      "url": "https://www.megalithomania.co.uk/tours.html",
+      "region": "Multiple destinations",
+      "partnership": "discovery"
+    }
+  ],
+  "unchartedx": [
+    {
+      "name": "Future Tours",
+      "url": "https://unchartedx.com/site/futuretours/",
+      "region": "Egypt · Peru · multi-region",
+      "partnership": "discovery"
+    },
+    {
+      "name": "Primordial 2026",
+      "url": "https://unchartedx.com/site/primordial2026/",
+      "region": "Egypt",
+      "year": "2026",
+      "partnership": "discovery"
+    }
+  ],
+  "praveenmohan": [
+    {
+      "name": "India Tour",
+      "url": "https://tours.praveenmohanglobal.com/india-tour",
+      "region": "India",
+      "partnership": "discovery"
+    },
+    {
+      "name": "Thailand Tour",
+      "url": "https://tours.praveenmohanglobal.com/thailand-tour",
+      "region": "Thailand",
+      "partnership": "discovery"
+    },
+    {
+      "name": "Cambodia Tour",
+      "url": "https://tours.praveenmohanglobal.com/cambodia-tour",
+      "region": "Cambodia",
+      "partnership": "discovery"
+    }
+  ]
+}
