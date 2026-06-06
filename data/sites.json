@@ -546,7 +546,13 @@
     "cat": "megalithic",
     "region": "Egypt",
     "tier": 2,
-    "desc": "Subterranean structure behind the Temple of Seti I using massive granite blocks in a style resembling much older construction. One of Egypt's most debated monuments."
+    "desc": "Subterranean structure behind the Temple of Seti I using massive granite blocks in a style resembling much older construction. One of Egypt's most debated monuments.",
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "scale",
+      "precision"
+    ]
   },
   {
     "n": "Hawara Pyramid & Labyrinth",
@@ -1257,7 +1263,13 @@
     "cat": "megalithic",
     "region": "Asia",
     "tier": 2,
-    "desc": "Submerged rock formation off Japan with apparent terraces, right angles, and carved features. Debated: natural geology or a 10,000-year-old man-made structure lost to rising seas."
+    "desc": "Submerged rock formation off Japan with apparent terraces, right angles, and carved features. Debated: natural geology or a 10,000-year-old man-made structure lost to rising seas.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision",
+      "geometry"
+    ]
   },
   {
     "n": "Osaka Castle",
@@ -1338,7 +1350,12 @@
     "cat": "megalithic",
     "region": "Asia",
     "tier": 3,
-    "desc": "The 'Pyramid of Japan' — a near-perfect pyramidal hill in Akita Prefecture, close to the Ōyu Stone Circles. Locals consider it sacred. Alt-archaeology research suggests artificial construction or modification; mainstream geology argues natural erosion. Ground-penetrating radar has revealed unusual internal structure."
+    "desc": "The 'Pyramid of Japan' — a near-perfect pyramidal hill in Akita Prefecture, close to the Ōyu Stone Circles. Locals consider it sacred. Alt-archaeology research suggests artificial construction or modification; mainstream geology argues natural erosion. Ground-penetrating radar has revealed unusual internal structure.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ]
   },
   {
     "n": "Oya Stone Quarry",
@@ -1356,7 +1373,13 @@
     "cat": "megalithic",
     "region": "Asia",
     "tier": 1,
-    "desc": "Indonesian megalithic site dated controversially to as early as 25,000 BCE by ground-penetrating radar studies. If confirmed, it would be the oldest pyramid structure on Earth."
+    "desc": "Indonesian megalithic site dated controversially to as early as 25,000 BCE by ground-penetrating radar studies. If confirmed, it would be the oldest pyramid structure on Earth.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "stratigraphy"
+    ]
   },
   {
     "n": "Terracotta Army",
@@ -1401,7 +1424,12 @@
     "cat": "pyramid",
     "region": "Asia",
     "tier": 1,
-    "desc": "Over 200 pyramidal earth mounds across Shaanxi Province, including the Great White Pyramid (sometimes claimed twice the size of Giza). Officially identified as Han Dynasty imperial tombs, but their true age and the precision of cardinal-direction alignment have prompted alt-archaeology arguments for far older origins. Many remain unexcavated by government restriction."
+    "desc": "Over 200 pyramidal earth mounds across Shaanxi Province, including the Great White Pyramid (sometimes claimed twice the size of Giza). Officially identified as Han Dynasty imperial tombs, but their true age and the precision of cardinal-direction alignment have prompted alt-archaeology arguments for far older origins. Many remain unexcavated by government restriction.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ]
   },
   {
     "n": "Huashan Grottoes",
@@ -1437,7 +1465,11 @@
     "cat": "megalithic",
     "region": "Asia",
     "tier": 3,
-    "desc": "Iron pipe-like structures embedded in rock formations on Mount Baigong, Qinghai Province. Discovered 1996. Estimated 5,000+ years old, predating known iron smelting in China. Conventional explanation: natural pseudomorphs of fossilized trees. Alt-archaeology: remnants of an ancient water-management system. Documented radioactivity adds to the mystery."
+    "desc": "Iron pipe-like structures embedded in rock formations on Mount Baigong, Qinghai Province. Discovered 1996. Estimated 5,000+ years old, predating known iron smelting in China. Conventional explanation: natural pseudomorphs of fossilized trees. Alt-archaeology: remnants of an ancient water-management system. Documented radioactivity adds to the mystery.",
+    "signal": "open",
+    "criteria": [
+      "stratigraphy"
+    ]
   },
   {
     "n": "Hejin City Fortress",
@@ -1536,7 +1568,12 @@
     "cat": "megalithic",
     "region": "Africa",
     "tier": 2,
-    "desc": "Controversial stone circle in South Africa, claimed to be 75,000 years old by some researchers. Aligned to cardinal points and solstices. Mainstream dating and significance debated."
+    "desc": "Controversial stone circle in South Africa, claimed to be 75,000 years old by some researchers. Aligned to cardinal points and solstices. Mainstream dating and significance debated.",
+    "signal": "open",
+    "criteria": [
+      "geometry",
+      "stratigraphy"
+    ]
   },
   {
     "n": "Teotihuacán",
@@ -2022,7 +2059,13 @@
     "cat": "rock-cut",
     "region": "South America",
     "tier": 2,
-    "desc": "Small but precisely-carved rock-cut shrine in the Sacred Valley, Peru. Features a perfectly geometric stepped altar, lightning-cut niches, and inverted-V doorway. Pre-Inca origin disputed."
+    "desc": "Small but precisely-carved rock-cut shrine in the Sacred Valley, Peru. Features a perfectly geometric stepped altar, lightning-cut niches, and inverted-V doorway. Pre-Inca origin disputed.",
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "precision",
+      "geometry"
+    ]
   },
   {
     "n": "Vat Phou",
@@ -2346,7 +2389,12 @@
     "cat": "megalithic",
     "region": "Central America",
     "tier": 3,
-    "desc": "Underwater rock formation off North Bimini in the Bahamas, ~6m deep. Linear strip of rectangular megalithic blocks ~800m long. Discovered 1968. Geological versus man-made origin debated for over 50 years. Edgar Cayce's predicted 'edge of Atlantis' site."
+    "desc": "Underwater rock formation off North Bimini in the Bahamas, ~6m deep. Linear strip of rectangular megalithic blocks ~800m long. Discovered 1968. Geological versus man-made origin debated for over 50 years. Edgar Cayce's predicted 'edge of Atlantis' site.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ]
   },
   {
     "n": "Cumbe Mayo",
@@ -2589,7 +2637,12 @@
     "cat": "megalithic",
     "region": "Middle East",
     "tier": 1,
-    "desc": "'Armenian Stonehenge' in southern Armenia. 223 standing basalt stones, many with bored holes pointing at specific stars. Claimed astronomical observatory dating to ~5500 BCE, which would make it one of the oldest observatories on Earth. Date contested by mainstream archaeology; the bored holes themselves are not."
+    "desc": "'Armenian Stonehenge' in southern Armenia. 223 standing basalt stones, many with bored holes pointing at specific stars. Claimed astronomical observatory dating to ~5500 BCE, which would make it one of the oldest observatories on Earth. Date contested by mainstream archaeology; the bored holes themselves are not.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ]
   },
   {
     "n": "Vishap Stones",
@@ -2617,5 +2670,67 @@
     "region": "Pacific",
     "tier": 1,
     "desc": "Polynesian trilithon on the island of Tongatapu, Tonga. Three coral-limestone blocks (two uprights + lintel) weighing ~30–40 tons each, joined by precision-cut mortise and tenon. Built ~1200 CE under the Tu'i Tonga dynasty. Astronomically aligned to solstice sunrise. The only known Polynesian trilithon, on the same form as Stonehenge and Baalbek."
+  },
+  {
+    "n": "Dolmens of the North Caucasus",
+    "lat": 44.55,
+    "lng": 38.0833,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "Bronze Age megalithic tomb complex spanning the Krasnodar and Adygea regions near the Black Sea. Roughly 3,000 documented dolmens, constructed from precisely cut stone slabs weighing up to 20 tons, many featuring carved portholes and ornamental relief work. Carbon-dated to the 3rd-2nd millennium BCE. The masonry precision rivals Western European megalithic traditions and predates them in several places."
+  },
+  {
+    "n": "Arkaim",
+    "lat": 52.6394,
+    "lng": 59.5614,
+    "cat": "settlement",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Sintashta-culture fortified settlement in the Southern Urals, dated to 2000-1700 BCE. Concentric circular walls, 60 dwellings in radial pattern, sophisticated drainage. Discovered 1987. Astronomical alignments at the perimeter prompted the 'Russian Stonehenge' label; the comparison is loose but the site's geometric precision is its own argument. Genetic evidence links the population to early Indo-Iranian migrations."
+  },
+  {
+    "n": "Gornaya Shoria",
+    "lat": 53.0167,
+    "lng": 88.85,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "Granite formations at the summit of Mount Kuylyum in the Kemerovo Oblast, Siberia. Individual blocks reach reported weights of 3,000+ tons with flat faces and joinery-tight seams along multiple planes. The engineering question is whether the seam regularity and block scale fall within the range natural granite outcrop produces, or outside it. Geological surveys read the formation as fractured natural outcrop. Field expeditions, including the 2014 Lakhta Foundation visit, argue the precision warrants treating the site as worked stone. Among the largest claimed megalithic blocks on earth."
+  },
+  {
+    "n": "Khara-Hora Shaft",
+    "lat": 63.0,
+    "lng": 67.5,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision",
+      "geometry"
+    ],
+    "desc": "A roughly 100-meter vertical shaft in the Khanty-Mansi region of Russia's Far East. Polished interior surfaces with dimensional regularity along the full descent. The geometry (uniform diameter, true vertical, finished wall texture) sits at the edge of what groundwater karst processes typically produce. Geological readings interpret it as a natural shaft. Independent field investigators argue the precision and surface finish read as worked construction. Currently outside mainstream academic discussion."
+  },
+  {
+    "n": "Chusovo Wall",
+    "lat": 58.2,
+    "lng": 57.8167,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision",
+      "polygonal"
+    ],
+    "desc": "A polygonal stonework retaining wall ~85 meters long and up to 4 meters high along the Chusovaya River in the Middle Urals (Sverdlovsk Oblast). Built from granite blocks, some over 2 meters in length and weighing in excess of 10 tons, fitted along irregular but tight seams in the concave-convex joinery characteristic of mortarless megalithic construction at Cusco, Ahu Vinapu (Easter Island), the Osirion (Egypt), and Osaka Castle (Japan). Conventionally attributed to the 1720s-1730s Demidov iron-smelting factory. Three engineering signals resist that attribution: the wall is absent from the surviving 1735 factory plans, the surrounding geology contains no granite source within transport range, and a pin hole on one block matches the bronze-rod joinery technique documented at Baalbek and the Osirion. Independent investigators argue the structure was inherited rather than built by the Demidovs. Brought to wider attention by the 2014 documentary 'The Miracle of Chusovoe.'"
   }
 ]

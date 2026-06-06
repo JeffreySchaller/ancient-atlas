@@ -106,3 +106,77 @@ The atlas catalogs sites built by living and historical peoples. Some standards 
 Open a PR with your best attempt and flag the uncertainty in the description. Maintainers prefer "I wasn't sure how to phrase this" over silence.
 
 The atlas isn't perfect. But it tries to be consistent. Consistency is what makes the editorial voice trustworthy.
+# Editorial Guidelines · Signal & Criteria addendum
+
+> Append this to the bottom of `docs/EDITORIAL_GUIDELINES.md`.
+
+---
+
+## Signal : marking sites where readings diverge
+
+The atlas catalogs sites with two epistemic stances :
+
+- **Convergent** (default) : mainstream archaeological and independent investigator readings agree on what the site is. No field needed in the data. The vast majority of sites.
+- **Open** : readings genuinely diverge. The site's age, builders, or even classification as constructed is an active question. Tagged with `"signal": "open"`.
+
+The badge that appears next to open-question sites is a small triangulation glyph (three dots in a triangle). Tapping it reveals which specific engineering signatures the site exhibits, each one a link into the megalith library reference.
+
+This stance is structural, not editorial decoration. **Convergent Triangulation** treats every reading as a satellite signal. When signals don't converge, the badge reflects that honestly. The atlas doesn't pick a winner.
+
+## When to mark `"signal": "open"`
+
+A site qualifies for the open mark when at least one of these is true :
+
+- Mainstream geological or archaeological reading and independent field investigator reading disagree on classification (natural vs. constructed)
+- Carbon dating, GPR scanning, or other quantitative evidence produces results inconsistent with the conventional cultural attribution
+- The engineering signature of the work (precision, scale, tools required) does not match the documented capability of the attributed culture
+- The site has been the subject of published research from both mainstream and independent archaeology, with substantially different conclusions
+
+A site does NOT qualify just because :
+
+- Alternative-archaeology YouTubers have covered it (popularity is not divergence)
+- It's mysterious or visually striking (most ancient sites are)
+- A single author has proposed an unconventional theory (one source is not divergence)
+- The construction method is unknown but the site itself is uncontested
+
+**Scarcity preserves the signal.** If 60% of sites have the badge, it stops meaning anything. Target : under 5% of the catalog. As of the first rollout, 13 of 296 sites (4.4%).
+
+## The criteria taxonomy (closed set of 6)
+
+Each open-question site carries a `"criteria"` array naming which engineering anomalies it exhibits. The taxonomy is closed — these six and no others :
+
+| Key | Meaning | Library section |
+|---|---|---|
+| `precision` | Mortarless joinery, sub-millimeter tolerance | `#precision` |
+| `hardness` | Stone material harder than tools available to the attributed period | `#hardness` |
+| `scale` | Block weights exceed documented lift capability of the attributed period | `#scale` |
+| `polygonal` | Polygonal interlock pattern matching the global signature (Cusco / Japan / Mediterranean) | `#polygonal` |
+| `stratigraphy` | Stratigraphic layers run backwards : deeper = more advanced technology | `#stratigraphy` |
+| `geometry` | Geometric alignment encodes astronomy, terrestrial proportions, or human proportions | `#geometry` |
+
+These map 1:1 to the six properties enumerated in `/library/megaliths.html`. Adding new criteria requires extending the library article first ; the badge taxonomy follows.
+
+**Maximum 4 criteria per site.** If a site exhibits five or six, pick the four that are most diagnostically interesting. The flip-down card stays breathable.
+
+## The engineering voice
+
+This stance is anchored in the framing Jeff articulated during the UnchartedX Egypt tour : *on a tour of one of the most "settled" archaeological sites in the world, one-third of the participants were extremely smart engineers, not archaeologists.* The atlas is for that audience first. Builders looking at physical artifacts and reading the construction as a system.
+
+This shifts the vocabulary of site descriptions :
+
+- Replace *contested, debated, disputed, controversial, pseudoarchaeology, fringe* with **precision, tolerance, joinery, scale, signature, weathering, tool mark, alignment**.
+- Name what each reading says (geological, archaeological, independent), don't pick the winner.
+- End on the most interesting engineering specific. The reader brings craft knowledge to the description ; the description respects that.
+
+When signals converge, this discipline isn't needed — describe the site normally. The triangulation language is reserved for sites where readings actually diverge, which is where the engineering eye matters most.
+
+## Adding new open-question sites
+
+Maintainer workflow (via `/contribute.html` or direct PR) :
+
+1. Pick `signal: "open"` deliberately. Default convergent.
+2. Pick up to 4 criteria from the closed set.
+3. Write the description using the engineering voice. Name each reading. Close on the inviting specific.
+4. The badge and flip-down appear automatically once the data fields are set.
+
+If the site exhibits an anomaly not covered by the six criteria, that's a signal to expand the library article first. The taxonomy stays tight by design.

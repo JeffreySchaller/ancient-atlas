@@ -1511,6 +1511,27 @@ body.present #broadcast-controls{
 .sp-patron.founding .sp-patron-tier{color:#E8C896}
 
 .sp-patrons-empty{padding:32px 18px;text-align:center;color:var(--mist);font-style:italic;border:1px dashed rgba(201,168,76,.25);border-radius:12px}
+
+/* ===== Open-question badge (signal: open) ===== */
+.signal-badge{display:inline-flex;width:12px;height:12px;margin-left:4px;cursor:pointer;color:var(--champagne);opacity:.55;transition:opacity .15s,transform .15s;vertical-align:middle;flex-shrink:0;align-self:center}
+.signal-badge:hover{opacity:1;transform:scale(1.18)}
+.signal-badge svg{width:100%;height:100%;display:block}
+.detail-signal-badge{width:18px;height:18px;margin-left:10px}
+
+/* ===== Signal flip-down card ===== */
+.signal-card{position:fixed;width:300px;background:rgba(13,13,18,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(201,168,76,.28);border-radius:12px;padding:14px 16px 10px;box-shadow:0 16px 48px rgba(0,0,0,.65);z-index:10000;opacity:0;transform:translateY(-6px);pointer-events:none;transition:opacity .18s ease,transform .18s ease;font-family:var(--font-sans);color:var(--cloud)}
+.signal-card.open{opacity:1;transform:translateY(0);pointer-events:auto}
+.signal-card-title{font-family:var(--font-mono);font-size:9px;text-transform:uppercase;letter-spacing:.14em;color:var(--champagne);font-weight:700;margin-bottom:10px}
+.signal-card-row{display:flex;align-items:flex-start;gap:11px;padding:9px 0;color:var(--cloud);font-size:12px;line-height:1.45;text-decoration:none;border-bottom:1px solid rgba(42,42,53,.4);transition:color .12s}
+.signal-card-row:last-of-type{border-bottom:none}
+.signal-card-row:hover{color:var(--ivory)}
+.signal-card-row:hover .criterion-icon{color:var(--amber)}
+.criterion-icon{width:18px;height:18px;flex-shrink:0;color:var(--champagne);margin-top:1px;transition:color .12s}
+.criterion-icon svg{width:100%;height:100%;display:block}
+.signal-card-foot{margin-top:8px;padding-top:10px;border-top:1px solid rgba(42,42,53,.5);text-align:right}
+.signal-card-foot a{color:var(--champagne);text-decoration:none;font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.12em}
+.signal-card-foot a:hover{color:var(--amber)}
+
 </style>
 </head>
 <body>
@@ -2338,7 +2359,13 @@ const SITES = [
     "cat": "megalithic",
     "region": "Egypt",
     "tier": 2,
-    "desc": "Subterranean structure behind the Temple of Seti I using massive granite blocks in a style resembling much older construction. One of Egypt's most debated monuments."
+    "desc": "Subterranean structure behind the Temple of Seti I using massive granite blocks in a style resembling much older construction. One of Egypt's most debated monuments.",
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "scale",
+      "precision"
+    ]
   },
   {
     "n": "Hawara Pyramid & Labyrinth",
@@ -3049,7 +3076,13 @@ const SITES = [
     "cat": "megalithic",
     "region": "Asia",
     "tier": 2,
-    "desc": "Submerged rock formation off Japan with apparent terraces, right angles, and carved features. Debated: natural geology or a 10,000-year-old man-made structure lost to rising seas."
+    "desc": "Submerged rock formation off Japan with apparent terraces, right angles, and carved features. Debated: natural geology or a 10,000-year-old man-made structure lost to rising seas.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision",
+      "geometry"
+    ]
   },
   {
     "n": "Osaka Castle",
@@ -3130,7 +3163,12 @@ const SITES = [
     "cat": "megalithic",
     "region": "Asia",
     "tier": 3,
-    "desc": "The 'Pyramid of Japan' — a near-perfect pyramidal hill in Akita Prefecture, close to the Ōyu Stone Circles. Locals consider it sacred. Alt-archaeology research suggests artificial construction or modification; mainstream geology argues natural erosion. Ground-penetrating radar has revealed unusual internal structure."
+    "desc": "The 'Pyramid of Japan' — a near-perfect pyramidal hill in Akita Prefecture, close to the Ōyu Stone Circles. Locals consider it sacred. Alt-archaeology research suggests artificial construction or modification; mainstream geology argues natural erosion. Ground-penetrating radar has revealed unusual internal structure.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ]
   },
   {
     "n": "Oya Stone Quarry",
@@ -3148,7 +3186,13 @@ const SITES = [
     "cat": "megalithic",
     "region": "Asia",
     "tier": 1,
-    "desc": "Indonesian megalithic site dated controversially to as early as 25,000 BCE by ground-penetrating radar studies. If confirmed, it would be the oldest pyramid structure on Earth."
+    "desc": "Indonesian megalithic site dated controversially to as early as 25,000 BCE by ground-penetrating radar studies. If confirmed, it would be the oldest pyramid structure on Earth.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "stratigraphy"
+    ]
   },
   {
     "n": "Terracotta Army",
@@ -3193,7 +3237,12 @@ const SITES = [
     "cat": "pyramid",
     "region": "Asia",
     "tier": 1,
-    "desc": "Over 200 pyramidal earth mounds across Shaanxi Province, including the Great White Pyramid (sometimes claimed twice the size of Giza). Officially identified as Han Dynasty imperial tombs, but their true age and the precision of cardinal-direction alignment have prompted alt-archaeology arguments for far older origins. Many remain unexcavated by government restriction."
+    "desc": "Over 200 pyramidal earth mounds across Shaanxi Province, including the Great White Pyramid (sometimes claimed twice the size of Giza). Officially identified as Han Dynasty imperial tombs, but their true age and the precision of cardinal-direction alignment have prompted alt-archaeology arguments for far older origins. Many remain unexcavated by government restriction.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ]
   },
   {
     "n": "Huashan Grottoes",
@@ -3229,7 +3278,11 @@ const SITES = [
     "cat": "megalithic",
     "region": "Asia",
     "tier": 3,
-    "desc": "Iron pipe-like structures embedded in rock formations on Mount Baigong, Qinghai Province. Discovered 1996. Estimated 5,000+ years old, predating known iron smelting in China. Conventional explanation: natural pseudomorphs of fossilized trees. Alt-archaeology: remnants of an ancient water-management system. Documented radioactivity adds to the mystery."
+    "desc": "Iron pipe-like structures embedded in rock formations on Mount Baigong, Qinghai Province. Discovered 1996. Estimated 5,000+ years old, predating known iron smelting in China. Conventional explanation: natural pseudomorphs of fossilized trees. Alt-archaeology: remnants of an ancient water-management system. Documented radioactivity adds to the mystery.",
+    "signal": "open",
+    "criteria": [
+      "stratigraphy"
+    ]
   },
   {
     "n": "Hejin City Fortress",
@@ -3328,7 +3381,12 @@ const SITES = [
     "cat": "megalithic",
     "region": "Africa",
     "tier": 2,
-    "desc": "Controversial stone circle in South Africa, claimed to be 75,000 years old by some researchers. Aligned to cardinal points and solstices. Mainstream dating and significance debated."
+    "desc": "Controversial stone circle in South Africa, claimed to be 75,000 years old by some researchers. Aligned to cardinal points and solstices. Mainstream dating and significance debated.",
+    "signal": "open",
+    "criteria": [
+      "geometry",
+      "stratigraphy"
+    ]
   },
   {
     "n": "Teotihuacán",
@@ -3814,7 +3872,13 @@ const SITES = [
     "cat": "rock-cut",
     "region": "South America",
     "tier": 2,
-    "desc": "Small but precisely-carved rock-cut shrine in the Sacred Valley, Peru. Features a perfectly geometric stepped altar, lightning-cut niches, and inverted-V doorway. Pre-Inca origin disputed."
+    "desc": "Small but precisely-carved rock-cut shrine in the Sacred Valley, Peru. Features a perfectly geometric stepped altar, lightning-cut niches, and inverted-V doorway. Pre-Inca origin disputed.",
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "precision",
+      "geometry"
+    ]
   },
   {
     "n": "Vat Phou",
@@ -4138,7 +4202,12 @@ const SITES = [
     "cat": "megalithic",
     "region": "Central America",
     "tier": 3,
-    "desc": "Underwater rock formation off North Bimini in the Bahamas, ~6m deep. Linear strip of rectangular megalithic blocks ~800m long. Discovered 1968. Geological versus man-made origin debated for over 50 years. Edgar Cayce's predicted 'edge of Atlantis' site."
+    "desc": "Underwater rock formation off North Bimini in the Bahamas, ~6m deep. Linear strip of rectangular megalithic blocks ~800m long. Discovered 1968. Geological versus man-made origin debated for over 50 years. Edgar Cayce's predicted 'edge of Atlantis' site.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ]
   },
   {
     "n": "Cumbe Mayo",
@@ -4381,7 +4450,12 @@ const SITES = [
     "cat": "megalithic",
     "region": "Middle East",
     "tier": 1,
-    "desc": "'Armenian Stonehenge' in southern Armenia. 223 standing basalt stones, many with bored holes pointing at specific stars. Claimed astronomical observatory dating to ~5500 BCE, which would make it one of the oldest observatories on Earth. Date contested by mainstream archaeology; the bored holes themselves are not."
+    "desc": "'Armenian Stonehenge' in southern Armenia. 223 standing basalt stones, many with bored holes pointing at specific stars. Claimed astronomical observatory dating to ~5500 BCE, which would make it one of the oldest observatories on Earth. Date contested by mainstream archaeology; the bored holes themselves are not.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ]
   },
   {
     "n": "Vishap Stones",
@@ -4409,6 +4483,68 @@ const SITES = [
     "region": "Pacific",
     "tier": 1,
     "desc": "Polynesian trilithon on the island of Tongatapu, Tonga. Three coral-limestone blocks (two uprights + lintel) weighing ~30–40 tons each, joined by precision-cut mortise and tenon. Built ~1200 CE under the Tu'i Tonga dynasty. Astronomically aligned to solstice sunrise. The only known Polynesian trilithon, on the same form as Stonehenge and Baalbek."
+  },
+  {
+    "n": "Dolmens of the North Caucasus",
+    "lat": 44.55,
+    "lng": 38.0833,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "desc": "Bronze Age megalithic tomb complex spanning the Krasnodar and Adygea regions near the Black Sea. Roughly 3,000 documented dolmens, constructed from precisely cut stone slabs weighing up to 20 tons, many featuring carved portholes and ornamental relief work. Carbon-dated to the 3rd-2nd millennium BCE. The masonry precision rivals Western European megalithic traditions and predates them in several places."
+  },
+  {
+    "n": "Arkaim",
+    "lat": 52.6394,
+    "lng": 59.5614,
+    "cat": "settlement",
+    "region": "Asia",
+    "tier": 1,
+    "desc": "Sintashta-culture fortified settlement in the Southern Urals, dated to 2000-1700 BCE. Concentric circular walls, 60 dwellings in radial pattern, sophisticated drainage. Discovered 1987. Astronomical alignments at the perimeter prompted the 'Russian Stonehenge' label; the comparison is loose but the site's geometric precision is its own argument. Genetic evidence links the population to early Indo-Iranian migrations."
+  },
+  {
+    "n": "Gornaya Shoria",
+    "lat": 53.0167,
+    "lng": 88.85,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "Granite formations at the summit of Mount Kuylyum in the Kemerovo Oblast, Siberia. Individual blocks reach reported weights of 3,000+ tons with flat faces and joinery-tight seams along multiple planes. The engineering question is whether the seam regularity and block scale fall within the range natural granite outcrop produces, or outside it. Geological surveys read the formation as fractured natural outcrop. Field expeditions, including the 2014 Lakhta Foundation visit, argue the precision warrants treating the site as worked stone. Among the largest claimed megalithic blocks on earth."
+  },
+  {
+    "n": "Khara-Hora Shaft",
+    "lat": 63.0,
+    "lng": 67.5,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision",
+      "geometry"
+    ],
+    "desc": "A roughly 100-meter vertical shaft in the Khanty-Mansi region of Russia's Far East. Polished interior surfaces with dimensional regularity along the full descent. The geometry (uniform diameter, true vertical, finished wall texture) sits at the edge of what groundwater karst processes typically produce. Geological readings interpret it as a natural shaft. Independent field investigators argue the precision and surface finish read as worked construction. Currently outside mainstream academic discussion."
+  },
+  {
+    "n": "Chusovo Wall",
+    "lat": 58.2,
+    "lng": 57.8167,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision",
+      "polygonal"
+    ],
+    "desc": "A polygonal stonework retaining wall ~85 meters long and up to 4 meters high along the Chusovaya River in the Middle Urals (Sverdlovsk Oblast). Built from granite blocks, some over 2 meters in length and weighing in excess of 10 tons, fitted along irregular but tight seams in the concave-convex joinery characteristic of mortarless megalithic construction at Cusco, Ahu Vinapu (Easter Island), the Osirion (Egypt), and Osaka Castle (Japan). Conventionally attributed to the 1720s-1730s Demidov iron-smelting factory. Three engineering signals resist that attribution: the wall is absent from the surviving 1735 factory plans, the surrounding geology contains no granite source within transport range, and a pin hole on one block matches the bronze-rod joinery technique documented at Baalbek and the Osirion. Independent investigators argue the structure was inherited rather than built by the Demidovs. Brought to wider attention by the 2014 documentary 'The Miracle of Chusovoe.'"
   }
 ];
 
@@ -6597,6 +6733,56 @@ const VIDEOS = {
       "title": "Rarely Seen, Amazing Ancient Megalithic site in Egypt: Tell el Roba",
       "cr": "unchartedx"
     }
+  ],
+  "Dolmens of the North Caucasus": [
+    {
+      "id": "qBin7G3n4eE",
+      "title": "Giant Prehistoric Dolmens in the Caucasus Built with Advanced Technology",
+      "cr": "universeinside"
+    },
+    {
+      "id": "NvzxNm3Mxcs",
+      "title": "Pre-Historic Megastructures of Russia In The Remote Wilderness",
+      "cr": "universeinside"
+    }
+  ],
+  "Arkaim": [
+    {
+      "id": "85cDo54GFlo",
+      "title": "Lost City in Siberia BREAKS History - Arkaim",
+      "cr": "universeinside"
+    },
+    {
+      "id": "NvzxNm3Mxcs",
+      "title": "Pre-Historic Megastructures of Russia In The Remote Wilderness",
+      "cr": "universeinside"
+    }
+  ],
+  "Gornaya Shoria": [
+    {
+      "id": "NvzxNm3Mxcs",
+      "title": "Pre-Historic Megastructures of Russia In The Remote Wilderness",
+      "cr": "universeinside"
+    }
+  ],
+  "Khara-Hora Shaft": [
+    {
+      "id": "J1QDP-Oqcr0",
+      "title": "Pre-Historic Underground Megastructure Found in Russia - Khara-Hora Shaft",
+      "cr": "universeinside"
+    }
+  ],
+  "Chusovo Wall": [
+    {
+      "id": "n-at6AZIsoI",
+      "title": "ANOTHER Pre-Historic Mega Structure in Russia",
+      "cr": "universeinside"
+    },
+    {
+      "id": "aPyw-yiKTMY",
+      "title": "Pre-Historic Hyperborean Civilization of Russia - Documentary",
+      "cr": "universeinside"
+    }
   ]
 };
 
@@ -6987,7 +7173,14 @@ const SITE_COUNTRIES = {
   "Copán": "Honduras",
   "Caracol": "Belize",
   "Moai of Easter Island (Rapa Nui)": "Chile (Rapa Nui)",
-  "Jericho": "Palestine"
+  "Jericho": "Palestine",
+  "Russia": [
+    "Dolmens of the North Caucasus",
+    "Arkaim",
+    "Gornaya Shoria",
+    "Khara-Hora Shaft",
+    "Chusovo Wall"
+  ]
 };
 
 const SITE_CULTURES = {
@@ -8490,7 +8683,7 @@ function buildSiteCardHtml(site) {
   const cls = 'si' + (selectedSite === site ? ' on' : '');
   return `<button class="${cls}" onclick="selectSiteByName('${escName}')" style="--cbr:${cat.br};--cbg:${cat.bg}">
     <span class="si-dot" style="background:${cat.color};${hasVid ? 'box-shadow:0 0 6px '+cat.color : 'opacity:.4'}"></span>
-    <span class="nm">${site.n}</span>
+    <span class="nm">${site.n}</span>${buildSignalBadgeHtml(site, false)}
     ${hasVid ? '<span style="font-size:9px;color:var(--champagne);font-family:var(--font-mono)">🎬'+vidCount+'</span>' : ''}
     <span class="rg">${site.region}</span>
     <span class="si-fav ${fav ? 'on' : ''}" onclick="event.stopPropagation();toggleFavorite('${escName}')" title="${fav ? 'Remove from favorites' : 'Save to favorites'}">★</span>
@@ -9151,6 +9344,106 @@ const KOFI = {
 // appended here (or eventually pulled from a backend / Google Sheet).
 const PATRONS = [];
 
+// ============================================================
+// SIGNAL: open-question badge taxonomy
+// Closed set of 6 criteria, matched 1:1 to /library/megaliths.html
+// Icons are inline SVG to match the library's line-icon style.
+// ============================================================
+const SIGNAL_BADGE_SVG = '<svg viewBox="0 0 12 12" fill="currentColor"><circle cx="6" cy="2.5" r="1.45"/><circle cx="2.5" cy="9.5" r="1.45"/><circle cx="9.5" cy="9.5" r="1.45"/></svg>';
+
+const SIGNAL_CRITERIA = {
+  precision: {
+    label: 'Mortarless joinery, sub-millimeter tolerance',
+    anchor: 'precision',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="4" y="5" width="16" height="14" rx="1"/><path d="M4 11h16M4 15h16"/></svg>',
+  },
+  hardness: {
+    label: 'Stone harder than period tools',
+    anchor: 'hardness',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M12 3l4 5-4 13-4-13z"/><path d="M8 8h8"/></svg>',
+  },
+  scale: {
+    label: 'Block scale exceeds documented lift capability',
+    anchor: 'scale',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M3 8v8l9 4 9-4V8"/><path d="M12 12v8"/></svg>',
+  },
+  polygonal: {
+    label: 'Polygonal interlock pattern across continents',
+    anchor: 'polygonal',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="7" r="2.5"/><circle cx="6.5" cy="16" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg>',
+  },
+  stratigraphy: {
+    label: 'Stratigraphy that runs backwards',
+    anchor: 'stratigraphy',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg>',
+  },
+  geometry: {
+    label: 'Geometry encoding astronomy, Earth, human form',
+    anchor: 'geometry',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><ellipse cx="9" cy="12" rx="5.5" ry="8.5"/><ellipse cx="15" cy="12" rx="5.5" ry="8.5"/></svg>',
+  },
+};
+
+function buildSignalBadgeHtml(site, large) {
+  if (!site || site.signal !== 'open') return '';
+  const cls = large ? 'signal-badge detail-signal-badge' : 'signal-badge';
+  const escName = (site.n || '').replace(/'/g, "\\'");
+  return `<span class="${cls}" onclick="event.stopPropagation();openSignalCard(event, '${escName}')" title="Open question — signals don't yet converge" role="button" aria-label="Open engineering signature panel">${SIGNAL_BADGE_SVG}</span>`;
+}
+
+function openSignalCard(evt, siteName) {
+  const site = SITES.find(s => s.n === siteName);
+  if (!site || site.signal !== 'open') return;
+  const card = document.getElementById('signal-card');
+  if (!card) return;
+  const criteria = site.criteria || [];
+
+  const rowsHtml = criteria.map(key => {
+    const c = SIGNAL_CRITERIA[key];
+    if (!c) return '';
+    return `<a class="signal-card-row" href="/library/megaliths.html#${c.anchor}" target="_blank" rel="noopener">
+      <span class="criterion-icon">${c.icon}</span>
+      <span>${c.label}</span>
+    </a>`;
+  }).join('');
+
+  card.innerHTML = `
+    <div class="signal-card-title">Engineering signature · ${site.n}</div>
+    ${rowsHtml}
+    <div class="signal-card-foot"><a href="/library/megaliths.html" target="_blank" rel="noopener">Read the reference →</a></div>
+  `;
+
+  // Position card relative to the clicked badge, keep inside viewport
+  const rect = evt.currentTarget.getBoundingClientRect();
+  const cardW = 300;
+  const cardH = Math.min(280, 80 + criteria.length * 48);
+  let left = rect.left + (rect.width / 2) - (cardW / 2);
+  let top = rect.bottom + 8;
+  left = Math.max(8, Math.min(window.innerWidth - cardW - 8, left));
+  if (top + cardH > window.innerHeight - 8) {
+    top = Math.max(8, rect.top - cardH - 8);
+  }
+  card.style.left = left + 'px';
+  card.style.top = top + 'px';
+  card.classList.add('open');
+}
+
+function closeSignalCard() {
+  const card = document.getElementById('signal-card');
+  if (card) card.classList.remove('open');
+}
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('.signal-card') && !e.target.closest('.signal-badge')) {
+    closeSignalCard();
+  }
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeSignalCard();
+});
+window.addEventListener('scroll', closeSignalCard, true);
+
+
 let supportTab = 'give';
 function setSupportTab(t) { supportTab = t; renderSupport(); }
 
@@ -9302,7 +9595,7 @@ function showDetail(site) {
     </div>
     <div class="dbody">
       <div style="display:flex;align-items:center;gap:8px;justify-content:space-between">
-        <h2 style="margin:0;flex:1">${site.n}</h2>
+        <h2 style="margin:0;flex:1;display:flex;align-items:center">${site.n}${buildSignalBadgeHtml(site, true)}</h2>
         <span class="detail-fav ${isFavorite(site.n) ? 'on' : ''}" onclick="toggleFavorite('${site.n.replace(/'/g,"\\'")}')" title="${isFavorite(site.n) ? 'Remove from favorites' : 'Save to favorites'}">★</span>
       </div>
       <div class="dmeta">
@@ -10260,5 +10553,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.year').forEach(el => { el.textContent = new Date().getFullYear(); });
 });
 </script>
+<div id="signal-card" class="signal-card" role="dialog" aria-label="Engineering signature"></div>
 </body>
 </html>
