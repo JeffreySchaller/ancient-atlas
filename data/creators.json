@@ -237,5 +237,12 @@
     "subs": "Neolithic engineering analysis · construction reconstruction · stonework methodology",
     "color": "#B68A56",
     "tier": 3
+  },
+  "solsticehunter": {
+    "name": "SOLSTICE HUNTER",
+    "handle": "@SOLSTICEHUNTER",
+    "subs": "boots-on-ground megalithic field documentation, cross-continental signatures",
+    "color": "#8B7DB8",
+    "tier": 3
   }
 }

@@ -2747,5 +2747,34 @@
       "precision"
     ],
     "desc": "12th-century corbel-arch bridge spanning the Chikreng River in Cambodia's Siem Reap Province, roughly 65 km east of Angkor. 87 meters long, 30 feet wide, supported by 21 piers spaced to slow floodwater while restricting passage of large boats — embedded military chokepoint. Laterite structural core with a sandstone facade : the same composite logic modern engineers use with rebar in concrete, executed 900 years before reinforced concrete. Pier height engineered to 23 feet, three times the historical maximum flood level. A T-54 tank (36 tons) crossed during the Khmer Rouge era without structural failure. Featured on Cambodia's 5,000 riel banknote, still in daily local use. The carved human figures on the naga balustrades have had their faces deliberately removed : selectively, by intent, with bodies and poses left intact."
+  },
+  {
+    "n": "Kbal Spean (Valley of a Thousand Lingams)",
+    "lat": 13.6111,
+    "lng": 104.075,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "scale",
+      "geometry"
+    ],
+    "desc": "Riverbed of carved sandstone in the Phnom Kulen mountains north of Angkor, where over a thousand Shiva lingams and yonis are cut directly into the living bedrock of the Stung Kbal Spean. Dated to the late 11th-early 12th century under King Suryavarman I. The carvings descend into and beneath the moving water, polished by centuries of flow yet retaining sharp precision-cylindrical and rectangular geometry. The site's purpose remains active : local pilgrims still light candles at specific lingams, and downstream water from Phnom Kulen feeds the Angkor temple complex hydrology. Independent investigators read the geometry as an engineered hydraulic system. Conventional archaeology reads it as a sacred Hindu site sanctifying water before it reaches the capital."
+  },
+  {
+    "n": "Phnom Bok",
+    "lat": 13.4667,
+    "lng": 104.0167,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "geometry"
+    ],
+    "desc": "Late-9th-century hilltop temple at 235 meters above the Angkor plain, built by Yasovarman I around 900 CE atop a 750-foot sandstone hill. Three brick prasats arranged in a row dedicated to the Hindu trinity, with carved sandstone elements and a colossal lingam over four meters tall. The hill itself shows what some independent investigators describe as 'mini megalithic' stonework patterns that echo signatures found at distant sites on other continents. Conventional reading : standard early-Angkorian temple-mountain. Independent reading : the substrate carvings predate the Khmer construction and link to a broader pre-Angkorian network."
   }
 ]
