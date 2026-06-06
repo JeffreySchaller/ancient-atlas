@@ -9492,35 +9492,28 @@ const KOFI = {
 // and the first real supporter becomes a meaningful milestone. Future patrons
 // appended here (or eventually pulled from a backend / Google Sheet).
 const PATRONS = [];
-
-// ============================================================
-// SIGNAL: open-question badge taxonomy
-// Closed set of 6 criteria, matched 1:1 to /library/megaliths.html
-// Icons are inline SVG to match the library's line-icon style.
-// ============================================================
-
-
-// NEW badge helper — true only if the video was BOTH:
+// NEW badge helper — true only if BOTH:
 //   - added to atlas in last 30 days  (recently curated)
 //   - published on YouTube in last 90 days  (actually recent upload)
-// Original helper kept for backwards compat; signature accepts the whole
-// video object now to check both fields.
-function isRecentlyAdded(video) {
-  // Accept legacy date-string call for safety, but prefer video object
-  if (typeof video === 'string') return false;  // old call sites won't trigger
-  if (!video || typeof video !== 'object') return false;
-
-  const addedStr = video.added;
-  const pubStr   = video.published;
-  if (!addedStr || !pubStr) return false;  // both required
-
+// Accepts either a video object (current callers) or a date string (legacy).
+function isRecentlyAdded(input) {
+  // Legacy call: isRecentlyAdded(dateStr) - just check added recency
+  if (typeof input === 'string') {
+    const d = new Date(input);
+    if (isNaN(d.getTime())) return false;
+    const days = (Date.now() - d.getTime()) / 86400000;
+    return days >= 0 && days <= 30;
+  }
+  // Modern call: isRecentlyAdded(video) - strict, both fields required
+  if (!input || typeof input !== 'object') return false;
+  const addedStr = input.added;
+  const pubStr   = input.published;
+  if (!addedStr || !pubStr) return false;
   const added = new Date(addedStr);
   const pub   = new Date(pubStr);
   if (isNaN(added.getTime()) || isNaN(pub.getTime())) return false;
-
   const addedDays = (Date.now() - added.getTime()) / 86400000;
   const pubDays   = (Date.now() - pub.getTime())   / 86400000;
-
   return addedDays >= 0 && addedDays <= 30 &&
          pubDays   >= 0 && pubDays   <= 90;
 }
