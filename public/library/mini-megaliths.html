@@ -113,6 +113,7 @@ ul.crisp li strong{color:var(--ivory);font-weight:600}
   .body{font-size:16px}
   .callout{font-size:18px;padding:24px 16px;margin:36px 0}
 }
+.share-btn{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--cloud,#C5C5D0);text-decoration:none;padding:8px 12px;border:1px solid rgba(201,168,76,.3);border-radius:8px;font-weight:600;transition:all .15s;background:rgba(201,168,76,.04);cursor:pointer;display:inline-flex;align-items:center;gap:7px;margin-right:8px;font-family:inherit}.share-btn:hover{color:var(--champagne,#C9A84C);border-color:rgba(201,168,76,.55);background:rgba(201,168,76,.1)}.share-btn svg{width:13px;height:13px;flex-shrink:0}@media(max-width:700px){.share-btn span{display:none}.share-btn{padding:7px 9px;margin-right:6px}}.share-toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(20px);background:#0D0D12;border:1px solid #C9A84C;color:#F0EEE9;padding:11px 22px;border-radius:8px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;z-index:9999;opacity:0;pointer-events:none;transition:all .25s ease-out;box-shadow:0 4px 24px rgba(201,168,76,.25)}.share-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 </style>
 </head>
 <body>
@@ -138,7 +139,7 @@ ul.crisp li strong{color:var(--ivory);font-weight:600}
     <a href="/library/" class="active">Library</a>
     <a href="/contact.html">Contact</a>
   </nav>
-  <a class="back-btn" href="/library/">← Library</a>
+  <button class="share-btn" onclick="shareArticle()" aria-label="Share this article" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13"/></svg><span>Share</span></button><a class="back-btn" href="/library/">← Library</a>
 </header>
 
 <article>
@@ -344,5 +345,36 @@ ul.crisp li strong{color:var(--ivory);font-weight:600}
 
 </article>
 
+<div class="share-toast" id="shareToast">Link copied</div>
+<script>
+async function shareArticle() {
+  const url = window.location.href;
+  const title = document.title;
+  const text = (document.querySelector('meta[name="description"]') || {}).content || '';
+  if (navigator.share) {
+    try {
+      await navigator.share({ title, text, url });
+      return;
+    } catch (e) {
+      if (e && e.name === 'AbortError') return;
+    }
+  }
+  try {
+    await navigator.clipboard.writeText(url);
+  } catch (e) {
+    const tmp = document.createElement('input');
+    tmp.value = url;
+    document.body.appendChild(tmp);
+    tmp.select();
+    try { document.execCommand('copy'); } catch (e2) {}
+    document.body.removeChild(tmp);
+  }
+  const toast = document.getElementById('shareToast');
+  if (toast) {
+    toast.classList.add('show');
+    setTimeout(function(){ toast.classList.remove('show'); }, 2200);
+  }
+}
+</script>
 </body>
 </html>
