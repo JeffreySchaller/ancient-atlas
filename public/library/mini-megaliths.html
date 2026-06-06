@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mini megaliths — The Ancient Atlas Library</title>
+<meta name="description" content="Why does a 100-ton wall need a hand-sized stone? The mini-megalith paradox across four continents." />
+<meta name="theme-color" content="#0D0D12" />
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="The Ancient Atlas" />
+<meta property="og:title" content="Mini megaliths : the paradox of the hand-sized stone" />
+<meta property="og:description" content="A 100-ton wall does not need a patch. So why are these walls full of small stones? Four sites, four continents, one signature." />
+<meta property="og:url" content="https://theancientatlas.com/library/mini-megaliths.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --obsidian:#0D0D12;--charcoal:#16161D;--slate:#1E1E28;--stone:#2A2A35;
+  --mist:#8A8A9A;--cloud:#C5C5D0;--ivory:#F0EEE9;--champagne:#C9A84C;
+  --amber:#E8B960;--champagne-glow:rgba(201,168,76,.15);
+  --font-sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --font-serif:'Fraunces',Georgia,serif;
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+}
+html,body{font-family:var(--font-sans);background:var(--obsidian);color:var(--ivory);-webkit-font-smoothing:antialiased;min-height:100%}
+body::before{content:'';position:fixed;inset:0;opacity:.03;pointer-events:none;z-index:9999;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+::selection{background:var(--champagne);color:var(--obsidian)}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--stone);border-radius:4px}
+
+/* ===== Header ===== */
+header{position:sticky;top:0;z-index:100;background:linear-gradient(180deg,rgba(13,13,18,.98),rgba(13,13,18,.9));backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(42,42,53,.4);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.logo-box{width:42px;height:42px;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 2px 8px rgba(201,168,76,.18))}
+.logo-box svg{width:100%;height:100%}
+.brand h1{font-family:var(--font-serif);font-size:26px;font-weight:600;line-height:1;letter-spacing:-.015em;font-variation-settings:"opsz" 36;color:var(--ivory)}
+.brand p{font-family:var(--font-serif);font-style:italic;font-size:13px;color:var(--cloud);margin-top:3px;opacity:.82}
+nav.toplinks{display:flex;gap:24px;font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+nav.toplinks a{color:var(--cloud);text-decoration:none;transition:color .15s}
+nav.toplinks a:hover{color:var(--champagne)}
+nav.toplinks a.active{color:var(--champagne)}
+.back-btn{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--cloud);text-decoration:none;padding:8px 14px;border:1px solid rgba(201,168,76,.3);border-radius:8px;font-weight:600;transition:all .15s;background:rgba(201,168,76,.04)}
+.back-btn:hover{color:var(--champagne);border-color:rgba(201,168,76,.55);background:rgba(201,168,76,.1)}
+
+/* ===== Article ===== */
+article{max-width:780px;margin:0 auto;padding:64px 24px 96px}
+
+.entry-eyebrow{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.22em;color:var(--champagne);font-weight:700;text-align:center;margin-bottom:24px}
+
+h2.article-title{font-family:var(--font-serif);font-size:46px;font-weight:600;line-height:1.1;letter-spacing:-.02em;color:var(--ivory);text-align:center;font-variation-settings:"opsz" 72;margin-bottom:14px}
+
+.article-subtitle{font-family:var(--font-serif);font-style:italic;font-size:19px;color:var(--cloud);text-align:center;line-height:1.4;font-variation-settings:"opsz" 28;margin-bottom:48px}
+
+.article-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.4),transparent);margin:0 auto 48px;max-width:200px}
+
+p.lede{font-family:var(--font-sans);font-size:18.5px;line-height:1.65;color:var(--ivory);margin-bottom:26px;font-weight:400}
+p.lede em{color:var(--champagne);font-style:italic;font-weight:500}
+
+.body{font-family:var(--font-sans);font-size:17px;line-height:1.7;color:var(--cloud);margin-bottom:24px}
+
+.callout{font-family:var(--font-serif);font-style:italic;font-size:21px;line-height:1.45;color:var(--ivory);text-align:center;padding:32px 24px;border-top:1px solid rgba(201,168,76,.18);border-bottom:1px solid rgba(201,168,76,.18);margin:48px 0;letter-spacing:-.005em}
+
+/* Section headers */
+.section-eyebrow{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--champagne);font-weight:600;margin-top:64px;margin-bottom:14px}
+
+h3.section-title{font-family:var(--font-serif);font-size:30px;font-weight:600;line-height:1.2;letter-spacing:-.015em;color:var(--ivory);margin-bottom:28px;font-variation-settings:"opsz" 48}
+
+h4.subsection-title{font-family:var(--font-serif);font-size:22px;font-weight:600;color:var(--ivory);line-height:1.25;letter-spacing:-.01em;margin-top:48px;margin-bottom:8px;font-variation-settings:"opsz" 36}
+h4.subsection-title em{color:var(--champagne);font-style:italic;font-weight:600}
+
+.region-label{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:var(--champagne);font-weight:700;margin-bottom:6px}
+
+/* Photo figures */
+figure.photo{margin:24px 0 32px;text-align:left}
+figure.photo img{width:100%;height:auto;display:block;border-radius:8px;border:1px solid rgba(42,42,53,.5);box-shadow:0 16px 48px rgba(0,0,0,.4)}
+figure.photo figcaption{margin-top:16px;font-family:var(--font-sans);font-size:15px;color:var(--cloud);line-height:1.65}
+
+/* List of "what they are not" */
+ul.crisp{list-style:none;margin:24px 0;padding:0}
+ul.crisp li{position:relative;padding:10px 0 10px 28px;font-size:16px;line-height:1.55;color:var(--cloud);border-bottom:1px solid rgba(42,42,53,.4)}
+ul.crisp li:last-child{border-bottom:none}
+ul.crisp li::before{content:'·';position:absolute;left:8px;top:8px;color:var(--champagne);font-weight:700;font-size:24px;line-height:1.2}
+ul.crisp li strong{color:var(--ivory);font-weight:600}
+
+/* Sources */
+.sources{margin-top:96px;padding-top:32px;border-top:1px solid rgba(201,168,76,.2)}
+.sources h5{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--champagne);font-weight:700;margin-bottom:18px}
+.sources ol{list-style:none;padding:0;counter-reset:src}
+.sources li{counter-increment:src;padding:12px 0 12px 36px;position:relative;font-size:14.5px;line-height:1.55;color:var(--cloud);border-bottom:1px solid rgba(42,42,53,.3)}
+.sources li:last-child{border-bottom:none}
+.sources li::before{content:counter(src,decimal-leading-zero);position:absolute;left:0;top:14px;font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:var(--champagne);font-weight:600}
+.sources a{color:var(--champagne);text-decoration:none;border-bottom:1px solid rgba(201,168,76,.4);transition:color .15s}
+.sources a:hover{color:var(--amber)}
+
+/* Tail */
+.tail{margin-top:64px;text-align:center;font-family:var(--font-serif);font-style:italic;color:var(--mist);font-size:14px;letter-spacing:.01em}
+
+/* Mobile */
+@media (max-width:680px){
+  header{padding:12px 16px;gap:10px}
+  .brand h1{font-size:20px}.brand p{display:none}
+  nav.toplinks{gap:14px;font-size:10px;letter-spacing:.12em}
+  .back-btn{padding:6px 10px;font-size:10px}
+  article{padding:40px 20px 64px}
+  h2.article-title{font-size:32px}
+  .article-subtitle{font-size:16px;margin-bottom:36px}
+  h3.section-title{font-size:24px}
+  h4.subsection-title{font-size:19px}
+  p.lede{font-size:16.5px}
+  .body{font-size:16px}
+  .callout{font-size:18px;padding:24px 16px;margin:36px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="/">
+    <div class="logo-box">
+      <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="22" cy="22" r="20" fill="none" stroke="#C9A84C" stroke-width="1.5" opacity="0.4"/>
+        <circle cx="22" cy="22" r="14" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.6"/>
+        <path d="M22 6 L24 22 L22 38 L20 22 Z" fill="#C9A84C" opacity="0.9"/>
+        <path d="M6 22 L22 20 L38 22 L22 24 Z" fill="#C9A84C" opacity="0.7"/>
+        <circle cx="22" cy="22" r="2" fill="#0D0D12"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Ancient Atlas</h1>
+      <p>A map of the deep past</p>
+    </div>
+  </a>
+  <nav class="toplinks" aria-label="Primary">
+    <a href="/">Atlas</a>
+    <a href="/library/" class="active">Library</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <a class="back-btn" href="/library/">← Library</a>
+</header>
+
+<article>
+
+  <div class="entry-eyebrow">Library · Entry 03</div>
+
+  <h2 class="article-title">Why does a 100-ton wall need a hand-sized stone?</h2>
+
+  <p class="article-subtitle">The mini-megalith paradox.</p>
+
+  <div class="article-divider"></div>
+
+  <p class="lede">A wall built from blocks that weigh tons, fitted to razor-blade tolerance, does not need a patch. The geometry holds itself up.</p>
+
+  <p class="lede">So why are these walls full of small stones?</p>
+
+  <p class="body">The same precision tradition that handles the impossible scale also handles the smallest fittings. A multi-ton block at Sacsayhuamán meets its neighbor along a kilometer of concave-convex joinery a knife blade cannot enter. Set into the seam, hidden until you know to look, sits a stone the size of a child's hand. Cut to the same standard. Fitted the same way. Not a repair. It belongs.</p>
+
+  <p class="callout">This entry is about that hand-sized stone.</p>
+
+  <!-- ====================================================== -->
+  <div class="section-eyebrow">§ 01 · The observation</div>
+  <h3 class="section-title">Four sites. Four continents. The same paradox, in stone.</h3>
+
+  <h4 class="subsection-title">Osireion</h4>
+  <div class="region-label">Africa · Abydos, Egypt</div>
+  <figure class="photo">
+    <img src="photos/mini-megaliths/01-ollantaytambo-bent-corner-inset.jpg" alt="Mini megalith at the Osireion: a small precision-cut stone at the seam between two warm sandstone blocks with bent corners." loading="lazy" />
+    <figcaption>The most-photographed mini megalith in the world. Two sandstone blocks meet along a seam. At the join, the lower block carries a precision-cut inset that locks into the larger block above. The bent corners are sculpted into the parent stones, not assembled. The inset sits where the blocks could not meet without it. The Osireion mixes three rocks : Aswan red granite for the 100-ton monolithic pillars (quarried 500 miles away), sandstone for these retaining walls, limestone for backing. All at Mohs 6 or higher. Mainstream chronology dates the site to the New Kingdom. Independent investigators read it as several thousand years older. Both agree on one thing : the inset is original.</figcaption>
+  </figure>
+
+  <h4 class="subsection-title">Coricancha</h4>
+  <div class="region-label">South America · Cusco, Peru</div>
+  <figure class="photo">
+    <img src="photos/mini-megaliths/03-coricancha-cusco-keystone.jpg" alt="Coricancha mini megalith: a precision-cut keystone-shaped stone bridging the seam between two large polygonal blocks in Cusco." loading="lazy" />
+    <figcaption>A keystone-shaped mini straddles the horizontal seam between two larger blocks. The trapezoid narrows downward, locking the upper block against horizontal displacement. Both parent blocks were cut to receive this exact shape before placement. Mechanical engineering applied to masonry, not decoration applied to a wall.</figcaption>
+  </figure>
+
+  <h4 class="subsection-title">Ahu Vinapu</h4>
+  <div class="region-label">Pacific · Easter Island</div>
+  <figure class="photo">
+    <img src="photos/mini-megaliths/04-easter-island-vinapu-rectangular.jpg" alt="Ahu Vinapu mini megalith on Easter Island: a rectangular inset stone fitted into an L-step cut in basalt." loading="lazy" />
+    <figcaption>Basalt blocks on the seaward ahu. The upper block carries an L-step cut into its lower edge. A rectangular mini fits the step exactly, level with the parent face. Different rock, different ocean, same insertion technique that appears at the Coricancha five thousand miles away.</figcaption>
+  </figure>
+
+  <h4 class="subsection-title">Phnom Bok</h4>
+  <div class="region-label">Asia · Cambodia</div>
+  <figure class="photo">
+    <img src="photos/mini-megaliths/05-phnom-bok-cambodia-fingertip.jpg" alt="Phnom Bok mini megalith: a fingertip-sized inset stone where two polygonal blocks with bent corners meet." loading="lazy" />
+    <figcaption>The smallest documented example. A fingertip-sized inset where two polygonal blocks with bent corners meet, no larger than a thumbnail. Discovered in 2026 by a field researcher who recognized the technique from her work in Peru and Egypt, then went looking for it in Cambodia. She found it on the first wall she inspected.</figcaption>
+  </figure>
+
+  <p class="body" style="margin-top:48px"><em style="color:var(--ivory);font-style:italic">The signature is not subtle once you know what to look for. Every one of these examples was found by a field observer who went looking. Each was undamaged, original, and load-bearing.</em></p>
+
+  <!-- ====================================================== -->
+  <div class="section-eyebrow">§ 02 · Definitions</div>
+  <h3 class="section-title">What do we call this thing?</h3>
+
+  <p class="body">The academic vocabulary has no clean answer. Egyptology has <em>closure plugs</em>. Andean studies use <em>sopcho</em>. Western drystone calls them <em>pinning stones</em> or <em>spalls</em>. Each term carries baggage from its native context : a plug closes a hole, a pinning stone wedges, a spall fills. None of them describes what is actually happening across these sites.</p>
+
+  <p class="body">The insertions are not patches. Not wedges. Not gap-fillers worked around an irregularity. They are designed in from the start, cut to the same standard as the larger blocks, placed where the surrounding geometry seems to require. The field-observer term <em>mini megalith</em> is the most honest available. Descriptive. No commitment to function. It points at the phenomenon and asks the reader to consider that the same tradition responsible for the largest stones is also responsible for the smallest.</p>
+
+  <h4 class="subsection-title">What mini megaliths are not</h4>
+
+  <ul class="crisp">
+    <li><strong>Not repair work.</strong> The surrounding stones lock around them, which means the larger work was cut to accommodate them before placement.</li>
+    <li><strong>Not seismic patches</strong> added later. The cutting standard matches the original wall, not later work.</li>
+    <li><strong>Not decorative.</strong> Most are nearly invisible until pointed out.</li>
+    <li><strong>Not random.</strong> They appear at the same positions in the same kinds of joinery, on four continents.</li>
+  </ul>
+
+  <p class="body" style="margin-top:36px">A masonry tradition with the engineering range to handle 100-ton blocks at sub-millimeter tolerance uses the same tolerance to set stones the size of a child's hand. The intent is unmistakable. The function is not.</p>
+
+  <p class="callout">Anyone who carves a bent corner does not leave a gap by accident.</p>
+
+  <!-- ====================================================== -->
+  <div class="section-eyebrow">§ 02b · And then there's this</div>
+  <h3 class="section-title">The same logic, at architectural scale.</h3>
+
+  <p class="body">If a hand-sized inset can be dismissed as decoration, what happens when the same tradition scales the principle up to the wall?</p>
+
+  <h4 class="subsection-title">Cusco · stepped interlock</h4>
+  <div class="region-label">South America · Peru</div>
+  <figure class="photo">
+    <img src="photos/mini-megaliths/06-cusco-stepped-interlock.jpg" alt="Cusco polygonal wall with a multi-step zigzag interlock: one large block carries a precision-cut stepped tenon, the adjacent block is cut to receive it exactly." loading="lazy" />
+    <figcaption>This is not a mini megalith. It is the same logic at architectural scale. The lower block carries a precision-cut stepped tenon : three discrete steps machined into its upper edge. The block above was cut to receive that exact profile. Negative space and positive space, sculpted into separate stones, paired to lock against horizontal displacement at every step. The principle does not disappear at this scale. It becomes impossible to ignore.</figcaption>
+  </figure>
+
+  <p class="callout">If the inset is a patch, this is a patch sized for a wall.</p>
+
+  <!-- ====================================================== -->
+  <div class="section-eyebrow">§ 03 · The cutting standard</div>
+  <h3 class="section-title">What does the standard actually look like?</h3>
+
+  <p class="body">To talk about mini megaliths honestly, the cutting standard around them has to be described accurately. The Peru Channel correctly notes that the stones along Calle Hatunrumiyoq are real andesite, that gaps exist between many blocks, and that the "dancing stones" earthquake mythology has no evidence behind it. The atlas applies these corrections.</p>
+
+  <p class="body">The same writers also note, often without dwelling on it, that the masonry there is unlike anything else in Cusco. <em>"There is no other place in Cusco where you can see anywhere close to this kind of masonry on such full display."</em> That is the start of the puzzle, not the end.</p>
+
+  <p class="body">Four properties define the standard.</p>
+
+  <h4 class="subsection-title">1. Joints are not planar.</h4>
+  <p class="body">Mating surfaces are not flat planes pressed together. They are sculpted as compound curves : concave on one block, convex on the other, dressed to match. A flat plane is one constraint. A compound curve is a continuous family of constraints. The fact that both surfaces meet means the curves were cut to a shared geometry before the blocks ever met. And these are not soft stones. Granite, andesite, basalt, and quartz-cemented sandstone all sit near the top of the Mohs hardness scale.</p>
+
+  <h4 class="subsection-title">2. Corners are not assembled.</h4>
+  <p class="body">Bent and re-entrant corners are sculpted into single parent blocks, not built from two stones meeting at an angle. The block carries the corner. The neighbor accepts it. The opposite of how a brick wall is built.</p>
+
+  <h4 class="subsection-title">3. Tolerance is variable. Where tight, very tight.</h4>
+  <p class="body">Gaps exist. Centimeter and hand-width gaps appear at many joints across Cusco. The atlas takes this seriously. What also exists, on the same walls, are seams a credit card cannot enter for runs of a meter or more. Both observations are true at once. The presence of gaps does not negate the precision. The presence of precision does not erase the gaps. Any honest reading accounts for both.</p>
+
+  <h4 class="subsection-title">4. The mini megalith is cut to the same standard.</h4>
+  <p class="body">This is the part that matters. The hand-sized stone in the seam is not a different kind of work. Its faces match the same curvature standard as the meter-scale blocks. Its bent corners are returned with the same precision. The surrounding blocks were cut to receive it. The L-step at the Osireion, the trapezoid socket at the Coricancha, the keystone notch in the Cusco zigzag interlock : all carved into the parent stones before placement. The mini megalith is part of the original geometry, scaled down.</p>
+
+  <p class="body">Two readings sit on the table.</p>
+
+  <p class="body"><strong>The mainstream reading.</strong> Skilled mid-14th-century Inca masons, with stone hammers and bronze tools, achieved this precision through enormous time and accumulated craft. The geopolymer hypothesis is rejected : the stones are real, with native quarry signatures confirmed by x-ray fluorescence.</p>
+
+  <p class="body"><strong>The independent reading.</strong> The cutting standard, repeated across continents on stone at the upper Mohs band (granite, andesite, and quartz-cemented sandstone all 6 to 7, basalt 5 to 6), implies a transmitted technique rather than parallel convergent invention. None of these rocks shape easily. Sub-millimeter precision at hand-scale, in the same fabric as multi-ton precision at architectural scale, reads as evidence of a method that is not currently understood.</p>
+
+  <p class="body">Both readings agree on the cutting standard. They disagree on the method. The mini megalith makes the disagreement harder to dismiss : the same standard appears at hand-scale, where time and craft stop feeling sufficient.</p>
+
+  <p class="callout">A cutting standard that survives at four orders of magnitude is the engineering question, not the mythology.</p>
+
+  <!-- ====================================================== -->
+  <div class="section-eyebrow">§ 04 · Candidate explanations</div>
+  <h3 class="section-title">What could the mini megalith be for?</h3>
+
+  <p class="body">Six candidates sit on the table. Each must clear three bars : testable against the stone, accounts for the multi-site pattern, does explanatory work that simpler readings do not.</p>
+
+  <h4 class="subsection-title">1. Pressure distribution</h4>
+  <p class="body">The mini as a load-balancing element : transferring pressure across a wider footprint, routing stress into the host stone.</p>
+  <p class="body">The Coricancha keystone reads as a textbook load-transfer element : a trapezoid narrowing downward, locking the upper block against horizontal displacement. Many minis sit precisely at bent corners, the joints most vulnerable to stress concentration. But not all do. The fingertip-sized inset at Phnom Bok is too small for meaningful structural work at the wall scale.</p>
+  <p class="body"><em>Reading.</em> Partial. Accounts for some larger minis. Not a general theory.</p>
+
+  <h4 class="subsection-title">2. Seismic damping</h4>
+  <p class="body">The mini as a micro-movement element : allowing energy to dissipate through the joinery rather than fracturing host blocks.</p>
+  <p class="body">The Andes is seismically active. The polygonal walls along Calle Hatunrumiyoq remain standing while the colonial structures built on top of them have collapsed and been rebuilt. But the Peru Channel correctly documents that the "dancing stones" mythology has no evidence. Inca walls show gaps and cracks. Major sections have collapsed. The minis are bonded to the parent geometry, not floating in damping space.</p>
+  <p class="body"><em>Reading.</em> Oversold. Cannot be confirmed without instrumentation.</p>
+
+  <h4 class="subsection-title">3. Acoustic tuning</h4>
+  <p class="body">The mini as resonance modulator : shaping the acoustic properties of the chamber or wall complex.</p>
+  <p class="body">Several anchor sites have documented ceremonial function. Acoustic anomalies are noted at multiple megalithic sites. But no systematic peer-reviewed mapping has been done at the anchor sites. Correlation with ceremonial function does not establish design intent. The cross-continental pattern would require similar acoustic method applied independently on different rocks in unrelated cultures.</p>
+  <p class="body"><em>Reading.</em> Intriguing. Awaits instrumentation. Currently unsupported.</p>
+
+  <h4 class="subsection-title">4. Geopolymer signatures</h4>
+  <p class="body">The mini as artifact of multi-pour casting : the visible walls reconstituted material poured into molds.</p>
+  <p class="body">Joseph Davidovits argued the Giza casing stones as a test case. Some extend the argument to Andean and other sites. But x-ray fluorescence and petrographic analysis at multiple Andean sites confirm native quarry signatures. The Cusco stones show spallation patterns characteristic of natural igneous rock. The Aswan granite at the Osireion carries the same signature as its source quarry 500 miles away, ruling out local casting.</p>
+  <p class="body"><em>Reading.</em> The weakest of the six for the visible walls. May warrant investigation at specific sites. Not the general explanation.</p>
+
+  <h4 class="subsection-title">5. Sacred mathematics</h4>
+  <p class="body">The mini placement encodes proportional or numerical relationships meaningful to the original builders. Golden ratio, megalithic yard, astronomical alignments.</p>
+  <p class="body">Alexander Thom's megalithic-yard work established that early masonry can encode units of measurement with sub-millimeter consistency. Andean polygonal geometry shows clear proportional relationships. The Cusco stepped interlock (§02b) carries discrete step proportions that may carry encoded meaning. But pareidolia is the dominant risk. Many "patterns" are not statistically validated. Encoded "messages" remain speculative absent decoded keys.</p>
+  <p class="body"><em>Reading.</em> Partial. Proportional design intent is supported. Specific meanings remain unproven. An archaeoastronomy program at the anchor sites is overdue.</p>
+
+  <h4 class="subsection-title">6. Lost transmitted knowledge</h4>
+  <p class="body">A masonry tradition older than the mainstream chronology, transmitted across early-Holocene cultures, informs the cutting standard at all anchor sites.</p>
+  <p class="body">The four-continent convergence is the central observation of this entry. The same technique (compound joints, sculpted corners, scaled-down minis cut to parent-block precision) appears on different rocks under different cultures at sites with no documented contact. But independent invention is well-documented. Convergent evolution of technique occurs. Transmission requires evidence of contact the archaeological record does not currently provide.</p>
+  <p class="body"><em>Reading.</em> The only candidate that elegantly explains the cross-continental convergence. Lacks direct proof. The shape of the evidence keeps the hypothesis alive.</p>
+
+  <p class="body">No single candidate accounts for everything. Pressure distribution explains some shapes. Sacred mathematics explains some proportions. Transmitted knowledge explains the cross-continental signature. Seismic and acoustic readings remain unevidenced. Geopolymer is contradicted by petrography on the visible walls. The honest synthesis is that the mini megalith probably operates in more than one register, and the function the builders intended may not be cleanly recoverable from the geometry alone.</p>
+
+  <p class="callout">No single explanation accounts for all the evidence. That, in itself, is the evidence.</p>
+
+  <!-- ====================================================== -->
+  <div class="section-eyebrow">§ 05 · The convergence question</div>
+  <h3 class="section-title">What does it mean that the same standard appears in four places at once?</h3>
+
+  <p class="body">The atlas is a map. The library is where the map's questions stay open. This entry has held one such question across the geometry, the photographs, and the candidates. Time to name it.</p>
+
+  <p class="body">Why does the same cutting standard, at four orders of magnitude, on rocks at the upper end of the Mohs scale, appear across four continents whose cultures the archaeological record separates by oceans?</p>
+
+  <p class="body">The mainstream reading explains each site locally. Skilled masons. Plenty of time. Accumulated craft. Internally consistent. Survives at any single site. What it does not explain is why the same technique emerged in Egypt, Peru, Easter Island, and Cambodia on different rocks under different cultures with no documented contact. The mainstream answer is convergent invention : separate cultures arriving independently at the same engineering solution. Possible. It also requires four cultures to have arrived at compound joinery, scaled-down minis, and the same proportional standard, by chance, on stones that fight back at every blow of the bronze tool.</p>
+
+  <p class="body">The independent reading explains the convergence directly. A masonry tradition older than the mainstream chronology transmitted across cultures and across oceans, leaving its signature wherever it was practiced. Also internally consistent. Survives the cross-continental observation. What it lacks is direct archaeological proof of contact, which keeps it a hypothesis. The independent answer to that gap is that the contact occurred on a timescale and through a population the archaeological record has not yet recovered. Also possible. It also asks the reader to accept a model of human history that current academic chronology does not support.</p>
+
+  <p class="body">Both readings are coherent. Both have to answer for something. Neither is complete.</p>
+
+  <p class="body">The atlas does not need to collapse the question. What the atlas asks is that more eyes go looking.</p>
+
+  <p class="body">You now know what to look for. Compound joints. Sculpted bent corners. Hand-sized stones cut to the same standard as the parent blocks, set where the blocks could not meet without them. The pattern appears at most polygonal masonry sites, often unphotographed, frequently unremarked, almost always intact. Most sites have not been systematically surveyed for them. Most published photographs of famous walls leave them out of frame.</p>
+
+  <p class="body">That means real work for the field observer. Every visit to a megalithic site is a chance to find a new example. The Phnom Bok inset was found on the first wall the researcher inspected, in 2026, after she recognized the technique from her work in Peru and Egypt. There is no reason to think she found the last one.</p>
+
+  <p class="body">The Osireion, the Coricancha, Ahu Vinapu, Phnom Bok, and the Cusco stepped interlock are open-question sites in the catalog, tagged with the criteria they raise, linked to the field researchers who have done the rigorous documentation : Praveen Mohan at the Osireion, UnchartedX in Cusco, Brien Foerster across the Andes, SOLSTICE HUNTER at Phnom Bok. Their walkthroughs are the model.</p>
+
+  <p class="body">Go look at one of these walls when you get the chance. Look at the seam, not the block face. Look at bent corners. Look small. Bring a camera. Send what you find.</p>
+
+  <p class="callout">When you find yourself standing in front of one of these walls, look for the hand-sized stone. It is the question the wall is asking you.</p>
+
+  <!-- ====================================================== -->
+  <div class="sources">
+    <h5>Sources &amp; further reading</h5>
+    <ol>
+      <li><strong>Phnom Bok mini megalith.</strong> Field observation by SOLSTICE HUNTER, <em>Proof of Ancient Global Civilization — Finding Mini Megaliths at Phnom Bok, Cambodia</em>, May 2026. <a href="https://youtu.be/zXNfDtAIa1Q" target="_blank" rel="noopener">YouTube</a>.</li>
+      <li><strong>Osireion.</strong> Praveen Mohan walkthroughs of Abydos. UnchartedX comparative analyses. Beyond Legends photographic archive (image credit).</li>
+      <li><strong>Coricancha and Sacsayhuamán.</strong> UnchartedX walkthroughs of Cusco's polygonal masonry. <em>Exploring Sacsayhuaman with Yousef Awyan</em>, 2025.</li>
+      <li><strong>Cusco stepped interlock.</strong> Brien Foerster comparative field documentation. The interlock illustrated in §02b is a documented example of the same principle at architectural scale, found in multiple Cusco walls including Hatun Rumiyoc and the Coricancha complex.</li>
+      <li><strong>The Peru Channel (Philip).</strong> <em>Cusco's 12-Angled-Stone : Reality and Mythology</em>, September 2024. Mainstream-skeptic reference for §03 : pushes back on the "dancing stones" myth, the "razor-blade gap" claim, and the geopolymer hypothesis ; documents the green diorite sourcing and acknowledges the wall as without parallel in Cusco. <a href="https://theperuchannel.com/cuscos-12-angled-stone-reality-and-mythology/" target="_blank" rel="noopener">Read at theperuchannel.com</a>.</li>
+      <li><strong>Ollantaytambo.</strong> Brien Foerster field documentation, multiple expeditions. Referenced in §03 for the Sacsayhuamán comparison, not represented by a photograph in this entry.</li>
+      <li><strong>Ahu Vinapu.</strong> SOLSTICE HUNTER comparative survey footage. Praveen Mohan's Easter Island series.</li>
+      <li><strong>On joinery and structural locks.</strong> Standard masonry treatments of dovetail and keystone joints in <em>Stone Masonry Conservation</em> (Ashurst), and parallel uses in restorative archaeology.</li>
+    </ol>
+  </div>
+
+</article>
+
+</body>
+</html>
