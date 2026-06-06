@@ -1516,10 +1516,10 @@ body.present #broadcast-controls{
 .signal-badge{display:inline-flex;width:12px;height:12px;margin-left:4px;cursor:pointer;color:var(--champagne);opacity:.55;transition:opacity .15s,transform .15s;vertical-align:middle;flex-shrink:0;align-self:center}
 .signal-badge:hover{opacity:1;transform:scale(1.18)}
 .signal-badge svg{width:100%;height:100%;display:block}
-.detail-signal-badge{width:18px;height:18px;margin-left:10px}
+.detail-signal-badge{width:18px;height:18px;margin-left:10px;animation:signalPulse 1.4s ease-in-out 2}@keyframes signalPulse{0%,100%{transform:scale(1);opacity:.9;filter:drop-shadow(0 0 0 rgba(201,168,76,0))}50%{transform:scale(1.35);opacity:1;filter:drop-shadow(0 0 6px rgba(201,168,76,.55))}}.signal-hover-card{position:fixed;width:260px;background:rgba(13,13,18,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(201,168,76,.28);border-radius:11px;padding:13px 15px 12px;box-shadow:0 12px 36px rgba(0,0,0,.55);z-index:9999;opacity:0;transform:translateY(-4px);pointer-events:none;transition:opacity .18s ease,transform .18s ease;font-family:var(--font-sans);color:var(--cloud)}.signal-hover-card.show{opacity:1;transform:translateY(0)}.signal-hover-eyebrow{font-family:var(--font-mono);font-size:9px;text-transform:uppercase;letter-spacing:.16em;color:var(--champagne);font-weight:700;margin-bottom:6px}.signal-hover-body{font-size:12px;line-height:1.55;color:var(--cloud)}.signal-hover-cta{margin-top:8px;font-family:var(--font-mono);font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--champagne)}
 
 /* ===== Signal flip-down card ===== */
-.signal-card{position:fixed;width:300px;background:rgba(13,13,18,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(201,168,76,.28);border-radius:12px;padding:14px 16px 10px;box-shadow:0 16px 48px rgba(0,0,0,.65);z-index:10000;opacity:0;transform:translateY(-6px);pointer-events:none;transition:opacity .18s ease,transform .18s ease;font-family:var(--font-sans);color:var(--cloud)}
+.signal-card-x{position:absolute;top:6px;right:8px;width:22px;height:22px;background:transparent;border:none;color:var(--mist);font-size:18px;cursor:pointer;border-radius:6px;display:flex;align-items:center;justify-content:center;line-height:1;padding:0;transition:color .15s,background .15s;font-family:var(--font-sans);font-weight:300}.signal-card-x:hover{color:var(--ivory);background:rgba(201,168,76,.1)}.signal-card-title{padding-right:24px}.signal-card{position:fixed;width:300px;background:rgba(13,13,18,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(201,168,76,.28);border-radius:12px;padding:14px 16px 10px;box-shadow:0 16px 48px rgba(0,0,0,.65);z-index:10000;opacity:0;transform:translateY(-6px);pointer-events:none;transition:opacity .18s ease,transform .18s ease;font-family:var(--font-sans);color:var(--cloud)}
 .signal-card.open{opacity:1;transform:translateY(0);pointer-events:auto}
 .signal-card-title{font-family:var(--font-mono);font-size:9px;text-transform:uppercase;letter-spacing:.14em;color:var(--champagne);font-weight:700;margin-bottom:10px}
 .signal-card-row{display:flex;align-items:flex-start;gap:11px;padding:9px 0;color:var(--cloud);font-size:12px;line-height:1.45;text-decoration:none;border-bottom:1px solid rgba(42,42,53,.4);transition:color .12s}
@@ -9388,10 +9388,11 @@ function buildSignalBadgeHtml(site, large) {
   if (!site || site.signal !== 'open') return '';
   const cls = large ? 'signal-badge detail-signal-badge' : 'signal-badge';
   const escName = (site.n || '').replace(/'/g, "\\'");
-  return `<span class="${cls}" onclick="event.stopPropagation();openSignalCard(event, '${escName}')" title="Open question — signals don't yet converge" role="button" aria-label="Open engineering signature panel">${SIGNAL_BADGE_SVG}</span>`;
+  return `<span class="${cls}" onmouseenter="signalHover(event, '${escName}')" onmouseleave="signalHoverEnd()" onclick="event.stopPropagation();openSignalCard(event, '${escName}')" title="Open question — signals don't yet converge" role="button" aria-label="Open engineering signature panel">${SIGNAL_BADGE_SVG}</span>`;
 }
 
 function openSignalCard(evt, siteName) {
+  signalHoverEnd();  // close educational card if open
   const site = SITES.find(s => s.n === siteName);
   if (!site || site.signal !== 'open') return;
   const card = document.getElementById('signal-card');
@@ -9408,6 +9409,7 @@ function openSignalCard(evt, siteName) {
   }).join('');
 
   card.innerHTML = `
+    <button class="signal-card-x" onclick="closeSignalCard()" aria-label="Close engineering signature panel">×</button>
     <div class="signal-card-title">Engineering signature · ${site.n}</div>
     ${rowsHtml}
     <div class="signal-card-foot"><a href="/library/megaliths.html" target="_blank" rel="noopener">Read the reference →</a></div>
@@ -9442,6 +9444,46 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeSignalCard();
 });
 window.addEventListener('scroll', closeSignalCard, true);
+
+// Touch device detection — suppresses hover cards on tablets/phones
+const SIGNAL_IS_TOUCH = ('ontouchstart' in window || navigator.maxTouchPoints > 0);
+
+let _signalHoverTimer = null;
+function signalHover(evt, siteName) {
+  if (SIGNAL_IS_TOUCH) return;
+  // Don't show hover card if criteria card is already open (avoid stacking)
+  const criteriaCard = document.getElementById('signal-card');
+  if (criteriaCard && criteriaCard.classList.contains('open')) return;
+
+  clearTimeout(_signalHoverTimer);
+  _signalHoverTimer = setTimeout(() => {
+    const hc = document.getElementById('signal-hover-card');
+    if (!hc) return;
+    hc.innerHTML = `
+      <div class="signal-hover-eyebrow">Open question</div>
+      <div class="signal-hover-body">Mainstream and independent readings of this site don't yet converge. The atlas marks the question rather than picking the verdict.</div>
+      <div class="signal-hover-cta">Click for engineering signatures →</div>
+    `;
+    const rect = evt.target.closest('.signal-badge').getBoundingClientRect();
+    const cardW = 260;
+    let left = rect.left + (rect.width / 2) - (cardW / 2);
+    let top = rect.bottom + 8;
+    left = Math.max(8, Math.min(window.innerWidth - cardW - 8, left));
+    if (top + 140 > window.innerHeight - 8) {
+      top = Math.max(8, rect.top - 140 - 8);
+    }
+    hc.style.left = left + 'px';
+    hc.style.top = top + 'px';
+    hc.classList.add('show');
+  }, 180);  // small delay so brief mouse-overs don't trigger it
+}
+
+function signalHoverEnd() {
+  clearTimeout(_signalHoverTimer);
+  const hc = document.getElementById('signal-hover-card');
+  if (hc) hc.classList.remove('show');
+}
+
 
 
 let supportTab = 'give';
@@ -10554,5 +10596,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 <div id="signal-card" class="signal-card" role="dialog" aria-label="Engineering signature"></div>
+<div id="signal-hover-card" class="signal-hover-card" aria-hidden="true"></div>
 </body>
 </html>
