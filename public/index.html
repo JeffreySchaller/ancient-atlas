@@ -1534,17 +1534,17 @@ body.present #broadcast-controls{
 
 
 /* ===== Library reference drawer (in-atlas mini-window) ===== */
-.library-drawer-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:19999;opacity:0;transition:opacity .25s ease;pointer-events:none;backdrop-filter:blur(2px)}
+.library-drawer-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.62);z-index:19999;opacity:0;transition:opacity .25s ease;pointer-events:none}
 .library-drawer-backdrop.show{opacity:1;pointer-events:auto}
-.library-drawer{position:fixed;top:0;right:0;width:540px;max-width:100vw;height:100vh;background:rgba(13,13,18,.98);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-left:1px solid rgba(201,168,76,.22);box-shadow:-16px 0 48px rgba(0,0,0,.6);z-index:20000;transform:translateX(100%);transition:transform .3s cubic-bezier(.32,.72,0,1);display:flex;flex-direction:column;font-family:var(--font-sans)}
+/* DRAWER_FLASH_FIX_APPLIED */ .library-drawer{position:fixed;top:0;right:0;width:540px;max-width:100vw;height:100vh;background:#0D0D12;border-left:1px solid rgba(201,168,76,.22);box-shadow:-16px 0 48px rgba(0,0,0,.6);z-index:20000;transform:translateX(100%);transition:transform .3s cubic-bezier(.32,.72,0,1);display:flex;flex-direction:column;font-family:var(--font-sans);contain:layout style;will-change:transform}
 .library-drawer.open{transform:translateX(0)}
 .library-drawer-header{padding:16px 20px;border-bottom:1px solid rgba(42,42,53,.4);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-shrink:0;background:rgba(13,13,18,.96)}
 .library-drawer-eyebrow{font-family:var(--font-mono);font-size:9px;text-transform:uppercase;letter-spacing:.16em;color:var(--champagne);font-weight:700;margin-bottom:3px}
 .library-drawer-title{font-family:var(--font-serif);font-size:17px;color:var(--ivory);font-weight:600;line-height:1.25;font-variation-settings:"opsz" 24}
 .library-drawer-close{width:32px;height:32px;background:transparent;border:none;color:var(--mist);font-size:22px;cursor:pointer;border-radius:7px;display:flex;align-items:center;justify-content:center;line-height:1;font-weight:300;transition:color .15s,background .15s;flex-shrink:0}
 .library-drawer-close:hover{background:rgba(201,168,76,.1);color:var(--ivory)}
-.library-drawer-iframe-wrap{flex:1;position:relative;overflow:hidden;background:var(--obsidian)}
-.library-drawer-iframe{width:100%;height:100%;border:none;background:var(--obsidian)}
+.library-drawer-iframe-wrap{flex:1;position:relative;overflow:hidden;background:var(--obsidian);contain:layout style paint;isolation:isolate}
+.library-drawer-iframe{width:100%;height:100%;border:none;background:var(--obsidian);transform:translateZ(0);will-change:transform;-webkit-transform:translateZ(0)}
 .library-drawer-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--mist);font-size:12px;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.12em;background:var(--obsidian);transition:opacity .2s;z-index:2}
 .library-drawer-loading.hidden{opacity:0;pointer-events:none}
 .library-drawer-footer{padding:12px 20px;border-top:1px solid rgba(42,42,53,.4);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-shrink:0;background:rgba(13,13,18,.96)}
@@ -1554,6 +1554,7 @@ body.present #broadcast-controls{
 
 @media (max-width:600px){.library-drawer{width:100vw;border-left:none}.library-drawer-header{padding:14px 16px}.library-drawer-footer{padding:10px 16px}}
 
+.video-new-badge{display:inline-block;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#0D0D12;background:linear-gradient(135deg,#E8B960,#C9A84C);padding:3px 7px;border-radius:5px;line-height:1;box-shadow:0 1px 5px rgba(232,185,96,.4);vertical-align:middle;margin-right:7px;flex-shrink:0}
 </style>
 </head>
 <body>
@@ -6775,57 +6776,67 @@ const VIDEOS = {
     {
       "id": "qBin7G3n4eE",
       "title": "Giant Prehistoric Dolmens in the Caucasus Built with Advanced Technology",
-      "cr": "universeinside"
+      "cr": "universeinside",
+      "added": "2026-06-05"
     },
     {
       "id": "NvzxNm3Mxcs",
       "title": "Pre-Historic Megastructures of Russia In The Remote Wilderness",
-      "cr": "universeinside"
+      "cr": "universeinside",
+      "added": "2026-06-05"
     }
   ],
   "Arkaim": [
     {
       "id": "85cDo54GFlo",
       "title": "Lost City in Siberia BREAKS History - Arkaim",
-      "cr": "universeinside"
+      "cr": "universeinside",
+      "added": "2026-06-05"
     },
     {
       "id": "NvzxNm3Mxcs",
       "title": "Pre-Historic Megastructures of Russia In The Remote Wilderness",
-      "cr": "universeinside"
+      "cr": "universeinside",
+      "added": "2026-06-05"
     }
   ],
   "Gornaya Shoria": [
     {
       "id": "NvzxNm3Mxcs",
       "title": "Pre-Historic Megastructures of Russia In The Remote Wilderness",
-      "cr": "universeinside"
+      "cr": "universeinside",
+      "added": "2026-06-05"
     }
   ],
   "Khara-Hora Shaft": [
     {
       "id": "J1QDP-Oqcr0",
       "title": "Pre-Historic Underground Megastructure Found in Russia - Khara-Hora Shaft",
-      "cr": "universeinside"
+      "cr": "universeinside",
+      "added": "2026-06-05"
     }
   ],
   "Chusovo Wall": [
     {
       "id": "n-at6AZIsoI",
       "title": "ANOTHER Pre-Historic Mega Structure in Russia",
-      "cr": "universeinside"
+      "cr": "universeinside",
+      "added": "2026-06-05"
     },
     {
       "id": "aPyw-yiKTMY",
       "title": "Pre-Historic Hyperborean Civilization of Russia - Documentary",
-      "cr": "universeinside"
+      "cr": "universeinside",
+      "added": "2026-06-05"
     }
   ],
   "Spean Praptos (Kampong Kdei Bridge)": [
     {
       "id": "u8Q_mrWMDuY",
       "title": "They Destroyed Every Face On This Ancient Bridge. What Were They Hiding?",
-      "cr": "praveenmohan"
+      "cr": "praveenmohan",
+      "added": "2026-06-05",
+      "published": "2026-05-31"
     }
   ]
 };
@@ -9396,6 +9407,33 @@ const PATRONS = [];
 // Closed set of 6 criteria, matched 1:1 to /library/megaliths.html
 // Icons are inline SVG to match the library's line-icon style.
 // ============================================================
+
+
+// NEW badge helper — true only if the video was BOTH:
+//   - added to atlas in last 30 days  (recently curated)
+//   - published on YouTube in last 90 days  (actually recent upload)
+// Original helper kept for backwards compat; signature accepts the whole
+// video object now to check both fields.
+function isRecentlyAdded(video) {
+  // Accept legacy date-string call for safety, but prefer video object
+  if (typeof video === 'string') return false;  // old call sites won't trigger
+  if (!video || typeof video !== 'object') return false;
+
+  const addedStr = video.added;
+  const pubStr   = video.published;
+  if (!addedStr || !pubStr) return false;  // both required
+
+  const added = new Date(addedStr);
+  const pub   = new Date(pubStr);
+  if (isNaN(added.getTime()) || isNaN(pub.getTime())) return false;
+
+  const addedDays = (Date.now() - added.getTime()) / 86400000;
+  const pubDays   = (Date.now() - pub.getTime())   / 86400000;
+
+  return addedDays >= 0 && addedDays <= 30 &&
+         pubDays   >= 0 && pubDays   <= 90;
+}
+
 const SIGNAL_BADGE_SVG = '<svg viewBox="0 0 12 12" fill="currentColor"><circle class="sd-top" cx="6" cy="2.5" r="1.45"/><circle class="sd-bl" cx="2.5" cy="9.5" r="1.45"/><circle class="sd-br" cx="9.5" cy="9.5" r="1.45"/></svg>';
 
 const SIGNAL_CRITERIA = {
