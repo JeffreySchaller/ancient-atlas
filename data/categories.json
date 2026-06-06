@@ -1,0 +1,56 @@
+{
+  "megalithic": {
+    "label": "Megalithic",
+    "color": "#C9A84C",
+    "bg": "rgba(201,168,76,.12)",
+    "br": "rgba(201,168,76,.35)"
+  },
+  "pyramid": {
+    "label": "Pyramid",
+    "color": "#E8B960",
+    "bg": "rgba(232,185,96,.12)",
+    "br": "rgba(232,185,96,.35)"
+  },
+  "temple": {
+    "label": "Temple",
+    "color": "#6BA3BE",
+    "bg": "rgba(107,163,190,.12)",
+    "br": "rgba(107,163,190,.35)"
+  },
+  "underground": {
+    "label": "Underground",
+    "color": "#8B7DB8",
+    "bg": "rgba(139,125,184,.12)",
+    "br": "rgba(139,125,184,.35)"
+  },
+  "rock-cut": {
+    "label": "Rock-Cut",
+    "color": "#B87356",
+    "bg": "rgba(184,115,86,.12)",
+    "br": "rgba(184,115,86,.35)"
+  },
+  "city": {
+    "label": "City / Ruins",
+    "color": "#7B9F8E",
+    "bg": "rgba(123,159,142,.12)",
+    "br": "rgba(123,159,142,.35)"
+  },
+  "tomb": {
+    "label": "Tomb / Burial",
+    "color": "#C97B7B",
+    "bg": "rgba(201,123,123,.12)",
+    "br": "rgba(201,123,123,.35)"
+  },
+  "settlement": {
+    "label": "Settlement",
+    "color": "#9B8EC4",
+    "bg": "rgba(155,142,196,.12)",
+    "br": "rgba(155,142,196,.35)"
+  },
+  "geoglyph": {
+    "label": "Geoglyph",
+    "color": "#A8C66C",
+    "bg": "rgba(168,198,108,.12)",
+    "br": "rgba(168,198,108,.35)"
+  }
+}
