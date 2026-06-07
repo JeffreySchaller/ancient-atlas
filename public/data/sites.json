@@ -2780,5 +2780,21 @@
       "url": "/library/mini-megaliths.html",
       "title": "Mini Megaliths"
     }
+  },
+  {
+    "n": "Tarawasi",
+    "lat": -13.4953,
+    "lng": -72.4555,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "polygonal",
+      "scale",
+      "geometry"
+    ],
+    "desc": "Megalithic ceremonial complex 70 km west of Cusco in Limatambo, Anta Province, at 2,700 m elevation along the ancient Inca road system. The site centers on a 100-meter outer wall of meticulously fitted volcanic tuff blocks in a distinctive honeycomb pattern, with bent-corner joinery comparable to the highest-quality work in the Cusco megalithic sector. A raised central platform carries 28 trapezoidal niches and shows unusual flaking and peeling damage on its north-facing stones, described by independent investigators as consistent with high-heat exposure rather than ordinary weathering. The complex is oriented northeast-southwest rather than to cardinal directions, sharing this off-axis alignment with Machu Picchu, parts of Cusco itself, and Sacsayhuamán. Conventional reading : mid-15th century Inca tampu (way station). Independent reading : pre-Inca megalithic core, adopted by the Inca and later reused by Spanish colonial builders who incorporated megalithic blocks into their hosienda foundations. Only ONE official excavation has been conducted (1934), no artifacts published. There are no peer-reviewed papers on the site and no radiocarbon dates. The official chronology rests entirely on architectural comparison and the site's position along a known Inca road."
   }
 ]
