@@ -259,5 +259,33 @@
   ],
   "India": [
     "Maliabad Fort"
+  ],
+  "China": [
+    "Mogao Grottoes",
+    "Longmen Grottoes",
+    "Yungang Grottoes",
+    "Bingling Temple Grottoes",
+    "Maijishan Grottoes",
+    "Dazu Rock Carvings",
+    "Qin Shi Huang Mausoleum",
+    "Maoling Mausoleum (Great White Pyramid)",
+    "Xuankong Temple (Hanging Temple)",
+    "Tianlong Shan Grottoes",
+    "Xumishan Grottoes",
+    "Mengshan Giant Buddha",
+    "Tiantishan Grottoes",
+    "Matisi Grottoes",
+    "Wushan Grottoes (Lashao Temple)",
+    "Shaohao Mausoleum",
+    "Elephant Mountain Grottoes",
+    "Yuji Mountain Buddha",
+    "Rongxian Giant Buddha",
+    "Keyan Big Buddha",
+    "Goguryeo Tombs (Jilin)",
+    "Zhangye Dafo Temple"
+  ],
+  "Afghanistan": [
+    "Bamiyan",
+    "Takht-e Rustam (Afghanistan)"
   ]
 }

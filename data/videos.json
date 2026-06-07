@@ -928,6 +928,13 @@
       "title": "Gigantic Ancient Megastructures in China — Built By Unknown Civilization (Longyou Caves section)",
       "cr": "universeinside",
       "t": 501
+    },
+    {
+      "id": "9WqTASklAWY",
+      "title": "The Mysterious Longyou Caves in China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-12-08"
     }
   ],
   "Çatalhöyük": [
@@ -1457,6 +1464,13 @@
       "title": "Gigantic Ancient Megastructures in China — Built By Unknown Civilization (Yangshan section)",
       "cr": "universeinside",
       "t": 78
+    },
+    {
+      "id": "UZJVXxoFMoo",
+      "title": "Mysterious Yangshan Monument",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-12-15"
     }
   ],
   "Xi'an Pyramids": [
@@ -1485,6 +1499,13 @@
       "title": "Gigantic Ancient Megastructures in China — Built By Unknown Civilization (Huashan Grottoes section)",
       "cr": "universeinside",
       "t": 971
+    },
+    {
+      "id": "tvin563SMCo",
+      "title": "Mysteries of Huashan Grottoes in China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-12-01"
     }
   ],
   "Guyaju Caves": [
@@ -2947,6 +2968,231 @@
       "cr": "megalithomania",
       "added": "2026-06-07",
       "published": "2025-06-15"
+    }
+  ],
+  "Goguryeo Tombs (Jilin)": [
+    {
+      "id": "FpL5c3xRlEs",
+      "title": "The Mysterious Goguryeo Tombs in China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-12-29"
+    }
+  ],
+  "Shaohao Mausoleum": [
+    {
+      "id": "A7Ewz9Mjfq4",
+      "title": "The Mysterious Shaohao Tomb / Mausoleum in China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-12-22"
+    }
+  ],
+  "Maoling Mausoleum (Great White Pyramid)": [
+    {
+      "id": "gt_6fP9GMgs",
+      "title": "The Mysterious Great White Pyramid / Maoling Mausoleum in China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-05"
+    }
+  ],
+  "Qin Shi Huang Mausoleum": [
+    {
+      "id": "jwgL_gXRces",
+      "title": "The Mysterious Qin Shi Huang Mausoleum in China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-12"
+    }
+  ],
+  "Leshan Giant Buddha": [
+    {
+      "id": "NkLghqHyUWM",
+      "title": "The Mysterious Leshan Giant Buddha in China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-19"
+    }
+  ],
+  "Wushan Grottoes (Lashao Temple)": [
+    {
+      "id": "St9OQDq2PGc",
+      "title": "Mysterious Wushan Grottoes",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-26"
+    }
+  ],
+  "Longmen Grottoes": [
+    {
+      "id": "sPAkmkyje8A",
+      "title": "Mysterious Longmen Grottoes in Henan, China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-02-02"
+    }
+  ],
+  "Maijishan Grottoes": [
+    {
+      "id": "gnbmvsPWuHY",
+      "title": "The Mysterious Maijishan Grottoes in China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-02-09"
+    }
+  ],
+  "Zhangye Dafo Temple": [
+    {
+      "id": "SEPNAIhGZtA",
+      "title": "Dafo (Great Buddha) Temple in China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-02-16"
+    }
+  ],
+  "Matisi Grottoes": [
+    {
+      "id": "ieYxHh-tMDA",
+      "title": "Mysterious Magnificent Matisi Grottoes in China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-02-23"
+    }
+  ],
+  "Dazu Rock Carvings": [
+    {
+      "id": "giJoaNJmgPw",
+      "title": "The Mysterious Dazu Rock Carving and Grottoes in China.",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-02"
+    }
+  ],
+  "Mogao Grottoes": [
+    {
+      "id": "4ogImPDlsSk",
+      "title": "Mysterious Mogao Grottoes in Gansu, China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-09"
+    }
+  ],
+  "Xuankong Temple (Hanging Temple)": [
+    {
+      "id": "WB_pqZjeK80",
+      "title": "Amazing Xuankong Temple (Hanging Temple) of Shanxi, China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-16"
+    }
+  ],
+  "Mengshan Giant Buddha": [
+    {
+      "id": "CcYact99C0U",
+      "title": "Magnificent Mengshan Giant Buddha of China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-23"
+    }
+  ],
+  "Tiantishan Grottoes": [
+    {
+      "id": "fPDY_011IOk",
+      "title": "Amazing Giant Buddha of Tiantishan (Heavenly Stairs Mountain) Grottoes in China",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-30"
+    }
+  ],
+  "Yungang Grottoes": [
+    {
+      "id": "LkyC_0lg57M",
+      "title": "Giant Buddhas of Yungang Grottoes",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-08-06"
+    }
+  ],
+  "Xumishan Grottoes": [
+    {
+      "id": "YCb_rI3zlkY",
+      "title": "Giant Buddha of Xumishan Grottoes",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-08-13"
+    }
+  ],
+  "Bingling Temple Grottoes": [
+    {
+      "id": "XZEiRg1RGng",
+      "title": "Giant Buddha of Bingling Temple Grottoes",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-08-20"
+    }
+  ],
+  "Elephant Mountain Grottoes": [
+    {
+      "id": "dOLrT9nuzPU",
+      "title": "Giant Buddha of Elephant Mountain Grottoes",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-08-27"
+    }
+  ],
+  "Tianlong Shan Grottoes": [
+    {
+      "id": "H4VN1ay68Bg",
+      "title": "Giant Buddha of Tianlong Shan Grottoes",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-09-03"
+    }
+  ],
+  "Yuji Mountain Buddha": [
+    {
+      "id": "pyeAf6_f8dI",
+      "title": "Giant Buddha of Yuji Mountain",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-09-10"
+    }
+  ],
+  "Rongxian Giant Buddha": [
+    {
+      "id": "S3PqiO2QTh8",
+      "title": "Giant Buddha of Rongxian",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-09-17"
+    }
+  ],
+  "Keyan Big Buddha": [
+    {
+      "id": "83zjOOhP_Lg",
+      "title": "Keyan Big Buddha",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-09-24"
+    }
+  ],
+  "Takht-e Rustam (Afghanistan)": [
+    {
+      "id": "F3MjnNYCSRA",
+      "title": "Top-Down Rock-Cut Bedrock Stupa of Takht-e Rustam",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-11-15"
+    }
+  ],
+  "Bamiyan": [
+    {
+      "id": "GiPd3BzwP2U",
+      "title": "Giant Buddha of Bamiyan",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-12-01"
     }
   ]
 }
