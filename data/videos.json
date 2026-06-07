@@ -19,6 +19,20 @@
       "cr": "cappadociapage",
       "added": "2026-06-07",
       "published": "2026-05-01"
+    },
+    {
+      "id": "jtyIbbt7LTo",
+      "title": "Derinkuyu (Part 1/2) : Underground City - Do you want to run or dig?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-15"
+    },
+    {
+      "id": "FLNFTRN7SkI",
+      "title": "Derinkuyu (Part 2/2) : Tool Marks + Zoroastrianism = Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-15"
     }
   ],
   "Kaymakli Underground City": [
@@ -30,6 +44,20 @@
     {
       "id": "0tiGV7QuSTA",
       "title": "The Underground Cities of Cappadocia, Turkey"
+    },
+    {
+      "id": "qWbGNp_arS0",
+      "title": "Kaymakli Underground City (Part 1/2) : Circular Stones = Stone Door?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-22"
+    },
+    {
+      "id": "nDYYy-3rG6I",
+      "title": "Kaymakli Underground City (Part 2/2) - Narrative that doesn't make sense",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-22"
     }
   ],
   "Göbekli Tepe": [
@@ -2008,6 +2036,13 @@
       "cr": "history",
       "added": "2026-06-07",
       "published": "2021-10-20"
+    },
+    {
+      "id": "WkUUEQBvnZY",
+      "title": "Ozkonak Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-10-20"
     }
   ],
   "Nevşehir Underground City": [
@@ -2024,6 +2059,166 @@
       "cr": "cappadociapage",
       "added": "2026-06-07",
       "published": "2025-11-10"
+    },
+    {
+      "id": "1XnVlmwiOWo",
+      "title": "Kayasehir Rock City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-12-01"
+    }
+  ],
+  "Gümüşler Rock-Cut Monastery": [
+    {
+      "id": "iVdP3GDHe0w",
+      "title": "The Amazing Top-Down Rock Cut Monastery of Gumusler",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-08-15"
+    }
+  ],
+  "St. Mercurius Underground City": [
+    {
+      "id": "xdW6AVcAoz8",
+      "title": "St. Mercurius Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-08-22"
+    }
+  ],
+  "Kırkgöz Underground City": [
+    {
+      "id": "Gx9ypiw_dLo",
+      "title": "Kirkgoz Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-09-08"
+    }
+  ],
+  "Ağırnas Underground City": [
+    {
+      "id": "_zAGOAJVgvI",
+      "title": "Agirnas Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-09-15"
+    }
+  ],
+  "Aydıntepe Underground City": [
+    {
+      "id": "BTyiM6SFBCY",
+      "title": "Aydintepe Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-09-22"
+    }
+  ],
+  "Gaziemir Underground City": [
+    {
+      "id": "TB-aKnBAgww",
+      "title": "Gaziemir Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-09-29"
+    }
+  ],
+  "Tatlarin Underground City": [
+    {
+      "id": "0iDI4tXtH8A",
+      "title": "Tatlarin Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-10-06"
+    }
+  ],
+  "Özlüce Underground City": [
+    {
+      "id": "nhqtFw8CJLk",
+      "title": "Ozluce Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-10-13"
+    }
+  ],
+  "Mazi Underground City": [
+    {
+      "id": "nW9HJH9XdVo",
+      "title": "Mazi Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-10-27"
+    }
+  ],
+  "Ersele Underground City": [
+    {
+      "id": "XAs8VmSD4gA",
+      "title": "Ersele Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-11-03"
+    }
+  ],
+  "Dara Ancient City": [
+    {
+      "id": "GmuLXYPzH8A",
+      "title": "The Mysterious Dara Ancient City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-11-10"
+    }
+  ],
+  "Bazda Caves": [
+    {
+      "id": "1ZjnsOl2OM8",
+      "title": "Bazda Caves",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-11-17"
+    }
+  ],
+  "Dulkadirli Underground City": [
+    {
+      "id": "zDqunWbprGs",
+      "title": "Dulkadilri Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-11-24"
+    }
+  ],
+  "Manazan Caves & Taşkale Granaries": [
+    {
+      "id": "aFMzYu1u2-U",
+      "title": "Mysterious Manazan Caves and Thrilling Taskale Granaries",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-12-08"
+    }
+  ],
+  "Matiate (Midyat) Underground City": [
+    {
+      "id": "WxtKfaSlzNs",
+      "title": "Midyat Caves or Matiate Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-12-15"
+    }
+  ],
+  "Mucur Underground City": [
+    {
+      "id": "Ca2uUIh8OYE",
+      "title": "Mucur Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-12-22"
+    }
+  ],
+  "Höyük Underground City": [
+    {
+      "id": "dIRMbwH9ul8",
+      "title": "Huyuk Underground City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-12-29"
     }
   ]
 }

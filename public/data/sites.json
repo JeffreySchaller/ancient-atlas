@@ -2827,5 +2827,193 @@
       "precision"
     ],
     "desc": "Hattian and Hittite site in central Anatolia, centered on the Spring of Arinna (still flowing). The Sphinx Gate (30 ft wide) is flanked by 3D relief carvings of sphinxes, bulls, the storm god, and a king and queen. Behind the gate stand gigantic polygonal walls with puffy bent-corner stones directly comparable to Cusco and Sacsayhuamán. The site preserves 13 royal graves of the Hattian culture (~2000-2500 BCE) with elaborate bronze, gold, and electrum grave goods, including bronze deer and sun-disc rosettes. A postern tunnel with cyclopean vaulted construction runs to the west, with mortise-and-tenon joints comparable to Stonehenge lintels and multiple portal stones reminiscent of Göbekli Tepe and Karahan Tepe. Conventional reading : Hattian then Hittite Bronze Age (3rd-2nd millennium BCE). Independent reading : the polygonal masonry and the portal stones suggest a much earlier construction phase that the Hatti inherited and the Hittites reused. Recent dating is being pushed into the early Neolithic, with possible cultural continuity from Göbekli Tepe and Karahan Tepe."
+  },
+  {
+    "n": "Gümüşler Rock-Cut Monastery",
+    "lat": 38.0083,
+    "lng": 34.75,
+    "cat": "rockcut",
+    "region": "Türkiye",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "precision"
+    ],
+    "desc": "Top-down rock-cut Byzantine monastery complex in Niğde Province, carved into a single mass of volcanic tuff. The site features a fortified main chapel with surviving frescoes, multiple chambers across vertical levels, an inner courtyard, and a hidden upper refuge accessible by ladder. Conventionally dated to the 8th-12th century Byzantine era. The site's vertical excavation strategy and the precision of its chamber alignments invite a reading consistent with much earlier rock-cutting traditions in Cappadocia."
+  },
+  {
+    "n": "St. Mercurius Underground City",
+    "lat": 38.75,
+    "lng": 34.7,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Underground complex in the Cappadocia region associated with the early Christian veneration of St. Mercurius. Multiple levels with living chambers, storage rooms, and chapels. Like most Cappadocia underground cities, the dating rests on architectural comparison rather than direct evidence, leaving the original construction phase an open question."
+  },
+  {
+    "n": "Kırkgöz Underground City",
+    "lat": 38.7,
+    "lng": 35.0,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Underground city in the Cappadocia region whose name (\"forty eyes\") refers to the multiple ventilation and access shafts cut through the complex. Living quarters, storage, and chapels span several levels. Part of the broader Cappadocian underground network with at least 200 documented sites, most still under-investigated."
+  },
+  {
+    "n": "Ağırnas Underground City",
+    "lat": 38.8,
+    "lng": 35.65,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "precision"
+    ],
+    "desc": "Multi-level underground complex in Kayseri Province, in the village of Ağırnas — the birthplace of the Ottoman master architect Mimar Sinan. The complex includes a chapel, living chambers, ventilation shafts, and storage rooms carved through volcanic tuff. Conventional dating attributes the site to the Byzantine era; independent readings point to potentially much older origins consistent with the broader Cappadocian network."
+  },
+  {
+    "n": "Aydıntepe Underground City",
+    "lat": 40.3833,
+    "lng": 40.1333,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Underground city in Bayburt Province in northeastern Turkey, geographically separated from the main Cappadocia network. Multi-level tunnels, chambers, and storage spaces carved into sedimentary rock, currently with about 1 km of excavated passageways. Conventional reading: late Roman / early Byzantine. Independent reading: the presence of this construction style this far from Cappadocia raises questions about how widely the underground-city tradition extended."
+  },
+  {
+    "n": "Ersele Underground City",
+    "lat": 38.6,
+    "lng": 34.7,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Underground complex in the Cappadocia region with multiple chambers and connecting tunnels carved into volcanic tuff. Part of the broader Nevşehir-Kayseri underground network. Limited formal investigation."
+  },
+  {
+    "n": "Dara Ancient City",
+    "lat": 37.1764,
+    "lng": 40.95,
+    "cat": "city",
+    "region": "Türkiye",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "polygonal",
+      "geometry",
+      "precision"
+    ],
+    "desc": "Late Roman / Byzantine frontier city in Mardin Province, southeastern Turkey, in ancient Mesopotamia. Founded by Anastasius I around 505 CE as a fortress against the Sasanian Persians. The visible complex includes massive cyclopean walls, a vast underground cistern with precise rock-cut chambers, a necropolis with elaborate tomb chambers, and an underground bridge. The Mor Mihail Monastery sits above. Independent investigators note that the rock-cut work at Dara shows tool-mark precision and chamber geometry that may predate the official Byzantine founding, with reuse and expansion in the 6th century built atop a much older substrate."
+  },
+  {
+    "n": "Bazda Caves",
+    "lat": 37.0167,
+    "lng": 39.0167,
+    "cat": "rockcut",
+    "region": "Türkiye",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "Ancient rock-cut quarry and cave system in Şanlıurfa Province near Harran, in the cradle of early Mesopotamian civilization. The caves are documented as a Roman-era quarry that supplied stone for the city of Harran, though local tradition and the scale of the workings suggest earlier origins. The site sits in the same landscape as Göbekli Tepe (60 km away) and Karahan Tepe."
+  },
+  {
+    "n": "Dulkadirli Underground City",
+    "lat": 39.0667,
+    "lng": 34.3833,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Underground city in Kırşehir Province featuring an extensive network of tunnels, chambers, and ventilation shafts. Carved through volcanic tuff at the northwestern edge of the Cappadocian underground network. Dating remains an open question, with mainstream attribution to the Byzantine era and independent readings suggesting pre-Byzantine origin."
+  },
+  {
+    "n": "Manazan Caves & Taşkale Granaries",
+    "lat": 37.2667,
+    "lng": 33.45,
+    "cat": "rockcut",
+    "region": "Türkiye",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision",
+      "geometry"
+    ],
+    "desc": "Two adjacent rock-cut complexes in Karaman Province, in central southern Turkey. The Manazan Caves form a multi-level cliff-side settlement with linked chambers carved into vertical rock. The Taşkale Granaries are hundreds of precisely-cut rectangular grain storage chambers carved into a cliff face, still used by local farmers today. The granaries' precision and the scale of the cliff excavation invite comparison with similar rock-cut storage at sites across the wider Anatolian and Mesopotamian region."
+  },
+  {
+    "n": "Matiate (Midyat) Underground City",
+    "lat": 37.4167,
+    "lng": 41.35,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "precision"
+    ],
+    "desc": "Massive underground city discovered in 2020 beneath the modern town of Midyat in Mardin Province. Initial surveys describe it as one of the largest underground cities in the world, with estimates of capacity for up to 70,000 people and an estimated age of at least 1,900 years. Multiple levels, chambers, places of worship, water wells, and storage facilities have been identified. Excavation is active and ongoing. Conventional reading: Roman-era refuge for early Christians and Jews. Independent reading: scale and design may indicate much older origins reused across cultures."
+  },
+  {
+    "n": "Mucur Underground City",
+    "lat": 39.0667,
+    "lng": 34.3833,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Underground complex in Kırşehir Province at the edge of the broader Cappadocian underground network. Multi-level chambers, tunnels, and ventilation systems carved through volcanic tuff. Conventional and independent dating in dispute, consistent with the broader pattern of under-studied sites in the region."
+  },
+  {
+    "n": "Höyük Underground City",
+    "lat": 37.7,
+    "lng": 31.6,
+    "cat": "underground",
+    "region": "Türkiye",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Underground city in Konya Province, geographically distinct from the primary Cappadocian network. Multi-level chambers, storage rooms, and connecting tunnels. The site's location west of the main Cappadocian cluster broadens the geographic footprint of the Anatolian underground-city tradition."
   }
 ]
