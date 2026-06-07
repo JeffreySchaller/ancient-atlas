@@ -577,6 +577,20 @@
       "title": "Reassessing Ancient Cambodia (Quest for Ancient Civilizations) — Angkor Wat segment",
       "cr": "secretsinstone",
       "t": 198
+    },
+    {
+      "id": "t5yrTx7udT4",
+      "title": "Angkor Archaeological Park is insanely huge. So how can the history vanish?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-15"
+    },
+    {
+      "id": "Rda15KOGr6o",
+      "title": "7 Reasons Angkor Wat Cannot Be Built by Human",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-22"
     }
   ],
   "Nazca Lines": [
@@ -1610,6 +1624,13 @@
       "id": "6tFEgfCEHVE",
       "title": "The Prambanan Ramayana — Episode 1",
       "cr": "praveenmohan"
+    },
+    {
+      "id": "GP0gKHEXWzA",
+      "title": "Phenomenal Perturbing Prambanan Temple",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-25"
     }
   ],
   "Yonaguni Monument": [
@@ -1763,6 +1784,20 @@
       "title": "Reassessing Ancient Cambodia (Quest for Ancient Civilizations) — LiDAR pattern at Beng Mealea",
       "cr": "secretsinstone",
       "t": 549
+    },
+    {
+      "id": "5MEuk-zSSJo",
+      "title": "Beng Mealea (1/2) : An Advance Temple Layout",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-08-27"
+    },
+    {
+      "id": "AvU2_ZYgFIc",
+      "title": "Beng Mealea (2/2) : So big but yet so lost",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-09-03"
     }
   ],
   "Preah Khan of Kompong Svay": [
@@ -1771,6 +1806,41 @@
       "title": "Reassessing Ancient Cambodia (Quest for Ancient Civilizations) — Preah Khan of Kompong Svay segment",
       "cr": "secretsinstone",
       "t": 549
+    },
+    {
+      "id": "eJkYv4H6D50",
+      "title": "Preah Khan Temple of Kampong Svay (1/5) : The Moat",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-23"
+    },
+    {
+      "id": "vcLjTumN2Bc",
+      "title": "Preah Khan Temple of Kampong Svay (2/5) : The Baray",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-30"
+    },
+    {
+      "id": "9VFs7ERqmVQ",
+      "title": "Preah Khan Temple of Kampong Svay (3/5) : The Temples Inside",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-05-07"
+    },
+    {
+      "id": "Ae9bCWgrGxk",
+      "title": "Preah Khan Temple of Kampong Svay (4/5) : The Water Tanks Inside",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-05-14"
+    },
+    {
+      "id": "BDsXbbQO2S4",
+      "title": "Preah Khan Temple of Kampong Svay (5/5) : Sacred Temple of the Far East",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-05-21"
     }
   ],
   "Chalcatzingo": [
@@ -1854,6 +1924,13 @@
       "id": "P6Re7ZsfYvI",
       "title": "Lathed artifacts at Banteay Srei temple in Cambodia",
       "cr": "secretsinstone"
+    },
+    {
+      "id": "qIOd9Qt8Rvc",
+      "title": "Banteay Srei Temple : Citadel of Women",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-08-06"
     }
   ],
   "Preah Ko": [
@@ -2350,6 +2427,526 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2025-06-24"
+    }
+  ],
+  "Bayon Temple": [
+    {
+      "id": "SIJm3OYQP-g",
+      "title": "Who built the mysterious Bayon Temple in Angkor Thom?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-29"
+    }
+  ],
+  "West Baray": [
+    {
+      "id": "k_6sk8u6R3E",
+      "title": "West Baray of an Angkorian City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-02-05"
+    }
+  ],
+  "West Mebon": [
+    {
+      "id": "lLvDAm02Gxg",
+      "title": "West Mebon is a temple in a moat",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-02-12"
+    }
+  ],
+  "East Baray": [
+    {
+      "id": "hrAFQ2tPujs",
+      "title": "East Baray and Mebon is a temple in a moat",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-02-19"
+    }
+  ],
+  "Neak Poan (Jayatataka Baray)": [
+    {
+      "id": "x5NHxYAFyvM",
+      "title": "Jayatataka Baray & Neak Poan Temple in the Mebon",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-02-26"
+    },
+    {
+      "id": "-_2Q5f6CrbU",
+      "title": "Neak Poan Temple & Jayatataka Baray : Anavatapta Lake Connection",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-05"
+    },
+    {
+      "id": "5wi-4YE3hj0",
+      "title": "Jayatataka Baray + Neak Poan Temple = Healthy",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-12"
+    }
+  ],
+  "Preah Khan (Angkor)": [
+    {
+      "id": "57r9TKVHAbw",
+      "title": "Preah Khan Temple (1/3) : Yin & Yang of Outer Structure",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-19"
+    },
+    {
+      "id": "mScLJsNZWck",
+      "title": "Preah Khan Temple (2/3) : Preah Khan Reach = The Sacred Sword",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-26"
+    },
+    {
+      "id": "PFKtlgzqrx0",
+      "title": "Preah Khan Temple (3/3) : A Lost Temple",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-02"
+    }
+  ],
+  "Srah Srang": [
+    {
+      "id": "LF1VmkbCYTs",
+      "title": "Srah Srang - Lost Underwater Temple",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-09"
+    }
+  ],
+  "Banteay Kdei": [
+    {
+      "id": "LWRbFWJPRJo",
+      "title": "Banteay Kdei Temple : A Piquant Prasat linked to Srah Srang",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-16"
+    }
+  ],
+  "Banteay Chhmar": [
+    {
+      "id": "Qy2hWsf_dnA",
+      "title": "Banteay Chhmar (1/3) : Layout of an Advance Civilization",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-05-28"
+    },
+    {
+      "id": "YiEgi42zUt4",
+      "title": "Banteay Chhmar (2/3) : Baray with a Snaky Mebon",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-04"
+    },
+    {
+      "id": "FQNxobvdgKY",
+      "title": "Banteay Chhmar (3/3) : Fortress of Cats with Satellite Temples",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-11"
+    }
+  ],
+  "Banteay Toap": [
+    {
+      "id": "Q956NTYeLMg",
+      "title": "Banteay Toap : Mysterious Fortress of the Army",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-18"
+    }
+  ],
+  "Banteay Prei Nokor": [
+    {
+      "id": "8XsaxhoeOo8",
+      "title": "Banteay Prei Nokor Temple : The Black Sandstone Temple",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-25"
+    }
+  ],
+  "Chaw Srei Vibol": [
+    {
+      "id": "P3zld0Ms99g",
+      "title": "Chaw Srei Vibol Temple (1/2) : A Temple with Intelligent Design",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-07-02"
+    },
+    {
+      "id": "j2d5REgnT8E",
+      "title": "Chaw Srei Vibol Temple (2/2) : The Mysterious Ley Line",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-07-09"
+    }
+  ],
+  "Banteay Prei (Angkor)": [
+    {
+      "id": "Mmr4jWW_mok",
+      "title": "Banteay Prei Temple : Fortress of the Jungle",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-07-16"
+    }
+  ],
+  "Neam Rup (Pleasant Temple)": [
+    {
+      "id": "T5XA5spGcMo",
+      "title": "Neam Rup Temple : Astronomical Effort for a Tiny Temple",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-07-23"
+    }
+  ],
+  "Phnom Chisor": [
+    {
+      "id": "jKxR3s8tXqU",
+      "title": "Phnom Chisor : A Temple With Unique Design",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-07-30"
+    }
+  ],
+  "Bat Chum": [
+    {
+      "id": "rugyshug2Hw",
+      "title": "Bat Chum Temple : Three Shrines and a Baray",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-08-13"
+    }
+  ],
+  "Veal Phtei": [
+    {
+      "id": "jDekkDT73GM",
+      "title": "Veal Phtei : A Temple Too Tiny",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-08-20"
+    }
+  ],
+  "Kravan": [
+    {
+      "id": "PxvnrVm1ebk",
+      "title": "Kravan - A Five Structure Temple",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-09-10"
+    }
+  ],
+  "Kedulan": [
+    {
+      "id": "oXweT9vwq24",
+      "title": "Kedulan Temple 2 : A Trinity Mystery",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-02-04"
+    },
+    {
+      "id": "qDduNWHpPB8",
+      "title": "Kedulan Temple 1 : A Sunken Treasure",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-01-28"
+    }
+  ],
+  "Sari": [
+    {
+      "id": "PR_IBAO6dNg",
+      "title": "Sari Temple : Once a Glittering Golden Temple",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-01-21"
+    }
+  ],
+  "Lumbung": [
+    {
+      "id": "nvvPSTFRGCE",
+      "title": "Lumbung Temple : Rice Barn Temple with no history and no rice",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-01-14"
+    }
+  ],
+  "Bubrah": [
+    {
+      "id": "VVuEZUycuoo",
+      "title": "Bubrah Temple : Restored Temple with Damaged History",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-01-07"
+    }
+  ],
+  "Barong": [
+    {
+      "id": "4aCkVXA9Vok",
+      "title": "Barong Temple : 3 minus 1 = Confuse",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-12-31"
+    }
+  ],
+  "Banyunibo": [
+    {
+      "id": "6uOG_3yOlEQ",
+      "title": "Banyunibo Temple : A Temple with Sacred Layout",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-12-24"
+    }
+  ],
+  "Sumbawa Megaliths": [
+    {
+      "id": "QPshss9J9oE",
+      "title": "Sumbawa : An Island of Megalithic Mysteries",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-12-17"
+    },
+    {
+      "id": "CKIDugjXb6M",
+      "title": "Sumbawa : Megaliths of Ai Renung - The Phantom Five",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-12-10"
+    },
+    {
+      "id": "6nnKGlyel54",
+      "title": "Sumbawa : Megaliths of Raboran - Sarcophagi or something else?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-12-03"
+    }
+  ],
+  "Sumba Megalithic Tombs": [
+    {
+      "id": "pOJRzSf1aZ0",
+      "title": "Sumba : Mysterious Megalithic Tombs",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-11-26"
+    }
+  ],
+  "Pura Besakih": [
+    {
+      "id": "n2Ke5kyDXjs",
+      "title": "Pura Agung Besakih : A Temple Too Grand To Be Unheard Off",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-11-19"
+    }
+  ],
+  "Pura Lempuyang Luhur": [
+    {
+      "id": "sUoWWFHMYM8",
+      "title": "Penataran Agung Lempuyang Luhur : A World Class Temple",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-11-12"
+    }
+  ],
+  "Tampaksiring (Gunung Kawi)": [
+    {
+      "id": "rU6PvkJHGDg",
+      "title": "Megalith of Tampaksiring at Gunung Kawi",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-11-05"
+    }
+  ],
+  "Borobudur": [
+    {
+      "id": "7ZEm8hS2ppw",
+      "title": "Borobudur (Part 4/4) : Borobudur was built when stones were soft like clay",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-29"
+    },
+    {
+      "id": "jDWx0u48eHc",
+      "title": "Borobudur (3/4) : In the beginning there was Wisdom and Wisdom was Buddha",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-22"
+    },
+    {
+      "id": "lJSGbQXuBr8",
+      "title": "Borobudur (Part 2/4) : A monument we barely know",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-15"
+    },
+    {
+      "id": "X49i3_PNWsA",
+      "title": "Borobudur (Part 1/4) : A huge stepped pyramid?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-08"
+    }
+  ],
+  "Pawon": [
+    {
+      "id": "OO7aBMneVR4",
+      "title": "Is Petite Pawon Temple for Worship?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-01"
+    }
+  ],
+  "Mendut": [
+    {
+      "id": "syjj8Xww7Fs",
+      "title": "Mysterious Mendut Temple on Ley Line",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-09-24"
+    }
+  ],
+  "Ijo": [
+    {
+      "id": "uU2vxLPhAdA",
+      "title": "Ijo Temple on Ijo Hill is very mojo",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-09-17"
+    }
+  ],
+  "Sojiwan": [
+    {
+      "id": "ysfRtduVV4Q",
+      "title": "Stupendous Sojiwan Temple with a taste of mystery",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-09-10"
+    }
+  ],
+  "Ratu Boko": [
+    {
+      "id": "vLX686DLnrc",
+      "title": "Ratu Boko (4/4) : Is this a palace in another dimension?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-09-03"
+    },
+    {
+      "id": "XPpYzLHr3gQ",
+      "title": "Ratu Boko (3/4) : How can we not know anything about this site?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-08-27"
+    },
+    {
+      "id": "RLZm5_5b3sw",
+      "title": "Ratu Boko (2/4) : Lots of platforms but still no clue",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-08-20"
+    },
+    {
+      "id": "XnQG4mYzAFQ",
+      "title": "Ratu Boko (1/4) : Who built Ratu Boko Palace?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-08-13"
+    }
+  ],
+  "Sambisari": [
+    {
+      "id": "6Gk8UVc-SCo",
+      "title": "Sambisari Temple (2/2) : Is it related to Pyramid of The Feathered Serpent in Mexico?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-08-06"
+    },
+    {
+      "id": "LeWQrudrMZg",
+      "title": "Sambisari Temple (1/2) : A stupendous temple 6.5m below ground level.",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-07-30"
+    }
+  ],
+  "Sewu Temple": [
+    {
+      "id": "eonkC5jh-ns",
+      "title": "Sewu Temple (2/2) : Blueprints of builders found in Cambodia, Mexico and Iran?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-07-23"
+    },
+    {
+      "id": "K0YK_LvtETE",
+      "title": "Sewu Temple (1/2) : Head Spinning Sewu Temple of Klaten in Java",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-07-16"
+    }
+  ],
+  "Kalasan": [
+    {
+      "id": "RJDSJvg50E4",
+      "title": "Is Kalasan Temple in Indonesia related to Chichen Itza Temple in Mexico?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-07-09"
+    }
+  ],
+  "Plaosan": [
+    {
+      "id": "Pi1GSU0tyPM",
+      "title": "Phenomenal Plaosan of Prambanan in Java, Indonesia",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-07-02"
+    }
+  ],
+  "Toraja Rock-Cut Burials": [
+    {
+      "id": "Zwxp5Yw8HmE",
+      "title": "Gigantic Monoliths and Mysterious Rock Cut Burials of Toraja, Indonesia",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-18"
+    }
+  ],
+  "Nias Island Megaliths": [
+    {
+      "id": "Wii86ebnCn8",
+      "title": "Who made monoliths and stone tables in Nias Island of Indonesia?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-11"
+    }
+  ],
+  "Bada Valley Megaliths": [
+    {
+      "id": "oHrkACXQ3Kg",
+      "title": "Balang Gergasi di Situs Megalitik Lembah Bada",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-04"
+    },
+    {
+      "id": "CVRIfc21tbc",
+      "title": "Mysterious Giant Stone Jars of Bada Valley in Sulawesi",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-05-28"
+    }
+  ],
+  "Maliabad Fort": [
+    {
+      "id": "BglGyCgVE0U",
+      "title": "Who Built the Polygonal & Cyclopean Walls of Maliabad Fort in India? | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-06-07",
+      "published": "2025-06-15"
     }
   ]
 }

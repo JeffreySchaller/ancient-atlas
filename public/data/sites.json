@@ -3145,5 +3145,573 @@
       "precision"
     ],
     "desc": "Stepped stone monument in the Bushehr region of southwestern Iran, of similar design to the Tomb of Cyrus at Pasargadae but smaller. Local tradition associates it with the daughter of a king; mainstream scholarship attributes it to an early Achaemenid royal family member, possibly Cambyses or a related Cyaxares-era figure. Dry-fit precision masonry, no mortar."
+  },
+  {
+    "n": "Bayon Temple",
+    "lat": 13.4413,
+    "lng": 103.8593,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "precision",
+      "geometry"
+    ],
+    "desc": "Buddhist temple at the center of Angkor Thom, built by Jayavarman VII in the late 12th/early 13th century. Famous for the 216 serene stone faces carved into 54 towers. Bas-reliefs depict everyday Khmer life with extraordinary detail."
+  },
+  {
+    "n": "Preah Khan (Angkor)",
+    "lat": 13.4621,
+    "lng": 103.8731,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "Major late-12th-century Buddhist temple complex at Angkor, built by Jayavarman VII as a monastery and university. Name means 'Sacred Sword.' The outer enclosure walls form a near-square 800m × 700m. Distinct from Preah Khan of Kompong Svay (a separate remote site)."
+  },
+  {
+    "n": "Srah Srang",
+    "lat": 13.4337,
+    "lng": 103.9006,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Royal bathing pool 700m × 350m at Angkor, dating to mid-10th century with later modifications under Jayavarman VII. Sandstone landing stage with naga balustrades on the western side. Functioned alongside the adjacent Banteay Kdei temple."
+  },
+  {
+    "n": "Banteay Kdei",
+    "lat": 13.436,
+    "lng": 103.8995,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Buddhist temple at Angkor built in the late 12th to early 13th century under Jayavarman VII. Adjacent to Srah Srang. Multiple concentric enclosures with sandstone galleries and face-towers similar to Ta Prohm and Bayon."
+  },
+  {
+    "n": "West Baray",
+    "lat": 13.4326,
+    "lng": 103.8042,
+    "cat": "underground",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Massive Angkor-era reservoir, approximately 8 km × 2.1 km, the largest hydraulic structure of the ancient world. Built in the 11th century under Suryavarman I. Still partially water-filled. Contains the West Mebon temple on a central island."
+  },
+  {
+    "n": "West Mebon",
+    "lat": 13.4317,
+    "lng": 103.7958,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Hindu temple on an artificial island at the center of the West Baray. Mid-11th century under Udayadityavarman II. Famous bronze reclining Vishnu statue recovered from the central well in 1936."
+  },
+  {
+    "n": "East Baray",
+    "lat": 13.4502,
+    "lng": 103.917,
+    "cat": "underground",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Now-dry Angkor-era reservoir approximately 7.5 km × 1.8 km, constructed in the late 9th century by Yasovarman I. The East Mebon temple sits on the former central island."
+  },
+  {
+    "n": "East Mebon",
+    "lat": 13.4499,
+    "lng": 103.9098,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "10th-century Hindu temple dedicated to Shiva, built by Rajendravarman II in 952 CE on what was then an island in the East Baray. Three-tier sandstone and laterite pyramid with elephant statues at each corner."
+  },
+  {
+    "n": "Neak Poan (Jayatataka Baray)",
+    "lat": 13.4669,
+    "lng": 103.893,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "geometry",
+      "scale"
+    ],
+    "desc": "Buddhist temple on an artificial island in the center of the Jayatataka Baray at Angkor, built by Jayavarman VII in the late 12th century. Designed to mimic the sacred Anavatapta lake of Buddhist cosmology, with four connected pools radiating from a central circular pond."
+  },
+  {
+    "n": "Bat Chum",
+    "lat": 13.4233,
+    "lng": 103.8869,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Small mid-10th-century Buddhist temple at Angkor with three brick shrines on a common platform. Built by a Brahmin during the reign of Rajendravarman II. Adjacent to a small baray."
+  },
+  {
+    "n": "Veal Phtei",
+    "lat": 13.45,
+    "lng": 103.91,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Small Angkor-era temple of which little official scholarship remains. Modest sandstone structure in the broader Angkor archaeological area. Function and exact dating remain open questions."
+  },
+  {
+    "n": "Kravan",
+    "lat": 13.4318,
+    "lng": 103.8868,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Prasat Kravan: five-shrine brick temple at Angkor, completed 921 CE. Notable for the bas-relief brick carvings of Vishnu and Lakshmi inside the central shrine, rare in Khmer brick-temple tradition."
+  },
+  {
+    "n": "Chaw Srei Vibol",
+    "lat": 13.4683,
+    "lng": 104.0017,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "geometry",
+      "scale"
+    ],
+    "desc": "Hilltop temple complex 30 km east of Angkor on the Wat Trak hill, with three terraced enclosures climbing the slope. The site sits on what some investigators describe as a notable ley-line alignment. Little formal documentation."
+  },
+  {
+    "n": "Banteay Prei (Angkor)",
+    "lat": 13.4774,
+    "lng": 103.8784,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Small Bayon-style temple at Angkor, late 12th century. Distinct from Banteay Prei Nokor in eastern Cambodia. Heavily forested and minimally restored."
+  },
+  {
+    "n": "Neam Rup (Pleasant Temple)",
+    "lat": 13.44,
+    "lng": 103.905,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Tiny temple at Angkor whose astronomical alignments and proportions seem to require disproportionate effort relative to its modest size. Function and dating remain open."
+  },
+  {
+    "n": "Phnom Chisor",
+    "lat": 11.0833,
+    "lng": 104.9333,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "11th-century hilltop Hindu temple in Takeo Province, southern Cambodia, dedicated to Shiva. Built by Suryavarman I. Unique east-facing layout with an elaborate processional staircase. 503 steps lead to the summit."
+  },
+  {
+    "n": "Banteay Chhmar",
+    "lat": 14.0667,
+    "lng": 102.9833,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "precision",
+      "geometry"
+    ],
+    "desc": "Massive late-12th-century Buddhist temple complex in remote north-west Cambodia, built by Jayavarman VII. One of the largest temples of the Khmer empire, with an enclosure measuring 1.9 km × 1.7 km. Famous for face-towers and the bas-relief of Avalokiteshvara with multiple arms."
+  },
+  {
+    "n": "Banteay Toap",
+    "lat": 13.6167,
+    "lng": 102.9,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Khmer-era fortified temple in north-west Cambodia, traditionally associated with Banteay Chhmar's military function. Multiple enclosure walls."
+  },
+  {
+    "n": "Banteay Prei Nokor",
+    "lat": 11.4167,
+    "lng": 105.8667,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Black-sandstone temple complex in Tboung Khmum Province, eastern Cambodia. Date and origin uncertain — possibly 8th-9th century, pre-Angkor era. The black sandstone is distinctive."
+  },
+  {
+    "n": "Ratu Boko",
+    "lat": -7.77,
+    "lng": 110.49,
+    "cat": "city",
+    "region": "Asia",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "precision"
+    ],
+    "desc": "Hilltop archaeological complex south of Prambanan in Central Java, dating to roughly the 8th century. The site mixes Buddhist and Hindu features in a layout that doesn't match standard temple or palace conventions. Stone gates, terraces, pools, and a meditation cave. The function is debated: royal residence, monastery, or ceremonial complex."
+  },
+  {
+    "n": "Sambisari",
+    "lat": -7.7656,
+    "lng": 110.4458,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "9th-century Hindu temple in Yogyakarta sitting 6.5 metres below the surrounding ground level. Discovered 1966 by a farmer plowing his field. The 6.5m of stratigraphy over the temple is consistent with volcanic ash burial from Mount Merapi but raises questions about exactly when."
+  },
+  {
+    "n": "Sewu Temple",
+    "lat": -7.74,
+    "lng": 110.4933,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 1,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "8th-century Mahayana Buddhist temple complex in Central Java, the second-largest in Indonesia after Borobudur. 249 temples arranged in a mandala. Built by the Shailendra dynasty."
+  },
+  {
+    "n": "Plaosan",
+    "lat": -7.74,
+    "lng": 110.5033,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Twin Mahayana Buddhist temples near Prambanan, 9th century, possibly commissioned by King Rakai Pikatan and Queen Pramodawardhani as symbols of religious harmony between their families' Hindu and Buddhist traditions."
+  },
+  {
+    "n": "Kalasan",
+    "lat": -7.7669,
+    "lng": 110.4719,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "9th-century Buddhist temple in Central Java dedicated to the goddess Tara, the oldest Buddhist temple on the Prambanan plain. Notable for the precision of its proportions and the use of vajralepa stucco coating."
+  },
+  {
+    "n": "Mendut",
+    "lat": -7.6053,
+    "lng": 110.23,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "geometry",
+      "precision"
+    ],
+    "desc": "Late-8th- to early-9th-century Buddhist temple near Borobudur. Houses a large stone Buddha statue flanked by Avalokitesvara and Vajrapani. Aligned axially with Pawon and Borobudur on what some investigators interpret as a ley line."
+  },
+  {
+    "n": "Pawon",
+    "lat": -7.6064,
+    "lng": 110.2233,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Small Buddhist temple between Borobudur and Mendut, completing the three-temple axial alignment. Function debated: relic shrine, tomb, or ritual stop on a pilgrimage route."
+  },
+  {
+    "n": "Ijo",
+    "lat": -7.7903,
+    "lng": 110.5097,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "9th-century Hindu temple at the highest elevation in the Prambanan plain region. Terraced layout with main shrine at the top of three platforms."
+  },
+  {
+    "n": "Sojiwan",
+    "lat": -7.7558,
+    "lng": 110.4925,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "9th-century Buddhist temple near Prambanan, recently restored. Notable for the carved animal-fable reliefs around its base."
+  },
+  {
+    "n": "Banyunibo",
+    "lat": -7.7619,
+    "lng": 110.5028,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "9th-century Buddhist temple with distinctive single-chamber design and elaborate antefix decoration. The name means 'falling water.'"
+  },
+  {
+    "n": "Barong",
+    "lat": -7.7833,
+    "lng": 110.5,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Hilltop temple south of Prambanan. Three shrines originally, only two remain — the third is presumed to have been destroyed or removed. Distinctive layout."
+  },
+  {
+    "n": "Bubrah",
+    "lat": -7.7411,
+    "lng": 110.4933,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Small Buddhist temple in the Prambanan plain, possibly serving as a satellite to Sewu. Recently restored from a heavily-ruined state."
+  },
+  {
+    "n": "Lumbung",
+    "lat": -7.7414,
+    "lng": 110.4925,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Buddhist temple named 'rice barn' due to local interpretation. No surviving inscriptions or texts describing its original function. Cluster of small shrines around a central temple."
+  },
+  {
+    "n": "Sari",
+    "lat": -7.7669,
+    "lng": 110.4783,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "9th-century Buddhist monastery near Kalasan. Two-story structure with monastic cells on the upper level. Believed to have housed monks attending services at Kalasan."
+  },
+  {
+    "n": "Kedulan",
+    "lat": -7.7458,
+    "lng": 110.4753,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Hindu temple in Yogyakarta found buried under approximately 7m of volcanic ash. Discovered in 1993 during sand mining. Excavation ongoing. Trinity of shrines for Trimurti deities."
+  },
+  {
+    "n": "Tampaksiring (Gunung Kawi)",
+    "lat": -8.4283,
+    "lng": 115.3128,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "11th-century rock-cut temple complex in Bali, with 10 large candi (shrine niches) carved directly into the cliffs of the Pakerisan river valley. Associated with the burial of King Anak Wungsu and his consorts. Massive monolithic excavation."
+  },
+  {
+    "n": "Pura Besakih",
+    "lat": -8.3739,
+    "lng": 115.4514,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "The 'Mother Temple' of Bali, on the slopes of Mount Agung. Largest Hindu temple complex in Bali, with 23 separate temples in a unified architectural layout. Origins debated — possibly pre-Hindu Megalithic substrate."
+  },
+  {
+    "n": "Pura Lempuyang Luhur",
+    "lat": -8.3958,
+    "lng": 115.6322,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Sacred Hindu temple in eastern Bali, one of the six holiest in Bali. Sits on Mount Lempuyang. Famous for the 'Gates of Heaven' (Gateway to Heaven) framing Mount Agung in the distance."
+  },
+  {
+    "n": "Sumba Megalithic Tombs",
+    "lat": -9.6667,
+    "lng": 119.4,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Living megalithic tradition on Sumba island in eastern Indonesia. Massive stone slab tombs (some weighing 70 tons) are still constructed today using traditional methods. The continuity of the practice from at least the late Neolithic into the 21st century is anthropologically unique."
+  },
+  {
+    "n": "Sumbawa Megaliths",
+    "lat": -8.75,
+    "lng": 117.75,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Multiple megalithic sites on Sumbawa island including Ai Renung (the 'Phantom Five' carved sarcophagi-like blocks) and Raboran. Form, function, and dating largely unestablished by formal archaeology."
+  },
+  {
+    "n": "Toraja Rock-Cut Burials",
+    "lat": -3.0167,
+    "lng": 119.8167,
+    "cat": "rockcut",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Living rock-cut burial tradition in the Toraja highlands of South Sulawesi. Cliff-face tombs with wooden tau-tau effigies of the deceased standing in carved balconies. Practice continues today."
+  },
+  {
+    "n": "Nias Island Megaliths",
+    "lat": 1.0833,
+    "lng": 97.7333,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Monolithic stone tables, seats, and tall standing stones in traditional Nias villages in western Sumatra. Some pieces weigh over a ton. Pre-modern villagers transported and erected them using ritualized communal effort recorded in oral tradition."
+  },
+  {
+    "n": "Maliabad Fort",
+    "lat": 16.2167,
+    "lng": 77.3667,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "scale",
+      "geometry"
+    ],
+    "desc": "Massive fortified complex in the Karnataka region of central India near Raichur, with cyclopean polygonal walls that stretch approximately 5 km / 3.5 miles. The walls show bent corners, multi-sided polygonal blocks (including a 12-sided stone similar to the one in Cusco), nubs identical to those at Sacsayhuamán, and granite stonework directly compared by Hugh Newman to Egypt's Valley Temple, Puma Punku in Bolivia, and the megalithic Andean tradition. Includes a Shiva Temple with two life-size white granite elephants and a Shiva Lingam. Conventional dating: 13th century CE. Independent reading: the polygonal cyclopean phase is much older, with the medieval fort built atop a much earlier megalithic substrate."
   }
 ]

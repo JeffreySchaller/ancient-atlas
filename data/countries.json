@@ -178,7 +178,27 @@
   "Cambodia": [
     "Spean Praptos (Kampong Kdei Bridge)",
     "Kbal Spean (Valley of a Thousand Lingams)",
-    "Phnom Bok"
+    "Phnom Bok",
+    "Bayon Temple",
+    "Preah Khan (Angkor)",
+    "Srah Srang",
+    "Banteay Kdei",
+    "West Baray",
+    "West Mebon",
+    "East Baray",
+    "East Mebon",
+    "Neak Poan (Jayatataka Baray)",
+    "Bat Chum",
+    "Banteay Srei",
+    "Veal Phtei",
+    "Kravan",
+    "Chaw Srei Vibol",
+    "Banteay Prei (Angkor)",
+    "Neam Rup (Pleasant Temple)",
+    "Phnom Chisor",
+    "Banteay Chhmar",
+    "Banteay Toap",
+    "Banteay Prei Nokor"
   ],
   "Peru": [
     "Tarawasi"
@@ -212,5 +232,32 @@
     "Zendan-e Soleyman (Tomb of Cambyses I?)",
     "Qadamgah",
     "Gur Dokthar (Daughter's Tomb)"
+  ],
+  "Indonesia": [
+    "Ratu Boko",
+    "Sambisari",
+    "Sewu Temple",
+    "Plaosan",
+    "Kalasan",
+    "Mendut",
+    "Pawon",
+    "Ijo",
+    "Sojiwan",
+    "Banyunibo",
+    "Barong",
+    "Bubrah",
+    "Lumbung",
+    "Sari",
+    "Kedulan",
+    "Tampaksiring (Gunung Kawi)",
+    "Pura Besakih",
+    "Pura Lempuyang Luhur",
+    "Sumba Megalithic Tombs",
+    "Sumbawa Megaliths",
+    "Toraja Rock-Cut Burials",
+    "Nias Island Megaliths"
+  ],
+  "India": [
+    "Maliabad Fort"
   ]
 }
