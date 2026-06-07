@@ -4315,5 +4315,220 @@
       "geometry"
     ],
     "desc": "Top-down rock-cut Buddhist stupa carved from a single bedrock outcrop in Samangan Province, northern Afghanistan. The stupa is excavated into the surrounding rock rather than built up — the entire complex (stupa, surrounding monastery cells, courtyard) was sculpted by removing material. Same top-down technique visible at Kailasa (India), Dharmrajeshwar (India), and the Lalibela churches (Ethiopia)."
+  },
+  {
+    "n": "Pyramid of the Sun (Teotihuacan)",
+    "lat": 19.6925,
+    "lng": -98.8438,
+    "cat": "pyramid",
+    "region": "Central America",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision",
+      "geometry"
+    ],
+    "desc": "The third-largest pyramid in the world by base area, at the heart of Teotihuacan, Mexico. 65 m tall, 220 m base, oriented to the setting sun on the day the sun passes its zenith at Teotihuacan's latitude. Built c. 200 CE. The Teotihuacanos who built it left no decipherable written language; the city was already in ruins when the Aztecs encountered it and named it 'Place Where the Gods Were Born.'"
+  },
+  {
+    "n": "Pyramid of the Moon (Teotihuacan)",
+    "lat": 19.6981,
+    "lng": -98.8439,
+    "cat": "pyramid",
+    "region": "Central America",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "precision"
+    ],
+    "desc": "Second-largest pyramid at Teotihuacan, aligned with the symmetry axis of the city and the contour of the sacred Mount Tlaloc behind it. 43 m tall. Built in seven construction phases between 100 BCE and 350 CE. Recent excavations have revealed elaborate offerings and burials beneath the pyramid."
+  },
+  {
+    "n": "Pyramid of the Feathered Serpent (Teotihuacan)",
+    "lat": 19.6862,
+    "lng": -98.8408,
+    "cat": "pyramid",
+    "region": "Central America",
+    "tier": 1,
+    "signal": "convergent",
+    "criteria": [
+      "precision",
+      "scale",
+      "geometry"
+    ],
+    "desc": "Pyramid at the south of the Ciudadela complex at Teotihuacan, decorated with massive sculpted stone serpent heads and rain god (Tlaloc) panels. Tunnel discovered beneath the pyramid in 2003 has revealed extensive ritual offerings including liquid mercury and over 100,000 artifacts. Construction phase: 150-250 CE."
+  },
+  {
+    "n": "Chichen Itza",
+    "lat": 20.6843,
+    "lng": -88.5678,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 1,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "precision",
+      "geometry"
+    ],
+    "desc": "Maya-Toltec city in Yucatán with multiple iconic structures: the Pyramid of Kukulkan (El Castillo), the Great Ball Court, the Temple of the Warriors, the Observatory (El Caracol), the Sacred Cenote, and the Ossuary Pyramid. Known for stunning acoustic effects: a clap at the base of Kukulkan produces a chirp identical to the quetzal bird call. Founded c. 6th century CE, peak occupation 800-1100 CE."
+  },
+  {
+    "n": "Coba",
+    "lat": 20.4914,
+    "lng": -87.7333,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Maya city in the Yucatán jungle with the tallest pyramid in the northern Maya lowlands (Nohoch Mul, 42 m). Connected to other Maya cities by an extensive network of raised limestone causeways (sacbeob), some 100+ km long. Active 200-1100 CE."
+  },
+  {
+    "n": "Chacchoben",
+    "lat": 18.7167,
+    "lng": -88.15,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Maya ceremonial center in southern Quintana Roo, Mexico. Multiple pyramids and monuments in the Petén style. Active c. 200 BCE to 700 CE. Less well-known than Tulum or Chichen Itza, with intact pyramids still surrounded by jungle."
+  },
+  {
+    "n": "Dzibanche",
+    "lat": 18.7333,
+    "lng": -88.75,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "precision",
+      "geometry"
+    ],
+    "desc": "Important Maya city in southern Quintana Roo, capital of the Kaan dynasty during the Early Classic period. The Temple of the Owl, Temple of the Cormorant, and Temple of the Lintels are among the major structures. Famous for the wooden lintels preserved over a thousand years, with carved hieroglyphic inscriptions."
+  },
+  {
+    "n": "Uaxactun",
+    "lat": 17.3897,
+    "lng": -89.6311,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Maya ceremonial center in the Petén jungle of Guatemala, 23 km north of Tikal. Features the E-Group astronomical complex used to mark solstices and equinoxes via the rising sun's position viewed from the main observation platform. Founded c. 1000 BCE."
+  },
+  {
+    "n": "Yaxha",
+    "lat": 17.0708,
+    "lng": -89.4083,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Maya city on the shore of Lake Yaxha in Guatemala's Petén region. Featured astronomical alignments with both the cardinal directions and solstice sunrises. Multiple plazas, ball courts, and a network of causeways. Active from the Late Preclassic through Terminal Classic periods."
+  },
+  {
+    "n": "Nakum",
+    "lat": 17.1833,
+    "lng": -89.3833,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Large Maya city in Guatemala's Petén region, less studied than its neighbors. Recent investigations have revealed monumental architecture, including pyramids and acropolis complexes. Function and timeline remain partially open."
+  },
+  {
+    "n": "Naranjo",
+    "lat": 17.1306,
+    "lng": -89.2369,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Major Maya city in Petén, Guatemala. Wealthy in carved stelae and elaborate hieroglyphic stairways. Engaged in rivalries and alliances with Tikal and Calakmul during the Classic period. Several large pyramids surrounding the central plaza."
+  },
+  {
+    "n": "Zaculeu",
+    "lat": 15.3433,
+    "lng": -91.49,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Late Postclassic Maya city in the western highlands of Guatemala, capital of the Mam Maya kingdom. Stuccoed pyramids on multiple platforms. Conquered by Spanish forces in 1525 after a six-month siege. Modern restoration in the 1940s preserved the white-plastered appearance."
+  },
+  {
+    "n": "Caracol",
+    "lat": 16.7642,
+    "lng": -88.9856,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 1,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry",
+      "precision"
+    ],
+    "desc": "Largest Maya archaeological site in Belize. Caana ('sky-house') pyramid is the tallest man-made structure in Belize at 43 m. Caracol defeated Tikal in a Late Classic war (562 CE). At its peak the urban area covered 200 km² with an estimated population of 150,000. Extensive system of agricultural terraces and reservoirs."
+  },
+  {
+    "n": "Lamanai",
+    "lat": 17.7572,
+    "lng": -88.6539,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Maya city in northern Belize on the New River Lagoon, with one of the longest continuous occupations of any Maya site — from c. 1500 BCE to the 19th century. The High Temple is 33 m tall. Notable for the Mask Temple with massive limestone face sculptures."
+  },
+  {
+    "n": "Xunantunich",
+    "lat": 17.0892,
+    "lng": -89.1408,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Maya city in western Belize. El Castillo pyramid is 40 m tall, with elaborate stucco friezes wrapping the upper levels depicting the Maya cosmos. Active Late Classic period (600-900 CE). Local folklore associates the site with a 'stone maiden' ghost — 'Xunantunich' means 'Stone Maiden' in Yucatec Maya."
   }
 ]

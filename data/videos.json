@@ -1257,6 +1257,20 @@
       "id": "XxfE4qxW-QE",
       "title": "Cholula | The World's Largest Pyramid is in Ancient Mexico (Not Egypt!)",
       "cr": "megalithomania"
+    },
+    {
+      "id": "JSUSZEDVHj4",
+      "title": "Cholula Pyramid",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-04-15"
+    },
+    {
+      "id": "V0wTRWFqh-8",
+      "title": "Pyramids of Mesoamerica",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-05-07"
     }
   ],
   "Chichén Itzá": [
@@ -1281,6 +1295,13 @@
       "id": "JmtzTqs-SSs",
       "title": "Palenque, Lord Pakal & Maya Mysteries | Megalithic Marvels Interview with Hugh Newman",
       "cr": "megalithomania"
+    },
+    {
+      "id": "ZjSTfRmEqU4",
+      "title": "Ruins of Palenque",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-04-08"
     }
   ],
   "Tulum": [
@@ -3193,6 +3214,310 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2024-12-01"
+    }
+  ],
+  "Pyramid of the Sun (Teotihuacan)": [
+    {
+      "id": "BcH0PjNCfWg",
+      "title": "Clueless @ Pyramids of the Sun at Teotihuacan",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-02-15"
+    }
+  ],
+  "Pyramid of the Moon (Teotihuacan)": [
+    {
+      "id": "jyn1dC7fgNE",
+      "title": "Did giants built Pyramid of the Moon in Teotihuacan?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-02-22"
+    }
+  ],
+  "Pyramid of the Feathered Serpent (Teotihuacan)": [
+    {
+      "id": "mxz6ktrGCRw",
+      "title": "Pyramid / Temple of the Feathered Serpent @ Teotihuacan",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-01"
+    }
+  ],
+  "Chacchoben": [
+    {
+      "id": "EEShawZwoFQ",
+      "title": "Chacchoben Ruins : Pyramid 1",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-12-15"
+    },
+    {
+      "id": "pGAQOQzRjTA",
+      "title": "Chacchoben Ruins : Pyramids and Monuments",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-01-08"
+    }
+  ],
+  "Coba": [
+    {
+      "id": "nNuOW1JUrT0",
+      "title": "Pyramids at Coba",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
+    }
+  ],
+  "Chichen Itza": [
+    {
+      "id": "uFv2PoBdvj4",
+      "title": "Chichen Itza : Astronomical Pyramid of Kukulkan",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-01-29"
+    },
+    {
+      "id": "cTzxU3nYSkA",
+      "title": "Chichen Itza : Astounding Acoustic at Pyramid of Kukulkan",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-01-22"
+    },
+    {
+      "id": "h2YFnGc8RdA",
+      "title": "Chichen Itza clap echo effect",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
+    },
+    {
+      "id": "DbPSuRt32V4",
+      "title": "Chichen Itza : The Great Ball Court",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-02-08"
+    },
+    {
+      "id": "4vj6HPtGqi4",
+      "title": "Chichen Itza : Amazing Acoustics @ Temple of The Warriors",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-02-15"
+    },
+    {
+      "id": "K3G54tBHhtQ",
+      "title": "Chichen Itza : Observatory Tower",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-02-22"
+    },
+    {
+      "id": "Mm-Vath0XHk",
+      "title": "Chichen Itza : Ossuary Pyramid",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-03-01"
+    },
+    {
+      "id": "JD8uBRvSDO8",
+      "title": "Chichen Itza : Sacred Cenote",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-03-15"
+    },
+    {
+      "id": "rTAOCwaDqgA",
+      "title": "Chichen Itza : Lesser Known Structures of an Ancient City",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-03-08"
+    }
+  ],
+  "Dzibanche": [
+    {
+      "id": "TRJ4nBL_LdE",
+      "title": "Dzibanche : Temple of the Owl",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-03-22"
+    },
+    {
+      "id": "WIad3TXcX3A",
+      "title": "Dzibanche : Temple of the Cormorant",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-03-15"
+    },
+    {
+      "id": "BlYHXSV9uxo",
+      "title": "Dzibanche : Temple of the Lintels and others",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-04-01"
+    }
+  ],
+  "Calakmul": [
+    {
+      "id": "Z32PamswaU0",
+      "title": "A Millennium of Calakmul",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-04-22"
+    }
+  ],
+  "Tikal": [
+    {
+      "id": "2ofM2HBkEao",
+      "title": "Tikal : Pyramid I - Temple of Jaguar",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-06-07"
+    },
+    {
+      "id": "IqgLI8h9Ce8",
+      "title": "Tikal : Pyramid II - Temple of The Masks",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-06-14"
+    },
+    {
+      "id": "E7USr3aIlmA",
+      "title": "Tikal : Pyramid III - Temple of Jaguar Priest",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-06-21"
+    },
+    {
+      "id": "s0zzmLAhmwY",
+      "title": "Tikal : Pyramid IV - Temple of Twin Headed Serpent",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-06-28"
+    },
+    {
+      "id": "apBUt97t8kg",
+      "title": "Tikal : Pyramid V - A Titan Among Giants",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-07-05"
+    },
+    {
+      "id": "JMk7ojsArNE",
+      "title": "Tikal : Pyramid VI - Temple of Inscriptions",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-07-12"
+    },
+    {
+      "id": "vo65N-ExKJw",
+      "title": "Tikal : Lost World Pyramid (Mundo Perdido)",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-07-19"
+    },
+    {
+      "id": "eh9WIsuWuQ8",
+      "title": "Tikal : Chambers of Temples and Palaces",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-07-26"
+    }
+  ],
+  "Naranjo": [
+    {
+      "id": "7bAPadYWISI",
+      "title": "Naranjo : Land of Pyramids",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-07-30"
+    }
+  ],
+  "Yaxha": [
+    {
+      "id": "_Lws9iEiE-s",
+      "title": "Yaxha : City of Astronomical Alignments",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-08-06"
+    }
+  ],
+  "Nakum": [
+    {
+      "id": "SNHgrHRFem8",
+      "title": "Nakum : Large City with Little Information",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-08-13"
+    }
+  ],
+  "Uaxactun": [
+    {
+      "id": "sJk29ra2qgc",
+      "title": "Uaxactun : Astronomical Ancient Achievement",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-08-20"
+    }
+  ],
+  "El Mirador": [
+    {
+      "id": "6OvZxQshNVE",
+      "title": "Tiger Pyramid + Snake Kings + Orion Constellation = Maya Civilization at El Mirador",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-15"
+    },
+    {
+      "id": "Aop4aDWydYI",
+      "title": "Is La Danta Pyramid larger than Khufu's Pyramid?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-22"
+    }
+  ],
+  "Zaculeu": [
+    {
+      "id": "8DwN_N5jxpc",
+      "title": "Zaculeu Pyramids in Guatemala... Tomb? Palace? Temple?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-05-01"
+    }
+  ],
+  "Xunantunich": [
+    {
+      "id": "q3PpYNjS6kg",
+      "title": "White Ghost in Xunantunich Pyramid in Belize",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-15"
+    }
+  ],
+  "Caracol": [
+    {
+      "id": "1xEUxYIh_VQ",
+      "title": "Caracol Pyramids of Belize are more mysterious than you think.",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-22"
+    }
+  ],
+  "Lamanai": [
+    {
+      "id": "nvgxmcA8qnU",
+      "title": "Lamanai Pyramids of Belize - Few Temples but No Palace?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-03-29"
+    }
+  ],
+  "Alatri Acropolis": [
+    {
+      "id": "a-QbC_vZr88",
+      "title": "Polygonal Walls of the Giants in Ancient Italy | Alatri Megalithic Acropolis | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-06-07",
+      "published": "2019-04-15"
     }
   ]
 }

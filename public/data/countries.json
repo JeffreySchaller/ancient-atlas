@@ -287,5 +287,26 @@
   "Afghanistan": [
     "Bamiyan",
     "Takht-e Rustam (Afghanistan)"
+  ],
+  "Mexico": [
+    "Pyramid of the Sun (Teotihuacan)",
+    "Pyramid of the Moon (Teotihuacan)",
+    "Pyramid of the Feathered Serpent (Teotihuacan)",
+    "Chichen Itza",
+    "Coba",
+    "Chacchoben",
+    "Dzibanche"
+  ],
+  "Guatemala": [
+    "Uaxactun",
+    "Yaxha",
+    "Nakum",
+    "Naranjo",
+    "Zaculeu"
+  ],
+  "Belize": [
+    "Caracol",
+    "Lamanai",
+    "Xunantunich"
   ]
 }
