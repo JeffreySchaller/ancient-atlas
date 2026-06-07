@@ -1557,6 +1557,7 @@ body.present #broadcast-controls{
 .video-new-badge{display:inline-block;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#0D0D12;background:linear-gradient(135deg,#E8B960,#C9A84C);padding:3px 7px;border-radius:5px;line-height:1;box-shadow:0 1px 5px rgba(232,185,96,.4);vertical-align:middle;margin-right:7px;flex-shrink:0}
 .library-ref-card{display:flex;align-items:center;gap:10px;margin:18px 0 6px;padding:12px 14px;border:1px solid rgba(201,168,76,.28);border-radius:8px;background:rgba(201,168,76,.05);text-decoration:none;color:var(--ivory);transition:all .15s}.library-ref-card:hover{border-color:rgba(201,168,76,.55);background:rgba(201,168,76,.10)}.library-ref-card .lr-icon{flex-shrink:0;width:22px;height:22px;color:var(--champagne);opacity:.9}.library-ref-card .lr-text{display:flex;flex-direction:column;flex:1;min-width:0;line-height:1.3}.library-ref-card .lr-eyebrow{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne);opacity:.85;margin-bottom:2px}.library-ref-card .lr-title{font-family:var(--font-serif);font-size:14.5px;font-weight:600;font-variation-settings:"opsz" 24;color:var(--ivory)}.library-ref-card .lr-arrow{flex-shrink:0;color:var(--champagne);opacity:.7;transition:transform .15s}.library-ref-card:hover .lr-arrow{transform:translateX(3px);opacity:1}
 .cr-vdate{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:10px;letter-spacing:.08em;color:var(--mist,#8A8A9A);margin-top:3px;text-transform:uppercase;font-weight:500}.cr-vcard:hover .cr-vdate{color:var(--cloud,#C5C5D0)}.cr-recent-divider{margin:24px 0 16px;padding:10px 14px;border-top:1px solid rgba(201,168,76,.18);font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne,#C9A84C);opacity:.85;font-weight:600}
+.unit-toggle.unit-attention{animation:unitPulse 1.2s ease-out 2;box-shadow:0 0 0 0 rgba(201,168,76,.55)}@keyframes unitPulse{0%{box-shadow:0 0 0 0 rgba(201,168,76,.55)}60%{box-shadow:0 0 0 12px rgba(201,168,76,0)}100%{box-shadow:0 0 0 0 rgba(201,168,76,0)}}
 </style>
 </head>
 <body>
@@ -8011,6 +8012,10 @@ function toggleNetwork() {
   renderFilters();
   renderNetwork();
   renderBroadcastControls();
+  if (showNetwork) {
+    // Defer to next frame so the freshly-rendered button is present in the DOM
+    requestAnimationFrame(pulseUnitToggleOnce);
+  }
 }
 
 function renderBroadcastControls() {
@@ -8512,7 +8517,7 @@ function renderFilters() {
   unitBtn.title = showNetwork ? 'Click to toggle distance units' : 'Enable Network to switch units';
   unitBtn.innerHTML = `<span style="opacity:${useMetric ? '1' : '.35'};transition:opacity .2s">km</span><span style="opacity:.4;margin:0 5px">/</span><span style="opacity:${useMetric ? '.35' : '1'};transition:opacity .2s">mi</span>`;
   if (showNetwork) {
-    unitBtn.onclick = () => { useMetric = !useMetric; renderFilters(); renderNetwork(); if (selectedSite) showDetail(selectedSite); };
+    unitBtn.onclick = () => { useMetric = !useMetric; renderFilters(); renderNetwork(); updateNearbyDistances(); };
   } else {
     unitBtn.disabled = true;
   }
@@ -10103,13 +10108,13 @@ function showDetail(site) {
       ` : ''}
       ${nearby.length > 0 ? `
         <div class="divider"></div>
-        <div class="nearby-title">Nearby Sites (within 50km)</div>
+        <div class="nearby-title">Nearby Sites (within 50km / 30mi)</div>
         ${nearby.map(n => {
           const nc = CATS[n.cat] || CATS.megalithic;
           return `<div class="nearby-item" onclick="selectSiteByName('${n.n.replace(/'/g, "\\'")}')">
             <span class="si-dot" style="background:${nc.color};width:6px;height:6px"></span>
             <span>${n.n}</span>
-            <span class="nearby-dist">${fmtDist(n.dist)}</span>
+            <span class="nearby-dist" data-km="${n.dist}">${fmtDist(n.dist)}</span>
           </div>`;
         }).join('')}
       ` : ''}
@@ -10197,6 +10202,30 @@ function haversine(lat1, lng1, lat2, lng2) {
     Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
     Math.sin(dLng/2) * Math.sin(dLng/2);
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+
+
+// Surgically update nearby distances in-place when useMetric flips.
+// This avoids re-running showDetail(), which would wipe the right card's
+// innerHTML and kill the playing YouTube iframe.
+function updateNearbyDistances() {
+  document.querySelectorAll('.nearby-dist[data-km]').forEach(el => {
+    const km = parseFloat(el.dataset.km);
+    if (!isNaN(km)) el.textContent = fmtDist(km);
+  });
+}
+
+// Subtle one-shot pulse on the km/mi toggle the first time Network is
+// activated in a session, so the affordance is discoverable.
+let _unitPulseShown = false;
+function pulseUnitToggleOnce() {
+  if (_unitPulseShown) return;
+  _unitPulseShown = true;
+  const btn = document.querySelector('.unit-toggle');
+  if (!btn) return;
+  btn.classList.add('unit-attention');
+  setTimeout(() => btn.classList.remove('unit-attention'), 2400);
 }
 
 function fmtDist(km) {
