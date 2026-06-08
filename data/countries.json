@@ -218,7 +218,8 @@
     "Manazan Caves & Taşkale Granaries",
     "Matiate (Midyat) Underground City",
     "Mucur Underground City",
-    "Höyük Underground City"
+    "Höyük Underground City",
+    "Ozancık Höyük"
   ],
   "Italy": [
     "Vetulonia",
@@ -308,5 +309,22 @@
     "Caracol",
     "Lamanai",
     "Xunantunich"
+  ],
+  "Hawaii": [
+    "Necker Island Megalithic Site",
+    "Menehune Fishpond (Alekoko)",
+    "Menehune Ditch (Kīkīaola)",
+    "Wailua River Heiaus (Kauai)",
+    "Healing Stones of Kapaemahu (Oahu)",
+    "Hawaiian Heiaus"
+  ],
+  "Oceania": [
+    "Latte Stones of Guam",
+    "Latte Stones of Tinian",
+    "Rota Quarry (As Nieves)",
+    "Yap Rai Stones",
+    "Palau Megalithic Site",
+    "Kosrae Leluh Island",
+    "Marquesas Islands"
   ]
 }

@@ -308,6 +308,41 @@
       "id": "kujKXWLh3l8",
       "title": "UnchartedX Swapcast — Ollantaytambo",
       "cr": "botsop"
+    },
+    {
+      "id": "Osu8NEjk2rI",
+      "title": "Ollantaytambo - Aqueducts of Unknown Origin",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-09-22"
+    },
+    {
+      "id": "n5rhXvUKmmI",
+      "title": "Ollantaytambo - Bedrock Terrace for Farming?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-09-29"
+    },
+    {
+      "id": "i3Yw5TODKlk",
+      "title": "Ollantaytambo - Land of the Giants?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-06"
+    },
+    {
+      "id": "9VQHhu3DRrg",
+      "title": "Ollantaytambo - What is the story @ Wall of 6 Monoliths?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-13"
+    },
+    {
+      "id": "JSLlvWKdtrs",
+      "title": "Ollantaytambo : Endless mysteries",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-20"
     }
   ],
   "Puma Punku": [
@@ -476,6 +511,27 @@
       "id": "JMAKRKkdOlw",
       "title": "The Origins of Machu Picchu",
       "cr": "unchartedx"
+    },
+    {
+      "id": "1AWZs3hwqWg",
+      "title": "Machu Picchu (1/3) : What happened here?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-09-01"
+    },
+    {
+      "id": "2mjf6UI3VHQ",
+      "title": "Machu Picchu (2/3) : Step Pyramid on Top?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-09-08"
+    },
+    {
+      "id": "WckJe9zddB0",
+      "title": "Machu Picchu (3/3) : Mysterious Temple of the Sun and Temple Mount",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-09-15"
     }
   ],
   "Stonehenge": [
@@ -753,6 +809,20 @@
     {
       "id": "Vh7Re5DdQH8",
       "title": "Nan Madol: The Megalithic Island City of the Pacific"
+    },
+    {
+      "id": "4nPk4n7K0Mc",
+      "title": "Temwen Island 1 : Megalithic City of Nan Madol",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-04-13"
+    },
+    {
+      "id": "z8qRrFvZ1qQ",
+      "title": "Temwen Island 2 : Magnetized City of Nan Madol",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-04-20"
     }
   ],
   "Lalibela Rock-Hewn Churches": [
@@ -3518,6 +3588,179 @@
       "cr": "megalithomania",
       "added": "2026-06-07",
       "published": "2019-04-15"
+    }
+  ],
+  "Hawaiian Heiaus": [
+    {
+      "id": "vtYn9wJaC4g",
+      "title": "Ancient Fishpond and Fishtrap",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-12-01"
+    },
+    {
+      "id": "71H0fyHpB2s",
+      "title": "Energies of Ancient Temples",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-12-08"
+    },
+    {
+      "id": "ywRHXRbADMs",
+      "title": "Healing Heiaus of Hawaii",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-12-15"
+    },
+    {
+      "id": "knPtO2v4U1E",
+      "title": "Heiaus of Hawaii : Ancient Temple and Ancient Ponds",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-01-19"
+    },
+    {
+      "id": "0AS2SVcXYj4",
+      "title": "Heiaus of Hawaii : Intriguing Hawaiian Terraces",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-01-26"
+    },
+    {
+      "id": "4jNkHMbNSnE",
+      "title": "Heiaus of Hawaii : Astronomical Megalithic Platforms",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-02-09"
+    },
+    {
+      "id": "QFRy-wesnk0",
+      "title": "Heiaus of Hawaii : Mysterious Megalithic Platforms",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-02-16"
+    }
+  ],
+  "Healing Stones of Kapaemahu (Oahu)": [
+    {
+      "id": "-Ze9JcGD6Ts",
+      "title": "Healing Stones of Oahu",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-12-22"
+    }
+  ],
+  "Necker Island Megalithic Site": [
+    {
+      "id": "NqJY9gJK5pg",
+      "title": "Megalithic Culture @ Necker Island",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2024-12-29"
+    }
+  ],
+  "Menehune Fishpond (Alekoko)": [
+    {
+      "id": "9lOgKCRTYLI",
+      "title": "Mysterious Menehune Fishpond",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-01-05"
+    }
+  ],
+  "Menehune Ditch (Kīkīaola)": [
+    {
+      "id": "i7MelPWI5Ms",
+      "title": "Mysterious Megalithic Menehune Ditch",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-01-12"
+    }
+  ],
+  "Wailua River Heiaus (Kauai)": [
+    {
+      "id": "0v6lAJf_Qe8",
+      "title": "Heiaus of Hawaii : Wonders of Wailua",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-02-02"
+    }
+  ],
+  "Latte Stones of Guam": [
+    {
+      "id": "HWqycLvzXTU",
+      "title": "Megalithic Latte Stones of Guam",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-02-23"
+    }
+  ],
+  "Latte Stones of Tinian": [
+    {
+      "id": "raeuYv9mP0w",
+      "title": "Latte Stones in Tiny Tinian",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-03-02"
+    }
+  ],
+  "Rota Quarry (As Nieves)": [
+    {
+      "id": "vzsfqVKlYz4",
+      "title": "Can you solve the mystery at Rota Quarry?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-03-09"
+    }
+  ],
+  "Yap Rai Stones": [
+    {
+      "id": "WpLN2WB6Pyw",
+      "title": "Yap Island 1: Money! Money! Money!",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-03-16"
+    },
+    {
+      "id": "fhVtZ_0NM9U",
+      "title": "Yap Island 2: Rai Stone + Fei Stone = Limestone",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-03-23"
+    }
+  ],
+  "Palau Megalithic Site": [
+    {
+      "id": "Ieg9F3YQljQ",
+      "title": "Palau Island 1 : Island of Monolithic Mysteries",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-03-30"
+    },
+    {
+      "id": "oSSpTjmHNMg",
+      "title": "Palau Island 2 : Rai Stone & Earthwork Terraces",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-04-06"
+    }
+  ],
+  "Kosrae Leluh Island": [
+    {
+      "id": "p6bjaujVnqE",
+      "title": "Kosrae Island : Megaliths of Leluh Island",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-04-27"
+    }
+  ],
+  "Marquesas Islands": [
+    {
+      "id": "MXmPInmNZNU",
+      "title": "Mysterious and Marvelous Marquesas",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2025-05-04"
     }
   ]
 }

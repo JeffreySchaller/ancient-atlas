@@ -2902,8 +2902,8 @@
   },
   {
     "n": "Ersele Underground City",
-    "lat": 38.6,
-    "lng": 34.7,
+    "lat": 38.728,
+    "lng": 34.21,
     "cat": "underground",
     "region": "Türkiye",
     "tier": 3,
@@ -2912,7 +2912,7 @@
       "scale",
       "geometry"
     ],
-    "desc": "Underground complex in the Cappadocia region with multiple chambers and connecting tunnels carved into volcanic tuff. Part of the broader Nevşehir-Kayseri underground network. Limited formal investigation."
+    "desc": "Massive underground complex near Ozancık village in Ortaköy district, Aksaray Province, also referred to locally as Ozancık Underground City. The complex spans approximately 2.5 km² with seven separate entrances and is documented as five levels deep. Includes 22 preservation pits, water channels, wells, and dedicated rooms for cheese and wine production. Significantly larger than most published references suggest and remains under-investigated relative to its scale. A Bronze Age mound (Ozancık Höyük, ~100 m diameter) sits adjacent on the surface above. Conventional reading : Byzantine-era defensive refuge consistent with the broader Cappadocian underground-city tradition. Independent reading : the tool-mark patterns, the chamber design (welcoming entrances inconsistent with a hiding place), and the relationship between the underground complex and the surface mound point to a much older substrate predating the regional defensive-refuge interpretation."
   },
   {
     "n": "Dara Ancient City",
@@ -4530,5 +4530,203 @@
       "geometry"
     ],
     "desc": "Maya city in western Belize. El Castillo pyramid is 40 m tall, with elaborate stucco friezes wrapping the upper levels depicting the Maya cosmos. Active Late Classic period (600-900 CE). Local folklore associates the site with a 'stone maiden' ghost — 'Xunantunich' means 'Stone Maiden' in Yucatec Maya."
+  },
+  {
+    "n": "Necker Island Megalithic Site",
+    "lat": 23.575,
+    "lng": -164.7,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Small remote island in the Northwest Hawaiian Islands, 250 km from Kauai, with 33 documented stone shrines (heiau) on its ridge — far more per square kilometer than anywhere in the main Hawaiian chain. The island has no fresh water and minimal soil; the question of who built and used these structures, and why, remains an open archaeological puzzle. Some readings invoke a pre-Polynesian (Menehune or other) substrate, with later Polynesian use built atop."
+  },
+  {
+    "n": "Menehune Fishpond (Alekoko)",
+    "lat": 21.9569,
+    "lng": -159.3786,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "Massive ancient fishpond near Lihue on Kauai, with a 270-meter-long curved stone wall enclosing 200,000 m² of water. Local tradition holds that the wall was built in a single night by the Menehune — a legendary race of small, skilled stone-workers said to predate the Polynesian Hawaiians. Construction date and method remain unresolved."
+  },
+  {
+    "n": "Menehune Ditch (Kīkīaola)",
+    "lat": 21.9678,
+    "lng": -159.6889,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "precision",
+      "geometry"
+    ],
+    "desc": "Ancient stone-lined irrigation channel on Kauai with precisely fitted, cut-and-dressed basalt blocks resembling polygonal masonry traditions in Peru and Türkiye. The visible section is about 60 meters long. Local tradition again attributes the work to the Menehune. The precision of the stone-fitting is unique within Polynesian construction, which typically uses uncut stones. Mainstream archaeology dates the work to pre-contact Hawaii; independent investigators question the chronology and the cultural attribution."
+  },
+  {
+    "n": "Wailua River Heiaus (Kauai)",
+    "lat": 22.0481,
+    "lng": -159.3372,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Cluster of seven major heiaus (sacred stone temples) along the Wailua River on Kauai, traditionally the seat of Kauai royalty. Includes Hikinaakala (sunrise temple), Holoholoku, Malae, and Poliahu. Several show astronomical alignments to solstices and equinoxes."
+  },
+  {
+    "n": "Healing Stones of Kapaemahu (Oahu)",
+    "lat": 21.2828,
+    "lng": -157.8292,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 3,
+    "signal": "convergent",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Four massive boulders on Waikiki Beach, Oahu, traditionally said to embody the mana (spiritual power) of four mahu (third-gender) healers from Tahiti who arrived in Hawaii in the 15th-16th century. The stones weigh several tons each and were moved to their current location by ritual."
+  },
+  {
+    "n": "Hawaiian Heiaus",
+    "lat": 19.5,
+    "lng": -155.5,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Stone temple platforms (heiau) found across all the Hawaiian Islands. Used for religious ceremonies, agricultural rites, navigation training, and royal lineage rituals. Multi-level stepped platforms with precisely fitted stones, often oriented to astronomical events. Dating ranges from early Polynesian settlement (~400-800 CE) through the kapu period."
+  },
+  {
+    "n": "Latte Stones of Guam",
+    "lat": 13.3833,
+    "lng": 144.7,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "Distinctive pillar-and-capstone stone supports (latte) erected across the Mariana Islands by the ancient Chamorro people. Each latte is a coral or limestone column topped with a hemispherical capstone (tasa). Functioned as foundations for elevated wooden houses. The House of Taga on Tinian and the Latte Stone Park in Hagåtña on Guam preserve the most monumental examples (up to 5 m tall). Date range: ~800-1700 CE."
+  },
+  {
+    "n": "Latte Stones of Tinian",
+    "lat": 14.9569,
+    "lng": 145.6333,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "House of Taga site on Tinian preserves the largest standing latte stones in the Mariana Islands — pillars up to 5 m tall, paired with hemispherical capstones weighing several tons each. Quarried from coral limestone at Rota and transported to Tinian over open ocean. Construction techniques remain partially debated."
+  },
+  {
+    "n": "Rota Quarry (As Nieves)",
+    "lat": 14.1311,
+    "lng": 145.1742,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "Ancient quarry on Rota (Northern Mariana Islands) where the largest unfinished latte stones in the world remain in situ. The largest abandoned pillar would have stood 6.4 m tall and weighed 30+ tons. The quarrying technique and the reason for the abandonment of these stones remain open questions."
+  },
+  {
+    "n": "Yap Rai Stones",
+    "lat": 9.5167,
+    "lng": 138.1167,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "precision"
+    ],
+    "desc": "Massive limestone discs (rai) used as currency on Yap Island, Federated States of Micronesia. The largest disc is 3.6 m in diameter and weighs 4 tons. Quarried not on Yap but on Palau, 400 km away, and transported by canoe across open ocean. Each stone retains its monetary identity even when transferred or lost — including a stone that fell into the sea but is still owned and traded."
+  },
+  {
+    "n": "Palau Megalithic Site",
+    "lat": 7.475,
+    "lng": 134.5717,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Cluster of monolithic stones and earthwork terraces in the Republic of Palau, particularly the Badrulchau Stone Monoliths in northern Babeldaob — 37 standing basalt columns arranged in two rows, with some showing carved faces. Local tradition attributes them to gods. Construction date and purpose unconfirmed."
+  },
+  {
+    "n": "Kosrae Leluh Island",
+    "lat": 5.3033,
+    "lng": 162.9881,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 1,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "polygonal",
+      "geometry"
+    ],
+    "desc": "Ancient walled city on Leluh Island just off Kosrae, Federated States of Micronesia. Massive basalt walls (some over 8 m tall) enclose tomb compounds and royal residences. Construction style closely parallels Nan Madol (300 km away on Pohnpei) — both use natural basalt prisms laid in alternating directions. Active ~1250-1850 CE."
+  },
+  {
+    "n": "Marquesas Islands",
+    "lat": -9.0,
+    "lng": -139.5,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 1,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "French Polynesian archipelago with extensive megalithic stone platforms (paepae and tohua), tiki statues, and ceremonial complexes (me'ae). Includes the largest tiki statues in Polynesia (some over 2.5 m tall) and elaborate stone-paved plazas. Marquesan navigators are believed to have founded Hawaii and influenced early Easter Island culture."
+  },
+  {
+    "n": "Ozancık Höyük",
+    "lat": 38.728,
+    "lng": 34.21,
+    "cat": "tomb",
+    "region": "Türkiye",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Bronze Age earthen mound approximately 100 m in diameter located adjacent to the Ersele Underground City complex near Ozancık village, Ortaköy district, Aksaray Province. First identified by British archaeologist David French. The mound was first mentioned in an 11th-century Turkish-Arabic dictionary. The name 'höyük' derives from old Turkish root meaning 'to rise.' Function and exact construction date unconfirmed; widely classified as Bronze Age construction but no formal excavation has been carried out. Sits in the same landscape as the 2.5 km² underground city below — the relationship between the mound above and the labyrinth below remains an unresolved archaeological question."
   }
 ]
