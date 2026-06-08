@@ -533,6 +533,13 @@
       "id": "afW078fN5lQ",
       "title": "Hidden Chambers Underneath Petra",
       "cr": "funnyoldeworld"
+    },
+    {
+      "id": "vVd-NOzPhC8",
+      "title": "Little Petra : Strange Tool Marks in Stone | Brien Foerster",
+      "cr": "brienfoerster",
+      "added": "2026-06-07",
+      "published": "2025-09-01"
     }
   ],
   "Machu Picchu": [
@@ -4360,15 +4367,6 @@
       "published": "2026-01-15"
     }
   ],
-  "Hegra (Madain Saleh)": [
-    {
-      "id": "V_O9fRvd1OY",
-      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
-      "cr": "bassforge",
-      "added": "2026-06-07",
-      "published": "2026-01-15"
-    }
-  ],
   "Yakushima Megaliths": [
     {
       "id": "V_O9fRvd1OY",
@@ -4421,6 +4419,109 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2025-10-19"
+    }
+  ],
+  "Madain Saleh (Hegra)": [
+    {
+      "id": "V_O9fRvd1OY",
+      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
+      "cr": "bassforge",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
+    },
+    {
+      "id": "uB98YAE1kCM",
+      "title": "Saudi Arabia's Lost Megastructures From a Civilization We Can't Explain | Epoch Mysteries",
+      "cr": "epochmysteries",
+      "added": "2026-06-07",
+      "published": "2025-12-11",
+      "t": 535
+    },
+    {
+      "id": "m-B0cO-mM5s",
+      "title": "The mysterious 'other Petra' of Saudi Arabia | BBC REEL",
+      "cr": "bbcreel",
+      "added": "2026-06-07",
+      "published": "2024-08-15"
+    }
+  ],
+  "AlUla (Dadan & Lihyanite Capitals)": [
+    {
+      "id": "uB98YAE1kCM",
+      "title": "Saudi Arabia's Lost Megastructures From a Civilization We Can't Explain | Epoch Mysteries",
+      "cr": "epochmysteries",
+      "added": "2026-06-07",
+      "published": "2025-12-11",
+      "t": 75
+    }
+  ],
+  "Elephant Rock (Jabal AlFil)": [
+    {
+      "id": "uB98YAE1kCM",
+      "title": "Saudi Arabia's Lost Megastructures From a Civilization We Can't Explain | Epoch Mysteries",
+      "cr": "epochmysteries",
+      "added": "2026-06-07",
+      "published": "2025-12-11",
+      "t": 924
+    }
+  ],
+  "Tayma Oasis": [
+    {
+      "id": "uB98YAE1kCM",
+      "title": "Saudi Arabia's Lost Megastructures From a Civilization We Can't Explain | Epoch Mysteries",
+      "cr": "epochmysteries",
+      "added": "2026-06-07",
+      "published": "2025-12-11",
+      "t": 1368
+    }
+  ],
+  "Harat Khaybar": [
+    {
+      "id": "uB98YAE1kCM",
+      "title": "Saudi Arabia's Lost Megastructures From a Civilization We Can't Explain | Epoch Mysteries",
+      "cr": "epochmysteries",
+      "added": "2026-06-07",
+      "published": "2025-12-11",
+      "t": 1872
+    }
+  ],
+  "Dumat al-Jandal": [
+    {
+      "id": "uB98YAE1kCM",
+      "title": "Saudi Arabia's Lost Megastructures From a Civilization We Can't Explain | Epoch Mysteries",
+      "cr": "epochmysteries",
+      "added": "2026-06-07",
+      "published": "2025-12-11",
+      "t": 2314
+    }
+  ],
+  "Qaryat al-Faw": [
+    {
+      "id": "uB98YAE1kCM",
+      "title": "Saudi Arabia's Lost Megastructures From a Civilization We Can't Explain | Epoch Mysteries",
+      "cr": "epochmysteries",
+      "added": "2026-06-07",
+      "published": "2025-12-11",
+      "t": 2709
+    }
+  ],
+  "Jubbah Rock Art (Jabal Umm Sinman)": [
+    {
+      "id": "uB98YAE1kCM",
+      "title": "Saudi Arabia's Lost Megastructures From a Civilization We Can't Explain | Epoch Mysteries",
+      "cr": "epochmysteries",
+      "added": "2026-06-07",
+      "published": "2025-12-11",
+      "t": 3134
+    }
+  ],
+  "Little Petra (Siq al-Barid)": [
+    {
+      "id": "vVd-NOzPhC8",
+      "title": "Little Petra : Strange Tool Marks in Stone | Brien Foerster",
+      "cr": "brienfoerster",
+      "added": "2026-06-07",
+      "published": "2025-09-01"
     }
   ]
 }

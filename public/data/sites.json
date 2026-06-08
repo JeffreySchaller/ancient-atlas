@@ -1306,7 +1306,17 @@
     "cat": "rock-cut",
     "region": "Middle East",
     "tier": 1,
-    "desc": "Nabataean city in Saudi Arabia, sister site to Petra. 131 monumental rock-cut tombs with inscriptions dating from the 1st century. Saudi Arabia's first UNESCO World Heritage Site."
+    "desc": "Second-largest city of the Nabataean Empire (after Petra), in AlUla, Saudi Arabia. 131 monumental tombs carved directly into sandstone mountains, c. 1st century BCE - 1st century CE. The tombs are carved top-down from the mountain face — unfinished examples reveal the work sequence clearly. Greco-Roman stylistic elements appear deep in Arabian territory. Interior chambers are remarkably plain despite the elaborate exterior facades, a puzzle that conventional and independent readings interpret differently. Critical anchor for Library Entry 04 (the Top-Down Tradition).",
+    "criteria": [
+      "precision",
+      "scale",
+      "geometry"
+    ],
+    "signal": "convergent",
+    "library_ref": {
+      "url": "/library/true-monoliths.html",
+      "title": "True Monoliths"
+    }
   },
   {
     "n": "Jiroft",
@@ -5397,25 +5407,6 @@
     }
   },
   {
-    "n": "Hegra (Madain Saleh)",
-    "lat": 26.79,
-    "lng": 37.9533,
-    "cat": "rockcut",
-    "region": "Middle East",
-    "tier": 1,
-    "signal": "convergent",
-    "criteria": [
-      "precision",
-      "scale",
-      "geometry"
-    ],
-    "desc": "Second-largest city of the Nabataean Empire (after Petra), in AlUla, Saudi Arabia. 131 monumental tombs carved directly into sandstone mountains, c. 1st century BCE - 1st century CE. The tombs are carved top-down from the mountain face — unfinished examples reveal the work sequence clearly. Greco-Roman stylistic elements appear deep in Arabian territory. Interior chambers are remarkably plain despite the elaborate exterior facades, a puzzle that conventional and independent readings interpret differently. Critical anchor for Library Entry 04 (the Top-Down Tradition).",
-    "library_ref": {
-      "url": "/library/true-monoliths.html",
-      "title": "True Monoliths"
-    }
-  },
-  {
     "n": "Yakushima Megaliths",
     "lat": 30.35,
     "lng": 130.5,
@@ -5510,5 +5501,124 @@
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
     }
+  },
+  {
+    "n": "AlUla (Dadan & Lihyanite Capitals)",
+    "lat": 26.628,
+    "lng": 37.9244,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "scale",
+      "stratigraphy"
+    ],
+    "desc": "Pre-Nabataean kingdom capital in the AlUla valley, northwestern Saudi Arabia, occupied by the Dadanite and later Lihyanite kingdoms from approximately the 8th century BCE through the 1st century BCE. Predates Madain Saleh (Hegra) by several centuries. Features rock-cut tomb facades carved high into the sandstone cliffs of Jabal al-Khuraibah, Lihyanite-period inscriptions in Dadanitic script, the Lion Tombs, and the monumental lion guardian statues at Jabal Ikmah's open-air library. Excavations have revealed earlier Bronze Age enclosures and well systems indicating continuous occupation across multiple millennia, with subsurface foundations that don't align with later street grids — suggesting cycles of reoccupation that left incomplete stratigraphic signatures."
+  },
+  {
+    "n": "Elephant Rock (Jabal AlFil)",
+    "lat": 26.6878,
+    "lng": 38.0297,
+    "cat": "monolithic",
+    "region": "Middle East",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Isolated sandstone formation in the AlUla region, named for its natural elephant-shaped silhouette. The broad arch and rounded contours were shaped by wind-driven abrasion and thermal expansion cycles over deep geological time. While the formation itself is natural, faint petroglyphs and weathered inscriptions at the base indicate that the rock served as a way-marker or gathering point along ancient caravan routes. Stylistic affinities to distant regions (northern Arabia, Jubbah-basin geometric patterns) suggest repeated visits across long intervals."
+  },
+  {
+    "n": "Tayma Oasis",
+    "lat": 27.6322,
+    "lng": 38.5436,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "stratigraphy"
+    ],
+    "desc": "Major Bronze Age and Iron Age oasis settlement in northwestern Arabia, anchored by deep wells tapping ancient aquifers. Famous as the second residence of the Neo-Babylonian king Nabonidus, who spent approximately a decade here (c. 552-543 BCE). The monumental Tayma Stone bears Aramaic inscription. The massive city wall stretches in tiered courses with foundations resting on earlier fortifications. Stratified deposits show transitions in food production, storage, and ceramic styles spanning multiple millennia. Some construction phases coincide with drier intervals — suggesting adaptive labor redistribution rather than environmental determinism. Subsurface anomalies reveal foundations that don't align with later street grids."
+  },
+  {
+    "n": "Harat Khaybar",
+    "lat": 25.68,
+    "lng": 39.75,
+    "cat": "geoglyph",
+    "region": "Middle East",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Vast basalt lava field southeast of Khaybar in northwestern Saudi Arabia, containing thousands of mostly-undated stone structures: keyhole-shaped monuments, circular cairns, low-walled alignments, and the long converging guide-walls of so-called desert kites used for coordinated hunting. The keyhole monuments comprise a circular mound linked to a tapering tail — their function unresolved, with some containing burials and others empty. The structures follow topography, seasonal water courses, and vantage points across the lava field. Radiocarbon ranges overlap broadly, resisting a clean chronology. Visible from satellite as one of the densest concentrations of ancient stone work on Earth."
+  },
+  {
+    "n": "Dumat al-Jandal",
+    "lat": 29.8128,
+    "lng": 39.873,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "stratigraphy"
+    ],
+    "desc": "Frontier oasis town in northern Saudi Arabia near the Jordan border. Visible monuments include Qasr Marid, the stepped limestone fortress, and the Mosque of Omar, among the earliest known mosques in Arabia. Beneath the visible architecture lie Iron Age and earlier occupation layers whose foundations do not align with the later urban grid, creating subtle discontinuities. Multiple building campaigns are visible in the fortress's irregular limestone courses. Some construction expansions appear to coincide with drier intervals — community resilience through deeper wells and labor redistribution rather than environmental determinism. Sits at a crossroads connecting Mesopotamia, the Levant, and inner Arabia."
+  },
+  {
+    "n": "Qaryat al-Faw",
+    "lat": 19.7333,
+    "lng": 45.15,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision",
+      "stratigraphy"
+    ],
+    "desc": "Pre-Islamic capital of the Kingdom of Kinda, deep in the Rub' al-Khali threshold of southern Saudi Arabia. Flourished c. 4th century BCE through 4th century CE as a major caravan-route city linking south Arabia with central and northern regions. Features broad avenues, multi-room courtyard houses, market areas, a substantial temple complex with plastered floors, an expansive necropolis, and inscriptions in the ancient South Arabian script. Earlier alignments beneath later buildings don't always correspond with the final street grid, suggesting gradual shifts in planning. Mixed influences from South Arabian, Nabataean, and local traditions produce architectural hybrids that resist precise classification."
+  },
+  {
+    "n": "Jubbah Rock Art (Jabal Umm Sinman)",
+    "lat": 28.025,
+    "lng": 40.9333,
+    "cat": "geoglyph",
+    "region": "Middle East",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "stratigraphy"
+    ],
+    "desc": "UNESCO World Heritage rock-art complex on Jabal Umm Sinman in the Nefud Desert, northern Saudi Arabia, where ancient lakes once mirrored a greener Arabia. The carvings span tens of millennia, with the oldest panels depicting large bovids, hippos, and elongated human forms consistent with Pleistocene or early Holocene conditions when the basin supported wildlife now rarely associated with the region. Later layers introduce camels, equids, standardized human silhouettes, and inscriptions in early North Arabian scripts. Stylistic transitions are not uniform — some panels show abrupt adoption of new motifs while others preserve older styles long after environmental conditions changed."
+  },
+  {
+    "n": "Little Petra (Siq al-Barid)",
+    "lat": 30.3727,
+    "lng": 35.4506,
+    "cat": "rockcut",
+    "region": "Middle East",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "machining",
+      "precision",
+      "scale"
+    ],
+    "library_ref": {
+      "url": "/library/true-monoliths.html",
+      "title": "True Monoliths"
+    },
+    "desc": "Nabataean rock-cut complex 8 km north of Petra in Jordan. Known as Siq al-Barid (the 'cold canyon') for its narrow defile shaded from the sun. Conventionally dated to the 1st century CE as a caravan suburb of Petra, serving traders on the incense route. Features triclinia (dining halls), cisterns, a unique frescoed biclinium with surviving Hellenistic-style paintings, and a system of stairs and chambers carved directly into the sandstone cliffs. The interior wall surfaces preserve some of the clearest tool-mark evidence in the region : continuous diagonal raking, parallel vertical grooves running floor to ceiling without break, and curved sweeping arcs that do not match the chisel kinematics conventionally assigned to Nabataean stonecutting. Brien Foerster's field walkthrough documents the marks in close detail."
   }
 ]

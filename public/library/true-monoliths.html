@@ -108,6 +108,20 @@ ul.crisp.with-icons .icon svg{width:100%;height:100%;display:block}
 .mark-diagram svg{display:block;margin:0 auto;width:100%;max-width:480px;height:auto}
 .mark-diagram-caption{margin-top:14px;font-family:var(--font-sans);font-size:13.5px;color:var(--mist);line-height:1.55;text-align:left;padding:0 8px}
 
+/* Evidence photo strip — real tool marks in the wild */
+.evidence-strip{margin:48px 0 36px}
+.evidence-strip h6{font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.2em;color:var(--champagne);font-weight:700;margin-bottom:18px;text-align:center;opacity:.85}
+.evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.evidence-item{background:rgba(22,22,29,.5);border:1px solid rgba(42,42,53,.5);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.evidence-item img{width:100%;height:auto;display:block}
+.evidence-item .ev-meta{padding:12px 14px 14px;flex:1;display:flex;flex-direction:column;gap:6px}
+.evidence-item .ev-region{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne);font-weight:700;opacity:.95}
+.evidence-item .ev-caption{font-family:var(--font-sans);font-size:13.5px;line-height:1.5;color:var(--cloud)}
+.evidence-strip .ev-note{margin-top:20px;font-family:var(--font-serif);font-style:italic;color:var(--ivory);font-size:16px;line-height:1.5;text-align:center;padding:0 12px}
+@media (max-width:680px){
+  .evidence-grid{grid-template-columns:1fr}
+}
+
 /* Sources */
 .sources{margin-top:96px;padding-top:32px;border-top:1px solid rgba(201,168,76,.2)}
 .sources h5{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--champagne);font-weight:700;margin-bottom:18px}
@@ -349,6 +363,41 @@ ul.crisp.with-icons .icon svg{width:100%;height:100%;display:block}
       </g>
     </svg>
     <p class="mark-diagram-caption">Schematic. Hand chiseling leaves discrete percussive impacts in short, linear strokes. The marks on the cave walls at Bazda, the trough at Aswan, and dozens of other rock-cut sites are continuous curved arcs that sweep across the face in a single motion. A hand chisel cannot do that, no matter how skilled the hand.</p>
+  </div>
+
+  <div class="evidence-strip">
+    <h6>Field photographs · the same family of marks at four sites</h6>
+    <div class="evidence-grid">
+      <div class="evidence-item">
+        <img src="photos/true-monoliths/02-menkaure-curved-marks.jpg" alt="Curved tool marks on the bedrock at the Funerary Temple of Menkaure, Giza, Egypt — concentric arcs sweeping across the rock face." loading="lazy" />
+        <div class="ev-meta">
+          <div class="ev-region">Africa · Giza, Egypt</div>
+          <div class="ev-caption">Funerary Temple of Menkaure. Concentric curved striations sweep across the surface in continuous arcs. The grooves change direction without breaking. Field photograph by Jeff Schaller, Dec 2025.</div>
+        </div>
+      </div>
+      <div class="evidence-item">
+        <img src="photos/true-monoliths/01-goreme-grid-pattern.jpg" alt="Rock-cut wall at Göreme, Cappadocia, with a precision grid of square chambers cut into the upper face." loading="lazy" />
+        <div class="ev-meta">
+          <div class="ev-region">Asia · Göreme, Türkiye</div>
+          <div class="ev-caption">A grid of cleanly cut square recesses high in a Cappadocian tuff spire. Same chamber-depth, same spacing, all dressed below by the same continuous extraction technique. Field photograph by Jeff Schaller, Dec 2025.</div>
+        </div>
+      </div>
+      <div class="evidence-item">
+        <img src="photos/true-monoliths/03-little-petra-diagonal-rakes.jpg" alt="A hand on a sandstone wall at Little Petra showing diagonal raking tool marks crossing the rock face." loading="lazy" />
+        <div class="ev-meta">
+          <div class="ev-region">Middle East · Little Petra, Jordan</div>
+          <div class="ev-caption">Brien Foerster's hand on the wall at Little Petra (Siq al-Barid). Diagonal rake marks cross the entire face in continuous sweeps — no breaks, no resets. Frame from Foerster's field walkthrough.</div>
+        </div>
+      </div>
+      <div class="evidence-item">
+        <img src="photos/true-monoliths/04-little-petra-parallel-grooves.jpg" alt="A hand pointing at parallel vertical grooves running down a sandstone wall at Little Petra, Jordan." loading="lazy" />
+        <div class="ev-meta">
+          <div class="ev-region">Middle East · Little Petra, Jordan</div>
+          <div class="ev-caption">A second face at Little Petra. Parallel grooves run from ceiling to floor with consistent depth and spacing — kinematically incompatible with seated hand-work. Frame from Foerster's field walkthrough.</div>
+        </div>
+      </div>
+    </div>
+    <p class="ev-note">Three countries. Three rock types. One family of marks. The diagnostic is in the motion, not the geology.</p>
   </div>
 
   <p class="body">The diagnostic does not depend on technology mysticism. It is a kinematic comparison. A motion that produces a continuous curved groove with a mid-stroke direction change is not the same motion that produces a discrete percussive strike. One requires a rotary or oscillating tool with a sweep arc. The other is a hammer and a wedge.</p>

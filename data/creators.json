@@ -279,5 +279,19 @@
     "subs": "Global ancient-anomaly synthesis channel; rapid-fire tours connecting megalithic + rock-cut + cyclopean sites across continents with technical lens (engineering, geometry, signal processing analogies)",
     "color": "#5C2A9D",
     "tier": 2
+  },
+  "epochmysteries": {
+    "name": "Epoch Mysteries",
+    "handle": "@EpochMysteries",
+    "subs": "Cinematic deep-dives into ancient sites, lost civilizations, and unresolved archaeological questions across the world",
+    "color": "#7C4D2A",
+    "tier": 3
+  },
+  "bbcreel": {
+    "name": "BBC REEL",
+    "handle": "@BBCReel",
+    "subs": "BBC's documentary short-form channel covering culture, history, science, and travel with field cinematography",
+    "color": "#BB1919",
+    "tier": 2
   }
 }

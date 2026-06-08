@@ -388,7 +388,14 @@
     "Sage Wall (Montana)"
   ],
   "Saudi Arabia": [
-    "Hegra (Madain Saleh)"
+    "Madain Saleh (Hegra)",
+    "AlUla (Dadan & Lihyanite Capitals)",
+    "Elephant Rock (Jabal AlFil)",
+    "Tayma Oasis",
+    "Harat Khaybar",
+    "Dumat al-Jandal",
+    "Qaryat al-Faw",
+    "Jubbah Rock Art (Jabal Umm Sinman)"
   ],
   "France": [
     "Carnac Stones (Brittany)"
@@ -398,5 +405,8 @@
   ],
   "Nigeria": [
     "Ikom Monoliths"
+  ],
+  "Jordan": [
+    "Little Petra (Siq al-Barid)"
   ]
 }
