@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>True monoliths — The Ancient Atlas Library</title>
+<meta name="description" content="Cities carved from mountains, and the chisel marks that don't act like chisels. Extractive monolithic architecture and the tool-mark thesis." />
+<meta name="theme-color" content="#0D0D12" />
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="The Ancient Atlas" />
+<meta property="og:title" content="True monoliths : cities carved from mountains" />
+<meta property="og:description" content="The cleanest examples of ancient architecture are not assembled at all. They are carved out of the bedrock that holds them. And they share a tool-mark signature across four continents." />
+<meta property="og:url" content="https://theancientatlas.com/library/true-monoliths.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --obsidian:#0D0D12;--charcoal:#16161D;--slate:#1E1E28;--stone:#2A2A35;
+  --mist:#8A8A9A;--cloud:#C5C5D0;--ivory:#F0EEE9;--champagne:#C9A84C;
+  --amber:#E8B960;--champagne-glow:rgba(201,168,76,.15);
+  --font-sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --font-serif:'Fraunces',Georgia,serif;
+  --font-mono:'JetBrains Mono',ui-monospace,monospace;
+}
+html,body{font-family:var(--font-sans);background:var(--obsidian);color:var(--ivory);-webkit-font-smoothing:antialiased;min-height:100%}
+body::before{content:'';position:fixed;inset:0;opacity:.03;pointer-events:none;z-index:9999;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+::selection{background:var(--champagne);color:var(--obsidian)}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--stone);border-radius:4px}
+
+/* ===== Header ===== */
+header{position:sticky;top:0;z-index:100;background:linear-gradient(180deg,rgba(13,13,18,.98),rgba(13,13,18,.9));backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(42,42,53,.4);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit}
+.logo-box{width:42px;height:42px;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 2px 8px rgba(201,168,76,.18))}
+.logo-box svg{width:100%;height:100%}
+.brand h1{font-family:var(--font-serif);font-size:26px;font-weight:600;line-height:1;letter-spacing:-.015em;font-variation-settings:"opsz" 36;color:var(--ivory)}
+.brand p{font-family:var(--font-serif);font-style:italic;font-size:13px;color:var(--cloud);margin-top:3px;opacity:.82}
+nav.toplinks{display:flex;gap:24px;font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600}
+nav.toplinks a{color:var(--cloud);text-decoration:none;transition:color .15s}
+nav.toplinks a:hover{color:var(--champagne)}
+nav.toplinks a.active{color:var(--champagne)}
+.back-btn{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--cloud);text-decoration:none;padding:8px 14px;border:1px solid rgba(201,168,76,.3);border-radius:8px;font-weight:600;transition:all .15s;background:rgba(201,168,76,.04)}
+.back-btn:hover{color:var(--champagne);border-color:rgba(201,168,76,.55);background:rgba(201,168,76,.1)}
+
+/* ===== Article ===== */
+article{max-width:780px;margin:0 auto;padding:64px 24px 96px}
+
+.entry-eyebrow{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.22em;color:var(--champagne);font-weight:700;text-align:center;margin-bottom:24px}
+
+h2.article-title{font-family:var(--font-serif);font-size:46px;font-weight:600;line-height:1.1;letter-spacing:-.02em;color:var(--ivory);text-align:center;font-variation-settings:"opsz" 72;margin-bottom:14px}
+
+.article-subtitle{font-family:var(--font-serif);font-style:italic;font-size:19px;color:var(--cloud);text-align:center;line-height:1.4;font-variation-settings:"opsz" 28;margin-bottom:48px}
+
+.article-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.4),transparent);margin:0 auto 48px;max-width:200px}
+
+p.lede{font-family:var(--font-sans);font-size:18.5px;line-height:1.65;color:var(--ivory);margin-bottom:26px;font-weight:400}
+p.lede em{color:var(--champagne);font-style:italic;font-weight:500}
+
+.body{font-family:var(--font-sans);font-size:17px;line-height:1.7;color:var(--cloud);margin-bottom:24px}
+.body em{color:var(--ivory);font-style:italic}
+.body a{color:var(--champagne);text-decoration:none;border-bottom:1px solid rgba(201,168,76,.35);transition:color .15s,border-color .15s}
+.body a:hover{color:var(--amber);border-bottom-color:rgba(232,185,96,.7)}
+
+.callout{font-family:var(--font-serif);font-style:italic;font-size:21px;line-height:1.45;color:var(--ivory);text-align:center;padding:32px 24px;border-top:1px solid rgba(201,168,76,.18);border-bottom:1px solid rgba(201,168,76,.18);margin:48px 0;letter-spacing:-.005em}
+
+/* Section headers */
+.section-eyebrow{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--champagne);font-weight:600;margin-top:64px;margin-bottom:14px}
+
+h3.section-title{font-family:var(--font-serif);font-size:30px;font-weight:600;line-height:1.2;letter-spacing:-.015em;color:var(--ivory);margin-bottom:28px;font-variation-settings:"opsz" 48}
+
+h4.subsection-title{font-family:var(--font-serif);font-size:22px;font-weight:600;color:var(--ivory);line-height:1.25;letter-spacing:-.01em;margin-top:48px;margin-bottom:8px;font-variation-settings:"opsz" 36}
+h4.subsection-title em{color:var(--champagne);font-style:italic;font-weight:600}
+
+.region-label{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:var(--champagne);font-weight:700;margin-bottom:10px}
+
+/* Site description card */
+.site-card{margin:0 0 32px;padding:20px 22px;background:rgba(30,30,40,.4);border:1px solid rgba(42,42,53,.5);border-left:3px solid rgba(201,168,76,.6);border-radius:6px}
+.site-card .body{margin:0;font-size:16px}
+.site-card .body + .body{margin-top:14px}
+
+/* List of "what to look for" */
+ul.crisp{list-style:none;margin:24px 0;padding:0}
+ul.crisp li{position:relative;padding:10px 0 10px 28px;font-size:16px;line-height:1.55;color:var(--cloud);border-bottom:1px solid rgba(42,42,53,.4)}
+ul.crisp li:last-child{border-bottom:none}
+ul.crisp li::before{content:'·';position:absolute;left:8px;top:8px;color:var(--champagne);font-weight:700;font-size:24px;line-height:1.2}
+ul.crisp li strong{color:var(--ivory);font-weight:600}
+
+/* Icon variant — matches Entry 01's engineering-signature pattern */
+ul.crisp.with-icons li{display:flex;gap:18px;align-items:flex-start;padding:14px 0 14px 4px}
+ul.crisp.with-icons li::before{content:none}
+ul.crisp.with-icons .icon{flex-shrink:0;width:22px;height:22px;color:var(--champagne);margin-top:2px;opacity:.92}
+ul.crisp.with-icons .icon svg{width:100%;height:100%;display:block}
+
+/* Compact contrast table */
+.contrast{margin:24px 0 32px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(42,42,53,.5);border:1px solid rgba(42,42,53,.6);border-radius:6px;overflow:hidden}
+.contrast > div{padding:18px 20px;background:var(--charcoal)}
+.contrast h6{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:var(--champagne);font-weight:700;margin-bottom:10px}
+.contrast p{font-size:15px;line-height:1.6;color:var(--cloud);margin:0}
+.contrast p + p{margin-top:8px}
+
+/* Inline machine-mark SVG diagram */
+.mark-diagram{margin:36px auto;max-width:560px;padding:24px 16px;background:rgba(22,22,29,.6);border:1px solid rgba(42,42,53,.5);border-radius:8px;text-align:center}
+.mark-diagram svg{display:block;margin:0 auto;width:100%;max-width:480px;height:auto}
+.mark-diagram-caption{margin-top:14px;font-family:var(--font-sans);font-size:13.5px;color:var(--mist);line-height:1.55;text-align:left;padding:0 8px}
+
+/* Sources */
+.sources{margin-top:96px;padding-top:32px;border-top:1px solid rgba(201,168,76,.2)}
+.sources h5{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--champagne);font-weight:700;margin-bottom:18px}
+.sources ol{list-style:none;padding:0;counter-reset:src}
+.sources li{counter-increment:src;padding:12px 0 12px 36px;position:relative;font-size:14.5px;line-height:1.55;color:var(--cloud);border-bottom:1px solid rgba(42,42,53,.3)}
+.sources li:last-child{border-bottom:none}
+.sources li::before{content:counter(src,decimal-leading-zero);position:absolute;left:0;top:14px;font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;color:var(--champagne);font-weight:600}
+.sources a{color:var(--champagne);text-decoration:none;border-bottom:1px solid rgba(201,168,76,.4);transition:color .15s}
+.sources a:hover{color:var(--amber)}
+
+/* Tail */
+.tail{margin-top:64px;text-align:center;font-family:var(--font-serif);font-style:italic;color:var(--mist);font-size:14px;letter-spacing:.01em}
+
+/* Mobile */
+@media (max-width:680px){
+  header{padding:12px 16px;gap:10px}
+  .brand h1{font-size:20px}.brand p{display:none}
+  nav.toplinks{gap:14px;font-size:10px;letter-spacing:.12em}
+  .back-btn{padding:6px 10px;font-size:10px}
+  article{padding:40px 20px 64px}
+  h2.article-title{font-size:32px}
+  .article-subtitle{font-size:16px;margin-bottom:36px}
+  h3.section-title{font-size:24px}
+  h4.subsection-title{font-size:19px}
+  p.lede{font-size:16.5px}
+  .body{font-size:16px}
+  .callout{font-size:18px;padding:24px 16px;margin:36px 0}
+  .contrast{grid-template-columns:1fr}
+  .mark-diagram{padding:18px 12px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="/">
+    <div class="logo-box">
+      <svg viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="22" cy="22" r="20" fill="none" stroke="#C9A84C" stroke-width="1.5" opacity="0.4"/>
+        <circle cx="22" cy="22" r="14" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.6"/>
+        <path d="M22 6 L24 22 L22 38 L20 22 Z" fill="#C9A84C" opacity="0.9"/>
+        <path d="M6 22 L22 20 L38 22 L22 24 Z" fill="#C9A84C" opacity="0.7"/>
+        <circle cx="22" cy="22" r="2" fill="#0D0D12"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Ancient Atlas</h1>
+      <p>A map of the deep past</p>
+    </div>
+  </a>
+  <nav class="toplinks" aria-label="Primary">
+    <a href="/">Atlas</a>
+    <a href="/library/" class="active">Library</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <a class="back-btn" href="/library/">← Library</a>
+</header>
+
+<article>
+
+  <div class="entry-eyebrow">Library · Entry 04</div>
+
+  <h2 class="article-title">True monoliths.</h2>
+
+  <p class="article-subtitle">Cities carved from mountains, and the chisel marks that don't act like chisels.</p>
+
+  <div class="article-divider"></div>
+
+  <p class="lede">Most of what humans build is assembly. Bricks, blocks, beams, panels, gathered and fit together. Even the Great Pyramid stacks 2.3 million stones.</p>
+
+  <p class="lede">A different tradition does the opposite. It removes everything that is not the building.</p>
+
+  <p class="body">Lalibela's eleven churches were carved from below ground level, each one a single piece of Ethiopian bedrock with chapels, columns, drainage, and crosses already inside the stone when extraction began. Kailasa Temple removed an estimated 200,000 tonnes of rock from the top down to leave one temple standing. Petra's Treasury and the 131 monumental tombs at Hegra are facades cut directly into sandstone cliffs, with internal chambers hollowed behind them. None of these structures has a seam. None has joinery. None was assembled.</p>
+
+  <p class="callout">The building is the bedrock.</p>
+
+  <!-- ====================================================== -->
+  <div class="section-eyebrow">§ 01 · The shift in lens</div>
+  <h3 class="section-title">What a true monolith actually is.</h3>
+
+  <p class="body">Popular usage treats a monolith as any single large stone. An obelisk. A standing stone. A menhir. The architectural sense is more specific. A true monolith is a structure cut from a single continuous piece of bedrock, with no seams, no joinery, and no internal masonry. The structure and the rock around it were one body before extraction began. After extraction, what is left is the structure.</p>
+
+  <p class="body">The distinction matters because the engineering question is completely different. An assembled wall solves the problem of gathering and fitting parts. A monolithic temple solves the problem of subtractive planning : the builder must know the final form before the first cut, because every cut commits. Negative space, once removed, cannot be put back.</p>
+
+  <h4 class="subsection-title">Bet Giyorgis · Lalibela</h4>
+  <div class="region-label">Africa · Ethiopia</div>
+  <div class="site-card">
+    <p class="body">A cross-shaped church carved straight down into red volcanic tuff. The roof of the church sits at the level of the surrounding plateau. The structure descends 12 metres into the rock, with chapels, columns, and arched windows carved out of the negative space around it. Engineering historians and Ethiopian Orthodox tradition both describe the eleven Lalibela churches as carved from above, beginning at the surface and working downward. The drainage channels were part of the original plan, cut into the bedrock before the chapel floors were finished.</p>
+  </div>
+
+  <h4 class="subsection-title">Kailasa Temple · Ellora</h4>
+  <div class="region-label">Asia · India</div>
+  <div class="site-card">
+    <p class="body">The single largest known monolithic structure on Earth. Carved from the top down out of a basalt cliff at Ellora, with an estimated 200,000 tonnes of rock removed to leave the central temple, multiple shrines, courtyards, columns, sculptures, and ornamental friezes. Conventional dating places construction in the 8th century CE under the Rashtrakuta dynasty. Independent investigators ask how a continuous top-down extraction at this scale could have been managed within an 18-year window with the assumed toolkit. The temple is finished. There is no margin for mid-course correction.</p>
+  </div>
+
+  <h4 class="subsection-title">Hegra · AlUla</h4>
+  <div class="region-label">Middle East · Saudi Arabia</div>
+  <div class="site-card">
+    <p class="body">131 monumental tomb facades cut directly into the sandstone mountains of AlUla, Saudi Arabia. Most are conventionally dated to the Nabataean period, 1st century BCE through 1st century CE. The unfinished tombs are the most informative: a number show only their upper sections completed, with the lower portions still buried in the cliff face. The work sequence is preserved. The Nabataeans started at the top, with the finished decorative facade already cut, and worked downward through solid rock.</p>
+  </div>
+
+  <h4 class="subsection-title">Petra · The Siq, Treasury, Monastery</h4>
+  <div class="region-label">Middle East · Jordan</div>
+  <div class="site-card">
+    <p class="body">An entire Nabataean city carved from sandstone. The Treasury and the Monastery are facades cut directly into cliff faces, with chambers hollowed behind them. Interior surfaces show fine work : right angles, polished walls, regular column flutings. The Siq, the kilometre-long entry gorge, is a natural feature, but the rock-cut chambers along its walls and the Treasury at its end are entirely subtractive.</p>
+  </div>
+
+  <h4 class="subsection-title">Cappadocia · Selime, Göreme, Derinkuyu</h4>
+  <div class="region-label">Asia · Türkiye</div>
+  <div class="site-card">
+    <p class="body">A regional system : surface monasteries cut into volcanic tuff spires, hundreds of cave churches in the Göreme valley, and underneath everything, the underground cities. Derinkuyu's eighteen documented levels were cut downward through bedrock to a depth exceeding 60 metres, with ventilation shafts, stable rooms, kitchens, churches, and rolling-stone doors carved in place. Conventional dating begins in the Phrygian period, but the scale of the lower levels invites the same question the surface monasteries do.</p>
+  </div>
+
+  <p class="body" style="margin-top:48px"><em>A note on Giza.</em> Some sites carry both traditions at once. The Giza plateau is best known as additive architecture at scale, but it is also subtractive at scale, and the subtractive scale is not small. Beneath the Great Pyramid itself sits a bedrock chamber that conventional Egyptology calls the Subterranean Chamber : cut down into the rock at the foot of the descending passage, 30 metres below ground level, unfinished, with its floor still showing the toolwork of an extraction that was abandoned mid-cut. Recent muon-tomography surveys by the ScanPyramids project have detected additional substantial voids inside the pyramid that were not part of the documented construction record.</p>
+
+  <p class="body">Beyond the pyramid's own substructure, the plateau itself has been hollowed at scale. The Osiris Shaft, beneath the causeway between the Great Pyramid and the Sphinx, descends three levels through solid bedrock, with a sarcophagus chamber cut below the water table on the lowest level. Brien Foerster's <a href="https://youtu.be/lXfb-pImYWk" target="_blank" rel="noopener">full descent walkthrough</a> captures the geometry intact : precision-cut chambers, standing water, sarcophagus niches, and the symmetry of the lower level visible in a way no still photograph conveys. Beyond the documented shaft, field investigators including Andrew Collins, Foerster, and Robert Schoch have proposed a far more extensive tunnel and chamber network running through the bedrock under the entire plateau, with passages reported to run directly beneath the Great Pyramid. The cave system Collins documented in his 2009 fieldwork remains, by his account, largely unexcavated.</p>
+
+  <p class="body">The point is not that Giza is monolithic. The point is that the two traditions coexist at the most famous site on Earth, and the subtractive half rarely gets equal attention. A complete account of Giza is a vertical account, not just a surface one.</p>
+
+  <!-- ====================================================== -->
+  <div class="section-eyebrow">§ 02 · The cutting standard</div>
+  <h3 class="section-title">Subtractive work to finish-grade tolerance.</h3>
+
+  <p class="body">These are not rough hewings. The interior of Petra's Treasury was finished to a standard that supported polished surfaces and orthogonal geometry. The columns of Bet Giyorgis at Lalibela carry consistent fluting and tapered profiles, all carved in place from the bedrock that surrounded them. The Kailasa Temple has sculpted reliefs of elephants and gods that required the artist to work outward from a final form already imagined in stone that had not yet been removed.</p>
+
+  <p class="body">A subtractive process tolerates no error. An assembled wall can swap a flawed block. A monolithic temple cannot. The cutting standard had to be maintained from the first stroke through the last, on bedrock that was being progressively exposed. The planning that preceded the work must have been complete to a level of detail that does not appear in any surviving construction document for any of these sites.</p>
+
+  <p class="callout">You cannot put the rock back.</p>
+
+  <!-- ====================================================== -->
+  <div class="section-eyebrow">§ 03 · The tool-mark anomaly</div>
+  <h3 class="section-title">Marks that look like chisels but do not act like chisels.</h3>
+
+  <p class="body">The part of the story that should be the simple part turns out to be the strange part. The marks left on the rock during extraction are the strongest physical evidence the technique left behind. They survive at every site listed above, and they share a signature that crosses continents.</p>
+
+  <p class="body">On a wall at Bazda Caves in southeastern Türkiye, horizontal striations cross the rock face. They look like chisel marks at a glance. They are not.</p>
+
+  <div class="contrast">
+    <div>
+      <h6>A hand chisel produces</h6>
+      <p>Discrete impact strikes, each separated by a small ridge.</p>
+      <p>Short, linear strokes that do not curve.</p>
+      <p>Stop-and-start patterns, with the angle resetting between blows.</p>
+      <p>A textured surface the eye reads as percussive.</p>
+    </div>
+    <div>
+      <h6>These marks produce</h6>
+      <p>Continuous arcs that sweep across the rock face.</p>
+      <p>Mid-stroke direction changes within a single groove.</p>
+      <p>Horizontal raking with a curved trajectory.</p>
+      <p>Square grooves arranged in vertical formation, like gear tracks.</p>
+    </div>
+  </div>
+
+  <p class="body">The same family of marks appears at Longyou Caves in Zhejiang, China, 7,700 kilometres east of Bazda. At Kotukal Cave Temple in Tamil Nadu. At San Andrea Priù in central Sardinia. At the Serapeum of Saqqara in Egypt. On the trough walls around the unfinished obelisk at Aswan. On individual block faces at Sacsayhuamán. On Sage Wall in Montana.</p>
+
+  <p class="body">Different rocks. Different climates. No documented contact between the builders. The marks are the same.</p>
+
+  <div class="mark-diagram">
+    <svg viewBox="0 0 480 200" xmlns="http://www.w3.org/2000/svg" aria-label="Two side-by-side diagrams comparing hand-chisel marks and machining-style marks.">
+      <!-- Left panel: hand chisel marks -->
+      <g transform="translate(20, 30)">
+        <text x="100" y="-8" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.5" fill="#C9A84C" font-weight="700">HAND CHISEL</text>
+        <rect x="0" y="0" width="200" height="120" fill="#1E1E28" stroke="#2A2A35" stroke-width="1" rx="3"/>
+        <!-- discrete percussive strikes -->
+        <g stroke="#8A8A9A" stroke-width="1.4" stroke-linecap="round" fill="none">
+          <line x1="15" y1="20" x2="22" y2="22"/>
+          <line x1="30" y1="22" x2="37" y2="20"/>
+          <line x1="45" y1="20" x2="52" y2="22"/>
+          <line x1="60" y1="22" x2="67" y2="20"/>
+          <line x1="75" y1="20" x2="82" y2="22"/>
+          <line x1="90" y1="22" x2="97" y2="20"/>
+          <line x1="105" y1="20" x2="112" y2="22"/>
+          <line x1="120" y1="22" x2="127" y2="20"/>
+          <line x1="135" y1="20" x2="142" y2="22"/>
+          <line x1="150" y1="22" x2="157" y2="20"/>
+          <line x1="165" y1="20" x2="172" y2="22"/>
+          <line x1="15" y1="40" x2="22" y2="42"/>
+          <line x1="30" y1="42" x2="37" y2="40"/>
+          <line x1="45" y1="40" x2="52" y2="42"/>
+          <line x1="60" y1="42" x2="67" y2="40"/>
+          <line x1="75" y1="40" x2="82" y2="42"/>
+          <line x1="90" y1="42" x2="97" y2="40"/>
+          <line x1="105" y1="40" x2="112" y2="42"/>
+          <line x1="120" y1="42" x2="127" y2="40"/>
+          <line x1="135" y1="40" x2="142" y2="42"/>
+          <line x1="150" y1="42" x2="157" y2="40"/>
+          <line x1="15" y1="60" x2="22" y2="62"/>
+          <line x1="30" y1="62" x2="37" y2="60"/>
+          <line x1="45" y1="60" x2="52" y2="62"/>
+          <line x1="60" y1="62" x2="67" y2="60"/>
+          <line x1="75" y1="60" x2="82" y2="62"/>
+          <line x1="90" y1="62" x2="97" y2="60"/>
+          <line x1="105" y1="60" x2="112" y2="62"/>
+          <line x1="120" y1="62" x2="127" y2="60"/>
+          <line x1="135" y1="60" x2="142" y2="62"/>
+          <line x1="15" y1="80" x2="22" y2="82"/>
+          <line x1="30" y1="82" x2="37" y2="80"/>
+          <line x1="45" y1="80" x2="52" y2="82"/>
+          <line x1="60" y1="82" x2="67" y2="80"/>
+          <line x1="75" y1="80" x2="82" y2="82"/>
+          <line x1="90" y1="82" x2="97" y2="80"/>
+          <line x1="105" y1="80" x2="112" y2="82"/>
+          <line x1="120" y1="82" x2="127" y2="80"/>
+          <line x1="15" y1="100" x2="22" y2="102"/>
+          <line x1="30" y1="102" x2="37" y2="100"/>
+          <line x1="45" y1="100" x2="52" y2="102"/>
+          <line x1="60" y1="102" x2="67" y2="100"/>
+          <line x1="75" y1="100" x2="82" y2="102"/>
+          <line x1="90" y1="102" x2="97" y2="100"/>
+        </g>
+      </g>
+      <!-- Right panel: machining marks -->
+      <g transform="translate(260, 30)">
+        <text x="100" y="-8" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" letter-spacing="1.5" fill="#C9A84C" font-weight="700">OBSERVED</text>
+        <rect x="0" y="0" width="200" height="120" fill="#1E1E28" stroke="#2A2A35" stroke-width="1" rx="3"/>
+        <!-- continuous curved sweeping arcs -->
+        <g stroke="#C9A84C" stroke-width="1.4" stroke-linecap="round" fill="none" opacity="0.9">
+          <path d="M10 22 C 40 12, 90 32, 130 22 S 180 12, 195 22"/>
+          <path d="M10 38 C 40 28, 90 48, 130 38 S 180 28, 195 38"/>
+          <path d="M10 54 C 40 44, 90 64, 130 54 S 180 44, 195 54"/>
+          <path d="M10 70 C 40 60, 90 80, 130 70 S 180 60, 195 70"/>
+          <path d="M10 86 C 40 76, 90 96, 130 86 S 180 76, 195 86"/>
+          <path d="M10 102 C 40 92, 90 112, 130 102 S 180 92, 195 102"/>
+        </g>
+      </g>
+    </svg>
+    <p class="mark-diagram-caption">Schematic. Hand chiseling leaves discrete percussive impacts in short, linear strokes. The marks on the cave walls at Bazda, the trough at Aswan, and dozens of other rock-cut sites are continuous curved arcs that sweep across the face in a single motion. A hand chisel cannot do that, no matter how skilled the hand.</p>
+  </div>
+
+  <p class="body">The diagnostic does not depend on technology mysticism. It is a kinematic comparison. A motion that produces a continuous curved groove with a mid-stroke direction change is not the same motion that produces a discrete percussive strike. One requires a rotary or oscillating tool with a sweep arc. The other is a hammer and a wedge.</p>
+
+  <p class="body">Whatever the toolkit was, it is not the toolkit the period's archaeology assigns to it.</p>
+
+  <!-- ====================================================== -->
+  <div class="section-eyebrow">§ 04 · The unfinished testimony</div>
+  <h3 class="section-title">Abandoned work is the X-ray of the technique.</h3>
+
+  <p class="body">The strongest evidence for the extractive tradition is the work that was never finished. Abandoned sites preserve the work sequence in a way that completed sites cannot. They show what the builders saw at each stage. They show how the precision was maintained. They show where the toolkit reached its limit.</p>
+
+  <h4 class="subsection-title">The Aswan unfinished obelisk</h4>
+  <div class="region-label">Africa · Egypt</div>
+  <div class="site-card">
+    <p class="body">A single piece of red granite, 42 metres long, estimated mass 1,168 tonnes, partially extracted from the bedrock at the Aswan quarry. If completed, it would have been the largest obelisk ever raised. A crack in the stone caused the project to be abandoned. The obelisk remains in place, still attached to its quarry trough on its lower side.</p>
+    <p class="body">The trough walls are the evidence. They show the same horizontal raking marks that appear at Bazda, Longyou, and the Serapeum. They show that the extraction was working with a precision sweep along the long axis of the obelisk. The granite is Mohs 6.5. The trough walls show no impact craters, no chisel-tip stippling. They are smooth, with curved striations along the cut direction.</p>
+  </div>
+
+  <h4 class="subsection-title">Yangshan Quarry</h4>
+  <div class="region-label">Asia · China</div>
+  <div class="site-card">
+    <p class="body">A Ming-dynasty stele project near Nanjing, abandoned in 1405 CE. Three pieces totalling approximately 30,000 tonnes were cut from the hillside : a base of 16,000 tonnes, a shaft of 8,800 tonnes, a crowning head of 6,000 tonnes. The pieces are dressed and shaped. They were never moved. With documented early-modern industrial capacity, the Ming engineers could not transport their own work, and the stele was left in the quarry where it had been cut.</p>
+    <p class="body">Yangshan is the rare case where conventional dating is firm. The Ming records explicitly document the project. The value to the atlas is comparative : the site shows what cutting megaliths of this scale actually entails, even with the resources of a mature dynastic state, and it preserves the cutting technique on the in-situ surfaces.</p>
+  </div>
+
+  <h4 class="subsection-title">Hegra · the half-cut tombs</h4>
+  <div class="region-label">Middle East · Saudi Arabia</div>
+  <div class="site-card">
+    <p class="body">Several tombs at Hegra preserve their work sequence directly. The upper portions of the facades are complete : decorative cornices, lintels, surface dressing all in place. The lower portions remain unexcavated, with the bedrock still attached to the wall below the completed work. The builders began at the top of the cliff face with the finished decoration already cut, then worked downward through solid rock toward the floor of the tomb chamber.</p>
+    <p class="body">This is the opposite of how a stone quarry operates. A quarry removes blocks from an exposed edge. Hegra's tombs were cut downward into solid bedrock, starting with the most decorated and finished feature of the structure. The implication is that the builders held the complete final design in mind, and in plan, before the first cut was made.</p>
+  </div>
+
+  <p class="callout">A finished facade cannot precede the chamber it fronts, unless the planning is complete.</p>
+
+  <!-- ====================================================== -->
+  <div class="section-eyebrow">§ 05 · The cross-continental pattern</div>
+  <h3 class="section-title">Why the same marks at sites with no documented contact.</h3>
+
+  <p class="body">The atlas treats this as the open question. The marks are the same. The sites are not. They span four continents and several millennia, and the conventional cultural chronologies that link some of them to medieval or classical periods do not explain how the underlying tool-mark signature predates and persists through those cultural layers.</p>
+
+  <p class="body">Three readings are available, and each carries weight.</p>
+
+  <p class="body"><em>Reading one : independent convergence.</em> Different cultures, encountering similar problems with similar rocks, developed similar tools that left similar marks. The diagnostic is that the marks are kinematically identical and that the resulting motions are not within the documented capability of the assumed toolkits. The independent-convergence reading requires multiple cultures to independently invent the same anomalous toolkit and to not document it.</p>
+
+  <p class="body"><em>Reading two : cultural transmission.</em> A shared technical tradition spread across continents, either through direct contact that has not survived in the historical record, or through inheritance from a common predecessor culture. The Egyptian, Indian, Chinese, and South American traditions of polygonal masonry and rock-cut architecture share features that the conventional cultural timelines treat as coincidental.</p>
+
+  <p class="body"><em>Reading three : older substrate.</em> The marks predate the cultural layers that built into the sites. The Nabataeans, the Buddhist monks at Longyou, the Tamil temple builders, the Ming engineers, all worked into rock-cut surfaces that already carried the signature. The cultural-period work is finishing, decoration, and consecration applied to older subtractive substrates.</p>
+
+  <p class="body">The atlas does not assign weight to any single reading. It documents the signal and asks the visitor to look at the marks themselves. The diagnostic is in the rock, not in the literature.</p>
+
+  <!-- ====================================================== -->
+  <div class="section-eyebrow">§ 06 · The field observer call</div>
+  <h3 class="section-title">What to look for the next time you visit a rock-cut site.</h3>
+
+  <p class="body">The marks are easy to miss because the eye reads them as old chisel work. The diagnostic is in the motion pattern, not the texture.</p>
+
+  <ul class="crisp with-icons">
+    <li>
+      <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></svg></span>
+      <span><strong>Look at unfinished interiors first.</strong> The backs of niches, the upper corners of cave chambers, the trough walls around quarry features. These are the surfaces that never received a smoothing pass.</span>
+    </li>
+    <li>
+      <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M3 12 C 7 5, 11 19, 15 12 S 21 5, 21 12"/></svg></span>
+      <span><strong>Trace one groove with your eye.</strong> Does it run in a continuous arc, or does it break into discrete strikes? A continuous arc cannot come from a hand chisel.</span>
+    </li>
+    <li>
+      <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8 L 10 15 L 14 9 L 21 16"/></svg></span>
+      <span><strong>Watch for direction changes inside a single stroke.</strong> A hand chisel resets between blows. A continuous tool sweeps. Mid-stroke direction changes are diagnostic.</span>
+    </li>
+    <li>
+      <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg></span>
+      <span><strong>Compare horizontal striations across the same wall.</strong> Hand work clusters around reachable height. A continuous horizontal rake will run from floor to ceiling with no break.</span>
+    </li>
+    <li>
+      <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><rect x="9" y="3" width="6" height="4" rx="0.5"/><rect x="9" y="10" width="6" height="4" rx="0.5"/><rect x="9" y="17" width="6" height="4" rx="0.5"/></svg></span>
+      <span><strong>Photograph the gear-track patterns.</strong> Square grooves arranged in vertical formation, like dotted lines down a cliff face, are the most photographed and least explained surface feature at Bazda. They are present at other sites too.</span>
+    </li>
+    <li>
+      <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 6 12 12 18 6"/><polyline points="6 13 12 19 18 13"/></svg></span>
+      <span><strong>Ask what the cutting sequence had to be.</strong> If the site was cut top-down, what did the builders see when they stood at the top before starting? The answer is rarely <em>nothing</em>.</span>
+    </li>
+  </ul>
+
+  <p class="body" style="margin-top:36px">The marks survive eyes that look for stones. They are the fingerprint of the toolkit the builders used, and they are still on the rock.</p>
+
+  <p class="callout">If the chisel marks aren't chisel marks, the question is open.</p>
+
+  <!-- ====================================================== -->
+  <div class="sources">
+    <h5>Sources & Further Reading</h5>
+    <ol>
+      <li><a href="https://www.youtube.com/@AgelessRock888" target="_blank" rel="noopener">Bernie Ong, Ageless Rock (YouTube)</a>. Direct field walkthrough at Bazda Caves with explicit cross-reference to Longyou Caves, Kotukal Cave Temple, San Andrea Priù. The kinematic-comparison framing in this entry tracks Ong's analysis.</li>
+      <li><a href="https://www.youtube.com/@MegalithomaniaUK" target="_blank" rel="noopener">Hugh Newman, Megalithomania (YouTube)</a>. Multi-year field documentation of Hegra, Petra, Qasr el Sagha, and the Taş Tepeler complex. The top-down work-order argument for Hegra in this entry follows Newman's photo sequencing of the unfinished tombs.</li>
+      <li><a href="https://www.hiddenincatours.com/" target="_blank" rel="noopener">Brien Foerster, Hidden Inca Tours</a>. Decades of fieldwork on Sacsayhuamán, the Serapeum, and Aswan. The Aswan obelisk trough analysis in this entry references Foerster's surface documentation.</li>
+      <li><a href="https://youtu.be/lXfb-pImYWk" target="_blank" rel="noopener">Brien Foerster, <em>Under Giza : Fully Exploring The Osiris Shaft In Egypt</em> (YouTube)</a>. Full descent walkthrough of all three levels of the Osiris Shaft, with on-camera documentation of the sarcophagus chamber, the standing water at the water-table level, and the symmetry of the lower-level architecture. The primary visual reference for the Giza note in §01.</li>
+      <li>Andrew Collins, <em>Beneath the Pyramids : Egypt's Greatest Secret Uncovered</em> (2009). Documentation of the cave system and tunnel network beneath the Giza plateau, with proposed passages running directly under the Great Pyramid.</li>
+      <li>Christopher Dunn, <em>Lost Technologies of Ancient Egypt</em> (2010). Engineering-trained analysis of Aswan, the Serapeum boxes, and the granite work at Giza. The kinematic standard applied in §03 is the same one Dunn applies to lathe-cut interior surfaces in Egypt.</li>
+      <li><a href="https://www.youtube.com/@UniverseInsideYou" target="_blank" rel="noopener">Universe Inside You (YouTube)</a>. Field documentation at Lalibela, Longyou Caves, Kailasa, and the Cappadocian underground cities. The drainage-and-extraction sequence at Bet Giyorgis in §01 follows this channel's walkthrough.</li>
+      <li><a href="https://whc.unesco.org/en/list/18/" target="_blank" rel="noopener">UNESCO World Heritage : Rock-Hewn Churches of Lalibela</a>. Official documentation of the eleven monolithic churches and their conventional dating.</li>
+      <li><a href="https://whc.unesco.org/en/list/326/" target="_blank" rel="noopener">UNESCO World Heritage : Ellora Caves</a>. Official documentation of Kailasa Temple within the broader Ellora complex.</li>
+      <li>Robert Bauval and Graham Hancock, <em>Keeper of Genesis</em> (1996). Long-form synthesis of the Egyptian rock-cut tradition. Source for the broader framing of subtractive Egypt in §01.</li>
+    </ol>
+  </div>
+
+  <p class="tail">— look at the marks the next time you stand inside a cave temple. they were left for you.</p>
+
+</article>
+
+</body>
+</html>
