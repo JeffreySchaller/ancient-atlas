@@ -50,11 +50,14 @@
   header.site{
     padding:22px 40px;
     border-bottom:1px solid var(--border);
-    display:flex;align-items:center;justify-content:space-between;
+    display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;
     background:rgba(13,13,18,0.7);
     backdrop-filter:blur(8px);
     position:sticky;top:0;z-index:10;
   }
+  header.site > .brand{justify-self:start}
+  header.site > .header-nav{justify-self:center}
+  header.site > .back-link{justify-self:end}
   .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text)}
   .brand-mark{
     width:36px;height:36px;
@@ -672,7 +675,6 @@
     .ma-row{grid-template-columns:32px 1fr;gap:10px}
     ul.undertone li a{font-size:14px;padding-left:24px}
   }
-.share-btn{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--cloud,#C5C5D0);text-decoration:none;padding:8px 12px;border:1px solid rgba(201,168,76,.3);border-radius:8px;font-weight:600;transition:all .15s;background:rgba(201,168,76,.04);cursor:pointer;display:inline-flex;align-items:center;gap:7px;margin-right:8px;font-family:inherit}.share-btn:hover{color:var(--champagne,#C9A84C);border-color:rgba(201,168,76,.55);background:rgba(201,168,76,.1)}.share-btn svg{width:13px;height:13px;flex-shrink:0}@media(max-width:700px){.share-btn span{display:none}.share-btn{padding:7px 9px;margin-right:6px}}.share-toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(20px);background:#0D0D12;border:1px solid #C9A84C;color:#F0EEE9;padding:11px 22px;border-radius:8px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;z-index:9999;opacity:0;pointer-events:none;transition:all .25s ease-out;box-shadow:0 4px 24px rgba(201,168,76,.25)}.share-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 </style>
 </head>
 <body>
@@ -706,7 +708,7 @@
     <a href="index.html" class="cur">Library</a>
     <a href="../contact.html">Contact</a>
   </nav>
-  <button class="share-btn" onclick="shareArticle()" aria-label="Share this article" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M16 6l-4-4-4 4M12 2v13"/></svg><span>Share</span></button><a href="index.html" class="back-link">← Library</a>
+  <a href="index.html" class="back-link">← Library</a>
 </header>
 
 <!-- ============ HERO ============ -->
@@ -736,7 +738,7 @@
               <path d="M21 19 L21 6 L17 6 L13 9 L13 19 Z"/>
             </svg>
           </span>
-          <span id="precision" class="undertone-text">Stones fitted without mortar, often with tolerances tighter than a knife blade.</span>
+          <span class="undertone-text">Stones fitted without mortar, often with tolerances tighter than a knife blade.</span>
         </a>
       </li>
       <li>
@@ -747,7 +749,7 @@
               <path d="M9 7 L15 7"/>
             </svg>
           </span>
-          <span id="hardness" class="undertone-text">Stone harder than steel.</span>
+          <span class="undertone-text">Stone harder than steel.</span>
         </a>
       </li>
       <li>
@@ -758,7 +760,7 @@
               <path d="M4 8 L12 12 L20 8 M12 12 L12 22"/>
             </svg>
           </span>
-          <span id="scale" class="undertone-text">Blocks heavier than anything steam, diesel, or pre-modern hydraulic equipment could lift, with the largest still beyond what the heaviest cranes built since the 1970s can match.</span>
+          <span class="undertone-text">Blocks heavier than anything steam, diesel, or pre-modern hydraulic equipment could lift, with the largest still beyond what the heaviest cranes built since the 1970s can match.</span>
         </a>
       </li>
       <li>
@@ -770,7 +772,7 @@
               <path d="M16 14 L20 13 L22 16 L20 20 L17 20 L15 17 Z"/>
             </svg>
           </span>
-          <span id="polygonal" class="undertone-text">The same polygonal interlock pattern appearing on three continents that should have no contact.</span>
+          <span class="undertone-text">The same polygonal interlock pattern appearing on three continents that should have no contact.</span>
         </a>
       </li>
       <li>
@@ -783,7 +785,7 @@
               <path d="M3 20 L21 20" stroke-width="1.7"/>
             </svg>
           </span>
-          <span id="stratigraphy" class="undertone-text">Stratigraphy that runs backwards: the deeper the layer, the more advanced the technology.</span>
+          <span class="undertone-text">Stratigraphy that runs backwards: the deeper the layer, the more advanced the technology.</span>
         </a>
       </li>
       <li>
@@ -794,7 +796,7 @@
               <circle cx="15" cy="12" r="7"/>
             </svg>
           </span>
-          <span id="geometry" class="undertone-text">Geometry that encodes astronomy, the proportions of the Earth, and the dimensions of the human form.</span>
+          <span class="undertone-text">Geometry that encodes astronomy, the proportions of the Earth, and the dimensions of the human form.</span>
         </a>
       </li>
     </ul>
@@ -1708,45 +1710,6 @@
   }
 })();
 </script>
-
-<div class="share-toast" id="shareToast">Link copied</div>
-<script>
-async function shareArticle() {
-  const url = window.location.href;
-  const title = document.title;
-  const text = (document.querySelector('meta[name="description"]') || {}).content || '';
-  if (navigator.share) {
-    try {
-      await navigator.share({ title, text, url });
-      return;
-    } catch (e) {
-      if (e && e.name === 'AbortError') return;
-    }
-  }
-  try {
-    await navigator.clipboard.writeText(url);
-  } catch (e) {
-    const tmp = document.createElement('input');
-    tmp.value = url;
-    document.body.appendChild(tmp);
-    tmp.select();
-    try { document.execCommand('copy'); } catch (e2) {}
-    document.body.removeChild(tmp);
-  }
-  const toast = document.getElementById('shareToast');
-  if (toast) {
-    toast.classList.add('show');
-    setTimeout(function(){ toast.classList.remove('show'); }, 2200);
-  }
-}
-</script>
-
-<section id="machining" class="library-criterion-section">
-  <h2>Machining</h2>
-  <p><strong>The signal :</strong> tool marks the period's tools cannot produce. Curved striations, gear-track grooves, scoop saddles, and motion patterns that hand chisels and copper saws cannot leave behind. These marks sit on the rock <em>before</em> any later smoothing or presentation layer was applied, which means they survive intact at sites where the finishing pass was never completed or has eroded away.</p>
-  <p>The diagnostic is convergent : the same family of marks appears at Bazda Caves (Türkiye), Longyou Caves (China, 7,700 km away), the Serapeum of Saqqara (Egypt), Aswan's unfinished obelisk, Sacsayhuamán (Peru), Sage Wall (Montana), and Kotukal Cave Temple (India). Different rocks. Different climates. No documented contact. The marks are the same.</p>
-  <p>Why this criterion is independent of <em>precision</em> and <em>polygonal</em> : those describe how blocks <em>fit</em>. Machining describes how blocks were <em>shaped</em>. A subtractive rock-cut site like Bazda has no joinery to evaluate, but it carries the tool-mark signature loudly. Conversely, a polygonal wall like Cusco fits the precision and polygonal criteria but also shows machining marks on individual block faces. The three criteria are orthogonal lenses on the same builder-toolkit puzzle.</p>
-</section>
 
 </body>
 </html>
