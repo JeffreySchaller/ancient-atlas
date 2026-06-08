@@ -170,6 +170,20 @@
     {
       "id": "8BHJP7uLcq4",
       "title": "Tour Inside The Great Pyramid | Ancient Presence"
+    },
+    {
+      "id": "b-kk-FyPhtE",
+      "title": "Khufu's Pyramid - Simple Impossible Calculation",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-06-01"
+    },
+    {
+      "id": "7F7hBRrovVE",
+      "title": "7 Wonders of Ancient Pyramids in Egypt",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-29"
     }
   ],
   "Pyramid of Khafre": [
@@ -192,6 +206,13 @@
       "id": "ZD-d2ICHHaw",
       "title": "What's INSIDE the 2nd LARGEST Ancient Egyptian Pyramid — Khafre's Pyramid was Not A Tomb",
       "cr": "brightinsight"
+    },
+    {
+      "id": "1-xPbEOaPCE",
+      "title": "Is Khafre's Pyramid a man-made structure?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-06-08"
     }
   ],
   "Great Sphinx of Giza": [
@@ -1118,6 +1139,13 @@
       "id": "TFtntxFeD9c",
       "title": "Exploring The Red And Bent Pyramids At Dashur In Egypt",
       "cr": "brienf"
+    },
+    {
+      "id": "9tEsueLITPw",
+      "title": "Mind Bending Bent Pyramid of Egypt",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-22"
     }
   ],
   "Red Pyramid (Dahshur)": [
@@ -1130,6 +1158,13 @@
       "id": "HtXZCm4qFL4",
       "title": "Inside The Red Pyramid | Exploring Its Three Interior Chambers",
       "cr": "megalithomania"
+    },
+    {
+      "id": "6aqRoGIdVb8",
+      "title": "Red Pyramid is highly unlikely a tomb.",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-05-06"
     }
   ],
   "Black Pyramid (Dahshur)": [
@@ -1137,6 +1172,13 @@
       "id": "29-O2Ie3J-s",
       "title": "Special Permission Access into the Structure Below the Black Pyramid of Dashur",
       "cr": "unchartedx"
+    },
+    {
+      "id": "mb9EdRZHNgU",
+      "title": "The Black Pyramid of Amenemhat III in Dahshur, Egypt",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-05-13"
     }
   ],
   "Pyramid of Meidum": [
@@ -1144,6 +1186,13 @@
       "id": "MHFy7S_h3OY",
       "title": "The Pyramid of Meidum | High Technology in Old Kingdom Egypt",
       "cr": "megalithomania"
+    },
+    {
+      "id": "DaAs-bMKOF0",
+      "title": "Mysteries at Meidum are more mysterious than you think...",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-15"
     }
   ],
   "Osireion (Abydos)": [
@@ -1485,6 +1534,13 @@
       "id": "pJg5TeXmmIk",
       "title": "The Mysterious, Enormous and Incredible Mozu Tombs of Ancient Japan | Ancient Architects",
       "cr": "ancientarch"
+    },
+    {
+      "id": "7PtSa57GKHs",
+      "title": "Daisen Kofun in Mozu Cluster - Largest Tomb in the World",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-01"
     }
   ],
   "Oya Stone Quarry": [
@@ -3761,6 +3817,226 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2025-05-04"
+    }
+  ],
+  "Pyramid of Menkaure": [
+    {
+      "id": "56LYtSvC7BA",
+      "title": "Menkaure gave us a clue how pyramid was made.",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-01"
+    }
+  ],
+  "Step Pyramid of Djoser": [
+    {
+      "id": "uERtkstQuxw",
+      "title": "Pyramid of Djoser = Pyramid of Joseph?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-08"
+    }
+  ],
+  "Zedekiah's Cave": [
+    {
+      "id": "n9Z_g9DcJXM",
+      "title": "The Mysterious Zedekiah's Cave in Israel",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-08-01"
+    }
+  ],
+  "Temple Mount Megaliths": [
+    {
+      "id": "2s-ZHU8nQMU",
+      "title": "Megaliths at Temple Mount in Israel?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-08-08"
+    }
+  ],
+  "Hezekiah's Tunnel": [
+    {
+      "id": "3PhxvzpHXJ8",
+      "title": "The Mysterious Hezekiah's Tunnel",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-08-15"
+    }
+  ],
+  "Jerusalem Archaeological Park": [
+    {
+      "id": "aflyBTMSA9g",
+      "title": "Who Built The Jerusalem Archaeological Park in Israel?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-08-22"
+    }
+  ],
+  "Horvat Midras": [
+    {
+      "id": "42-TXfjLNcE",
+      "title": "Mysterious Caves + Pyramid + Stone Wheels = Horvat",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-09-01"
+    }
+  ],
+  "Kidron Valley Tombs": [
+    {
+      "id": "vhzH8rqsrFI",
+      "title": "Kidron Valley of Tombs : Where is Zechariah's Tomb?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-01"
+    },
+    {
+      "id": "w-2wiRWTTDU",
+      "title": "Kidron Valley of Tombs : Where is Absalom's Tomb?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-08"
+    },
+    {
+      "id": "5tJr2SR9Jtk",
+      "title": "Kidron Valley of Tombs : Where is Pharaoh's Daughter Tomb?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-15"
+    },
+    {
+      "id": "JI_GONchbbA",
+      "title": "Kidron Valley of Tombs : Sons of Hezir's Tomb",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-22"
+    },
+    {
+      "id": "LuT3lfx0lHQ",
+      "title": "Kidron Valley of Tombs : Tomb of Jehoshaphat",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-10-29"
+    },
+    {
+      "id": "mggFDhg2Blc",
+      "title": "Kidron Valley of Tombs : Tomb of the Prophets",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-11-05"
+    },
+    {
+      "id": "JsBqssFs7KY",
+      "title": "Kidron Valley of Tombs : Tomb of King David",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-11-12"
+    }
+  ],
+  "Hodota Kofun Cluster": [
+    {
+      "id": "scQeyaB6Kvs",
+      "title": "Hodota Kofun Cluster remains a mystery....",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-08"
+    }
+  ],
+  "Sakitama Kofun Cluster": [
+    {
+      "id": "PdMY7oDI_lU",
+      "title": "Megalithic and futuristic kofuns of Sakitama",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-15"
+    }
+  ],
+  "Saitobaru Kofun Cluster": [
+    {
+      "id": "2kNvKb0VM2g",
+      "title": "Mysterious Cluster of Kofuns in Saitobaru.",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-22"
+    }
+  ],
+  "Koichi Kofun Cluster": [
+    {
+      "id": "3lsp77wh6tU",
+      "title": "Does Koichi Kofun Cluster in Japan have something to do with giants?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-29"
+    }
+  ],
+  "Gilmerton Cove": [
+    {
+      "id": "aF5PEPtZWUc",
+      "title": "Gilmerton Cove (1/2) : Creepy Underground of Scotland",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-10-01"
+    },
+    {
+      "id": "m1EOoFpn_cg",
+      "title": "Gilmerton Cove (2/2) : Jacob's Pillow = Coronation Stone?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-10-08"
+    }
+  ],
+  "Rosslyn Chapel & Castle": [
+    {
+      "id": "COCcbw4vii8",
+      "title": "Rosslyn Chapel + Rosslyn Castle = Megalithic Site?!?!",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2022-10-15"
+    }
+  ],
+  "Tombs and Dolmens of Fornos de Algodres": [
+    {
+      "id": "GQOLob9ZK7E",
+      "title": "Tombs and Dolmens of Fornos de Algodres",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-06-05"
+    }
+  ],
+  "Forcadas Tombs & Cortiço Dolmen": [
+    {
+      "id": "96gC9A1jmQg",
+      "title": "Forcadas Tombs & Cortiço Dolmen",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-05-27"
+    }
+  ],
+  "Necropolis of Sao Gens": [
+    {
+      "id": "QfrIiH0qF18",
+      "title": "Necropolis of Sao Gens",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-05-17"
+    }
+  ],
+  "Necropolis of Saint Michael (Sao Miguel)": [
+    {
+      "id": "qnH9XNBhrBQ",
+      "title": "Necropolis of Saint Michael (Sao Miguel)",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-05-07"
+    }
+  ],
+  "Necropolis of Moreira de Rei": [
+    {
+      "id": "A4cG95SYO_M",
+      "title": "Necropolis of Moreira de Rei",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-05-07"
     }
   ]
 }

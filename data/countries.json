@@ -326,5 +326,30 @@
     "Palau Megalithic Site",
     "Kosrae Leluh Island",
     "Marquesas Islands"
+  ],
+  "Israel": [
+    "Zedekiah's Cave",
+    "Temple Mount Megaliths",
+    "Hezekiah's Tunnel",
+    "Jerusalem Archaeological Park",
+    "Horvat Midras",
+    "Kidron Valley Tombs"
+  ],
+  "Japan": [
+    "Hodota Kofun Cluster",
+    "Sakitama Kofun Cluster",
+    "Saitobaru Kofun Cluster",
+    "Koichi Kofun Cluster"
+  ],
+  "Scotland": [
+    "Gilmerton Cove",
+    "Rosslyn Chapel & Castle"
+  ],
+  "Portugal": [
+    "Tombs and Dolmens of Fornos de Algodres",
+    "Forcadas Tombs & Cortiço Dolmen",
+    "Necropolis of Sao Gens",
+    "Necropolis of Saint Michael (Sao Miguel)",
+    "Necropolis of Moreira de Rei"
   ]
 }
