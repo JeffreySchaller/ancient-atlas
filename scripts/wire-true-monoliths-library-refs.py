@@ -11,6 +11,16 @@ INCLUSION GATE (Jeff's brief):
     (b) unparalleled precision was cut into stone "as hard as steel"
         (Mohs ≥ 5-6 : granite, basalt, andesite, hard sandstone, porphyry).
 
+INCLUDED on the precision-anomaly leg of the gate (revised):
+  - Göbekli Tepe, Karahan Tepe, Boncuklu Tarla, Sayburç, Sefertepe —
+    Taş Tepeler complex. Although the bedrock is soft limestone, the
+    T-pillars carry high-relief animal sculpture and the chambers at
+    Karahan Tepe are cut directly into bedrock (the eleven phallic
+    pillars stand uncut from the chamber floor). The relief carving
+    in soft stone is the precision-anomaly leg of the gate, not the
+    machining-marks leg. The Sayburç narrative panel is currently the
+    earliest known narrative scene in human art.
+
 EXPLICITLY EXCLUDED despite being mentioned in the article:
   - Lalibela / Bet Giyorgis — volcanic tuff is Mohs ~4-5, no clearly
     documented machining anomaly distinct from hand chisel work.
@@ -87,6 +97,15 @@ CANDIDATES = [
     "Osireion",                           # Aswan granite pillars on site
     "Khafre's Pyramid",                   # granite casing
     "Pyramid of Khafre",                  # alt
+
+    # === Tier C : Taş Tepeler — relief carving + bedrock-cut chambers ===
+    # Soft limestone, but the precision of the relief work in stone of
+    # this hardness is itself the anomaly the article addresses.
+    "Karahan Tepe",                       # phallic pillars cut from bedrock
+    "Göbekli Tepe (Potbelly Hill)",       # T-pillar relief sculpture
+    "Boncuklu Tarla",                     # potentially older than Göbekli
+    "Sayburç",                            # earliest narrative scene
+    "Sefertepe",                          # dual-face carved heads
 ]
 
 # ============================================================
