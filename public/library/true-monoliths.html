@@ -108,6 +108,17 @@ ul.crisp.with-icons .icon svg{width:100%;height:100%;display:block}
 .mark-diagram svg{display:block;margin:0 auto;width:100%;max-width:480px;height:auto}
 .mark-diagram-caption{margin-top:14px;font-family:var(--font-sans);font-size:13.5px;color:var(--mist);line-height:1.55;text-align:left;padding:0 8px}
 
+/* Inline photo figures (Entry 03 parity) */
+figure.photo{margin:24px 0 32px;text-align:left}
+figure.photo img{width:100%;height:auto;display:block;border-radius:8px;border:1px solid rgba(42,42,53,.5);box-shadow:0 16px 48px rgba(0,0,0,.4)}
+figure.photo figcaption{margin-top:16px;font-family:var(--font-sans);font-size:15px;color:var(--cloud);line-height:1.65}
+
+/* Hero variant — capped height, cropped to focus on the marks */
+figure.photo.hero img{max-height:380px;object-fit:cover;object-position:center 62%}
+@media(max-width:680px){
+  figure.photo.hero img{max-height:280px}
+}
+
 /* Evidence photo strip — real tool marks in the wild */
 .evidence-strip{margin:48px 0 36px}
 .evidence-strip h6{font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.2em;color:var(--champagne);font-weight:700;margin-bottom:18px;text-align:center;opacity:.85}
@@ -269,7 +280,7 @@ ul.crisp.with-icons .icon svg{width:100%;height:100%;display:block}
   <div class="section-eyebrow">§ 03 · The tool-mark anomaly</div>
   <h3 class="section-title">Marks that look like chisels but do not act like chisels.</h3>
 
-  <figure class="photo">
+  <figure class="photo hero">
     <img src="photos/true-monoliths/05-little-petra-bench-rakes.jpg" alt="Stone bench surface at Little Petra showing prominent parallel diagonal raking marks fanning across the floor, with marbled red sandstone walls in the background." loading="lazy" />
     <figcaption>Little Petra, Siq al-Barid, Jordan. A stone bench surface preserves the raking pattern of the extraction technique in close to its original state. The marks fan in parallel sweeps across the floor, change angle where they meet the wall, and run uninterrupted for the full length of the bench. They are not weathering. They are not erosion. They are tool marks. Frame from Brien Foerster's field walkthrough.</figcaption>
   </figure>
