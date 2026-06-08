@@ -401,7 +401,11 @@
     "cat": "megalithic",
     "region": "Egypt",
     "tier": 1,
-    "desc": "Largest monolith statue in the world, 73m long and 20m high. Water erosion patterns suggest a potentially much older date than the conventional ~2500 BCE."
+    "desc": "Largest monolith statue in the world, 73m long and 20m high. Water erosion patterns suggest a potentially much older date than the conventional ~2500 BCE.",
+    "library_ref": {
+      "url": "/library/true-monoliths.html",
+      "title": "True Monoliths"
+    }
   },
   {
     "n": "Step Pyramid of Djoser",
@@ -554,7 +558,11 @@
     "cat": "megalithic",
     "region": "Egypt",
     "tier": 2,
-    "desc": "Would have been the largest obelisk ever: 42m tall, 1,168 tons. Abandoned in its quarry after a crack appeared, revealing ancient stone-cutting techniques."
+    "desc": "Would have been the largest obelisk ever: 42m tall, 1,168 tons. Abandoned in its quarry after a crack appeared, revealing ancient stone-cutting techniques.",
+    "library_ref": {
+      "url": "/library/true-monoliths.html",
+      "title": "True Monoliths"
+    }
   },
   {
     "n": "Siwa Oracle Temple (Amun)",
@@ -2286,7 +2294,11 @@
     "cat": "temple",
     "region": "Asia",
     "tier": 1,
-    "desc": "7th-century Pallava coastal complex south of Chennai. Features the Shore Temple, the Five Rathas (monolithic temples carved from single boulders), Krishna's Butterball, and the world's largest open-air bas-relief 'Arjuna's Penance.' UNESCO World Heritage."
+    "desc": "7th-century Pallava coastal complex south of Chennai. Features the Shore Temple, the Five Rathas (monolithic temples carved from single boulders), Krishna's Butterball, and the world's largest open-air bas-relief 'Arjuna's Penance.' UNESCO World Heritage.",
+    "library_ref": {
+      "url": "/library/true-monoliths.html",
+      "title": "True Monoliths"
+    }
   },
   {
     "n": "Khajuraho Temples",

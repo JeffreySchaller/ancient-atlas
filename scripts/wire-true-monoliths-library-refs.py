@@ -66,7 +66,8 @@ CANDIDATES = [
     "Longmen Grottoes",                   # limestone + machining substrate
     "Kotukal Cave Temple",                # granite Mohs 6-7 + boulder-top groove
     "San Andrea Priù",                    # limestone + horizontal-cut anomaly
-    "Aswan Unfinished Obelisk",           # granite Mohs 6.5 + trough marks
+    "Unfinished Obelisk (Aswan)",         # granite Mohs 6.5 + trough marks (canonical name)
+    "Aswan Unfinished Obelisk",           # alt naming, kept for safety
     "Serapeum of Saqqara",                # granite Mohs 7 + boxes with marks
     "Sacsayhuamán",                       # andesite Mohs 6 + scoop marks
     "Sage Wall (Montana)",                # granite Mohs 6-7 + scoop marks
@@ -89,7 +90,8 @@ CANDIDATES = [
     "Puma Punku",                         # andesite, H-blocks
     "Tarawasi",                           # andesite, Foerster-documented
     "Barabar Caves",                      # granite, polished interiors
-    "Mahabalipuram",                      # granite rock-cut
+    "Mahabalipuram (Shore Temple)",       # granite rock-cut (canonical)
+    "Mahabalipuram",                      # alt
     "Mamallapuram",                       # alt
     "Ajanta Caves",                       # basalt
     "Elephanta Caves",                    # basalt
@@ -106,6 +108,12 @@ CANDIDATES = [
     "Boncuklu Tarla",                     # potentially older than Göbekli
     "Sayburç",                            # earliest narrative scene
     "Sefertepe",                          # dual-face carved heads
+
+    # === Tier D : Iconic monolith exception ===
+    # Limestone (soft) but the most famous extractive monolith on Earth.
+    # The dating question (Schoch water erosion thesis) makes the article
+    # natural reference point for visitors.
+    "Great Sphinx of Giza",               # carved from Giza plateau bedrock
 ]
 
 # ============================================================
