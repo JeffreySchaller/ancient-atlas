@@ -239,7 +239,8 @@
     "Çakmaktepe",
     "Ayanlar Höyük",
     "Harbetsuvan Tepesi",
-    "Yenimahalle Höyük"
+    "Yenimahalle Höyük",
+    "Sogmatar"
   ],
   "Italy": [
     "Vetulonia",
@@ -321,7 +322,8 @@
     "Chichen Itza",
     "Coba",
     "Chacchoben",
-    "Dzibanche"
+    "Dzibanche",
+    "Tula (Tollan)"
   ],
   "Guatemala": [
     "Uaxactun",
@@ -376,10 +378,12 @@
     "Forcadas Tombs & Cortiço Dolmen",
     "Necropolis of Sao Gens",
     "Necropolis of Saint Michael (Sao Miguel)",
-    "Necropolis of Moreira de Rei"
+    "Necropolis of Moreira de Rei",
+    "Azores Pyramids (Pico Alto)"
   ],
   "Spain": [
-    "Tarragona Cyclopean Walls"
+    "Tarragona Cyclopean Walls",
+    "Naveta des Tudons"
   ],
   "Egypt": [
     "Qasr el Sagha"
@@ -408,5 +412,27 @@
   ],
   "Jordan": [
     "Little Petra (Siq al-Barid)"
+  ],
+  "Mauritania": [
+    "Richat Structure (Eye of the Sahara)"
+  ],
+  "Colombia": [
+    "San Agustín Archaeological Park"
+  ],
+  "Micronesia": [
+    "Nan Madol"
+  ],
+  "French Polynesia": [
+    "Marae Arahurahu (Tahiti)"
+  ],
+  "Greece": [
+    "Delphi",
+    "Mycenae (Lion Gate)",
+    "Treasury of Atreus (Tomb of Agamemnon)",
+    "Pyramid of Hellinikon",
+    "Pnyx Hill (Athens)"
+  ],
+  "Malta": [
+    "Malta Cart Ruts (Misraħ Għar il-Kbir)"
   ]
 }

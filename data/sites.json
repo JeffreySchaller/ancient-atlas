@@ -5620,5 +5620,165 @@
       "title": "True Monoliths"
     },
     "desc": "Nabataean rock-cut complex 8 km north of Petra in Jordan. Known as Siq al-Barid (the 'cold canyon') for its narrow defile shaded from the sun. Conventionally dated to the 1st century CE as a caravan suburb of Petra, serving traders on the incense route. Features triclinia (dining halls), cisterns, a unique frescoed biclinium with surviving Hellenistic-style paintings, and a system of stairs and chambers carved directly into the sandstone cliffs. The interior wall surfaces preserve some of the clearest tool-mark evidence in the region : continuous diagonal raking, parallel vertical grooves running floor to ceiling without break, and curved sweeping arcs that do not match the chisel kinematics conventionally assigned to Nabataean stonecutting. Brien Foerster's field walkthrough documents the marks in close detail."
+  },
+  {
+    "n": "Richat Structure (Eye of the Sahara)",
+    "lat": 21.1244,
+    "lng": -11.4011,
+    "cat": "geoglyph",
+    "region": "Africa",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "stratigraphy"
+    ],
+    "desc": "Concentric ring structure ~50 km across in the Adrar Plateau of Mauritania, visible from space as a perfect series of geological rings. Conventional reading : a deeply eroded geological dome formed over hundreds of millions of years by differential erosion. Independent reading (Bright Insight, Jimmy Bright, Archaic Lens) : the dimensions, concentric geometry, surrounding salt deposits, and freshwater channels match Plato's description of Atlantis with striking specificity. Archaic Lens has documented multiple ground-level expeditions showing what may be anthropogenic features within the rings, including aligned stones, possible megalithic terraces, and evidence the central depression was once a lake. The Atlantis hypothesis remains heterodox; the geological scale and visual drama of the site are not in question."
+  },
+  {
+    "n": "Sogmatar",
+    "lat": 36.9417,
+    "lng": 39.4444,
+    "cat": "rockcut",
+    "region": "Türkiye",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "scale",
+      "stratigraphy"
+    ],
+    "desc": "Late Sabian astral cult sanctuary in Şanlıurfa Province, southeastern Türkiye, approximately 60 km from Göbekli Tepe. Features rock-cut chambers, monumental tombs, an open-air sanctuary dedicated to the seven Sabian planetary deities, and inscriptions in Aramaic, Greek, and Syriac. Conventionally dated to the 1st-3rd centuries CE. The bedrock-cut central altar and the systematic alignment of seven distinct cult sites around it suggest a sophisticated astronomical and theological framework. Archaic Lens proposes (heterodox) that the underlying bedrock work may be an earlier Sabian Hall of Records rather than a Roman-period construction."
+  },
+  {
+    "n": "Marae Arahurahu (Tahiti)",
+    "lat": -17.7367,
+    "lng": -149.6072,
+    "cat": "temple",
+    "region": "Pacific",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Restored ancient Tahitian marae (ceremonial platform) in the Pa'ea district of Tahiti, French Polynesia. The largest and best-preserved marae in the Society Islands. Constructed of tightly-fitted basalt blocks forming a tiered ahu platform with associated upright stones and stone sculptures. Functioned as the religious and political center of the surrounding district until the introduction of Christianity in the 19th century. Tahitian marae construction parallels Easter Island ahu architecture and the East Polynesian dispersal that connects them is documented in oral tradition and DNA evidence."
+  },
+  {
+    "n": "Naveta des Tudons",
+    "lat": 39.9925,
+    "lng": 3.9069,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "polygonal"
+    ],
+    "desc": "Bronze Age megalithic chamber tomb on the island of Menorca, Balearic Islands, Spain. Roughly 14 m long, built of polygonal-fitted limestone blocks in the shape of an inverted boat hull. Conventionally dated 1200-750 BCE to the Talayotic culture. Archaic Lens documents architectural parallels to Göbekli Tepe T-pillar enclosures and to Easter Island ahu, suggesting connections that mainstream archaeology has not explored. The wider Menorcan landscape contains hundreds of Talayotic stone monuments forming one of Europe's densest megalithic complexes."
+  },
+  {
+    "n": "Azores Pyramids (Pico Alto)",
+    "lat": 36.9853,
+    "lng": -25.0986,
+    "cat": "pyramid",
+    "region": "Europe",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "stratigraphy"
+    ],
+    "desc": "Possible megalithic pyramids and dolmen-like structures documented on multiple Azores islands (São Miguel, Terceira, Pico) by independent archaeologist Antonieta Costa and others. Mainstream archaeology classifies the surface features as natural volcanic formations or post-medieval shepherd cairns. Independent fieldwork (Archaic Lens, Costa) documents systematic geometric arrangements, possible megalithic tombs, and rock-cut features that predate Portuguese settlement in the 15th century. The Atlantis hypothesis places the Azores as a possible peak of a submerged Atlantic ridge. The dating remains contested."
+  },
+  {
+    "n": "Mycenae (Lion Gate)",
+    "lat": 37.7308,
+    "lng": 22.7561,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "polygonal"
+    ],
+    "desc": "Late Bronze Age citadel in the Argolid, Peloponnese, Greece. Capital of the Mycenaean civilization (c. 1600-1100 BCE) that inspired Homer's Iliad. The cyclopean walls are built of massive limestone blocks weighing many tonnes, fitted without mortar in a style the ancient Greeks themselves believed had been built by giants (Cyclopes). The Lion Gate, with its 20-tonne lintel and triangular relief of two lions flanking a column, is one of the earliest examples of monumental sculpture in Europe. The Cyclopean masonry style is paralleled at Tiryns, Argos, and the polygonal walls of Cusco half a world away."
+  },
+  {
+    "n": "Treasury of Atreus (Tomb of Agamemnon)",
+    "lat": 37.7256,
+    "lng": 22.7544,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "precision",
+      "geometry"
+    ],
+    "desc": "Monumental Mycenaean tholos tomb at Mycenae, also called the Tomb of Agamemnon. Built c. 1250 BCE with a 14.5 m diameter beehive corbelled vault — the largest dome construction anywhere in the world until the Pantheon was built 1,400 years later. The lintel block above the entrance weighs an estimated 120 tonnes, transported from a quarry several kilometres away. The precision of the corbelled stone joints holds without mortar to this day."
+  },
+  {
+    "n": "Pyramid of Hellinikon",
+    "lat": 37.5722,
+    "lng": 22.7264,
+    "cat": "pyramid",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "stratigraphy"
+    ],
+    "desc": "Small pyramidal structure in the Argolid, Greece, built of polygonal-fitted limestone blocks. Originally proposed by Greek researchers (Liritzis, Vassiliou) to date to c. 2700 BCE based on thermoluminescence and optically stimulated luminescence dating of the limestone surfaces. If correct, the Hellinikon pyramid is older than the Great Pyramid of Giza and may be the oldest stone monument in Europe. Mainstream archaeology disputes the dating and assigns the structure to the 4th century BCE Classical period."
+  },
+  {
+    "n": "Pnyx Hill (Athens)",
+    "lat": 37.9714,
+    "lng": 23.7211,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 2,
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Open-air assembly ground in Athens where the citizens of the ancient democracy met to vote on civic matters from the 6th century BCE onward. Features a monumental rock-cut bema (speaker's platform), massive cyclopean retaining walls, and a carved auditorium oriented to seat several thousand citizens. The architectural ambition exceeds what the conventional Cleisthenes-era democracy is generally credited with."
+  },
+  {
+    "n": "Tula (Tollan)",
+    "lat": 20.0667,
+    "lng": -99.3406,
+    "cat": "city",
+    "region": "Mesoamerica",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "machining",
+      "scale"
+    ],
+    "desc": "Capital of the Toltec civilization in Hidalgo, central Mexico, occupied c. 900-1150 CE. Famous for the 4.6 m tall basalt Atlantean warrior columns atop Pyramid B. Archaic Lens documents tubular drill marks and surface machining patterns on stones at the site that are difficult to reconcile with the assumed Toltec toolkit. The Toltecs claimed cultural descent from earlier Teotihuacán (which they called Tollan-Teotihuacán) and their architectural vocabulary echoes both Teotihuacán and the Maya cities further south, suggesting a deeper continuity than the conventional cultural breaks acknowledge."
+  },
+  {
+    "n": "Malta Cart Ruts (Misraħ Għar il-Kbir)",
+    "lat": 35.8675,
+    "lng": 14.415,
+    "cat": "geoglyph",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Maltese landscape feature also called \"Clapham Junction\" — a dense network of parallel grooves cut into the limestone bedrock, forming a complex intersection of cart-rut-like tracks. The grooves run for kilometres, cross each other at different elevations, and in places drop off underwater cliffs (implying construction during a lower sea level). Mainstream explanations (Bronze Age sledge tracks, Roman cart wheels) do not explain the underwater extensions or the grid-like density. Independent researchers connect the Maltese cart ruts to similar features in Sardinia, the Crimea, and the wider Mediterranean."
   }
 ]

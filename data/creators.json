@@ -293,5 +293,12 @@
     "subs": "BBC's documentary short-form channel covering culture, history, science, and travel with field cinematography",
     "color": "#BB1919",
     "tier": 2
+  },
+  "archaiclens": {
+    "name": "Archaic Lens",
+    "handle": "@ArchaicLens",
+    "subs": "On-the-ground exploration of ancient and megalithic sites with strong cinematography; deep-dives on the Richat Structure, San Agustín, Nan Madol, and the megalithic Mediterranean and Pacific",
+    "color": "#A87644",
+    "tier": 2
   }
 }
