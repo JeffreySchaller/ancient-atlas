@@ -323,9 +323,74 @@ ul.crisp li strong{color:var(--ivory);font-weight:600}
     <figcaption>The Daimochi Tsugi, a Japanese scarf joint. The technical layout above specifies the dimensions to fractions of a beam-height (the recurring <em>h</em> in the measurements). The photograph below shows the same joint executed in wood. The geometric vocabulary — complementary stepped cuts, an internal locking profile, the load-transfer faces — is functionally identical to the polygonal joinery on stone walls across four continents. Different medium, same answer to the joint problem.</figcaption>
   </figure>
 
-  <figure class="photo">
-    <img src="photos/mini-megaliths/09-daimochi-tsugi-diagram.jpg" alt="Detailed mathematical layout diagram of the Daimochi Tsugi Japanese scarf joint showing precise fractional measurements relative to beam height." loading="lazy" />
-    <figcaption>The same joint, drawn as engineering. Every measurement is a fraction of the beam height <em>h</em> : the long diagonal at <em>4.5h</em>, the load-transfer faces at <em>0.45h</em>, the lock geometry at <em>0.45h</em>. This is not intuition. It is a worked-out mathematical design that survived because the proportions hold under load. The mini megalith reads the same way once you accept that hand-sized stones in 100-ton walls are not patches but precision-cut elements doing specific load-transfer work the larger blocks cannot do alone.</figcaption>
+  <figure class="photo" style="background:rgba(22,22,29,.6);border:1px solid rgba(42,42,53,.5);border-radius:8px;padding:40px 32px 32px;box-shadow:0 16px 48px rgba(0,0,0,.4)">
+    <svg viewBox="0 0 720 290" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block" aria-label="Technical layout diagram of the Daimochi Tsugi Japanese scarf joint, showing precise fractional measurements relative to beam height h.">
+
+      <!-- Construction arc above the beam (geometric origin) -->
+      <path d="M 100 100 Q 360 -40 620 100" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.25" stroke-dasharray="3 4"/>
+
+      <!-- Vertical construction lines from arc down to beam -->
+      <g stroke="#C9A84C" stroke-width="0.7" opacity="0.32" stroke-dasharray="2 3">
+        <line x1="156" y1="60" x2="156" y2="100"/>
+        <line x1="260" y1="32" x2="260" y2="100"/>
+        <line x1="360" y1="18" x2="360" y2="100"/>
+        <line x1="460" y1="32" x2="460" y2="100"/>
+        <line x1="564" y1="60" x2="564" y2="100"/>
+      </g>
+
+      <!-- Beam outline -->
+      <rect x="100" y="100" width="520" height="80" fill="none" stroke="#C9A84C" stroke-width="1.6"/>
+
+      <!-- The Daimochi Tsugi scarf cut: diagonal with two interlocking locks -->
+      <path d="M 156 100 L 300 175 L 300 132 L 360 132 L 360 152 L 420 152 L 420 132 L 480 132 L 480 175 L 564 180"
+            fill="none" stroke="#C9A84C" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+
+      <!-- Beam height marker (left side) -->
+      <g stroke="#C9A84C" stroke-width="0.8" opacity="0.5">
+        <line x1="74" y1="100" x2="74" y2="180"/>
+        <line x1="68" y1="100" x2="80" y2="100"/>
+        <line x1="68" y1="180" x2="80" y2="180"/>
+      </g>
+      <text x="56" y="146" font-family="Fraunces, Georgia, serif" font-style="italic" font-size="17" fill="#C9A84C" text-anchor="middle">h</text>
+
+      <!-- Segment tick marks below beam -->
+      <g stroke="#C9A84C" stroke-width="0.7" opacity="0.5">
+        <line x1="100" y1="200" x2="100" y2="212"/>
+        <line x1="156" y1="200" x2="156" y2="212"/>
+        <line x1="300" y1="200" x2="300" y2="212"/>
+        <line x1="420" y1="200" x2="420" y2="212"/>
+        <line x1="564" y1="200" x2="564" y2="212"/>
+        <line x1="620" y1="200" x2="620" y2="212"/>
+      </g>
+
+      <!-- Segment dimension lines -->
+      <g stroke="#C9A84C" stroke-width="0.7" opacity="0.4">
+        <line x1="100" y1="206" x2="156" y2="206"/>
+        <line x1="156" y1="206" x2="300" y2="206"/>
+        <line x1="300" y1="206" x2="420" y2="206"/>
+        <line x1="420" y1="206" x2="564" y2="206"/>
+        <line x1="564" y1="206" x2="620" y2="206"/>
+      </g>
+
+      <!-- Segment measurement labels -->
+      <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#C9A84C" letter-spacing="0.05em" text-anchor="middle" opacity="0.92">
+        <text x="128" y="232">0.45h</text>
+        <text x="228" y="232">1.35h</text>
+        <text x="360" y="232">0.9h</text>
+        <text x="492" y="232">1.35h</text>
+        <text x="592" y="232">0.45h</text>
+      </g>
+
+      <!-- Total length dimension 4.5h -->
+      <g stroke="#C9A84C" stroke-width="0.7" opacity="0.45">
+        <line x1="100" y1="258" x2="620" y2="258"/>
+        <line x1="100" y1="253" x2="100" y2="263"/>
+        <line x1="620" y1="253" x2="620" y2="263"/>
+      </g>
+      <text x="360" y="280" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12.5" fill="#C9A84C" letter-spacing="0.12em" text-anchor="middle" font-weight="600">4.5 h</text>
+
+    </svg>
+    <figcaption style="margin-top:22px">The same joint, drawn as engineering. Every measurement is a fraction of the beam height <em>h</em> : the long diagonal spans <em>4.5h</em>, each tongue is <em>0.45h</em>, each lock segment is <em>1.35h</em>, the locked centre is <em>0.9h</em>. The arc above shows the geometric construction the layout was derived from. This is not intuition. It is a worked-out mathematical design that survived because the proportions hold under load. The mini megalith reads the same way once you accept that hand-sized stones in 100-ton walls are not patches but precision-cut elements doing specific load-transfer work the larger blocks cannot do alone.</figcaption>
   </figure>
 
   <p class="body">The mini megalith reads the same way. Both traditions reject the easy options (mortar, nails) in favor of pure geometry. Both require the builder to hold the complete final form in mind before the first cut. Both accept high upfront labor for centuries-long performance. Different materials, same constraint, same family of solutions.</p>
