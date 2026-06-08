@@ -6,7 +6,10 @@
     "cat": "underground",
     "region": "Türkiye",
     "tier": 1,
-    "desc": "Massive underground city extending 60m deep with 18 levels. Could shelter 20,000 people with livestock and food stores. Features ventilation shafts, wells, and a cruciform church on the lowest level."
+    "desc": "Massive underground city extending 60m deep with 18 levels. Could shelter 20,000 people with livestock and food stores. Features ventilation shafts, wells, and a cruciform church on the lowest level.",
+    "criteria": [
+      "machining"
+    ]
   },
   {
     "n": "Kaymakli Underground City",
@@ -348,7 +351,10 @@
     "cat": "pyramid",
     "region": "Egypt",
     "tier": 1,
-    "desc": "Last surviving Wonder of the Ancient World. 146m tall, 2.3 million blocks averaging 2.5 tons each. Built ~2560 BCE with precision that still defies full explanation."
+    "desc": "Last surviving Wonder of the Ancient World. 146m tall, 2.3 million blocks averaging 2.5 tons each. Built ~2560 BCE with precision that still defies full explanation.",
+    "criteria": [
+      "machining"
+    ]
   },
   {
     "n": "Pyramid of Khafre",
@@ -579,7 +585,10 @@
     "cat": "tomb",
     "region": "Egypt",
     "tier": 1,
-    "desc": "Underground gallery of 24 massive granite sarcophagi, each weighing up to 70 tons with precision-machined lids. Officially bull tombs, but their extreme precision raises questions."
+    "desc": "Underground gallery of 24 massive granite sarcophagi, each weighing up to 70 tons with precision-machined lids. Officially bull tombs, but their extreme precision raises questions.",
+    "criteria": [
+      "machining"
+    ]
   },
   {
     "n": "Pyramid of Unas",
@@ -624,7 +633,10 @@
     "cat": "megalithic",
     "region": "South America",
     "tier": 1,
-    "desc": "Massive fortress above Cusco with zigzag walls of perfectly fitted polygonal stones, some weighing 200+ tons. Construction method remains unexplained."
+    "desc": "Massive fortress above Cusco with zigzag walls of perfectly fitted polygonal stones, some weighing 200+ tons. Construction method remains unexplained.",
+    "criteria": [
+      "machining"
+    ]
   },
   {
     "n": "Ollantaytambo",
@@ -1047,7 +1059,10 @@
     "cat": "rock-cut",
     "region": "Middle East",
     "tier": 1,
-    "desc": "Nabataean capital carved into rose-red sandstone cliffs. The Treasury (Al-Khazneh) is just the entrance to a vast city of 800+ carved structures, tombs, and water channels."
+    "desc": "Nabataean capital carved into rose-red sandstone cliffs. The Treasury (Al-Khazneh) is just the entrance to a vast city of 800+ carved structures, tombs, and water channels.",
+    "criteria": [
+      "machining"
+    ]
   },
   {
     "n": "Ur",
@@ -1397,7 +1412,11 @@
     "cat": "underground",
     "region": "Asia",
     "tier": 2,
-    "desc": "24 man-made caverns in China discovered in 1992, carved from siltstone. No historical records of their construction. Uniform chisel marks across enormous chambers."
+    "desc": "24 man-made caverns in China discovered in 1992, carved from siltstone. No historical records of their construction. Uniform chisel marks across enormous chambers.",
+    "signal": "open",
+    "criteria": [
+      "machining"
+    ]
   },
   {
     "n": "Sanxingdui",
@@ -1415,7 +1434,11 @@
     "cat": "megalithic",
     "region": "Asia",
     "tier": 2,
-    "desc": "Ming Dynasty quarry near Nanjing (commissioned by the Yongle Emperor, 1405). Three unfinished megalithic steles intended for the Xiaoling Mausoleum, the largest weighing an estimated 16,000+ tons. Abandoned mid-carving. Why and how transport was attempted at this scale remains unexplained."
+    "desc": "Ming Dynasty quarry near Nanjing (commissioned by the Yongle Emperor, 1405). Three unfinished megalithic steles intended for the Xiaoling Mausoleum, the largest weighing an estimated 16,000+ tons. Abandoned mid-carving. Why and how transport was attempted at this scale remains unexplained.",
+    "signal": "open",
+    "criteria": [
+      "machining"
+    ]
   },
   {
     "n": "Xi'an Pyramids",
@@ -2939,8 +2962,8 @@
     "tier": 3,
     "signal": "open",
     "criteria": [
-      "scale",
-      "precision"
+      "machining",
+      "scale"
     ],
     "desc": "Ancient rock-cut quarry and cave system in Şanlıurfa Province near Harran, in the cradle of early Mesopotamian civilization. The caves are documented as a Roman-era quarry that supplied stone for the city of Harran, though local tradition and the scale of the workings suggest earlier origins. The site sits in the same landscape as Göbekli Tepe (60 km away) and Karahan Tepe."
   },
@@ -5241,7 +5264,8 @@
     "criteria": [
       "polygonal",
       "precision",
-      "geometry"
+      "geometry",
+      "machining"
     ],
     "desc": "Megalithic interlocking wall structure on a private ranch in the Tobacco Root Mountains, southwestern Montana. Discovered by the landowner family in the 1980s. Features polygonal joinery stylistically comparable to Sacsayhuamán in Peru and Cusco's walls — irregularly-shaped, multi-ton blocks fitted without mortar. Mainstream archaeology classifies it as natural rock formation. Independent researchers (Brien Foerster, JJ Ainsworth, Jimmy Bright) argue the joinery angles, scoop marks, and interlocks indicate intentional construction. One of North America's most-debated megalithic anomalies."
   },
@@ -5330,5 +5354,33 @@
       "precision"
     ],
     "desc": "Cluster of approximately 350 anthropomorphic carved stone monoliths in Cross River State, southeastern Nigeria, ancestral territory of the Ekoi people. Carved from basalt and limestone, depicting stylized human figures with arms folded across the body. Conventional dating: 200 BCE - 200 CE. Stylistic parallels to figures in Sulawesi (Indonesia) and the South American spiral-motif tradition raise questions of Atlantic-era cultural diffusion. Largely absent from mainstream archaeology discourse despite its scale."
+  },
+  {
+    "n": "Kotukal Cave Temple",
+    "lat": 10.05,
+    "lng": 78.05,
+    "cat": "rockcut",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "machining",
+      "precision"
+    ],
+    "desc": "Rock-cut Hindu cave temple in Tamil Nadu, southern India, carved into a boulder-like outcrop that emerges from the ground. The convergent triangulation interest lies in a specific feature: a deep horizontal groove cut across the top of the boulder, identical in form to grooves at Bazda Caves (Türkiye), San Andrea Priù (Sardinia), and several Chinese grotto sites. The conventional reading attributes the temple to medieval Hindu rock-cut tradition (~7th-9th c. CE). The independent reading flags the upper groove as a tool-mark signature of an earlier, cross-continental rock-cutting tradition that the temple was carved into."
+  },
+  {
+    "n": "San Andrea Priù",
+    "lat": 40.4083,
+    "lng": 8.7833,
+    "cat": "rockcut",
+    "region": "Europe",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "machining",
+      "scale"
+    ],
+    "desc": "Hypogeum (rock-cut tomb complex) in Bonorva, central Sardinia, Italy. Part of the broader domus de janas ('houses of the fairies') tradition of Sardinian rock-cut chambers, conventionally dated to the late Neolithic (c. 3500-2900 BCE). Notable for a long horizontal cut running across the cliff face in front of the cave entrances — a feature that has no obvious function for a tomb but matches similar horizontal cuts at Bazda Caves and Kotukal. The interior chambers show a mix of rock-cut chisel work and later Christian-era frescoes."
   }
 ]
