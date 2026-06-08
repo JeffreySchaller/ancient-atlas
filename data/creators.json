@@ -265,5 +265,12 @@
     "subs": "boots-on-ground walkthroughs of underground cities, rock-cut monasteries, and megalithic sites; focused on tool marks, scale, and design intent that often resist mainstream chronology",
     "color": "#8C6E4F",
     "tier": 3
+  },
+  "turkiyetoday": {
+    "name": "Türkiye Today",
+    "handle": "@turkiyetoday",
+    "subs": "English-language Türkiye news + culture channel; shorts on archaeological discoveries, hidden sites, and ancient monuments",
+    "color": "#C8102E",
+    "tier": 3
   }
 }

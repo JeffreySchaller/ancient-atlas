@@ -219,7 +219,18 @@
     "Matiate (Midyat) Underground City",
     "Mucur Underground City",
     "Höyük Underground City",
-    "Ozancık Höyük"
+    "Ozancık Höyük",
+    "Karahan Tepe",
+    "Hagia Sophia",
+    "Yedikule Fortress",
+    "Harput Castle",
+    "Ankara Hidden Monastery",
+    "Selime Cathedral (Cave Mosque)",
+    "Iznik (Ancient Nicaea)",
+    "Zeugma Mosaic Museum",
+    "Antalya Ancient Theaters",
+    "Boncuklu Tarla",
+    "Basilica Cistern (Yerebatan)"
   ],
   "Italy": [
     "Vetulonia",
@@ -351,5 +362,8 @@
     "Necropolis of Sao Gens",
     "Necropolis of Saint Michael (Sao Miguel)",
     "Necropolis of Moreira de Rei"
+  ],
+  "Spain": [
+    "Tarragona Cyclopean Walls"
   ]
 }
