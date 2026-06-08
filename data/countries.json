@@ -173,7 +173,8 @@
     "Arkaim",
     "Gornaya Shoria",
     "Khara-Hora Shaft",
-    "Chusovo Wall"
+    "Chusovo Wall",
+    "Gornaya Shoria Megaliths"
   ],
   "Cambodia": [
     "Spean Praptos (Kampong Kdei Bridge)",
@@ -201,7 +202,8 @@
     "Banteay Prei Nokor"
   ],
   "Peru": [
-    "Tarawasi"
+    "Tarawasi",
+    "Vilcabamba (Espíritu Pampa)"
   ],
   "Türkiye": [
     "Meydan Kalesi",
@@ -230,7 +232,14 @@
     "Zeugma Mosaic Museum",
     "Antalya Ancient Theaters",
     "Boncuklu Tarla",
-    "Basilica Cistern (Yerebatan)"
+    "Basilica Cistern (Yerebatan)",
+    "Sayburç",
+    "Sefertepe",
+    "Gürcütepe",
+    "Çakmaktepe",
+    "Ayanlar Höyük",
+    "Harbetsuvan Tepesi",
+    "Yenimahalle Höyük"
   ],
   "Italy": [
     "Vetulonia",
@@ -267,7 +276,8 @@
     "Sumba Megalithic Tombs",
     "Sumbawa Megaliths",
     "Toraja Rock-Cut Burials",
-    "Nias Island Megaliths"
+    "Nias Island Megaliths",
+    "Bada Valley Megaliths"
   ],
   "India": [
     "Maliabad Fort"
@@ -294,7 +304,9 @@
     "Rongxian Giant Buddha",
     "Keyan Big Buddha",
     "Goguryeo Tombs (Jilin)",
-    "Zhangye Dafo Temple"
+    "Zhangye Dafo Temple",
+    "Yangshan Quarry",
+    "Xi'an Pyramids"
   ],
   "Afghanistan": [
     "Bamiyan",
@@ -350,7 +362,8 @@
     "Hodota Kofun Cluster",
     "Sakitama Kofun Cluster",
     "Saitobaru Kofun Cluster",
-    "Koichi Kofun Cluster"
+    "Koichi Kofun Cluster",
+    "Yakushima Megaliths"
   ],
   "Scotland": [
     "Gilmerton Cove",
@@ -365,5 +378,23 @@
   ],
   "Spain": [
     "Tarragona Cyclopean Walls"
+  ],
+  "Egypt": [
+    "Qasr el Sagha"
+  ],
+  "United States": [
+    "Sage Wall (Montana)"
+  ],
+  "Saudi Arabia": [
+    "Hegra (Madain Saleh)"
+  ],
+  "France": [
+    "Carnac Stones (Brittany)"
+  ],
+  "South Korea": [
+    "Gochang Dolmens"
+  ],
+  "Nigeria": [
+    "Ikom Monoliths"
   ]
 }

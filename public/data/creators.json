@@ -272,5 +272,12 @@
     "subs": "English-language Türkiye news + culture channel; shorts on archaeological discoveries, hidden sites, and ancient monuments",
     "color": "#C8102E",
     "tier": 3
+  },
+  "bassforge": {
+    "name": "BassForge",
+    "handle": "@BassForge",
+    "subs": "Global ancient-anomaly synthesis channel; rapid-fire tours connecting megalithic + rock-cut + cyclopean sites across continents with technical lens (engineering, geometry, signal processing analogies)",
+    "color": "#5C2A9D",
+    "tier": 2
   }
 }

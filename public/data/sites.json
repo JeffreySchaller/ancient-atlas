@@ -5116,5 +5116,219 @@
       "geometry"
     ],
     "desc": "Massive underground Byzantine cistern in Istanbul, built under Justinian I in 532 CE to supply water to the Great Palace. 138 m long, 65 m wide, 9 m high, supported by 336 marble columns. The two famous Medusa-head bases at the northwest corner are reused from earlier Roman structures. Part of Istanbul's extensive Byzantine water-supply system that included aqueducts, smaller cisterns, and an extensive underground network."
+  },
+  {
+    "n": "Sefertepe",
+    "lat": 37.13,
+    "lng": 38.94,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Pre-pottery Neolithic site in Şanlıurfa Province, near Karahan Tepe. Discoveries announced in 2025 include two carved heads emerging from a single slab and a small statue with two faces (one open-mouthed) on opposite sides of the same stone. The dual-face motif resonates with the open-mouth carving on the main head in structure AB at Karahan Tepe, suggesting deep iconographic continuity across Taş Tepeler sites."
+  },
+  {
+    "n": "Gürcütepe",
+    "lat": 37.13,
+    "lng": 38.81,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Cluster of four small Neolithic mounds in the valleys below Göbekli Tepe (visible from it). One of the last-phase sites in the Taş Tepeler region, dated c. 7000 BCE. Important as the first site in the region where full-bodied feminine goddess figurines appear — connecting forward to Çatalhöyük further west and the Maltese goddess tradition further afield."
+  },
+  {
+    "n": "Çakmaktepe",
+    "lat": 37.25,
+    "lng": 38.96,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "stratigraphy"
+    ],
+    "desc": "Pre-pottery Neolithic site near Göbekli Tepe, recently proven to be older than Göbekli Tepe by ~500 years (potentially c. 12,000 years old). Megalithomania observed a T-pillar lying on the ground here before excavation began. As of 2025, a Japanese archaeological team is starting proper excavation. Part of the Taş Tepeler complex that is rewriting Neolithic chronology."
+  },
+  {
+    "n": "Ayanlar Höyük",
+    "lat": 37.55,
+    "lng": 38.4,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Pre-pottery Neolithic mound site (also called Gre Filla) in Hilvan district, Şanlıurfa Province. One of the 12 sites in the broader Taş Tepeler complex. Largely unexcavated as of 2025 but shows surface T-pillar evidence consistent with the Göbekli / Karahan tradition."
+  },
+  {
+    "n": "Harbetsuvan Tepesi",
+    "lat": 37.095,
+    "lng": 39.275,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Hilltop pre-pottery Neolithic site approximately 1 km from Karahan Tepe, hard to access and remote. Part of the Taş Tepeler complex. Excavation discoveries are being made but the site has received little public attention compared to Karahan and Göbekli."
+  },
+  {
+    "n": "Yenimahalle Höyük",
+    "lat": 37.15,
+    "lng": 38.78,
+    "cat": "megalithic",
+    "region": "Türkiye",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Neolithic mound site in central Şanlıurfa, one of the 12 sites of the Taş Tepeler complex. Largely buried under modern neighborhood development."
+  },
+  {
+    "n": "Qasr el Sagha",
+    "lat": 29.5917,
+    "lng": 30.7167,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "precision",
+      "scale"
+    ],
+    "desc": "Predynastic / Old Kingdom cyclopean temple on the northern edge of the Fayoum depression in middle Egypt. Built of massive polygonal limestone blocks with no mortar, fitting in the same interlocking style as Sacsayhuamán in Peru. Conventionally dated to the Middle Kingdom (c. 1850 BCE) but undecorated, unfinished, and structurally unlike any contemporary Egyptian temple — leading Megalithomania and other independent researchers to argue for a much earlier predynastic foundation. Critical reference point for the Osireion / pre-dynastic cyclopean Egypt thesis covered in Library Entry 03."
+  },
+  {
+    "n": "Gornaya Shoria Megaliths",
+    "lat": 52.8,
+    "lng": 87.9,
+    "cat": "megalithic",
+    "region": "Russia",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "polygonal",
+      "geometry"
+    ],
+    "desc": "Mountain site in Kemerovo Oblast, southwestern Siberia, where researchers (Valery Uvarov, Georgy Sidorov, John Jensen) have documented stones reported to weigh 3,000-4,000 tonnes — potentially the largest worked megaliths anywhere on Earth, exceeding Baalbek's trilithon. The mainstream view labels the formations natural granite weathering. Independent researchers point to flat-cut surfaces, right-angle joints, and stacked courses that are difficult to reconcile with natural processes. Remote location and limited Western access have kept the site underdocumented."
+  },
+  {
+    "n": "Sage Wall (Montana)",
+    "lat": 45.475,
+    "lng": -111.7833,
+    "cat": "megalithic",
+    "region": "North America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "precision",
+      "geometry"
+    ],
+    "desc": "Megalithic interlocking wall structure on a private ranch in the Tobacco Root Mountains, southwestern Montana. Discovered by the landowner family in the 1980s. Features polygonal joinery stylistically comparable to Sacsayhuamán in Peru and Cusco's walls — irregularly-shaped, multi-ton blocks fitted without mortar. Mainstream archaeology classifies it as natural rock formation. Independent researchers (Brien Foerster, JJ Ainsworth, Jimmy Bright) argue the joinery angles, scoop marks, and interlocks indicate intentional construction. One of North America's most-debated megalithic anomalies."
+  },
+  {
+    "n": "Vilcabamba (Espíritu Pampa)",
+    "lat": -12.9333,
+    "lng": -73.0667,
+    "cat": "city",
+    "region": "South America",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "scale",
+      "stratigraphy"
+    ],
+    "desc": "Last stronghold of the Inca Empire after the Spanish conquest, deep in the Vilcabamba mountains northeast of Cusco. Rediscovered by Hiram Bingham in 1911 and definitively identified in 1964 by Gene Savoy. Shows the same stratigraphic pattern visible at Machu Picchu and Sacsayhuamán: older, more refined polygonal masonry at the base, with cruder Inca-era stonework added on top. This 'old work / new work' contrast is one of the strongest visual arguments for a pre-Inca megalithic tradition that the Incas inherited rather than built."
+  },
+  {
+    "n": "Hegra (Madain Saleh)",
+    "lat": 26.79,
+    "lng": 37.9533,
+    "cat": "rockcut",
+    "region": "Middle East",
+    "tier": 1,
+    "signal": "convergent",
+    "criteria": [
+      "precision",
+      "scale",
+      "geometry"
+    ],
+    "desc": "Second-largest city of the Nabataean Empire (after Petra), in AlUla, Saudi Arabia. 131 monumental tombs carved directly into sandstone mountains, c. 1st century BCE - 1st century CE. The tombs are carved top-down from the mountain face — unfinished examples reveal the work sequence clearly. Greco-Roman stylistic elements appear deep in Arabian territory. Interior chambers are remarkably plain despite the elaborate exterior facades, a puzzle that conventional and independent readings interpret differently. Critical anchor for Library Entry 04 (the Top-Down Tradition)."
+  },
+  {
+    "n": "Yakushima Megaliths",
+    "lat": 30.35,
+    "lng": 130.5,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Carved megalithic stones on Yakushima Island, off the southern tip of Japan's main island chain. Features include a precisely rectangular cut stone sitting atop a larger worked rock, additional bread-loaf-shaped blocks reminiscent of the laser-cut appearance of stones at AlUla (Saudi Arabia) and Puma Punku (Bolivia). Local lore connects the stones to the legendary land of Mu. Mainstream archaeology is silent on these features."
+  },
+  {
+    "n": "Carnac Stones (Brittany)",
+    "lat": 47.5833,
+    "lng": -3.075,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Massive Neolithic alignment of approximately 4,000 standing stones in long parallel rows stretching across the landscape of Brittany, France. Stones weigh 40-350 tonnes. Dated to c. 5000 BCE — predating Stonehenge by 1,000+ years. Recent research (BassForge synthesis) demonstrates the alignment encodes astrogeometry: three perfect squares laid end-to-end produce the exact angle of a 3-4-5 right triangle (Pythagorean triple) thousands of years before its formal documentation by the Sumerians. The astrogeometric encoding parallels Angkor Wat and the Great Pyramid. The world's largest concentration of standing-stone megaliths."
+  },
+  {
+    "n": "Gochang Dolmens",
+    "lat": 35.4333,
+    "lng": 126.55,
+    "cat": "megalithic",
+    "region": "Asia",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Dolmen field in Jeollabuk Province, South Korea — part of the Gochang-Hwasun-Ganghwa dolmen system that contains over 35,000 documented dolmens, more than 40% of the world's total. Some individual capstones exceed 100 tonnes. A documented modern reconstruction experiment in Denmark succeeded with a 9-tonne stone; the Korean originals weigh 10x that and were placed thousands of times. Conventionally classified as burial monuments, but the structural insecurity of the dolmen form as a tomb is increasingly questioned. UNESCO designates this as a world heritage zone (not site) due to scale."
+  },
+  {
+    "n": "Ikom Monoliths",
+    "lat": 6.0667,
+    "lng": 8.86,
+    "cat": "megalithic",
+    "region": "Africa",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "Cluster of approximately 350 anthropomorphic carved stone monoliths in Cross River State, southeastern Nigeria, ancestral territory of the Ekoi people. Carved from basalt and limestone, depicting stylized human figures with arms folded across the body. Conventional dating: 200 BCE - 200 CE. Stylistic parallels to figures in Sulawesi (Indonesia) and the South American spiral-motif tradition raise questions of Atlantic-era cultural diffusion. Largely absent from mainstream archaeology discourse despite its scale."
   }
 ]

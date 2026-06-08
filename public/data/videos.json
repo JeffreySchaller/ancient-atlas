@@ -161,6 +161,20 @@
       "cr": "turkiyetoday",
       "added": "2026-06-07",
       "published": "2025-10-15"
+    },
+    {
+      "id": "pqNED6RJ4HY",
+      "title": "Major Discoveries at Göbekli Tepe, Karahan Tepe, Sefer Tepe & Sayburç | Taş Tepeler | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-06-07",
+      "published": "2025-11-29"
+    },
+    {
+      "id": "VXKhfI601Gc",
+      "title": "Karahan Tepe | 2025 Update + New Discoveries | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-06-07",
+      "published": "2025-06-10"
     }
   ],
   "Great Pyramid of Giza (Khufu)": [
@@ -1345,6 +1359,13 @@
       "id": "fyAUbM-bIFE",
       "title": "Sayburç Revelations 9,000 BC | Andrew Collins and Hugh Newman Interview 2022",
       "cr": "megalithomania"
+    },
+    {
+      "id": "pqNED6RJ4HY",
+      "title": "Major Discoveries at Göbekli Tepe, Karahan Tepe, Sefer Tepe & Sayburç | Taş Tepeler | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-06-07",
+      "published": "2025-11-29"
     }
   ],
   "Hampi": [
@@ -1653,6 +1674,13 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2022-12-15"
+    },
+    {
+      "id": "V_O9fRvd1OY",
+      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
+      "cr": "bassforge",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
     }
   ],
   "Xi'an Pyramids": [
@@ -1667,6 +1695,13 @@
       "title": "Gigantic Ancient Megastructures in China — Built By Unknown Civilization (Xi'an Pyramids section)",
       "cr": "universeinside",
       "t": 1482
+    },
+    {
+      "id": "V_O9fRvd1OY",
+      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
+      "cr": "bassforge",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
     }
   ],
   "Huashan Grottoes": [
@@ -3155,6 +3190,13 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-05-28"
+    },
+    {
+      "id": "V_O9fRvd1OY",
+      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
+      "cr": "bassforge",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
     }
   ],
   "Maliabad Fort": [
@@ -4118,6 +4160,13 @@
       "cr": "turkiyetoday",
       "added": "2026-06-07",
       "published": "2025-12-25"
+    },
+    {
+      "id": "pqNED6RJ4HY",
+      "title": "Major Discoveries at Göbekli Tepe, Karahan Tepe, Sefer Tepe & Sayburç | Taş Tepeler | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-06-07",
+      "published": "2025-11-29"
     }
   ],
   "Hagia Sophia": [
@@ -4241,6 +4290,105 @@
       "cr": "turkiyetoday",
       "added": "2026-06-07",
       "published": "2025-08-12"
+    }
+  ],
+  "Sefertepe": [
+    {
+      "id": "pqNED6RJ4HY",
+      "title": "Major Discoveries at Göbekli Tepe, Karahan Tepe, Sefer Tepe & Sayburç | Taş Tepeler | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-06-07",
+      "published": "2025-11-29"
+    }
+  ],
+  "Gürcütepe": [
+    {
+      "id": "pqNED6RJ4HY",
+      "title": "Major Discoveries at Göbekli Tepe, Karahan Tepe, Sefer Tepe & Sayburç | Taş Tepeler | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-06-07",
+      "published": "2025-11-29"
+    }
+  ],
+  "Qasr el Sagha": [
+    {
+      "id": "DVY08kpKn6I",
+      "title": "Qasr el Sagha | Predynastic Cyclopean Temple in Egypt | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-06-07",
+      "published": "2023-12-03"
+    }
+  ],
+  "Gornaya Shoria Megaliths": [
+    {
+      "id": "V_O9fRvd1OY",
+      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
+      "cr": "bassforge",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
+    }
+  ],
+  "Sage Wall (Montana)": [
+    {
+      "id": "V_O9fRvd1OY",
+      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
+      "cr": "bassforge",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
+    }
+  ],
+  "Vilcabamba (Espíritu Pampa)": [
+    {
+      "id": "V_O9fRvd1OY",
+      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
+      "cr": "bassforge",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
+    }
+  ],
+  "Hegra (Madain Saleh)": [
+    {
+      "id": "V_O9fRvd1OY",
+      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
+      "cr": "bassforge",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
+    }
+  ],
+  "Yakushima Megaliths": [
+    {
+      "id": "V_O9fRvd1OY",
+      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
+      "cr": "bassforge",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
+    }
+  ],
+  "Carnac Stones (Brittany)": [
+    {
+      "id": "V_O9fRvd1OY",
+      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
+      "cr": "bassforge",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
+    }
+  ],
+  "Gochang Dolmens": [
+    {
+      "id": "V_O9fRvd1OY",
+      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
+      "cr": "bassforge",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
+    }
+  ],
+  "Ikom Monoliths": [
+    {
+      "id": "V_O9fRvd1OY",
+      "title": "Ancient Architects | Insane Anomalies Decoded [2026]",
+      "cr": "bassforge",
+      "added": "2026-06-07",
+      "published": "2026-01-15"
     }
   ]
 }
