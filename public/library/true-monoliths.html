@@ -119,6 +119,13 @@ figure.photo.hero img{max-height:380px;object-fit:cover;object-position:center 6
   figure.photo.hero img{max-height:280px}
 }
 
+/* Opener variant — top of article, preserves grass-to-temple framing */
+figure.photo.opener{margin:0 0 36px}
+figure.photo.opener img{max-height:460px;object-fit:cover;object-position:center 38%}
+@media(max-width:680px){
+  figure.photo.opener img{max-height:320px}
+}
+
 /* Evidence photo strip — real tool marks in the wild */
 .evidence-strip{margin:48px 0 36px}
 .evidence-strip h6{font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.2em;color:var(--champagne);font-weight:700;margin-bottom:18px;text-align:center;opacity:.85}
@@ -199,6 +206,11 @@ figure.photo.hero img{max-height:380px;object-fit:cover;object-position:center 6
   <h2 class="article-title">True monoliths.</h2>
 
   <p class="article-subtitle">Cities carved from mountains, and the chisel marks that don't act like chisels.</p>
+
+  <figure class="photo opener">
+    <img src="photos/true-monoliths/06-kailasa-ellora-top-down.jpg" alt="Kailasa Temple at Ellora, viewed from the original cliff face. The temple sits at the bottom of a trench carved straight down through 30 metres of basalt, with the grassy plateau of the original ground level visible at the top of the surrounding cliff." loading="lazy" />
+    <figcaption style="margin-top:14px;font-family:var(--font-sans);font-size:14px;color:var(--cloud);line-height:1.6;text-align:left;padding:0 4px">Kailasa Temple at Ellora, viewed from the original cliff face. The temple sits at the bottom of a trench carved straight down through 30 metres of basalt. The grass at the top of the cliff marks the level at which the work began. An estimated 200,000 tonnes of rock were removed from above to leave the temple standing.</figcaption>
+  </figure>
 
   <div class="article-divider"></div>
 
