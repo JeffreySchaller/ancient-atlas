@@ -65,37 +65,40 @@ TITLE_FONT = load_font([
     "/Library/Fonts/Fraunces-Bold.ttf",
     "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
-], 78)
+], 86)
 TITLE_FONT_SHORT = load_font([
     "/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf",
     "/Library/Fonts/Fraunces-Bold.ttf",
     "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
-], 96)
+], 104)
+# Bumped small-text sizes for iMessage downscale readability.
+# iMessage renders OG cards at ~300x157 in the chat bubble, so anything
+# below ~30px in the source becomes unreadable. v3 sizes:
 BRAND_FONT = load_font([
     "/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf",
     "/Library/Fonts/Fraunces-Bold.ttf",
     "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
-], 36)
+], 48)
 ITALIC_FONT = load_font([
     "/System/Library/Fonts/Supplemental/Times New Roman Italic.ttf",
     "/Library/Fonts/Fraunces-Italic.ttf",
     "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
-], 24)
+], 32)
 MONO_TAG = load_font([
     "/System/Library/Fonts/Menlo.ttc",
     "/System/Library/Fonts/Monaco.ttc",
     "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
     "/System/Library/Fonts/Courier.ttc",
-], 14)
+], 22)
 MONO_URL = load_font([
     "/System/Library/Fonts/Supplemental/Times New Roman Italic.ttf",
     "/Library/Fonts/Fraunces-Italic.ttf",
     "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
-], 22)
+], 32)
 
 # ============================================================
 # Photo-background card composition
@@ -160,29 +163,29 @@ def wrap_text(text, font, max_width, draw):
 def compose_photo_card(photo_path, title, subtitle, entry_num):
     """Magazine-cover treatment: photo, gradient, brand chrome, title."""
     bg = cover_crop(photo_path)
-    bg = darken(bg, factor=0.72)
+    bg = darken(bg, factor=0.68)
     img = apply_gradient_overlay(bg)
     draw = ImageDraw.Draw(img, 'RGBA')
 
-    # Top brand chrome
-    draw_compass(draw, 110, 90, 28, color=CHAMPAGNE_PALE, weight=2)
-    draw.text((158, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY)
-    draw.text((160, 110), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
+    # Top brand chrome — sized for iMessage readability
+    draw_compass(draw, 110, 100, 38, color=CHAMPAGNE_PALE, weight=3)
+    draw.text((168, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY)
+    draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
 
     # Entry tag pill (top-right)
     if entry_num is not None:
         tag = f"ENTRY {entry_num:02d}"
-        pad_x, pad_y = 16, 8
+        pad_x, pad_y = 22, 12
         bbox = draw.textbbox((0, 0), tag, font=MONO_TAG)
         tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
         x0 = W - 80 - tw - pad_x * 2
         y0 = 78
         draw.rounded_rectangle(
             (x0, y0, x0 + tw + pad_x * 2, y0 + th + pad_y * 2),
-            radius=18,
+            radius=26,
             outline=CHAMPAGNE_PALE,
-            fill=(13, 13, 18, 120),
-            width=2,
+            fill=(13, 13, 18, 160),
+            width=3,
         )
         draw.text((x0 + pad_x, y0 + pad_y - 2), tag,
                   font=MONO_TAG, fill=CHAMPAGNE_PALE)
@@ -190,24 +193,24 @@ def compose_photo_card(photo_path, title, subtitle, entry_num):
     # Big serif title in the bottom third
     use_font = TITLE_FONT_SHORT if len(title) < 18 else TITLE_FONT
     title_lines = wrap_text(title, use_font, 1040, draw)
-    line_h = 92 if use_font == TITLE_FONT_SHORT else 84
-    total_h = line_h * len(title_lines) + (40 if subtitle else 0)
-    y = H - 110 - total_h
+    line_h = 100 if use_font == TITLE_FONT_SHORT else 92
+    total_h = line_h * len(title_lines) + (44 if subtitle else 0)
+    y = H - 120 - total_h
     for line in title_lines:
         draw.text((80, y), line, font=use_font, fill=IVORY)
         y += line_h
     if subtitle:
-        y += 8
+        y += 10
         sub_lines = wrap_text(subtitle, ITALIC_FONT, 1040, draw)
         for line in sub_lines:
             draw.text((80, y), line, font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
-            y += 32
+            y += 42
 
     # URL stamp bottom-right
     url = "theancientatlas.com/library"
     bbox = draw.textbbox((0, 0), url, font=MONO_URL)
     tw = bbox[2] - bbox[0]
-    draw.text((W - 80 - tw, H - 60), url, font=MONO_URL, fill=CHAMPAGNE)
+    draw.text((W - 80 - tw, H - 70), url, font=MONO_URL, fill=CHAMPAGNE)
 
     return img.convert('RGB')
 
@@ -233,21 +236,21 @@ def compose_atmospheric_vector(title, subtitle, entry_num, mark_fn):
     img = Image.blend(img, glow, 0.65)
 
     draw = ImageDraw.Draw(img, 'RGBA')
-    # Top brand chrome
-    draw_compass(draw, 110, 90, 28, color=CHAMPAGNE_PALE, weight=2)
-    draw.text((158, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY)
-    draw.text((160, 110), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
+    # Top brand chrome — sized for iMessage readability
+    draw_compass(draw, 110, 100, 38, color=CHAMPAGNE_PALE, weight=3)
+    draw.text((168, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY)
+    draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
     # Entry tag
     if entry_num is not None:
         tag = f"ENTRY {entry_num:02d}"
-        pad_x, pad_y = 16, 8
+        pad_x, pad_y = 22, 12
         bbox = draw.textbbox((0, 0), tag, font=MONO_TAG)
         tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
         x0 = W - 80 - tw - pad_x * 2
         y0 = 78
         draw.rounded_rectangle(
             (x0, y0, x0 + tw + pad_x * 2, y0 + th + pad_y * 2),
-            radius=18, outline=CHAMPAGNE_PALE, width=2,
+            radius=26, outline=CHAMPAGNE_PALE, width=3,
         )
         draw.text((x0 + pad_x, y0 + pad_y - 2), tag,
                   font=MONO_TAG, fill=CHAMPAGNE_PALE)
@@ -259,22 +262,22 @@ def compose_atmospheric_vector(title, subtitle, entry_num, mark_fn):
     # Title block
     use_font = TITLE_FONT_SHORT if len(title) < 18 else TITLE_FONT
     title_lines = wrap_text(title, use_font, 720, draw)
-    line_h = 92 if use_font == TITLE_FONT_SHORT else 84
-    total_h = line_h * len(title_lines) + 40
-    y = (H - total_h) // 2 + 20
+    line_h = 100 if use_font == TITLE_FONT_SHORT else 92
+    total_h = line_h * len(title_lines) + 44
+    y = (H - total_h) // 2 + 24
     for line in title_lines:
         draw.text((80, y), line, font=use_font, fill=IVORY)
         y += line_h
-    y += 6
+    y += 8
     for line in wrap_text(subtitle, ITALIC_FONT, 720, draw):
         draw.text((80, y), line, font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
-        y += 32
+        y += 42
 
     # URL stamp
     url = "theancientatlas.com/library"
     bbox = draw.textbbox((0, 0), url, font=MONO_URL)
     tw = bbox[2] - bbox[0]
-    draw.text((W - 80 - tw, H - 60), url, font=MONO_URL, fill=CHAMPAGNE)
+    draw.text((W - 80 - tw, H - 70), url, font=MONO_URL, fill=CHAMPAGNE)
     return img.convert('RGB')
 
 def mark_stone_circle(draw):
@@ -314,38 +317,48 @@ def compose_hub_card():
     if global_og.exists():
         bg = Image.open(global_og).convert('RGB')
         bg = bg.resize((W, H), Image.LANCZOS)
-        bg = darken(bg, factor=0.85)
-        img = apply_gradient_overlay(bg)
+        bg = darken(bg, factor=0.18)  # Heavy darken — only the dot constellation should remain
+        # Stronger top + bottom bands to fully hide the underlying chrome
+        overlay = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+        od = ImageDraw.Draw(overlay)
+        for y in range(0, 240):
+            alpha = int(230 * (1 - y / 240))
+            od.line([(0, y), (W, y)], fill=(13, 13, 18, alpha))
+        for y in range(260, H):
+            progress = (y - 260) / (H - 260)
+            alpha = int(80 + 220 * progress)
+            od.line([(0, y), (W, y)], fill=(13, 13, 18, min(255, alpha)))
+        img = Image.alpha_composite(bg.convert('RGBA'), overlay).convert('RGB')
     else:
         img = compose_atmospheric_vector("The Library",
                                          "Working frameworks for reading deep history.",
                                          None, None)
         return img
     draw = ImageDraw.Draw(img, 'RGBA')
-    draw_compass(draw, 110, 90, 28, color=CHAMPAGNE_PALE, weight=2)
-    draw.text((158, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY)
-    draw.text((160, 110), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
+    draw_compass(draw, 110, 100, 38, color=CHAMPAGNE_PALE, weight=3)
+    draw.text((168, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY)
+    draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
 
     # Title
     title = "The Library"
     subtitle = "Working frameworks for reading deep history sites well."
     use_font = TITLE_FONT_SHORT
     title_lines = wrap_text(title, use_font, 1040, draw)
-    line_h = 92
-    total_h = line_h * len(title_lines) + 40
-    y = H - 110 - total_h
+    line_h = 100
+    total_h = line_h * len(title_lines) + 44
+    y = H - 120 - total_h
     for line in title_lines:
         draw.text((80, y), line, font=use_font, fill=IVORY)
         y += line_h
-    y += 8
+    y += 10
     for line in wrap_text(subtitle, ITALIC_FONT, 1040, draw):
         draw.text((80, y), line, font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
-        y += 32
+        y += 42
 
     url = "theancientatlas.com/library"
     bbox = draw.textbbox((0, 0), url, font=MONO_URL)
     tw = bbox[2] - bbox[0]
-    draw.text((W - 80 - tw, H - 60), url, font=MONO_URL, fill=CHAMPAGNE)
+    draw.text((W - 80 - tw, H - 70), url, font=MONO_URL, fill=CHAMPAGNE)
     return img.convert('RGB')
 
 # ============================================================
