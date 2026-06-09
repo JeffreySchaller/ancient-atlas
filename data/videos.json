@@ -282,6 +282,13 @@
       "id": "gQuL0VYM7c0",
       "title": "Randall Carlson and the Erosion of the Great Sphinx of Giza",
       "cr": "unchartedx"
+    },
+    {
+      "id": "8QUd7eTZnBg",
+      "title": "The Sphinx: Older Than The Dynastic Egyptians?",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2024-01-15"
     }
   ],
   "Serapeum of Saqqara": [
@@ -888,6 +895,13 @@
       "cr": "secretsinstone",
       "added": "2026-06-09",
       "published": "2026-01-15"
+    },
+    {
+      "id": "UvlErNXBHy4",
+      "title": "A Thorough Exploration Of Easter Island: Who Was There Before The Polynesians?",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2023-08-22"
     }
   ],
   "Teotihuacán": [
@@ -984,6 +998,13 @@
       "id": "t157ruhjGWo",
       "title": "MASSIVE Tube Drills, Overcuts, and Melted Granite at Karnak and Luxor Temples",
       "cr": "unchartedx"
+    },
+    {
+      "id": "eqmAuczgvA8",
+      "title": "Massive Ancient Complex Of Karnak In Egypt; Dynastic Masterworks And Older Megalithic Expressions",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2024-09-08"
     }
   ],
   "Abu Simbel": [
@@ -1344,6 +1365,13 @@
       "cr": "protocivilization",
       "added": "2026-06-09",
       "published": "2024-09-20"
+    },
+    {
+      "id": "x_X-VRU5m1s",
+      "title": "Exploring Out Of Bounds At The Megalithic Quarry In Aswan Egypt",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2024-11-05"
     }
   ],
   "Bent Pyramid (Dahshur)": [
@@ -1623,6 +1651,13 @@
       "id": "90KOO4SLWrU",
       "title": "Sillustani | Ancient Tech in Peru & the Gobekli Tepe Connection",
       "cr": "megalithomania"
+    },
+    {
+      "id": "JOHIRKvWOlo",
+      "title": "Sillustani, Lake Titicaca, Peru: Ancient Peruvian Graveyard Of Wizards And Mystics",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2022-09-12"
     }
   ],
   "Tipón": [
@@ -4311,6 +4346,13 @@
       "cr": "unchartedx",
       "added": "2026-06-09",
       "published": "2024-09-15"
+    },
+    {
+      "id": "s6KLDlxTJ_c",
+      "title": "Deep Under The Step Pyramid At Saqqara In Egypt April 2025",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2025-04-18"
     }
   ],
   "Zedekiah's Cave": [
@@ -5279,6 +5321,13 @@
       "cr": "unchartedx",
       "added": "2026-06-09",
       "published": "2021-04-25"
+    },
+    {
+      "id": "a4DS1U3B0X4",
+      "title": "The Megalithic Serapeum At Saqqara In Egypt April 2025",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2025-04-12"
     }
   ],
   "Kailasa Temple (Ellora Cave 16)": [
@@ -5462,6 +5511,42 @@
       "cr": "brienf",
       "added": "2026-06-09",
       "published": "2024-02-20"
+    }
+  ],
+  "Chucuito (Inca Uyo)": [
+    {
+      "id": "wyQVflckmpk",
+      "title": "Megalithic Fertility Temple At Chucuito Near Lake Titicaca In Peru",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2023-03-15"
+    }
+  ],
+  "Nazca Puquios": [
+    {
+      "id": "gib7XWsQMzg",
+      "title": "The Amazing Ancient Puquio Wells Of Nazca Peru",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2022-08-20"
+    }
+  ],
+  "Wari (Huari)": [
+    {
+      "id": "5wbpREE-BUY",
+      "title": "The Curious Ancient Site Of Wari In The Highlands Of Peru",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2023-11-08"
+    }
+  ],
+  "Memphis (Mit Rahina)": [
+    {
+      "id": "t8tfk1u8usI",
+      "title": "The Bent And Red Pyramids Of Dashur And Ancient Memphis In Egypt",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2024-04-25"
     }
   ]
 }

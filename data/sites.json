@@ -6248,5 +6248,63 @@
       "precision"
     ],
     "desc": "Capital city built and inhabited under the heretic pharaoh Akhenaten (Amenhotep IV, c. 1346 BCE) on the east bank of the Nile in Middle Egypt, between Cairo and Luxor. Akhenaten moved the entire Egyptian court here from Thebes when he introduced the monotheistic worship of the Aten (sun disk) and abandoned the traditional pantheon. The city was built from scratch in a previously empty desert plain and completely abandoned within 25 years of its founding, after Akhenaten's death; subsequent pharaohs dismantled the structures and erased the site from the king lists. The plan of the city, its boundary stelae, the Great Aten Temple, and the royal tombs in the eastern cliffs survive. Independent investigators have documented anomalies in the bedrock-cut royal tombs not explained by the brief Amarna occupation."
+  },
+  {
+    "n": "Chucuito (Inca Uyo)",
+    "lat": -15.8956,
+    "lng": -69.8867,
+    "cat": "temple",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "polygonal"
+    ],
+    "desc": "Lakeside ceremonial complex on the southern shore of Lake Titicaca, 18 km south of Puno, Peru. Local tradition names the central enclosure 'Inca Uyo' — the fertility temple — for its dozens of vertically-mounted phallic stone columns of varying sizes arranged inside the precision-cut rectangular enclosure walls. The walls themselves use the same fitted polygonal masonry tradition seen at Coricancha and Sacsayhuamán. Conventional Inca attribution (15th c.) for the upper construction is broadly accepted; the question of whether the foundation courses predate that period remains open. Brien Foerster's coverage examines the unusual concentration of stone phallic forms in the context of comparable artefacts at other Andean sites."
+  },
+  {
+    "n": "Nazca Puquios",
+    "lat": -14.826,
+    "lng": -74.9377,
+    "cat": "underground",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "geometry",
+      "scale"
+    ],
+    "desc": "Network of more than 40 spiral stone-cut access wells (puquios) distributed across the Nazca desert in southern Peru, providing year-round access to the aquifer beneath. Each puquio is a precision-cut spiral funnel descending up to 15 meters, with the walls reinforced by stacked limestone slabs cut to fit the curve. The system is conventionally attributed to the Nazca culture (c. 200-700 CE) and is still in active use today by local farmers, but the engineering precision (uniform spiral pitch across different individual wells, consistent inclination angles) has led independent investigators to question the conventional tool kit and date."
+  },
+  {
+    "n": "Wari (Huari)",
+    "lat": -13.0556,
+    "lng": -74.3489,
+    "cat": "city",
+    "region": "South America",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "scale",
+      "precision"
+    ],
+    "desc": "Capital city of the Wari Empire in central Peru, 22 km northeast of Ayacucho, occupied from approximately 500 to 1000 CE. The Wari were the first large-scale Andean empire and the institutional template the Inca later inherited and expanded. The city covered up to 4 square kilometers at peak, with massive cyclopean enclosure walls up to 12 meters tall built of fitted polygonal stone. Much of the site has been damaged by post-collapse cataclysm and by colonial-era stone removal; what survives includes the Vegachayoq Moqo ritual precinct and extensive subterranean galleries. Independent investigators have documented two distinct construction phases with materially different masonry quality between them."
+  },
+  {
+    "n": "Memphis (Mit Rahina)",
+    "lat": 29.8478,
+    "lng": 31.2536,
+    "cat": "city",
+    "region": "Egypt",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "Ancient capital of Lower Egypt, founded c. 3100 BCE by Menes (Narmer) at the strategic Nile delta head. Memphis served as the principal royal residence and administrative center for most of the Old Kingdom and continued in use through the Late Period — the necropolis at Saqqara, the Giza Plateau, and Dahshur all served Memphis directly. The site today (Mit Rahina, 24 km south of Cairo) preserves the colossal limestone Statue of Ramses II (originally over 10 m tall, broken horizontally and now reclining), an Alabaster Sphinx, and the New Kingdom Temple of Ptah. Most of the city itself was disassembled in antiquity for stone to build medieval Cairo. UNESCO World Heritage Site."
   }
 ]
