@@ -314,5 +314,26 @@
     "subs": "Experimental archaeology · Russian, auto-dubbed · runs the tests others only theorize about",
     "color": "#8AB0D1",
     "tier": 2
+  },
+  "cotsenucla": {
+    "name": "Cotsen Institute of Archaeology at UCLA",
+    "handle": "@CotsenUCLA",
+    "subs": "Academic field reports · ancient world archaeology · UCLA",
+    "color": "#7A9BBC",
+    "tier": 2
+  },
+  "naasr": {
+    "name": "NAASR Armenian Studies",
+    "handle": "@NAASRArmenianStudies",
+    "subs": "National Association for Armenian Studies and Research · scholarly lectures",
+    "color": "#C97A57",
+    "tier": 2
+  },
+  "echoofashes": {
+    "name": "Echo of Ashes",
+    "handle": "@EchoofAshes",
+    "subs": "Atmospheric short-form mysteries · ancient sites",
+    "color": "#9B8FAA",
+    "tier": 3
   }
 }
