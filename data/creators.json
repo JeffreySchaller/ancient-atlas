@@ -370,5 +370,26 @@
     "subs": "Southwest desert archaeology · National Monument coverage",
     "color": "#B97A3A",
     "tier": 3
+  },
+  "onceuponasaga": {
+    "name": "Thor Pedersen / Once Upon A Saga",
+    "handle": "@OnceUponASaga",
+    "subs": "Every country in the world without flying · 199+ countries",
+    "color": "#6F9CC1",
+    "tier": 3
+  },
+  "magneticreversalnews": {
+    "name": "Magnetic Reversal News",
+    "handle": "@MagneticReversalNews",
+    "subs": "Weathering-rate analysis · alt-dating of ancient sites",
+    "color": "#A88B6E",
+    "tier": 3
+  },
+  "horsfrontieres": {
+    "name": "Hors Frontières",
+    "handle": "@HorsFrontieres",
+    "subs": "French world-tour channel · 120+ countries on the ground",
+    "color": "#8FA17E",
+    "tier": 3
   }
 }
