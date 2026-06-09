@@ -6464,5 +6464,168 @@
       "polygonal"
     ],
     "desc": "Massive dolmen necropolis on a granite hill in Karnataka, India — over 1,000 dolmens scattered across approximately 8 square kilometers, the largest such concentration in South Asia. The dolmens are constructed of slabs of locally-quarried granite, some up to 4 meters tall, supported on edge stones with capping slabs and surrounded by small stone circles. Conventional dating places the necropolis in the Iron Age (c. 1000-300 BCE) on the basis of associated material culture, but the precision-cut joinery and standardized dimensions have led Hugh Newman and others to question the conventional Iron-Age tool kit."
+  },
+  {
+    "n": "Cuicuilco",
+    "lat": 19.3019,
+    "lng": -99.1797,
+    "cat": "pyramid",
+    "region": "Americas",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "stratigraphy"
+    ],
+    "desc": "Circular stepped pyramid buried under volcanic lava on the southern edge of Mexico City. Cuicuilco is one of the oldest Mesoamerican pyramids — conventional dating places its main construction phase c. 800-200 BCE, but the Xitle volcano eruption that buried the city is geologically dated c. 245 BCE to as late as 1670 CE depending on which stratigraphic model is applied. The base diameter approaches 135 m. The circular footprint is anomalous in a region where rectangular stepped pyramids dominate, and Hugh Newman has explored alternative timelines that place an original pre-Xitle phase substantially earlier than the orthodox sequence."
+  },
+  {
+    "n": "Xochicalco",
+    "lat": 18.8047,
+    "lng": -99.2967,
+    "cat": "pyramid",
+    "region": "Americas",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "geometry"
+    ],
+    "desc": "Fortified pre-Columbian city on a hilltop in Morelos, Mexico, dominated by the Pyramid of the Plumed Serpent — covered on all four sides with precision-cut bas-relief Quetzalcoatl iconography in the same iconographic tradition that runs from Teotihuacan to Chichén Itzá. Xochicalco also preserves an underground observatory with a vertical light shaft that tracks the sun's zenith passages on May 14/15 and July 28/29. Conventional dating c. 650-900 CE, but the precision of the stonework and the astronomical engineering are consistent with the broader Mesoamerican megalithic tradition Hugh Newman documents across the region."
+  },
+  {
+    "n": "Comalcalco",
+    "lat": 18.2667,
+    "lng": -93.2025,
+    "cat": "pyramid",
+    "region": "Americas",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "machining",
+      "stratigraphy"
+    ],
+    "desc": "Mayan city in the western lowlands of Tabasco, Mexico — the only major Mayan site built primarily of fired clay brick rather than the limestone block used everywhere else in the Maya world. Conventional dating places the city c. 250-1000 CE. What makes Comalcalco anomalous is the bricks themselves: many bear inscriptions and pictographic marks that include Old World script forms — Phoenician, Libyan, Iberian — documented since the 19th century and revisited in the diffusionist literature. Hugh Newman has filmed on-site and presents the brick inscription corpus as a working puzzle."
+  },
+  {
+    "n": "Aké",
+    "lat": 20.93,
+    "lng": -89.3033,
+    "cat": "pyramid",
+    "region": "Americas",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Ancient Mayan city in Yucatán, Mexico, distinguished by the massive flat-topped Pyramid of the Pillars — a stepped platform crowned with thirty-six cylindrical limestone columns up to 4 m tall arranged in a 6×6 grid. The Spanish built the Church of San Lorenzo directly on top of the pyramid in the colonial period, a literal layering visible today. Conventional dating places the megalithic phase in the Late Preclassic to Early Classic (c. 250 BCE - 600 CE). Hugh Newman covers Aké as a strong example of the Mesoamerican pattern of churches built directly atop pre-existing pyramid platforms."
+  },
+  {
+    "n": "Izamal Satellite Pyramids",
+    "lat": 20.9333,
+    "lng": -89.0167,
+    "cat": "pyramid",
+    "region": "Americas",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Cluster of massive Mayan pyramids in and around the town of Izamal, Yucatán, Mexico, including Kinich Kak Moo — the largest pyramid in Yucatán by base area (200×180 m, 34 m tall) — and a constellation of satellite pyramids spread across the surrounding landscape. Conventional dating places the main construction in the Early Classic period (c. 250-600 CE). The Convento de San Antonio de Padua, one of the oldest monasteries in the Americas, was built in 1549 on top of one of the original pyramid platforms. Hugh Newman filmed the satellite cluster on a Mexico expedition."
+  },
+  {
+    "n": "Chaltun Ha",
+    "lat": 20.705,
+    "lng": -88.95,
+    "cat": "pyramid",
+    "region": "Americas",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Little-documented Mayan pyramid site in Yucatán, Mexico, rediscovered in recent years and largely overlooked by mainstream archaeology. The site preserves a substantial stepped pyramid and platform group obscured by jungle regrowth. Conventional dating treats it as part of the broader Yucatán Maya tradition (Late Preclassic through Classic). Hugh Newman filmed an exploratory visit, treating Chaltun Ha as one of the many lesser-known pyramid sites that fill the gaps between the famous tourist centers."
+  },
+  {
+    "n": "Rollright Stones",
+    "lat": 51.9756,
+    "lng": -1.5708,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "geometry",
+      "scale"
+    ],
+    "desc": "Complex of three Neolithic and Bronze Age megalithic monuments straddling the Oxfordshire-Warwickshire border in England: the King's Men stone circle (c. 2500-2000 BCE, 33 m diameter, ~77 limestone stones), the King Stone single monolith, and the Whispering Knights portal dolmen (c. 3800-3500 BCE — substantially older than the circle). The three monuments span roughly two millennia of continuous ritual use. Maria Wheatley and Hugh Newman have documented geomantic landscape geometry connecting all three. Folk tradition holds the stones cannot be counted twice to the same total — a memetic remnant of the geometric anomalies."
+  },
+  {
+    "n": "Mên-an-Tol",
+    "lat": 50.1572,
+    "lng": -5.6047,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Small but iconic megalithic monument on the moorland of West Penwith in Cornwall, England — a holed stone roughly 1.3 m tall flanked by two upright menhirs, plus additional stones nearby that may once have formed a stone circle. Conventional dating places the monument in the Late Neolithic to Early Bronze Age (c. 3500-1500 BCE). The holed stone is the focus of long-standing folk-healing tradition — children and adults are passed through the hole for healing. Archaeoastronomers have proposed solar and lunar alignments through the aperture. Hugh Newman covers the site in his Cornwall megalithic surveys."
+  },
+  {
+    "n": "Merry Maidens",
+    "lat": 50.0658,
+    "lng": -5.5908,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Late Neolithic stone circle in the West Penwith peninsula of Cornwall, England — nineteen granite stones forming a near-perfect circle 24 m in diameter, conventionally dated c. 2500-1500 BCE. The associated outliers The Pipers (two tall menhirs 400 m to the northeast) and the Tregiffian burial chamber make this a small ritual complex. Folk tradition holds the maidens were petrified for dancing on the Sabbath — a Christianized echo of an older animating myth. Hugh Newman films Merry Maidens in his Cornish megalithic series alongside Mên-an-Tol and the Hurlers."
+  },
+  {
+    "n": "Loughcrew",
+    "lat": 53.7444,
+    "lng": -7.1119,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "geometry",
+      "precision"
+    ],
+    "desc": "Complex of approximately thirty passage tombs spread across the Loughcrew hills (Slieve na Calliagh — 'mountain of the hag') in County Meath, Ireland. The cairns are conventionally dated c. 3300 BCE, contemporary with Newgrange and Knowth. Cairn T preserves the most spectacular megalithic art in Ireland: deeply carved concentric circles, sunburst motifs, and abstract symbols on multiple chamber stones. The cairn's passage is aligned on sunrise at the spring and autumn equinoxes — the rising sun illuminates the rear chamber and specific carvings in sequence. Hugh Newman documents the alignments and the Winnemucca petroglyph correspondence."
+  },
+  {
+    "n": "Carrowmore Megalithic Cemetery",
+    "lat": 54.2522,
+    "lng": -8.5181,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "stratigraphy",
+      "scale"
+    ],
+    "desc": "One of the oldest and largest megalithic cemeteries in Ireland and Europe — over thirty surviving dolmens and passage tombs across a 1 km² area of the Cúil Irra peninsula in County Sligo. Radiocarbon dates from Carrowmore Tomb 4 have returned ages as early as 5,400 BP (c. 4400 BCE), making the earliest tombs at Carrowmore older than Newgrange and contemporary with the oldest megalithic activity anywhere in western Europe. The central cairn Listoghil is aligned with the Halloween (Samhain) sunrise over Knocknarea. Hugh Newman covers Carrowmore as a key reference for the western-Atlantic megalithic chronology."
+  },
+  {
+    "n": "Giant's Ring",
+    "lat": 54.5436,
+    "lng": -5.9558,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Massive late-Neolithic henge enclosing a small passage dolmen, located at Ballynahatty just south of Belfast in County Down, Northern Ireland. The henge bank is approximately 200 m in diameter and 4 m tall, conventionally dated c. 2700 BCE. At its geometric center stands a five-stone portal dolmen — the proportions of the ring to the dolmen are anomalous compared to other Irish henges. Recent geophysical survey revealed a substantial timber circle predating the stone phase, plus a separate timber palisaded enclosure adjacent to the henge. Hugh Newman covers the Giant's Ring as a critical Northern Ireland henge."
   }
 ]

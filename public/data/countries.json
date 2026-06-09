@@ -344,7 +344,13 @@
     "Coba",
     "Chacchoben",
     "Dzibanche",
-    "Tula (Tollan)"
+    "Tula (Tollan)",
+    "Cuicuilco",
+    "Xochicalco",
+    "Comalcalco",
+    "Aké",
+    "Izamal Satellite Pyramids",
+    "Chaltun Ha"
   ],
   "Guatemala": [
     "Uaxactun",
@@ -491,6 +497,14 @@
   "United Kingdom": [
     "Thornborough Henges",
     "Stanton Drew Stone Circles",
-    "Long Man of Wilmington"
+    "Long Man of Wilmington",
+    "Rollright Stones",
+    "Mên-an-Tol",
+    "Merry Maidens",
+    "Giant's Ring"
+  ],
+  "Ireland": [
+    "Loughcrew",
+    "Carrowmore Megalithic Cemetery"
   ]
 }
