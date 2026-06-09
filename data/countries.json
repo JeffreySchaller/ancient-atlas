@@ -204,7 +204,8 @@
   ],
   "Peru": [
     "Tarawasi",
-    "Vilcabamba (Espíritu Pampa)"
+    "Vilcabamba (Espíritu Pampa)",
+    "Coricancha (Qorikancha)"
   ],
   "Türkiye": [
     "Meydan Kalesi",
@@ -388,7 +389,14 @@
     "Naveta des Tudons"
   ],
   "Egypt": [
-    "Qasr el Sagha"
+    "Qasr el Sagha",
+    "Abu Sir (Pyramid Complex)",
+    "Abu Ghorab (Sun Temple of Niuserre)",
+    "Elephantine Island",
+    "Tanis (San el-Hagar)",
+    "Sphinx Temple",
+    "Khafre Valley Temple",
+    "Temple of Bastet (Bubastis)"
   ],
   "United States": [
     "Sage Wall (Montana)"

@@ -248,6 +248,13 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2022-06-08"
+    },
+    {
+      "id": "yG-mCiTiSEE",
+      "title": "Is there an UNDISCOVERED chamber beneath the Khafre Causeway on the Giza Plateau?",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2022-10-15"
     }
   ],
   "Great Sphinx of Giza": [
@@ -511,6 +518,13 @@
       "id": "2XJUzdfU91w",
       "title": "Ancient Cataclysm At Tiwanaku In Bolivia",
       "cr": "brienf"
+    },
+    {
+      "id": "cyK_SMm_8LY",
+      "title": "How Old is Tiahuanaco? Is it the 'Cradle of American Man?'",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2023-11-20"
     }
   ],
   "Baalbek (Heliopolis)": [
@@ -1375,6 +1389,13 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-04-15"
+    },
+    {
+      "id": "oG_Vnn8QkzQ",
+      "title": "The Unsolved Mysteries of the Broken Pyramid at Meidum, Egypt",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2020-07-19"
     }
   ],
   "Osireion (Abydos)": [
@@ -1382,6 +1403,13 @@
       "id": "1BE-2NamME4",
       "title": "Fascinating Pre Egyptian Underground Technology at the Osireion",
       "cr": "botsop"
+    },
+    {
+      "id": "-TtsKKYLxPM",
+      "title": "The Megalithic Osirion of Egypt: Live Walkthrough and New Observations!",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2024-04-25"
     }
   ],
   "Knossos": [
@@ -4241,6 +4269,20 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-04-08"
+    },
+    {
+      "id": "jHK2-MoR9Fs",
+      "title": "Rare Footage from Egypt - Ancient Machined Artifacts found deep beneath the Step Pyramid!",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2022-02-26"
+    },
+    {
+      "id": "iw_9He8fXxQ",
+      "title": "A Candid Look at the Amazing Artifacts Below the Step Pyramid! UnchartedX Live Walkthrough!",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2024-09-15"
     }
   ],
   "Zedekiah's Cave": [
@@ -5121,6 +5163,94 @@
       "cr": "praveenmohan",
       "added": "2026-06-09",
       "published": "2025-11-05"
+    }
+  ],
+  "Abu Sir (Pyramid Complex)": [
+    {
+      "id": "qsIPLc1Auoo",
+      "title": "NEW Discoveries and Digs at Pyramid Site of Abu Sir! More Ancient Egyptian Lost Technology",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2024-04-10"
+    },
+    {
+      "id": "_JLrpiQT9cs",
+      "title": "A Megalithic Precision Box with an Inner Precision Box? The Ancient Relics of Abu Sir in Egypt!",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2020-02-15"
+    }
+  ],
+  "Abu Ghorab (Sun Temple of Niuserre)": [
+    {
+      "id": "7_tQaDanMNE",
+      "title": "Ancient High Technology - the Machined Artifacts of Abu Ghorub - Old Kingdom Sun Temple",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2020-04-22"
+    }
+  ],
+  "Elephantine Island": [
+    {
+      "id": "K80JebExyEY",
+      "title": "Smoking Gun Evidence for Ancient Granite Machining! Elephantine Island",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2023-06-08"
+    }
+  ],
+  "Coricancha (Qorikancha)": [
+    {
+      "id": "dxmSz3N3HeU",
+      "title": "UnchartedX Podcast! Ollantaytambo, Coricancha and the Temple of the Moon with the Snake Bros!",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2021-03-18"
+    }
+  ],
+  "Tanis (San el-Hagar)": [
+    {
+      "id": "LrPZM8ee690",
+      "title": "Ancient Tanis, Ramses II, and the Largest Stone Statue Ever Made",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2021-08-30"
+    }
+  ],
+  "Sphinx Temple": [
+    {
+      "id": "gVWfLe7OTKI",
+      "title": "The Mystery of the Sphinx Temple! Evidence for Hidden Chambers, High Tech, and Secret Digs?",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2023-09-14"
+    }
+  ],
+  "Khafre Valley Temple": [
+    {
+      "id": "pSF2fStHvKA",
+      "title": "The Valley Temple and the Sphinx - talking Egypt with Chuck from cfapps7865 channel",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2020-08-22"
+    }
+  ],
+  "Temple of Bastet (Bubastis)": [
+    {
+      "id": "f1WKVWAsQj8",
+      "title": "Ancient Engineering at the Temple of Bastet",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2019-11-05"
+    }
+  ],
+  "Saqqara Necropolis": [
+    {
+      "id": "7LEt8VM42PY",
+      "title": "Incredible Precision Stone Jars, and other unsolved mysteries of Saqqara!",
+      "cr": "unchartedx",
+      "added": "2026-06-09",
+      "published": "2021-04-25"
     }
   ]
 }
