@@ -1158,6 +1158,13 @@
       "id": "YNmkfDWprdE",
       "title": "Lost Technology of Ancient India? The Enigmatic Barabar Caves",
       "cr": "ancientarch"
+    },
+    {
+      "id": "wbK0cK9U19g",
+      "title": "The Forbidden Caves of India: Barabar | Documentary (Запретные пещеры Индии, ru/en dub)",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2024-12-10"
     }
   ],
   "Abu Hureyra": [
@@ -1330,6 +1337,13 @@
       "id": "FfnJlLSS5cs",
       "title": "1200 Ton Unfinished Obelisk At Aswan In Egypt",
       "cr": "brienf"
+    },
+    {
+      "id": "A-wTHDMLSAk",
+      "title": "More mysterious than the pyramids: the Aswan Quarry 3D | Documentary (ru/en dub)",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2024-09-20"
     }
   ],
   "Bent Pyramid (Dahshur)": [
@@ -5265,6 +5279,99 @@
       "cr": "unchartedx",
       "added": "2026-06-09",
       "published": "2021-04-25"
+    }
+  ],
+  "Kailasa Temple (Ellora Cave 16)": [
+    {
+      "id": "CM7l7g66BWs",
+      "title": "Is it possible to carve a temple in basalt? A real-life experiment",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2026-03-15"
+    },
+    {
+      "id": "9PvgLjpjGjo",
+      "title": "Kailasa: The most inexplicable temple on Earth | Documentary Part 1 (Каилас, ru/en dub)",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2026-05-10"
+    },
+    {
+      "id": "Rs2Af40D1Ig",
+      "title": "Kailasa. The Lost World in the Rocks | Documentary Part 2",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2026-05-20"
+    }
+  ],
+  "Dendera Temple Complex": [
+    {
+      "id": "b_dYzSmcMso",
+      "title": "Secret knowledge of ancient Egypt: Temple of Hathor Part 1 (Тайное знание древнего Египта, ru/en dub)",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2025-02-08"
+    }
+  ],
+  "Myra": [
+    {
+      "id": "0_3rITmJwsc",
+      "title": "Forbidden Tombs of the Giants. World | s03e12 (Proto Civilization, ru/en dub) — the off-limits side of Myra mountain",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2022-10-15"
+    }
+  ],
+  "Telmessos (Fethiye)": [
+    {
+      "id": "rmdiwT68USw",
+      "title": "Hydraulics of the Ancient World. The Remains of Telmessos | s05e06 (Proto Civilization, ru/en dub)",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2024-08-10"
+    }
+  ],
+  "Tlos": [
+    {
+      "id": "_F88M17zgDQ",
+      "title": "Buried where it shouldn't be. Tlos | s05e07 (Proto Civilization, ru/en dub)",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2024-08-25"
+    }
+  ],
+  "Limyra": [
+    {
+      "id": "AqRi0yqMupk",
+      "title": "Megaliths on the Summit. Limyra | s02e16 (Proto Civilization, ru/en dub)",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2023-04-12"
+    },
+    {
+      "id": "8NdJZ95hjLU",
+      "title": "Ancient Bomb Shelter? Limyra | s02e03 (Proto Civilization, ru/en dub)",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2022-11-08"
+    }
+  ],
+  "Termessos": [
+    {
+      "id": "Xp0HVEwCvRc",
+      "title": "The Most Fierce City of the Ancient World. Termessos | s03e18 (Proto Civilization, ru/en dub)",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2022-09-30"
+    }
+  ],
+  "Aspendos": [
+    {
+      "id": "dhmz-10UVtI",
+      "title": "The Giant City-Mountain with a Strange Aqueduct. Aspendos | s03e16 (Proto Civilization, ru/en dub)",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2022-09-15"
     }
   ]
 }

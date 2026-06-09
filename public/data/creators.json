@@ -307,5 +307,12 @@
     "subs": "Josh Gates · Discovery Channel · field-led investigations of ancient sites",
     "color": "#E0944F",
     "tier": 2
+  },
+  "protocivilization": {
+    "name": "Proto Civilization",
+    "handle": "@ProtoCivilization",
+    "subs": "Experimental archaeology · Russian, auto-dubbed · runs the tests others only theorize about",
+    "color": "#8AB0D1",
+    "tier": 2
   }
 }
