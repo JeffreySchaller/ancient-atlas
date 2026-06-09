@@ -391,5 +391,12 @@
     "subs": "French world-tour channel · 120+ countries on the ground",
     "color": "#8FA17E",
     "tier": 3
+  },
+  "mysteryhistory": {
+    "name": "Mystery History",
+    "handle": "@MysteryHistory",
+    "subs": "Alt-history dives · pre-flood civilization framing",
+    "color": "#7E6BAA",
+    "tier": 3
   }
 }
