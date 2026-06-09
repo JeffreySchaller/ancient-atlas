@@ -72,9 +72,11 @@ TITLE_FONT_SHORT = load_font([
     "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
 ], 104)
-# Bumped small-text sizes for iMessage downscale readability.
-# iMessage renders OG cards at ~300x157 in the chat bubble, so anything
-# below ~30px in the source becomes unreadable. v3 sizes:
+# v4 sizes — Jeff feedback on True Monoliths card:
+# - BRAND keep size but rendered with stroke for thicker weight
+# - ENTRY tag doubled (22 → 44)
+# - Subtitle doubled (32 → 64) to carry the JTBD question
+# - URL stamp removed entirely
 BRAND_FONT = load_font([
     "/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf",
     "/Library/Fonts/Fraunces-Bold.ttf",
@@ -87,18 +89,18 @@ ITALIC_FONT = load_font([
     "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
 ], 32)
+SUBTITLE_FONT = load_font([
+    "/System/Library/Fonts/Supplemental/Times New Roman Italic.ttf",
+    "/Library/Fonts/Fraunces-Italic.ttf",
+    "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
+], 56)
 MONO_TAG = load_font([
     "/System/Library/Fonts/Menlo.ttc",
     "/System/Library/Fonts/Monaco.ttc",
     "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
     "/System/Library/Fonts/Courier.ttc",
-], 22)
-MONO_URL = load_font([
-    "/System/Library/Fonts/Supplemental/Times New Roman Italic.ttf",
-    "/Library/Fonts/Fraunces-Italic.ttf",
-    "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
-    "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
-], 32)
+], 38)
 
 # ============================================================
 # Photo-background card composition
@@ -167,50 +169,54 @@ def compose_photo_card(photo_path, title, subtitle, entry_num):
     img = apply_gradient_overlay(bg)
     draw = ImageDraw.Draw(img, 'RGBA')
 
-    # Top brand chrome — sized for iMessage readability
-    draw_compass(draw, 110, 100, 38, color=CHAMPAGNE_PALE, weight=3)
-    draw.text((168, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY)
-    draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
+    # Top brand chrome — v4 keeps size, thickens via stroke_width
+    draw_compass(draw, 110, 100, 38, color=CHAMPAGNE_PALE, weight=4)
+    draw.text((168, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY,
+              stroke_width=2, stroke_fill=IVORY)
+    draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE,
+              stroke_width=1, stroke_fill=CHAMPAGNE_PALE)
 
-    # Entry tag pill (top-right)
+    # Entry tag pill — doubled per Jeff's v4 spec
     if entry_num is not None:
         tag = f"ENTRY {entry_num:02d}"
-        pad_x, pad_y = 22, 12
+        pad_x, pad_y = 30, 18
         bbox = draw.textbbox((0, 0), tag, font=MONO_TAG)
         tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
         x0 = W - 80 - tw - pad_x * 2
-        y0 = 78
+        y0 = 70
         draw.rounded_rectangle(
             (x0, y0, x0 + tw + pad_x * 2, y0 + th + pad_y * 2),
-            radius=26,
+            radius=38,
             outline=CHAMPAGNE_PALE,
-            fill=(13, 13, 18, 160),
-            width=3,
+            fill=(13, 13, 18, 180),
+            width=4,
         )
-        draw.text((x0 + pad_x, y0 + pad_y - 2), tag,
-                  font=MONO_TAG, fill=CHAMPAGNE_PALE)
+        draw.text((x0 + pad_x, y0 + pad_y - 3), tag,
+                  font=MONO_TAG, fill=CHAMPAGNE_PALE,
+                  stroke_width=1, stroke_fill=CHAMPAGNE_PALE)
 
     # Big serif title in the bottom third
     use_font = TITLE_FONT_SHORT if len(title) < 18 else TITLE_FONT
     title_lines = wrap_text(title, use_font, 1040, draw)
     line_h = 100 if use_font == TITLE_FONT_SHORT else 92
-    total_h = line_h * len(title_lines) + (44 if subtitle else 0)
-    y = H - 120 - total_h
+    # v4: subtitle is doubled (56px) so reserve more vertical space
+    sub_line_h = 72
+    if subtitle:
+        sub_lines = wrap_text(subtitle, SUBTITLE_FONT, 1040, draw)
+    else:
+        sub_lines = []
+    total_h = line_h * len(title_lines) + (sub_line_h * len(sub_lines) + 18 if sub_lines else 0)
+    y = H - 70 - total_h
     for line in title_lines:
         draw.text((80, y), line, font=use_font, fill=IVORY)
         y += line_h
-    if subtitle:
-        y += 10
-        sub_lines = wrap_text(subtitle, ITALIC_FONT, 1040, draw)
+    if sub_lines:
+        y += 14
         for line in sub_lines:
-            draw.text((80, y), line, font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
-            y += 42
-
-    # URL stamp bottom-right
-    url = "theancientatlas.com/library"
-    bbox = draw.textbbox((0, 0), url, font=MONO_URL)
-    tw = bbox[2] - bbox[0]
-    draw.text((W - 80 - tw, H - 70), url, font=MONO_URL, fill=CHAMPAGNE)
+            draw.text((80, y), line, font=SUBTITLE_FONT, fill=CHAMPAGNE_PALE,
+                      stroke_width=1, stroke_fill=CHAMPAGNE_PALE)
+            y += sub_line_h
+    # URL stamp removed (v4) — redundant with the link text in the message client
 
     return img.convert('RGB')
 
@@ -236,24 +242,27 @@ def compose_atmospheric_vector(title, subtitle, entry_num, mark_fn):
     img = Image.blend(img, glow, 0.65)
 
     draw = ImageDraw.Draw(img, 'RGBA')
-    # Top brand chrome — sized for iMessage readability
-    draw_compass(draw, 110, 100, 38, color=CHAMPAGNE_PALE, weight=3)
-    draw.text((168, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY)
-    draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
-    # Entry tag
+    # Top brand chrome — v4 thickened via stroke_width
+    draw_compass(draw, 110, 100, 38, color=CHAMPAGNE_PALE, weight=4)
+    draw.text((168, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY,
+              stroke_width=2, stroke_fill=IVORY)
+    draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE,
+              stroke_width=1, stroke_fill=CHAMPAGNE_PALE)
+    # Entry tag — doubled v4
     if entry_num is not None:
         tag = f"ENTRY {entry_num:02d}"
-        pad_x, pad_y = 22, 12
+        pad_x, pad_y = 30, 18
         bbox = draw.textbbox((0, 0), tag, font=MONO_TAG)
         tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
         x0 = W - 80 - tw - pad_x * 2
-        y0 = 78
+        y0 = 70
         draw.rounded_rectangle(
             (x0, y0, x0 + tw + pad_x * 2, y0 + th + pad_y * 2),
-            radius=26, outline=CHAMPAGNE_PALE, width=3,
+            radius=38, outline=CHAMPAGNE_PALE, width=4,
         )
-        draw.text((x0 + pad_x, y0 + pad_y - 2), tag,
-                  font=MONO_TAG, fill=CHAMPAGNE_PALE)
+        draw.text((x0 + pad_x, y0 + pad_y - 3), tag,
+                  font=MONO_TAG, fill=CHAMPAGNE_PALE,
+                  stroke_width=1, stroke_fill=CHAMPAGNE_PALE)
 
     # Decorative mark
     if mark_fn:
@@ -263,21 +272,19 @@ def compose_atmospheric_vector(title, subtitle, entry_num, mark_fn):
     use_font = TITLE_FONT_SHORT if len(title) < 18 else TITLE_FONT
     title_lines = wrap_text(title, use_font, 720, draw)
     line_h = 100 if use_font == TITLE_FONT_SHORT else 92
-    total_h = line_h * len(title_lines) + 44
+    sub_line_h = 72
+    sub_lines = wrap_text(subtitle, SUBTITLE_FONT, 720, draw) if subtitle else []
+    total_h = line_h * len(title_lines) + (sub_line_h * len(sub_lines) + 18 if sub_lines else 0)
     y = (H - total_h) // 2 + 24
     for line in title_lines:
         draw.text((80, y), line, font=use_font, fill=IVORY)
         y += line_h
-    y += 8
-    for line in wrap_text(subtitle, ITALIC_FONT, 720, draw):
-        draw.text((80, y), line, font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
-        y += 42
-
-    # URL stamp
-    url = "theancientatlas.com/library"
-    bbox = draw.textbbox((0, 0), url, font=MONO_URL)
-    tw = bbox[2] - bbox[0]
-    draw.text((W - 80 - tw, H - 70), url, font=MONO_URL, fill=CHAMPAGNE)
+    if sub_lines:
+        y += 14
+        for line in sub_lines:
+            draw.text((80, y), line, font=SUBTITLE_FONT, fill=CHAMPAGNE_PALE,
+                      stroke_width=1, stroke_fill=CHAMPAGNE_PALE)
+            y += sub_line_h
     return img.convert('RGB')
 
 def mark_stone_circle(draw):
@@ -335,46 +342,54 @@ def compose_hub_card():
                                          None, None)
         return img
     draw = ImageDraw.Draw(img, 'RGBA')
-    draw_compass(draw, 110, 100, 38, color=CHAMPAGNE_PALE, weight=3)
-    draw.text((168, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY)
-    draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
+    draw_compass(draw, 110, 100, 38, color=CHAMPAGNE_PALE, weight=4)
+    draw.text((168, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY,
+              stroke_width=2, stroke_fill=IVORY)
+    draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE,
+              stroke_width=1, stroke_fill=CHAMPAGNE_PALE)
 
-    # Title
+    # Title — JTBD question subtitle pulled from CARDS config
     title = "The Library"
-    subtitle = "Working frameworks for reading deep history sites well."
+    subtitle = "How do you know what you're standing on when you arrive?"
     use_font = TITLE_FONT_SHORT
     title_lines = wrap_text(title, use_font, 1040, draw)
     line_h = 100
-    total_h = line_h * len(title_lines) + 44
-    y = H - 120 - total_h
+    sub_line_h = 72
+    sub_lines = wrap_text(subtitle, SUBTITLE_FONT, 1040, draw)
+    total_h = line_h * len(title_lines) + sub_line_h * len(sub_lines) + 18
+    y = H - 70 - total_h
     for line in title_lines:
         draw.text((80, y), line, font=use_font, fill=IVORY)
         y += line_h
-    y += 10
-    for line in wrap_text(subtitle, ITALIC_FONT, 1040, draw):
-        draw.text((80, y), line, font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
-        y += 42
-
-    url = "theancientatlas.com/library"
-    bbox = draw.textbbox((0, 0), url, font=MONO_URL)
-    tw = bbox[2] - bbox[0]
-    draw.text((W - 80 - tw, H - 70), url, font=MONO_URL, fill=CHAMPAGNE)
+    y += 14
+    for line in sub_lines:
+        draw.text((80, y), line, font=SUBTITLE_FONT, fill=CHAMPAGNE_PALE,
+                  stroke_width=1, stroke_fill=CHAMPAGNE_PALE)
+        y += sub_line_h
     return img.convert('RGB')
 
 # ============================================================
 # Card definitions
 # ============================================================
+# v4 subtitle rule: each subtitle MUST be a JTBD-framed question (Jobs-To-Be-Done).
+# The title says what the entry IS. The subtitle says what curiosity job
+# the visitor would hire this page to do — phrased as a question that
+# enhances rather than restates the title. If the subtitle were removed
+# the article should be discoverable from the title alone; with the
+# subtitle the click intent gets sharpened.
 CARDS = [
     dict(
         slug='index',
         mode='hub',
+        # Hub subtitle is set inside compose_hub_card so the whole config
+        # stays a single source of truth — see that function.
     ),
     dict(
         slug='megaliths',
         mode='photo',
         entry=1,
         title='What is a Megalith?',
-        subtitle='Cyclopean, polygonal, mortarless. A working vocabulary of deep stone.',
+        subtitle="When does a stone stop being a rock and start being engineering?",
         photo=PHOTOS_DIR / 'megaliths' / '01-sacsayhuaman-wall-sweep.jpg',
     ),
     dict(
@@ -382,7 +397,7 @@ CARDS = [
         mode='photo',
         entry=2,
         title='Stone Circles',
-        subtitle='Pythagorean geometry, the megalithic yard, and the patterns that repeat.',
+        subtitle="What were they keeping time of, two thousand years before Pythagoras?",
         photo=PHOTOS_DIR / 'stone-circles' / '01-nabta-playa-calendar-circle.jpg',
     ),
     dict(
@@ -398,7 +413,7 @@ CARDS = [
         mode='photo',
         entry=4,
         title='True Monoliths',
-        subtitle='Cities carved from mountains, and the chisel marks that do not act like chisels.',
+        subtitle="What kind of tool turns a mountain into a working city?",
         photo=PHOTOS_DIR / 'true-monoliths' / '06-kailasa-ellora-top-down.jpg',
     ),
 ]
