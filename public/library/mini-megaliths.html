@@ -397,14 +397,27 @@ ul.crisp li strong{color:var(--ivory);font-weight:600}
 <script>
 async function shareArticle() {
   const url = window.location.href;
-  const title = document.title;
-  const text = (document.querySelector('meta[name="description"]') || {}).content || '';
-  if (navigator.share) {
-    try { await navigator.share({ title, text, url }); return; }
-    catch (e) { if (e && e.name === 'AbortError') return; }
+  // Detect a true touch device (phones/tablets) — only those benefit from
+  // the native Share Sheet (AirDrop, Messages, etc.). Desktop Safari's
+  // Share Sheet "Copy" copies a richlink (title + URL + preview) which
+  // Messages paste-renders as TWO attachments. Skip on desktop.
+  const isTouchDevice = (
+    ('ontouchstart' in window) &&
+    (navigator.maxTouchPoints > 0) &&
+    /iPhone|iPad|iPod|Android/.test(navigator.userAgent || '')
+  );
+  if (isTouchDevice && navigator.share) {
+    try {
+      await navigator.share({ url });
+      return;
+    } catch (e) {
+      if (e && e.name === 'AbortError') return;
+    }
   }
-  try { await navigator.clipboard.writeText(url); }
-  catch (e) {
+  // Desktop path: copy plain URL to clipboard. One attachment, one card.
+  try {
+    await navigator.clipboard.writeText(url);
+  } catch (e) {
     const tmp = document.createElement('input');
     tmp.value = url;
     document.body.appendChild(tmp);
