@@ -263,7 +263,8 @@
     "Vetulonia",
     "Rusellae",
     "Orbetello",
-    "San Andrea Priù"
+    "San Andrea Priù",
+    "Cefalù Polygonal Walls"
   ],
   "Iran": [
     "Cube of Zoroaster (Ka'bah-ye Zartosht)",
@@ -301,7 +302,9 @@
   ],
   "India": [
     "Maliabad Fort",
-    "Kotukal Cave Temple"
+    "Kotukal Cave Temple",
+    "Nagarjuni Caves",
+    "Hirebenakal Megalithic Necropolis"
   ],
   "China": [
     "Mogao Grottoes",
@@ -484,5 +487,10 @@
   ],
   "Lebanon": [
     "Byblos (Jbeil)"
+  ],
+  "United Kingdom": [
+    "Thornborough Henges",
+    "Stanton Drew Stone Circles",
+    "Long Man of Wilmington"
   ]
 }
