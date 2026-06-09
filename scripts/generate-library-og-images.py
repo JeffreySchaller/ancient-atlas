@@ -366,11 +366,11 @@ CARDS = [
     ),
     dict(
         slug='stone-circles',
-        mode='vector',
+        mode='photo',
         entry=2,
         title='Stone Circles',
         subtitle='Pythagorean geometry, the megalithic yard, and the patterns that repeat.',
-        mark=mark_stone_circle,
+        photo=PHOTOS_DIR / 'stone-circles' / '01-nabta-playa-calendar-circle.jpg',
     ),
     dict(
         slug='mini-megaliths',
