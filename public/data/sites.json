@@ -5780,5 +5780,107 @@
       "geometry"
     ],
     "desc": "Maltese landscape feature also called \"Clapham Junction\" — a dense network of parallel grooves cut into the limestone bedrock, forming a complex intersection of cart-rut-like tracks. The grooves run for kilometres, cross each other at different elevations, and in places drop off underwater cliffs (implying construction during a lower sea level). Mainstream explanations (Bronze Age sledge tracks, Roman cart wheels) do not explain the underwater extensions or the grid-like density. Independent researchers connect the Maltese cart ruts to similar features in Sardinia, the Crimea, and the wider Mediterranean."
+  },
+  {
+    "n": "Yeha",
+    "lat": 14.0936,
+    "lng": 39.0428,
+    "cat": "temple",
+    "region": "Africa",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "scale",
+      "polygonal"
+    ],
+    "desc": "Pre-Axumite temple complex in Tigray Province, northern Ethiopia. The Great Temple at Yeha is the oldest standing building in Ethiopia, dated by mainstream archaeology to approximately 700 BCE — though the precision-cut limestone ashlar masonry (some blocks weighing several tonnes, fitted without mortar to sub-millimeter tolerance) prompts independent investigators to propose a foundation phase considerably earlier. The site shows strong Sabaean (south Arabian) architectural influence, suggesting cross-Red-Sea cultural exchange with what is now Yemen. Cassie Coppersmith's Ethiopia Part 2 documents the masonry parallels to the Yemeni Sabaean-era temples at Awwam and Barran."
+  },
+  {
+    "n": "Marib Dam (Old Dam of Ma'rib)",
+    "lat": 15.4136,
+    "lng": 45.3514,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision",
+      "polygonal"
+    ],
+    "desc": "Ancient hydraulic engineering monument near Marib, Yemen, capital of the Sabaean kingdom (c. 1200 BCE - 275 CE). The original dam was 580 m long and irrigated approximately 25,000 acres of cultivated land, supporting one of the wealthiest kingdoms of the ancient Near East. The sluice gates and spillway masonry feature precision-cut limestone blocks with interlocking joinery comparable to Greek and Roman engineering. Sabaean inscriptions document repeated dam failures and repairs across centuries; the final collapse c. 575 CE triggered the migration of the Arab tribes mentioned in the Quran. Recent reconstruction efforts have damaged the archaeological context."
+  },
+  {
+    "n": "Baraqish (Yathill)",
+    "lat": 16.0192,
+    "lng": 44.8042,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "polygonal"
+    ],
+    "desc": "Pre-Islamic fortified Minaean city in the Jawf region of northern Yemen. Originally called Yathill, occupied from approximately the 10th century BCE through Roman times. Massive defensive walls built of precision-cut limestone blocks fitted in cyclopean style, with inscriptions in the Minaean Old South Arabian script. The site was a major stop on the incense route between Arabia Felix and the Mediterranean. Multiple temples and a sophisticated water management system survive within the walls."
+  },
+  {
+    "n": "Awwam Temple (Mahram Bilqis)",
+    "lat": 15.4036,
+    "lng": 45.3736,
+    "cat": "temple",
+    "region": "Middle East",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision",
+      "polygonal"
+    ],
+    "desc": "Largest Sabaean temple, dedicated to the moon god Almaqah, near Marib in Yemen. The oval temenos wall measures 100 × 75 m and stands up to 13 m tall — built of cyclopean limestone blocks fitted in polygonal masonry that recalls Mediterranean and Andean styles. Founded c. 8th century BCE, the temple continued in use for over a thousand years. Locally known as Mahram Bilqis (Sanctuary of the Queen of Sheba), tying the site to the biblical Sheba tradition. Excavations by the American Foundation for the Study of Man (1951-1952) and the University of Calgary (1990s onward) documented the precision of the joinery and the scale of the construction."
+  },
+  {
+    "n": "Barran Temple",
+    "lat": 15.4117,
+    "lng": 45.3522,
+    "cat": "temple",
+    "region": "Middle East",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "Sabaean temple complex near Marib, Yemen, also dedicated to the moon god Almaqah. Smaller than nearby Awwam but featuring the same precision-cut limestone masonry tradition with six monumental pillars still standing. Dated c. 7th century BCE."
+  },
+  {
+    "n": "Timna (Hajar Kuhlan)",
+    "lat": 14.0992,
+    "lng": 45.85,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "polygonal"
+    ],
+    "desc": "Ancient capital of the Qatabanian kingdom in the Bayhan valley of southwestern Yemen. Occupied c. 5th century BCE - 1st century CE. The city walls and temple complexes use cyclopean polygonal masonry comparable to other South Arabian sites and to Mediterranean megalithic traditions. Featured prominently in Cassie Coppersmith's Yemen Part 1 walkthrough."
+  },
+  {
+    "n": "Candi Sukuh",
+    "lat": -7.6242,
+    "lng": 111.1314,
+    "cat": "pyramid",
+    "region": "Asia",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "geometry",
+      "precision",
+      "stratigraphy"
+    ],
+    "desc": "15th-century Hindu pyramid temple on the western slope of Mount Lawu in Central Java, Indonesia. The truncated pyramid structure is stylistically unlike any other Javanese temple and bears striking resemblance to Mesoamerican step pyramids (Yucatán, Tikal). Reliefs depict the Sudamala legend and include unusual iconography of metalworking, fertility, and what appears to be advanced surveying instruments. Conventionally dated to the late Majapahit period but the underlying foundation may be substantially older. Cassie Coppersmith's walkthrough documents the architectural anomalies that have led to comparisons with the Mesoamerican pyramid tradition."
   }
 ]

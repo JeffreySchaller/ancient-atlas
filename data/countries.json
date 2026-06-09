@@ -168,6 +168,274 @@
   "Caracol": "Belize",
   "Moai of Easter Island (Rapa Nui)": "Chile (Rapa Nui)",
   "Jericho": "Palestine",
+  "Russia": [
+    "Dolmens of the North Caucasus",
+    "Arkaim",
+    "Gornaya Shoria",
+    "Khara-Hora Shaft",
+    "Chusovo Wall",
+    "Gornaya Shoria Megaliths"
+  ],
+  "Cambodia": [
+    "Spean Praptos (Kampong Kdei Bridge)",
+    "Kbal Spean (Valley of a Thousand Lingams)",
+    "Phnom Bok",
+    "Bayon Temple",
+    "Preah Khan (Angkor)",
+    "Srah Srang",
+    "Banteay Kdei",
+    "West Baray",
+    "West Mebon",
+    "East Baray",
+    "East Mebon",
+    "Neak Poan (Jayatataka Baray)",
+    "Bat Chum",
+    "Banteay Srei",
+    "Veal Phtei",
+    "Kravan",
+    "Chaw Srei Vibol",
+    "Banteay Prei (Angkor)",
+    "Neam Rup (Pleasant Temple)",
+    "Phnom Chisor",
+    "Banteay Chhmar",
+    "Banteay Toap",
+    "Banteay Prei Nokor"
+  ],
+  "Peru": [
+    "Tarawasi",
+    "Vilcabamba (Espíritu Pampa)"
+  ],
+  "Türkiye": [
+    "Meydan Kalesi",
+    "Alaca Höyük",
+    "Gümüşler Rock-Cut Monastery",
+    "St. Mercurius Underground City",
+    "Kırkgöz Underground City",
+    "Ağırnas Underground City",
+    "Aydıntepe Underground City",
+    "Ersele Underground City",
+    "Dara Ancient City",
+    "Bazda Caves",
+    "Dulkadirli Underground City",
+    "Manazan Caves & Taşkale Granaries",
+    "Matiate (Midyat) Underground City",
+    "Mucur Underground City",
+    "Höyük Underground City",
+    "Ozancık Höyük",
+    "Karahan Tepe",
+    "Hagia Sophia",
+    "Yedikule Fortress",
+    "Harput Castle",
+    "Ankara Hidden Monastery",
+    "Selime Cathedral (Cave Mosque)",
+    "Iznik (Ancient Nicaea)",
+    "Zeugma Mosaic Museum",
+    "Antalya Ancient Theaters",
+    "Boncuklu Tarla",
+    "Basilica Cistern (Yerebatan)",
+    "Sayburç",
+    "Sefertepe",
+    "Gürcütepe",
+    "Çakmaktepe",
+    "Ayanlar Höyük",
+    "Harbetsuvan Tepesi",
+    "Yenimahalle Höyük",
+    "Sogmatar"
+  ],
+  "Italy": [
+    "Vetulonia",
+    "Rusellae",
+    "Orbetello",
+    "San Andrea Priù"
+  ],
+  "Iran": [
+    "Cube of Zoroaster (Ka'bah-ye Zartosht)",
+    "Tall-e Takht (Cyclopean Wall of Pasargadae)",
+    "Tomb of Cyrus the Great",
+    "Zendan-e Soleyman (Tomb of Cambyses I?)",
+    "Qadamgah",
+    "Gur Dokthar (Daughter's Tomb)"
+  ],
+  "Indonesia": [
+    "Ratu Boko",
+    "Sambisari",
+    "Sewu Temple",
+    "Plaosan",
+    "Kalasan",
+    "Mendut",
+    "Pawon",
+    "Ijo",
+    "Sojiwan",
+    "Banyunibo",
+    "Barong",
+    "Bubrah",
+    "Lumbung",
+    "Sari",
+    "Kedulan",
+    "Tampaksiring (Gunung Kawi)",
+    "Pura Besakih",
+    "Pura Lempuyang Luhur",
+    "Sumba Megalithic Tombs",
+    "Sumbawa Megaliths",
+    "Toraja Rock-Cut Burials",
+    "Nias Island Megaliths",
+    "Bada Valley Megaliths",
+    "Candi Sukuh"
+  ],
+  "India": [
+    "Maliabad Fort",
+    "Kotukal Cave Temple"
+  ],
+  "China": [
+    "Mogao Grottoes",
+    "Longmen Grottoes",
+    "Yungang Grottoes",
+    "Bingling Temple Grottoes",
+    "Maijishan Grottoes",
+    "Dazu Rock Carvings",
+    "Qin Shi Huang Mausoleum",
+    "Maoling Mausoleum (Great White Pyramid)",
+    "Xuankong Temple (Hanging Temple)",
+    "Tianlong Shan Grottoes",
+    "Xumishan Grottoes",
+    "Mengshan Giant Buddha",
+    "Tiantishan Grottoes",
+    "Matisi Grottoes",
+    "Wushan Grottoes (Lashao Temple)",
+    "Shaohao Mausoleum",
+    "Elephant Mountain Grottoes",
+    "Yuji Mountain Buddha",
+    "Rongxian Giant Buddha",
+    "Keyan Big Buddha",
+    "Goguryeo Tombs (Jilin)",
+    "Zhangye Dafo Temple",
+    "Yangshan Quarry",
+    "Xi'an Pyramids"
+  ],
+  "Afghanistan": [
+    "Bamiyan",
+    "Takht-e Rustam (Afghanistan)"
+  ],
+  "Mexico": [
+    "Pyramid of the Sun (Teotihuacan)",
+    "Pyramid of the Moon (Teotihuacan)",
+    "Pyramid of the Feathered Serpent (Teotihuacan)",
+    "Chichen Itza",
+    "Coba",
+    "Chacchoben",
+    "Dzibanche",
+    "Tula (Tollan)"
+  ],
+  "Guatemala": [
+    "Uaxactun",
+    "Yaxha",
+    "Nakum",
+    "Naranjo",
+    "Zaculeu"
+  ],
+  "Belize": [
+    "Caracol",
+    "Lamanai",
+    "Xunantunich"
+  ],
+  "Hawaii": [
+    "Necker Island Megalithic Site",
+    "Menehune Fishpond (Alekoko)",
+    "Menehune Ditch (Kīkīaola)",
+    "Wailua River Heiaus (Kauai)",
+    "Healing Stones of Kapaemahu (Oahu)",
+    "Hawaiian Heiaus"
+  ],
+  "Oceania": [
+    "Latte Stones of Guam",
+    "Latte Stones of Tinian",
+    "Rota Quarry (As Nieves)",
+    "Yap Rai Stones",
+    "Palau Megalithic Site",
+    "Kosrae Leluh Island",
+    "Marquesas Islands"
+  ],
+  "Israel": [
+    "Zedekiah's Cave",
+    "Temple Mount Megaliths",
+    "Hezekiah's Tunnel",
+    "Jerusalem Archaeological Park",
+    "Horvat Midras",
+    "Kidron Valley Tombs"
+  ],
+  "Japan": [
+    "Hodota Kofun Cluster",
+    "Sakitama Kofun Cluster",
+    "Saitobaru Kofun Cluster",
+    "Koichi Kofun Cluster",
+    "Yakushima Megaliths"
+  ],
+  "Scotland": [
+    "Gilmerton Cove",
+    "Rosslyn Chapel & Castle"
+  ],
+  "Portugal": [
+    "Tombs and Dolmens of Fornos de Algodres",
+    "Forcadas Tombs & Cortiço Dolmen",
+    "Necropolis of Sao Gens",
+    "Necropolis of Saint Michael (Sao Miguel)",
+    "Necropolis of Moreira de Rei",
+    "Azores Pyramids (Pico Alto)"
+  ],
+  "Spain": [
+    "Tarragona Cyclopean Walls",
+    "Naveta des Tudons"
+  ],
+  "Egypt": [
+    "Qasr el Sagha"
+  ],
+  "United States": [
+    "Sage Wall (Montana)"
+  ],
+  "Saudi Arabia": [
+    "Madain Saleh (Hegra)",
+    "AlUla (Dadan & Lihyanite Capitals)",
+    "Elephant Rock (Jabal AlFil)",
+    "Tayma Oasis",
+    "Harat Khaybar",
+    "Dumat al-Jandal",
+    "Qaryat al-Faw",
+    "Jubbah Rock Art (Jabal Umm Sinman)"
+  ],
+  "France": [
+    "Carnac Stones (Brittany)"
+  ],
+  "South Korea": [
+    "Gochang Dolmens"
+  ],
+  "Nigeria": [
+    "Ikom Monoliths"
+  ],
+  "Jordan": [
+    "Little Petra (Siq al-Barid)"
+  ],
+  "Mauritania": [
+    "Richat Structure (Eye of the Sahara)"
+  ],
+  "Colombia": [
+    "San Agustín Archaeological Park"
+  ],
+  "Micronesia": [
+    "Nan Madol"
+  ],
+  "French Polynesia": [
+    "Marae Arahurahu (Tahiti)"
+  ],
+  "Greece": [
+    "Delphi",
+    "Mycenae (Lion Gate)",
+    "Treasury of Atreus (Tomb of Agamemnon)",
+    "Pyramid of Hellinikon",
+    "Pnyx Hill (Athens)"
+  ],
+  "Malta": [
+    "Malta Cart Ruts (Misraħ Għar il-Kbir)"
+  ],
   "Yemen": [
     "Marib Dam (Old Dam of Ma'rib)",
     "Baraqish (Yathill)",
@@ -177,14 +445,5 @@
   ],
   "Ethiopia": [
     "Yeha"
-  ],
-  "Indonesia": [
-    "Candi Sukuh"
-  ],
-  "Peru": [
-    "Tarawasi"
-  ],
-  "Cambodia": [
-    "Phnom Bok"
   ]
 }

@@ -593,7 +593,7 @@
     {
       "id": "vVd-NOzPhC8",
       "title": "Little Petra : Strange Tool Marks in Stone | Brien Foerster",
-      "cr": "brienfoerster",
+      "cr": "brienf",
       "added": "2026-06-07",
       "published": "2025-09-01"
     }
@@ -773,6 +773,27 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-01-22"
+    },
+    {
+      "id": "s7TqoLPfaqI",
+      "title": "Forgotten Angkor: LiDAR Reveals Hidden Technology | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-01-20"
+    },
+    {
+      "id": "o8f6w3IHS1A",
+      "title": "Angkor lathed artifact — how did the Khmer Empire produce this? | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-09-15"
+    },
+    {
+      "id": "HSME49K2ZAI",
+      "title": "The many clamp marks of Angkor Wat | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-08-20"
     }
   ],
   "Nazca Lines": [
@@ -818,6 +839,27 @@
       "id": "NDMIN3Qd1dQ",
       "title": "Where Did the Easter Island Statues Come from? | BBC Earth",
       "cr": "bbcglobal"
+    },
+    {
+      "id": "EqsQDTVBQkc",
+      "title": "A new unit of megalithic measure — Easter Island | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-02-10"
+    },
+    {
+      "id": "rOpEMhGMnrg",
+      "title": "Basalt 'toki' tool from Easter Island | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-01-25"
+    },
+    {
+      "id": "LqQ-dymZQ9o",
+      "title": "Private collection obsidian mata'a from Easter Island | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-01-15"
     }
   ],
   "Teotihuacán": [
@@ -1478,6 +1520,27 @@
       "id": "Lf7zki_sjvU",
       "title": "Living God Narasimha – In Hampi?",
       "cr": "praveenmohan"
+    },
+    {
+      "id": "wUmCRmaGNs0",
+      "title": "Ancient relics at Hampi, India — granite artifact | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-04-01"
+    },
+    {
+      "id": "OdF5oCz8W3I",
+      "title": "Granite artifact in Hampi: evidence of ancient lathing? | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-03-25"
+    },
+    {
+      "id": "8FyQBkxam0w",
+      "title": "Stone nubs on megalithic granite blocks at Hampi | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-03-20"
     }
   ],
   "Sillustani": [
@@ -2068,6 +2131,34 @@
       "id": "e9wph-07s2U",
       "title": "Nobody talks about the Peru-style megaliths at Vat Phou in southern Laos",
       "cr": "secretsinstone"
+    },
+    {
+      "id": "Sks7sXjLpcY",
+      "title": "Vat Phou's Shattered Megaliths: Clues to an Ancient Catastrophe in Laos | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-02-15"
+    },
+    {
+      "id": "HxqtnJ3tYgg",
+      "title": "Toppled and scattered megalithic structures at Vat Phou | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-12-15"
+    },
+    {
+      "id": "BWDt0ljLJvo",
+      "title": "Vat Phou — collapsed structure carved from boulder | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-12-10"
+    },
+    {
+      "id": "fd0wedyd8DY",
+      "title": "Serpent carvings at Vat Phou — dating questions | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-12-20"
     }
   ],
   "El Tajín": [
@@ -2111,6 +2202,41 @@
       "title": "Reassessing Ancient Cambodia (Quest for Ancient Civilizations) — Koh Ker deep-dive",
       "cr": "secretsinstone",
       "t": 610
+    },
+    {
+      "id": "l4ep1QxufRc",
+      "title": "Koh Ker's HIDDEN 7-Tier Pyramid & Colossal Lingas — Part 1 | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-03-10"
+    },
+    {
+      "id": "Y95QhEBMOuw",
+      "title": "Koh Ker — remains of one of its famous statues up close | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-11-20"
+    },
+    {
+      "id": "8EuShqdivWM",
+      "title": "Massive linga hidden at Koh Ker, still in one piece | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-11-15"
+    },
+    {
+      "id": "oAFrbit-D1g",
+      "title": "Precision artifacts at Koh Ker | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-11-10"
+    },
+    {
+      "id": "XBqyCFJt9J4",
+      "title": "Megalithic Koh Ker overview | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-11-05"
     }
   ],
   "Ta Prohm": [
@@ -2293,6 +2419,34 @@
       "id": "x0Vqrcpf4DA",
       "title": "Secret Pyramids Hidden in Thailand? The Ancient Mystery of Si Thep Temples",
       "cr": "praveenmohan"
+    },
+    {
+      "id": "nuA2OlPJW1s",
+      "title": "The Buried Pyramid of Thailand & The Mystery of Si Thep | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-04-15"
+    },
+    {
+      "id": "CVGQuRAwZKs",
+      "title": "Thailand lingam at Si Thep | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-04-05"
+    },
+    {
+      "id": "VrMiF8umGmE",
+      "title": "UNESCO site of Si Thep | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-02-05"
+    },
+    {
+      "id": "zNWgi3h_c9I",
+      "title": "Si Thep — UNESCO ancient site | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-02-01"
     }
   ],
   "Plain of Jars": [
@@ -2420,6 +2574,13 @@
       "cr": "solsticehunter",
       "added": "2026-06-06",
       "published": "2026-05-26"
+    },
+    {
+      "id": "jMEy98Xet90",
+      "title": "Horizontal grooves at the ruined towers of Phnom Bok | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-10-20"
     }
   ],
   "Tarawasi": [
@@ -2429,6 +2590,13 @@
       "cr": "secretsinstone",
       "added": "2026-06-07",
       "published": "2026-05-17"
+    },
+    {
+      "id": "UrBKXFctyic",
+      "title": "Was Tarawasi exposed to very high heat? (with Brien Foerster) | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-05-15"
     }
   ],
   "Meydan Kalesi": [
@@ -4624,7 +4792,7 @@
     {
       "id": "vVd-NOzPhC8",
       "title": "Little Petra : Strange Tool Marks in Stone | Brien Foerster",
-      "cr": "brienfoerster",
+      "cr": "brienf",
       "added": "2026-06-07",
       "published": "2025-09-01"
     }
@@ -4805,6 +4973,78 @@
       "cr": "archaiclens",
       "added": "2026-06-08",
       "published": "2024-01-30"
+    }
+  ],
+  "Marib Dam (Old Dam of Ma'rib)": [
+    {
+      "id": "JUL73K3vDDQ",
+      "title": "Yemen's Hidden Megaliths: Baraqish, Awwam, Barran, and the Old Marib Dam | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-08-10"
+    }
+  ],
+  "Baraqish (Yathill)": [
+    {
+      "id": "JUL73K3vDDQ",
+      "title": "Yemen's Hidden Megaliths: Baraqish, Awwam, Barran, and the Old Marib Dam | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-08-10"
+    }
+  ],
+  "Awwam Temple (Mahram Bilqis)": [
+    {
+      "id": "JUL73K3vDDQ",
+      "title": "Yemen's Hidden Megaliths: Baraqish, Awwam, Barran, and the Old Marib Dam | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-08-10"
+    }
+  ],
+  "Barran Temple": [
+    {
+      "id": "JUL73K3vDDQ",
+      "title": "Yemen's Hidden Megaliths: Baraqish, Awwam, Barran, and the Old Marib Dam | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-08-10"
+    }
+  ],
+  "Timna (Hajar Kuhlan)": [
+    {
+      "id": "Tho9vWg1Ne8",
+      "title": "Yemen's Ancient Megalithic Mysteries Part 1 — Timna's Cyclopean Architecture | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-07-15"
+    }
+  ],
+  "Yeha": [
+    {
+      "id": "qLRqPjXmK38",
+      "title": "Uncovering Ethiopia's Ancient Megaliths Part 2: Pre-Axumite Temples and Connections to Yemen | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-07-01"
+    }
+  ],
+  "Candi Sukuh": [
+    {
+      "id": "WxYYyGXOmR4",
+      "title": "Java's Unexplainable Pyramid Temple: Candi Sukuh | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-06-15"
+    }
+  ],
+  "Samaipata (El Fuerte)": [
+    {
+      "id": "iK_670S3wkk",
+      "title": "Unveiling El Fuerte de Samaipata: Bolivia's Hidden Megalithic Mystery | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2025-06-01"
     }
   ]
 }

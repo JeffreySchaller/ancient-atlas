@@ -279,7 +279,8 @@
     "Sumbawa Megaliths",
     "Toraja Rock-Cut Burials",
     "Nias Island Megaliths",
-    "Bada Valley Megaliths"
+    "Bada Valley Megaliths",
+    "Candi Sukuh"
   ],
   "India": [
     "Maliabad Fort",
@@ -434,5 +435,15 @@
   ],
   "Malta": [
     "Malta Cart Ruts (Misraħ Għar il-Kbir)"
+  ],
+  "Yemen": [
+    "Marib Dam (Old Dam of Ma'rib)",
+    "Baraqish (Yathill)",
+    "Awwam Temple (Mahram Bilqis)",
+    "Barran Temple",
+    "Timna (Hajar Kuhlan)"
+  ],
+  "Ethiopia": [
+    "Yeha"
   ]
 }

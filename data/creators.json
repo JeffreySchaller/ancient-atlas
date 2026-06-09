@@ -237,5 +237,68 @@
     "subs": "Neolithic engineering analysis · construction reconstruction · stonework methodology",
     "color": "#B68A56",
     "tier": 3
+  },
+  "solsticehunter": {
+    "name": "SOLSTICE HUNTER",
+    "handle": "@SOLSTICEHUNTER",
+    "subs": "boots-on-ground megalithic field documentation, cross-continental signatures",
+    "color": "#8B7DB8",
+    "tier": 3
+  },
+  "history": {
+    "name": "HISTORY",
+    "handle": "@HISTORY",
+    "subs": "mainstream documentary network; ancient civilizations + archaeology specials",
+    "color": "#C9A84C",
+    "tier": 2
+  },
+  "cappadociapage": {
+    "name": "Cappadocia Page Turkey",
+    "handle": "@CappadociaPageTurkey",
+    "subs": "small local channel documenting Cappadocia's underground cities and rock-cut sites",
+    "color": "#A66B4A",
+    "tier": 3
+  },
+  "agelessrock": {
+    "name": "Ageless Rock",
+    "handle": "@AgelessRock888",
+    "subs": "boots-on-ground walkthroughs of underground cities, rock-cut monasteries, and megalithic sites; focused on tool marks, scale, and design intent that often resist mainstream chronology",
+    "color": "#8C6E4F",
+    "tier": 3
+  },
+  "turkiyetoday": {
+    "name": "Türkiye Today",
+    "handle": "@turkiyetoday",
+    "subs": "English-language Türkiye news + culture channel; shorts on archaeological discoveries, hidden sites, and ancient monuments",
+    "color": "#C8102E",
+    "tier": 3
+  },
+  "bassforge": {
+    "name": "BassForge",
+    "handle": "@BassForge",
+    "subs": "Global ancient-anomaly synthesis channel; rapid-fire tours connecting megalithic + rock-cut + cyclopean sites across continents with technical lens (engineering, geometry, signal processing analogies)",
+    "color": "#5C2A9D",
+    "tier": 2
+  },
+  "epochmysteries": {
+    "name": "Epoch Mysteries",
+    "handle": "@EpochMysteries",
+    "subs": "Cinematic deep-dives into ancient sites, lost civilizations, and unresolved archaeological questions across the world",
+    "color": "#7C4D2A",
+    "tier": 3
+  },
+  "bbcreel": {
+    "name": "BBC REEL",
+    "handle": "@BBCReel",
+    "subs": "BBC's documentary short-form channel covering culture, history, science, and travel with field cinematography",
+    "color": "#BB1919",
+    "tier": 2
+  },
+  "archaiclens": {
+    "name": "Archaic Lens",
+    "handle": "@ArchaicLens",
+    "subs": "On-the-ground exploration of ancient and megalithic sites with strong cinematography; deep-dives on the Richat Structure, San Agustín, Nan Madol, and the megalithic Mediterranean and Pacific",
+    "color": "#A87644",
+    "tier": 2
   }
 }
