@@ -199,7 +199,8 @@
     "Phnom Chisor",
     "Banteay Chhmar",
     "Banteay Toap",
-    "Banteay Prei Nokor"
+    "Banteay Prei Nokor",
+    "Banteay Samré"
   ],
   "Peru": [
     "Tarawasi",
@@ -445,5 +446,9 @@
   ],
   "Ethiopia": [
     "Yeha"
+  ],
+  "Thailand": [
+    "Phimai (Prasat Hin Phimai)",
+    "Phanom Rung"
   ]
 }
