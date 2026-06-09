@@ -124,9 +124,10 @@ def apply_gradient_overlay(img):
     for y in range(0, 200):
         alpha = int(180 * (1 - y / 200))
         od.line([(0, y), (W, y)], fill=(13, 13, 18, alpha))
-    # Bottom section: strong dark for title text
-    for y in range(280, H):
-        progress = (y - 280) / (H - 280)
+    # Bottom section: v4.1 — band starts later (340 instead of 280) so
+    # more of the enigmatic photo shows above the title block.
+    for y in range(340, H):
+        progress = (y - 340) / (H - 340)
         alpha = int(40 + 200 * progress)
         od.line([(0, y), (W, y)], fill=(13, 13, 18, min(255, alpha)))
     return Image.alpha_composite(img.convert('RGBA'), overlay).convert('RGB')
@@ -176,22 +177,27 @@ def compose_photo_card(photo_path, title, subtitle, entry_num):
     draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE,
               stroke_width=1, stroke_fill=CHAMPAGNE_PALE)
 
-    # Entry tag pill — doubled per Jeff's v4 spec
+    # Entry tag pill — doubled per Jeff's v4, text centered via anchor='mm' v4.1
     if entry_num is not None:
         tag = f"ENTRY {entry_num:02d}"
         pad_x, pad_y = 30, 18
         bbox = draw.textbbox((0, 0), tag, font=MONO_TAG)
         tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
-        x0 = W - 80 - tw - pad_x * 2
+        pill_w = tw + pad_x * 2
+        pill_h = th + pad_y * 2
+        x0 = W - 80 - pill_w
         y0 = 70
         draw.rounded_rectangle(
-            (x0, y0, x0 + tw + pad_x * 2, y0 + th + pad_y * 2),
+            (x0, y0, x0 + pill_w, y0 + pill_h),
             radius=38,
             outline=CHAMPAGNE_PALE,
             fill=(13, 13, 18, 180),
             width=4,
         )
-        draw.text((x0 + pad_x, y0 + pad_y - 3), tag,
+        # anchor='mm' = middle-middle, so the text geometric center
+        # lands exactly on the pill geometric center
+        draw.text((x0 + pill_w // 2, y0 + pill_h // 2), tag,
+                  anchor='mm',
                   font=MONO_TAG, fill=CHAMPAGNE_PALE,
                   stroke_width=1, stroke_fill=CHAMPAGNE_PALE)
 
@@ -206,7 +212,9 @@ def compose_photo_card(photo_path, title, subtitle, entry_num):
     else:
         sub_lines = []
     total_h = line_h * len(title_lines) + (sub_line_h * len(sub_lines) + 18 if sub_lines else 0)
-    y = H - 70 - total_h
+    # v4.1: tightened bottom margin from 70 → 40 so the title block sits
+    # lower on the card and more of the enigmatic photo shows above it.
+    y = H - 40 - total_h
     for line in title_lines:
         draw.text((80, y), line, font=use_font, fill=IVORY)
         y += line_h
@@ -248,19 +256,22 @@ def compose_atmospheric_vector(title, subtitle, entry_num, mark_fn):
               stroke_width=2, stroke_fill=IVORY)
     draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE,
               stroke_width=1, stroke_fill=CHAMPAGNE_PALE)
-    # Entry tag — doubled v4
+    # Entry tag — doubled v4, centered v4.1
     if entry_num is not None:
         tag = f"ENTRY {entry_num:02d}"
         pad_x, pad_y = 30, 18
         bbox = draw.textbbox((0, 0), tag, font=MONO_TAG)
         tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
-        x0 = W - 80 - tw - pad_x * 2
+        pill_w = tw + pad_x * 2
+        pill_h = th + pad_y * 2
+        x0 = W - 80 - pill_w
         y0 = 70
         draw.rounded_rectangle(
-            (x0, y0, x0 + tw + pad_x * 2, y0 + th + pad_y * 2),
+            (x0, y0, x0 + pill_w, y0 + pill_h),
             radius=38, outline=CHAMPAGNE_PALE, width=4,
         )
-        draw.text((x0 + pad_x, y0 + pad_y - 3), tag,
+        draw.text((x0 + pill_w // 2, y0 + pill_h // 2), tag,
+                  anchor='mm',
                   font=MONO_TAG, fill=CHAMPAGNE_PALE,
                   stroke_width=1, stroke_fill=CHAMPAGNE_PALE)
 
@@ -357,7 +368,7 @@ def compose_hub_card():
     sub_line_h = 72
     sub_lines = wrap_text(subtitle, SUBTITLE_FONT, 1040, draw)
     total_h = line_h * len(title_lines) + sub_line_h * len(sub_lines) + 18
-    y = H - 70 - total_h
+    y = H - 40 - total_h
     for line in title_lines:
         draw.text((80, y), line, font=use_font, fill=IVORY)
         y += line_h
