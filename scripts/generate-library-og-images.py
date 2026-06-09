@@ -362,7 +362,7 @@ CARDS = [
         entry=1,
         title='What is a Megalith?',
         subtitle='Cyclopean, polygonal, mortarless. A working vocabulary of deep stone.',
-        photo=PHOTOS_DIR / 'mini-megaliths' / '06-cusco-stepped-interlock.jpg',
+        photo=PHOTOS_DIR / 'megaliths' / '01-sacsayhuaman-wall-sweep.jpg',
     ),
     dict(
         slug='stone-circles',
