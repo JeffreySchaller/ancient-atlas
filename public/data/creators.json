@@ -335,5 +335,40 @@
     "subs": "Atmospheric short-form mysteries · ancient sites",
     "color": "#9B8FAA",
     "tier": 3
+  },
+  "natgeo": {
+    "name": "National Geographic",
+    "handle": "@NationalGeographic",
+    "subs": "Institutional documentary · global field reporting · UNESCO-grade coverage",
+    "color": "#F2C500",
+    "tier": 1
+  },
+  "jimeighmey": {
+    "name": "Jim Eighmey's Archeology Videos",
+    "handle": "@JimEighmey",
+    "subs": "Field archaeology walkthroughs · American Southwest specialty",
+    "color": "#A87644",
+    "tier": 2
+  },
+  "truthfultraveler": {
+    "name": "Truthful Traveler",
+    "handle": "@TruthfulTraveler",
+    "subs": "Respectful on-site coverage · indigenous-perspective travel",
+    "color": "#7BAE7F",
+    "tier": 2
+  },
+  "towanderfreely": {
+    "name": "To Wander Freely",
+    "handle": "@ToWanderFreely",
+    "subs": "Ancestral Puebloan field-walking · National Monument deep-dives",
+    "color": "#C2826B",
+    "tier": 3
+  },
+  "cactusatlas": {
+    "name": "Cactus Atlas",
+    "handle": "@CactusAtlas",
+    "subs": "Southwest desert archaeology · National Monument coverage",
+    "color": "#B97A3A",
+    "tier": 3
   }
 }

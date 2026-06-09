@@ -5634,5 +5634,57 @@
       "added": "2026-06-09",
       "published": "2025-08-12"
     }
+  ],
+  "Mesa Verde": [
+    {
+      "id": "1jkp-_Gfa44",
+      "title": "The Mystery of the Ancient Cliff Palace in Mesa Verde, Colorado, USA | Ancient Architects",
+      "cr": "ancientarch",
+      "added": "2026-06-09",
+      "published": "2021-08-12"
+    },
+    {
+      "id": "XPI68mdz2HY",
+      "title": "Mesa Verde's Cliffside Dwellings Show a Glimpse of History | National Geographic",
+      "cr": "natgeo",
+      "added": "2026-06-09",
+      "published": "2020-04-15"
+    }
+  ],
+  "Chaco Canyon (Chaco Culture)": [
+    {
+      "id": "_m0CuBsytz8",
+      "title": "Chaco Canyon Tour — A Walkthrough of Pueblo Bonito | Jim Eighmey's Archeology Videos",
+      "cr": "jimeighmey",
+      "added": "2026-06-09",
+      "published": "2022-06-20"
+    }
+  ],
+  "Canyon de Chelly": [
+    {
+      "id": "J-2d3Tb7doo",
+      "title": "Canyon de Chelly: Secrets of a Living Navajo Landscape | Truthful Traveler",
+      "cr": "truthfultraveler",
+      "added": "2026-06-09",
+      "published": "2024-03-10"
+    }
+  ],
+  "Bandelier": [
+    {
+      "id": "zQsqXVIVWcw",
+      "title": "Bandelier National Monument — A look at ancestral puebloan life | To Wander Freely",
+      "cr": "towanderfreely",
+      "added": "2026-06-09",
+      "published": "2023-09-15"
+    }
+  ],
+  "Hovenweep": [
+    {
+      "id": "4OS1YX7oG_0",
+      "title": "Are These RUINS or CASTLES? Hovenweep National Monument, Utah | Cactus Atlas",
+      "cr": "cactusatlas",
+      "added": "2026-06-09",
+      "published": "2024-05-08"
+    }
   ]
 }
