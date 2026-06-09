@@ -5357,7 +5357,7 @@
     "lat": 52.8,
     "lng": 87.9,
     "cat": "megalithic",
-    "region": "Russia",
+    "region": "Asia",
     "tier": 1,
     "signal": "open",
     "criteria": [
@@ -5757,7 +5757,7 @@
     "lat": 20.0667,
     "lng": -99.3406,
     "cat": "city",
-    "region": "Mesoamerica",
+    "region": "Central America",
     "tier": 1,
     "signal": "open",
     "criteria": [
@@ -6470,7 +6470,7 @@
     "lat": 19.3019,
     "lng": -99.1797,
     "cat": "pyramid",
-    "region": "Americas",
+    "region": "Central America",
     "tier": 1,
     "signal": "open",
     "criteria": [
@@ -6484,7 +6484,7 @@
     "lat": 18.8047,
     "lng": -99.2967,
     "cat": "pyramid",
-    "region": "Americas",
+    "region": "Central America",
     "tier": 1,
     "signal": "open",
     "criteria": [
@@ -6498,7 +6498,7 @@
     "lat": 18.2667,
     "lng": -93.2025,
     "cat": "pyramid",
-    "region": "Americas",
+    "region": "Central America",
     "tier": 2,
     "signal": "open",
     "criteria": [
@@ -6512,7 +6512,7 @@
     "lat": 20.93,
     "lng": -89.3033,
     "cat": "pyramid",
-    "region": "Americas",
+    "region": "Central America",
     "tier": 2,
     "signal": "open",
     "criteria": [
@@ -6525,7 +6525,7 @@
     "lat": 20.9333,
     "lng": -89.0167,
     "cat": "pyramid",
-    "region": "Americas",
+    "region": "Central America",
     "tier": 2,
     "signal": "open",
     "criteria": [
@@ -6538,7 +6538,7 @@
     "lat": 20.705,
     "lng": -88.95,
     "cat": "pyramid",
-    "region": "Americas",
+    "region": "Central America",
     "tier": 3,
     "signal": "open",
     "criteria": [
