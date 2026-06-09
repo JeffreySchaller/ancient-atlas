@@ -253,8 +253,13 @@
   .share-btn svg{width:13px;height:13px;flex-shrink:0}
   .header-actions{display:flex;align-items:center;gap:10px;justify-self:end}
   @media(max-width:700px){.share-btn span{display:none}.share-btn{padding:7px 9px}}
-  .share-toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(20px);background:#0D0D12;border:1px solid var(--champagne);color:var(--text);padding:11px 22px;border-radius:8px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;z-index:9999;opacity:0;pointer-events:none;transition:all .25s ease-out;box-shadow:0 4px 24px rgba(201,168,76,.25)}
-  .share-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  .share-toast{position:fixed;top:90px;left:50%;transform:translateX(-50%) translateY(-16px) scale(.95);background:#0D0D12;color:#F0EEE9;padding:16px 32px;border-radius:11px;font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;z-index:9999;opacity:0;pointer-events:none;transition:opacity .35s ease-out, transform .4s cubic-bezier(.34,1.56,.64,1);box-shadow:0 20px 55px rgba(0,0,0,.6),0 4px 22px rgba(201,168,76,.22);isolation:isolate}
+  .share-toast::before{content:'';position:absolute;inset:-1px;border-radius:12px;background:conic-gradient(from 0deg, transparent 0deg, transparent 230deg, rgba(201,168,76,.65) 280deg, rgba(245,220,160,1) 320deg, rgba(201,168,76,.65) 360deg, transparent 420deg);animation:share-toast-trace 2.4s linear infinite;opacity:0;transition:opacity .25s;z-index:-2}
+  .share-toast::after{content:'';position:absolute;inset:1px;background:#0D0D12;border-radius:10px;z-index:-1}
+  .share-toast.show{opacity:1;transform:translateX(-50%) translateY(0) scale(1)}
+  .share-toast.show::before{opacity:1}
+  @keyframes share-toast-trace{to{transform:rotate(360deg)}}
+  @media (prefers-reduced-motion:reduce){.share-toast{transition:opacity .2s}.share-toast.show{transform:translateX(-50%) translateY(0) scale(1)}.share-toast::before{animation:none;opacity:1}}
   figure.photo{margin:32px 0 44px 0;padding:0}
   figure.photo img{width:100%;height:auto;display:block;border-radius:6px;box-shadow:0 12px 40px rgba(0,0,0,.45),0 2px 8px rgba(0,0,0,.30)}
   figure.photo figcaption{font-family:var(--serif,'Fraunces',Georgia,serif);font-size:14px;line-height:1.55;color:var(--text-dim,#C5C5D0);margin-top:14px;font-style:italic;text-align:left}
@@ -761,7 +766,7 @@ async function shareArticle() {
   const toast = document.getElementById('shareToast');
   if (toast) {
     toast.classList.add('show');
-    setTimeout(function(){ toast.classList.remove('show'); }, 2200);
+    setTimeout(function(){ toast.classList.remove('show'); }, 4000);
   }
 }
 </script>
