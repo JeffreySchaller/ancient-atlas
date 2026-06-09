@@ -4,31 +4,33 @@ generate-library-og-images.py — Build a unique Open Graph card per
 Library article so iMessage / Facebook / X previews render distinct
 visuals instead of all reusing the global atlas card.
 
-Outputs (1200 x 630 PNGs):
-    public/library/og/index.png           — Library hub
-    public/library/og/megaliths.png       — Entry 01: What is a Megalith?
-    public/library/og/stone-circles.png   — Entry 02: Stone Circles
-    public/library/og/mini-megaliths.png  — Entry 03: Mini Megaliths
-    public/library/og/true-monoliths.png  — Entry 04: True Monoliths
+Each card uses a PHOTOGRAPH from the article as the dominant visual
+(magazine-cover treatment): full-bleed photo background, soft dark
+gradient overlay for text legibility, compass mark + brand text at top,
+entry tag, large serif title at the bottom, URL stamp.
 
-Each card uses the same brand palette as the main og-image.py but with
-article-specific title, subtitle, and a custom SVG-style mark drawn to
-match the article's theme.
+Outputs (1200 x 630 PNGs):
+    public/library/og/index.png           — Library hub (uses global atlas image)
+    public/library/og/megaliths.png       — Entry 01: Cusco stepped interlock
+    public/library/og/stone-circles.png   — Entry 02: atmospheric vector (no photo available)
+    public/library/og/mini-megaliths.png  — Entry 03: Ollantaytambo bent corner
+    public/library/og/true-monoliths.png  — Entry 04: Kailasa Ellora aerial
 
 Run from repo root:
     python3 scripts/generate-library-og-images.py
     git add public/library/og/
-    git commit -m "Generate unique Library OG images"
+    git commit -m "Generate photo-based Library OG images"
     git push origin main
 
 Dependencies: pip install Pillow --break-system-packages
 """
 import os, sys, math
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps, ImageEnhance
 
 REPO_ROOT = Path(__file__).parent.parent
 DEST_DIR = REPO_ROOT / 'public' / 'library' / 'og'
+PHOTOS_DIR = REPO_ROOT / 'public' / 'library' / 'photos'
 DEST_DIR.mkdir(parents=True, exist_ok=True)
 
 # ============================================================
@@ -44,12 +46,11 @@ CHAMPAGNE_GLOW = (245, 220, 160)
 IVORY = (240, 238, 233)
 CLOUD = (197, 197, 208)
 MIST = (138, 138, 154)
-AMBER = (232, 185, 96)
 
 W, H = 1200, 630
 
 # ============================================================
-# Font loading
+# Font loading (Mac + Linux candidates)
 # ============================================================
 def load_font(candidates, size):
     for path in candidates:
@@ -59,65 +60,77 @@ def load_font(candidates, size):
             continue
     return ImageFont.load_default()
 
-FRAUNCES_BOLD = load_font([
+TITLE_FONT = load_font([
     "/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf",
     "/Library/Fonts/Fraunces-Bold.ttf",
     "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
-], 76)
-FRAUNCES_BOLD_SMALL = load_font([
+], 78)
+TITLE_FONT_SHORT = load_font([
     "/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf",
     "/Library/Fonts/Fraunces-Bold.ttf",
     "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
-], 56)
-FRAUNCES_ITALIC = load_font([
+], 96)
+BRAND_FONT = load_font([
+    "/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf",
+    "/Library/Fonts/Fraunces-Bold.ttf",
+    "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
+], 36)
+ITALIC_FONT = load_font([
     "/System/Library/Fonts/Supplemental/Times New Roman Italic.ttf",
     "/Library/Fonts/Fraunces-Italic.ttf",
     "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
-], 30)
-MONO_REG = load_font([
-    "/System/Library/Fonts/Menlo.ttc",
-    "/System/Library/Fonts/Monaco.ttc",
-    "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
-    "/System/Library/Fonts/Courier.ttc",
-], 14)
+], 24)
 MONO_TAG = load_font([
     "/System/Library/Fonts/Menlo.ttc",
     "/System/Library/Fonts/Monaco.ttc",
     "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
     "/System/Library/Fonts/Courier.ttc",
-], 16)
+], 14)
+MONO_URL = load_font([
+    "/System/Library/Fonts/Supplemental/Times New Roman Italic.ttf",
+    "/Library/Fonts/Fraunces-Italic.ttf",
+    "/usr/share/fonts/truetype/google-fonts/Lora-Italic-Variable.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
+], 22)
 
 # ============================================================
-# Drawing primitives
+# Photo-background card composition
 # ============================================================
-def make_base():
-    """Obsidian canvas with subtle radial glow + grain."""
-    img = Image.new('RGB', (W, H), OBSIDIAN)
-    glow = Image.new('RGB', (W, H), OBSIDIAN)
-    gd = ImageDraw.Draw(glow)
-    cx, cy = W // 2 - 100, H // 2
-    for r in range(700, 0, -10):
-        a = max(0, 1 - r / 700)
-        rgb = (
-            int(OBSIDIAN[0] + (60 - OBSIDIAN[0]) * a * 0.35),
-            int(OBSIDIAN[1] + (48 - OBSIDIAN[1]) * a * 0.35),
-            int(OBSIDIAN[2] + (30 - OBSIDIAN[2]) * a * 0.35),
-        )
-        gd.ellipse((cx - r, cy - r, cx + r, cy + r), fill=rgb)
-    glow = glow.filter(ImageFilter.GaussianBlur(50))
-    img = Image.blend(img, glow, 0.55)
+def cover_crop(photo_path):
+    """Open photo and crop-fit to W×H preserving aspect."""
+    img = Image.open(photo_path).convert('RGB')
+    img = ImageOps.fit(img, (W, H), method=Image.LANCZOS, centering=(0.5, 0.45))
     return img
 
-def draw_compass(draw, cx, cy, r, weight=2):
-    """The Ancient Atlas compass-star mark."""
-    draw.ellipse((cx - r, cy - r, cx + r, cy + r),
-                 outline=CHAMPAGNE, width=weight)
+def darken(img, factor=0.65):
+    """Multiply the photo by a darkness factor for legibility."""
+    enh = ImageEnhance.Brightness(img)
+    return enh.enhance(factor)
+
+def apply_gradient_overlay(img):
+    """Layer a dark bottom-up gradient so the title and URL are readable."""
+    overlay = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+    od = ImageDraw.Draw(overlay)
+    # Top section: very mild dark for brand chrome
+    for y in range(0, 200):
+        alpha = int(180 * (1 - y / 200))
+        od.line([(0, y), (W, y)], fill=(13, 13, 18, alpha))
+    # Bottom section: strong dark for title text
+    for y in range(280, H):
+        progress = (y - 280) / (H - 280)
+        alpha = int(40 + 200 * progress)
+        od.line([(0, y), (W, y)], fill=(13, 13, 18, min(255, alpha)))
+    return Image.alpha_composite(img.convert('RGBA'), overlay).convert('RGB')
+
+def draw_compass(draw, cx, cy, r, color=CHAMPAGNE_PALE, weight=2):
+    draw.ellipse((cx - r, cy - r, cx + r, cy + r), outline=color, width=weight)
     inner = int(r * 0.62)
     draw.ellipse((cx - inner, cy - inner, cx + inner, cy + inner),
-                 outline=CHAMPAGNE, width=1)
+                 outline=color, width=1)
     arm_len = int(r * 0.85)
     arm_w = max(3, int(r * 0.10))
     draw.polygon([(cx, cy - arm_len), (cx + arm_w, cy),
@@ -126,40 +139,8 @@ def draw_compass(draw, cx, cy, r, weight=2):
     draw.polygon([(cx - arm_len, cy), (cx, cy - arm_w),
                   (cx + arm_len, cy), (cx, cy + arm_w)],
                  fill=CHAMPAGNE)
-    draw.ellipse((cx - 3, cy - 3, cx + 3, cy + 3), fill=OBSIDIAN)
-
-def draw_top_brand(draw, entry_num=None):
-    """Top-left brand mark + wordmark, optional tag pill."""
-    draw_compass(draw, 110, 90, 26)
-    draw.text((158, 65), "Ancient Atlas", font=FRAUNCES_BOLD_SMALL, fill=IVORY)
-    draw.text((160, 132), "Library", font=FRAUNCES_ITALIC, fill=CHAMPAGNE_PALE)
-    if entry_num:
-        # Tag pill in top-right
-        pad_x, pad_y = 16, 8
-        tag = f"ENTRY {entry_num:02d}"
-        bbox = draw.textbbox((0, 0), tag, font=MONO_TAG)
-        tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
-        x0 = W - 80 - tw - pad_x * 2
-        y0 = 80
-        draw.rounded_rectangle(
-            (x0, y0, x0 + tw + pad_x * 2, y0 + th + pad_y * 2),
-            radius=18,
-            outline=CHAMPAGNE,
-            width=2,
-        )
-        draw.text((x0 + pad_x, y0 + pad_y - 2), tag,
-                  font=MONO_TAG, fill=CHAMPAGNE_PALE)
-
-def draw_url_corner(draw):
-    """Bottom-right URL stamp."""
-    url = "theancientatlas.com/library"
-    bbox = draw.textbbox((0, 0), url, font=FRAUNCES_ITALIC)
-    tw = bbox[2] - bbox[0]
-    draw.text((W - 80 - tw, H - 70), url,
-              font=FRAUNCES_ITALIC, fill=CHAMPAGNE)
 
 def wrap_text(text, font, max_width, draw):
-    """Break text into lines that fit within max_width."""
     words = text.split()
     lines = []
     cur = []
@@ -176,124 +157,216 @@ def wrap_text(text, font, max_width, draw):
         lines.append(' '.join(cur))
     return lines
 
-def draw_title_block(draw, title, subtitle, y_anchor=255):
-    """Render the article title + italic subtitle."""
-    title_lines = wrap_text(title, FRAUNCES_BOLD, 1040, draw)
-    y = y_anchor
+def compose_photo_card(photo_path, title, subtitle, entry_num):
+    """Magazine-cover treatment: photo, gradient, brand chrome, title."""
+    bg = cover_crop(photo_path)
+    bg = darken(bg, factor=0.72)
+    img = apply_gradient_overlay(bg)
+    draw = ImageDraw.Draw(img, 'RGBA')
+
+    # Top brand chrome
+    draw_compass(draw, 110, 90, 28, color=CHAMPAGNE_PALE, weight=2)
+    draw.text((158, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY)
+    draw.text((160, 110), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
+
+    # Entry tag pill (top-right)
+    if entry_num is not None:
+        tag = f"ENTRY {entry_num:02d}"
+        pad_x, pad_y = 16, 8
+        bbox = draw.textbbox((0, 0), tag, font=MONO_TAG)
+        tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+        x0 = W - 80 - tw - pad_x * 2
+        y0 = 78
+        draw.rounded_rectangle(
+            (x0, y0, x0 + tw + pad_x * 2, y0 + th + pad_y * 2),
+            radius=18,
+            outline=CHAMPAGNE_PALE,
+            fill=(13, 13, 18, 120),
+            width=2,
+        )
+        draw.text((x0 + pad_x, y0 + pad_y - 2), tag,
+                  font=MONO_TAG, fill=CHAMPAGNE_PALE)
+
+    # Big serif title in the bottom third
+    use_font = TITLE_FONT_SHORT if len(title) < 18 else TITLE_FONT
+    title_lines = wrap_text(title, use_font, 1040, draw)
+    line_h = 92 if use_font == TITLE_FONT_SHORT else 84
+    total_h = line_h * len(title_lines) + (40 if subtitle else 0)
+    y = H - 110 - total_h
     for line in title_lines:
-        draw.text((80, y), line, font=FRAUNCES_BOLD, fill=IVORY)
-        y += 88
-    y += 10
-    sub_lines = wrap_text(subtitle, FRAUNCES_ITALIC, 1040, draw)
-    for line in sub_lines:
-        draw.text((80, y), line, font=FRAUNCES_ITALIC, fill=CHAMPAGNE_PALE)
-        y += 42
+        draw.text((80, y), line, font=use_font, fill=IVORY)
+        y += line_h
+    if subtitle:
+        y += 8
+        sub_lines = wrap_text(subtitle, ITALIC_FONT, 1040, draw)
+        for line in sub_lines:
+            draw.text((80, y), line, font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
+            y += 32
+
+    # URL stamp bottom-right
+    url = "theancientatlas.com/library"
+    bbox = draw.textbbox((0, 0), url, font=MONO_URL)
+    tw = bbox[2] - bbox[0]
+    draw.text((W - 80 - tw, H - 60), url, font=MONO_URL, fill=CHAMPAGNE)
+
+    return img.convert('RGB')
 
 # ============================================================
-# Article-specific decorative marks
+# Vector-only cards (for entries that lack a hero photo)
 # ============================================================
-def mark_polygonal_wall(draw):
-    """Entry 01 mark: cyclopean polygonal blocks."""
-    # Stack a tessellation of irregular polygonal blocks on the right
-    poly1 = [(880, 460), (1020, 440), (1100, 490), (1080, 560), (940, 575), (870, 530)]
-    poly2 = [(1020, 440), (1130, 420), (1170, 480), (1100, 490)]
-    poly3 = [(870, 530), (940, 575), (920, 590), (855, 580)]
-    poly4 = [(1080, 560), (1130, 555), (1140, 590), (1095, 595)]
-    for poly in [poly1, poly2, poly3, poly4]:
-        draw.polygon(poly, fill=STONE, outline=CHAMPAGNE)
-    # Small accent stone (the "mini megalith" hint)
-    poly_mini = [(1015, 510), (1045, 505), (1052, 530), (1025, 538)]
-    draw.polygon(poly_mini, fill=CHARCOAL, outline=CHAMPAGNE_PALE)
+def compose_atmospheric_vector(title, subtitle, entry_num, mark_fn):
+    """Soft atmospheric vector card with the article's brand mark."""
+    img = Image.new('RGB', (W, H), OBSIDIAN)
+    # Layered radial glow background
+    glow = Image.new('RGB', (W, H), OBSIDIAN)
+    gd = ImageDraw.Draw(glow)
+    cx, cy = 980, 380
+    for r in range(800, 0, -8):
+        a = max(0, 1 - r / 800)
+        rgb = (
+            int(OBSIDIAN[0] + (50 - OBSIDIAN[0]) * a * 0.50),
+            int(OBSIDIAN[1] + (42 - OBSIDIAN[1]) * a * 0.50),
+            int(OBSIDIAN[2] + (28 - OBSIDIAN[2]) * a * 0.50),
+        )
+        gd.ellipse((cx - r, cy - r, cx + r, cy + r), fill=rgb)
+    glow = glow.filter(ImageFilter.GaussianBlur(80))
+    img = Image.blend(img, glow, 0.65)
+
+    draw = ImageDraw.Draw(img, 'RGBA')
+    # Top brand chrome
+    draw_compass(draw, 110, 90, 28, color=CHAMPAGNE_PALE, weight=2)
+    draw.text((158, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY)
+    draw.text((160, 110), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
+    # Entry tag
+    if entry_num is not None:
+        tag = f"ENTRY {entry_num:02d}"
+        pad_x, pad_y = 16, 8
+        bbox = draw.textbbox((0, 0), tag, font=MONO_TAG)
+        tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
+        x0 = W - 80 - tw - pad_x * 2
+        y0 = 78
+        draw.rounded_rectangle(
+            (x0, y0, x0 + tw + pad_x * 2, y0 + th + pad_y * 2),
+            radius=18, outline=CHAMPAGNE_PALE, width=2,
+        )
+        draw.text((x0 + pad_x, y0 + pad_y - 2), tag,
+                  font=MONO_TAG, fill=CHAMPAGNE_PALE)
+
+    # Decorative mark
+    if mark_fn:
+        mark_fn(draw)
+
+    # Title block
+    use_font = TITLE_FONT_SHORT if len(title) < 18 else TITLE_FONT
+    title_lines = wrap_text(title, use_font, 720, draw)
+    line_h = 92 if use_font == TITLE_FONT_SHORT else 84
+    total_h = line_h * len(title_lines) + 40
+    y = (H - total_h) // 2 + 20
+    for line in title_lines:
+        draw.text((80, y), line, font=use_font, fill=IVORY)
+        y += line_h
+    y += 6
+    for line in wrap_text(subtitle, ITALIC_FONT, 720, draw):
+        draw.text((80, y), line, font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
+        y += 32
+
+    # URL stamp
+    url = "theancientatlas.com/library"
+    bbox = draw.textbbox((0, 0), url, font=MONO_URL)
+    tw = bbox[2] - bbox[0]
+    draw.text((W - 80 - tw, H - 60), url, font=MONO_URL, fill=CHAMPAGNE)
+    return img.convert('RGB')
 
 def mark_stone_circle(draw):
-    """Entry 02 mark: stone circle plan view."""
-    cx, cy, r = 1010, 480, 95
-    # Outer faint guideline
-    draw.ellipse((cx - r, cy - r, cx + r, cy + r),
-                 outline=STONE, width=1)
-    # 12 standing stones around the ring
-    for i in range(12):
-        ang = -math.pi / 2 + (2 * math.pi * i / 12)
+    cx, cy, r = 950, 380, 130
+    draw.ellipse((cx - r, cy - r, cx + r, cy + r), outline=STONE, width=1)
+    for i in range(13):
+        ang = -math.pi / 2 + (2 * math.pi * i / 13)
         x = cx + r * math.cos(ang)
         y = cy + r * math.sin(ang)
-        # Stone as a small upright rectangle, slightly varied height
-        h_stone = 28 if i % 2 == 0 else 22
-        w_stone = 12
+        h_stone = 42 if i % 2 == 0 else 32
+        w_stone = 18
+        # Subtle stone shadow
+        draw.rectangle((x - w_stone // 2 + 2, y - h_stone // 2 + 3,
+                        x + w_stone // 2 + 2, y + h_stone // 2 + 3),
+                       fill=(0, 0, 0, 100))
         draw.rectangle((x - w_stone // 2, y - h_stone // 2,
                         x + w_stone // 2, y + h_stone // 2),
-                       fill=STONE, outline=CHAMPAGNE)
-    # Center stone (altar / sighting stone)
-    draw.ellipse((cx - 8, cy - 8, cx + 8, cy + 8), fill=CHAMPAGNE)
-
-def mark_mini_megalith(draw):
-    """Entry 03 mark: cyclopean wall with small interlocking stones."""
-    # Two large blocks with a small stone wedged between
-    big1 = [(840, 450), (980, 440), (995, 540), (855, 560)]
-    big2 = [(995, 540), (1140, 530), (1150, 595), (1010, 605)]
-    big3 = [(980, 440), (1140, 420), (1140, 530), (995, 540)]
-    for poly in [big1, big2, big3]:
-        draw.polygon(poly, fill=STONE, outline=CHAMPAGNE)
-    # The mini stone — the punctuating detail
-    mini = [(970, 525), (1010, 515), (1018, 555), (978, 565)]
-    draw.polygon(mini, fill=CHAMPAGNE, outline=CHAMPAGNE_PALE)
-    # Tiny highlight on the mini stone to draw the eye
-    draw.ellipse((985, 535, 1003, 545), fill=CHAMPAGNE_GLOW)
-
-def mark_true_monolith(draw):
-    """Entry 04 mark: a temple carved out of a mountain (Kailasa style)."""
-    # The mountain — large triangular silhouette
-    mountain = [(820, 600), (1180, 600), (1000, 380)]
-    draw.polygon(mountain, fill=CHARCOAL, outline=STONE)
-    # The carved pit around the temple (lower-tone trapezoid in the mountain)
-    pit = [(900, 600), (1100, 600), (1080, 510), (920, 510)]
-    draw.polygon(pit, fill=OBSIDIAN, outline=STONE)
-    # The temple — block standing in the pit, attached to bedrock at the base
-    temple_base = [(945, 600), (1055, 600), (1055, 555), (945, 555)]
-    temple_mid  = [(950, 555), (1050, 555), (1050, 525), (950, 525)]
-    temple_top  = [(965, 525), (1035, 525), (1035, 495), (965, 495)]
-    draw.polygon(temple_base, fill=STONE, outline=CHAMPAGNE)
-    draw.polygon(temple_mid, fill=STONE, outline=CHAMPAGNE)
-    draw.polygon(temple_top, fill=CHAMPAGNE, outline=CHAMPAGNE_PALE)
-    # A small spire at the very top of the temple
-    spire = [(995, 495), (1005, 495), (1000, 478)]
-    draw.polygon(spire, fill=CHAMPAGNE_PALE)
-
-def mark_library_hub(draw):
-    """index.html mark: an open book with the compass-star above."""
-    # Open book base
-    page_l = [(870, 540), (995, 525), (1000, 600), (875, 605)]
-    page_r = [(1000, 525), (1130, 540), (1125, 605), (1000, 600)]
-    draw.polygon(page_l, fill=STONE, outline=CHAMPAGNE)
-    draw.polygon(page_r, fill=STONE, outline=CHAMPAGNE)
-    # Spine line
-    draw.line([(1000, 525), (1000, 600)], fill=CHAMPAGNE, width=2)
-    # Line decorations on pages (ruled lines)
-    for i, dy in enumerate([544, 558, 572]):
-        draw.line([(890, dy), (985, dy - 1)], fill=MIST, width=1)
-        draw.line([(1015, dy - 1), (1110, dy)], fill=MIST, width=1)
-    # Compass star floating above the book
-    draw_compass(draw, 1000, 460, 36, weight=2)
+                       fill=STONE, outline=CHAMPAGNE_PALE, width=2)
+    # Center altar stone
+    draw.ellipse((cx - 14, cy - 14, cx + 14, cy + 14),
+                 fill=CHAMPAGNE, outline=CHAMPAGNE_PALE, width=2)
+    # Faint outer ring of seasonal sight-lines
+    for i in range(8):
+        ang = (2 * math.pi * i / 8)
+        x1 = cx + (r + 20) * math.cos(ang)
+        y1 = cy + (r + 20) * math.sin(ang)
+        x2 = cx + (r + 50) * math.cos(ang)
+        y2 = cy + (r + 50) * math.sin(ang)
+        draw.line([(x1, y1), (x2, y2)], fill=CHAMPAGNE, width=2)
 
 # ============================================================
-# Render each card
+# Hub card — uses the global atlas image as a starting point
+# ============================================================
+def compose_hub_card():
+    """Hub card uses the global atlas og-image as background with Library overlay."""
+    global_og = REPO_ROOT / 'public' / 'og-image.png'
+    if global_og.exists():
+        bg = Image.open(global_og).convert('RGB')
+        bg = bg.resize((W, H), Image.LANCZOS)
+        bg = darken(bg, factor=0.85)
+        img = apply_gradient_overlay(bg)
+    else:
+        img = compose_atmospheric_vector("The Library",
+                                         "Working frameworks for reading deep history.",
+                                         None, None)
+        return img
+    draw = ImageDraw.Draw(img, 'RGBA')
+    draw_compass(draw, 110, 90, 28, color=CHAMPAGNE_PALE, weight=2)
+    draw.text((158, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY)
+    draw.text((160, 110), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
+
+    # Title
+    title = "The Library"
+    subtitle = "Working frameworks for reading deep history sites well."
+    use_font = TITLE_FONT_SHORT
+    title_lines = wrap_text(title, use_font, 1040, draw)
+    line_h = 92
+    total_h = line_h * len(title_lines) + 40
+    y = H - 110 - total_h
+    for line in title_lines:
+        draw.text((80, y), line, font=use_font, fill=IVORY)
+        y += line_h
+    y += 8
+    for line in wrap_text(subtitle, ITALIC_FONT, 1040, draw):
+        draw.text((80, y), line, font=ITALIC_FONT, fill=CHAMPAGNE_PALE)
+        y += 32
+
+    url = "theancientatlas.com/library"
+    bbox = draw.textbbox((0, 0), url, font=MONO_URL)
+    tw = bbox[2] - bbox[0]
+    draw.text((W - 80 - tw, H - 60), url, font=MONO_URL, fill=CHAMPAGNE)
+    return img.convert('RGB')
+
+# ============================================================
+# Card definitions
 # ============================================================
 CARDS = [
     dict(
         slug='index',
-        entry=None,
-        title='The Library',
-        subtitle='Working frameworks for reading deep history sites well.',
-        mark=mark_library_hub,
+        mode='hub',
     ),
     dict(
         slug='megaliths',
+        mode='photo',
         entry=1,
         title='What is a Megalith?',
         subtitle='Cyclopean, polygonal, mortarless. A working vocabulary of deep stone.',
-        mark=mark_polygonal_wall,
+        photo=PHOTOS_DIR / 'mini-megaliths' / '06-cusco-stepped-interlock.jpg',
     ),
     dict(
         slug='stone-circles',
+        mode='vector',
         entry=2,
         title='Stone Circles',
         subtitle='Pythagorean geometry, the megalithic yard, and the patterns that repeat.',
@@ -301,39 +374,38 @@ CARDS = [
     ),
     dict(
         slug='mini-megaliths',
+        mode='photo',
         entry=3,
         title='Mini Megaliths',
         subtitle='Why does a hundred-ton wall need a hand-sized stone?',
-        mark=mark_mini_megalith,
+        photo=PHOTOS_DIR / 'mini-megaliths' / '01-ollantaytambo-bent-corner-inset.jpg',
     ),
     dict(
         slug='true-monoliths',
+        mode='photo',
         entry=4,
         title='True Monoliths',
         subtitle='Cities carved from mountains, and the chisel marks that do not act like chisels.',
-        mark=mark_true_monolith,
+        photo=PHOTOS_DIR / 'true-monoliths' / '06-kailasa-ellora-top-down.jpg',
     ),
 ]
 
 # ============================================================
 def render(card):
-    img = make_base()
-    draw = ImageDraw.Draw(img)
-    # Subtle horizontal rule under the brand header
-    draw.line([(80, 195), (W - 80, 195)], fill=STONE, width=1)
-    # Title block — anchor depends on subtitle length
-    y_anchor = 255 if len(card['title']) < 30 else 235
-    draw_title_block(draw, card['title'], card['subtitle'], y_anchor=y_anchor)
-    # Article-specific decorative mark
-    if card.get('mark'):
-        card['mark'](draw)
-    # Common brand chrome
-    draw_top_brand(draw, entry_num=card.get('entry'))
-    draw_url_corner(draw)
-    # Bottom-left footer label
-    label = "THE ANCIENT ATLAS · LIBRARY"
-    draw.text((80, H - 70), label, font=MONO_REG, fill=MIST)
-    return img
+    if card['mode'] == 'hub':
+        return compose_hub_card()
+    if card['mode'] == 'photo':
+        if not card['photo'].exists():
+            print(f"  ⚠ Photo not found: {card['photo']} — falling back to vector")
+            return compose_atmospheric_vector(card['title'], card['subtitle'],
+                                              card.get('entry'),
+                                              card.get('mark'))
+        return compose_photo_card(card['photo'], card['title'],
+                                  card['subtitle'], card.get('entry'))
+    if card['mode'] == 'vector':
+        return compose_atmospheric_vector(card['title'], card['subtitle'],
+                                          card.get('entry'),
+                                          card.get('mark'))
 
 for card in CARDS:
     img = render(card)
