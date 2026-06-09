@@ -6132,5 +6132,121 @@
       "stratigraphy"
     ],
     "desc": "Three-level vertical shaft cut into the bedrock beneath the Khafre causeway on the Giza Plateau. The upper opening was investigated by Selim Hassan in 1934; the deepest chamber, 30 meters below the surface, was fully excavated by Zahi Hawass in 1999. The lowest level contains a black basalt sarcophagus mounted at the center of a rock-cut platform, surrounded by a moat of standing groundwater fed by the aquifer beneath the plateau — the famous 'Tomb of Osiris' chamber. The shaft is conventionally dated to the Late Period (c. 600 BCE) on the basis of the sarcophagus and associated pottery, but the depth of the cut, the precision of the chambers, and the integration with the rest of the subterranean Giza system have led independent investigators to propose a substantially earlier origin date. Currently closed to the public."
+  },
+  {
+    "n": "Killarumiyoq",
+    "lat": -13.4225,
+    "lng": -72.0667,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "precision"
+    ],
+    "desc": "Megalithic site approximately 30 km west of Cusco, Peru, in the Anta district at ~3,700 meters elevation. The site centers on a precision-cut andesite outcrop carved with concentric steps, niches, and a large flat altar surface. The polygonal masonry around the central feature is stylistically distinct from the Inca work above, suggesting two phases of construction. Local Quechua tradition holds the site as a place where rituals related to the moon ('killa' in Quechua) were performed. Independent field investigators including Brien Foerster have documented tool-mark features inconsistent with the conventional Inca bronze-tool kit."
+  },
+  {
+    "n": "Vilcashuaman",
+    "lat": -13.6592,
+    "lng": -73.9442,
+    "cat": "city",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "precision",
+      "scale"
+    ],
+    "desc": "Inca administrative and ceremonial center in the Ayacucho region of central Peru at 3,470 meters elevation. The site was one of the four most important provincial capitals of the Inca Empire, built atop and incorporating an earlier Wari-period substrate. The central feature is the Ushnu — a stepped truncated pyramid faced with precision-polygonal andesite masonry — the only example of its kind to survive intact in Peru. Brien Foerster has documented extensive cataclysmic damage to the upper courses that post-dates the original construction."
+  },
+  {
+    "n": "Amaru Muru (Stargate)",
+    "lat": -16.1633,
+    "lng": -69.3367,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "geometry"
+    ],
+    "desc": "Carved doorway-shaped niche in a sandstone outcrop on the Hayu Marca plateau, approximately 35 km west of Puno on the Peruvian shore of Lake Titicaca. The 7-meter-wide rectangular frame is cut with sharp-edged precision into the bedrock, with a smaller doorway at its base. Local Aymara tradition describes the niche as the 'Gate of the Gods' through which the priest Amaru Muru entered another reality during the Spanish conquest. The geometric precision of the cut and the absence of any associated structure (steps, walls, approach path) place the site in a category by itself. Independent investigators including Brien Foerster have documented anomalous magnetometer readings at the niche."
+  },
+  {
+    "n": "Cumbemayo Aqueduct",
+    "lat": -7.2317,
+    "lng": -78.5803,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "geometry",
+      "scale"
+    ],
+    "desc": "Pre-Inca stone-cut aqueduct in the highlands above Cajamarca, northern Peru, at approximately 3,500 meters elevation. The channel is cut into the living volcanic bedrock and extends for at least 8 kilometers, with right-angle turns, switchbacks, and engineered drops cut to maintain a specific gradient. Conventionally dated to the Cajamarca culture (c. 1500-1000 BCE) on the basis of associated rock-art and pottery, which would make it among the oldest stone-engineered hydraulic systems in the Americas. The precision of the cuts and the engineering of the gradient have led independent investigators to propose substantially earlier construction."
+  },
+  {
+    "n": "Pisac (Pisaq)",
+    "lat": -13.4144,
+    "lng": -71.8489,
+    "cat": "city",
+    "region": "South America",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "precision",
+      "scale"
+    ],
+    "desc": "Major Inca site in the Sacred Valley of Peru, 30 km north of Cusco, occupying a 6 km mountain ridge above the Urubamba river at elevations of 3,000-3,500 meters. The site contains the largest pre-Columbian cliff necropolis in the Americas (thousands of shaft tombs in the limestone cliffs facing the valley), an extensive agricultural terrace system still partly in use today, the precision-polygonal Intihuatana ceremonial center, and the Q'allaqasa fortified district. Two stylistically distinct masonry traditions are present : fine Inca andesite ashlar above, and a substantially older and more refined polygonal substrate at the base of the principal walls."
+  },
+  {
+    "n": "Saihuite Stone",
+    "lat": -13.7572,
+    "lng": -72.735,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "geometry"
+    ],
+    "desc": "Andesite boulder approximately 4 meters wide and 2 meters high, located in Apurímac province of southern Peru. The upper surface is carved with an intricate three-dimensional miniature relief depicting over 200 figures : terraced fields, water channels, animals, deities, and architectural structures, all rendered at scales between 1 and 15 cm and interconnected by a working hydraulic network of cut channels. The mainstream attribution is Inca (15th century) with ritual purpose, but the precision of the miniaturization (some details under 1 cm) and the integrated micro-hydraulics have led independent investigators — including Brien Foerster and engineer Arlan Andrews — to argue that the carving may be substantially older and to question the tools required to produce it."
+  },
+  {
+    "n": "Byblos (Jbeil)",
+    "lat": 34.1232,
+    "lng": 35.6519,
+    "cat": "city",
+    "region": "Middle East",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "stratigraphy",
+      "scale"
+    ],
+    "desc": "Ancient Phoenician port city on the Lebanese coast, 40 km north of Beirut. One of the oldest continuously inhabited cities in the world : pottery evidence places occupation at the site as far back as approximately 8,800 BCE, with substantial Neolithic, Chalcolithic, and Bronze Age strata preserved in superposition. The Phoenician name 'Gubla' is the source of the Greek 'Biblos' (book) — the city was the primary source of papyrus reaching Greece. The site preserves Phoenician megalithic temple foundations and Roman colonnade, and includes a series of cut-stone royal tombs whose entry shafts and chamber precision have drawn independent investigator attention as candidates for an earlier substrate. UNESCO World Heritage Site."
+  },
+  {
+    "n": "Amarna (Akhetaten)",
+    "lat": 27.6428,
+    "lng": 30.8961,
+    "cat": "city",
+    "region": "Egypt",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision"
+    ],
+    "desc": "Capital city built and inhabited under the heretic pharaoh Akhenaten (Amenhotep IV, c. 1346 BCE) on the east bank of the Nile in Middle Egypt, between Cairo and Luxor. Akhenaten moved the entire Egyptian court here from Thebes when he introduced the monotheistic worship of the Aten (sun disk) and abandoned the traditional pantheon. The city was built from scratch in a previously empty desert plain and completely abandoned within 25 years of its founding, after Akhenaten's death; subsequent pharaohs dismantled the structures and erased the site from the king lists. The plan of the city, its boundary stelae, the Great Aten Temple, and the royal tombs in the eastern cliffs survive. Independent investigators have documented anomalies in the bedrock-cut royal tombs not explained by the brief Amarna occupation."
   }
 ]

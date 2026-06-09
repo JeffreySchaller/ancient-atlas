@@ -205,7 +205,13 @@
   "Peru": [
     "Tarawasi",
     "Vilcabamba (Espíritu Pampa)",
-    "Coricancha (Qorikancha)"
+    "Coricancha (Qorikancha)",
+    "Killarumiyoq",
+    "Vilcashuaman",
+    "Amaru Muru (Stargate)",
+    "Cumbemayo Aqueduct",
+    "Pisac (Pisaq)",
+    "Saihuite Stone"
   ],
   "Türkiye": [
     "Meydan Kalesi",
@@ -402,7 +408,8 @@
     "Sphinx Temple",
     "Khafre Valley Temple",
     "Temple of Bastet (Bubastis)",
-    "Osiris Shaft (Giza)"
+    "Osiris Shaft (Giza)",
+    "Amarna (Akhetaten)"
   ],
   "United States": [
     "Sage Wall (Montana)"
@@ -464,5 +471,8 @@
   "Thailand": [
     "Phimai (Prasat Hin Phimai)",
     "Phanom Rung"
+  ],
+  "Lebanon": [
+    "Byblos (Jbeil)"
   ]
 }
