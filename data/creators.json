@@ -398,5 +398,26 @@
     "subs": "Alt-history dives · pre-flood civilization framing",
     "color": "#7E6BAA",
     "tier": 3
+  },
+  "archconservancy": {
+    "name": "The Archaeological Conservancy",
+    "handle": "@TheArchaeologicalConservancy",
+    "subs": "Nonprofit steward of 580+ archaeological preserves, including Gault",
+    "color": "#7B9F8E",
+    "tier": 2
+  },
+  "cfapps7865": {
+    "name": "cf-apps7865",
+    "handle": "@cfapps7865",
+    "subs": "Independent deep-history analysis · alternative chronology",
+    "color": "#A88B6E",
+    "tier": 3
+  },
+  "archpodnet": {
+    "name": "Archaeology Podcast Network",
+    "handle": "@archaeologypodcastnetwork",
+    "subs": "Working archaeologists on the record · documentary coverage",
+    "color": "#6BA3BE",
+    "tier": 3
   }
 }

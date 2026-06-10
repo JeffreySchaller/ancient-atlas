@@ -6642,5 +6642,18 @@
       "precision"
     ],
     "desc": "Approximately 28 megalithic stepped pyramid platforms — langi — built of massive coral-limestone slabs at the ancient Tu'i Tonga capital of Mu'a (modern Lapaha), on the southern shore of the Fanga'uta lagoon in Tongatapu. Conventional dating places the langi tradition c. 1200-1500 CE during the high Tu'i Tonga dynasty, contemporary with the Ha'amonga 'a Maui Trilithon 10 km north. Several langi preserve precision-cut notches and L-shaped corner joinery comparable in form to the Stonehenge mortise-tenons and to Peruvian polygonal wall construction — the same engineering idea applied to soft coral limestone instead of granite or andesite. The largest blocks exceed 7 tons. Local tradition records that the coral slabs were transported by sea from quarries on neighbouring islands (some accounts cite 'Uvea and Samoa, ~900 km of open ocean). Hugh Newman has documented the Mu'a / Lemuria etymological link explored in the alternative-history literature."
+  },
+  {
+    "n": "Gault Site (Buttermilk Creek)",
+    "lat": 30.88,
+    "lng": -97.72,
+    "cat": "settlement",
+    "region": "North America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "stratigraphy"
+    ],
+    "desc": "Open-air site on Buttermilk Creek near Florence, Texas, with one of the densest Clovis assemblages in the Americas — and, beneath it, the reason it matters: Area 15 yielded an assemblage stratigraphically below the Clovis horizon, with OSL dates of roughly 16,000-20,000 years, published as the Gault Assemblage. Together with the adjacent Debra L. Friedkin site, it broke the Clovis-first model of the peopling of the Americas in the mainstream literature. No monumental architecture: the open question here is purely stratigraphic — how deep does the human horizon go? Managed by the Archaeological Conservancy with research by UT Austin and Texas A&M; access is restricted, so coverage is documentary rather than walkthrough. Coordinates approximate."
   }
 ]
