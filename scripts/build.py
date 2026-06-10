@@ -112,6 +112,46 @@ def cross_validate(data):
     return errors, warnings
 
 # ============================================================
+# 2e. Walkthrough ranking — quality floor + freshness lift
+# ============================================================
+# Display order per site card (data/videos.json keeps insertion order
+# as the audit ledger; ranking is computed at build time):
+#   score = creator tier weight + NEW-window boost
+#     tier 1 → 3.0, tier 2 → 2.0, tier 3 / no creator entry → 1.0
+#     added within NEW_WINDOW_DAYS → +1.5
+#   so: NEW tier-1 (4.5) > established tier-1 (3.0) > NEW tier-3 (2.5)
+#       > established tier-2 (2.0). New creators debut above mid-tier
+#       backlog, never above proven anchors. Boost expires with the NEW
+#       badge — the card self-heals to pure quality order.
+# Tie-breaks: published date (newer first), then title.
+
+NEW_WINDOW_DAYS = 90
+TIER_WEIGHT = {1: 3.0, 2: 2.0, 3: 1.0}
+
+def rank_walkthroughs(data):
+    import datetime
+    today = datetime.date.today()
+    creators = data['CREATORS']
+
+    def score(v):
+        cr = creators.get(v.get('cr') or '', {})
+        s = TIER_WEIGHT.get(cr.get('tier', 3), 1.0)
+        try:
+            added = datetime.date.fromisoformat(v.get('added', '1970-01-01'))
+            if (today - added).days <= NEW_WINDOW_DAYS:
+                s += 1.5
+        except ValueError:
+            pass
+        return s
+
+    for vid_list in data['VIDEOS'].values():
+        # stable two-pass: newest published first, then by score —
+        # equal scores keep newest-first order
+        vid_list.sort(key=lambda v: v.get('published', '0000-00-00'),
+                      reverse=True)
+        vid_list.sort(key=score, reverse=True)
+
+# ============================================================
 # 3. Render each data block as JS literal (pretty-printed but valid JS)
 # ============================================================
 def js_dump(obj):
@@ -193,6 +233,7 @@ def main():
 
     data = load_and_validate()
     errors, warnings = cross_validate(data)
+    rank_walkthroughs(data)
     if errors:
         print("✗ Validation errors (build aborted):")
         for e in errors:
@@ -226,8 +267,14 @@ def main():
     # public/, so files outside it are unreachable from the deployed site.
     PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
     mirrored = 0
-    for filename, _, _ in BLOCKS:
-        shutil.copy2(DATA_DIR / filename, PUBLIC_DATA_DIR / filename)
+    for filename, const_name, _ in BLOCKS:
+        if const_name == 'VIDEOS':
+            # mirror the ranked order (data/videos.json stays the
+            # insertion-order ledger; the served mirror matches display)
+            with open(PUBLIC_DATA_DIR / filename, 'w') as f:
+                json.dump(data['VIDEOS'], f, indent=2, ensure_ascii=False)
+        else:
+            shutil.copy2(DATA_DIR / filename, PUBLIC_DATA_DIR / filename)
         mirrored += 1
 
     # Print summary
