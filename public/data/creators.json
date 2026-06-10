@@ -419,5 +419,12 @@
     "subs": "Working archaeologists on the record · documentary coverage",
     "color": "#6BA3BE",
     "tier": 3
+  },
+  "ancientatlas": {
+    "name": "Ancient Atlas",
+    "handle": "@AncientAtlasMap",
+    "subs": "First-party fieldwork · the channel of theancientatlas.com",
+    "color": "#C9A84C",
+    "tier": 1
   }
 }
