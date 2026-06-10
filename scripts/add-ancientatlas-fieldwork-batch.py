@@ -52,6 +52,9 @@ VIDEOS_TO_WIRE = [
     ("Derinkuyu Underground City", _v("bnslsxXi3RY",
         "Derinkuyu Underground City | Fieldwork Walkthrough · Türkiye",
         "2026-06-10")),
+    ("Osireion (Abydos)", _v("GXq5-ga0hcA",
+        "The Osireion | Fieldwork Walkthrough · Egypt with UnchartedX",
+        "2026-06-10")),
 ]
 
 def main():
