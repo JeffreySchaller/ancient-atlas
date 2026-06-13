@@ -426,5 +426,12 @@
     "subs": "First-party fieldwork · the channel of theancientatlas.com",
     "color": "#C9A84C",
     "tier": 1
+  },
+  "megalithhunter": {
+    "name": "MegalithHunter",
+    "handle": "@megalithhunter",
+    "subs": "Megalithic field research · weighs the anthropogenic and natural cases",
+    "color": "#6B8E9C",
+    "tier": 2
   }
 }

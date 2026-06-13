@@ -5525,6 +5525,13 @@
   ],
   "Osiris Shaft (Giza)": [
     {
+      "id": "T5T3ty0-jbs",
+      "title": "Osiris Shaft with UnchartedX | Fieldwork Walkthrough · Egypt",
+      "cr": "ancientatlas",
+      "added": "2026-06-13",
+      "published": "2026-06-13"
+    },
+    {
       "id": "hxq5QhSjX-g",
       "title": "Giza Underground: The Osiris Shaft and the Plateau's Forgotten Architecture (Proto Civilization, ru/en dub)",
       "cr": "protocivilization",
@@ -5960,6 +5967,15 @@
       "cr": "cfapps7865",
       "added": "2026-06-10",
       "published": "2022-08-15"
+    }
+  ],
+  "Pantelleria Vecchia Bank Monolith": [
+    {
+      "id": "iAkmucsp4rY",
+      "title": "Submerged Monolith · Sicilian Channel",
+      "cr": "megalithhunter",
+      "added": "2026-06-13",
+      "published": "2026-06-13"
     }
   ]
 }

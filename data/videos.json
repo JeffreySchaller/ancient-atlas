@@ -5530,6 +5530,13 @@
       "cr": "protocivilization",
       "added": "2026-06-09",
       "published": "2020-08-15"
+    },
+    {
+      "id": "T5T3ty0-jbs",
+      "title": "Osiris Shaft with UnchartedX | Fieldwork Walkthrough · Egypt",
+      "cr": "ancientatlas",
+      "added": "2026-06-13",
+      "published": "2026-06-13"
     }
   ],
   "Killarumiyoq": [
@@ -5960,6 +5967,15 @@
       "cr": "archpodnet",
       "added": "2026-06-10",
       "published": "2025-03-01"
+    }
+  ],
+  "Pantelleria Vecchia Bank Monolith": [
+    {
+      "id": "iAkmucsp4rY",
+      "title": "Submerged Monolith · Sicilian Channel",
+      "cr": "megalithhunter",
+      "added": "2026-06-13",
+      "published": "2026-06-13"
     }
   ]
 }
