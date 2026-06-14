@@ -16636,7 +16636,7 @@ function init() {
       const fav = favorites.has(site.n);
       return `<div class="hp-mini">
         ${topVid
-          ? `<div class="hp-mini-thumb" style="background-image:url(https://i.ytimg.com/vi/${topVid.id}/mqdefault.jpg)"></div>`
+          ? `<div class="hp-mini-thumb" style="background-image:url(https://i.ytimg.com/vi/${topVid.id}/hqdefault.jpg)"></div>`
           : `<div class="hp-mini-thumb hp-mini-thumb-empty" style="background:linear-gradient(135deg,${cat.bg},rgba(13,13,18,.95))">${catIcon(site.cat)}</div>`}
         <div class="hp-mini-body">
           <div class="hp-mini-head">
@@ -17125,7 +17125,7 @@ function renderMarkers() {
     const hpMajor = site.tier === 1;
     const hpHtml = `<div class="hp-card">
       ${hpTopVid
-        ? `<div class="hp-thumb" style="background-image:url(https://i.ytimg.com/vi/${hpTopVid.id}/mqdefault.jpg)"></div>`
+        ? `<div class="hp-thumb" style="background-image:url(https://i.ytimg.com/vi/${hpTopVid.id}/hqdefault.jpg)"></div>`
         : `<div class="hp-thumb hp-thumb-empty" style="background:linear-gradient(135deg,${cat.bg},rgba(13,13,18,.95))">${catIcon(site.cat)}</div>`}
       <div class="hp-body">
         <div class="hp-head">
@@ -17442,7 +17442,7 @@ function renderGrid() {
     const escName = site.n.replace(/'/g,"\\'");
     return `<div class="gv-card" onclick="selectSiteByName('${escName}')">
       ${topVid
-        ? `<div class="gv-thumb" style="background-image:url(https://i.ytimg.com/vi/${topVid.id}/mqdefault.jpg)">${site.tier === 1 ? '<span class="gv-tier1">★ MAJOR</span>' : ''}${fav ? '<span class="gv-fav">★</span>' : ''}</div>`
+        ? `<div class="gv-thumb" style="background-image:url(https://i.ytimg.com/vi/${topVid.id}/hqdefault.jpg)">${site.tier === 1 ? '<span class="gv-tier1">★ MAJOR</span>' : ''}${fav ? '<span class="gv-fav">★</span>' : ''}</div>`
         : `<div class="gv-thumb gv-thumb-empty" style="background:linear-gradient(135deg,${cat.bg},rgba(13,13,18,.95))">${catIcon(site.cat)}${site.tier === 1 ? '<span class="gv-tier1">★ MAJOR</span>' : ''}${fav ? '<span class="gv-fav">★</span>' : ''}</div>`}
       <div class="gv-body">
         <div class="gv-head">
@@ -17499,7 +17499,7 @@ function renderSuggestions() {
     const place = country || site.region;
     return `<div class="ss-item" onclick="selectSiteByName('${escName}');document.getElementById('search-suggestions').classList.remove('open')">
       <div class="ss-thumb" style="${topVid
-        ? `background-image:url(https://i.ytimg.com/vi/${topVid.id}/mqdefault.jpg)`
+        ? `background-image:url(https://i.ytimg.com/vi/${topVid.id}/hqdefault.jpg)`
         : `background:linear-gradient(135deg,${cat.bg},rgba(13,13,18,.95))`}">${!topVid ? catIcon(site.cat) : ''}</div>
       <div class="ss-body">
         <div class="ss-name">${site.n}</div>
@@ -17628,7 +17628,7 @@ function openCreators(scrollToKey) {
           const escSite = v.site.replace(/'/g, "\\'");
           const safeTitle = v.title.replace(/"/g, '&quot;');
           return `<button class="cr-vcard" onclick="closeCreators();selectSiteByName('${escSite}')" title="${safeTitle}">
-            <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/mqdefault.jpg)"></div>
+            <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)"></div>
             <div class="cr-vbody">
               <div class="cr-vtitle">${v.title}</div>
               <div class="cr-vsite">${v.site}</div>
@@ -17691,7 +17691,7 @@ function openCreators(scrollToKey) {
     const previews = s.videos.slice(0, previewCount).map(v => {
       const escSite = v.site.replace(/'/g, "\\'");
       const safeTitle = v.title.replace(/"/g, '&quot;');
-      return `<button class="cr-compact-thumb" onclick="event.stopPropagation();closeCreators();selectSiteByName('${escSite}')" style="background-image:url(https://i.ytimg.com/vi/${v.id}/default.jpg)" title="${safeTitle}"></button>`;
+      return `<button class="cr-compact-thumb" onclick="event.stopPropagation();closeCreators();selectSiteByName('${escSite}')" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)" title="${safeTitle}"></button>`;
     }).join('');
     const moreCount = s.videos.length - previewCount;
     const moreChip = moreCount > 0 ? `<span class="cr-compact-more">+${moreCount}</span>` : '';
@@ -17761,7 +17761,7 @@ function openCreators(scrollToKey) {
           const escSite = v.site.replace(/'/g, "\\'");
           const safeTitle = v.title.replace(/"/g, '&quot;');
           return `<button class="cr-vcard" onclick="closeCreators();selectSiteByName('${escSite}')" title="${safeTitle}">
-            <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/mqdefault.jpg)"></div>
+            <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)"></div>
             <div class="cr-vbody">
               <div class="cr-vtitle">${v.title}</div>
               <div class="cr-vsite">${v.site}</div>
@@ -17826,7 +17826,7 @@ function openCreators(scrollToKey) {
           ? `<div class="cr-vsite" style="color:${creator.color}"><span class="cr-vsite-dot" style="background:${creator.color}"></span>${creator.name}</div>`
           : `<div class="cr-vsite cr-vsite-yt"><span class="cr-vsite-yt-icon">▶</span>YouTube</div>`;
         return `<button class="cr-vcard" onclick="closeCreators();selectSiteByName('${escSite}')" title="${safeTitle}">
-          <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/mqdefault.jpg)"></div>
+          <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)"></div>
           <div class="cr-vbody">
             <div class="cr-vtitle">${v.title}</div>
             ${credit}
@@ -17884,7 +17884,7 @@ function openCreators(scrollToKey) {
         ? '<div class="cr-vsite" style="color:' + creator.color + '"><span class="cr-vsite-dot" style="background:' + creator.color + '"></span>' + creator.name + ' · <em style="font-style:normal;opacity:.7">' + v._siteName + '</em></div>'
         : '<div class="cr-vsite cr-vsite-yt"><span class="cr-vsite-yt-icon">\u25B6</span>YouTube · <em style="font-style:normal;opacity:.7">' + v._siteName + '</em></div>';
       return '<button class="cr-vcard" onclick="closeCreators();selectSiteByName(\'' + escSite + '\')" title="' + safeTitle + '">' +
-        '<div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/' + v.id + '/mqdefault.jpg)"></div>' +
+        '<div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg)"></div>' +
         '<div class="cr-vbody">' +
           '<div class="cr-vtitle">' + newBadge + v.title + '</div>' +
           credit +
@@ -18492,7 +18492,7 @@ function showDetail(site) {
           return `
           <div class="vcard" id="vc-${v.id}" onclick="playVideo('${v.id}','${v.title.replace(/'/g,"\\'")}','${crName.replace(/'/g,"\\'")}',this,${v.t || 0})">
             <div class="vthumb">
-              <img src="https://i.ytimg.com/vi/${v.id}/mqdefault.jpg" alt="${v.title}" loading="lazy" />
+              <img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="${v.title}" loading="lazy" />
               <div class="play-overlay">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
               </div>
@@ -18818,7 +18818,7 @@ function closeVideo(cardEl) {
   if (!cardEl) return;
   const id = cardEl.id.replace('vc-', '');
   const thumb = cardEl.querySelector('.vthumb');
-  thumb.innerHTML = `<img src="https://i.ytimg.com/vi/${id}/mqdefault.jpg" alt="" loading="lazy" /><div class="play-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>`;
+  thumb.innerHTML = `<img src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="" loading="lazy" /><div class="play-overlay"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg></div>`;
   cardEl.classList.remove('playing');
   if (activeVideoCard === cardEl) activeVideoCard = null;
 }
@@ -19050,7 +19050,7 @@ function renderMobileSiteSection(siteName, siteData, videos) {
     }
 
     return `<button class="mf-vcard" type="button" onclick="openYouTubeVideo('${v.id}', ${v.t || 0})" title="${safeTitle}">
-      <div class="mf-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/mqdefault.jpg)">
+      <div class="mf-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)">
         <div class="mf-vplay">▶</div>
       </div>
       <div class="mf-vbody">
@@ -19132,7 +19132,7 @@ function showMobileSiteSheet(site) {
     videosBlock = `<div class="mss-videos-label">${videos.length} ${videos.length === 1 ? 'walkthrough' : 'walkthroughs'} · tap to watch</div>
       <div class="mss-videos">
         ${videos.map(v => `<button class="mss-vid" type="button" onclick="openYouTubeVideo('${v.id}', ${v.t || 0})">
-          <div class="mss-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/mqdefault.jpg)"></div>
+          <div class="mss-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)"></div>
           <div class="mss-vtitle">${v.title}</div>
         </button>`).join('')}
       </div>`;
@@ -19390,7 +19390,7 @@ function renderMobileCreatorSection(key, c, s) {
     // containers because the popup blocker doesn't always classify the tap
     // as user-initiated. A button + onclick is the bulletproof path.
     return `<button class="mf-vcard" type="button" onclick="openYouTubeVideo('${v.id}', ${v.t || 0})" title="${safeTitle}">
-      <div class="mf-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/mqdefault.jpg)">
+      <div class="mf-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)">
         <div class="mf-vplay">▶</div>
       </div>
       <div class="mf-vbody">

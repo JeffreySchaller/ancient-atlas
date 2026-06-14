@@ -408,7 +408,7 @@ async function fetchVideoInfo(videoId){
         title: j.title,
         channel: j.author_name,
         channelUrl: j.author_url,
-        thumb: j.thumbnail_url || `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`,
+        thumb: j.thumbnail_url || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`,
         source: 'youtube'
       };
     }
@@ -423,7 +423,7 @@ async function fetchVideoInfo(videoId){
       title: j.title,
       channel: j.author_name,
       channelUrl: j.author_url,
-      thumb: j.thumbnail_url || `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`,
+      thumb: j.thumbnail_url || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`,
       source: 'noembed'
     };
   }catch(e){
