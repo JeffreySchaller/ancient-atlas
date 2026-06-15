@@ -98,6 +98,9 @@ header{position:relative;z-index:1001;background:linear-gradient(180deg,rgba(13,
 .stat-support .stat-support-glyph{font-size:18px;line-height:1;text-align:center;filter:drop-shadow(0 0 6px rgba(201,168,76,.22))}
 .stat-action .stat-editions-glyph{font-size:20px;line-height:1;text-align:center;filter:drop-shadow(0 0 6px rgba(201,168,76,.22))}
 .stat-action:hover .stat-editions-glyph{color:#E8C896}
+.stat-shop-icon{width:11px;height:11px;display:inline-block;vertical-align:-1px;margin-right:4px;color:var(--champagne);opacity:.9}
+.stat-action:hover .stat-shop-icon{opacity:1;color:#E8C896}
+.mf-shop-icon{width:11px;height:11px;display:inline-block;vertical-align:-1px;margin-right:3px}
 .stat-contact .stat-contact-glyph{font-size:17px;line-height:1;text-align:center;filter:drop-shadow(0 0 6px rgba(201,168,76,.22));font-family:var(--font-mono);font-variant-emoji:text}
 .stat-library-glyph{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;color:var(--champagne);filter:drop-shadow(0 0 6px rgba(201,168,76,.22));transition:transform .2s;line-height:1}
 .stat-library-glyph svg{width:100%;height:100%;display:block}
@@ -1626,9 +1629,9 @@ body.present #broadcast-controls{
       <div class="stat-val" id="stat-articles">4</div>
       <div class="stat-lbl">Articles ↗</div>
     </a>
-    <a class="stat-action" href="https://ancient-atlas-shop.fourthwall.com" target="_blank" rel="noopener" title="Editions — curated prints, journals, and goods from the Atlas">
-      <div class="stat-val stat-editions-glyph">✦</div>
-      <div class="stat-lbl">Editions ↗</div>
+    <a class="stat-action" href="https://ancient-atlas-shop.fourthwall.com" target="_blank" rel="noopener" title="Editions — 4 curated items in the store right now">
+      <div class="stat-val" id="stat-editions">4</div>
+      <div class="stat-lbl"><svg class="stat-shop-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 6 L13 6 L12.5 14 L3.5 14 Z"/><path d="M5.5 6 L5.5 4 C5.5 3 6.5 2 8 2 C9.5 2 10.5 3 10.5 4 L10.5 6"/></svg>Editions ↗</div>
     </a>
     <div class="stat-support" onclick="openSupport()" title="Support the Atlas"><div class="stat-val stat-support-glyph">♥</div><div class="stat-lbl">Support ↗</div></div>
     <a class="stat-contact" href="contact.html" title="Report an error or suggest a site"><div class="stat-val stat-contact-glyph">✉</div><div class="stat-lbl">Contact ↗</div></a>
@@ -1794,8 +1797,8 @@ body.present #broadcast-controls{
     </a>
     <span class="mf-mininav-sep" aria-hidden="true">·</span>
     <a class="mf-mininav-link" href="https://ancient-atlas-shop.fourthwall.com" target="_blank" rel="noopener">
-      <span class="mf-mininav-glyph" aria-hidden="true">✦</span>
-      <span class="mf-mininav-label">Editions</span>
+      <span class="mf-mininav-glyph" aria-hidden="true">4</span>
+      <span class="mf-mininav-label"><svg class="mf-shop-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 6 L13 6 L12.5 14 L3.5 14 Z"/><path d="M5.5 6 L5.5 4 C5.5 3 6.5 2 8 2 C9.5 2 10.5 3 10.5 4 L10.5 6"/></svg>Editions</span>
     </a>
     <span class="mf-mininav-sep" aria-hidden="true">·</span>
     <a class="mf-mininav-link" href="#" onclick="openSupport();return false;">
