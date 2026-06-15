@@ -96,6 +96,8 @@ header{position:relative;z-index:1001;background:linear-gradient(180deg,rgba(13,
 
 /* Glyph sizing — all glyphs fit inside the 20px .stat-val box, optically balanced */
 .stat-support .stat-support-glyph{font-size:18px;line-height:1;text-align:center;filter:drop-shadow(0 0 6px rgba(201,168,76,.22))}
+.stat-action .stat-editions-glyph{font-size:20px;line-height:1;text-align:center;filter:drop-shadow(0 0 6px rgba(201,168,76,.22))}
+.stat-action:hover .stat-editions-glyph{color:#E8C896}
 .stat-contact .stat-contact-glyph{font-size:17px;line-height:1;text-align:center;filter:drop-shadow(0 0 6px rgba(201,168,76,.22));font-family:var(--font-mono);font-variant-emoji:text}
 .stat-library-glyph{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;color:var(--champagne);filter:drop-shadow(0 0 6px rgba(201,168,76,.22));transition:transform .2s;line-height:1}
 .stat-library-glyph svg{width:100%;height:100%;display:block}
@@ -1620,15 +1622,13 @@ body.present #broadcast-controls{
     <div><div class="stat-val" id="stat-regions">0</div><div class="stat-lbl">Regions</div></div>
     <div class="stat-divider" aria-hidden="true"></div>
     <div class="stat-action" onclick="openCreators()" title="View all creators"><div class="stat-val" id="stat-creators">0</div><div class="stat-lbl">Creators ↗</div></div>
-    <a class="stat-action" href="library/index.html" title="Open the Library — frameworks for reading deep history">
-      <div class="stat-val stat-library-glyph">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
-          <path d="M12 2.5 L13.6 6 L12 9.5 L10.4 6 Z" fill="currentColor" stroke="none"/>
-          <path d="M3 13 L12 11 L21 13 L21 20 L12 18 L3 20 Z"/>
-          <path d="M12 11 L12 18"/>
-        </svg>
-      </div>
-      <div class="stat-lbl">Library ↗</div>
+    <a class="stat-action" href="library/index.html" title="Open the Library — 4 articles on reading deep history">
+      <div class="stat-val" id="stat-articles">4</div>
+      <div class="stat-lbl">Articles ↗</div>
+    </a>
+    <a class="stat-action" href="https://ancient-atlas-shop.fourthwall.com" target="_blank" rel="noopener" title="Editions — curated prints, journals, and goods from the Atlas">
+      <div class="stat-val stat-editions-glyph">✦</div>
+      <div class="stat-lbl">Editions ↗</div>
     </a>
     <div class="stat-support" onclick="openSupport()" title="Support the Atlas"><div class="stat-val stat-support-glyph">♥</div><div class="stat-lbl">Support ↗</div></div>
     <a class="stat-contact" href="contact.html" title="Report an error or suggest a site"><div class="stat-val stat-contact-glyph">✉</div><div class="stat-lbl">Contact ↗</div></a>
@@ -1786,17 +1786,16 @@ body.present #broadcast-controls{
     </div>
   </div>
 
-  <!-- Unobtrusive mobile nav: Library / Support / Contact -->
+  <!-- Unobtrusive mobile nav: Articles / Editions / Support / Contact -->
   <div class="mf-mininav" aria-label="Site sections">
     <a class="mf-mininav-link" href="library/index.html">
-      <span class="mf-mininav-glyph mf-mininav-glyph-svg" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round">
-          <path d="M12 2.5 L13.6 6 L12 9.5 L10.4 6 Z" fill="currentColor" stroke="none"/>
-          <path d="M3 13 L12 11 L21 13 L21 20 L12 18 L3 20 Z"/>
-          <path d="M12 11 L12 18"/>
-        </svg>
-      </span>
-      <span class="mf-mininav-label">Library</span>
+      <span class="mf-mininav-glyph" aria-hidden="true">4</span>
+      <span class="mf-mininav-label">Articles</span>
+    </a>
+    <span class="mf-mininav-sep" aria-hidden="true">·</span>
+    <a class="mf-mininav-link" href="https://ancient-atlas-shop.fourthwall.com" target="_blank" rel="noopener">
+      <span class="mf-mininav-glyph" aria-hidden="true">✦</span>
+      <span class="mf-mininav-label">Editions</span>
     </a>
     <span class="mf-mininav-sep" aria-hidden="true">·</span>
     <a class="mf-mininav-link" href="#" onclick="openSupport();return false;">
