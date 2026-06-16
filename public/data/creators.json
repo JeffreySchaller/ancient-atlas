@@ -433,5 +433,12 @@
     "subs": "Megalithic field research · weighs the anthropogenic and natural cases",
     "color": "#6B8E9C",
     "tier": 2
+  },
+  "croatianheritage": {
+    "name": "Institute for Croatian Heritage",
+    "handle": "@InstituteForCroatianHeritage",
+    "subs": "Croatian heritage documentaries · academic institution · short curated films on Stećci, Gomile, and other regional megalithic + ritual sites",
+    "color": "#8B96A0",
+    "tier": 3
   }
 }
