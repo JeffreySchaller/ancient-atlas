@@ -16574,8 +16574,37 @@ function init() {
   });
   map.addControl(new ResetViewControl());
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  // Voyager color tiles in a dedicated pane, heavily desaturated and tinted
+  // navy for a moonlit-Milky-Way feel : modern infrastructure recedes to faint
+  // traces, water and land remain quietly differentiated.
+  map.createPane('voyagerBase');
+  const voyagerPane = map.getPane('voyagerBase');
+  voyagerPane.style.zIndex = 200;
+  voyagerPane.style.filter =
+    'brightness(0.5) saturate(0.7) contrast(1.35) hue-rotate(-8deg)';
+
+  // Deep-navy multiply overlay above the tiles — cools the warm tan land tones
+  // and dims the road amber toward the brand's moonlight palette. z-index keeps
+  // it above tile elements that Leaflet appends after init.
+  const moonlitTint = document.createElement('div');
+  moonlitTint.style.cssText =
+    'position:absolute;left:-10000px;top:-10000px;width:30000px;height:30000px;' +
+    'background:rgba(8,16,32,0.4);mix-blend-mode:multiply;pointer-events:none;' +
+    'z-index:9999;';
+  voyagerPane.appendChild(moonlitTint);
+
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+    subdomains: 'abcd',
+    maxZoom: 19,
+    noWrap: true,
+    bounds: [[-85, -180], [85, 180]],
+    pane: 'voyagerBase'
+  }).addTo(map);
+
+  // Dark-mode labels on top of the dimmed Voyager base — already designed
+  // for dark backgrounds, so no inversion needed.
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}{r}.png', {
     subdomains: 'abcd',
     maxZoom: 19,
     noWrap: true,
