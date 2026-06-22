@@ -221,13 +221,32 @@
   }
   @media (max-width:640px){
     .container,.container-narrow{padding:0 20px}
-    header.site{padding:16px 20px;flex-wrap:wrap;gap:12px}
-    .header-nav{order:3;width:100%;justify-content:flex-start;border-top:1px solid var(--border);padding-top:12px}
+    header.site{
+      padding:14px 18px;
+      grid-template-columns:1fr auto;
+      grid-template-rows:auto auto;
+      gap:10px 12px;
+    }
+    header.site > .brand{grid-column:1;grid-row:1;justify-self:start}
+    header.site > .back-link{grid-column:2;grid-row:1;justify-self:end}
+    header.site > .header-nav{
+      grid-column:1 / -1;grid-row:2;
+      justify-self:stretch;width:100%;
+      border-top:1px solid var(--border);padding-top:10px;
+      justify-content:flex-start;gap:18px;
+    }
+    .back-link{font-size:12px;padding:6px 11px;white-space:nowrap}
+    .back-link .back-text-long{display:none}
+    .back-link .back-text-short{display:inline}
+    .brand-name{font-size:19px}
+    .brand-tag{font-size:12px}
     h1{font-size:38px}
     .lede{font-size:17px}
     .entry{padding:24px}
     .entry h3{font-size:22px}
   }
+  .back-link .back-text-short{display:none}
+  .back-link .back-text-long{display:inline}
 </style>
 </head>
 <body>
@@ -261,7 +280,7 @@
     <a href="index.html" class="cur">Library</a>
     <a href="../contact.html">Contact</a>
   </nav>
-  <a href="../index.html" class="back-link">← Back to the atlas</a>
+  <a href="../index.html" class="back-link">← <span class="back-text-long">Back to the atlas</span><span class="back-text-short">Atlas</span></a>
 </header>
 
 <main>
