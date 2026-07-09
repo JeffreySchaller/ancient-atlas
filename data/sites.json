@@ -733,12 +733,18 @@
   },
   {
     "n": "Pisac",
-    "lat": -13.4117,
-    "lng": -71.8492,
+    "lat": -13.4144,
+    "lng": -71.8489,
     "cat": "city",
     "region": "South America",
-    "tier": 2,
-    "desc": "Inca citadel with military, religious, and agricultural sectors. Terraces follow the natural contours of the hillside. Features an Intihuatana (sun-hitching post)."
+    "tier": 1,
+    "desc": "Major Inca site in the Sacred Valley of Peru, 30 km north of Cusco, occupying a 6 km mountain ridge above the Urubamba river at elevations of 3,000-3,500 meters. The site contains the largest pre-Columbian cliff necropolis in the Americas (thousands of shaft tombs in the limestone cliffs facing the valley), an extensive agricultural terrace system still partly in use today, the precision-polygonal Intihuatana ceremonial center, and the Q'allaqasa fortified district. Two stylistically distinct masonry traditions are present : fine Inca andesite ashlar above, and a substantially older and more refined polygonal substrate at the base of the principal walls.",
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "precision",
+      "scale"
+    ]
   },
   {
     "n": "Qenqo",
@@ -2488,12 +2494,18 @@
   },
   {
     "n": "Cumbe Mayo",
-    "lat": -7.1714,
-    "lng": -78.5808,
+    "lat": -7.1897,
+    "lng": -78.5739,
     "cat": "megalithic",
     "region": "South America",
     "tier": 2,
-    "desc": "Pre-Inca aqueduct system in the highlands above Cajamarca, Peru, ~1500 BCE. ~9 km of zigzag channels carved with millimeter precision through living rock, with 90-degree turns that defy the standard hydraulic explanation. Among the oldest engineered structures in the Andes."
+    "desc": "Pre-Inca stone-cut aqueduct in the highlands above Cajamarca, northern Peru, at approximately 3,500 meters elevation. The channel is cut into the living volcanic bedrock and extends for at least 8 kilometers, with right-angle turns, switchbacks, and engineered drops cut to maintain a specific gradient. Conventionally dated to the Cajamarca culture (c. 1500-1000 BCE) on the basis of associated rock-art and pottery, which would make it among the oldest stone-engineered hydraulic systems in the Americas. The precision of the cuts and the engineering of the gradient have led independent investigators to propose substantially earlier construction.",
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "geometry",
+      "scale"
+    ]
   },
   {
     "n": "Cahuachi Pyramids",
@@ -2506,12 +2518,17 @@
   },
   {
     "n": "Aramu Muru",
-    "lat": -16.0958,
-    "lng": -69.4833,
+    "lat": -16.1707,
+    "lng": -69.5411,
     "cat": "rock-cut",
     "region": "South America",
-    "tier": 3,
-    "desc": "'The Gate of the Gods' near Lake Titicaca, Peru. A 7m × 7m rectangular niche carved into a sheer cliff face, with a smaller H-shaped doorway at its center. Local Aymara tradition describes it as a portal. Officially unfinished pre-Inca work; the tool marks and finish are inconsistent with the standard date."
+    "tier": 2,
+    "desc": "Carved doorway-shaped niche in a red sandstone outcrop on the Hayu Marca plateau near Juli, on the Peruvian shore of Lake Titicaca. The 7-meter-wide rectangular frame is cut with sharp-edged precision into the bedrock, with a smaller doorway at its base. Local Aymara tradition describes the niche as the 'Gate of the Gods' through which the priest Aramu Muru entered another reality during the Spanish conquest. The geometric precision of the cut and the absence of any associated structure (steps, walls, approach path) place the site in a category by itself. Independent investigators including Brien Foerster have documented anomalous magnetometer readings at the niche.",
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "geometry"
+    ]
   },
   {
     "n": "Samaipata (El Fuerte)",
@@ -6132,50 +6149,6 @@
     "desc": "Inca administrative and ceremonial center in the Ayacucho region of central Peru at 3,470 meters elevation. The site was one of the four most important provincial capitals of the Inca Empire, built atop and incorporating an earlier Wari-period substrate. The central feature is the Ushnu — a stepped truncated pyramid faced with precision-polygonal andesite masonry — the only example of its kind to survive intact in Peru. Brien Foerster has documented extensive cataclysmic damage to the upper courses that post-dates the original construction."
   },
   {
-    "n": "Amaru Muru (Stargate)",
-    "lat": -16.1633,
-    "lng": -69.3367,
-    "cat": "rock-cut",
-    "region": "South America",
-    "tier": 2,
-    "signal": "open",
-    "criteria": [
-      "precision",
-      "geometry"
-    ],
-    "desc": "Carved doorway-shaped niche in a sandstone outcrop on the Hayu Marca plateau, approximately 35 km west of Puno on the Peruvian shore of Lake Titicaca. The 7-meter-wide rectangular frame is cut with sharp-edged precision into the bedrock, with a smaller doorway at its base. Local Aymara tradition describes the niche as the 'Gate of the Gods' through which the priest Amaru Muru entered another reality during the Spanish conquest. The geometric precision of the cut and the absence of any associated structure (steps, walls, approach path) place the site in a category by itself. Independent investigators including Brien Foerster have documented anomalous magnetometer readings at the niche."
-  },
-  {
-    "n": "Cumbemayo Aqueduct",
-    "lat": -7.2317,
-    "lng": -78.5803,
-    "cat": "megalithic",
-    "region": "South America",
-    "tier": 2,
-    "signal": "open",
-    "criteria": [
-      "precision",
-      "geometry",
-      "scale"
-    ],
-    "desc": "Pre-Inca stone-cut aqueduct in the highlands above Cajamarca, northern Peru, at approximately 3,500 meters elevation. The channel is cut into the living volcanic bedrock and extends for at least 8 kilometers, with right-angle turns, switchbacks, and engineered drops cut to maintain a specific gradient. Conventionally dated to the Cajamarca culture (c. 1500-1000 BCE) on the basis of associated rock-art and pottery, which would make it among the oldest stone-engineered hydraulic systems in the Americas. The precision of the cuts and the engineering of the gradient have led independent investigators to propose substantially earlier construction."
-  },
-  {
-    "n": "Pisac (Pisaq)",
-    "lat": -13.4144,
-    "lng": -71.8489,
-    "cat": "city",
-    "region": "South America",
-    "tier": 1,
-    "signal": "open",
-    "criteria": [
-      "polygonal",
-      "precision",
-      "scale"
-    ],
-    "desc": "Major Inca site in the Sacred Valley of Peru, 30 km north of Cusco, occupying a 6 km mountain ridge above the Urubamba river at elevations of 3,000-3,500 meters. The site contains the largest pre-Columbian cliff necropolis in the Americas (thousands of shaft tombs in the limestone cliffs facing the valley), an extensive agricultural terrace system still partly in use today, the precision-polygonal Intihuatana ceremonial center, and the Q'allaqasa fortified district. Two stylistically distinct masonry traditions are present : fine Inca andesite ashlar above, and a substantially older and more refined polygonal substrate at the base of the principal walls."
-  },
-  {
     "n": "Saihuite Stone",
     "lat": -13.7572,
     "lng": -72.735,
@@ -6662,5 +6635,110 @@
       "scale"
     ],
     "desc": "Rock-cut Buddhist complex carved into hard Deccan basalt in the Western Ghats of Maharashtra, dated to the Satavahana period around the 1st century BCE. The apsidal chaitya hall sits behind an entrance screen of tall columns with animal-and-rider capitals; inside, plain octagonal columns lean slightly inward — a rake inherited from the wooden architecture the form reproduces. The enclosed hall sustains a strong low-frequency vocal resonance (walkthrough footage documents chanting reinforced near 110 Hz), inviting comparison with other rock-cut chanting chambers. Institutional archaeology places Bedse within the hand-carved chaitya tradition between Bhaja and Karla; the open question is how consistently smooth interior geometry was achieved in basalt with the documented iron toolkit — a gentler cousin of the precision debate at Barabar's mirror-polished granite chambers."
+  },
+  {
+    "n": "Chinchero",
+    "lat": -13.3911,
+    "lng": -72.0478,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "scale"
+    ],
+    "desc": "Royal estate of Tupac Inca Yupanqui (~1480 CE) at 3,760 m northwest of Cusco, built over an earlier Killke occupation: massive agricultural terraces, fine limestone palace walls with trapezoidal niches, and carved outcrop huacas scattered among the fields — including the ~15 m Teteqaqa stone cut with thrones and stairways, a chincana cave, and the boulder locals nickname the 'dinosaur stone.' Conventional archaeology reads the whole complex as Inca over Killke; the open question is the relationship between the heavily weathered megalithic huacas and retaining courses and the crisp later terracing that surrounds them."
+  },
+  {
+    "n": "Teteqaqa (Cusco)",
+    "lat": -13.5149,
+    "lng": -71.9652,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Monumental sculpted limestone outcrop (~40 × 30 m, 26 m high) above the Tullumayo valley in Cusco's San Blas sector, now engulfed by the city. Thirty-three documented carvings include a circular gnomon with channels, thrones, carved basins, paccha water channels with serpent-headed spouts, and nine high-relief serpents — many deliberately demolished during colonial idolatry-extirpation campaigns. Recent scholarship identifies the wak'a's original Inca name as Chukimarka, a 'second temple of the Sun.'"
+  },
+  {
+    "n": "Inkilltambo",
+    "lat": -13.5019,
+    "lng": -71.9524,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Huaca complex carved around a large limestone outcrop northeast of Cusco within Sacsayhuamán Archaeological Park, attributed to Inca Wiracocha with remodeling under Pachacutec. Two narrow carved gallery passages, ceremonial niches, rock-hewn altars, staircases and water channels sit among fine-masonry enclosures and terraces restored in 2015-2017. Its 'Inca Cárcel' (jail) nickname misreads the cell-like niches — archaeology reads a ceremonial sanctuary, parts of which colonial encomenderos deliberately destroyed."
+  },
+  {
+    "n": "Unu Urqo",
+    "lat": -13.3215,
+    "lng": -71.9845,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Rock sanctuary and terrace complex at the foot of Pitusiray mountain near Calca in the Sacred Valley, with continuous Killke-to-Inca occupation (~1000-1533 CE). The ceremonial sector centers on a carved monolith whose hewn water channel runs through the head of a sculpted figure and discharges at what reads as a serpent, amphibian or puma head — the identity is unresolved. A water-veneration festival is still held at the site."
+  },
+  {
+    "n": "Rumiwasi",
+    "lat": -13.5194,
+    "lng": -71.9403,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 3,
+    "desc": "'Stone house' huaca above San Sebastián on Cusco's outskirts, combining carved bedrock with andesite masonry — polygonal ashlar mixed with cyclopean boulders. Features four ritual wall niches, a ~9 m underground passage cut through rock, carved steps and a water-distribution canal; its alternate name Phaqchayuq ('the one with the waterfall') reflects ritual water associations. Two doorways are reported to align with the June and December solstices."
+  },
+  {
+    "n": "Amaru Markawasi",
+    "lat": -13.5056,
+    "lng": -71.9647,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Carved limestone cave shrine in the hills northeast of Cusco near Qenqo, also known as the Temple of the Moon (Cusco) and traditionally linked to lunar and serpent (amaru) cults. A natural cleft forms the cave entrance, with carved steps descending to sculpted shelves and altar-like platforms; hilltop stairways and seats above are heavily weathered. Attribution is contested between a Killke-built shrine later enhanced by the Inca and a purely Inca construction."
+  },
+  {
+    "n": "Cusilluchayoc",
+    "lat": -13.5084,
+    "lng": -71.9657,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Complex of carved limestone rocks, caves and corridors about 500 m east of Qenqo — the 'Temple of the Monkeys.' Zoomorphic relief figures read as monkeys, serpents and pumas accompany carved walls and stone water channels; Spanish extirpators of idolatry chiseled the heads off the figures, leaving the popular 'monkey' identification an open interpretive question. Offerings are still left at a stone locals call the heart of Pachamama."
+  },
+  {
+    "n": "Temple of the Moon (Huayna Picchu)",
+    "lat": -13.1517,
+    "lng": -72.5466,
+    "cat": "temple",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "hardness"
+    ],
+    "desc": "Ceremonial complex of top-quality ashlar masonry set into an open granite cave (the Great Cavern) on the far side of Huayna Picchu, part of Pachacuti's Machu Picchu estate and rediscovered in 1936. Inside, fine walls hold a tall double-jamb doorway, trapezoidal niches, and a stepped throne-like sculpture carved from the living rock. Its function is unresolved (shrine, royal tomb, lookout), the 'Temple of the Moon' name is modern, and the contrast between the cave's finest masonry and the surrounding work fuels claims that the innermost construction predates the Inca."
+  },
+  {
+    "n": "River Intihuatana",
+    "lat": -13.1756,
+    "lng": -72.5574,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Carved granite huaca on the Urubamba river at the foot of the Machu Picchu massif, near the hydroelectric station and San Miguel bridge. The bedrock outcrop is sculpted with planes, steps and gnomon-like projections, associated with fountains, terraces and fine masonry forming a riverside sanctuary. Archaeoastronomers (Gullberg, Malville) read it as a solstice light-and-shadow station ritually linked to Machu Picchu above."
+  },
+  {
+    "n": "Zone X (Cheqtaqaqa)",
+    "lat": -13.4966,
+    "lng": -71.9738,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "machining"
+    ],
+    "desc": "Cluster of large carved limestone outcrops northeast of Sacsayhuamán — mapped as Zona X / Lanlakuyoc and including the Cheqtaqaqa ceremonial sector — cut with steps, seats and niches and honeycombed with roughly 15 caves and tunnels (chincanas), several showing clear tool enhancement. Conventional archaeology reads an Inca quarry-and-shrine area with likely earlier Killke ritual use; the unusually smooth, near-polished cut surfaces — popularized as 'Zone X' by researcher Jesus Gamarra — remain the open question. The Cheqtaqaqa sector was damaged by graffiti vandalism in March 2026."
   }
 ]

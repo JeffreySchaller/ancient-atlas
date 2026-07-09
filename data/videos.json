@@ -477,6 +477,30 @@
       "cr": "archaiclens",
       "added": "2026-06-08",
       "published": "2023-02-01"
+    },
+    {
+      "id": "zl6eF77Trbg",
+      "title": "Cusco's Chincanas, Part 4: Sacsayhuaman",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
+      "id": "1zmwkgqyd7c",
+      "title": "Ancient Architects of Sacsayhuaman?",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
+      "id": "WD7vd5CSvJg",
+      "title": "Re-Imagining Sacsayhuaman: A Fortress or Power Plant?",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
+      "id": "pEg0Wn7rv6c",
+      "title": "Mystery at Sacsayhuaman's Water Temple",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
     }
   ],
   "Ollantaytambo": [
@@ -539,6 +563,18 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-10-20"
+    },
+    {
+      "id": "rxXLg_-a1wY",
+      "title": "Deep Dive Ollantaytambo: Examining the Megalithic Mysteries",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
+      "id": "Ri1VzrTlPu4",
+      "title": "Deep Dive Ollantaytambo, Part 2",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
     }
   ],
   "Puma Punku": [
@@ -742,6 +778,12 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-09-15"
+    },
+    {
+      "id": "jRFWrjraVpw",
+      "title": "Strange Machu Picchu: The Mysterious Stones on Circuit 3",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
     }
   ],
   "Stonehenge": [
@@ -1805,6 +1847,12 @@
       "id": "NKt0es1zrcM",
       "title": "Ancient labyrinth at Qenqo in Peru",
       "cr": "brienf"
+    },
+    {
+      "id": "0nvzE9nZhUg",
+      "title": "Cusco's Chincanas, Part 3: Qenko, the Alien-Looking Site",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
     }
   ],
   "Pisac": [
@@ -1812,6 +1860,19 @@
       "id": "XUSC0BY3NFM",
       "title": "Megalithic Pisac in Peru",
       "cr": "secretsinstone"
+    },
+    {
+      "id": "t99792Z1e00",
+      "title": "Ancient Pisaq In The Sacred Valley Of Peru: Inca And Megalithic Aspects",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2024-06-10"
+    },
+    {
+      "id": "GWv9q7355tA",
+      "title": "Megalithic Pisac",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
     }
   ],
   "Caral": [
@@ -2849,6 +2910,18 @@
       "cr": "secretsinstone",
       "added": "2026-06-09",
       "published": "2026-05-15"
+    },
+    {
+      "id": "1m2bn7MccCA",
+      "title": "Amazing New Discovery at Tarawasi!",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
+      "id": "YED2EV7oO4k",
+      "title": "Hidden Messages at Tarawasi",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
     }
   ],
   "Meydan Kalesi": [
@@ -5379,6 +5452,12 @@
       "cr": "unchartedx",
       "added": "2026-06-09",
       "published": "2021-03-18"
+    },
+    {
+      "id": "KI9DXw6eqR0",
+      "title": "Ancient Builders of the Qoricancha?",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
     }
   ],
   "Tanis (San el-Hagar)": [
@@ -5569,33 +5648,6 @@
       "published": "2022-08-18"
     }
   ],
-  "Amaru Muru (Stargate)": [
-    {
-      "id": "bF8Bh_1GjpE",
-      "title": "Mysterious Ancient Portal Of Amaru Muru Near Lake Titicaca In Peru",
-      "cr": "brienf",
-      "added": "2026-06-09",
-      "published": "2021-11-05"
-    }
-  ],
-  "Cumbemayo Aqueduct": [
-    {
-      "id": "D2C7OyOXjtQ",
-      "title": "The Mysterious Ancient Cumbemayo Aqueduct Of Peru",
-      "cr": "brienf",
-      "added": "2026-06-09",
-      "published": "2022-03-22"
-    }
-  ],
-  "Pisac (Pisaq)": [
-    {
-      "id": "t99792Z1e00",
-      "title": "Ancient Pisaq In The Sacred Valley Of Peru: Inca And Megalithic Aspects",
-      "cr": "brienf",
-      "added": "2026-06-09",
-      "published": "2024-06-10"
-    }
-  ],
   "Saihuite Stone": [
     {
       "id": "SJ373Pa2RU0",
@@ -5603,6 +5655,12 @@
       "cr": "brienf",
       "added": "2026-06-09",
       "published": "2022-10-15"
+    },
+    {
+      "id": "fFW0mlKOeug",
+      "title": "Megalithic Sayhuite",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
     }
   ],
   "Byblos (Jbeil)": [
@@ -6006,6 +6064,142 @@
       "cr": "liamrichards",
       "added": "2026-07-09",
       "published": "2026-05-21"
+    }
+  ],
+  "Aramu Muru": [
+    {
+      "id": "bF8Bh_1GjpE",
+      "title": "Mysterious Ancient Portal Of Amaru Muru Near Lake Titicaca In Peru",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2021-11-05"
+    }
+  ],
+  "Cumbe Mayo": [
+    {
+      "id": "D2C7OyOXjtQ",
+      "title": "The Mysterious Ancient Cumbemayo Aqueduct Of Peru",
+      "cr": "brienf",
+      "added": "2026-06-09",
+      "published": "2022-03-22"
+    }
+  ],
+  "Tambomachay": [
+    {
+      "id": "Auo2lFIxTXU",
+      "title": "Exploring Tambomachay: The Master Engineers of Ancient Peru",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    }
+  ],
+  "Chinchero": [
+    {
+      "id": "604xXIXFl9Q",
+      "title": "Exploring Megalithic Chinchero with Camille Sauve and Al Magdaleno",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
+      "id": "7LiVczDfHVM",
+      "title": "The Chinchero 'Dinosaur' & Ancient Stone Mysteries",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
+      "id": "i3ySGAY7xi4",
+      "title": "Mystery Huacas at Chinchero: Is This a Dinosaur Carved in Ancient Stone?",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
+      "id": "PVyJ6Za9qNU",
+      "title": "Mystery Huacas at Chinchero, Grand Chincana",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
+      "id": "YqnhVfGCGJU",
+      "title": "Exploring Huaca Teteqaqa · Chinchero",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    }
+  ],
+  "Teteqaqa (Cusco)": [
+    {
+      "id": "rRwRrLpf_Zs",
+      "title": "Teteqaqa: A Pre-Incan Mystery",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    }
+  ],
+  "Inkilltambo": [
+    {
+      "id": "E3JpmGshVvE",
+      "title": "Other Worldly Inkilltambo",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    }
+  ],
+  "Unu Urqo": [
+    {
+      "id": "64JtbCwOFkM",
+      "title": "Mystery Unu Urqo",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    }
+  ],
+  "Rumiwasi": [
+    {
+      "id": "W5NTBJS4H1I",
+      "title": "Rumiwasi: A Happening Place!",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    }
+  ],
+  "Amaru Markawasi": [
+    {
+      "id": "PlTPs7Wzm-I",
+      "title": "Amaru Marca Wasi: The House of the Cave Snake",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    }
+  ],
+  "Cusilluchayoc": [
+    {
+      "id": "7wgimhTJu8g",
+      "title": "Cusco's Surreal Monkey Temple",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    }
+  ],
+  "Temple of the Moon (Huayna Picchu)": [
+    {
+      "id": "Wakzqg0Egrc",
+      "title": "Exploring the Moon Temple at Huayna Picchu",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    }
+  ],
+  "River Intihuatana": [
+    {
+      "id": "aX6rl9vQwcs",
+      "title": "The River Intihuatana: An Ancient Megalithic Structure Hidden in the Jungles of Machu Picchu",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    }
+  ],
+  "Zone X (Cheqtaqaqa)": [
+    {
+      "id": "RFJK0o5ekjs",
+      "title": "Cusco's Chincanas, a Not-So-Hidden Secret, Chetaqaqa: Part 1",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
+      "id": "qDao3yUIc9c",
+      "title": "Cusco's Chincanas, Part 2: Zone X",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
     }
   ]
 }
