@@ -447,5 +447,12 @@
     "subs": "Travel explorer · first-person walkthroughs of overlooked ancient sites",
     "color": "#4FA37C",
     "tier": 2
+  },
+  "sorcerersofstone": {
+    "name": "Sorcerers of Stone",
+    "handle": "@sorcerersofstone",
+    "subs": "Camille Sauve · Andean precision-stonework deep dives · author, Sorcerers of Stone",
+    "color": "#6B7FB3",
+    "tier": 3
   }
 }
