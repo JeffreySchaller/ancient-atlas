@@ -440,5 +440,12 @@
     "subs": "Croatian heritage documentaries · academic institution · short curated films on Stećci, Gomile, and other regional megalithic + ritual sites",
     "color": "#8B96A0",
     "tier": 3
+  },
+  "liamrichards": {
+    "name": "Liam Richards",
+    "handle": "@liam.richards",
+    "subs": "Travel explorer · first-person walkthroughs of overlooked ancient sites",
+    "color": "#4FA37C",
+    "tier": 2
   }
 }
