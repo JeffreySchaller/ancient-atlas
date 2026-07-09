@@ -46,3 +46,8 @@ build/
 # OS thumbnails
 Thumbs.db
 ehthumbs.db
+
+# Rendered video/audio (masters live outside the repo)
+branding/youtube/*.mp4
+branding/youtube/*.wav
+.sync_test_*
