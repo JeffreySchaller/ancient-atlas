@@ -76,6 +76,20 @@
   ],
   "Göbekli Tepe": [
     {
+      "id": "pqNED6RJ4HY",
+      "title": "Major Discoveries at Göbekli Tepe, Karahan Tepe, Sefer Tepe & Sayburç | Taş Tepeler | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-06-07",
+      "published": "2025-11-29"
+    },
+    {
+      "id": "nyQuJQJm8XI",
+      "title": "The Navel Connection: Göbekli Tepe / Easter Island / Sardinia | Archaic Lens",
+      "cr": "archaiclens",
+      "added": "2026-06-08",
+      "published": "2022-10-01"
+    },
+    {
       "id": "7lAV4fJN8LY",
       "title": "Super Civilization: Gobekli Tepe and Karahan Tepe (Hugh Newman, CS24)",
       "cr": "megalithomania"
@@ -94,6 +108,27 @@
       "id": "-JREGD-LrEw",
       "title": "Supercivilization | How Karahan Tepe & Göbekli Tepe Are Rewriting History",
       "cr": "megalithomania"
+    },
+    {
+      "id": "mUFtP8HgV0s",
+      "title": "Lost star map of antiquity",
+      "cr": "turkiyetoday",
+      "added": "2026-06-07",
+      "published": "2025-12-25"
+    },
+    {
+      "id": "QdM3XerhPbc",
+      "title": "The original center of the world",
+      "cr": "turkiyetoday",
+      "added": "2026-06-07",
+      "published": "2025-09-20"
+    },
+    {
+      "id": "9Bqeu918luc",
+      "title": "Türkiye's Secret Temple of Witches",
+      "cr": "turkiyetoday",
+      "added": "2026-06-07",
+      "published": "2025-09-12"
     },
     {
       "id": "v1-mVG_VwlE",
@@ -4655,43 +4690,6 @@
       "cr": "megalithomania",
       "added": "2026-06-07",
       "published": "2023-10-26"
-    }
-  ],
-  "Göbekli Tepe (Potbelly Hill)": [
-    {
-      "id": "pqNED6RJ4HY",
-      "title": "Major Discoveries at Göbekli Tepe, Karahan Tepe, Sefer Tepe & Sayburç | Taş Tepeler | Megalithomania",
-      "cr": "megalithomania",
-      "added": "2026-06-07",
-      "published": "2025-11-29"
-    },
-    {
-      "id": "nyQuJQJm8XI",
-      "title": "The Navel Connection: Göbekli Tepe / Easter Island / Sardinia | Archaic Lens",
-      "cr": "archaiclens",
-      "added": "2026-06-08",
-      "published": "2022-10-01"
-    },
-    {
-      "id": "mUFtP8HgV0s",
-      "title": "Lost star map of antiquity",
-      "cr": "turkiyetoday",
-      "added": "2026-06-07",
-      "published": "2025-12-25"
-    },
-    {
-      "id": "QdM3XerhPbc",
-      "title": "The original center of the world",
-      "cr": "turkiyetoday",
-      "added": "2026-06-07",
-      "published": "2025-09-20"
-    },
-    {
-      "id": "9Bqeu918luc",
-      "title": "Türkiye's Secret Temple of Witches",
-      "cr": "turkiyetoday",
-      "added": "2026-06-07",
-      "published": "2025-09-12"
     }
   ],
   "Hagia Sophia": [

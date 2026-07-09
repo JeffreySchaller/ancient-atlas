@@ -1144,19 +1144,6 @@
     "desc": "Oasis city that controlled Silk Road trade between Rome and Persia. Temple of Bel and colonnaded streets, partially destroyed by ISIS in 2015."
   },
   {
-    "n": "Göbekli Tepe (Potbelly Hill)",
-    "lat": 37.2233,
-    "lng": 38.9225,
-    "cat": "megalithic",
-    "region": "Middle East",
-    "tier": 1,
-    "desc": "Already listed under Türkiye but part of the broader Fertile Crescent Neolithic revolution.",
-    "library_ref": {
-      "url": "/library/true-monoliths.html",
-      "title": "True Monoliths"
-    }
-  },
-  {
     "n": "Jericho (Tell es-Sultan)",
     "lat": 31.871,
     "lng": 35.4441,
@@ -1811,15 +1798,6 @@
     "desc": "Zapotec/Mixtec city known as the 'Place of the Dead.' Features elaborate geometric stone mosaics assembled from thousands of precisely cut stone pieces without mortar."
   },
   {
-    "n": "Göbekli Tepe Visitor Center",
-    "lat": 37.223,
-    "lng": 38.923,
-    "cat": "megalithic",
-    "region": "Türkiye",
-    "tier": 3,
-    "desc": "Modern visitor interpretation center adjacent to the main excavation site."
-  },
-  {
     "n": "Barnenez",
     "lat": 48.6672,
     "lng": -3.8581,
@@ -1971,15 +1949,6 @@
     "region": "Middle East",
     "tier": 2,
     "desc": "Massive stone circles in the Golan Heights visible only from above, dating to ~3000 BCE. Five concentric rings with a central cairn. Purpose unknown."
-  },
-  {
-    "n": "Göbekli Tepe Layer III",
-    "lat": 37.2235,
-    "lng": 38.922,
-    "cat": "megalithic",
-    "region": "Türkiye",
-    "tier": 2,
-    "desc": "The oldest excavated layer (9600-8800 BCE) contains the largest T-pillars, up to 5.5m tall and 10 tons. Enclosures A-D with the most elaborate animal carvings."
   },
   {
     "n": "Bete Medhane Alem",
