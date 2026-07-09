@@ -9,7 +9,8 @@
     "desc": "Massive underground city extending 60m deep with 18 levels. Could shelter 20,000 people with livestock and food stores. Features ventilation shafts, wells, and a cruciform church on the lowest level.",
     "criteria": [
       "machining"
-    ]
+    ],
+    "signal": "open"
   },
   {
     "n": "Kaymakli Underground City",
@@ -370,7 +371,8 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open"
   },
   {
     "n": "Pyramid of Khafre",
@@ -392,7 +394,12 @@
     "cat": "pyramid",
     "region": "Egypt",
     "tier": 2,
-    "desc": "Smallest of the three main Giza pyramids. Originally partially cased in Aswan granite, some of which remains in place."
+    "desc": "Smallest of the three main Giza pyramids. Originally partially cased in Aswan granite, some of which remains in place.",
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "precision"
+    ]
   },
   {
     "n": "Great Sphinx of Giza",
@@ -405,7 +412,12 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open",
+    "criteria": [
+      "stratigraphy",
+      "scale"
+    ]
   },
   {
     "n": "Step Pyramid of Djoser",
@@ -549,7 +561,12 @@
     "cat": "megalithic",
     "region": "Egypt",
     "tier": 2,
-    "desc": "Twin 18m statues of Amenhotep III weighing 720 tons each. Once guarded a mortuary temple larger than Karnak. The northern statue was famed for 'singing' at dawn."
+    "desc": "Twin 18m statues of Amenhotep III weighing 720 tons each. Once guarded a mortuary temple larger than Karnak. The northern statue was famed for 'singing' at dawn.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "hardness"
+    ]
   },
   {
     "n": "Unfinished Obelisk (Aswan)",
@@ -562,7 +579,13 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "hardness",
+      "machining"
+    ]
   },
   {
     "n": "Siwa Oracle Temple (Amun)",
@@ -620,7 +643,8 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open"
   },
   {
     "n": "Pyramid of Unas",
@@ -672,7 +696,8 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open"
   },
   {
     "n": "Ollantaytambo",
@@ -685,7 +710,13 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision",
+      "polygonal"
+    ]
   },
   {
     "n": "Tiwanaku",
@@ -698,7 +729,12 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "geometry"
+    ]
   },
   {
     "n": "Puma Punku",
@@ -711,7 +747,14 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "machining",
+      "hardness",
+      "geometry"
+    ]
   },
   {
     "n": "Nazca Lines",
@@ -807,7 +850,13 @@
     "cat": "tomb",
     "region": "South America",
     "tier": 2,
-    "desc": "Pre-Inca funerary towers (chullpas) overlooking Lake Umayo near Puno. Built by the Colla people, these cylindrical towers stored mummified remains of nobility."
+    "desc": "Pre-Inca funerary towers (chullpas) overlooking Lake Umayo near Puno. Built by the Colla people, these cylindrical towers stored mummified remains of nobility.",
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "hardness",
+      "geometry"
+    ]
   },
   {
     "n": "Tipón",
@@ -843,7 +892,12 @@
     "cat": "megalithic",
     "region": "South America",
     "tier": 2,
-    "desc": "Monolithic archway carved from a single block of andesite, featuring a central figure (Viracocha or sun god) surrounded by 48 winged attendants."
+    "desc": "Monolithic archway carved from a single block of andesite, featuring a central figure (Viracocha or sun god) surrounded by 48 winged attendants.",
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "hardness"
+    ]
   },
   {
     "n": "Huaca del Sol",
@@ -879,7 +933,12 @@
     "cat": "megalithic",
     "region": "Europe",
     "tier": 1,
-    "desc": "The world's most famous stone circle, built in stages from ~3000-2000 BCE. Bluestones transported 250km from Wales. Aligned to summer solstice sunrise and winter solstice sunset."
+    "desc": "The world's most famous stone circle, built in stages from ~3000-2000 BCE. Bluestones transported 250km from Wales. Aligned to summer solstice sunrise and winter solstice sunset.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "hardness"
+    ]
   },
   {
     "n": "Avebury",
@@ -1041,7 +1100,12 @@
     "cat": "underground",
     "region": "Europe",
     "tier": 1,
-    "desc": "Underground Neolithic temple/necropolis on three levels. Carved ~4000-2500 BCE. Holds remains of 7,000+ individuals. Acoustic properties amplify low-frequency sound dramatically."
+    "desc": "Underground Neolithic temple/necropolis on three levels. Carved ~4000-2500 BCE. Holds remains of 7,000+ individuals. Acoustic properties amplify low-frequency sound dramatically.",
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "geometry"
+    ]
   },
   {
     "n": "Knossos",
@@ -1104,7 +1168,12 @@
     "cat": "megalithic",
     "region": "Middle East",
     "tier": 1,
-    "desc": "Roman temple complex built on a platform of stones so massive they defy explanation. The Trilithon: three 800-ton blocks. The Stone of the Pregnant Woman: 1,000 tons, still in its quarry."
+    "desc": "Roman temple complex built on a platform of stones so massive they defy explanation. The Trilithon: three 800-ton blocks. The Stone of the Pregnant Woman: 1,000 tons, still in its quarry.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "precision"
+    ]
   },
   {
     "n": "Petra",
@@ -1120,7 +1189,8 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open"
   },
   {
     "n": "Ur",
@@ -1268,7 +1338,12 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "scale"
+    ]
   },
   {
     "n": "Ellora Caves",
@@ -1281,7 +1356,13 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "scale",
+      "precision"
+    ]
   },
   {
     "n": "Konark Sun Temple",
@@ -1327,7 +1408,11 @@
     "cat": "megalithic",
     "region": "Pacific",
     "tier": 1,
-    "desc": "Nearly 1,000 monolithic statues averaging 4m tall and 12.5 tons. Carved from volcanic tuff at Rano Raraku quarry. How they were transported across the island remains debated."
+    "desc": "Nearly 1,000 monolithic statues averaging 4m tall and 12.5 tons. Carved from volcanic tuff at Rano Raraku quarry. How they were transported across the island remains debated.",
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ]
   },
   {
     "n": "Nan Madol",
@@ -1336,7 +1421,11 @@
     "cat": "megalithic",
     "region": "Pacific",
     "tier": 1,
-    "desc": "Artificial island city built on a coral reef off Pohnpei, Micronesia. 92 islands connected by canals, built from an estimated 750,000 tons of basalt columns. Called the 'Venice of the Pacific.'"
+    "desc": "Artificial island city built on a coral reef off Pohnpei, Micronesia. 92 islands connected by canals, built from an estimated 750,000 tons of basalt columns. Called the 'Venice of the Pacific.'",
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ]
   },
   {
     "n": "Yonaguni Monument",
@@ -1360,7 +1449,12 @@
     "cat": "megalithic",
     "region": "Asia",
     "tier": 1,
-    "desc": "Massive granite megaliths in the castle walls, the largest weighing ~130 tons (the 'Octopus Stone' / Takoishi). Quarried from islands 60+ km away and moved across water without modern equipment in the early 1600s."
+    "desc": "Massive granite megaliths in the castle walls, the largest weighing ~130 tons (the 'Octopus Stone' / Takoishi). Quarried from islands 60+ km away and moved across water without modern equipment in the early 1600s.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "hardness"
+    ]
   },
   {
     "n": "Ishi-no-Hoden",
@@ -1369,7 +1463,13 @@
     "cat": "megalithic",
     "region": "Asia",
     "tier": 2,
-    "desc": "The 'Floating Stone' on the grounds of Ōshiko Jinja shrine in Takasago, Hyogo Prefecture (near Himeji). A 500-ton granite monolith carved from the hillside, appearing to hover above its base. Era of creation unknown; some attribute it to the Jomon civilization."
+    "desc": "The 'Floating Stone' on the grounds of Ōshiko Jinja shrine in Takasago, Hyogo Prefecture (near Himeji). A 500-ton granite monolith carved from the hillside, appearing to hover above its base. Era of creation unknown; some attribute it to the Jomon civilization.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "precision"
+    ]
   },
   {
     "n": "Masuda no Iwafune",
@@ -1378,7 +1478,13 @@
     "cat": "megalithic",
     "region": "Asia",
     "tier": 2,
-    "desc": "The 'Stone Ship of Masuda' in Asuka, Nara. An 800-ton boat-shaped megalith on a hilltop, precisely carved with grooves and twin square holes. Origin and purpose unknown. Pre-dates the Asuka period's recorded histories."
+    "desc": "The 'Stone Ship of Masuda' in Asuka, Nara. An 800-ton boat-shaped megalith on a hilltop, precisely carved with grooves and twin square holes. Origin and purpose unknown. Pre-dates the Asuka period's recorded histories.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry",
+      "hardness"
+    ]
   },
   {
     "n": "Ishibutai Kofun",
@@ -1396,7 +1502,12 @@
     "cat": "megalithic",
     "region": "Asia",
     "tier": 3,
-    "desc": "The 'Sake Boat Stone' of Asuka. A carved granite slab with mysterious grooves, basins, and channels. Theories range from sake production to astronomical observation to ritual function. Still debated."
+    "desc": "The 'Sake Boat Stone' of Asuka. A carved granite slab with mysterious grooves, basins, and channels. Theories range from sake production to astronomical observation to ritual function. Still debated.",
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "geometry"
+    ]
   },
   {
     "n": "Daisen Kofun",
@@ -1598,7 +1709,12 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "precision"
+    ]
   },
   {
     "n": "Vettuvan Koil",
@@ -1607,7 +1723,11 @@
     "cat": "rock-cut",
     "region": "Asia",
     "tier": 3,
-    "desc": "Incomplete 8th-9th century rock-cut temple in Tamil Nadu, carved top-down from a single granite hill. Often called the 'Kailasa Temple Prototype' for its similar excavation technique. Abandoned before completion. Mystery remains why."
+    "desc": "Incomplete 8th-9th century rock-cut temple in Tamil Nadu, carved top-down from a single granite hill. Often called the 'Kailasa Temple Prototype' for its similar excavation technique. Abandoned before completion. Mystery remains why.",
+    "signal": "open",
+    "criteria": [
+      "hardness"
+    ]
   },
   {
     "n": "Kalavantin Durg",
@@ -1616,7 +1736,11 @@
     "cat": "megalithic",
     "region": "Asia",
     "tier": 3,
-    "desc": "Pinnacle fortress in Maharashtra with a stairway cut directly into vertical rock face, ascending to the summit. Origin and purpose disputed — neither dating nor builders confirmed. Local mythology dates it to ancient Hindu period; alt-archaeology proposes far older origins."
+    "desc": "Pinnacle fortress in Maharashtra with a stairway cut directly into vertical rock face, ascending to the summit. Origin and purpose disputed — neither dating nor builders confirmed. Local mythology dates it to ancient Hindu period; alt-archaeology proposes far older origins.",
+    "signal": "open",
+    "criteria": [
+      "hardness"
+    ]
   },
   {
     "n": "Great Zimbabwe",
@@ -1643,7 +1767,12 @@
     "cat": "megalithic",
     "region": "Africa",
     "tier": 1,
-    "desc": "Giant stelae up to 33m tall carved from single granite blocks. The largest (fallen) weighs 520 tons. Aksumite civilization was one of the four great powers of the ancient world."
+    "desc": "Giant stelae up to 33m tall carved from single granite blocks. The largest (fallen) weighs 520 tons. Aksumite civilization was one of the four great powers of the ancient world.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "hardness"
+    ]
   },
   {
     "n": "Meroe Pyramids",
@@ -2129,7 +2258,13 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "hardness",
+      "geometry"
+    ]
   },
   {
     "n": "Abu Hureyra",
@@ -2301,7 +2436,12 @@
     "cat": "temple",
     "region": "Asia",
     "tier": 1,
-    "desc": "The 'Big Temple' of the Chola dynasty (~1010 CE). 66-meter vimana topped by an 80-ton single granite capstone hauled into place without explanation. Largest temple tower in India when built. UNESCO World Heritage."
+    "desc": "The 'Big Temple' of the Chola dynasty (~1010 CE). 66-meter vimana topped by an 80-ton single granite capstone hauled into place without explanation. Largest temple tower in India when built. UNESCO World Heritage.",
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "scale"
+    ]
   },
   {
     "n": "Rani ki Vav (Queen's Stepwell)",
@@ -2332,7 +2472,12 @@
     "library_ref": {
       "url": "/library/true-monoliths.html",
       "title": "True Monoliths"
-    }
+    },
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "precision"
+    ]
   },
   {
     "n": "Bakong",
@@ -2386,7 +2531,12 @@
     "cat": "megalithic",
     "region": "Asia",
     "tier": 2,
-    "desc": "Hundreds of massive stone jars, some 3 meters tall and 14 tons, scattered across the Xiangkhoang Plateau in Laos. Iron Age (~500 BCE - 500 CE). Purpose unknown — funerary, water storage, or distillation theorized. UNESCO World Heritage 2019."
+    "desc": "Hundreds of massive stone jars, some 3 meters tall and 14 tons, scattered across the Xiangkhoang Plateau in Laos. Iron Age (~500 BCE - 500 CE). Purpose unknown — funerary, water storage, or distillation theorized. UNESCO World Heritage 2019.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ]
   },
   {
     "n": "Si Thep (Khao Klang Nok)",
@@ -2413,7 +2563,12 @@
     "cat": "temple",
     "region": "Egypt",
     "tier": 3,
-    "desc": "5th Dynasty sun temple of Niuserre (~2440 BCE), one of only two surviving sun temples. Features the mysterious 'Hotep' offering basin — a black basalt object with unexplained precision-machined features."
+    "desc": "5th Dynasty sun temple of Niuserre (~2440 BCE), one of only two surviving sun temples. Features the mysterious 'Hotep' offering basin — a black basalt object with unexplained precision-machined features.",
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "hardness"
+    ]
   },
   {
     "n": "Tell el Roba (Mendes)",
@@ -2537,7 +2692,11 @@
     "cat": "rock-cut",
     "region": "South America",
     "tier": 2,
-    "desc": "Pre-Inca rock-cut megalithic complex on a sandstone outcrop in eastern Bolivia. The 220m × 60m carved surface includes serpentine canals, animal reliefs, and ceremonial seats. Used continuously from ~300 CE through the Spanish conquest. UNESCO World Heritage."
+    "desc": "Pre-Inca rock-cut megalithic complex on a sandstone outcrop in eastern Bolivia. The 220m × 60m carved surface includes serpentine canals, animal reliefs, and ceremonial seats. Used continuously from ~300 CE through the Spanish conquest. UNESCO World Heritage.",
+    "signal": "open",
+    "criteria": [
+      "geometry"
+    ]
   },
   {
     "n": "Templo Mayor (Tenochtitlan)",
@@ -2600,7 +2759,12 @@
     "cat": "rock-cut",
     "region": "Asia",
     "tier": 2,
-    "desc": "22 rock-cut Buddhist caves in the Western Ghats of Maharashtra, India, ~200 BCE. Among the earliest examples of Indian rock-cut architecture, predating Ajanta and Ellora. Vaulted chaitya hall with carved wooden-style ribs cut from solid basalt."
+    "desc": "22 rock-cut Buddhist caves in the Western Ghats of Maharashtra, India, ~200 BCE. Among the earliest examples of Indian rock-cut architecture, predating Ajanta and Ellora. Vaulted chaitya hall with carved wooden-style ribs cut from solid basalt.",
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "precision"
+    ]
   },
   {
     "n": "Willong Khullen Megaliths",
@@ -2717,7 +2881,12 @@
     "cat": "rock-cut",
     "region": "Europe",
     "tier": 3,
-    "desc": "Pre-Roman and Roman rock-cut religious sanctuary in northern Portugal. Three large granite outcrops carved with basins, channels, and steps, with Latin inscriptions identifying them as dedicated to Serapis and the dii Severi. Continuous use 4th century BCE through 3rd century CE."
+    "desc": "Pre-Roman and Roman rock-cut religious sanctuary in northern Portugal. Three large granite outcrops carved with basins, channels, and steps, with Latin inscriptions identifying them as dedicated to Serapis and the dii Severi. Continuous use 4th century BCE through 3rd century CE.",
+    "signal": "open",
+    "criteria": [
+      "hardness",
+      "geometry"
+    ]
   },
   {
     "n": "Hosn Suleiman",
@@ -2776,7 +2945,11 @@
     "cat": "megalithic",
     "region": "Pacific",
     "tier": 1,
-    "desc": "Polynesian trilithon on the island of Tongatapu, Tonga. Three coral-limestone blocks (two uprights + lintel) weighing ~30–40 tons each, joined by precision-cut mortise and tenon. Built ~1200 CE under the Tu'i Tonga dynasty. Astronomically aligned to solstice sunrise. The only known Polynesian trilithon, on the same form as Stonehenge and Baalbek."
+    "desc": "Polynesian trilithon on the island of Tongatapu, Tonga. Three coral-limestone blocks (two uprights + lintel) weighing ~30–40 tons each, joined by precision-cut mortise and tenon. Built ~1200 CE under the Tu'i Tonga dynasty. Astronomically aligned to solstice sunrise. The only known Polynesian trilithon, on the same form as Stonehenge and Baalbek.",
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ]
   },
   {
     "n": "Dolmens of the North Caucasus",
@@ -2785,7 +2958,12 @@
     "cat": "megalithic",
     "region": "Europe",
     "tier": 1,
-    "desc": "Bronze Age megalithic tomb complex spanning the Krasnodar and Adygea regions near the Black Sea. Roughly 3,000 documented dolmens, constructed from precisely cut stone slabs weighing up to 20 tons, many featuring carved portholes and ornamental relief work. Carbon-dated to the 3rd-2nd millennium BCE. The masonry precision rivals Western European megalithic traditions and predates them in several places."
+    "desc": "Bronze Age megalithic tomb complex spanning the Krasnodar and Adygea regions near the Black Sea. Roughly 3,000 documented dolmens, constructed from precisely cut stone slabs weighing up to 20 tons, many featuring carved portholes and ornamental relief work. Carbon-dated to the 3rd-2nd millennium BCE. The masonry precision rivals Western European megalithic traditions and predates them in several places.",
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "geometry"
+    ]
   },
   {
     "n": "Arkaim",
