@@ -38,10 +38,12 @@ STAMPS = {  # id -> true YouTube publish date
 }
 
 # ---- display-logic edits: (old, new, must_exist_after) ----
-CSS_OLD = ".video-new-badge{display:inline-block;"
+# NOTE: the curated rule must come AFTER .video-new-badge in the stylesheet —
+# equal specificity means source order decides, and the badge carries both classes.
+CSS_OLD = "vertical-align:middle;margin-right:7px;flex-shrink:0}"  # tail of .video-new-badge rule
 CSS_ADD = (
-    ".video-curated-badge{background:linear-gradient(135deg,#7FC4BA,#5A9E94);"
-    "box-shadow:0 1px 5px rgba(90,158,148,.4)}\n"
+    "\n.video-curated-badge{background:linear-gradient(135deg,#7FC4BA,#5A9E94);"
+    "box-shadow:0 1px 5px rgba(90,158,148,.4)}"
 )
 
 HELPER_ANCHOR = "const SIGNAL_BADGE_SVG ="
@@ -105,7 +107,7 @@ def main():
     if ".video-curated-badge{" not in html:
         if CSS_OLD not in html:
             sys.exit("ABORT: CSS anchor not found")
-        html = html.replace(CSS_OLD, CSS_ADD + CSS_OLD, 1)
+        html = html.replace(CSS_OLD, CSS_OLD + CSS_ADD, 1)
         print("  ✓ CSS: .video-curated-badge added")
         changed = True
     else:
