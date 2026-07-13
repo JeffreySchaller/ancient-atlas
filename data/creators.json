@@ -131,7 +131,7 @@
     "handle": "@WanderingWolf",
     "subs": "Ancient mysteries · cinematic storytelling · global sites",
     "color": "#5B9BD5",
-    "tier": 3
+    "tier": 2
   },
   "lifesbiggestq": {
     "name": "Life's Biggest Questions",
@@ -264,14 +264,14 @@
     "handle": "@AgelessRock888",
     "subs": "boots-on-ground walkthroughs of underground cities, rock-cut monasteries, and megalithic sites; focused on tool marks, scale, and design intent that often resist mainstream chronology",
     "color": "#8C6E4F",
-    "tier": 3
+    "tier": 2
   },
   "turkiyetoday": {
     "name": "Türkiye Today",
     "handle": "@turkiyetoday",
     "subs": "English-language Türkiye news + culture channel; shorts on archaeological discoveries, hidden sites, and ancient monuments",
     "color": "#C8102E",
-    "tier": 3
+    "tier": 2
   },
   "bassforge": {
     "name": "BassForge",
@@ -341,7 +341,7 @@
     "handle": "@NationalGeographic",
     "subs": "Institutional documentary · global field reporting · UNESCO-grade coverage",
     "color": "#F2C500",
-    "tier": 1
+    "tier": 2
   },
   "jimeighmey": {
     "name": "Jim Eighmey's Archeology Videos",
@@ -453,13 +453,13 @@
     "handle": "@sorcerersofstone",
     "subs": "Camille Sauve · Andean precision-stonework deep dives · author, Sorcerers of Stone",
     "color": "#6B7FB3",
-    "tier": 3
+    "tier": 1
   },
   "stoneriddles": {
     "name": "Stone Riddles",
     "handle": "@StoneRiddles",
     "subs": "Mediterranean polygonal-masonry field surveys · Greece, Sardinia, Italy documentaries",
     "color": "#5A9E94",
-    "tier": 3
+    "tier": 1
   }
 }
