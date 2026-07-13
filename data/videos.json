@@ -1640,6 +1640,12 @@
       "id": "CenGetNGYms",
       "title": "Phaistos Palace | Minoan Origins in Crete 1900 BC and the Mysterious Disc",
       "cr": "megalithomania"
+    },
+    {
+      "id": "SwDngsk1SBo",
+      "title": "Large Blocks at Phaistos",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
     }
   ],
   "Mycenae": [
@@ -1647,6 +1653,25 @@
       "id": "wFaSOrc9BsM",
       "title": "Stylos Tholos Tomb | Mycenaean Stone Technology in Ancient Crete",
       "cr": "megalithomania"
+    },
+    {
+      "id": "fbxcgeCUjKU",
+      "title": "Lions Gate, Mycenae | Archaic Lens",
+      "cr": "archaiclens",
+      "added": "2026-06-08",
+      "published": "2024-05-15"
+    },
+    {
+      "id": "roVE1FS6B2g",
+      "title": "The Gigantic Treasuries of Mycenae",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "DjsNO-KtSGY",
+      "title": "Huge Polygonal Walls at Mycenae",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
     }
   ],
   "Delphi": [
@@ -1673,6 +1698,12 @@
       "cr": "archaiclens",
       "added": "2026-06-08",
       "published": "2024-05-25"
+    },
+    {
+      "id": "lX1FndaE63o",
+      "title": "Polygonal Walls Everywhere!! In Delphi",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
     }
   ],
   "Mnajdra": [
@@ -3161,6 +3192,18 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-04-15"
+    },
+    {
+      "id": "SargCH8f2aY",
+      "title": "The Polygonal Walls of Cosa — Tuscany",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "sIFCCZ6Obwo",
+      "title": "Polygonal Site of Cosa in Tuscany from Drone",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
     }
   ],
   "Rusellae": [
@@ -5244,15 +5287,6 @@
       "published": "2022-09-01"
     }
   ],
-  "Mycenae (Lion Gate)": [
-    {
-      "id": "fbxcgeCUjKU",
-      "title": "Lions Gate, Mycenae | Archaic Lens",
-      "cr": "archaiclens",
-      "added": "2026-06-08",
-      "published": "2024-05-15"
-    }
-  ],
   "Pyramid of Hellinikon": [
     {
       "id": "3tCUnligXxE",
@@ -5260,6 +5294,12 @@
       "cr": "archaiclens",
       "added": "2026-06-08",
       "published": "2024-05-20"
+    },
+    {
+      "id": "z6yUigPi1nw",
+      "title": "The Polygonal Pyramid of Hellinikon",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
     }
   ],
   "Treasury of Atreus (Tomb of Agamemnon)": [
@@ -5269,15 +5309,6 @@
       "cr": "archaiclens",
       "added": "2026-06-08",
       "published": "2024-05-30"
-    }
-  ],
-  "Pnyx Hill (Athens)": [
-    {
-      "id": "0VogHCZakYQ",
-      "title": "Pnyx Hill, Athens, Greece | Archaic Lens",
-      "cr": "archaiclens",
-      "added": "2026-06-08",
-      "published": "2024-06-01"
     }
   ],
   "Tula (Tollan)": [
@@ -6219,6 +6250,473 @@
       "title": "Cusco's Chincanas, Part 2: Zone X",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    }
+  ],
+  "Pnyx": [
+    {
+      "id": "0VogHCZakYQ",
+      "title": "Pnyx Hill, Athens, Greece | Archaic Lens",
+      "cr": "archaiclens",
+      "added": "2026-06-08",
+      "published": "2024-06-01"
+    },
+    {
+      "id": "anKyo0ISMtw",
+      "title": "The Cyclopean Stone Blocks of Pnyx",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nekromanteion of Acheron": [
+    {
+      "id": "betc2ZPMeQY",
+      "title": "The Enigmatic Necromanteion",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Arcadian Gate (Messene)": [
+    {
+      "id": "SrBzJlzIjdw",
+      "title": "Mixture of Architectural Styles at the City of Messene",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "EWTuv1WUk6M",
+      "title": "Colossal Walls at Messene",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "b7hG-LASJIU",
+      "title": "Was the Messene Wall Really Built in 85 Days??",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Epidaurus": [
+    {
+      "id": "KirEaArhQKE",
+      "title": "Polygonal Masonry, Megalithism and Precision Stone Cuts at Epidaurus",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Tiryns": [
+    {
+      "id": "JN29fgkckrk",
+      "title": "The Treasury of Tiryns",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "SjgkEj_ynKc",
+      "title": "Massive Blocks at Tiryns",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Sardinia Nuraghi (Su Nuraxi)": [
+    {
+      "id": "q0YNkMIt3BY",
+      "title": "Documentary Stone Riddles II — Archaeological Treasures of Sardinia",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Hyrtakina": [
+    {
+      "id": "uCQlsruon8s",
+      "title": "Mysterious Walls at Hyrtakina",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Polyrrhenia": [
+    {
+      "id": "FxSgUJVt7gk",
+      "title": "The Acropolis of Ancient Polyrrhenia",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Falasarna": [
+    {
+      "id": "RT4VQAa1b6U",
+      "title": "The Closed Harbour of Falasarna",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Aptera": [
+    {
+      "id": "_LPW4WiEuLg",
+      "title": "4 km of Polygonal Walls at Aptera!",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Lato": [
+    {
+      "id": "jEbUvHHZWBA",
+      "title": "The Stone City of Lato",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Stylos Tholos Tomb": [
+    {
+      "id": "OwWF4lpCCdA",
+      "title": "The Vaulted Tomb of Stylos",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Kamilari Tholos Tomb": [
+    {
+      "id": "uHNtyaIc51Q",
+      "title": "The Tholos Tomb of Kamilari",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Eleutherai Fortress": [
+    {
+      "id": "VIpMXqxD50Q",
+      "title": "Exquisitely Preserved Walls at Eleutherai",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Siphai (Tipha)": [
+    {
+      "id": "R-OZrCgyRuU",
+      "title": "Walls in the Sea at Siphai",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Panopeus": [
+    {
+      "id": "8MfM9WVc77A",
+      "title": "Polygonal and Megalithic Stones at Panopeus",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Orchomenos (Boeotia)": [
+    {
+      "id": "a91ukD2vy3s",
+      "title": "The Wonders of Orchomenos",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "cVlboPnBbm0",
+      "title": "The Majestic Treasury of Minyas",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Lilaia": [
+    {
+      "id": "dZ7SHYP8Td0",
+      "title": "The Towers of Lilaia",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Proerna": [
+    {
+      "id": "1Eihw8GtnEk",
+      "title": "The Walls at the Acropolis of Proerna",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Dodona": [
+    {
+      "id": "sU8YyTARPuQ",
+      "title": "The Ancient Oracle of Dodona",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Cassope": [
+    {
+      "id": "WhXLtIJmvRg",
+      "title": "The Polygonal City of Cassope",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Oiniades": [
+    {
+      "id": "0Bp4pCUIxFw",
+      "title": "Unique Polygonal Vaulted Arch at Oiniades",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "New Pleuron": [
+    {
+      "id": "4vxuZMiKyik",
+      "title": "Massive Walls and Unusual Constructions at New Pleuron",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Methana Acropolis (Palaiokastro)": [
+    {
+      "id": "0YucYn8-6F8",
+      "title": "The Acropolis of Methana",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Kazarma Acropolis": [
+    {
+      "id": "p-fGEVNiMbk",
+      "title": "Little Known Polygonal Walls at Kazarma",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Agios Adrianos Fort": [
+    {
+      "id": "2Dust-UkG9M",
+      "title": "Beautiful Polygonal Walls at Agios Adrianos",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Asine": [
+    {
+      "id": "82mjHuq-A_U",
+      "title": "The Seaside Polygonal Walls of Asine",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Midea": [
+    {
+      "id": "q8MVH0-EosY",
+      "title": "The Cyclopean Walls of Midea",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Heraion of Argos": [
+    {
+      "id": "mBfZCWeqvyE",
+      "title": "The Heraion Sanctuary Near Argos",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Acropolis Oga (Methana)": [
+    {
+      "id": "d9sLt8szPGU",
+      "title": "The Mysterious Ruins of Ogas",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Santu Antine": [
+    {
+      "id": "fPXkyRFkvew",
+      "title": "Nuraghe Santu Antine",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Giants' Grave S'Ena e Thomes": [
+    {
+      "id": "7ucq1eHx58U",
+      "title": "Giant's Grave S'Ena e Thomes",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Sacred Well of Sa Testa": [
+    {
+      "id": "4XylNHgkWNg",
+      "title": "Holy Well Sa Testa",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Su Mulinu": [
+    {
+      "id": "dV4rrVRh3s0",
+      "title": "Nuraghe Su Mulinu",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Hypogeum of Sas Puntas": [
+    {
+      "id": "DQUKBXqSNqQ",
+      "title": "Hypogeic Structure Sas Puntas",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Santa Barbara (Bauladu)": [
+    {
+      "id": "KL_iGB5TvCo",
+      "title": "Nuraghe Santa Barbara Bauladu",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Iloi Complex (Sedilo)": [
+    {
+      "id": "op6kl9oSIFE",
+      "title": "Nuraghe Iloi",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "eblUVqvytvc",
+      "title": "Giants' Graves of Iloi",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "SRsHL77f0cY",
+      "title": "Domus de Janas Iloi",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Protonuraghe Bruncu Madugui": [
+    {
+      "id": "r8uvqh0FlZg",
+      "title": "Protonuraghe Bruncu Madugui",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Serbissi": [
+    {
+      "id": "BB2aD_Iy25s",
+      "title": "Nuraghe Serbissi",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Piscu": [
+    {
+      "id": "fUKJ4B6fu2M",
+      "title": "Nuraghe Piscu",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Corbos": [
+    {
+      "id": "J2VMdsME5Tw",
+      "title": "Nuraghe Corbos",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Piricu": [
+    {
+      "id": "wDngCen-mDg",
+      "title": "Nuraghe Piricu",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Giants' Grave of Imbertighe": [
+    {
+      "id": "sxjQaWCPwFs",
+      "title": "Giant's Grave of Imbertighe",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Giants' Grave Mura Cuada": [
+    {
+      "id": "8a8ScKzwvjk",
+      "title": "Giant's Grave Mura Cuada",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Domus de Janas of Corongiu (Pimentel)": [
+    {
+      "id": "KHnZUUOYGdM",
+      "title": "Domus de Janas Pimentel",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Giants' Grave Su Mont'e s'Abe": [
+    {
+      "id": "Td0WzA0B084",
+      "title": "Giant's Grave Su Monte 'e S'Abe",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Sacred Well Is Pirois": [
+    {
+      "id": "-lfnWb9nmik",
+      "title": "Holy Well Is Pirois",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Messapian Walls of Castro": [
+    {
+      "id": "6hx-B9RLTeE",
+      "title": "The Messapic Walls of Castro · Puglia",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Via Cava di San Sebastiano": [
+    {
+      "id": "TvZERmkhybU",
+      "title": "Via Cava (Hollow Way) of S. Sebastiano",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Bisenzio (Visentium)": [
+    {
+      "id": "--X_JHRRXZY",
+      "title": "The Protostoric Site of Mount Bisenzio",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Etruscan Necropolis of Puntone": [
+    {
+      "id": "Hl3aDTQu1xY",
+      "title": "Etruscan Necropolis of Puntone",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Juvanum": [
+    {
+      "id": "DEmecP35nhY",
+      "title": "The Archaeological Area of Juvanum · Abruzzo",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Monte Pallano": [
+    {
+      "id": "BzccSfaChPI",
+      "title": "The Megalithic Wall of Monte Pallano",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
     }
   ]
 }

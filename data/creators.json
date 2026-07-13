@@ -454,5 +454,12 @@
     "subs": "Camille Sauve · Andean precision-stonework deep dives · author, Sorcerers of Stone",
     "color": "#6B7FB3",
     "tier": 3
+  },
+  "stoneriddles": {
+    "name": "Stone Riddles",
+    "handle": "@StoneRiddles",
+    "subs": "Mediterranean polygonal-masonry field surveys · Greece, Sardinia, Italy documentaries",
+    "color": "#5A9E94",
+    "tier": 3
   }
 }

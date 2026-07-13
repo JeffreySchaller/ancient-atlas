@@ -2971,12 +2971,17 @@ const SITES = [
   },
   {
     "n": "Mycenae",
-    "lat": 37.7306,
-    "lng": 22.7569,
+    "lat": 37.7308,
+    "lng": 22.7561,
     "cat": "city",
     "region": "Europe",
     "tier": 1,
-    "desc": "Bronze Age citadel and center of Mycenaean civilization. Features the Lion Gate, Treasury of Atreus (a massive tholos tomb), and Schliemann's 'Mask of Agamemnon.'"
+    "desc": "Late Bronze Age citadel in the Argolid, Peloponnese, Greece. Capital of the Mycenaean civilization (c. 1600-1100 BCE) that inspired Homer's Iliad. The cyclopean walls are built of massive limestone blocks weighing many tonnes, fitted without mortar in a style the ancient Greeks themselves believed had been built by giants (Cyclopes). The Lion Gate, with its 20-tonne lintel and triangular relief of two lions flanking a column, is one of the earliest examples of monumental sculpture in Europe. The Cyclopean masonry style is paralleled at Tiryns, Argos, and the polygonal walls of Cusco half a world away.",
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "polygonal"
+    ]
   },
   {
     "n": "Delphi",
@@ -4712,11 +4717,16 @@ const SITES = [
   {
     "n": "Pnyx",
     "lat": 37.9714,
-    "lng": 23.7197,
-    "cat": "megalithic",
+    "lng": 23.7211,
+    "cat": "city",
     "region": "Europe",
-    "tier": 3,
-    "desc": "Hill in Athens that served as the meeting place of the Athenian democratic assembly from the 6th century BCE. The bema (speaker's platform) is cut from living bedrock and surrounded by a curving polygonal retaining wall. The literal birthplace of public political speech."
+    "tier": 2,
+    "desc": "Open-air assembly ground in Athens where the citizens of the ancient democracy met to vote on civic matters from the 6th century BCE onward. Features a monumental rock-cut bema (speaker's platform), massive cyclopean retaining walls, and a carved auditorium oriented to seat several thousand citizens. The architectural ambition exceeds what the conventional Cleisthenes-era democracy is generally credited with.",
+    "signal": "convergent",
+    "criteria": [
+      "scale",
+      "geometry"
+    ]
   },
   {
     "n": "Panoias Sanctuary",
@@ -7703,20 +7713,6 @@ const SITES = [
     "desc": "Possible megalithic pyramids and dolmen-like structures documented on multiple Azores islands (São Miguel, Terceira, Pico) by independent archaeologist Antonieta Costa and others. Mainstream archaeology classifies the surface features as natural volcanic formations or post-medieval shepherd cairns. Independent fieldwork (Archaic Lens, Costa) documents systematic geometric arrangements, possible megalithic tombs, and rock-cut features that predate Portuguese settlement in the 15th century. The Atlantis hypothesis places the Azores as a possible peak of a submerged Atlantic ridge. The dating remains contested."
   },
   {
-    "n": "Mycenae (Lion Gate)",
-    "lat": 37.7308,
-    "lng": 22.7561,
-    "cat": "city",
-    "region": "Europe",
-    "tier": 1,
-    "signal": "convergent",
-    "criteria": [
-      "scale",
-      "polygonal"
-    ],
-    "desc": "Late Bronze Age citadel in the Argolid, Peloponnese, Greece. Capital of the Mycenaean civilization (c. 1600-1100 BCE) that inspired Homer's Iliad. The cyclopean walls are built of massive limestone blocks weighing many tonnes, fitted without mortar in a style the ancient Greeks themselves believed had been built by giants (Cyclopes). The Lion Gate, with its 20-tonne lintel and triangular relief of two lions flanking a column, is one of the earliest examples of monumental sculpture in Europe. The Cyclopean masonry style is paralleled at Tiryns, Argos, and the polygonal walls of Cusco half a world away."
-  },
-  {
     "n": "Treasury of Atreus (Tomb of Agamemnon)",
     "lat": 37.7256,
     "lng": 22.7544,
@@ -7745,20 +7741,6 @@ const SITES = [
       "stratigraphy"
     ],
     "desc": "Small pyramidal structure in the Argolid, Greece, built of polygonal-fitted limestone blocks. Originally proposed by Greek researchers (Liritzis, Vassiliou) to date to c. 2700 BCE based on thermoluminescence and optically stimulated luminescence dating of the limestone surfaces. If correct, the Hellinikon pyramid is older than the Great Pyramid of Giza and may be the oldest stone monument in Europe. Mainstream archaeology disputes the dating and assigns the structure to the 4th century BCE Classical period."
-  },
-  {
-    "n": "Pnyx Hill (Athens)",
-    "lat": 37.9714,
-    "lng": 23.7211,
-    "cat": "city",
-    "region": "Europe",
-    "tier": 2,
-    "signal": "convergent",
-    "criteria": [
-      "scale",
-      "geometry"
-    ],
-    "desc": "Open-air assembly ground in Athens where the citizens of the ancient democracy met to vote on civic matters from the 6th century BCE onward. Features a monumental rock-cut bema (speaker's platform), massive cyclopean retaining walls, and a carved auditorium oriented to seat several thousand citizens. The architectural ambition exceeds what the conventional Cleisthenes-era democracy is generally credited with."
   },
   {
     "n": "Tula (Tollan)",
@@ -8762,6 +8744,462 @@ const SITES = [
       "machining"
     ],
     "desc": "Cluster of large carved limestone outcrops northeast of Sacsayhuamán — mapped as Zona X / Lanlakuyoc and including the Cheqtaqaqa ceremonial sector — cut with steps, seats and niches and honeycombed with roughly 15 caves and tunnels (chincanas), several showing clear tool enhancement. Conventional archaeology reads an Inca quarry-and-shrine area with likely earlier Killke ritual use; the unusually smooth, near-polished cut surfaces — popularized as 'Zone X' by researcher Jesus Gamarra — remain the open question. The Cheqtaqaqa sector was damaged by graffiti vandalism in March 2026."
+  },
+  {
+    "n": "Hyrtakina",
+    "lat": 35.2797,
+    "lng": 23.7515,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Remote Dorian city on Kastri hill in southwest Crete, defended by polygonal masonry walls roughly half a mile long forming two 'cyclopic' circuits, with gate passages protected by projecting flanking walls. A temple of Pan stood on the acropolis; the east and south sides rely on sheer terrain."
+  },
+  {
+    "n": "Polyrrhenia",
+    "lat": 35.458,
+    "lng": 23.6556,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Amphitheatre-like acropolis city above Kissamos in northwest Crete, its fortification walls still standing 3-5.5 m high in a mix of Hellenistic coursed work and later rebuilds over older masonry. Rock-cut chambers and cisterns honeycomb the hill, with a temple of Dictynna and a Hadrianic aqueduct."
+  },
+  {
+    "n": "Falasarna",
+    "lat": 35.5103,
+    "lng": 23.5675,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "The best-preserved ancient closed war harbour in Crete: an artificial basin ringed by cut-stone quays with mooring bollards still bearing rope marks, linked to the sea by chain-closable channels and guarded by dressed-stone towers. Tectonic uplift of ~6.5 m — most scholars blame the great AD 365 earthquake — left the entire harbour stranded 100 m inland, a stone throne possibly of Astarte beside it."
+  },
+  {
+    "n": "Aptera",
+    "lat": 35.4626,
+    "lng": 24.1415,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Large city-state on a plateau commanding Souda Bay, attested as A-pa-ta-wa in Linear B and enclosed by a fortification circuit of which about 4 km survives in fine polygonal and coursed Hellenistic masonry. Inside are Doric temples, a theatre, huge three-vaulted Roman cisterns and baths; the city was famed for its mercenary archers."
+  },
+  {
+    "n": "Lato",
+    "lat": 35.1778,
+    "lng": 25.6536,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "One of Crete's best-preserved Classical stone cities, saddled between twin acropolis peaks above Mirabello Bay. Its stepped agora, prytaneion, temple and terraced houses are built of large roughly dressed limestone blocks in massive polygonal-to-trapezoidal drystone style on cyclopean-looking terrace walls; the settlement is thought to predate the Dorian arrival."
+  },
+  {
+    "n": "Stylos Tholos Tomb",
+    "lat": 35.4495,
+    "lng": 24.1272,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Monumental corbel-vaulted tholos tomb of a Late Minoan III ruler on Azoires hill south of Aptera, approached by an exceptionally long stone-built dromos of 20.8 m with a Mycenaean-style relieving triangle above the entrance. Hellenistic cups found in the triangle show ceremonies continued at the looted tomb a millennium after construction."
+  },
+  {
+    "n": "Kamilari Tholos Tomb",
+    "lat": 35.0454,
+    "lng": 24.7869,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "The best-preserved Mesara-type circular tholos tomb, its drystone wall of large roughly shaped stones still standing about 2 m high around a chamber 7.6 m across, with five annex chambers and an offering area that yielded some 500 inverted vessels. Three famous clay models — circle dancers, offering bearers, a banquet with horns of consecration — came from the tomb."
+  },
+  {
+    "n": "Eleutherai Fortress",
+    "lat": 38.1794,
+    "lng": 23.3758,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "One of the best-preserved fortresses of ancient Greece, guarding the Kaza pass between Attica and Boeotia: an 860 m circuit of superb coursed trapezoidal ashlar averaging 2.6 m thick, with six towers still standing 4-6 m high along the north side. Excavation identified an earlier polygonal-masonry phase beneath the Classical walls, and whether Athens or Boeotia built the fort is still argued."
+  },
+  {
+    "n": "Siphai (Tipha)",
+    "lat": 38.19,
+    "lng": 23.0529,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Fortified harbour town of the Boeotian coast — mythical home of Tiphys, pilot of the Argo — whose late-4th-century BC ashlar circuit follows a rocky spine down into the Corinthian Gulf, leaving wall footings and a monumental building partly submerged. Two gates flanked by artillery towers survive, and traces of a protective sea mole lie in the anchorage; the underwater works have never been investigated."
+  },
+  {
+    "n": "Panopeus",
+    "lat": 38.495,
+    "lng": 22.795,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Acropolis above Agios Vlasios celebrated since the 19th century as a textbook example of fine polygonal masonry, with curtains standing 5-6 m high and one tower reaching 9 m. Pausanias noted the town had no agora or theatre — its fame rested on the walls and the clay 'of which Prometheus moulded men.' The polygonal work looks archaic, yet the standing circuit is conventionally dated after the 346 BCE destruction, leaving the relationship between older polygonal sections and the rebuild an open question.",
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "stratigraphy"
+    ]
+  },
+  {
+    "n": "Orchomenos (Boeotia)",
+    "lat": 38.4931,
+    "lng": 22.9747,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Minyan and Mycenaean centre that rivalled Thebes, anchored by the Treasury of Minyas — a monumental tholos tomb rivalling the Treasury of Atreus, with a ~6 m monolithic inner lintel and a side chamber whose ceiling slab is carved with spirals and floral relief. Above rise 4th-century BC fortification walls on Mt. Akontion; Mycenaean Orchomenos also engineered the draining of Lake Copais, the largest lake in Greece."
+  },
+  {
+    "n": "Lilaia",
+    "lat": 38.626,
+    "lng": 22.506,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Towered acropolis above the springs of the Cephissus river in Phocis, its 4th-century BC circuit built in trapezoidal masonry with rectangular towers still standing to substantial height, commanding the entire upper valley. Traces of earlier fortification survive at the summit; Pausanias saw temples of Apollo and Artemis with Pentelic-marble statues of Athenian workmanship."
+  },
+  {
+    "n": "Proerna",
+    "lat": 39.2435,
+    "lng": 22.2731,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Fortified acropolis at Neo Monastiri in Achaean Phthiotis, its Hellenistic circuit built as two faces of firmly jointed trapezoidal grey limestone with headers between sets of stretchers, the south flank surviving eight courses (~4.2 m) high. Open drains through the outer face manage rainwater — systematic Hellenistic military engineering; the sanctuary of Demeter Proernia lies below."
+  },
+  {
+    "n": "Dodona",
+    "lat": 39.5464,
+    "lng": 20.7878,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Reputedly the oldest Hellenic oracle, centred on the sacred oak of Zeus below Mt. Tomaros, with cult activity from the Late Bronze Age and over 4,200 inscribed oracular lead tablets recovered. The great Hellenistic theatre built under Pyrrhus (~17,000 seats) is among the largest in Greece; a fortified acropolis of coursed trapezoidal-polygonal limestone crowns the sanctuary. How the divination actually worked — rustling oak leaves, resonating bronze cauldrons, or doves and priestesses — is still debated."
+  },
+  {
+    "n": "Cassope",
+    "lat": 39.1451,
+    "lng": 20.6733,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A complete Hippodamian grid city on a high terrace under the Zalongo cliffs overlooking the Ambracian Gulf, founded in the mid-4th century BC as capital of the Kassopaians. Its fortifications and terrace works are laid in polygonal and trapezoidal grey limestone; the theatre, odeion, prytaneion and a 180-room hostel survive. Abandoned in 31 BC when Rome moved the population to Nikopolis."
+  },
+  {
+    "n": "Oiniades",
+    "lat": 38.4118,
+    "lng": 21.1948,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Marsh-girt hill city on the lower Acheloos with a 5.5 km circuit regarded as one of the finest displays of polygonal masonry in Greece — tightly jointed curvilinear limestone following the crag line, its gates roofed with corbelled and true voussoir arches, among the earliest Greek arch construction. The naval installation preserves rock-cut shipsheds with colonnaded slipways rising from the silted ancient harbour."
+  },
+  {
+    "n": "New Pleuron",
+    "lat": 38.4144,
+    "lng": 21.4097,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Superbly preserved Hellenistic city on Mt. Arakynthos above Missolonghi, founded c. 230 BCE after Macedon destroyed Old Pleuron: a 2.4 km rectangular circuit with 31 towers and 7 gates in large drafted limestone blocks, standing in places to full curtain height. Inside are a theatre built against the city wall, a 62 m stoa, and a monumental five-basin communal cistern."
+  },
+  {
+    "n": "Methana Acropolis (Palaiokastro)",
+    "lat": 37.5867,
+    "lng": 23.3494,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Small fortified acropolis on a coastal lava dome of the volcanic Methana peninsula, its walls built of local andesite and dacite in rough megalithic style, first raised in Mycenaean times and rebuilt into the Byzantine era. The ancient town of Methana spreads around its foot, with the sanctuaries of Isis and Hermes recorded by Pausanias nearby."
+  },
+  {
+    "n": "Kazarma Acropolis",
+    "lat": 37.5969,
+    "lng": 22.9427,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Steep fortress hill on the ancient Argos-Epidaurus road, its circuit walls 2.5 m thick and up to 5.2 m high in huge tightly fitted polygonal/cyclopean blocks with four round towers. Directly below runs the Mycenaean highway with the Arkadiko bridge — the best-preserved Cyclopean corbel-arch bridge in the world, still in use after ~3,300 years. How much walling is genuinely Mycenaean versus 4th-century BC Argive polygonal rebuild is still discussed, and the site's ancient name is unresolved.",
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "stratigraphy"
+    ]
+  },
+  {
+    "n": "Agios Adrianos Fort",
+    "lat": 37.5999,
+    "lng": 22.8453,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Compact Hellenistic fort on the Palaiokastro hill east of Agios Adrianos village in the Argolid, built of grey limestone in fine polygonal masonry: a 50 × 26 m enclosure with a square keep surviving three storeys high, entered through a gate with a 2.1 m monolithic lintel. It guarded the Argos-Epidaurus route and remains essentially unexcavated since trial digs in 1890."
+  },
+  {
+    "n": "Asine",
+    "lat": 37.528,
+    "lng": 22.8745,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Triangular rocky headland rising straight from the sea beside Tolo, ringed by fortification walls of cyclopean character heavily rebuilt around 300 BCE — massive roughly polygonal limestone with a large landward bastion. Swedish excavations from 1922 revealed Early Helladic houses, Mycenaean remains and a Geometric town; attributing individual wall stretches between the Bronze Age circuit and the Hellenistic refortification remains difficult."
+  },
+  {
+    "n": "Midea",
+    "lat": 37.6499,
+    "lng": 22.8417,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "The third great cyclopean citadel of the Argolid after Mycenae and Tiryns, crowning a 268 m conical hill: its circuit of enormous unworked and hammer-dressed conglomerate boulders runs ~450 m with walls 5-7 m thick and two gates. Terraces inside carried megaron-type buildings that yielded Linear B; the rich Dendra cemetery (source of the Dendra panoply) was its necropolis. Whether earthquake or attack destroyed it c. 1200 BCE is debated."
+  },
+  {
+    "n": "Heraion of Argos",
+    "lat": 37.6919,
+    "lng": 22.7747,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Grand terraced sanctuary of Hera stepping down a spur of Mt. Euboea above the Argive plain, its uppermost Old Temple terrace retained by a monumental wall of huge unmortared conglomerate blocks in 'cyclopean' style — larger even than true Mycenaean work. Long mistaken for genuine Bronze Age construction, the terrace is argued to be an Iron Age/Archaic imitation consciously evoking the Mycenaean past — a documented open question of archaizing masonry.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "stratigraphy"
+    ]
+  },
+  {
+    "n": "Acropolis Oga (Methana)",
+    "lat": 37.6172,
+    "lng": 23.4118,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Flat-topped volcanic height on the northern Methana peninsula preserving stretches of ancient fortification in large roughly fitted volcanic stone, a tower stump and a cistern. Mentioned by no ancient author and never excavated, it is dated only by the broadly Classical-Hellenistic look of the walls; an inscription from the site names a sanctuary of Poseidon Phytalios. Virtually everything about it — date, name, function — remains open.",
+    "signal": "open",
+    "criteria": [
+      "stratigraphy"
+    ]
+  },
+  {
+    "n": "Nuraghe Santu Antine",
+    "lat": 40.4865,
+    "lng": 8.7698,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "The finest of Sardinia's nuraghi: a basalt keep 15.5 m across, preserved to 17.5 m (originally ~23 m), with three superimposed corbel-vaulted tholos chambers linked by a helical stone staircase, enclosed in a triangular bastion with corner towers and loopholed corridors. Whether the great nuraghi were fortresses, chiefly residences or ceremonial centres is still debated, and claimed solstitial alignments remain contested — the hardness and regularity of the basalt coursework stands out either way.",
+    "signal": "open",
+    "criteria": [
+      "precision",
+      "hardness"
+    ]
+  },
+  {
+    "n": "Giants' Grave S'Ena e Thomes",
+    "lat": 40.379,
+    "lng": 9.5154,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "One of the best-preserved giants' tombs in Sardinia, built entirely of local granite: a semicircular exedra of knife-edge orthostats fronts an 11 m dolmenic corridor, centred on an arched monolithic stele ~4 m tall and around 7 tons, its borders smoothed and a small carved portal at its base symbolizing passage to the afterlife. Its unusual southern orientation and inconsistently reported dating are discussed in the literature.",
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "hardness"
+    ]
+  },
+  {
+    "n": "Sacred Well of Sa Testa",
+    "lat": 40.9346,
+    "lng": 9.5459,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Nuragic water sanctuary near Olbia built of worked schist and granite: a paved circular courtyard leads through a trapezoidal vestibule down 17 corbel-roofed steps to a spring chamber under a tholos vault up to 6.8 m high. Finds include a juniper-wood female statuette in Greek-Oriental style; proposed lunar alignments are unverifiable since the tholos top is incomplete."
+  },
+  {
+    "n": "Nuraghe Su Mulinu",
+    "lat": 39.6344,
+    "lng": 8.9942,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Marlstone complex combining an early corridor protonuraghe with later tholos towers and a four-tower antemural. One tower's ritual room preserves the only known Nuragic altar of the Early Iron Age — a sandstone model of a nuraghe fortress with lustral basin and drainage, once adorned with bronze swords — central evidence in the debate over the 'sacralization' of nuragic architecture."
+  },
+  {
+    "n": "Hypogeum of Sas Puntas",
+    "lat": 40.6831,
+    "lng": 8.5612,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Rock-cut hypogeum at Tissi whose sculpted facade translates a giants'-tomb front entirely into living limestone: a 9.5 m exedra, a 3.25 m arched stele with lunette, benches, baetyl holes and cup marks, leading to an oval burial chamber. Scholars debate whether such 'tombe a prospetto' imitate megalithic giants' tombs or continue the older domus de janas tradition; Roman-era wine presses were later cut into it."
+  },
+  {
+    "n": "Nuraghe Santa Barbara (Bauladu)",
+    "lat": 40.0078,
+    "lng": 8.6759,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Quadrilobate basalt nuraghe with an intact ground-floor tholos chamber and three collapsed lateral towers, surrounded by an extensive village of circular and courtyard huts including a large 'meeting house.' UCLA excavations (1986-89) found a foundry area with bronze figurines and mould fragments attesting on-site metallurgy."
+  },
+  {
+    "n": "Iloi Complex (Sedilo)",
+    "lat": 40.16,
+    "lng": 8.8984,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Basalt plateau complex above Lake Omodeo: a trilobate nuraghe with a ~10 m central tower and an intact tholos vault, a Bronze-to-Iron Age village, two giants' tombs in isodomic masonry, and the adjacent Ispiluncas necropolis of at least 33 rock-cut domus de janas with carved imitations of roof beams and traces of red ochre — four millennia of funerary and settlement architecture in one place."
+  },
+  {
+    "n": "Protonuraghe Bruncu Madugui",
+    "lat": 39.7309,
+    "lng": 8.9978,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Corridor-type protonuraghe of cyclopean basalt on the Giara di Gesturi, an ellipsoidal mass ~28 × 16.5 m long regarded as a prototype of the corridor nuraghi, with entrance passage, corbelled stairway and pseudo-vaulted rooms instead of a single tholos. Its chronology is contested — Lilliu's Early Bronze dating versus recent Middle Bronze arguments — a debate central to whether protonuraghi predate the classic tholos towers."
+  },
+  {
+    "n": "Nuraghe Serbissi",
+    "lat": 39.8453,
+    "lng": 9.4611,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Limestone complex nuraghe perched at ~950 m on the dolomitic Taccu di Osini: a central tower with well-preserved tholos, three secondary towers around a small courtyard, and a village of eight huts. A natural karst cave about 206 m long runs directly beneath the complex, used by the inhabitants, probably for storage."
+  },
+  {
+    "n": "Nuraghe Piscu",
+    "lat": 39.5897,
+    "lng": 9.1307,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Complex nuraghe dominating the Trexenta plain: a central tholos tower ~11 m across and 9 m high in regular courses of worked marl-limestone, enclosed by a lobed bastion and an outer antemural with village huts and a rainwater cistern. Whether the bastion is trilobate or quadrilobate is genuinely unclear — an 'unusual floor plan' noted in the literature."
+  },
+  {
+    "n": "Nuraghe Corbos",
+    "lat": 40.2567,
+    "lng": 8.9435,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Well-preserved single-tower basalt nuraghe near Silanus, ~11 m across and nearly 12 m tall with a markedly truncated-conical profile — polygonal lower courses, sub-square upper ones. The 9 m tholos chamber has three cross-set niches and a helicoidal stair to an upper cell; regular square holes in the outer masonry are of debated function, possibly beam housings."
+  },
+  {
+    "n": "Nuraghe Piricu",
+    "lat": 40.108,
+    "lng": 8.6804,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Complex basalt nuraghe in the Montiferru district of Santu Lussurgiu: the central tower preserves about twenty courses for ~12 m of height, its ground-floor tholos rising 8 m to an ogival closure with three niches, flanked by remains of four peripheral towers."
+  },
+  {
+    "n": "Giants' Grave of Imbertighe",
+    "lat": 40.2081,
+    "lng": 8.8067,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Giants' tomb outside Borore famed for its intact monolithic arched stele, 3.65 m tall with a relief cornice and a small portal at its base — Pinza called it the facade of the most beautiful giants' tomb known in Sardinia. The exedra wings survive in unusually regular basalt ashlar; the 9 m funerary corridor is known only from 19th-century records."
+  },
+  {
+    "n": "Giants' Grave Mura Cuada",
+    "lat": 40.0396,
+    "lng": 8.7175,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Isolated coursed-masonry giants' tomb on the Abbasanta basalt plateau, of the stele-less type: a concave exedra of well-dressed basalt courses fronts an architraved entrance and a funerary chamber 4.5 m long with orthostatic walls under corbelled courses. It stands flush against the active Cagliari-Macomer railway line."
+  },
+  {
+    "n": "Domus de Janas of Corongiu (Pimentel)",
+    "lat": 39.4978,
+    "lng": 9.0591,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Rock-cut tomb group in sandstone near Pimentel, its main chamber entered by a vertical shaft and carrying incised and red-painted symbolic decoration — a double spiral, a 'boat' motif with spiral ends, and zigzag bands — among the best-known painted domus decoration in the Trexenta. Late Neolithic Ozieri work, reused for millennia."
+  },
+  {
+    "n": "Giants' Grave Su Mont'e s'Abe",
+    "lat": 40.8757,
+    "lng": 9.484,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "One of Sardinia's largest giants' tombs, in granite near Olbia: a mound 28 m long enclosing a 13 m funerary corridor whose orthostatic walls — an Early Bronze Age gallery grave — were crowned with coursed blocks and a 21.5 m exedra when the monument was rebuilt as a giants' tomb. Its two-phase biography is the standard case study for the debated evolution from allée couverte to giants' tomb."
+  },
+  {
+    "n": "Sacred Well Is Pirois",
+    "lat": 39.5648,
+    "lng": 9.5928,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Sacred well in the Rio Quirra valley built of green-blue schist in two masonry styles — polygonal blocks outside, thin slabs within: eight steps descend under an inverted-staircase ceiling to a still-flowing spring shaft capped by an intact corbelled tholos with apical oculus. A sealed upper chamber accessible only through the oculus — ritual room, mini-nuraghe, or structural device — is a documented open question."
+  },
+  {
+    "n": "Messapian Walls of Castro",
+    "lat": 40.007,
+    "lng": 18.4257,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Stretches of the massive mid-4th-century BC Messapian circuit in large dry-laid limestone blocks survive beneath Castro's historic centre, alongside an intramural sanctuary of Athena with a Hellenistic Doric temple and a colossal limestone cult statue restored in 2023. Whether this is Virgil's Castrum Minervae — the landing place of Aeneas — is an ongoing scholarly debate."
+  },
+  {
+    "n": "Via Cava di San Sebastiano",
+    "lat": 42.6551,
+    "lng": 11.6375,
+    "cat": "rock-cut",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "One of the deepest of the Etruscan vie cave of the Sorano-Pitigliano tuff plateau: a narrow sunken road hand-cut into volcanic tuff with sheer walls rising 20-25 m above the roadbed, running beside a rock-cut necropolis. The function of the hollow ways — transport, drainage, defense, or processional — remains genuinely debated."
+  },
+  {
+    "n": "Bisenzio (Visentium)",
+    "lat": 42.5742,
+    "lng": 11.8749,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Protohistoric and Etruscan centre on a promontory above Lake Bolsena whose Iron Age settlement covered up to 100 hectares, famed for Villanovan bronze work. The most visible remain is the cliff-cut 'colombario' with some 900 niches over the lake; the site's abrupt decline after 500 BCE is the focus of the international Bisenzio Project."
+  },
+  {
+    "n": "Etruscan Necropolis of Puntone",
+    "lat": 42.6739,
+    "lng": 11.4907,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Small rural necropolis in oak woodland near Saturnia: tumuli on rectangular bases built entirely of large dry-laid travertine slabs, with dromos corridors leading to chambers roofed by pitched monolithic slabs — heavy slab construction of markedly megalithic character."
+  },
+  {
+    "n": "Juvanum",
+    "lat": 41.9979,
+    "lng": 14.2498,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Samnite sanctuary and Roman municipium on an Abruzzo plateau: two temple podia of dry-laid limestone stand beside a Hellenistic theatre whose cavea is partly carved directly into the rock outcrop, above the paved forum and basilica of the Roman town."
+  },
+  {
+    "n": "Monte Pallano",
+    "lat": 42.0394,
+    "lng": 14.3891,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "On a 1,020 m ridge in Abruzzo, a ~160 m stretch survives of a cyclopean dry-stone circuit originally at least 4 km long enclosing 35 hectares — identified with ancient Pallanum. The wall stands over 5 m high in huge irregular limestone blocks, pierced by gates with massive monolithic architraves. Dating and attribution are genuinely unsettled, with proposals spanning the 6th to 3rd centuries BCE and different Italic groups.",
+    "signal": "open",
+    "criteria": [
+      "scale"
+    ]
   }
 ];
 
@@ -9235,6 +9673,13 @@ const CREATORS = {
     "handle": "@sorcerersofstone",
     "subs": "Camille Sauve · Andean precision-stonework deep dives · author, Sorcerers of Stone",
     "color": "#6B7FB3",
+    "tier": 3
+  },
+  "stoneriddles": {
+    "name": "Stone Riddles",
+    "handle": "@StoneRiddles",
+    "subs": "Mediterranean polygonal-masonry field surveys · Greece, Sardinia, Italy documentaries",
+    "color": "#5A9E94",
     "tier": 3
   }
 };
@@ -10956,13 +11401,38 @@ const VIDEOS = {
       "id": "CenGetNGYms",
       "title": "Phaistos Palace | Minoan Origins in Crete 1900 BC and the Mysterious Disc",
       "cr": "megalithomania"
+    },
+    {
+      "id": "SwDngsk1SBo",
+      "title": "Large Blocks at Phaistos",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
     }
   ],
   "Mycenae": [
     {
+      "id": "fbxcgeCUjKU",
+      "title": "Lions Gate, Mycenae | Archaic Lens",
+      "cr": "archaiclens",
+      "added": "2026-06-08",
+      "published": "2024-05-15"
+    },
+    {
       "id": "wFaSOrc9BsM",
       "title": "Stylos Tholos Tomb | Mycenaean Stone Technology in Ancient Crete",
       "cr": "megalithomania"
+    },
+    {
+      "id": "roVE1FS6B2g",
+      "title": "The Gigantic Treasuries of Mycenae",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "DjsNO-KtSGY",
+      "title": "Huge Polygonal Walls at Mycenae",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
     }
   ],
   "Delphi": [
@@ -10989,6 +11459,12 @@ const VIDEOS = {
       "id": "Syxhe0rbumc",
       "title": "The Mysterious Polygonal Wall of Delphi, Greece",
       "cr": "megalithomania"
+    },
+    {
+      "id": "lX1FndaE63o",
+      "title": "Polygonal Walls Everywhere!! In Delphi",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
     }
   ],
   "Mnajdra": [
@@ -12477,6 +12953,18 @@ const VIDEOS = {
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-04-15"
+    },
+    {
+      "id": "SargCH8f2aY",
+      "title": "The Polygonal Walls of Cosa — Tuscany",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "sIFCCZ6Obwo",
+      "title": "Polygonal Site of Cosa in Tuscany from Drone",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
     }
   ],
   "Rusellae": [
@@ -14560,15 +15048,6 @@ const VIDEOS = {
       "published": "2022-09-01"
     }
   ],
-  "Mycenae (Lion Gate)": [
-    {
-      "id": "fbxcgeCUjKU",
-      "title": "Lions Gate, Mycenae | Archaic Lens",
-      "cr": "archaiclens",
-      "added": "2026-06-08",
-      "published": "2024-05-15"
-    }
-  ],
   "Pyramid of Hellinikon": [
     {
       "id": "3tCUnligXxE",
@@ -14576,6 +15055,12 @@ const VIDEOS = {
       "cr": "archaiclens",
       "added": "2026-06-08",
       "published": "2024-05-20"
+    },
+    {
+      "id": "z6yUigPi1nw",
+      "title": "The Polygonal Pyramid of Hellinikon",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
     }
   ],
   "Treasury of Atreus (Tomb of Agamemnon)": [
@@ -14585,15 +15070,6 @@ const VIDEOS = {
       "cr": "archaiclens",
       "added": "2026-06-08",
       "published": "2024-05-30"
-    }
-  ],
-  "Pnyx Hill (Athens)": [
-    {
-      "id": "0VogHCZakYQ",
-      "title": "Pnyx Hill, Athens, Greece | Archaic Lens",
-      "cr": "archaiclens",
-      "added": "2026-06-08",
-      "published": "2024-06-01"
     }
   ],
   "Tula (Tollan)": [
@@ -15536,6 +16012,473 @@ const VIDEOS = {
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
     }
+  ],
+  "Pnyx": [
+    {
+      "id": "0VogHCZakYQ",
+      "title": "Pnyx Hill, Athens, Greece | Archaic Lens",
+      "cr": "archaiclens",
+      "added": "2026-06-08",
+      "published": "2024-06-01"
+    },
+    {
+      "id": "anKyo0ISMtw",
+      "title": "The Cyclopean Stone Blocks of Pnyx",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nekromanteion of Acheron": [
+    {
+      "id": "betc2ZPMeQY",
+      "title": "The Enigmatic Necromanteion",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Arcadian Gate (Messene)": [
+    {
+      "id": "SrBzJlzIjdw",
+      "title": "Mixture of Architectural Styles at the City of Messene",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "EWTuv1WUk6M",
+      "title": "Colossal Walls at Messene",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "b7hG-LASJIU",
+      "title": "Was the Messene Wall Really Built in 85 Days??",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Epidaurus": [
+    {
+      "id": "KirEaArhQKE",
+      "title": "Polygonal Masonry, Megalithism and Precision Stone Cuts at Epidaurus",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Tiryns": [
+    {
+      "id": "JN29fgkckrk",
+      "title": "The Treasury of Tiryns",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "SjgkEj_ynKc",
+      "title": "Massive Blocks at Tiryns",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Sardinia Nuraghi (Su Nuraxi)": [
+    {
+      "id": "q0YNkMIt3BY",
+      "title": "Documentary Stone Riddles II — Archaeological Treasures of Sardinia",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Hyrtakina": [
+    {
+      "id": "uCQlsruon8s",
+      "title": "Mysterious Walls at Hyrtakina",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Polyrrhenia": [
+    {
+      "id": "FxSgUJVt7gk",
+      "title": "The Acropolis of Ancient Polyrrhenia",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Falasarna": [
+    {
+      "id": "RT4VQAa1b6U",
+      "title": "The Closed Harbour of Falasarna",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Aptera": [
+    {
+      "id": "_LPW4WiEuLg",
+      "title": "4 km of Polygonal Walls at Aptera!",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Lato": [
+    {
+      "id": "jEbUvHHZWBA",
+      "title": "The Stone City of Lato",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Stylos Tholos Tomb": [
+    {
+      "id": "OwWF4lpCCdA",
+      "title": "The Vaulted Tomb of Stylos",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Kamilari Tholos Tomb": [
+    {
+      "id": "uHNtyaIc51Q",
+      "title": "The Tholos Tomb of Kamilari",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Eleutherai Fortress": [
+    {
+      "id": "VIpMXqxD50Q",
+      "title": "Exquisitely Preserved Walls at Eleutherai",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Siphai (Tipha)": [
+    {
+      "id": "R-OZrCgyRuU",
+      "title": "Walls in the Sea at Siphai",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Panopeus": [
+    {
+      "id": "8MfM9WVc77A",
+      "title": "Polygonal and Megalithic Stones at Panopeus",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Orchomenos (Boeotia)": [
+    {
+      "id": "a91ukD2vy3s",
+      "title": "The Wonders of Orchomenos",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "cVlboPnBbm0",
+      "title": "The Majestic Treasury of Minyas",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Lilaia": [
+    {
+      "id": "dZ7SHYP8Td0",
+      "title": "The Towers of Lilaia",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Proerna": [
+    {
+      "id": "1Eihw8GtnEk",
+      "title": "The Walls at the Acropolis of Proerna",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Dodona": [
+    {
+      "id": "sU8YyTARPuQ",
+      "title": "The Ancient Oracle of Dodona",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Cassope": [
+    {
+      "id": "WhXLtIJmvRg",
+      "title": "The Polygonal City of Cassope",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Oiniades": [
+    {
+      "id": "0Bp4pCUIxFw",
+      "title": "Unique Polygonal Vaulted Arch at Oiniades",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "New Pleuron": [
+    {
+      "id": "4vxuZMiKyik",
+      "title": "Massive Walls and Unusual Constructions at New Pleuron",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Methana Acropolis (Palaiokastro)": [
+    {
+      "id": "0YucYn8-6F8",
+      "title": "The Acropolis of Methana",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Kazarma Acropolis": [
+    {
+      "id": "p-fGEVNiMbk",
+      "title": "Little Known Polygonal Walls at Kazarma",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Agios Adrianos Fort": [
+    {
+      "id": "2Dust-UkG9M",
+      "title": "Beautiful Polygonal Walls at Agios Adrianos",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Asine": [
+    {
+      "id": "82mjHuq-A_U",
+      "title": "The Seaside Polygonal Walls of Asine",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Midea": [
+    {
+      "id": "q8MVH0-EosY",
+      "title": "The Cyclopean Walls of Midea",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Heraion of Argos": [
+    {
+      "id": "mBfZCWeqvyE",
+      "title": "The Heraion Sanctuary Near Argos",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Acropolis Oga (Methana)": [
+    {
+      "id": "d9sLt8szPGU",
+      "title": "The Mysterious Ruins of Ogas",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Santu Antine": [
+    {
+      "id": "fPXkyRFkvew",
+      "title": "Nuraghe Santu Antine",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Giants' Grave S'Ena e Thomes": [
+    {
+      "id": "7ucq1eHx58U",
+      "title": "Giant's Grave S'Ena e Thomes",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Sacred Well of Sa Testa": [
+    {
+      "id": "4XylNHgkWNg",
+      "title": "Holy Well Sa Testa",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Su Mulinu": [
+    {
+      "id": "dV4rrVRh3s0",
+      "title": "Nuraghe Su Mulinu",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Hypogeum of Sas Puntas": [
+    {
+      "id": "DQUKBXqSNqQ",
+      "title": "Hypogeic Structure Sas Puntas",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Santa Barbara (Bauladu)": [
+    {
+      "id": "KL_iGB5TvCo",
+      "title": "Nuraghe Santa Barbara Bauladu",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Iloi Complex (Sedilo)": [
+    {
+      "id": "op6kl9oSIFE",
+      "title": "Nuraghe Iloi",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "eblUVqvytvc",
+      "title": "Giants' Graves of Iloi",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    },
+    {
+      "id": "SRsHL77f0cY",
+      "title": "Domus de Janas Iloi",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Protonuraghe Bruncu Madugui": [
+    {
+      "id": "r8uvqh0FlZg",
+      "title": "Protonuraghe Bruncu Madugui",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Serbissi": [
+    {
+      "id": "BB2aD_Iy25s",
+      "title": "Nuraghe Serbissi",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Piscu": [
+    {
+      "id": "fUKJ4B6fu2M",
+      "title": "Nuraghe Piscu",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Corbos": [
+    {
+      "id": "J2VMdsME5Tw",
+      "title": "Nuraghe Corbos",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Nuraghe Piricu": [
+    {
+      "id": "wDngCen-mDg",
+      "title": "Nuraghe Piricu",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Giants' Grave of Imbertighe": [
+    {
+      "id": "sxjQaWCPwFs",
+      "title": "Giant's Grave of Imbertighe",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Giants' Grave Mura Cuada": [
+    {
+      "id": "8a8ScKzwvjk",
+      "title": "Giant's Grave Mura Cuada",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Domus de Janas of Corongiu (Pimentel)": [
+    {
+      "id": "KHnZUUOYGdM",
+      "title": "Domus de Janas Pimentel",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Giants' Grave Su Mont'e s'Abe": [
+    {
+      "id": "Td0WzA0B084",
+      "title": "Giant's Grave Su Monte 'e S'Abe",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Sacred Well Is Pirois": [
+    {
+      "id": "-lfnWb9nmik",
+      "title": "Holy Well Is Pirois",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Messapian Walls of Castro": [
+    {
+      "id": "6hx-B9RLTeE",
+      "title": "The Messapic Walls of Castro · Puglia",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Via Cava di San Sebastiano": [
+    {
+      "id": "TvZERmkhybU",
+      "title": "Via Cava (Hollow Way) of S. Sebastiano",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Bisenzio (Visentium)": [
+    {
+      "id": "--X_JHRRXZY",
+      "title": "The Protostoric Site of Mount Bisenzio",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Etruscan Necropolis of Puntone": [
+    {
+      "id": "Hl3aDTQu1xY",
+      "title": "Etruscan Necropolis of Puntone",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Juvanum": [
+    {
+      "id": "DEmecP35nhY",
+      "title": "The Archaeological Area of Juvanum · Abruzzo",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
+  ],
+  "Monte Pallano": [
+    {
+      "id": "BzccSfaChPI",
+      "title": "The Megalithic Wall of Monte Pallano",
+      "cr": "stoneriddles",
+      "added": "2026-07-11"
+    }
   ]
 };
 
@@ -15750,7 +16693,53 @@ const SITE_YEARS = {
   "Cusilluchayoc": 1450,
   "Temple of the Moon (Huayna Picchu)": 1450,
   "River Intihuatana": 1450,
-  "Zone X (Cheqtaqaqa)": 1450
+  "Zone X (Cheqtaqaqa)": 1450,
+  "Hyrtakina": -300,
+  "Polyrrhenia": -600,
+  "Falasarna": -500,
+  "Aptera": -700,
+  "Lato": -500,
+  "Stylos Tholos Tomb": -1300,
+  "Kamilari Tholos Tomb": -1900,
+  "Eleutherai Fortress": -370,
+  "Siphai (Tipha)": -350,
+  "Panopeus": -400,
+  "Orchomenos (Boeotia)": -1250,
+  "Lilaia": -350,
+  "Proerna": -350,
+  "Dodona": -800,
+  "Cassope": -360,
+  "Oiniades": -450,
+  "New Pleuron": -230,
+  "Methana Acropolis (Palaiokastro)": -1300,
+  "Kazarma Acropolis": -1300,
+  "Agios Adrianos Fort": -320,
+  "Asine": -1300,
+  "Midea": -1300,
+  "Heraion of Argos": -700,
+  "Nuraghe Santu Antine": -1500,
+  "Giants' Grave S'Ena e Thomes": -1700,
+  "Sacred Well of Sa Testa": -1100,
+  "Nuraghe Su Mulinu": -1500,
+  "Hypogeum of Sas Puntas": -1500,
+  "Nuraghe Santa Barbara (Bauladu)": -1400,
+  "Iloi Complex (Sedilo)": -1400,
+  "Protonuraghe Bruncu Madugui": -1800,
+  "Nuraghe Serbissi": -1600,
+  "Nuraghe Piscu": -1400,
+  "Nuraghe Corbos": -1000,
+  "Nuraghe Piricu": -1400,
+  "Giants' Grave of Imbertighe": -1500,
+  "Giants' Grave Mura Cuada": -1500,
+  "Domus de Janas of Corongiu (Pimentel)": -3200,
+  "Giants' Grave Su Mont'e s'Abe": -1700,
+  "Sacred Well Is Pirois": -1100,
+  "Messapian Walls of Castro": -350,
+  "Via Cava di San Sebastiano": -500,
+  "Bisenzio (Visentium)": -800,
+  "Etruscan Necropolis of Puntone": -600,
+  "Juvanum": -300,
+  "Monte Pallano": -450
 };
 
 function formatYear(y){
@@ -16293,7 +17282,54 @@ const SITE_COUNTRIES = {
   "Cusilluchayoc": "Peru",
   "Temple of the Moon (Huayna Picchu)": "Peru",
   "River Intihuatana": "Peru",
-  "Zone X (Cheqtaqaqa)": "Peru"
+  "Zone X (Cheqtaqaqa)": "Peru",
+  "Hyrtakina": "Greece",
+  "Polyrrhenia": "Greece",
+  "Falasarna": "Greece",
+  "Aptera": "Greece",
+  "Lato": "Greece",
+  "Stylos Tholos Tomb": "Greece",
+  "Kamilari Tholos Tomb": "Greece",
+  "Eleutherai Fortress": "Greece",
+  "Siphai (Tipha)": "Greece",
+  "Panopeus": "Greece",
+  "Orchomenos (Boeotia)": "Greece",
+  "Lilaia": "Greece",
+  "Proerna": "Greece",
+  "Dodona": "Greece",
+  "Cassope": "Greece",
+  "Oiniades": "Greece",
+  "New Pleuron": "Greece",
+  "Methana Acropolis (Palaiokastro)": "Greece",
+  "Kazarma Acropolis": "Greece",
+  "Agios Adrianos Fort": "Greece",
+  "Asine": "Greece",
+  "Midea": "Greece",
+  "Heraion of Argos": "Greece",
+  "Acropolis Oga (Methana)": "Greece",
+  "Nuraghe Santu Antine": "Italy",
+  "Giants' Grave S'Ena e Thomes": "Italy",
+  "Sacred Well of Sa Testa": "Italy",
+  "Nuraghe Su Mulinu": "Italy",
+  "Hypogeum of Sas Puntas": "Italy",
+  "Nuraghe Santa Barbara (Bauladu)": "Italy",
+  "Iloi Complex (Sedilo)": "Italy",
+  "Protonuraghe Bruncu Madugui": "Italy",
+  "Nuraghe Serbissi": "Italy",
+  "Nuraghe Piscu": "Italy",
+  "Nuraghe Corbos": "Italy",
+  "Nuraghe Piricu": "Italy",
+  "Giants' Grave of Imbertighe": "Italy",
+  "Giants' Grave Mura Cuada": "Italy",
+  "Domus de Janas of Corongiu (Pimentel)": "Italy",
+  "Giants' Grave Su Mont'e s'Abe": "Italy",
+  "Sacred Well Is Pirois": "Italy",
+  "Messapian Walls of Castro": "Italy",
+  "Via Cava di San Sebastiano": "Italy",
+  "Bisenzio (Visentium)": "Italy",
+  "Etruscan Necropolis of Puntone": "Italy",
+  "Juvanum": "Italy",
+  "Monte Pallano": "Italy"
 };
 
 const SITE_CULTURES = {
@@ -16432,7 +17468,54 @@ const SITE_CULTURES = {
   "Cusilluchayoc": "Inca",
   "Temple of the Moon (Huayna Picchu)": "Inca",
   "River Intihuatana": "Inca",
-  "Zone X (Cheqtaqaqa)": "Inca (pre-Inca use claimed)"
+  "Zone X (Cheqtaqaqa)": "Inca (pre-Inca use claimed)",
+  "Hyrtakina": "Dorian Cretan",
+  "Polyrrhenia": "Dorian Cretan",
+  "Falasarna": "Greek (Cretan maritime city-state)",
+  "Aptera": "Dorian Cretan (Minoan/Mycenaean antecedents)",
+  "Lato": "Dorian Cretan",
+  "Stylos Tholos Tomb": "Minoan (Late Minoan III)",
+  "Kamilari Tholos Tomb": "Minoan (Mesara tholos tradition)",
+  "Eleutherai Fortress": "Classical Greek (Attic-Boeotian frontier)",
+  "Siphai (Tipha)": "Boeotian Greek",
+  "Panopeus": "Phocian Greek",
+  "Orchomenos (Boeotia)": "Minyan / Mycenaean",
+  "Lilaia": "Phocian Greek",
+  "Proerna": "Thessalian / Achaean Phthiotis Greek",
+  "Dodona": "Epirote Greek",
+  "Cassope": "Epirote Greek (Kassopaians)",
+  "Oiniades": "Acarnanian Greek",
+  "New Pleuron": "Aetolian Greek",
+  "Methana Acropolis (Palaiokastro)": "Mycenaean, then Classical Greek",
+  "Kazarma Acropolis": "Mycenaean / Classical Argive",
+  "Agios Adrianos Fort": "Hellenistic Greek (Argive)",
+  "Asine": "Mycenaean / Hellenistic Greek",
+  "Midea": "Mycenaean",
+  "Heraion of Argos": "Archaic-Classical Greek (Argive)",
+  "Acropolis Oga (Methana)": "Ancient Greek (unattributed)",
+  "Nuraghe Santu Antine": "Nuragic",
+  "Giants' Grave S'Ena e Thomes": "Nuragic (Bonnanaro origins)",
+  "Sacred Well of Sa Testa": "Nuragic",
+  "Nuraghe Su Mulinu": "Nuragic",
+  "Hypogeum of Sas Puntas": "Nuragic (pre-Nuragic rock-cut tradition)",
+  "Nuraghe Santa Barbara (Bauladu)": "Nuragic",
+  "Iloi Complex (Sedilo)": "Nuragic (necropolis pre-Nuragic Ozieri)",
+  "Protonuraghe Bruncu Madugui": "Early Nuragic",
+  "Nuraghe Serbissi": "Nuragic",
+  "Nuraghe Piscu": "Nuragic",
+  "Nuraghe Corbos": "Nuragic",
+  "Nuraghe Piricu": "Nuragic",
+  "Giants' Grave of Imbertighe": "Nuragic",
+  "Giants' Grave Mura Cuada": "Nuragic",
+  "Domus de Janas of Corongiu (Pimentel)": "Pre-Nuragic (Ozieri)",
+  "Giants' Grave Su Mont'e s'Abe": "Nuragic (over Bonnanaro gallery grave)",
+  "Sacred Well Is Pirois": "Nuragic",
+  "Messapian Walls of Castro": "Messapian",
+  "Via Cava di San Sebastiano": "Etruscan",
+  "Bisenzio (Visentium)": "Etruscan (Villanovan origins)",
+  "Etruscan Necropolis of Puntone": "Etruscan",
+  "Juvanum": "Samnite (Carricini), then Roman",
+  "Monte Pallano": "Italic / Samnite (attribution debated)"
 };
 
 // Free-form tags for synonym/concept search (Bronze Age, sacred geometry, etc.)
