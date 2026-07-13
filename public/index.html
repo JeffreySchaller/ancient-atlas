@@ -1562,6 +1562,7 @@ body.present #broadcast-controls{
 
 @media (max-width:600px){.library-drawer{width:100vw;border-left:none}.library-drawer-header{padding:14px 16px}.library-drawer-footer{padding:10px 16px}}
 
+.video-curated-badge{background:linear-gradient(135deg,#7FC4BA,#5A9E94);box-shadow:0 1px 5px rgba(90,158,148,.4)}
 .video-new-badge{display:inline-block;font-family:var(--font-mono);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#0D0D12;background:linear-gradient(135deg,#E8B960,#C9A84C);padding:3px 7px;border-radius:5px;line-height:1;box-shadow:0 1px 5px rgba(232,185,96,.4);vertical-align:middle;margin-right:7px;flex-shrink:0}
 .library-ref-card{display:flex;align-items:center;gap:10px;margin:18px 0 6px;padding:12px 14px;border:1px solid rgba(201,168,76,.28);border-radius:8px;background:rgba(201,168,76,.05);text-decoration:none;color:var(--ivory);transition:all .15s}.library-ref-card:hover{border-color:rgba(201,168,76,.55);background:rgba(201,168,76,.10)}.library-ref-card .lr-icon{flex-shrink:0;width:22px;height:22px;color:var(--champagne);opacity:.9}.library-ref-card .lr-text{display:flex;flex-direction:column;flex:1;min-width:0;line-height:1.3}.library-ref-card .lr-eyebrow{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne);opacity:.85;margin-bottom:2px}.library-ref-card .lr-title{font-family:var(--font-serif);font-size:14.5px;font-weight:600;font-variation-settings:"opsz" 24;color:var(--ivory)}.library-ref-card .lr-arrow{flex-shrink:0;color:var(--champagne);opacity:.7;transition:transform .15s}.library-ref-card:hover .lr-arrow{transform:translateX(3px);opacity:1}
 .cr-vdate{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:10px;letter-spacing:.08em;color:var(--mist,#8A8A9A);margin-top:3px;text-transform:uppercase;font-weight:500}.cr-vcard:hover .cr-vdate{color:var(--cloud,#C5C5D0)}.cr-recent-divider{margin:24px 0 16px;padding:10px 14px;border-top:1px solid rgba(201,168,76,.18);font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne,#C9A84C);opacity:.85;font-weight:600}
@@ -16091,7 +16092,8 @@ const VIDEOS = {
       "id": "uCQlsruon8s",
       "title": "Mysterious Walls at Hyrtakina",
       "cr": "stoneriddles",
-      "added": "2026-07-11"
+      "added": "2026-07-11",
+      "published": "2025-11-03"
     }
   ],
   "Polyrrhenia": [
@@ -16099,7 +16101,8 @@ const VIDEOS = {
       "id": "FxSgUJVt7gk",
       "title": "The Acropolis of Ancient Polyrrhenia",
       "cr": "stoneriddles",
-      "added": "2026-07-11"
+      "added": "2026-07-11",
+      "published": "2025-10-31"
     }
   ],
   "Falasarna": [
@@ -19542,7 +19545,9 @@ function openCreators(scrollToKey) {
       const escSite = (v._siteName || '').replace(/'/g, "\\'");
       const dateLabel = formatRelativeDate(v.published);
       const newBadge = (typeof isRecentlyAdded === 'function' && isRecentlyAdded(v))
-        ? '<span class="video-new-badge">New</span>' : '';
+        ? '<span class="video-new-badge">New</span>'
+        : (typeof isNewlyCurated === 'function' && isNewlyCurated(v))
+        ? '<span class="video-new-badge video-curated-badge">New to the Atlas</span>' : '';
       const credit = creator
         ? '<div class="cr-vsite" style="color:' + creator.color + '"><span class="cr-vsite-dot" style="background:' + creator.color + '"></span>' + creator.name + ' · <em style="font-style:normal;opacity:.7">' + v._siteName + '</em></div>'
         : '<div class="cr-vsite cr-vsite-yt"><span class="cr-vsite-yt-icon">\u25B6</span>YouTube · <em style="font-style:normal;opacity:.7">' + v._siteName + '</em></div>';
@@ -19558,8 +19563,9 @@ function openCreators(scrollToKey) {
 
     // Split: NEW-qualifying at top, the rest below
     const isNewFn = (typeof isRecentlyAdded === 'function') ? isRecentlyAdded : (() => false);
-    const recent = allLatest.filter(v => isNewFn(v));
-    const earlier = allLatest.filter(v => !isNewFn(v));
+    const isCuratedFn = (typeof isNewlyCurated === 'function') ? isNewlyCurated : (() => false);
+    const recent = allLatest.filter(v => isNewFn(v) || isCuratedFn(v));
+    const earlier = allLatest.filter(v => !isNewFn(v) && !isCuratedFn(v));
 
     bodyContent = (recent.length
       ? '<div class="cr-recent-divider">Recent · last 30 days</div><div class="cr-section-videos">' +
@@ -19576,7 +19582,7 @@ function openCreators(scrollToKey) {
     ? `Every creator A to Z. Click any row to expand their full walkthrough library.`
     : hubSortMode === 'bysite'
     ? `Browse by <strong>site</strong> instead of by creator. The 10 most-documented sites surface at the top — places where multiple creators have converged. Below: every other site with walkthroughs, alphabetical. Click any thumbnail to jump to the site.`
-    : `Every walkthrough sorted by <strong>publish date</strong>. <strong>Recent</strong> uploads (last 30 days) surface at the top with the <em>New</em> badge. Below: every prior walkthrough in chronological order. Click any card to jump to its site.`;
+    : `Every walkthrough sorted by <strong>publish date</strong>. <strong>Recent</strong> uploads surface at the top with the <em>New</em> badge; <em>New to the Atlas</em> marks freshly curated walkthroughs from the archive. Below: every prior walkthrough in chronological order. Click any card to jump to its site.`;
 
   inner.innerHTML = `
     <div class="cr-header">
@@ -19667,6 +19673,19 @@ function isRecentlyAdded(input) {
   const pubDays   = (Date.now() - pub.getTime())   / 86400000;
   return addedDays >= 0 && addedDays <= 30 &&
          pubDays   >= 0 && pubDays   <= 90;
+}
+
+// "New to the Atlas" helper — recently CURATED (added <=30d) wire whose
+// upload is older than the 90-day NEW window. Surfaces channel-sweep
+// highlights honestly: the badge claims curation recency, not upload recency.
+function isNewlyCurated(v) {
+  if (!v || typeof v !== 'object') return false;
+  if (isRecentlyAdded(v)) return false;
+  if (!v.added || !v.published) return false;
+  const added = new Date(v.added);
+  if (isNaN(added.getTime())) return false;
+  const addedDays = (Date.now() - added.getTime()) / 86400000;
+  return addedDays >= 0 && addedDays <= 30;
 }
 
 const SIGNAL_BADGE_SVG = '<svg viewBox="0 0 12 12" fill="currentColor"><circle class="sd-top" cx="6" cy="2.5" r="1.45"/><circle class="sd-bl" cx="2.5" cy="9.5" r="1.45"/><circle class="sd-br" cx="9.5" cy="9.5" r="1.45"/></svg>';
