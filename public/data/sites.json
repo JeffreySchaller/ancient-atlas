@@ -7356,5 +7356,32 @@
     "criteria": [
       "scale"
     ]
+  },
+  {
+    "n": "Hill of Tara",
+    "lat": 53.5775,
+    "lng": -6.6119,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Ancient royal ceremonial complex in Co. Meath, traditionally the inauguration place and seat of the High Kings of Ireland, with earthworks spanning the Neolithic to the Iron Age. Its oldest visible monument is the Mound of the Hostages, a passage tomb built around 3200 BCE, and the Lia Fáil (Stone of Destiny) standing stone atop the Forradh was said to roar when touched by the rightful king."
+  },
+  {
+    "n": "Fourknocks Passage Tomb",
+    "lat": 53.5966,
+    "lng": -6.3265,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Decorated Neolithic passage tomb near the Meath–Dublin border, built around 3000 BCE, with a short passage opening into an unusually wide pear-shaped cruciform chamber with three recesses. Excavations in 1950–52 found some 65 burials, and among its dozen decorated stones is a stylized carving regarded as possibly the earliest depiction of a human face in Ireland; the chamber is now protected by a concrete dome."
+  },
+  {
+    "n": "Baltray Standing Stones",
+    "lat": 53.7408,
+    "lng": -6.2658,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "A pair of standing stones (about 3 m and 2 m tall, 9 m apart, originally likely three) near the Boyne estuary in Co. Louth, probably erected in the Bronze Age. The flat face of the larger stone points toward Rockabill island offshore, marking the winter solstice sunrise — an alignment discovered and documented in 1999 by Anthony Murphy, Richard Moore and Michael Byrne."
   }
 ]

@@ -461,5 +461,12 @@
     "subs": "Mediterranean polygonal-masonry field surveys · Greece, Sardinia, Italy documentaries",
     "color": "#5A9E94",
     "tier": 1
+  },
+  "anthonymurphy": {
+    "name": "Anthony Murphy / Mythical Ireland",
+    "handle": "@mythicalireland",
+    "subs": "Boyne Valley archaeoastronomy · author · Dronehenge co-discoverer · Irish myth + megaliths",
+    "color": "#4E9B47",
+    "tier": 2
   }
 }

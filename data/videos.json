@@ -1096,6 +1096,18 @@
       "cr": "megalithomania",
       "added": "2026-06-09",
       "published": "2023-12-21"
+    },
+    {
+      "id": "smBYtvhILDw",
+      "title": "Do the myths about Newgrange offer an insight into its function or purpose?",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
+    },
+    {
+      "id": "R0s74JgOMf8",
+      "title": "Fascinating alignment of Newgrange and other ancient sites",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
     }
   ],
   "Dolmen of Menga": [
@@ -5998,6 +6010,18 @@
       "cr": "megalithomania",
       "added": "2026-06-09",
       "published": "2024-10-08"
+    },
+    {
+      "id": "ZNrigPnGhOk",
+      "title": "Loughcrew: myths, history and astronomy of a Neolithic cemetery in Ireland",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
+    },
+    {
+      "id": "8z57ZIP-CeA",
+      "title": "The Hill of the Witch — the Cairns of Loughcrew, a quick guide",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
     }
   ],
   "Carrowmore Megalithic Cemetery": [
@@ -6719,6 +6743,78 @@
       "title": "The Megalithic Wall of Monte Pallano",
       "cr": "stoneriddles",
       "added": "2026-07-11"
+    }
+  ],
+  "Knowth": [
+    {
+      "id": "ZiXceFW1pqU",
+      "title": "Knowth: one of the great treasures of Ireland",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
+    },
+    {
+      "id": "64jj111a9mo",
+      "title": "Knowth Calendar Stone — 5,300-year-old lunar calculations on Irish stone",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
+    }
+  ],
+  "Dowth": [
+    {
+      "id": "AoaREltkFyg",
+      "title": "Midwinter sun shines into Dowth's southern chamber",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
+    },
+    {
+      "id": "TEA87IoIN-A",
+      "title": "Dowth Stone of the Seven Suns Projection Mapping",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
+    }
+  ],
+  "Hill of Tara": [
+    {
+      "id": "U01nSNBjuwg",
+      "title": "Hill of Tara at dawn: a sunrise tour of the ancient monuments",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14",
+      "published": "2020-03-16"
+    },
+    {
+      "id": "L4BWDYh8tjw",
+      "title": "The First Kings of Tara",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
+    }
+  ],
+  "Fourknocks Passage Tomb": [
+    {
+      "id": "OLnhZwkXBJQ",
+      "title": "Welcome to Fourknocks, a 5,000-year-old megalithic site in Meath",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14",
+      "published": "2016-10-08"
+    },
+    {
+      "id": "tGI8FWWTbTU",
+      "title": "Inside Fourknocks: megalithic art and astronomical alignment",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
+    },
+    {
+      "id": "9WdAYLtcDMQ",
+      "title": "Fourknocks: a shimmering beam of the sun illuminates megalithic art",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
+    }
+  ],
+  "Baltray Standing Stones": [
+    {
+      "id": "AaYSq7H6iuM",
+      "title": "Baltray standing stones midwinter sunrise",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
     }
   ]
 }
