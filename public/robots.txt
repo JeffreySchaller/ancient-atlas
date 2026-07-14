@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://theancientatlas.com/sitemap.xml
