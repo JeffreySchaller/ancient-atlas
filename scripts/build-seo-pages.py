@@ -129,6 +129,7 @@ def page_shell(title, desc_meta, canonical, og_image, body, jsonld=None):
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
 <style>{CSS}</style>
+<script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 {ld}</head>
 <body>
 <header><a href="/"><span>✦</span> The Ancient Atlas</a></header>
