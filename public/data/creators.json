@@ -468,5 +468,12 @@
     "subs": "Boyne Valley archaeoastronomy · author · Dronehenge co-discoverer · Irish myth + megaliths",
     "color": "#4E9B47",
     "tier": 2
+  },
+  "megaworldasia": {
+    "name": "MEGAWORLD ASIA",
+    "handle": "@megaworldasia360",
+    "subs": "640K subs · Southeast Asia off-the-beaten-track field documentaries · Khmer temples, Laos, Cambodia",
+    "color": "#C77B3F",
+    "tier": 2
   }
 }

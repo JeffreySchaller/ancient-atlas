@@ -7383,5 +7383,14 @@
     "region": "Europe",
     "tier": 3,
     "desc": "A pair of standing stones (about 3 m and 2 m tall, 9 m apart, originally likely three) near the Boyne estuary in Co. Louth, probably erected in the Bronze Age. The flat face of the larger stone points toward Rockabill island offshore, marking the winter solstice sunrise — an alignment discovered and documented in 1999 by Anthony Murphy, Richard Moore and Michael Byrne."
+  },
+  {
+    "n": "Preah Vihear",
+    "lat": 14.3911,
+    "lng": 104.6803,
+    "cat": "temple",
+    "region": "Asia",
+    "tier": 2,
+    "desc": "Khmer temple perched on a 625 m clifftop in the Dangrek Mountains on the Cambodia–Thailand border, laid out along an extraordinary 800 m north–south axis of five gopuras, causeways and courtyards climbing to a sanctuary at the cliff edge. Begun in the early 9th century with most construction under Suryavarman I and Suryavarman II (11th–12th centuries), it is considered the most dramatically sited of all Khmer monuments; UNESCO-listed in 2008 and long the object of a border dispute settled at the ICJ."
   }
 ]

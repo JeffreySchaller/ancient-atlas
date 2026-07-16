@@ -924,6 +924,12 @@
       "published": "2023-01-15"
     },
     {
+      "id": "PdyvOXTOVOE",
+      "title": "Discover the Marvels of Angkor Wat: The Ultimate Temple Experience in 4K",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
+    },
+    {
       "id": "IC60jWARajc",
       "title": "Explore Angkor Wat Temple with Praveen Mohan | Cosmic Code of Cambodia",
       "cr": "praveenmohan"
@@ -2511,6 +2517,13 @@
       "published": "2025-12-10"
     },
     {
+      "id": "kZNPjP8FtRk",
+      "title": "WAT PHOU: Secrets of the Ancient Khmer Temple on the Mekong",
+      "cr": "megaworldasia",
+      "added": "2026-07-15",
+      "published": "2025-11-23"
+    },
+    {
       "id": "e9wph-07s2U",
       "title": "Nobody talks about the Peru-style megaliths at Vat Phou in southern Laos",
       "cr": "secretsinstone"
@@ -2588,6 +2601,12 @@
       "published": "2025-11-05"
     },
     {
+      "id": "_G4RzGZRl-A",
+      "title": "KOH KER: 36 Meters High and Completely Off the Beaten Path",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
+    },
+    {
       "id": "S0Bz7yyXzMQ",
       "title": "Reassessing Ancient Cambodia (Quest for Ancient Civilizations) — Koh Ker deep-dive",
       "cr": "secretsinstone",
@@ -2595,6 +2614,12 @@
     }
   ],
   "Ta Prohm": [
+    {
+      "id": "ntLaixzCz34",
+      "title": "TA PROHM: Golden Hour at Ta Prohm — Photography Gold in the Jungle",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
+    },
     {
       "id": "S0Bz7yyXzMQ",
       "title": "Reassessing Ancient Cambodia (Quest for Ancient Civilizations) — Ta Prohm & the stegosaurus debate",
@@ -2659,6 +2684,12 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-04-23"
+    },
+    {
+      "id": "1uOd1oFYnfI",
+      "title": "Inside PREAH KHAN KOMPONG SVAY's Overgrown Stone City",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
     },
     {
       "id": "S0Bz7yyXzMQ",
@@ -2752,6 +2783,12 @@
       "published": "2023-08-06"
     },
     {
+      "id": "4pWx9w8AU1A",
+      "title": "KBAL SPEAN & BANTEAY SREY: Hidden Angkor Temples | Off the Beaten Track",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
+    },
+    {
       "id": "P6Re7ZsfYvI",
       "title": "Lathed artifacts at Banteay Srei temple in Cambodia",
       "cr": "secretsinstone"
@@ -2805,6 +2842,12 @@
     }
   ],
   "Plain of Jars": [
+    {
+      "id": "2z73rYeHnhY",
+      "title": "PLAIN OF JARS: Mysterious Ancient Jars Hidden in Laos",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
+    },
     {
       "id": "zNIIzx1DuQo",
       "title": "Yonaguni Monument and the Plain of Jars",
@@ -2920,6 +2963,12 @@
       "cr": "praveenmohan",
       "added": "2026-06-06",
       "published": "2026-04-26"
+    },
+    {
+      "id": "4pWx9w8AU1A",
+      "title": "KBAL SPEAN & BANTEAY SREY: Hidden Angkor Temples | Off the Beaten Track",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
     }
   ],
   "Phnom Bok": [
@@ -3347,6 +3396,12 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-01-29"
+    },
+    {
+      "id": "PQOLL2bclnU",
+      "title": "THE BAYON: Angkor's Strangest Temple — Mesmerizing Four-Faced Stupas",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
     }
   ],
   "West Baray": [
@@ -6815,6 +6870,14 @@
       "title": "Baltray standing stones midwinter sunrise",
       "cr": "anthonymurphy",
       "added": "2026-07-14"
+    }
+  ],
+  "Preah Vihear": [
+    {
+      "id": "7DQRiEe8isQ",
+      "title": "PREAH VIHEAR TEMPLE: The Most Dangerous Temple Access in Cambodia",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
     }
   ]
 }
