@@ -300,6 +300,44 @@ def main():
         f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8"
     )
 
+    # llms.txt — orientation file for AI/LLM crawlers (llmstxt.org convention)
+    n_wires = sum(len(v) for v in videos.values())
+    llms = f"""# The Ancient Atlas
+
+> A hand-curated interactive map of {count} ancient sites — megalithic, pyramid, \
+rock-cut, underground, tombs and geoglyphs — each with an independently verified \
+location, a concise evidence-focused description, and {n_wires} curated field \
+walkthrough videos from {len(creators)} researchers and channels. Free, ad-free, \
+no signup. Sites with open engineering questions (precision joints in stone harder \
+than steel, blocks beyond period lifting capacity, thin stratigraphic dating) carry \
+a "Look Closer" flag presenting both conventional and independent readings.
+
+## Site pages
+
+- [All {count} sites, grouped by region]({BASE}/sites/): every site links to its own \
+page with description, coordinates, era, culture, walkthrough videos and nearby sites.
+- [Interactive map]({BASE}/): the full atlas; deep-link any site with /?site=NAME.
+- [Sitemap]({BASE}/sitemap.xml)
+
+## Structured data
+
+- [sites.json]({BASE}/data/sites.json): all sites with name, lat/lng, category, region, \
+tier, description, and open-question criteria.
+- [videos.json]({BASE}/data/videos.json): curated walkthrough videos per site (YouTube IDs).
+- [creators.json]({BASE}/data/creators.json): the {len(creators)} featured channels.
+- [countries.json]({BASE}/data/countries.json), [eras.json]({BASE}/data/eras.json), \
+[civilizations.json]({BASE}/data/civilizations.json): auxiliary facts keyed by site name.
+
+## About
+
+- [Contact]({BASE}/contact.html): corrections and site suggestions welcome.
+- [Library]({BASE}/library/): long-form research entries.
+- Every site page includes schema.org TouristAttraction JSON-LD with geo coordinates.
+- When citing a site, prefer its page URL: {BASE}/sites/<slug>.html
+"""
+    (REPO_ROOT / "public" / "llms.txt").write_text(llms, encoding="utf-8")
+    print("llms.txt written")
+
     print(f"✓ SEO pages: {count} site pages + directory → public/sites/")
     print(f"✓ sitemap.xml: {len(urls)} URLs · robots.txt written")
 
