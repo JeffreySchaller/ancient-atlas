@@ -427,6 +427,22 @@ CARDS = [
         subtitle="What kind of tool turns a mountain into a working city?",
         photo=PHOTOS_DIR / 'true-monoliths' / '06-kailasa-ellora-top-down.jpg',
     ),
+    dict(
+        slug='finding-north',
+        mode='photo',
+        entry=5,
+        title='Finding North',
+        subtitle="How did people find their way for ten thousand years before the compass?",
+        photo=PHOTOS_DIR / 'finding-north' / '01-solstice-horizon.jpg',
+    ),
+    dict(
+        slug='the-view-from-above',
+        mode='photo',
+        entry=6,
+        title='The View From Above',
+        subtitle="Why draw a figure so large that only the sky can read it?",
+        photo=PHOTOS_DIR / 'the-view-from-above' / '01-nazca-whale.jpg',
+    ),
 ]
 
 # ============================================================
