@@ -1158,6 +1158,16 @@ body.present #broadcast-controls{
     color:rgba(201,168,76,.25);
     font-size:11px;
   }
+  /* Editions — delicate shop strip in the mobile feed */
+  .mf-ed-strip{display:flex;align-items:center;gap:12px;margin:14px 20px 18px;padding:11px 13px;background:rgba(22,22,29,.5);border:1px solid rgba(201,168,76,.18);border-radius:12px;text-decoration:none}
+  .mf-ed-strip:active{background:rgba(201,168,76,.06);border-color:rgba(201,168,76,.30)}
+  .mf-ed-strip img{width:54px;height:54px;border-radius:9px;object-fit:cover;flex-shrink:0;background:#000}
+  .mf-ed-strip .mf-ed-t{flex:1;min-width:0}
+  .mf-ed-strip .mf-ed-eb,.mf-ed-strip .mf-ed-ti,.mf-ed-strip .mf-ed-sb{display:block}
+  .mf-ed-strip .mf-ed-eb{font-family:var(--font-mono);font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--champagne)}
+  .mf-ed-strip .mf-ed-ti{font-family:'Fraunces',serif;font-size:16px;color:var(--ivory);line-height:1.1;margin-top:1px}
+  .mf-ed-strip .mf-ed-sb{font-size:11px;color:var(--mist);margin-top:2px}
+  .mf-ed-strip .mf-ed-ar{color:var(--amber);font-weight:700;font-size:18px;flex-shrink:0}
   .mf-chip.on{background:rgba(201,168,76,.18);border-color:rgba(201,168,76,.5);color:var(--champagne)}
 
   #mf-content{padding:16px 14px 80px}
@@ -1799,6 +1809,17 @@ body.present #broadcast-controls{
       <span class="mf-mininav-label">Contact</span>
     </a>
   </div>
+
+  <!-- Editions — delicate shop strip -->
+  <a class="mf-ed-strip" href="https://editions.theancientatlas.com" target="_blank" rel="noopener">
+    <img src="img/editions/mammoth-model.jpg" alt="Model wearing the Mammoth hoodie" loading="lazy" />
+    <span class="mf-ed-t">
+      <span class="mf-ed-eb">The Editions</span>
+      <span class="mf-ed-ti">Wear the deep past.</span>
+      <span class="mf-ed-sb">Sabertooth &amp; Mammoth, in gold · from $18</span>
+    </span>
+    <span class="mf-ed-ar" aria-hidden="true">→</span>
+  </a>
 
   <!-- Sticky filter chips + video feed -->
   <div class="mf-filter-bar" id="mf-filter-bar"></div>
