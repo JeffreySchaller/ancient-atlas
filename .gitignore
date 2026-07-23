@@ -51,3 +51,9 @@ ehthumbs.db
 branding/youtube/*.mp4
 branding/youtube/*.wav
 .sync_test_*
+
+# Merch / brand design sources — Fourthwall Editions artwork, print & knit files.
+# Kept on disk; not versioned in the website repo (keeps .git lean).
+branding/merch-design/
+branding/print/
+branding/fourthwall/
