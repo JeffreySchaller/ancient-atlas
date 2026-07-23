@@ -212,7 +212,7 @@ def main():
                     f'<a class="vid" href="https://www.youtube.com/watch?v={v["id"]}" rel="noopener">'
                     f'<img src="https://i.ytimg.com/vi/{v["id"]}/hqdefault.jpg" alt="{html.escape(v["title"])}" loading="lazy" />'
                     f'<span><span class="t">{html.escape(v["title"])}</span>'
-                    f'<span class="c">{html.escape(cr)}</span></span></a>'
+                    f'<span class="c"> · {html.escape(cr)}</span></span></a>'
                 )
             vid_html = f"<h2>Walkthrough videos ({len(wires)})</h2>" + "".join(items)
 
