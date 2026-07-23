@@ -31,6 +31,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps, ImageEnhance
 REPO_ROOT = Path(__file__).parent.parent
 DEST_DIR = REPO_ROOT / 'public' / 'library' / 'og'
 PHOTOS_DIR = REPO_ROOT / 'public' / 'library' / 'photos'
+LOGO_PATH = REPO_ROOT / 'scripts' / 'assets' / 'brand-logo.png'  # 2026 compass-star mark
 DEST_DIR.mkdir(parents=True, exist_ok=True)
 
 # ============================================================
@@ -146,6 +147,15 @@ def draw_compass(draw, cx, cy, r, color=CHAMPAGNE_PALE, weight=2):
                   (cx + arm_len, cy), (cx, cy + arm_w)],
                  fill=CHAMPAGNE)
 
+_LOGO_CACHE = {}
+def paste_logo(img, cx, cy, d):
+    """Paste the 2026 compass-star brand logo centered at (cx, cy). Replaces the
+    legacy draw_compass() so all Library cards carry the current mark."""
+    if d not in _LOGO_CACHE:
+        _LOGO_CACHE[d] = Image.open(LOGO_PATH).convert('RGBA').resize((d, d), Image.LANCZOS)
+    lg = _LOGO_CACHE[d]
+    img.paste(lg, (cx - d // 2, cy - d // 2), lg)
+
 def wrap_text(text, font, max_width, draw):
     words = text.split()
     lines = []
@@ -171,7 +181,7 @@ def compose_photo_card(photo_path, title, subtitle, entry_num):
     draw = ImageDraw.Draw(img, 'RGBA')
 
     # Top brand chrome — v4 keeps size, thickens via stroke_width
-    draw_compass(draw, 110, 100, 38, color=CHAMPAGNE_PALE, weight=4)
+    paste_logo(img, 110, 100, 88)
     draw.text((168, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY,
               stroke_width=2, stroke_fill=IVORY)
     draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE,
@@ -251,7 +261,7 @@ def compose_atmospheric_vector(title, subtitle, entry_num, mark_fn):
 
     draw = ImageDraw.Draw(img, 'RGBA')
     # Top brand chrome — v4 thickened via stroke_width
-    draw_compass(draw, 110, 100, 38, color=CHAMPAGNE_PALE, weight=4)
+    paste_logo(img, 110, 100, 88)
     draw.text((168, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY,
               stroke_width=2, stroke_fill=IVORY)
     draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE,
@@ -353,7 +363,7 @@ def compose_hub_card():
                                          None, None)
         return img
     draw = ImageDraw.Draw(img, 'RGBA')
-    draw_compass(draw, 110, 100, 38, color=CHAMPAGNE_PALE, weight=4)
+    paste_logo(img, 110, 100, 88)
     draw.text((168, 60), "Ancient Atlas", font=BRAND_FONT, fill=IVORY,
               stroke_width=2, stroke_fill=IVORY)
     draw.text((170, 122), "Library", font=ITALIC_FONT, fill=CHAMPAGNE_PALE,
