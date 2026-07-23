@@ -1801,6 +1801,20 @@ body.present #broadcast-controls{
 // ============================================================
 const SITES = [
   {
+    "n": "Sacred Well of Santa Cristina",
+    "lat": 40.0611,
+    "lng": 8.731,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "polygonal",
+      "precision"
+    ],
+    "desc": "Subterranean sacred well near Paulilatino in Oristano province, Sardinia, conventionally attributed to the Nuragic civilization of the Bronze Age (c. 1000 BCE). A trapezoidal keyhole doorway opens onto a converging staircase of basalt steps that descends to a circular chamber roofed by an inverted tholos — a corbelled conical dome of tapering rings. What sets it apart is the masonry: the well casing is polygonal, highly accurate fitted basalt, cut to a precision entirely unlike the rough dry-stone Nuragic work that surrounds it. Every block on the battered walls is set back at a consistent slant, the two sides are deliberately mirrored, and field measurement finds the steps cut to within fractions of a centimetre of one another (repeated laser readings of ~24.7–24.9 cm). The trapezoidal door and window proportions echo the pre-Inca temples of Peru, in particular the Coricancha (Temple of the Sun) in Cusco, and independent researchers — including Earth Explorer's on-site survey — argue the casing bears closer resemblance to megalithic precision in Peru and Egypt than to the local Nuragic tradition, raising the open question of whether the well's core predates, or was merely enclosed by, its Bronze Age builders. The chamber is astronomically aligned: at the major lunar standstill, once every 18.6 years, moonlight falls directly down the shaft."
+  },
+  {
     "n": "Derinkuyu Underground City",
     "lat": 38.3746,
     "lng": 34.734,
@@ -9212,6 +9226,13 @@ const FILTERED_SITES = SITES.filter(s => {
 // CREATORS DATABASE
 // ============================================================
 const CREATORS = {
+  "earthexplorer": {
+    "name": "Earth Explorer",
+    "handle": "@earthexplorer8256",
+    "subs": "10-year global expedition · field precision measurements of megalithic sites",
+    "color": "#C8794B",
+    "tier": 2
+  },
   "mountainbeast": {
     "name": "Mr.mountainbeast",
     "handle": "@Mr.mountainbeast.adventure",
@@ -9767,6 +9788,15 @@ const TOURS = {
 // YOUTUBE VIDEOS DATABASE — keyed by site name, with creator tags
 // ============================================================
 const VIDEOS = {
+  "Sacred Well of Santa Cristina": [
+    {
+      "id": "-vs7rrKPFDs",
+      "title": "The Impossible Precision of The Well of Santa Cristina: Why This Italian Well Matches Peru",
+      "cr": "earthexplorer",
+      "added": "2026-07-23",
+      "published": "2026-07-21"
+    }
+  ],
   "Derinkuyu Underground City": [
     {
       "id": "bnslsxXi3RY",
