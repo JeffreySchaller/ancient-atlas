@@ -108,6 +108,7 @@ header{position:relative;z-index:1001;background:linear-gradient(180deg,rgba(13,
 .ed-featured:hover{background:rgba(201,168,76,.12);border-color:rgba(201,168,76,.45);transform:translateY(-1px)}
 .ed-bloom{position:absolute;top:calc(100% + 12px);right:-6px;transform:translateY(-6px) scale(.98);width:288px;background:linear-gradient(160deg,rgba(26,26,34,.98),rgba(13,13,18,.98));border:1px solid rgba(201,168,76,.30);border-radius:14px;padding:14px;box-shadow:0 24px 60px rgba(0,0,0,.6),0 0 0 1px rgba(201,168,76,.06);opacity:0;pointer-events:none;transition:opacity .22s ease,transform .22s cubic-bezier(.2,.8,.2,1);z-index:1200}
 .ed-bloom::before{content:"";position:absolute;top:-7px;right:26px;width:12px;height:12px;background:rgba(26,26,34,.98);border-left:1px solid rgba(201,168,76,.30);border-top:1px solid rgba(201,168,76,.30);transform:rotate(45deg)}
+.ed-bloom::after{content:"";position:absolute;top:-16px;left:0;right:0;height:16px}  /* invisible hover-bridge across the 12px gap so slow cursor moves keep the bloom open */
 .ed-wrap:hover .ed-bloom{opacity:1;pointer-events:auto;transform:translateY(0) scale(1)}
 .ed-bloom-imgs{display:flex;gap:8px;margin-bottom:11px}
 .ed-thumb{width:50%;margin:0}
