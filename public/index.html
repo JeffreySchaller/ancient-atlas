@@ -9257,6 +9257,62 @@ const SITES = [
     "region": "Asia",
     "tier": 2,
     "desc": "Khmer temple perched on a 625 m clifftop in the Dangrek Mountains on the Cambodia–Thailand border, laid out along an extraordinary 800 m north–south axis of five gopuras, causeways and courtyards climbing to a sanctuary at the cliff edge. Begun in the early 9th century with most construction under Suryavarman I and Suryavarman II (11th–12th centuries), it is considered the most dramatically sited of all Khmer monuments; UNESCO-listed in 2008 and long the object of a border dispute settled at the ICJ."
+  },
+  {
+    "n": "Almendres Cromlech",
+    "lat": 38.5575,
+    "lng": -8.0612,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "geometry",
+      "scale"
+    ],
+    "desc": "The largest and oldest structured megalithic enclosure on the Iberian Peninsula, standing on a gentle east-facing slope in the cork-oak country west of Évora, Portugal. Roughly ninety-five granite menhirs — smoothed egg- and phallus-shaped monoliths up to about 2.5 m tall — are set in a pair of joined rings and horseshoe alignments running along a northwest–southeast axis. Conventional reading: raised in successive phases across the Neolithic, from Almendres I around 6000 BCE through Almendres III around 4000 BCE, making the earliest circles here older than Stonehenge by three to four millennia. About a dozen stones carry deliberate carvings — crooks, concentric circles, and radial sun-marks — and the whole enclosure is oriented to the equinox sunrise, with a solitary 4.5 m outlier menhir 1.4 km to the northeast flagging the winter-solstice sunrise. The site was lost under scrub and only rediscovered in 1966. The open question is how a farming culture this early organized a monument of this scale and precision, and why its astronomical geometry is already fully formed in the oldest phase."
+  },
+  {
+    "n": "Vale Maria do Meio Cromlech",
+    "lat": 38.6225,
+    "lng": -8.0085,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "geometry",
+      "scale"
+    ],
+    "desc": "A lesser-known granite stone circle on the Évora plateau, part of the dense Alentejo cluster of Neolithic cromlechs that also includes Almendres and Portela de Mogos. Thirty-four menhirs stand in an oval enclosure roughly 37 m by 25 m, its long axis set east to west and opening toward the equinox horizon. Conventional reading: raised around 4500 BCE, with evidence of at least two construction phases as the ring was enlarged and re-set over generations. Several stones are engraved with the vocabulary that recurs across the Alentejo megaliths — concentric circles, horseshoes, shepherd's crooks, and crescent lunar marks — pointing to a shared symbolic and calendrical system across the region. Investigated on-site by Hugh Newman, it is one of the clearest surviving examples of how these builders paired astronomy with monumental stone long before the pyramid age."
+  },
+  {
+    "n": "Dolmen de Soto",
+    "lat": 37.3522,
+    "lng": -6.7514,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "A monumental Neolithic passage grave hidden inside a 60 m earthen mound near Trigueros in Huelva province, Andalusia. A V-shaped corridor runs 20.9 m from a narrow western entrance to a widening eastern chamber where a person can stand upright beneath capstones weighing many tons. Conventional reading: built around 3000 BCE. What sets Soto apart is its interior art: engravings survive on forty-three of the roughly sixty-four orthostats lining the passage — daggers, human figures, cups, and geometric panels cut and painted into the stone. The whole axis is aligned so that at the equinox sunrise the first light drives straight down the corridor and floods the burial chamber, the same deliberate solar architecture found at passage graves from Iberia to Ireland. Eight bodies were interred here in fetal position with daggers, ceramics, and marine fossils. The open question is the reach of the tradition — how a coastal farming community engineered a decorated, astronomically-timed tomb on this scale a full five thousand years ago."
+  },
+  {
+    "n": "Dolmen del Prado de Lácara",
+    "lat": 39.0498,
+    "lng": -6.4209,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 1,
+    "signal": "open",
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "One of the most monumental megalithic tombs in Extremadura, set in holm-oak dehesa near La Nava de Santiago, west of Mérida in western Spain. A corbelled passage grave of the classic Iberian type: its chamber and corridor together run close to 20 m — the largest and best-developed dolmen corridor documented in the region — and the one surviving intact orthostat rises 5.2 m, among the tallest standing stones in any Spanish dolmen. Conventional reading: raised toward the end of the fourth millennium BCE, around 3000 BCE, and once fully buried beneath a great earthen tumulus 28–35 m across whose eroded ring still surrounds the stones. It was declared a National Monument in 1931. The dolmen sits on an old route between the Guadiana and Tagus basins — evidence that the passage-grave builders of Iberia moved monumental engineering along the same corridors of trade and migration that later cultures would inherit."
   }
 ];
 
@@ -9276,6 +9332,27 @@ const FILTERED_SITES = SITES.filter(s => {
 // CREATORS DATABASE
 // ============================================================
 const CREATORS = {
+  "canalextremadura": {
+    "name": "Canal Extremadura",
+    "handle": "@CanalExtremadura",
+    "subs": "Extremadura's regional public broadcaster · heritage & travel films",
+    "color": "#7986CB",
+    "tier": 2
+  },
+  "canalandalucia": {
+    "name": "Canal Andalucía Turismo",
+    "handle": "@canalsurturismo5578",
+    "subs": "Official Andalusia tourism channel · heritage site films",
+    "color": "#F2C14E",
+    "tier": 2
+  },
+  "digitwithraven": {
+    "name": "Dig It With Raven",
+    "handle": "@DigItWithRaven",
+    "subs": "Archaeologist & conservator · field walkthroughs of ancient sites",
+    "color": "#4DB6AC",
+    "tier": 1
+  },
   "earthexplorer": {
     "name": "Earth Explorer",
     "handle": "@earthexplorer8256",
@@ -9838,6 +9915,44 @@ const TOURS = {
 // YOUTUBE VIDEOS DATABASE — keyed by site name, with creator tags
 // ============================================================
 const VIDEOS = {
+  "Almendres Cromlech": [
+    {
+      "id": "Qz8aaX2PRZU",
+      "title": "\"PORTUGUESE STONEHENGE\"- The Almendres Cromlech | DIWR Field Trip #4",
+      "cr": "digitwithraven",
+      "added": "2026-07-24"
+    }
+  ],
+  "Vale Maria do Meio Cromlech": [
+    {
+      "id": "NSf1y9RqRnQ",
+      "title": "Ancient Stone Circle near Evora, Portugal: Vale Maria do Meio Cromlech investigated by Hugh Newman",
+      "cr": "megalithomania",
+      "added": "2026-07-24"
+    }
+  ],
+  "Dolmen de Soto": [
+    {
+      "id": "VcKqNCUarmc",
+      "title": "Dolmen de Soto. Trigueros, Huelva",
+      "cr": "canalandalucia",
+      "added": "2026-07-24"
+    }
+  ],
+  "Dolmen del Prado de Lácara": [
+    {
+      "id": "duX_nGhvt-k",
+      "title": "El Dolmen de Lácara | Pueblo Lovers",
+      "cr": "canalextremadura",
+      "added": "2026-07-24",
+      "published": "2022-10-20"
+    },
+    {
+      "id": "YnXFW1ej4Fk",
+      "title": "TECNOLOGÍA MEGALÍTICA; Dolmen de Lácara, Mérida, Badajoz.",
+      "added": "2026-07-24"
+    }
+  ],
   "Sacred Well of Santa Cristina": [
     {
       "id": "-vs7rrKPFDs",
