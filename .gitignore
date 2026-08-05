@@ -57,3 +57,8 @@ branding/youtube/*.wav
 branding/merch-design/
 branding/print/
 branding/fourthwall/
+
+# Local pre-edit backups / scratch previews (kept on disk, never versioned)
+_atlas_backups/
+_to_delete/
+public/_preview_*.html

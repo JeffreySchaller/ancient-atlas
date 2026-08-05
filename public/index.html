@@ -93,6 +93,11 @@ header{position:relative;z-index:1001;background:linear-gradient(180deg,rgba(13,
 
 /* Visual group break between passive data and interactive controls */
 .stat-divider{width:1px;align-self:stretch;background:linear-gradient(180deg,transparent,rgba(201,168,76,.22),transparent);margin:0 4px}
+.stat-experiences{position:relative;border-color:rgba(201,168,76,.20);background:rgba(201,168,76,.05)}
+.stat-experiences .stat-exp-glyph{font-size:19px;line-height:1;text-align:center;color:var(--champagne);filter:drop-shadow(0 0 7px rgba(232,185,96,.35));font-variant-emoji:text}
+.stat-experiences:hover{background:rgba(201,168,76,.10)}
+.stat-experiences:hover .stat-exp-glyph{color:#F3D998}
+.stat-experiences::after{content:"NEW";position:absolute;top:-4px;right:-3px;font-family:var(--font-mono);font-size:6.5px;letter-spacing:.1em;color:#0A0A0E;background:var(--amber);padding:1px 3px;border-radius:5px;font-weight:700;line-height:1.1}
 
 /* Glyph sizing — all glyphs fit inside the 20px .stat-val box, optically balanced */
 .stat-support .stat-support-glyph{font-size:18px;line-height:1;text-align:center;filter:drop-shadow(0 0 6px rgba(201,168,76,.22))}
@@ -1169,6 +1174,15 @@ body.present #broadcast-controls{
   .mf-ed-strip .mf-ed-ti{font-family:'Fraunces',serif;font-size:16px;color:var(--ivory);line-height:1.1;margin-top:1px}
   .mf-ed-strip .mf-ed-sb{font-size:11px;color:var(--mist);margin-top:2px}
   .mf-ed-strip .mf-ed-ar{color:var(--amber);font-weight:700;font-size:18px;flex-shrink:0}
+  .mf-exp-strip{display:flex;align-items:center;gap:13px;margin:16px 20px 4px;padding:14px 15px;background:linear-gradient(135deg,rgba(201,168,76,.14),rgba(22,22,29,.62));border:1px solid rgba(232,185,96,.34);border-radius:14px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+  .mf-exp-strip:active{background:linear-gradient(135deg,rgba(201,168,76,.20),rgba(22,22,29,.62));border-color:rgba(232,185,96,.5)}
+  .mf-exp-strip .mf-exp-glyph{font-size:30px;line-height:1;color:var(--champagne);flex-shrink:0;filter:drop-shadow(0 0 10px rgba(232,185,96,.4));font-variant-emoji:text}
+  .mf-exp-strip .mf-exp-t{flex:1;min-width:0}
+  .mf-exp-strip .mf-exp-eb,.mf-exp-strip .mf-exp-ti,.mf-exp-strip .mf-exp-sb{display:block}
+  .mf-exp-strip .mf-exp-eb{font-family:var(--font-mono);font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--amber)}
+  .mf-exp-strip .mf-exp-ti{font-family:'Fraunces',serif;font-size:19px;color:var(--ivory);line-height:1.05;margin-top:2px}
+  .mf-exp-strip .mf-exp-sb{font-size:11.5px;color:var(--mist);margin-top:3px}
+  .mf-exp-strip .mf-exp-ar{color:var(--amber);font-weight:700;font-size:20px;flex-shrink:0}
   .mf-chip.on{background:rgba(201,168,76,.18);border-color:rgba(201,168,76,.5);color:var(--champagne)}
 
   #mf-content{padding:16px 14px 80px}
@@ -1612,6 +1626,7 @@ body.present #broadcast-controls{
     <div><div class="stat-val" id="stat-vids">0</div><div class="stat-lbl">With Video</div></div>
     <div><div class="stat-val" id="stat-regions">0</div><div class="stat-lbl">Regions</div></div>
     <div class="stat-divider" aria-hidden="true"></div>
+    <a class="stat-action stat-experiences" href="experiences/feel-the-weight/" title="Experiences — try to lift a 2.5-ton stone"><div class="stat-val stat-exp-glyph">⚖</div><div class="stat-lbl">Experiences ↗</div></a>
     <div class="stat-action" onclick="openCreators()" title="View all creators"><div class="stat-val" id="stat-creators">0</div><div class="stat-lbl">Creators ↗</div></div>
     <a class="stat-action" href="library/index.html" title="Open the Library — 6 articles on reading deep history">
       <div class="stat-val" id="stat-articles">6</div>
@@ -1788,8 +1803,24 @@ body.present #broadcast-controls{
     </div>
   </div>
 
+  <!-- Experiences — Feel the Weight (flagship interactive) -->
+  <a class="mf-exp-strip" href="experiences/feel-the-weight/">
+    <span class="mf-exp-glyph" aria-hidden="true">⚖</span>
+    <span class="mf-exp-t">
+      <span class="mf-exp-eb">New · Experience</span>
+      <span class="mf-exp-ti">Feel the Weight</span>
+      <span class="mf-exp-sb">Try to lift a 2.5-ton Giza block — you can’t.</span>
+    </span>
+    <span class="mf-exp-ar" aria-hidden="true">→</span>
+  </a>
+
   <!-- Unobtrusive mobile nav: Articles / Editions / Support / Contact -->
   <div class="mf-mininav" aria-label="Site sections">
+    <a class="mf-mininav-link" href="experiences/feel-the-weight/">
+      <span class="mf-mininav-glyph" aria-hidden="true">⚖</span>
+      <span class="mf-mininav-label">Experiences</span>
+    </a>
+    <span class="mf-mininav-sep" aria-hidden="true">·</span>
     <a class="mf-mininav-link" href="library/index.html">
       <span class="mf-mininav-glyph" aria-hidden="true">6</span>
       <span class="mf-mininav-label">Articles</span>
