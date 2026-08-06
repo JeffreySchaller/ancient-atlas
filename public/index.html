@@ -131,14 +131,13 @@ header{position:relative;z-index:1001;background:linear-gradient(180deg,rgba(13,
 .fw-bloom::before{content:"";position:absolute;top:-7px;left:32px;width:12px;height:12px;background:rgba(26,26,34,.98);border-left:1px solid rgba(201,168,76,.30);border-top:1px solid rgba(201,168,76,.30);transform:rotate(45deg)}
 .fw-bloom::after{content:"";position:absolute;top:-16px;left:0;right:0;height:16px}  /* hover-bridge across the 12px gap */
 .fw-wrap:hover .fw-bloom{opacity:1;pointer-events:auto;transform:translateY(0) scale(1)}
-.fw-stage{position:relative;height:132px;border-radius:9px;background:radial-gradient(130% 100% at 50% 6%,#191621,#09080C);outline:1px solid rgba(201,168,76,.16);overflow:hidden;display:flex;align-items:flex-end;justify-content:center;gap:20px;padding:0 16px 15px}
-.fw-stage::after{content:"";position:absolute;left:14px;right:14px;bottom:13px;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.30),transparent)}
-.fw-stage svg{display:block;flex:none}
-.fw-stage-block{width:92px;height:81px;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
-.fw-wrap:hover .fw-stage-block{transform:translateY(-1px)}
-.fw-stage-fig{width:23px;height:82px}
-.fw-stage-tag{position:absolute;top:9px;left:10px;font-family:var(--font-mono);font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--champagne)}
-.fw-stage-ft{position:absolute;top:9px;right:10px;font-family:var(--font-mono);font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
+.fw-stage{position:relative;height:132px;border-radius:9px;background:radial-gradient(130% 100% at 50% 6%,#191621,#09080C);outline:1px solid rgba(201,168,76,.16);overflow:hidden}
+.fw-photo{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.02);transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.fw-wrap:hover .fw-photo{transform:scale(1.06)}
+.fw-stage::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(9,8,12,.74) 0%,rgba(9,8,12,0) 34%,rgba(9,8,12,0) 62%,rgba(9,8,12,.55) 100%)}
+@media (prefers-reduced-motion:reduce){.fw-photo,.fw-wrap:hover .fw-photo{transform:none;transition:none}}
+.fw-stage-tag{position:absolute;z-index:2;top:9px;left:10px;font-family:var(--font-mono);font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--champagne)}
+.fw-stage-ft{position:absolute;z-index:2;top:9px;right:10px;font-family:var(--font-mono);font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mist)}
 .fw-gauge{margin-top:11px}
 .fw-grow{display:flex;align-items:baseline;justify-content:space-between;font-family:var(--font-mono);font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--mist)}
 .fw-gneed{color:#C4736B}
@@ -151,7 +150,7 @@ header{position:relative;z-index:1001;background:linear-gradient(180deg,rgba(13,
 .fw-bloom-title{font-family:var(--font-serif);font-size:19px;font-weight:600;color:var(--ivory);line-height:1.1;margin-top:12px}
 .fw-bloom-sub{font-size:12px;color:var(--mist);margin-top:3px}
 .fw-cta-full{display:flex;align-items:center;justify-content:center;gap:7px;width:100%;font-family:var(--font-sans);font-size:13px;font-weight:600;color:var(--obsidian);background:linear-gradient(180deg,#F3D998,#E8B960);padding:9px 14px;border-radius:9px;text-decoration:none;box-shadow:0 6px 16px rgba(201,168,76,.22);margin-top:12px}
-@media (prefers-reduced-motion:reduce){.fw-wrap:hover .fw-fill{animation:none;width:4%}.fw-wrap:hover .fw-stage-block{transform:none}}
+@media (prefers-reduced-motion:reduce){.fw-wrap:hover .fw-fill{animation:none;width:4%}}
 .mf-shop-icon{width:11px;height:11px;display:inline-block;vertical-align:-1px;margin-right:3px}
 .stat-contact .stat-contact-glyph{font-size:17px;line-height:1;text-align:center;filter:drop-shadow(0 0 6px rgba(201,168,76,.22));font-family:var(--font-mono);font-variant-emoji:text}
 .stat-library-glyph{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;color:var(--champagne);filter:drop-shadow(0 0 6px rgba(201,168,76,.22));transition:transform .2s;line-height:1}
@@ -1656,22 +1655,22 @@ body.present #broadcast-controls{
     <div><div class="stat-val" id="stat-regions">0</div><div class="stat-lbl">Regions</div></div>
     <div class="stat-divider" aria-hidden="true"></div>
     <div class="fw-wrap">
-      <a class="stat-action stat-experiences" href="experiences/feel-the-weight/" title="Experiences — try to lift a 2.5-ton stone"><div class="stat-val stat-exp-glyph">⚖</div><div class="stat-lbl">Experiences ↗</div></a>
+      <a class="stat-action stat-experiences" href="experiences/feel-the-weight/" title="Experiences — six stones, 2.5 to 1,500 tons"><div class="stat-val stat-exp-glyph">⚖</div><div class="stat-lbl">Experiences ↗</div></a>
       <div class="fw-bloom" aria-hidden="true">
         <div class="fw-stage">
-          <span class="fw-stage-tag">Giza · 2.5 t</span>
-          <span class="fw-stage-ft">6 ft</span>
-          <svg class="fw-stage-block" viewBox="0 0 100 88" aria-hidden="true"><polygon points="8,32 32,12 92,12 68,32" fill="#D6C49A"/><polygon points="8,32 68,32 68,84 8,84" fill="#BFA97C"/><polygon points="68,32 92,12 92,64 68,84" fill="#8A7752"/><g fill="#000" opacity=".14"><circle cx="35.4" cy="60.7" r="1.20"/><circle cx="36.1" cy="58.4" r="0.96"/><circle cx="21.0" cy="58.5" r="0.99"/><circle cx="53.8" cy="39.3" r="0.76"/><circle cx="15.9" cy="72.2" r="1.04"/><circle cx="13.3" cy="80.2" r="1.23"/><circle cx="46.3" cy="63.3" r="0.66"/><circle cx="11.8" cy="59.3" r="0.59"/><circle cx="21.3" cy="46.1" r="0.57"/><circle cx="36.1" cy="55.3" r="1.14"/><circle cx="39.0" cy="64.5" r="0.90"/><circle cx="46.8" cy="56.0" r="0.74"/><circle cx="64.9" cy="80.8" r="1.14"/><circle cx="49.2" cy="49.5" r="0.71"/><circle cx="26.6" cy="38.2" r="1.09"/><circle cx="32.6" cy="73.9" r="0.82"/><circle cx="62.7" cy="74.0" r="0.55"/><circle cx="22.3" cy="76.9" r="0.88"/><circle cx="63.9" cy="53.3" r="0.60"/><circle cx="45.0" cy="70.8" r="0.74"/><circle cx="15.7" cy="50.3" r="1.22"/><circle cx="51.9" cy="40.4" r="0.72"/><circle cx="16.5" cy="37.8" r="1.11"/><circle cx="20.6" cy="60.7" r="0.86"/><circle cx="21.3" cy="68.7" r="0.64"/><circle cx="45.8" cy="40.4" r="0.84"/></g><g fill="#000" opacity=".09"><circle cx="27.2" cy="26.6" r="1.03"/><circle cx="63.5" cy="25.9" r="0.99"/><circle cx="30.1" cy="24.1" r="0.97"/><circle cx="48.9" cy="30.0" r="1.04"/><circle cx="27.0" cy="26.8" r="0.92"/><circle cx="34.8" cy="26.1" r="0.54"/><circle cx="27.4" cy="20.3" r="0.63"/><circle cx="53.0" cy="24.6" r="0.75"/><circle cx="77.2" cy="22.3" r="0.82"/><circle cx="64.4" cy="28.3" r="0.58"/><circle cx="82.1" cy="15.6" r="0.64"/><circle cx="37.1" cy="17.2" r="1.02"/></g><g fill="#000" opacity=".17"><circle cx="73.9" cy="75.2" r="1.08"/><circle cx="82.1" cy="45.6" r="0.61"/><circle cx="70.8" cy="75.9" r="0.69"/><circle cx="84.1" cy="36.4" r="1.04"/><circle cx="81.9" cy="38.4" r="0.66"/><circle cx="84.4" cy="25.9" r="0.69"/><circle cx="81.2" cy="69.7" r="0.92"/><circle cx="75.6" cy="73.4" r="0.67"/><circle cx="70.3" cy="37.1" r="0.82"/><circle cx="71.2" cy="31.9" r="0.77"/><circle cx="81.4" cy="29.4" r="0.77"/><circle cx="87.8" cy="76.9" r="0.94"/></g><polyline points="8,32 68,32 92,12" fill="none" stroke="#F0E0B4" stroke-opacity=".35" stroke-width="1.2"/><line x1="68" y1="32" x2="68" y2="84" stroke="#000" stroke-opacity=".25" stroke-width="1.2"/></svg>
-          <svg class="fw-stage-fig" viewBox="0 0 26 88" fill="none" stroke="#E8B960" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13" cy="8.4" r="5.3"/><path d="M13 14.2C7.7 14.2 5.6 17.6 5.4 22.4L4.4 38.4"/><path d="M13 14.2c5.3 0 7.4 3.4 7.6 8.2l1 16"/><path d="M6.6 24.4V47.6L7.9 84.6"/><path d="M19.4 24.4V47.6L18.1 84.6"/><path d="M6.6 47.6h12.8"/><path d="M6.1 84.6h3.4M16.6 84.6h3.4"/></svg>
+          <img class="fw-photo" src="img/experiences/feel-the-weight-card.jpg" alt="A person braced against the face of a colossal quarried megalith" loading="lazy" decoding="async" width="816" height="396" />
+          <span class="fw-stage-tag">Giza → Baalbek</span>
+          <span class="fw-stage-ft">6 stones</span>
         </div>
+
         <div class="fw-gauge">
           <div class="fw-grow"><span>Your pull</span><span class="fw-gneed">It needs 5,000 lb</span></div>
           <div class="fw-track"><i class="fw-fill"></i></div>
           <div class="fw-grow"><span class="fw-gpct">0.04 %</span><span class="fw-gstill">It does not move</span></div>
         </div>
-        <div class="fw-bloom-title">You cannot lift it.</div>
-        <div class="fw-bloom-sub">Six stones, 2.5 to 1,500 tons. Try anyway.</div>
-        <a class="fw-cta-full" href="experiences/feel-the-weight/">Try to lift it →</a>
+        <div class="fw-bloom-title">2.5 tons. And that’s the smallest.</div>
+        <div class="fw-bloom-sub">Six stones. The largest is 1,500.</div>
+        <a class="fw-cta-full" href="experiences/feel-the-weight/">Feel the weight →</a>
       </div>
     </div>
     <div class="stat-action" onclick="openCreators()" title="View all creators"><div class="stat-val" id="stat-creators">0</div><div class="stat-lbl">Creators ↗</div></div>
