@@ -1,0 +1,9 @@
+{
+  "name": "ftw-og-cards",
+  "private": true,
+  "description": "Render rig for the Feel the Weight OG share cards. npm install, then python3 render.py.",
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.2.5",
+    "@fontsource/jetbrains-mono": "^5.2.5"
+  }
+}
