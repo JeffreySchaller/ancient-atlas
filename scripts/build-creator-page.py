@@ -39,7 +39,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).parent.parent
 DATA = REPO_ROOT / "data"
 OUT_DIR = REPO_ROOT / "public" / "creators"
-OUT = OUT_DIR / "ageless-rock.html"
+OUT = OUT_DIR / "ageless-rock-by-place.html"
 CATALOGUE = Path.home() / "Downloads" / "ageless-rock-videos.md"
 
 CREATOR_KEY = "agelessrock"
