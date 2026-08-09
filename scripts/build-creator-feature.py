@@ -292,20 +292,51 @@ header.site{position:sticky;top:0;z-index:100;background:linear-gradient(180deg,
 .toplinks a:hover,.toplinks a.on{color:var(--champagne)}
 
 /* ---------------- the question ---------------- */
-.opening{padding:clamp(56px,9vw,132px) 0 clamp(40px,6vw,84px);position:relative}
+.opening{padding:clamp(34px,5vw,64px) 0 clamp(40px,6vw,84px);position:relative}
 .opening::after{content:'';position:absolute;inset:0;background:radial-gradient(1000px 500px at 50% -10%,rgba(201,168,76,.11),transparent 65%);pointer-events:none;z-index:-1}
-.issue{font-family:var(--mono);font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--champagne);font-weight:700;text-align:center;margin-bottom:clamp(28px,5vw,52px)}
+.issue{font-family:var(--mono);font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--champagne);font-weight:700;text-align:center;margin-bottom:clamp(22px,3.4vw,34px)}
 .issue span{color:var(--mist)}
 .qlabel{font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--mist);text-align:center;margin-bottom:20px}
-h1.q{font-family:var(--serif);font-weight:500;font-size:clamp(31px,5.4vw,68px);line-height:1.1;letter-spacing:-.022em;text-align:center;max-width:19ch;margin:0 auto;font-variation-settings:"opsz" 144}
+h1.q{font-family:var(--serif);font-weight:500;font-size:clamp(30px,4.7vw,58px);line-height:1.1;letter-spacing:-.022em;text-align:center;max-width:19ch;margin:0 auto;font-variation-settings:"opsz" 144}
 h1.q em{font-style:italic;color:var(--champagne)}
-.qrule{height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.5),transparent);max-width:220px;margin:clamp(36px,5vw,56px) auto}
+.qrule{height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.5),transparent);max-width:220px;margin:clamp(24px,3.2vw,36px) auto}
 .alabel{font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--champagne);text-align:center;margin-bottom:18px;font-weight:700}
 p.answer{font-family:var(--serif);font-size:clamp(19px,2.5vw,29px);line-height:1.42;letter-spacing:-.008em;text-align:center;max-width:26ch;margin:0 auto;color:var(--ivory)}
 p.answer b{color:var(--amber);font-weight:600}
-p.answer-sub{font-size:clamp(15px,1.5vw,17px);line-height:1.7;color:var(--cloud);max-width:62ch;margin:clamp(26px,4vw,38px) auto 0;text-align:center}
-.byline{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mist);text-align:center;margin-top:34px}
+p.answer-sub{font-size:clamp(15px,1.5vw,17px);line-height:1.7;color:var(--cloud);max-width:64ch;margin:clamp(28px,4vw,40px) auto 0;text-align:center}
+p.answer-sub b{color:var(--ivory);font-weight:600}
+.byline{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mist);text-align:center;margin-top:22px;line-height:1.9}
 .byline a{color:var(--champagne);text-decoration:none;border-bottom:1px solid rgba(201,168,76,.4)}
+.byline b{color:var(--cloud);font-weight:600}
+
+/* counts, so the shape of the thing is legible before any scrolling */
+.figures{display:flex;justify-content:center;gap:clamp(26px,5vw,64px);flex-wrap:wrap;margin-top:clamp(30px,4vw,44px)}
+.figures div{text-align:center}
+.figures b{font-family:var(--serif);font-variation-settings:"opsz" 144;font-size:clamp(26px,3vw,38px);font-weight:600;color:var(--amber);display:block;line-height:1}
+.figures span{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--mist);display:block;margin-top:8px}
+
+/* the filmstrip: proof there is footage, above the fold */
+.strip-lead{margin-top:clamp(26px,3.4vw,38px)}
+.strip-lead .lab{display:flex;align-items:baseline;justify-content:space-between;gap:16px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--mist);padding-bottom:11px;border-bottom:1px solid rgba(42,42,53,.7);margin-bottom:16px}
+.strip-lead .lab b{color:var(--champagne);font-weight:700}
+.strip-lead .lab i{font-style:normal;white-space:nowrap}
+.reel{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:12px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--stone) transparent;-webkit-mask-image:linear-gradient(90deg,#000 0,#000 88%,transparent 100%);mask-image:linear-gradient(90deg,#000 0,#000 88%,transparent 100%)}
+.reel::-webkit-scrollbar{height:6px}
+.reel::-webkit-scrollbar-thumb{background:var(--stone);border-radius:4px}
+.reel::-webkit-scrollbar-track{background:transparent}
+.rc{flex:0 0 210px;scroll-snap-align:start;text-decoration:none;display:block}
+.rc .fr{position:relative;border-radius:8px;overflow:hidden;border:1px solid rgba(42,42,53,.9);background:var(--charcoal);transition:border-color .2s,transform .2s}
+.rc img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;opacity:.84;transition:opacity .2s,transform .5s cubic-bezier(.2,.7,.3,1)}
+.rc .pl{position:absolute;left:10px;bottom:10px;width:26px;height:26px;border-radius:50%;background:rgba(11,11,15,.66);border:1px solid rgba(240,238,233,.32);backdrop-filter:blur(3px)}
+.rc .pl::after{content:'';position:absolute;left:10px;top:7px;border-left:9px solid var(--ivory);border-top:6px solid transparent;border-bottom:6px solid transparent}
+.rc:hover .fr{border-color:rgba(201,168,76,.55);transform:translateY(-2px)}
+.rc:hover img{opacity:1;transform:scale(1.04)}
+.rc .cap{font-size:12px;line-height:1.4;color:var(--cloud);margin-top:9px}
+.rc .whr{font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--mist);margin-top:5px}
+.rc:hover .cap{color:var(--ivory)}
+.scrollcue{display:flex;align-items:center;justify-content:center;gap:11px;margin-top:clamp(30px,4vw,46px);font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--mist)}
+.scrollcue span{display:inline-block;width:15px;height:15px;border-right:1px solid var(--champagne);border-bottom:1px solid var(--champagne);transform:rotate(45deg) translateY(-3px);animation:bob 2.2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:rotate(45deg) translate(0,-3px);opacity:.55}50%{transform:rotate(45deg) translate(3px,0);opacity:1}}
 .contents{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:clamp(34px,5vw,54px)}
 .contents a{font-family:var(--mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--cloud);text-decoration:none;padding:8px 14px;border:1px solid rgba(42,42,53,1);border-radius:99px;transition:all .16s}
 .contents a:hover{color:var(--champagne);border-color:rgba(201,168,76,.5);background:rgba(201,168,76,.06)}
@@ -532,9 +563,56 @@ SCRIPT = """
 """
 
 
+def pick_teasers(by_site, countries, n=14):
+    """A dozen-odd films for the opening reel.
+
+    The reel exists to answer a question the reader has in the first two
+    seconds — is there anything to watch here — so it has to be visible before
+    any scrolling and it has to look like range, not like a playlist. Take the
+    four spread heroes first, then round-robin the four families preferring a
+    country not yet on screen, so the strip reads as four continents rather
+    than four videos from one trip.
+    """
+    picked, used_sites, used_countries = [], set(), set()
+
+    def take(site):
+        if site in used_sites or site not in by_site:
+            return False
+        v = dict(by_site[site][0])
+        v["_site"], v["_country"] = site, countries.get(site, "")
+        picked.append(v)
+        used_sites.add(site)
+        used_countries.add(v["_country"])
+        return True
+
+    for t in THEMES:
+        take(t["hero"])
+    for prefer_new in (True, False):
+        for depth in range(8):
+            for t in THEMES:
+                if len(picked) >= n:
+                    break
+                pool = [s for s in t["sites"] if s not in used_sites]
+                if depth >= len(pool):
+                    continue
+                cand = pool[depth]
+                if prefer_new and countries.get(cand, "") in used_countries:
+                    continue
+                take(cand)
+    return picked[:n]
+
+
 def render(catalogue, by_site, sites, countries, stats):
     features = "".join(render_feature(t, by_site, sites, countries, i)
                        for i, t in enumerate(THEMES))
+
+    teasers = pick_teasers(by_site, countries)
+    reel = "".join(
+        f'<a class="rc" href="{watch(v)}" target="_blank" rel="noopener">'
+        f'<div class="fr">{thumb(v)}<span class="pl"></span></div>'
+        f'<div class="cap">{e(v["title"])}</div>'
+        f'<div class="whr">{e(v["_site"])}{" · " + e(v["_country"]) if v["_country"] else ""}</div>'
+        f'</a>' for v in teasers)
 
     contents = "".join(
         f'<a href="#f-{t["key"]}"><i>{t["n"]}</i>{e(t["kicker"])}</a>' for t in THEMES
@@ -557,7 +635,7 @@ def render(catalogue, by_site, sites, countries, stats):
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ageless Rock — a creator study | The Ancient Atlas</title>
-<meta name="description" content="Four ways of working stone that recur on separate continents, and one man who has stood inside all four. A study of Bernie Ong's fieldwork across {stats['sites']} sites in {stats['countries']} countries." />
+<meta name="description" content="Four ways of working stone that recur on separate continents, and one man who has filmed all four. A study of Bernie Ong's Ageless Rock channel: {stats['videos']} field walkthroughs across {stats['sites']} sites in {stats['countries']} countries." />
 <meta name="theme-color" content="#0B0B0F" />
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
@@ -594,10 +672,18 @@ def render(catalogue, by_site, sites, countries, stats):
     <h1 class="q">What repeats when you stop sorting these places by <em>where they are</em>?</h1>
     <div class="qrule"></div>
     <div class="alabel">The answer</div>
-    <p class="answer">Four ways of working stone do — and <b>Bernie Ong has stood inside all four.</b></p>
-    <p class="answer-sub">He has walked {stats['sites']} sites in {stats['countries']} countries and filmed {stats['videos']} of them from the ground. Laid out by country, that reads as a travel record. Laid out by <em>what was done to the rock</em>, four families appear, and each one turns up in places with no history of contact. What follows is those four, then the complete archive.</p>
-    <p class="byline">Fieldwork by Bernie Ong · {e(HANDLE)} · <a href="{e(CHANNEL_URL)}" target="_blank" rel="noopener">Follow the channel ↗</a></p>
+    <p class="answer">Four ways of working stone do — and <b>Bernie Ong has filmed all four.</b></p>
+    <p class="byline">{stats['videos']} field films by <b>Bernie Ong</b> · <b>Ageless Rock</b> on YouTube · <a href="{e(CHANNEL_URL)}" target="_blank" rel="noopener">{e(HANDLE)} ↗</a></p>
+
+    <div class="strip-lead">
+      <div class="lab"><span>Watch one now · <b>{len(teasers)} of his {stats['videos']} films</b>, one per country</span><i>Drag the reel →</i></div>
+      <div class="reel">{reel}</div>
+    </div>
+
+    <p class="answer-sub">He walks ancient stone on the ground, one site at a time, camera in hand: <b>{stats['sites']} sites in {stats['countries']} countries</b> so far. Laid out by country, that reads as a travel record. Laid out by <em>what was done to the rock</em>, four families appear, and each turns up in places with no history of contact. What follows is those four, then every film he has made.</p>
+
     <nav class="contents">{contents}</nav>
+    <div class="scrollcue">The four methods, then all {stats['videos']} films <span></span></div>
   </div>
 </section>
 
