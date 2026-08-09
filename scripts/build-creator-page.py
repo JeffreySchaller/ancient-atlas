@@ -6,7 +6,7 @@ Builds public/creators/ageless-rock.html : Bernie Ong's whole channel, 296
 videos, arranged by place instead of by upload date.
 
 Why this exists. YouTube can sort a channel by newest, oldest or most viewed.
-It cannot tell you that Bernie has walked 173 sites across 20 countries, or
+It cannot tell you that Bernie covers 194 sites across 22 countries, or
 put his eleven Chichen Itza videos next to each other, or let you jump from a
 walkthrough straight into the site record. The Atlas already holds that
 structure : 247 of his 296 videos are wired to sites with countries,
@@ -174,7 +174,7 @@ def render_site(name, node):
   <header class="site-head">
     <h4><a href="/sites/{slugify(name)}">{e(name)}</a></h4>
     <div class="meta"><span class="pill">{e(cat)}</span><span class="pill tier">Tier {e(tier)}</span>{badge}
-      <span class="count">{len(node['videos'])} walkthrough{"s" if len(node['videos']) != 1 else ""}</span>{also}</div>
+      <span class="count">{len(node['videos'])} episode{"s" if len(node['videos']) != 1 else ""}</span>{also}</div>
   </header>
   <div class="grid">{vids}</div>
 </section>"""
@@ -317,7 +317,7 @@ SCRIPT = """
     vids.forEach(function(v){v.classList.remove('hidden')});
     sites.forEach(function(s){s.classList.remove('hidden')});
     groups.forEach(function(g){g.classList.remove('hidden')});
-    hits.textContent=total+' videos';
+    hits.textContent=total+' episodes';
     var e=document.getElementById('noresults'); if(e) e.classList.add('hidden');
   }
   function run(){
@@ -337,7 +337,7 @@ SCRIPT = """
       var any=[].slice.call(g.querySelectorAll('.vid')).some(function(v){return !v.classList.contains('hidden')});
       g.classList.toggle('hidden',!any);
     });
-    hits.textContent=shown+(shown===1?' video':' videos');
+    hits.textContent=shown+(shown===1?' episode':' episodes');
     var e=document.getElementById('noresults'); if(e) e.classList.toggle('hidden',shown>0);
   }
   q.addEventListener('input',run);
@@ -375,14 +375,14 @@ def render_page(tree, unplaced, stats):
         body.append(
             f'<section class="region" id="r-{slugify(r)}">'
             f'<div class="region-head"><h2>{e(r)}</h2>'
-            f'<span class="n">{n_v} walkthroughs · {n_s} sites</span></div>'
+            f'<span class="n">{n_v} episodes · {n_s} sites</span></div>'
             f'<div class="rule"></div>' + "".join(blocks) + "</section>")
 
     unplaced_html = ""
     if unplaced:
         unplaced_html = f"""<section class="unplaced" id="unplaced">
   <h2>Not yet on the map</h2>
-  <p>{len(unplaced)} of Bernie's {stats['videos']} videos have no site record in the Atlas yet. They are shown here rather than hidden, because this page is only as honest as the gaps it admits. Each one is a candidate: a site the Atlas does not carry, or a walkthrough that has not been wired to a record it belongs to.</p>
+  <p>{len(unplaced)} of Bernie's {stats['videos']} episodes have no site record in the Atlas yet. They are shown here rather than hidden, because this page is only as honest as the gaps it admits. Each one is a candidate: a site the Atlas does not carry, or an episode that has not been wired to a record it belongs to.</p>
   <div class="grid">{''.join(render_video(v) for v in unplaced)}</div>
 </section>"""
 
@@ -391,16 +391,16 @@ def render_page(tree, unplaced, stats):
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ageless Rock — every walkthrough, by place | The Ancient Atlas</title>
-<meta name="description" content="Bernie Ong's Ageless Rock channel, {stats['videos']} field walkthroughs arranged by region, country and site instead of by upload date. {stats['sites']} sites across {stats['countries']} countries." />
+<title>Ageless Rock — every episode, by place | The Ancient Atlas</title>
+<meta name="description" content="Bernie Ong's Ageless Rock channel, {stats['videos']} narrated studies arranged by region, country and site instead of by upload date. {stats['sites']} sites across {stats['countries']} countries." />
 <meta name="theme-color" content="#0D0D12" />
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
 <link rel="canonical" href="https://theancientatlas.com/creators/ageless-rock" />
 <meta property="og:type" content="profile" />
 <meta property="og:site_name" content="The Ancient Atlas" />
-<meta property="og:title" content="Ageless Rock : every walkthrough, by place" />
-<meta property="og:description" content="{stats['videos']} field walkthroughs across {stats['sites']} sites and {stats['countries']} countries, arranged by where they are instead of when they were posted." />
+<meta property="og:title" content="Ageless Rock : every episode, by place" />
+<meta property="og:description" content="{stats['videos']} episodes across {stats['sites']} sites and {stats['countries']} countries, filed by place instead of by upload date." />
 <meta property="og:url" content="https://theancientatlas.com/creators/ageless-rock" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -421,10 +421,10 @@ def render_page(tree, unplaced, stats):
 <div class="hero">
   <div class="eyebrow">Creator Index · 01</div>
   <h1>Ageless Rock</h1>
-  <p class="sub">Bernie Ong has stood in front of {stats['sites']} of these places with a camera. YouTube can sort that by newest. This sorts it by <em>where</em>.</p>
+  <p class="sub">Every episode of <b>Ageless Rock</b>, filed by the place it studies rather than the day it was posted.</p>
   <p class="byline">{e(HANDLE)} · <a href="{e(CHANNEL_URL)}" target="_blank" rel="noopener">Subscribe on YouTube ↗</a></p>
   <div class="stats">
-    <div class="stat"><b>{stats['videos']}</b><span>Walkthroughs</span></div>
+    <div class="stat"><b>{stats['videos']}</b><span>Episodes</span></div>
     <div class="stat"><b>{stats['sites']}</b><span>Sites</span></div>
     <div class="stat"><b>{stats['countries']}</b><span>Countries</span></div>
     <div class="stat"><b>{stats['regions']}</b><span>Regions</span></div>
@@ -434,19 +434,19 @@ def render_page(tree, unplaced, stats):
 <div class="indexbar">
   <div class="indexinner">
     <div class="jump">{jump}</div>
-    <input id="q" type="search" placeholder="Search  ·  press /" autocomplete="off" spellcheck="false" aria-label="Search walkthroughs" />
+    <input id="q" type="search" placeholder="Search  ·  press /" autocomplete="off" spellcheck="false" aria-label="Search episodes" />
     <div id="hits"></div>
   </div>
 </div>
 
 <main>
 {''.join(body)}
-<div id="noresults" class="empty hidden">No walkthrough matches that.</div>
+<div id="noresults" class="empty hidden">Nothing matches that.</div>
 {unplaced_html}
 </main>
 
 <footer class="site">
-  Walkthroughs belong to <a href="{e(CHANNEL_URL)}" target="_blank" rel="noopener">Ageless Rock</a>. Arranged by <a href="/">The Ancient Atlas</a>, hand-curated and ad-free.
+  Episodes belong to <a href="{e(CHANNEL_URL)}" target="_blank" rel="noopener">Ageless Rock</a>. Arranged by <a href="/">The Ancient Atlas</a>, hand-curated and ad-free.
 </footer>
 
 <script>{SCRIPT}</script>

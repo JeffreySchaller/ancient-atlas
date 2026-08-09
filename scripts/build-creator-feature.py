@@ -635,7 +635,7 @@ def render(catalogue, by_site, sites, countries, stats):
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ageless Rock — a creator study | The Ancient Atlas</title>
-<meta name="description" content="Four ways of working stone that recur on separate continents, and one man who has filmed all four. A study of Bernie Ong's Ageless Rock channel: {stats['videos']} field walkthroughs across {stats['sites']} sites in {stats['countries']} countries." />
+<meta name="description" content="Four ways of working stone that recur on separate continents, and the researcher who traced all four. A study of Bernie Ong's Ageless Rock: {stats['videos']} narrated visual studies covering {stats['sites']} sites in {stats['countries']} countries." />
 <meta name="theme-color" content="#0B0B0F" />
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
@@ -672,18 +672,18 @@ def render(catalogue, by_site, sites, countries, stats):
     <h1 class="q">What repeats when you stop sorting these places by <em>where they are</em>?</h1>
     <div class="qrule"></div>
     <div class="alabel">The answer</div>
-    <p class="answer">Four ways of working stone do — and <b>Bernie Ong has filmed all four.</b></p>
-    <p class="byline">{stats['videos']} field films by <b>Bernie Ong</b> · <b>Ageless Rock</b> on YouTube · <a href="{e(CHANNEL_URL)}" target="_blank" rel="noopener">{e(HANDLE)} ↗</a></p>
+    <p class="answer">Four ways of working stone do — and <b>Bernie Ong has spent 296 episodes tracing them.</b></p>
+    <p class="byline">{stats['videos']} narrated studies by <b>Bernie Ong</b> · <b>Ageless Rock</b> on YouTube · <a href="{e(CHANNEL_URL)}" target="_blank" rel="noopener">{e(HANDLE)} ↗</a></p>
 
     <div class="strip-lead">
-      <div class="lab"><span>Watch one now · <b>{len(teasers)} of his {stats['videos']} films</b>, one per country</span><i>Drag the reel →</i></div>
+      <div class="lab"><span>Start anywhere · <b>{len(teasers)} of his {stats['videos']} episodes</b>, one per country</span><i>Drag the reel →</i></div>
       <div class="reel">{reel}</div>
     </div>
 
-    <p class="answer-sub">He walks ancient stone on the ground, one site at a time, camera in hand: <b>{stats['sites']} sites in {stats['countries']} countries</b> so far. Laid out by country, that reads as a travel record. Laid out by <em>what was done to the rock</em>, four families appear, and each turns up in places with no history of contact. What follows is those four, then every film he has made.</p>
+    <p class="answer-sub">Ageless Rock is not a travel channel. Each episode is a <b>researched visual study</b> — assembled, sequenced and narrated rather than shot on location — and that is precisely why the pattern is visible from it. A traveller is bound by an itinerary. A researcher can set Ethiopia beside Peru on the same screen. Across <b>{stats['sites']} sites in {stats['countries']} countries</b>, doing exactly that, the same four methods keep surfacing. What follows is those four, then every episode he has made.</p>
 
     <nav class="contents">{contents}</nav>
-    <div class="scrollcue">The four methods, then all {stats['videos']} films <span></span></div>
+    <div class="scrollcue">The four methods, then all {stats['videos']} episodes <span></span></div>
   </div>
 </section>
 
@@ -700,7 +700,7 @@ def render(catalogue, by_site, sites, countries, stats):
   <div class="wrap">
     <div class="cathead">
       <h2>The complete catalogue</h2>
-      <p>All {stats['videos']} walkthroughs, {stats['sites']} sites, {stats['countries']} countries. Filter by what a place is, search by name, and turn the pages with the arrows or the ← → keys. {stats['unplaced']} entries have no site record in the Atlas yet and are marked unplaced rather than hidden.</p>
+      <p>All {stats['videos']} episodes, {stats['sites']} sites, {stats['countries']} countries. Filter by what a place is, search by name, and turn the pages with the arrows or the ← → keys. {stats['unplaced']} entries have no site record in the Atlas yet and are marked unplaced rather than hidden.</p>
     </div>
     <div class="controls">
       <div class="filters">{filters}</div>
@@ -717,8 +717,8 @@ def render(catalogue, by_site, sites, countries, stats):
 </section>
 
 <footer class="site">
-  Fieldwork and footage by <a href="{e(CHANNEL_URL)}" target="_blank" rel="noopener">Ageless Rock</a>.
-  Study, sequencing and site records by <a href="/">The Ancient Atlas</a> — hand-curated, ad-free.
+  Research, assembly and narration by <a href="{e(CHANNEL_URL)}" target="_blank" rel="noopener">Ageless Rock</a>.
+  Sequencing and site records by <a href="/">The Ancient Atlas</a> — hand-curated, ad-free.
   · <a href="{INDEX_PAGE}">Browse the same work by place →</a>
 </footer>
 
