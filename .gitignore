@@ -62,3 +62,6 @@ branding/fourthwall/
 _atlas_backups/
 _to_delete/
 public/_preview_*.html
+
+# Scratch staging for incoming assets (see branding/logos-2026/README.md)
+_stage/
