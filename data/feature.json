@@ -1,0 +1,9 @@
+{
+  "interview": {
+    "id": "",
+    "title": "Ageless Rock — a conversation with Bernie Ong",
+    "published": "",
+    "note": "Set id to the 11-character YouTube ID on release day, or run scripts/set-interview.py <ID>. An empty id renders the 'coming' state everywhere instead of a broken embed."
+  },
+  "featured_study": "ageless-rock"
+}

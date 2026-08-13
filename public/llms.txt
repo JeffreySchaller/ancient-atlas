@@ -19,5 +19,6 @@
 
 - [Contact](https://theancientatlas.com/contact.html): corrections and site suggestions welcome.
 - [Library](https://theancientatlas.com/library/): long-form research entries.
+- [Creator Studies](https://theancientatlas.com/creators/): close readings of the channels documenting these sites.
 - Every site page includes schema.org TouristAttraction JSON-LD with geo coordinates.
 - When citing a site, prefer its page URL: https://theancientatlas.com/sites/<slug>.html

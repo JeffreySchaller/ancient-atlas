@@ -174,6 +174,20 @@ def main():
     for lib in sorted((REPO_ROOT / "public" / "library").glob("*.html")):
         urls.append(f"{BASE}/library/{lib.name}" if lib.name != "index.html" else f"{BASE}/library/")
 
+    # Creator studies and experiences were being built and then left out of the
+    # sitemap entirely, because only library/ was globbed. That made every page
+    # under /creators/ invisible to search - including the one the YouTube
+    # channel is about to point at. Any hand-authored section belongs here.
+    for section in ("creators", "experiences"):
+        d = REPO_ROOT / "public" / section
+        if not d.exists():
+            continue
+        for page in sorted(d.glob("*.html")):
+            urls.append(f"{BASE}/{section}/{page.name}"
+                        if page.name != "index.html" else f"{BASE}/{section}/")
+        for page in sorted(d.glob("*/index.html")):
+            urls.append(f"{BASE}/{section}/{page.parent.name}/")
+
     count = 0
     for s in sites:
         name, slug = s["n"], slugs[s["n"]]
@@ -332,6 +346,7 @@ tier, description, and open-question criteria.
 
 - [Contact]({BASE}/contact.html): corrections and site suggestions welcome.
 - [Library]({BASE}/library/): long-form research entries.
+- [Creator Studies]({BASE}/creators/): close readings of the channels documenting these sites.
 - Every site page includes schema.org TouristAttraction JSON-LD with geo coordinates.
 - When citing a site, prefer its page URL: {BASE}/sites/<slug>.html
 """

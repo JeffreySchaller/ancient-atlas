@@ -1654,6 +1654,8 @@ body.present #broadcast-controls{
     <div><div class="stat-val" id="stat-vids">0</div><div class="stat-lbl">With Video</div></div>
     <div><div class="stat-val" id="stat-regions">0</div><div class="stat-lbl">Regions</div></div>
     <div class="stat-divider" aria-hidden="true"></div>
+    <a class="stat-action stat-experiences" href="creators/" title="Creator Studies — No. 01: Ageless Rock, 285 walkthroughs across 197 sites"><div class="stat-val stat-exp-glyph">✦</div><div class="stat-lbl">Studies ↗</div></a>
+    <div class="stat-divider" aria-hidden="true"></div>
     <div class="fw-wrap">
       <a class="stat-action stat-experiences" href="experiences/feel-the-weight/" title="Experiences — six stones, 2.5 to 1,500 tons"><div class="stat-val stat-exp-glyph">⚖</div><div class="stat-lbl">Experiences ↗</div></a>
       <div class="fw-bloom" aria-hidden="true">
@@ -1860,11 +1862,28 @@ body.present #broadcast-controls{
     <span class="mf-exp-ar" aria-hidden="true">→</span>
   </a>
 
+  <!-- Creator Studies — reuses the Experiences strip classes so it inherits
+       styling exactly and adds no new CSS surface to the map page. -->
+  <a class="mf-exp-strip" href="creators/">
+    <span class="mf-exp-glyph" aria-hidden="true">✦</span>
+    <span class="mf-exp-t">
+      <span class="mf-exp-eb">New · Creator Study No. 01</span>
+      <span class="mf-exp-ti">Ageless Rock</span>
+      <span class="mf-exp-sb">285 walkthroughs across 197 sites — nearly a third of the Atlas.</span>
+    </span>
+    <span class="mf-exp-ar" aria-hidden="true">→</span>
+  </a>
+
   <!-- Unobtrusive mobile nav: Articles / Editions / Support / Contact -->
   <div class="mf-mininav" aria-label="Site sections">
     <a class="mf-mininav-link" href="experiences/feel-the-weight/">
       <span class="mf-mininav-glyph" aria-hidden="true">⚖</span>
       <span class="mf-mininav-label">Experiences</span>
+    </a>
+    <span class="mf-mininav-sep" aria-hidden="true">·</span>
+    <a class="mf-mininav-link" href="creators/">
+      <span class="mf-mininav-glyph" aria-hidden="true">✦</span>
+      <span class="mf-mininav-label">Studies</span>
     </a>
     <span class="mf-mininav-sep" aria-hidden="true">·</span>
     <a class="mf-mininav-link" href="library/index.html">
