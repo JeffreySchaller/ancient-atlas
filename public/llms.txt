@@ -1,6 +1,6 @@
 # The Ancient Atlas
 
-> A hand-curated interactive map of 618 ancient sites — megalithic, pyramid, rock-cut, underground, tombs and geoglyphs — each with an independently verified location, a concise evidence-focused description, and 997 curated field walkthrough videos from 66 researchers and channels. Free, ad-free, no signup. Sites with open engineering questions (precision joints in stone harder than steel, blocks beyond period lifting capacity, thin stratigraphic dating) carry a "Look Closer" flag presenting both conventional and independent readings.
+> A hand-curated interactive map of 618 ancient sites — megalithic, pyramid, rock-cut, underground, tombs and geoglyphs — each with an independently verified location, a concise evidence-focused description, and 997 curated field walkthrough videos from 94 researchers and channels. Free, ad-free, no signup. Sites with open engineering questions (precision joints in stone harder than steel, blocks beyond period lifting capacity, thin stratigraphic dating) carry a "Look Closer" flag presenting both conventional and independent readings.
 
 ## Site pages
 
@@ -12,7 +12,7 @@
 
 - [sites.json](https://theancientatlas.com/data/sites.json): all sites with name, lat/lng, category, region, tier, description, and open-question criteria.
 - [videos.json](https://theancientatlas.com/data/videos.json): curated walkthrough videos per site (YouTube IDs).
-- [creators.json](https://theancientatlas.com/data/creators.json): the 66 featured channels.
+- [creators.json](https://theancientatlas.com/data/creators.json): the 94 featured channels.
 - [countries.json](https://theancientatlas.com/data/countries.json), [eras.json](https://theancientatlas.com/data/eras.json), [civilizations.json](https://theancientatlas.com/data/civilizations.json): auxiliary facts keyed by site name.
 
 ## About

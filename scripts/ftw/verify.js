@@ -31,7 +31,11 @@ function getJSON(url) {
     '--headless=new', '--disable-gpu', '--no-sandbox',
     '--use-gl=swiftshader', '--enable-unsafe-swiftshader',
     '--allow-file-access-from-files',
-    '--user-data-dir=/tmp/ftwverify',
+    // A FIXED profile dir lets Chromium serve a cached copy of the bundle, so a
+    // verification run can happily report on the previous build. That is worse
+    // than no verification at all. Fresh profile every run.
+    '--user-data-dir=/tmp/ftwverify-' + process.pid + '-' + Math.floor(Math.random() * 1e6),
+    '--disk-cache-size=1',
     '--remote-debugging-port=' + PORT,
     '--window-size=' + W + ',' + H,
     FILE,
@@ -80,6 +84,11 @@ function getJSON(url) {
       pushBtn: txt('div[aria-label="Hold to push"]'),
       hints: [].slice.call(document.querySelectorAll('span')).map(function(e){return e.textContent.trim()}).filter(function(t){return /spin it|Hold PUSH/.test(t)}).slice(0,4),
       msg: txt('[data-msg]'),
+      sections: [].slice.call(document.querySelectorAll('section')).map(function(s){return s.getAttribute('data-screen-label')}),
+      h2s: [].slice.call(document.querySelectorAll('h2')).map(function(h){return h.textContent.trim().slice(0,34)}),
+      editionsCard: !!([].slice.call(document.querySelectorAll('h2')).find(function(h){return /Keep it free/.test(h.textContent)})),
+      editionsHref: (document.querySelector('a[href*="editions.theancientatlas.com"]')||{}).href || null,
+      studiesHref: (document.querySelector('a[href*="/creators/"]')||{}).href || null,
       unresolved: (document.body.innerHTML.match(/\\{\\{\\s*\\w+/g)||[]).slice(0,6),
       consoleErr: window.__ftwErrs || null
     };

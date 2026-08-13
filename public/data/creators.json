@@ -475,5 +475,201 @@
     "subs": "640K subs · Southeast Asia off-the-beaten-track field documentaries · Khmer temples, Laos, Cambodia",
     "color": "#C77B3F",
     "tier": 2
+  },
+  "wonderliv": {
+    "name": "Wonderliv Travel",
+    "handle": "@Wonderliv",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#7E9CB8",
+    "tier": 3
+  },
+  "ruhicenetglobal": {
+    "name": "Discover With Ruhi Cenet",
+    "handle": "@RuhiCenetGlobal",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#A88BB8",
+    "tier": 3
+  },
+  "coloradonativeguide": {
+    "name": "Colorado Guide",
+    "handle": "@coloradonativeguide",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#8BB89C",
+    "tier": 3
+  },
+  "historytime": {
+    "name": "History Time",
+    "handle": "@HistoryTime",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#B8A07E",
+    "tier": 3
+  },
+  "miniminuteman773": {
+    "name": "Miniminuteman",
+    "handle": "@miniminuteman773",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#9C8BB8",
+    "tier": 3
+  },
+  "kaimarklifestyle": {
+    "name": "KaimarkLifestyle",
+    "handle": "@KaimarkLifestyle",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#B88B8B",
+    "tier": 3
+  },
+  "ancientpresence": {
+    "name": "Ancient Presence",
+    "handle": "@AncientPresence",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#7EB8B0",
+    "tier": 3
+  },
+  "ultimatediscovery": {
+    "name": "The Ultimate Discovery",
+    "handle": "@ultimatediscovery",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#B8B07E",
+    "tier": 3
+  },
+  "travelingwithkrushworth": {
+    "name": "Traveling with Krushworth",
+    "handle": "@TravelingwithKrushworth",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#8B9CB8",
+    "tier": 3
+  },
+  "secretstopstv": {
+    "name": "Secret Stops",
+    "handle": "@SecretStopsTV",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#A8B87E",
+    "tier": 3
+  },
+  "tessagaidsmith": {
+    "name": "Tess Agaid Smith",
+    "handle": "@TessAgaidSmith",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#7E9CB8",
+    "tier": 3
+  },
+  "earthunraveled": {
+    "name": "Earth Unraveled",
+    "handle": "@EarthUnraveled",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#A88BB8",
+    "tier": 3
+  },
+  "unesco": {
+    "name": "UNESCO",
+    "handle": "@UNESCO",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#8BB89C",
+    "tier": 3
+  },
+  "odyssey": {
+    "name": "Odyssey",
+    "handle": "@odyssey",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#B8A07E",
+    "tier": 3
+  },
+  "worldwildhearts": {
+    "name": "World Wild Hearts",
+    "handle": "@worldwildhearts",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#9C8BB8",
+    "tier": 3
+  },
+  "dailydosedocumentary": {
+    "name": "Daily Dose Documentary",
+    "handle": "@DailyDoseDocumentary",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#B88B8B",
+    "tier": 3
+  },
+  "freedompressnewsdocumentaries": {
+    "name": "FPN — History & Culture",
+    "handle": "@Freedompressnews-Documentaries",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#7EB8B0",
+    "tier": 3
+  },
+  "jamespuente": {
+    "name": "James Puente",
+    "handle": "@JamesPuente",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#B8B07E",
+    "tier": 3
+  },
+  "smarthistoryarthistory": {
+    "name": "Smarthistory",
+    "handle": "@smarthistory-art-history",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#8B9CB8",
+    "tier": 3
+  },
+  "rtenews": {
+    "name": "RTÉ News",
+    "handle": "@rtenews",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#A8B87E",
+    "tier": 3
+  },
+  "standingstonesireland": {
+    "name": "Standing Stones of Ireland",
+    "handle": "@standingstonesireland",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#7E9CB8",
+    "tier": 3
+  },
+  "ricksteveseuropeofficial": {
+    "name": "Rick Steves' Europe",
+    "handle": "@RickStevesEuropeOfficial",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#A88BB8",
+    "tier": 3
+  },
+  "manuelbravo": {
+    "name": "Manuel Bravo",
+    "handle": "@ManuelBravo",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#8BB89C",
+    "tier": 3
+  },
+  "cosiscience": {
+    "name": "COSI",
+    "handle": "@cosiscience",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#B8A07E",
+    "tier": 3
+  },
+  "daradventures": {
+    "name": "DarAdventures",
+    "handle": "@daradventures",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#9C8BB8",
+    "tier": 3
+  },
+  "rareearthseries": {
+    "name": "Rare Earth",
+    "handle": "@RareEarthSeries",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#B88B8B",
+    "tier": 3
+  },
+  "60minutes": {
+    "name": "60 Minutes",
+    "handle": "@60minutes",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#7EB8B0",
+    "tier": 3
+  },
+  "metmuseum": {
+    "name": "The Met",
+    "handle": "@metmuseum",
+    "subs": "seed source · pre-dates the creator index",
+    "color": "#B8B07E",
+    "tier": 3
   }
 }
