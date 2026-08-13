@@ -2052,7 +2052,8 @@
     {
       "id": "6cEUjGnu91s",
       "title": "UnchartedX Live Stream — reviewing Caral in Peru",
-      "cr": "unchartedx"
+      "cr": "unchartedx",
+      "noembed": true
     },
     {
       "id": "sL0G-5LrldM",
@@ -2181,7 +2182,8 @@
     {
       "id": "gbPODG_venM",
       "title": "MYSTERIOUS 'FLOATING STONE', MY THEORY | Ishi-no-Hoden",
-      "cr": "archaeoalchemy"
+      "cr": "archaeoalchemy",
+      "noembed": true
     }
   ],
   "Ishibutai Kofun": [
@@ -2460,14 +2462,16 @@
     {
       "id": "c130haajOJI",
       "title": "'PYRAMID' OF JAPAN & LARGEST ANCIENT STONE CIRCLES",
-      "cr": "archaeoalchemy"
+      "cr": "archaeoalchemy",
+      "noembed": true
     }
   ],
   "Mt. Kuromata": [
     {
       "id": "c130haajOJI",
       "title": "'PYRAMID' OF JAPAN & LARGEST ANCIENT STONE CIRCLES",
-      "cr": "archaeoalchemy"
+      "cr": "archaeoalchemy",
+      "noembed": true
     }
   ],
   "Prambanan": [
@@ -7281,7 +7285,8 @@
       "title": "The Mysterious Shilmala River - Sahasralinga",
       "cr": "agelessrock",
       "added": "2026-08-07",
-      "published": "2026-08-07"
+      "published": "2026-08-07",
+      "noembed": true
     }
   ],
   "Washa Mikael Rock-Cut Church": [
