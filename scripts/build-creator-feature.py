@@ -435,15 +435,26 @@ LOGO = ('<svg viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg" ari
         '-36.71,36.71 -29.64,12.28 -84,0 -29.64,-12.28" fill="url(#g)"/>'
         '<circle cx="0" cy="0" r="6" fill="#F5DCA0"/></svg>')
 
-FALLBACK = ("this.onerror=null;this.src='https://i.ytimg.com/vi/'"
-            "+this.dataset.vid+'/mqdefault.jpg'")
-
-
 def thumb(vid, big=False):
-    q = "maxresdefault" if big else "mqdefault"
-    return (f'<img src="https://i.ytimg.com/vi/{e(vid["id"])}/{q}.jpg" '
-            f'data-vid="{e(vid["id"])}" onerror="{FALLBACK}" alt="" '
-            f'loading="lazy" decoding="async">')
+    """A YouTube still.
+
+    Big (feature hero): ask for maxresdefault and let ytFallback() walk down
+    to whatever actually exists. YouTube serves a missing rendition as a 404
+    carrying a valid 120x90 grey JPEG, which browsers treat as a successful
+    load - so the fallback triggers on decoded width, not on the error event.
+
+    Small (strip and deck cards): mqdefault always exists for a live video and
+    at ~165px on screen there is nothing to gain from a larger fetch, which
+    matters when the deck holds a few hundred of them.
+    """
+    v = e(vid["id"])
+    if not big:
+        return (f'<img src="https://i.ytimg.com/vi/{v}/mqdefault.jpg" '
+                f'alt="" loading="lazy" decoding="async">')
+    return (f'<img src="https://i.ytimg.com/vi/{v}/maxresdefault.jpg" '
+            f'data-vid="{v}" data-q="0" '
+            f'onload="ytFallback(this)" onerror="ytFallback(this)" '
+            f'alt="" loading="lazy" decoding="async">')
 
 
 def watch(vid):
@@ -512,6 +523,17 @@ def render_cell(v):
 
 
 SCRIPT = """
+// A missing YouTube thumbnail comes back as a 404 whose body is a valid
+// 120x90 grey placeholder, so the image "loads" and onerror never fires.
+// Step down the rendition ladder until something wider than the placeholder
+// arrives. Global on purpose - the hero imgs call it from onload/onerror.
+function ytFallback(img){
+  var q = ['maxresdefault','sddefault','hqdefault','mqdefault'];
+  var i = +(img.dataset.q || 0);
+  if (img.naturalWidth > 120 || i >= q.length - 1) return;
+  img.dataset.q = ++i;
+  img.src = 'https://i.ytimg.com/vi/' + img.dataset.vid + '/' + q[i] + '.jpg';
+}
 (function(){
   var PER=%d;
   var deck=document.getElementById('deck');
