@@ -93,7 +93,11 @@ header{position:relative;z-index:1001;background:linear-gradient(180deg,rgba(13,
 
 /* Visual group break between passive data and interactive controls */
 .stat-divider{width:1px;align-self:stretch;background:linear-gradient(180deg,transparent,rgba(201,168,76,.22),transparent);margin:0 4px}
-.stat-experiences{position:relative;border-color:rgba(201,168,76,.20);background:rgba(201,168,76,.05);padding:6px 15px}
+.stat-experiences{position:relative;border-color:rgba(201,168,76,.20);background:rgba(201,168,76,.05)}
+/* `.stats > div, .stats > a` is (0,1,1) and would otherwise flatten this
+   to `padding:4px 0`. Scope it so the tile keeps its box whether it sits
+   directly in .stats (Studies) or inside .fw-wrap (Experiences). */
+.stats > .stat-experiences,.fw-wrap > .stat-experiences{padding:7px 15px}
 .stat-experiences .stat-exp-glyph{font-size:19px;line-height:1;text-align:center;color:var(--champagne);filter:drop-shadow(0 0 7px rgba(232,185,96,.35));font-variant-emoji:text}
 .stat-experiences:hover{background:rgba(201,168,76,.10)}
 .stat-experiences:hover .stat-exp-glyph{color:#F3D998}
