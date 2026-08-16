@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patterns — the same idea, in places that never met | The Ancient Atlas</title>
+<meta name="description" content="Seven engineering signatures tracked across 618 ancient sites, each with the comparative studies that argue it. The Atlas organised by method rather than by map.">
+<link rel="icon" href="/favicon-32.png" type="image/png">
+<link rel="canonical" href="https://theancientatlas.com/patterns/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Ancient Atlas">
+<meta property="og:title" content="Patterns — The Ancient Atlas">
+<meta property="og:description" content="Seven engineering signatures tracked across 618 ancient sites, each with the comparative studies that argue it.">
+<meta property="og:url" content="https://theancientatlas.com/patterns/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--obsidian:#0B0B0F;--charcoal:#14141A;--slate:#1C1C24;--stone:#2A2A35;
+--champagne:#C9A84C;--amber:#E8B960;--ivory:#F0EEE9;--cloud:#C5C5D0;--mist:#8A8A9A;
+--font-serif:'Fraunces',Georgia,serif;--font-sans:'Inter',-apple-system,sans-serif;
+--font-mono:'JetBrains Mono',ui-monospace,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--obsidian);color:var(--ivory);font-family:var(--font-sans);
+-webkit-font-smoothing:antialiased;line-height:1.6}
+header{position:sticky;top:0;z-index:20;background:rgba(11,11,15,.92);backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(42,42,53,.5);padding:13px 22px;display:flex;align-items:center;
+justify-content:space-between;gap:14px}
+header a.home{color:var(--ivory);text-decoration:none;font-family:var(--font-mono);font-size:11px;
+letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:center;gap:9px}
+header a.home span{color:var(--champagne)}
+header nav a{color:var(--mist);text-decoration:none;font-family:var(--font-mono);font-size:10.5px;
+letter-spacing:.12em;text-transform:uppercase;margin-left:16px}
+header nav a:hover{color:var(--champagne)}
+main{max-width:860px;margin:0 auto;padding:34px 22px 90px}
+.kicker{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+color:var(--champagne);margin:0 0 14px}
+h1{font-family:var(--font-serif);font-weight:600;font-size:clamp(28px,5vw,44px);line-height:1.1;
+margin:0 0 14px;letter-spacing:-.01em}
+.claim{font-size:clamp(15.5px,2vw,18px);color:var(--cloud);max-width:66ch;margin:0 0 22px}
+.ledger{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--stone);
+border-bottom:1px solid var(--stone);margin:0 0 44px}
+.ledger div{flex:1 1 130px;padding:15px 16px 14px;border-right:1px solid var(--stone)}
+.ledger div:last-child{border-right:0}
+.ledger b{display:block;font-family:var(--font-mono);font-size:23px;color:var(--amber);
+font-weight:500;line-height:1}
+.ledger span{display:block;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.14em;
+text-transform:uppercase;color:var(--mist);margin-top:7px}
+h2{font-family:var(--font-mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+color:var(--champagne);font-weight:400;margin:0 0 18px;padding-bottom:11px;
+border-bottom:1px solid var(--stone)}
+.essay p{max-width:64ch;color:var(--cloud);margin:0 0 17px}
+.essay p+p{margin-top:0}
+section{margin:0 0 52px}
+.vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:16px}
+.vid{display:block;text-decoration:none;color:inherit;border:1px solid var(--stone);
+border-radius:11px;overflow:hidden;background:var(--charcoal);transition:border-color .18s,transform .18s}
+.vid:hover{border-color:rgba(201,168,76,.45);transform:translateY(-2px)}
+.vid img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;opacity:.88}
+.vid:hover img{opacity:1}
+.vid .m{padding:11px 13px 13px}
+.vid .t{font-size:13.5px;line-height:1.4;color:var(--ivory);display:block}
+.vid .c{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+color:var(--champagne);margin-top:7px;display:block}
+.vid .x{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.07em;color:var(--mist);
+margin-top:6px;display:block}
+.mapwrap{position:relative;border:1px solid var(--stone);border-radius:12px;overflow:hidden;
+background:linear-gradient(180deg,#0E0E14,#0A0A0F);margin:0 0 14px}
+.mapwrap svg{display:block;width:100%;height:auto}
+.land{fill:#1B1B24;stroke:#262632;stroke-width:.8;vector-effect:non-scaling-stroke}
+.dot{fill:var(--amber)}
+.halo{fill:none;stroke:var(--champagne);stroke-opacity:.5;stroke-width:1.6;vector-effect:non-scaling-stroke}
+.maplegend{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+color:var(--mist);display:flex;justify-content:space-between;gap:12px;margin:0 0 40px;flex-wrap:wrap}
+.vid .mini{border-top:1px solid var(--stone);background:#0A0A0F}
+.vid .mini svg{display:block;width:100%;height:auto}
+.country{margin:0 0 22px}
+.country h3{font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+color:var(--mist);font-weight:400;margin:0 0 8px}
+.country ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:7px}
+.country li a{display:inline-block;font-size:13.5px;color:var(--cloud);text-decoration:none;
+border:1px solid var(--stone);border-radius:999px;padding:5px 12px;transition:.15s}
+.country li a:hover{border-color:rgba(201,168,76,.5);color:var(--ivory);background:rgba(201,168,76,.06)}
+.note{font-family:var(--font-mono);font-size:11px;line-height:1.75;color:var(--mist);
+border-left:2px solid var(--stone);padding:2px 0 2px 15px;max-width:62ch}
+.siblings{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.siblings a{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+color:var(--cloud);text-decoration:none;border:1px solid var(--stone);border-radius:999px;padding:6px 13px}
+.siblings a:hover{border-color:rgba(201,168,76,.5);color:var(--ivory)}
+.siblings a.off{opacity:.42;pointer-events:none}
+details{border-top:1px solid var(--stone);border-bottom:1px solid var(--stone);padding:0}
+summary{cursor:pointer;list-style:none;padding:15px 0;font-family:var(--font-mono);font-size:11px;
+letter-spacing:.16em;text-transform:uppercase;color:var(--champagne);display:flex;
+align-items:center;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:15px;color:var(--mist)}
+details[open] summary::after{content:"2"}
+details[open] summary{border-bottom:1px solid var(--stone)}
+details .essay,details p:first-of-type{margin-top:17px}
+details p:last-child{margin-bottom:17px}
+footer{border-top:1px solid var(--stone);margin-top:60px;padding:22px 0 0;font-family:var(--font-mono);
+font-size:10.5px;letter-spacing:.06em;color:var(--mist)}
+footer a{color:var(--cloud);text-decoration:none}
+footer a:hover{color:var(--champagne)}
+@media(max-width:560px){main{padding:34px 17px 70px}.ledger div{flex:1 1 50%}}
+
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+.pcard{display:block;text-decoration:none;color:inherit;border:1px solid var(--stone);
+border-radius:12px;padding:19px 20px 17px;background:var(--charcoal);transition:.18s}
+.pcard:hover{border-color:rgba(201,168,76,.5);transform:translateY(-2px)}
+.pcard.off{opacity:.5}
+.pk{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
+color:var(--champagne);margin:0 0 9px}
+.pcard h3{font-family:var(--font-serif);font-weight:600;font-size:20px;line-height:1.2;margin:0 0 9px}
+.pb{font-size:13.5px;color:var(--cloud);margin:0 0 12px}
+.pm{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+color:var(--mist);margin:0}
+</style>
+<script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<header>
+  <a class="home" href="/"><span>✦</span> The Ancient Atlas</a>
+  <nav><a href="/">Atlas</a><a href="/library/">Library</a><a href="/creators/">Studies</a><a href="/sites/">Sites</a></nav>
+</header>
+<main>
+  <p class="kicker">Patterns</p>
+  <h1>The same idea, in places that never met.</h1>
+  <p class="claim">The Atlas is normally sorted by where things are. This shelf sorts it by how they
+were made — seven engineering signatures tracked across 618 sites, each with the comparative studies
+that argue it. Sort by country and these never appear together. Sort by method and they are obviously
+one idea.</p>
+  <div class="pgrid"><a class="pcard" href="/patterns/machining/"><p class="pk">No. 01 · Machining</p><h3>Tool marks that repeat on four continents.</h3><p class="pb">Striations, bore holes, saw kerfs and flat-planed faces that look mechanical — turning up in cultures separated by oceans and thousands of years, in stone their published toolkits were not supposed to cut.</p><p class="pm">23 sites · 10 countries · 5 studies</p></a><div class="pcard off"><p class="pk">No. 03 · Precision</p><h3>Precision — not yet written</h3><p class="pb">166 sites across 31 countries carry this criterion. No comparative study written yet.</p><p class="pm">166 sites · 31 countries · no study yet</p></div><div class="pcard off"><p class="pk">No. 04 · Polygonal</p><h3>Polygonal — not yet written</h3><p class="pb">84 sites across 21 countries carry this criterion. No comparative study written yet.</p><p class="pm">84 sites · 21 countries · no study yet</p></div><div class="pcard off"><p class="pk">No. 02 · Geometry</p><h3>Geometry — not yet written</h3><p class="pb">177 sites across 37 countries carry this criterion. No comparative study written yet.</p><p class="pm">177 sites · 37 countries · no study yet</p></div><div class="pcard off"><p class="pk">No. 05 · Scale</p><h3>Scale — not yet written</h3><p class="pb">249 sites across 42 countries carry this criterion. No comparative study written yet.</p><p class="pm">249 sites · 42 countries · no study yet</p></div><div class="pcard off"><p class="pk">No. 06 · Hardness</p><h3>Hardness — not yet written</h3><p class="pb">31 sites across 9 countries carry this criterion. No comparative study written yet.</p><p class="pm">31 sites · 9 countries · no study yet</p></div><div class="pcard off"><p class="pk">No. 07 · Stratigraphy</p><h3>Stratigraphy — not yet written</h3><p class="pb">31 sites across 16 countries carry this criterion. No comparative study written yet.</p><p class="pm">31 sites · 16 countries · no study yet</p></div></div>
+  <footer>
+    The Ancient Atlas — a hand-curated map of the deep past.
+    <a href="/">Map</a> · <a href="/library/">Library</a> · <a href="/creators/">Creator Studies</a> ·
+    <a href="/contribute.html">Contribute</a>
+  </footer>
+</main>
+</body>
+</html>

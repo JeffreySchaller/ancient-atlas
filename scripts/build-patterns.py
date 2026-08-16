@@ -318,6 +318,93 @@ def slug(name):
     return s or "site"
 
 
+
+def build_index(order, built_keys):
+    """The shelf's front door. Every criterion is listed whether or not it has
+    a study yet — the unwritten ones are the honest backlog, and showing the
+    counts makes the gap legible rather than hidden."""
+    cards = []
+    for k in order:
+        spec = patterns[k]
+        carriers = [x for x in sites if k in (x.get("criteria") or [])]
+        cs = {countries.get(x["n"], "—") for x in carriers}
+        live = k in built_keys
+        nvid = len(spec.get("videos") or [])
+        head = spec.get("headline") or f'{spec["name"]} — not yet written'
+        blurb = spec.get("claim") or (
+            f'{len(carriers)} sites across {len(cs)} countries carry this criterion. '
+            "No comparative study written yet."
+        )
+        inner = (
+            f'<p class="pk">{e(spec["index"])} · {e(spec["name"])}</p>'
+            f'<h3>{e(head)}</h3>'
+            f'<p class="pb">{e(blurb)}</p>'
+            f'<p class="pm">{len(carriers)} sites · {len(cs)} countries'
+            + (f' · {nvid} studies' if nvid else " · no study yet") + "</p>"
+        )
+        cards.append(
+            f'<a class="pcard" href="/patterns/{k}/">{inner}</a>' if live
+            else f'<div class="pcard off">{inner}</div>'
+        )
+
+    doc = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patterns — the same idea, in places that never met | The Ancient Atlas</title>
+<meta name="description" content="Seven engineering signatures tracked across 618 ancient sites, each with the comparative studies that argue it. The Atlas organised by method rather than by map.">
+<link rel="icon" href="/favicon-32.png" type="image/png">
+<link rel="canonical" href="https://theancientatlas.com/patterns/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Ancient Atlas">
+<meta property="og:title" content="Patterns — The Ancient Atlas">
+<meta property="og:description" content="Seven engineering signatures tracked across 618 ancient sites, each with the comparative studies that argue it.">
+<meta property="og:url" content="https://theancientatlas.com/patterns/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>{CSS}
+.pgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}}
+.pcard{{display:block;text-decoration:none;color:inherit;border:1px solid var(--stone);
+border-radius:12px;padding:19px 20px 17px;background:var(--charcoal);transition:.18s}}
+.pcard:hover{{border-color:rgba(201,168,76,.5);transform:translateY(-2px)}}
+.pcard.off{{opacity:.5}}
+.pk{{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
+color:var(--champagne);margin:0 0 9px}}
+.pcard h3{{font-family:var(--font-serif);font-weight:600;font-size:20px;line-height:1.2;margin:0 0 9px}}
+.pb{{font-size:13.5px;color:var(--cloud);margin:0 0 12px}}
+.pm{{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+color:var(--mist);margin:0}}
+</style>
+<script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<header>
+  <a class="home" href="/"><span>✦</span> The Ancient Atlas</a>
+  <nav><a href="/">Atlas</a><a href="/library/">Library</a><a href="/creators/">Studies</a><a href="/sites/">Sites</a></nav>
+</header>
+<main>
+  <p class="kicker">Patterns</p>
+  <h1>The same idea, in places that never met.</h1>
+  <p class="claim">The Atlas is normally sorted by where things are. This shelf sorts it by how they
+were made — seven engineering signatures tracked across 618 sites, each with the comparative studies
+that argue it. Sort by country and these never appear together. Sort by method and they are obviously
+one idea.</p>
+  <div class="pgrid">{"".join(cards)}</div>
+  <footer>
+    The Ancient Atlas — a hand-curated map of the deep past.
+    <a href="/">Map</a> · <a href="/library/">Library</a> · <a href="/creators/">Creator Studies</a> ·
+    <a href="/contribute.html">Contribute</a>
+  </footer>
+</main>
+</body>
+</html>
+"""
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "index.html").write_text(doc)
+    return len(built_keys)
+
 order = [k for k in ("machining", "precision", "polygonal", "geometry",
                      "scale", "hardness", "stratigraphy") if k in patterns]
 
@@ -336,4 +423,8 @@ for key in order:
 
 if not built:
     sys.exit("ABORT: nothing built — every pattern in patterns.json has an empty video list")
+
+live = [k for k in order if patterns[k].get("videos")]
+build_index(order, set(live))
+print(f"  ✓ /patterns/  index · {len(live)} live, {len(order) - len(live)} awaiting a study")
 print(f"{built} pattern page(s) written to public/patterns/")
