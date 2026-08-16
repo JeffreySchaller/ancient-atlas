@@ -316,6 +316,14 @@ def build(key, spec, order):
 <meta property="og:title" content="{e(spec['name'])} · The Ancient Atlas">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="https://theancientatlas.com/patterns/{key}/">
+<meta property="og:image" content="https://theancientatlas.com/patterns/og/{key}.png?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{e(spec['name'])} on The Ancient Atlas: {len(carriers)} sites in {n_countries} countries, marked on a world map.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{e(spec['name'])} · The Ancient Atlas">
+<meta name="twitter:description" content="{e(spec['claim'])}">
+<meta name="twitter:image" content="https://theancientatlas.com/patterns/og/{key}.png?v=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -430,6 +438,14 @@ def build_index(order, built_keys):
 <meta property="og:title" content="Patterns · The Ancient Atlas">
 <meta property="og:description" content="Seven engineering signatures tracked across 618 ancient sites, each with the comparative studies that argue it.">
 <meta property="og:url" content="https://theancientatlas.com/patterns/">
+<meta property="og:image" content="https://theancientatlas.com/patterns/og/index.png?v=1">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Patterns on The Ancient Atlas: seven engineering signatures, every carrier site marked on a world map.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Patterns · The Ancient Atlas">
+<meta name="twitter:description" content="Seven engineering signatures tracked across 618 ancient sites, each with the comparative studies that argue it.">
+<meta name="twitter:image" content="https://theancientatlas.com/patterns/og/index.png?v=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
