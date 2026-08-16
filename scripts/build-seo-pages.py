@@ -52,6 +52,28 @@ def load(name):
         return json.load(f)
 
 
+# criteria with a published comparative study in public/patterns/. Built from
+# disk rather than hardcoded, so a pattern page that has not shipped never gets
+# linked from 600 site pages.
+def _pattern_pages():
+    import json as _json
+    d = REPO_ROOT / "public" / "patterns"
+    names = {}
+    if not d.exists():
+        return names
+    try:
+        spec = _json.loads((REPO_ROOT / "data" / "patterns.json").read_text())
+    except Exception:
+        spec = {}
+    for sub in sorted(d.iterdir()):
+        if (sub / "index.html").exists():
+            names[sub.name] = spec.get(sub.name, {}).get("name", sub.name).lower()
+    return names
+
+
+PATTERN_PAGES = _pattern_pages()
+
+
 def slugify(name):
     s = unicodedata.normalize("NFKD", name)
     s = "".join(c for c in s if not unicodedata.combining(c))
@@ -178,7 +200,7 @@ def main():
     # sitemap entirely, because only library/ was globbed. That made every page
     # under /creators/ invisible to search - including the one the YouTube
     # channel is about to point at. Any hand-authored section belongs here.
-    for section in ("creators", "experiences"):
+    for section in ("creators", "experiences", "patterns"):
         d = REPO_ROOT / "public" / section
         if not d.exists():
             continue
@@ -214,8 +236,20 @@ def main():
             pts = [CRITERIA_LABELS.get(c, c) for c in s["criteria"]]
             look = (
                 '<div class="lookcloser"><b>Look Closer</b> — this site carries open questions: '
-                + html.escape("; ".join(pts)) + ".</div>"
+                + html.escape("; ".join(pts)) + "."
             )
+            # A criterion this site carries that has a written comparative study
+            # gets a way out of the site page. This is the whole point of the
+            # pattern shelf: the question a single site raises is answered, if
+            # at all, by the other places that raise the same one.
+            for c in s["criteria"]:
+                if c in PATTERN_PAGES:
+                    look += (
+                        f' <a href="/patterns/{c}/" style="color:var(--champagne)">'
+                        f'See {html.escape(PATTERN_PAGES[c])} across the Atlas →</a>'
+                    )
+                    break
+            look += "</div>"
 
         vid_html = ""
         if wires:

@@ -1,0 +1,102 @@
+{
+  "machining": {
+    "name": "Machining",
+    "index": "No. 01",
+    "headline": "Tool marks that repeat on four continents.",
+    "claim": "Striations, bore holes, saw kerfs and flat-planed faces that look mechanical — turning up in cultures separated by oceans and thousands of years, in stone their published toolkits were not supposed to cut.",
+    "essay": [
+      "Machining is the narrowest of the Atlas's seven criteria and the least comfortable. It is not a claim about who did the cutting. It is an observation about the marks left behind: parallel striations of even depth and pitch, circular bore holes with regular walls, kerfs that run straight for metres, faces planed flat enough to hold a reflection.",
+      "The reason to group these across sites rather than argue them one at a time is that individually each has a local explanation, and the local explanations do not resemble each other. Bazda's grooves are attributed to Roman quarrying for Harran. Longyou's are attributed to a lost Chinese chisel technique. The Serapeum's boxes are attributed to Ptolemaic bull burials. Every explanation is plausible on its own ground. What none of them explains is why the marks look alike.",
+      "That is the whole function of this page. Put them beside each other and either the resemblance dissolves — which would be a real result, and worth publishing — or it does not, and the next question becomes a comparative one that no single site page can ask.",
+      "Two honest caveats, because they matter more here than anywhere else in the Atlas. First: similar marks can come from different processes, and convergence of appearance is not convergence of method. Second: a photograph flattens exactly the evidence that would settle it — depth, pitch, tolerance, tool-nose radius. These videos are the best available substitute for standing there with a straightedge and a raking light. They are not a substitute for measurement."
+    ],
+    "videos_note": "These are comparative studies, not site walkthroughs — which is why they never fitted on a site page. Each one puts marks from several places in one frame. Site-specific footage lives on the site pages linked below.",
+    "videos": [
+      {
+        "id": "kun5oIBqGTo",
+        "title": "Mysterious Striations at megalithic sites",
+        "cr": "agelessrock",
+        "note": "The core comparison — striation patterns across multiple sites"
+      },
+      {
+        "id": "b7vGMD0vWK0",
+        "title": "Quiz: Mysterious Megalithic Culture Gear Tracks",
+        "cr": "agelessrock",
+        "note": "Gear-track and groove forms, posed as a test rather than a thesis"
+      },
+      {
+        "id": "1ZjnsOl2OM8",
+        "title": "Bazda Caves",
+        "cr": "agelessrock",
+        "note": "Türkiye — the reference surface this pattern is measured against"
+      },
+      {
+        "id": "zbEEa9bkdb8",
+        "title": "Compare Cave Dwellings",
+        "cr": "agelessrock",
+        "note": "Rock-cut interiors compared across regions"
+      },
+      {
+        "id": "q5Z_NNNORzs",
+        "title": "Mysteries of China",
+        "cr": "agelessrock",
+        "note": "Chinese sites surveyed together, Longyou among them"
+      }
+    ]
+  },
+
+  "geometry": {
+    "name": "Geometry",
+    "index": "No. 02",
+    "headline": "",
+    "claim": "",
+    "essay": [],
+    "videos_note": "",
+    "videos": []
+  },
+  "precision": {
+    "name": "Precision",
+    "index": "No. 03",
+    "headline": "",
+    "claim": "",
+    "essay": [],
+    "videos_note": "",
+    "videos": []
+  },
+  "polygonal": {
+    "name": "Polygonal",
+    "index": "No. 04",
+    "headline": "",
+    "claim": "",
+    "essay": [],
+    "videos_note": "",
+    "videos": []
+  },
+  "scale": {
+    "name": "Scale",
+    "index": "No. 05",
+    "headline": "",
+    "claim": "",
+    "essay": [],
+    "videos_note": "",
+    "videos": []
+  },
+  "hardness": {
+    "name": "Hardness",
+    "index": "No. 06",
+    "headline": "",
+    "claim": "",
+    "essay": [],
+    "videos_note": "",
+    "videos": []
+  },
+  "stratigraphy": {
+    "name": "Stratigraphy",
+    "index": "No. 07",
+    "headline": "",
+    "claim": "",
+    "essay": [],
+    "videos_note": "",
+    "videos": []
+  }
+}
