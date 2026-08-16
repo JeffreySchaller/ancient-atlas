@@ -75,7 +75,8 @@ letter-spacing:.12em;text-transform:uppercase;margin-left:16px}
 header nav a:hover{color:var(--champagne)}
 main{max-width:860px;margin:0 auto;padding:34px 22px 90px}
 .kicker{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
-color:var(--champagne);margin:0 0 14px}
+color:var(--champagne);margin:0 0 14px;display:flex;align-items:center;gap:11px}
+.glyph{color:var(--champagne);flex:none}
 h1{font-family:var(--font-serif);font-weight:600;font-size:clamp(28px,5vw,44px);line-height:1.1;
 margin:0 0 14px;letter-spacing:-.01em}
 .claim{font-size:clamp(15.5px,2vw,18px);color:var(--cloud);max-width:66ch;margin:0 0 22px}
@@ -146,6 +147,47 @@ footer a{color:var(--cloud);text-decoration:none}
 footer a:hover{color:var(--champagne)}
 @media(max-width:560px){main{padding:34px 17px 70px}.ledger div{flex:1 1 50%}}
 """
+
+
+
+# ---------------------------------------------------------------------------
+# GLYPHS
+# Lifted verbatim from the "six properties" list in library/megaliths.html.
+# That list was already this taxonomy - fitted joints, hardness, mass,
+# interlock, layers, geometry - drawn before there was a Patterns shelf to put
+# it on. Reusing the exact paths means the Library and this section speak one
+# visual language rather than two.
+# `machining` is the only one with no glyph, because it was the seventh
+# criterion, added later. Drawn to match: three parallel striations and a bore.
+# ---------------------------------------------------------------------------
+GLYPHS = {
+    "precision": '<path d="M3 19 L3 8 L7 5 L11 5 L13 9 L13 19 Z"/>'
+                 '<path d="M21 19 L21 6 L17 6 L13 9 L13 19 Z"/>',
+    "hardness":  '<path d="M9 3 L15 3 L15 14 L12 21 L9 14 Z"/><path d="M9 7 L15 7"/>',
+    "scale":     '<path d="M4 8 L12 4 L20 8 L20 18 L12 22 L4 18 Z"/>'
+                 '<path d="M4 8 L12 12 L20 8 M12 12 L12 22"/>',
+    "polygonal": '<path d="M10 2 L14 2 L15.5 5 L13 7 L9 7 L8.5 4 Z"/>'
+                 '<path d="M3 13 L7 12 L9 15 L7 19 L3 18 L2 15 Z"/>'
+                 '<path d="M16 14 L20 13 L22 16 L20 20 L17 20 L15 17 Z"/>',
+    "stratigraphy": '<path d="M3 5 L21 5" stroke-width="0.7" opacity="0.5"/>'
+                    '<path d="M3 10 L21 10" stroke-width="0.9" opacity="0.7"/>'
+                    '<path d="M3 15 L21 15" stroke-width="1.2" opacity="0.85"/>'
+                    '<path d="M3 20 L21 20" stroke-width="1.7"/>',
+    "geometry":  '<circle cx="9" cy="12" r="7"/><circle cx="15" cy="12" r="7"/>',
+    "machining": '<path d="M3 8 C8 6.4, 16 6.4, 21 8"/>'
+                 '<path d="M3 12 C8 10.4, 16 10.4, 21 12"/>'
+                 '<path d="M3 16 C8 14.4, 16 14.4, 21 16"/>'
+                 '<circle cx="17.6" cy="19.4" r="2.1"/>',
+}
+
+
+def glyph(key, size=26):
+    g = GLYPHS.get(key)
+    if not g:
+        return ""
+    return (f'<svg class="glyph" width="{size}" height="{size}" viewBox="0 0 24 24" '
+            f'fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" '
+            f'stroke-linecap="round" aria-hidden="true">{g}</svg>')
 
 
 def minimap(names, r=7.0, halo=True, window=None):
@@ -287,7 +329,7 @@ def build(key, spec, order):
   <nav><a href="/">Atlas</a><a href="/library/">Library</a><a href="/creators/">Studies</a><a href="/sites/">Sites</a></nav>
 </header>
 <main>
-  <p class="kicker">Patterns · {e(spec['index'])}</p>
+  <p class="kicker">{glyph(key, 30)}<span>Patterns · {e(spec['index'])} · {e(spec['name'])}</span></p>
   <h1>{e(spec['headline'])}</h1>
   <p class="claim">{e(spec['claim'])}</p>
 
@@ -363,7 +405,7 @@ def build_index(order, built_keys):
             "No comparative study written yet."
         )
         inner = (
-            f'<p class="pk">{e(spec["index"])} · {e(spec["name"])}</p>'
+            f'<p class="pk">{glyph(k, 26)}<span>{e(spec["index"])} · {e(spec["name"])}</span></p>'
             f'<h3>{e(head)}</h3>'
             f'<p class="pb">{e(blurb)}</p>'
             f'<p class="pm">{len(carriers)} sites · {len(cs)} countries'
@@ -398,7 +440,7 @@ border-radius:12px;padding:19px 20px 17px;background:var(--charcoal);transition:
 .pcard:hover{{border-color:rgba(201,168,76,.5);transform:translateY(-2px)}}
 .pcard.off{{opacity:.5}}
 .pk{{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
-color:var(--champagne);margin:0 0 9px}}
+color:var(--champagne);margin:0 0 11px;display:flex;align-items:center;gap:10px}}
 .pcard h3{{font-family:var(--font-serif);font-weight:600;font-size:20px;line-height:1.2;margin:0 0 9px}}
 .pb{{font-size:13.5px;color:var(--cloud);margin:0 0 12px}}
 .pm{{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
