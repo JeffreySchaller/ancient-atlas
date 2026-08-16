@@ -1,8 +1,8 @@
 {
   "interview": {
-    "id": "",
-    "title": "Ageless Rock — a conversation with Bernie Ong",
-    "published": "",
+    "id": "2OSddPnrShw",
+    "title": "Why Are There So Many Underground Cities? In Conversation with Ageless Rock",
+    "published": "2026-08-16",
     "note": "Set id to the 11-character YouTube ID on release day, or run scripts/set-interview.py <ID>. An empty id renders the 'coming' state everywhere instead of a broken embed."
   },
   "featured_study": "ageless-rock"
