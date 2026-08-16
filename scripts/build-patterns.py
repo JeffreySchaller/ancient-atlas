@@ -434,12 +434,14 @@ def build_index(order, built_keys):
             f'{len(carriers)} sites across {len(cs)} countries carry this criterion. '
             "No comparative study written yet."
         )
+        go = (f'<span>Watch {nvid} studies</span><i>→</i>' if nvid
+              else '<span>Not yet written</span>')
         inner = (
             f'<p class="pk">{glyph(k, 34)}<span>{e(spec["index"])} · {e(spec["name"])}</span></p>'
             f'<h3>{e(head)}</h3>'
             f'<p class="pb">{e(blurb)}</p>'
-            f'<p class="pm">{len(carriers)} sites · {len(cs)} countries'
-            + (f' · {nvid} studies' if nvid else " · no study yet") + "</p>"
+            f'<p class="pm">{len(carriers)} sites · {len(cs)} countries</p>'
+            f'<p class="pgo">{go}</p>'
         )
         cards.append(
             f'<a class="pcard" href="/patterns/{k}/">{inner}</a>' if live
@@ -472,19 +474,51 @@ def build_index(order, built_keys):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>{CSS}
-.pgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}}
+/* Three columns at a 1140px measure fits all seven in one view on a 1440x900
+   laptop. Two columns made a shelf you had to scroll, which is a list. */
+main{{max-width:1140px;padding:26px 22px 60px}}
+h1{{font-size:clamp(26px,3.2vw,37px);margin:0 0 10px}}
+.claim{{font-size:15.5px;line-height:1.5;max-width:78ch;margin:0 0 16px}}
+/* Short screens are the binding constraint, so query the thing that actually
+   binds. A 1280x720 laptop keeps only 633px of page after browser chrome;
+   this buys back the ~35px that puts the seventh card back in view. */
+@media (max-height:760px){{
+main{{padding-top:18px}}
+h1{{font-size:30px;margin:0 0 8px}}
+.claim{{font-size:14.5px;margin:0 0 13px}}
+.pcard{{padding:11px 14px 10px}}
+.pcard h3{{font-size:17px}}
+}}
+.pgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:13px}}
 .pcard{{display:block;text-decoration:none;color:inherit;border:1px solid var(--stone);
-border-radius:12px;padding:19px 20px 17px;background:var(--charcoal);transition:.18s}}
+border-radius:12px;padding:13px 15px 11px;background:var(--charcoal);transition:.18s}}
 .pcard:hover{{border-color:rgba(201,168,76,.5);transform:translateY(-2px)}}
 .pcard.off{{opacity:.5}}
+/* The eighth cell. Costs no vertical space and keeps the page's best sentence. */
+.pnote{{align-self:center;margin:0;padding:2px 6px;font-size:13px;line-height:1.55;
+color:var(--mist);max-width:34ch}}
 .pk{{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
-color:var(--champagne);margin:0 0 12px;display:flex;align-items:center;gap:13px}}
-.pcard h3{{font-family:var(--font-serif);font-weight:600;font-size:20px;line-height:1.2;margin:0 0 9px}}
-.pb{{font-size:13.5px;line-height:1.5;color:var(--cloud);margin:0 0 12px;
+color:var(--champagne);margin:0 0 8px;display:flex;align-items:center;gap:11px}}
+.pcard h3{{font-family:var(--font-serif);font-weight:600;font-size:17.5px;line-height:1.2;
+margin:0 0 6px}}
+.pb{{font-size:12.5px;line-height:1.45;color:var(--cloud);margin:0 0 9px;
 display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;
 overflow:hidden;text-overflow:ellipsis}}
-.pm{{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
-color:var(--mist);margin:0}}
+/* "6 studies" is a fact. "Watch 6 studies ->" is the job. The accent goes on the
+   half you can act on, the count recedes, and a reader scanning only the
+   champagne text down this page reads seven instructions. */
+.pm{{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+color:var(--mist);margin:0 0 8px}}
+/* A full-width row under a hairline reads as the bottom of a button. Side by
+   side with the counts it did not fit at 264px and wrapped, which buried the
+   one line on the card that states the job. */
+.pgo{{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0;
+border-top:1px solid var(--stone);padding-top:9px;
+font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+color:var(--champagne);transition:border-color .18s,color .18s}}
+.pgo i{{font-style:normal;display:inline-block;transition:transform .16s}}
+.pcard:hover .pgo{{color:var(--amber);border-top-color:rgba(201,168,76,.32)}}
+.pcard:hover .pgo i{{transform:translateX(3px)}}
 </style>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -496,11 +530,9 @@ color:var(--mist);margin:0}}
 <main>
   <p class="kicker">Patterns</p>
   <h1>The same idea, in places that never met.</h1>
-  <p class="claim">The Atlas is normally sorted by where things are. This shelf sorts it by how they
-were made: seven engineering signatures tracked across 618 sites, each with the studies that
-argue it. Sort by country and these never appear together. Sort by method and you are looking
-at one idea.</p>
-  <div class="pgrid">{"".join(cards)}</div>
+  <p class="claim">Seven engineering signatures, tracked across 618 sites.
+Open one to watch the studies that argue it.</p>
+  <div class="pgrid">{"".join(cards)}<p class="pnote">Sort by country and these never appear together. Sort by method and you are looking at one idea.</p></div>
   <footer>
     The Ancient Atlas, a hand-curated map of the deep past.
     <a href="/">Map</a> · <a href="/library/">Library</a> · <a href="/patterns/">Patterns</a> · <a href="/creators/">Creator Studies</a> ·

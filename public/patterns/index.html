@@ -136,19 +136,51 @@ footer a{color:var(--cloud);text-decoration:none}
 footer a:hover{color:var(--champagne)}
 @media(max-width:560px){main{padding:34px 17px 70px}.ledger div{flex:1 1 50%}}
 
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+/* Three columns at a 1140px measure fits all seven in one view on a 1440x900
+   laptop. Two columns made a shelf you had to scroll, which is a list. */
+main{max-width:1140px;padding:26px 22px 60px}
+h1{font-size:clamp(26px,3.2vw,37px);margin:0 0 10px}
+.claim{font-size:15.5px;line-height:1.5;max-width:78ch;margin:0 0 16px}
+/* Short screens are the binding constraint, so query the thing that actually
+   binds. A 1280x720 laptop keeps only 633px of page after browser chrome;
+   this buys back the ~35px that puts the seventh card back in view. */
+@media (max-height:760px){
+main{padding-top:18px}
+h1{font-size:30px;margin:0 0 8px}
+.claim{font-size:14.5px;margin:0 0 13px}
+.pcard{padding:11px 14px 10px}
+.pcard h3{font-size:17px}
+}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:13px}
 .pcard{display:block;text-decoration:none;color:inherit;border:1px solid var(--stone);
-border-radius:12px;padding:19px 20px 17px;background:var(--charcoal);transition:.18s}
+border-radius:12px;padding:13px 15px 11px;background:var(--charcoal);transition:.18s}
 .pcard:hover{border-color:rgba(201,168,76,.5);transform:translateY(-2px)}
 .pcard.off{opacity:.5}
+/* The eighth cell. Costs no vertical space and keeps the page's best sentence. */
+.pnote{align-self:center;margin:0;padding:2px 6px;font-size:13px;line-height:1.55;
+color:var(--mist);max-width:34ch}
 .pk{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
-color:var(--champagne);margin:0 0 12px;display:flex;align-items:center;gap:13px}
-.pcard h3{font-family:var(--font-serif);font-weight:600;font-size:20px;line-height:1.2;margin:0 0 9px}
-.pb{font-size:13.5px;line-height:1.5;color:var(--cloud);margin:0 0 12px;
+color:var(--champagne);margin:0 0 8px;display:flex;align-items:center;gap:11px}
+.pcard h3{font-family:var(--font-serif);font-weight:600;font-size:17.5px;line-height:1.2;
+margin:0 0 6px}
+.pb{font-size:12.5px;line-height:1.45;color:var(--cloud);margin:0 0 9px;
 display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;
 overflow:hidden;text-overflow:ellipsis}
-.pm{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
-color:var(--mist);margin:0}
+/* "6 studies" is a fact. "Watch 6 studies ->" is the job. The accent goes on the
+   half you can act on, the count recedes, and a reader scanning only the
+   champagne text down this page reads seven instructions. */
+.pm{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+color:var(--mist);margin:0 0 8px}
+/* A full-width row under a hairline reads as the bottom of a button. Side by
+   side with the counts it did not fit at 264px and wrapped, which buried the
+   one line on the card that states the job. */
+.pgo{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0;
+border-top:1px solid var(--stone);padding-top:9px;
+font-family:var(--font-mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;
+color:var(--champagne);transition:border-color .18s,color .18s}
+.pgo i{font-style:normal;display:inline-block;transition:transform .16s}
+.pcard:hover .pgo{color:var(--amber);border-top-color:rgba(201,168,76,.32)}
+.pcard:hover .pgo i{transform:translateX(3px)}
 </style>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -160,11 +192,9 @@ color:var(--mist);margin:0}
 <main>
   <p class="kicker">Patterns</p>
   <h1>The same idea, in places that never met.</h1>
-  <p class="claim">The Atlas is normally sorted by where things are. This shelf sorts it by how they
-were made: seven engineering signatures tracked across 618 sites, each with the studies that
-argue it. Sort by country and these never appear together. Sort by method and you are looking
-at one idea.</p>
-  <div class="pgrid"><a class="pcard" href="/patterns/machining/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 8 C8 6.4, 16 6.4, 21 8"/><path d="M3 12 C8 10.4, 16 10.4, 21 12"/><path d="M3 16 C8 14.4, 16 14.4, 21 16"/><circle cx="17.6" cy="19.4" r="2.1"/></svg><span>No. 01 · Machining</span></p><h3>Tool marks that repeat on four continents.</h3><p class="pb">Striations, bore holes, saw kerfs and flat-planed faces that look mechanical. Four continents, no contact between them, and stone their documented toolkits were not supposed to cut.</p><p class="pm">23 sites · 10 countries · 5 studies</p></a><a class="pcard" href="/patterns/precision/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 19 L3 8 L7 5 L11 5 L13 9 L13 19 Z"/><path d="M21 19 L21 6 L17 6 L13 9 L13 19 Z"/></svg><span>No. 02 · Precision</span></p><h3>Tolerances you would ask a machine shop for.</h3><p class="pb">Joints you cannot slide paper into. Surfaces flat to a fraction of a millimetre, corners cut square in granite, and the tolerance holds across whole buildings rather than one showpiece block.</p><p class="pm">166 sites · 31 countries · 6 studies</p></a><a class="pcard" href="/patterns/polygonal/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M10 2 L14 2 L15.5 5 L13 7 L9 7 L8.5 4 Z"/><path d="M3 13 L7 12 L9 15 L7 19 L3 18 L2 15 Z"/><path d="M16 14 L20 13 L22 16 L20 20 L17 20 L15 17 Z"/></svg><span>No. 03 · Polygonal</span></p><h3>No two blocks alike, and no mortar anywhere.</h3><p class="pb">Many-sided stones cut to fit each other rather than to a standard. No vertical joint runs the height of the wall, so when the ground moves the wall flexes instead of failing.</p><p class="pm">84 sites · 21 countries · 6 studies</p></a><a class="pcard" href="/patterns/geometry/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="12" r="7"/><circle cx="15" cy="12" r="7"/></svg><span>No. 04 · Geometry</span></p><h3>The same shapes, drawn by people who never met.</h3><p class="pb">Circles, spirals, cup-and-ring marks, precise alignments and repeated proportions. Every inhabited continent carries some of them, in cultures with no route between them.</p><p class="pm">177 sites · 37 countries · 6 studies</p></a><a class="pcard" href="/patterns/scale/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M4 8 L12 4 L20 8 L20 18 L12 22 L4 18 Z"/><path d="M4 8 L12 12 L20 8 M12 12 L12 22"/></svg><span>No. 05 · Scale</span></p><h3>Stones no recorded method could move.</h3><p class="pb">Blocks from 50 to 1,500 tons, quarried, dressed, and in most cases carried somewhere else, by people whose documented toolkit was rope, timber and muscle.</p><p class="pm">249 sites · 42 countries · 6 studies</p></a><a class="pcard" href="/patterns/hardness/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M9 3 L15 3 L15 14 L12 21 L9 14 Z"/><path d="M9 7 L15 7"/></svg><span>No. 06 · Hardness</span></p><h3>Stone harder than the tools that shaped it.</h3><p class="pb">Granite, diorite, basalt and andesite, 6 to 7 on Mohs, worked to a finish by cultures whose surviving tools are copper and stone. Softer does not cut harder.</p><p class="pm">31 sites · 9 countries · 6 studies</p></a><a class="pcard" href="/patterns/stratigraphy/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 5 L21 5" stroke-width="0.7" opacity="0.5"/><path d="M3 10 L21 10" stroke-width="0.9" opacity="0.7"/><path d="M3 15 L21 15" stroke-width="1.2" opacity="0.85"/><path d="M3 20 L21 20" stroke-width="1.7"/></svg><span>No. 07 · Stratigraphy</span></p><h3>Ground that argues with the date on the sign.</h3><p class="pb">Weathering, sediment and buried courses that read older than the date on the sign. The one criterion where the evidence sits under the building rather than in it.</p><p class="pm">31 sites · 16 countries · 6 studies</p></a></div>
+  <p class="claim">Seven engineering signatures, tracked across 618 sites.
+Open one to watch the studies that argue it.</p>
+  <div class="pgrid"><a class="pcard" href="/patterns/machining/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 8 C8 6.4, 16 6.4, 21 8"/><path d="M3 12 C8 10.4, 16 10.4, 21 12"/><path d="M3 16 C8 14.4, 16 14.4, 21 16"/><circle cx="17.6" cy="19.4" r="2.1"/></svg><span>No. 01 · Machining</span></p><h3>Tool marks that repeat on four continents.</h3><p class="pb">Striations, bore holes, saw kerfs and flat-planed faces that look mechanical. Four continents, no contact between them, and stone their documented toolkits were not supposed to cut.</p><p class="pm">23 sites · 10 countries</p><p class="pgo"><span>Watch 5 studies</span><i>→</i></p></a><a class="pcard" href="/patterns/precision/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 19 L3 8 L7 5 L11 5 L13 9 L13 19 Z"/><path d="M21 19 L21 6 L17 6 L13 9 L13 19 Z"/></svg><span>No. 02 · Precision</span></p><h3>Tolerances you would ask a machine shop for.</h3><p class="pb">Joints you cannot slide paper into. Surfaces flat to a fraction of a millimetre, corners cut square in granite, and the tolerance holds across whole buildings rather than one showpiece block.</p><p class="pm">166 sites · 31 countries</p><p class="pgo"><span>Watch 6 studies</span><i>→</i></p></a><a class="pcard" href="/patterns/polygonal/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M10 2 L14 2 L15.5 5 L13 7 L9 7 L8.5 4 Z"/><path d="M3 13 L7 12 L9 15 L7 19 L3 18 L2 15 Z"/><path d="M16 14 L20 13 L22 16 L20 20 L17 20 L15 17 Z"/></svg><span>No. 03 · Polygonal</span></p><h3>No two blocks alike, and no mortar anywhere.</h3><p class="pb">Many-sided stones cut to fit each other rather than to a standard. No vertical joint runs the height of the wall, so when the ground moves the wall flexes instead of failing.</p><p class="pm">84 sites · 21 countries</p><p class="pgo"><span>Watch 6 studies</span><i>→</i></p></a><a class="pcard" href="/patterns/geometry/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="12" r="7"/><circle cx="15" cy="12" r="7"/></svg><span>No. 04 · Geometry</span></p><h3>The same shapes, drawn by people who never met.</h3><p class="pb">Circles, spirals, cup-and-ring marks, precise alignments and repeated proportions. Every inhabited continent carries some of them, in cultures with no route between them.</p><p class="pm">177 sites · 37 countries</p><p class="pgo"><span>Watch 6 studies</span><i>→</i></p></a><a class="pcard" href="/patterns/scale/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M4 8 L12 4 L20 8 L20 18 L12 22 L4 18 Z"/><path d="M4 8 L12 12 L20 8 M12 12 L12 22"/></svg><span>No. 05 · Scale</span></p><h3>Stones no recorded method could move.</h3><p class="pb">Blocks from 50 to 1,500 tons, quarried, dressed, and in most cases carried somewhere else, by people whose documented toolkit was rope, timber and muscle.</p><p class="pm">249 sites · 42 countries</p><p class="pgo"><span>Watch 6 studies</span><i>→</i></p></a><a class="pcard" href="/patterns/hardness/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M9 3 L15 3 L15 14 L12 21 L9 14 Z"/><path d="M9 7 L15 7"/></svg><span>No. 06 · Hardness</span></p><h3>Stone harder than the tools that shaped it.</h3><p class="pb">Granite, diorite, basalt and andesite, 6 to 7 on Mohs, worked to a finish by cultures whose surviving tools are copper and stone. Softer does not cut harder.</p><p class="pm">31 sites · 9 countries</p><p class="pgo"><span>Watch 6 studies</span><i>→</i></p></a><a class="pcard" href="/patterns/stratigraphy/"><p class="pk"><svg class="glyph" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 5 L21 5" stroke-width="0.7" opacity="0.5"/><path d="M3 10 L21 10" stroke-width="0.9" opacity="0.7"/><path d="M3 15 L21 15" stroke-width="1.2" opacity="0.85"/><path d="M3 20 L21 20" stroke-width="1.7"/></svg><span>No. 07 · Stratigraphy</span></p><h3>Ground that argues with the date on the sign.</h3><p class="pb">Weathering, sediment and buried courses that read older than the date on the sign. The one criterion where the evidence sits under the building rather than in it.</p><p class="pm">31 sites · 16 countries</p><p class="pgo"><span>Watch 6 studies</span><i>→</i></p></a><p class="pnote">Sort by country and these never appear together. Sort by method and you are looking at one idea.</p></div>
   <footer>
     The Ancient Atlas, a hand-curated map of the deep past.
     <a href="/">Map</a> · <a href="/library/">Library</a> · <a href="/patterns/">Patterns</a> · <a href="/creators/">Creator Studies</a> ·
