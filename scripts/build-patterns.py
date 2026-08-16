@@ -75,7 +75,7 @@ letter-spacing:.12em;text-transform:uppercase;margin-left:16px}
 header nav a:hover{color:var(--champagne)}
 main{max-width:860px;margin:0 auto;padding:34px 22px 90px}
 .kicker{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
-color:var(--champagne);margin:0 0 14px;display:flex;align-items:center;gap:11px}
+color:var(--champagne);margin:0 0 16px;display:flex;align-items:center;gap:14px}
 .glyph{color:var(--champagne);flex:none}
 h1{font-family:var(--font-serif);font-weight:600;font-size:clamp(28px,5vw,44px);line-height:1.1;
 margin:0 0 14px;letter-spacing:-.01em}
@@ -299,7 +299,7 @@ def build(key, spec, order):
         f'<span>Equirectangular · every dot is a site in the Atlas</span>'
     )
 
-    title = f'{spec["name"]} — a pattern across {n_countries} countries | The Ancient Atlas'
+    title = f'{spec["name"]}: a pattern across {n_countries} countries | The Ancient Atlas'
     desc = spec["claim"]
 
     doc = f"""<!DOCTYPE html>
@@ -313,7 +313,7 @@ def build(key, spec, order):
 <link rel="canonical" href="https://theancientatlas.com/patterns/{key}/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="The Ancient Atlas">
-<meta property="og:title" content="{e(spec['name'])} — The Ancient Atlas">
+<meta property="og:title" content="{e(spec['name'])} · The Ancient Atlas">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="https://theancientatlas.com/patterns/{key}/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -329,7 +329,7 @@ def build(key, spec, order):
   <nav><a href="/">Atlas</a><a href="/library/">Library</a><a href="/creators/">Studies</a><a href="/sites/">Sites</a></nav>
 </header>
 <main>
-  <p class="kicker">{glyph(key, 30)}<span>Patterns · {e(spec['index'])} · {e(spec['name'])}</span></p>
+  <p class="kicker">{glyph(key, 40)}<span>Patterns · {e(spec['index'])} · {e(spec['name'])}</span></p>
   <h1>{e(spec['headline'])}</h1>
   <p class="claim">{e(spec['claim'])}</p>
 
@@ -337,20 +337,20 @@ def build(key, spec, order):
   <p class="maplegend">{legend}</p>
 
   <section>
-    <h2>Watch the comparison — {len(vids)} studies</h2>
+    <h2>Watch the comparison · {len(vids)} studies</h2>
     <div class="vids">{vids_html}</div>
     <p class="note" style="margin-top:18px">{e(spec['videos_note'])}</p>
   </section>
 
   <section class="essay">
     <details>
-      <summary>What the pattern is, and what it is not — the argument in full</summary>
+      <summary>What the pattern is, and what it is not: the argument in full</summary>
       {essay}
     </details>
   </section>
 
   <section>
-    <h2>Every site in the Atlas that carries it — {len(carriers)} across {n_countries} countries</h2>
+    <h2>Every site in the Atlas that carries it · {len(carriers)} across {n_countries} countries</h2>
     {country_html}
   </section>
 
@@ -362,7 +362,7 @@ comparative study written yet.</p>
   </section>
 
   <footer>
-    The Ancient Atlas — a hand-curated map of the deep past.
+    The Ancient Atlas, a hand-curated map of the deep past.
     <a href="/">Map</a> · <a href="/library/">Library</a> · <a href="/creators/">Creator Studies</a> ·
     <a href="/contribute.html">Contribute</a>
   </footer>
@@ -396,16 +396,16 @@ def build_index(order, built_keys):
     for k in order:
         spec = patterns[k]
         carriers = [x for x in sites if k in (x.get("criteria") or [])]
-        cs = {countries.get(x["n"], "—") for x in carriers}
+        cs = {countries.get(x["n"], "?") for x in carriers}
         live = k in built_keys
         nvid = len(spec.get("videos") or [])
-        head = spec.get("headline") or f'{spec["name"]} — not yet written'
+        head = spec.get("headline") or f'{spec["name"]}: not yet written'
         blurb = spec.get("claim") or (
             f'{len(carriers)} sites across {len(cs)} countries carry this criterion. '
             "No comparative study written yet."
         )
         inner = (
-            f'<p class="pk">{glyph(k, 26)}<span>{e(spec["index"])} · {e(spec["name"])}</span></p>'
+            f'<p class="pk">{glyph(k, 34)}<span>{e(spec["index"])} · {e(spec["name"])}</span></p>'
             f'<h3>{e(head)}</h3>'
             f'<p class="pb">{e(blurb)}</p>'
             f'<p class="pm">{len(carriers)} sites · {len(cs)} countries'
@@ -421,13 +421,13 @@ def build_index(order, built_keys):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Patterns — the same idea, in places that never met | The Ancient Atlas</title>
+<title>Patterns: the same idea, in places that never met | The Ancient Atlas</title>
 <meta name="description" content="Seven engineering signatures tracked across 618 ancient sites, each with the comparative studies that argue it. The Atlas organised by method rather than by map.">
 <link rel="icon" href="/favicon-32.png" type="image/png">
 <link rel="canonical" href="https://theancientatlas.com/patterns/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Ancient Atlas">
-<meta property="og:title" content="Patterns — The Ancient Atlas">
+<meta property="og:title" content="Patterns · The Ancient Atlas">
 <meta property="og:description" content="Seven engineering signatures tracked across 618 ancient sites, each with the comparative studies that argue it.">
 <meta property="og:url" content="https://theancientatlas.com/patterns/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -440,9 +440,11 @@ border-radius:12px;padding:19px 20px 17px;background:var(--charcoal);transition:
 .pcard:hover{{border-color:rgba(201,168,76,.5);transform:translateY(-2px)}}
 .pcard.off{{opacity:.5}}
 .pk{{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
-color:var(--champagne);margin:0 0 11px;display:flex;align-items:center;gap:10px}}
+color:var(--champagne);margin:0 0 12px;display:flex;align-items:center;gap:13px}}
 .pcard h3{{font-family:var(--font-serif);font-weight:600;font-size:20px;line-height:1.2;margin:0 0 9px}}
-.pb{{font-size:13.5px;color:var(--cloud);margin:0 0 12px}}
+.pb{{font-size:13.5px;line-height:1.5;color:var(--cloud);margin:0 0 12px;
+display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;
+overflow:hidden;text-overflow:ellipsis}}
 .pm{{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
 color:var(--mist);margin:0}}
 </style>
@@ -457,12 +459,12 @@ color:var(--mist);margin:0}}
   <p class="kicker">Patterns</p>
   <h1>The same idea, in places that never met.</h1>
   <p class="claim">The Atlas is normally sorted by where things are. This shelf sorts it by how they
-were made — seven engineering signatures tracked across 618 sites, each with the comparative studies
-that argue it. Sort by country and these never appear together. Sort by method and they are obviously
-one idea.</p>
+were made: seven engineering signatures tracked across 618 sites, each with the studies that
+argue it. Sort by country and these never appear together. Sort by method and you are looking
+at one idea.</p>
   <div class="pgrid">{"".join(cards)}</div>
   <footer>
-    The Ancient Atlas — a hand-curated map of the deep past.
+    The Ancient Atlas, a hand-curated map of the deep past.
     <a href="/">Map</a> · <a href="/library/">Library</a> · <a href="/creators/">Creator Studies</a> ·
     <a href="/contribute.html">Contribute</a>
   </footer>

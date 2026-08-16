@@ -98,6 +98,10 @@ header{position:relative;z-index:1001;background:linear-gradient(180deg,rgba(13,
    to `padding:4px 0`. Scope it so the tile keeps its box whether it sits
    directly in .stats (Studies) or inside .fw-wrap (Experiences). */
 .stats > .stat-experiences,.fw-wrap > .stat-experiences{padding:7px 15px}
+/* Same (0,1,1) trap as above. Patterns carries no border of its own, so the
+   padding only shows on hover — which is exactly when it is needed. The
+   negative margin keeps most of it out of the header's width budget. */
+.stats > .stat-patterns{padding:6px 15px;margin:-2px -8px}
 .stat-experiences .stat-exp-glyph{font-size:19px;line-height:1;text-align:center;color:var(--champagne);filter:drop-shadow(0 0 7px rgba(232,185,96,.35));font-variant-emoji:text}
 .stat-experiences:hover{background:rgba(201,168,76,.10)}
 .stat-experiences:hover .stat-exp-glyph{color:#F3D998}
@@ -1684,7 +1688,7 @@ body.present #broadcast-controls{
       <div class="stat-val" id="stat-articles">6</div>
       <div class="stat-lbl">Articles ↗</div>
     </a>
-    <a class="stat-action" href="patterns/" title="Patterns — the same engineering signatures across sites that never met">
+    <a class="stat-action stat-patterns" href="patterns/" title="Patterns: the same engineering signatures across sites that never met">
       <div class="stat-val">7</div>
       <div class="stat-lbl">Patterns ↗</div>
     </a>
