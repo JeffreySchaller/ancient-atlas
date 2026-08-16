@@ -131,6 +131,15 @@ border-left:2px solid var(--stone);padding:2px 0 2px 15px;max-width:62ch}
 color:var(--cloud);text-decoration:none;border:1px solid var(--stone);border-radius:999px;padding:6px 13px}
 .siblings a:hover{border-color:rgba(201,168,76,.5);color:var(--ivory)}
 .siblings a.off{opacity:.42;pointer-events:none}
+/* The one link in this row that goes UP should not look like the six that go
+   sideways. */
+.siblings a.all{border-color:rgba(201,168,76,.45);color:var(--champagne)}
+.siblings a.all:hover{border-color:var(--champagne);background:rgba(201,168,76,.08);
+color:var(--ivory)}
+/* The kicker already reads as a breadcrumb; this makes it behave like one. */
+.kicker a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,.38)}
+.kicker a:hover{color:var(--amber);border-bottom-color:var(--amber)}
+header nav a.here{color:var(--champagne)}
 details{border-top:1px solid var(--stone);border-bottom:1px solid var(--stone);padding:0}
 summary{cursor:pointer;list-style:none;padding:15px 0;font-family:var(--font-mono);font-size:11px;
 letter-spacing:.16em;text-transform:uppercase;color:var(--champagne);display:flex;
@@ -334,10 +343,10 @@ def build(key, spec, order):
 {land_defs()}
 <header>
   <a class="home" href="/"><span>✦</span> The Ancient Atlas</a>
-  <nav><a href="/">Atlas</a><a href="/library/">Library</a><a href="/creators/">Studies</a><a href="/sites/">Sites</a></nav>
+  <nav><a href="/">Atlas</a><a href="/library/">Library</a><a href="/patterns/">Patterns</a><a href="/creators/">Studies</a><a href="/sites/">Sites</a></nav>
 </header>
 <main>
-  <p class="kicker">{glyph(key, 40)}<span>Patterns · {e(spec['index'])} · {e(spec['name'])}</span></p>
+  <p class="kicker">{glyph(key, 40)}<span><a href="/patterns/">Patterns</a> · {e(spec['index'])} · {e(spec['name'])}</span></p>
   <h1>{e(spec['headline'])}</h1>
   <p class="claim">{e(spec['claim'])}</p>
 
@@ -364,14 +373,14 @@ def build(key, spec, order):
 
   <section>
     <h2>The other patterns</h2>
-    <div class="siblings">{sibs}</div>
+    <div class="siblings"><a class="all" href="/patterns/">All seven patterns</a>{sibs}</div>
     <p class="note" style="margin-top:14px">Dimmed patterns are tagged across the Atlas but have no
 comparative study written yet.</p>
   </section>
 
   <footer>
     The Ancient Atlas, a hand-curated map of the deep past.
-    <a href="/">Map</a> · <a href="/library/">Library</a> · <a href="/creators/">Creator Studies</a> ·
+    <a href="/">Map</a> · <a href="/library/">Library</a> · <a href="/patterns/">Patterns</a> · <a href="/creators/">Creator Studies</a> ·
     <a href="/contribute.html">Contribute</a>
   </footer>
 </main>
@@ -469,7 +478,7 @@ color:var(--mist);margin:0}}
 <body>
 <header>
   <a class="home" href="/"><span>✦</span> The Ancient Atlas</a>
-  <nav><a href="/">Atlas</a><a href="/library/">Library</a><a href="/creators/">Studies</a><a href="/sites/">Sites</a></nav>
+  <nav><a href="/">Atlas</a><a href="/library/">Library</a><a class="here" href="/patterns/" aria-current="page">Patterns</a><a href="/creators/">Studies</a><a href="/sites/">Sites</a></nav>
 </header>
 <main>
   <p class="kicker">Patterns</p>
@@ -481,7 +490,7 @@ at one idea.</p>
   <div class="pgrid">{"".join(cards)}</div>
   <footer>
     The Ancient Atlas, a hand-curated map of the deep past.
-    <a href="/">Map</a> · <a href="/library/">Library</a> · <a href="/creators/">Creator Studies</a> ·
+    <a href="/">Map</a> · <a href="/library/">Library</a> · <a href="/patterns/">Patterns</a> · <a href="/creators/">Creator Studies</a> ·
     <a href="/contribute.html">Contribute</a>
   </footer>
 </main>
