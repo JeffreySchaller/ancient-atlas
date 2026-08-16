@@ -10,7 +10,7 @@
       "That is the whole function of this page. Put them beside each other and either the resemblance dissolves — which would be a real result, and worth publishing — or it does not, and the next question becomes a comparative one that no single site page can ask.",
       "Two honest caveats, because they matter more here than anywhere else in the Atlas. First: similar marks can come from different processes, and convergence of appearance is not convergence of method. Second: a photograph flattens exactly the evidence that would settle it — depth, pitch, tolerance, tool-nose radius. These videos are the best available substitute for standing there with a straightedge and a raking light. They are not a substitute for measurement."
     ],
-    "videos_note": "These are comparative studies, not site walkthroughs — which is why they never fitted on a site page. Each one puts marks from several places in one frame. Site-specific footage lives on the site pages linked below.",
+    "videos_note": "Comparative studies, not site walkthroughs — which is why they never fitted on a site page. Where a study's coverage has been indexed, its own map sits under the card.",
     "videos": [
       {
         "id": "kun5oIBqGTo",
@@ -28,7 +28,10 @@
         "id": "1ZjnsOl2OM8",
         "title": "Bazda Caves",
         "cr": "agelessrock",
-        "note": "Türkiye — the reference surface this pattern is measured against"
+        "note": "Türkiye — the reference surface this pattern is measured against",
+        "sites": [
+          "Bazda Caves"
+        ]
       },
       {
         "id": "zbEEa9bkdb8",
@@ -42,9 +45,9 @@
         "cr": "agelessrock",
         "note": "Chinese sites surveyed together, Longyou among them"
       }
-    ]
+    ],
+    "_sites_field": "Add a 'sites' list to a video once its coverage has been checked against the footage. It draws that study's own mini-map. Guessing which sites a comparison visits would be exactly the soft claim this section exists to avoid."
   },
-
   "geometry": {
     "name": "Geometry",
     "index": "No. 02",

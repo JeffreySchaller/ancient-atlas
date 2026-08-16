@@ -53,6 +53,8 @@ sites = load("sites.json")
 countries = load("countries.json")
 creators = load("creators.json")
 patterns = load("patterns.json")
+world = load("world-outline.json")
+site_pos = {x["n"]: (x["lat"], x["lng"]) for x in sites}
 
 CSS = """
 :root{--obsidian:#0B0B0F;--charcoal:#14141A;--slate:#1C1C24;--stone:#2A2A35;
@@ -71,12 +73,12 @@ header a.home span{color:var(--champagne)}
 header nav a{color:var(--mist);text-decoration:none;font-family:var(--font-mono);font-size:10.5px;
 letter-spacing:.12em;text-transform:uppercase;margin-left:16px}
 header nav a:hover{color:var(--champagne)}
-main{max-width:860px;margin:0 auto;padding:52px 22px 90px}
+main{max-width:860px;margin:0 auto;padding:34px 22px 90px}
 .kicker{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
 color:var(--champagne);margin:0 0 14px}
-h1{font-family:var(--font-serif);font-weight:600;font-size:clamp(32px,6vw,52px);line-height:1.08;
-margin:0 0 20px;letter-spacing:-.01em}
-.claim{font-size:clamp(17px,2.4vw,21px);color:var(--cloud);max-width:62ch;margin:0 0 30px}
+h1{font-family:var(--font-serif);font-weight:600;font-size:clamp(28px,5vw,44px);line-height:1.1;
+margin:0 0 14px;letter-spacing:-.01em}
+.claim{font-size:clamp(15.5px,2vw,18px);color:var(--cloud);max-width:66ch;margin:0 0 22px}
 .ledger{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--stone);
 border-bottom:1px solid var(--stone);margin:0 0 44px}
 .ledger div{flex:1 1 130px;padding:15px 16px 14px;border-right:1px solid var(--stone)}
@@ -103,6 +105,16 @@ border-radius:11px;overflow:hidden;background:var(--charcoal);transition:border-
 color:var(--champagne);margin-top:7px;display:block}
 .vid .x{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.07em;color:var(--mist);
 margin-top:6px;display:block}
+.mapwrap{position:relative;border:1px solid var(--stone);border-radius:12px;overflow:hidden;
+background:linear-gradient(180deg,#0E0E14,#0A0A0F);margin:0 0 14px}
+.mapwrap svg{display:block;width:100%;height:auto}
+.land{fill:#1B1B24;stroke:#262632;stroke-width:.8;vector-effect:non-scaling-stroke}
+.dot{fill:var(--amber)}
+.halo{fill:none;stroke:var(--champagne);stroke-opacity:.5;stroke-width:1.6;vector-effect:non-scaling-stroke}
+.maplegend{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+color:var(--mist);display:flex;justify-content:space-between;gap:12px;margin:0 0 40px;flex-wrap:wrap}
+.vid .mini{border-top:1px solid var(--stone);background:#0A0A0F}
+.vid .mini svg{display:block;width:100%;height:auto}
 .country{margin:0 0 22px}
 .country h3{font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
 color:var(--mist);font-weight:400;margin:0 0 8px}
@@ -117,12 +129,43 @@ border-left:2px solid var(--stone);padding:2px 0 2px 15px;max-width:62ch}
 color:var(--cloud);text-decoration:none;border:1px solid var(--stone);border-radius:999px;padding:6px 13px}
 .siblings a:hover{border-color:rgba(201,168,76,.5);color:var(--ivory)}
 .siblings a.off{opacity:.42;pointer-events:none}
+details{border-top:1px solid var(--stone);border-bottom:1px solid var(--stone);padding:0}
+summary{cursor:pointer;list-style:none;padding:15px 0;font-family:var(--font-mono);font-size:11px;
+letter-spacing:.16em;text-transform:uppercase;color:var(--champagne);display:flex;
+align-items:center;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:15px;color:var(--mist)}
+details[open] summary::after{content:"\2212"}
+details[open] summary{border-bottom:1px solid var(--stone)}
+details .essay,details p:first-of-type{margin-top:17px}
+details p:last-child{margin-bottom:17px}
 footer{border-top:1px solid var(--stone);margin-top:60px;padding:22px 0 0;font-family:var(--font-mono);
 font-size:10.5px;letter-spacing:.06em;color:var(--mist)}
 footer a{color:var(--cloud);text-decoration:none}
 footer a:hover{color:var(--champagne)}
 @media(max-width:560px){main{padding:34px 17px 70px}.ledger div{flex:1 1 50%}}
 """
+
+
+def minimap(names, r=7.0, halo=True):
+    """Equirectangular world with a dot per site. The projection is the crude
+    one on purpose — this is a spread indicator, not a chart to measure off."""
+    W = 1000.0
+    H = 500.0
+    dots = []
+    for n in names:
+        if n not in site_pos:
+            continue
+        lat, lng = site_pos[n]
+        x = (lng + 180.0) / 360.0 * W
+        y = (90.0 - lat) / 180.0 * H
+        if halo:
+            dots.append(f'<circle class="halo" cx="{x:.1f}" cy="{y:.1f}" r="{r*2.1:.1f}"/>')
+        dots.append(f'<circle class="dot" cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}"><title>{e(n)}</title></circle>')
+    # Antarctica adds a third of the height and carries no sites — crop it off
+    return (f'<svg viewBox="0 60 1000 330" role="img" aria-label="World map, '
+            f'{len(dots) and len(names)} sites marked" preserveAspectRatio="xMidYMid meet">'
+            f'<path class="land" d="{world["path"]}"/>{"".join(dots)}</svg>')
 
 
 def video_card(v, sites_by_name):
@@ -135,7 +178,13 @@ def video_card(v, sites_by_name):
         f'<span class="m"><span class="t">{e(v["title"])}</span>'
         f'<span class="c">{e(name)}</span>'
         + (f'<span class="x">{e(note)}</span>' if note else "")
-        + "</span></a>"
+        + "</span>"
+        # a per-card map only when the coverage has actually been indexed —
+        # guessing which sites a comparison visits would be exactly the kind of
+        # soft claim this section exists to avoid
+        + (f'<span class="mini">{minimap(v["sites"], r=11, halo=False)}</span>'
+           if v.get("sites") else "")
+        + "</a>"
     )
 
 
@@ -176,6 +225,12 @@ def build(key, spec, order):
     essay = "".join(f"<p>{e(p)}</p>" for p in spec["essay"])
     vids_html = "".join(video_card(v, None) for v in vids)
 
+    hero = minimap([x["n"] for x in carriers])
+    legend = (
+        f'<span>{len(carriers)} sites · {n_countries} countries</span>'
+        f'<span>Equirectangular · every dot is a site in the Atlas</span>'
+    )
+
     title = f'{spec["name"]} — a pattern across {n_countries} countries | The Ancient Atlas'
     desc = spec["claim"]
 
@@ -208,17 +263,21 @@ def build(key, spec, order):
   <p class="kicker">Patterns · {e(spec['index'])}</p>
   <h1>{e(spec['headline'])}</h1>
   <p class="claim">{e(spec['claim'])}</p>
-  <div class="ledger">{ledger}</div>
 
-  <section class="essay">
-    <h2>What the pattern is</h2>
-    {essay}
-  </section>
+  <div class="mapwrap">{hero}</div>
+  <p class="maplegend">{legend}</p>
 
   <section>
-    <h2>The same idea, seen side by side</h2>
+    <h2>Watch the comparison — {len(vids)} studies</h2>
     <div class="vids">{vids_html}</div>
     <p class="note" style="margin-top:18px">{e(spec['videos_note'])}</p>
+  </section>
+
+  <section class="essay">
+    <details>
+      <summary>What the pattern is, and what it is not — the argument in full</summary>
+      {essay}
+    </details>
   </section>
 
   <section>
