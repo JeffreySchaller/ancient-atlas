@@ -1,105 +1,184 @@
 {
+  "_note": "Copy is deliberately short. The page exists to get people to the map and the videos, not to read an essay. Claim = one sentence. Essay = two short paragraphs, folded away. Every video is a site walkthrough wired to a known site, so each carries its own 'sites' list and draws its own mini-map.",
+
   "machining": {
     "name": "Machining",
     "index": "No. 01",
     "headline": "Tool marks that repeat on four continents.",
-    "claim": "Striations, bore holes, saw kerfs and flat-planed faces that look mechanical — turning up in cultures separated by oceans and thousands of years, in stone their published toolkits were not supposed to cut.",
+    "claim": "Striations, bore holes, saw kerfs and flat-planed faces that look mechanical — in cultures separated by oceans, in stone their toolkits were not supposed to cut.",
     "essay": [
-      "Machining is the narrowest of the Atlas's seven criteria and the least comfortable. It is not a claim about who did the cutting. It is an observation about the marks left behind: parallel striations of even depth and pitch, circular bore holes with regular walls, kerfs that run straight for metres, faces planed flat enough to hold a reflection.",
-      "The reason to group these across sites rather than argue them one at a time is that individually each has a local explanation, and the local explanations do not resemble each other. Bazda's grooves are attributed to Roman quarrying for Harran. Longyou's are attributed to a lost Chinese chisel technique. The Serapeum's boxes are attributed to Ptolemaic bull burials. Every explanation is plausible on its own ground. What none of them explains is why the marks look alike.",
-      "That is the whole function of this page. Put them beside each other and either the resemblance dissolves — which would be a real result, and worth publishing — or it does not, and the next question becomes a comparative one that no single site page can ask.",
-      "Two honest caveats, because they matter more here than anywhere else in the Atlas. First: similar marks can come from different processes, and convergence of appearance is not convergence of method. Second: a photograph flattens exactly the evidence that would settle it — depth, pitch, tolerance, tool-nose radius. These videos are the best available substitute for standing there with a straightedge and a raking light. They are not a substitute for measurement."
+      "Each of these has a local explanation, and the local explanations don't resemble each other. Bazda's grooves are Roman quarrying. Longyou's are a lost Chinese chisel technique. The Serapeum's boxes are Ptolemaic bull burials. Every one is plausible on its own ground. None explains why the marks look alike.",
+      "Two caveats. Similar marks can come from different processes — appearance is not method. And a photograph flattens the evidence that would settle it: depth, pitch, tolerance, tool-nose radius. These are the best substitute for standing there with a straightedge. They are not measurement."
     ],
-    "videos_note": "Comparative studies, not site walkthroughs — which is why they never fitted on a site page. Where a study's coverage has been indexed, its own map sits under the card.",
+    "videos_note": "Comparative studies rather than site walkthroughs — which is why they never fitted on a site page.",
     "videos": [
-      {
-        "id": "kun5oIBqGTo",
-        "title": "Mysterious Striations at megalithic sites",
-        "cr": "agelessrock",
-        "note": "The core comparison — striation patterns across multiple sites"
-      },
-      {
-        "id": "b7vGMD0vWK0",
-        "title": "Quiz: Mysterious Megalithic Culture Gear Tracks",
-        "cr": "agelessrock",
-        "note": "Gear-track and groove forms, posed as a test rather than a thesis"
-      },
-      {
-        "id": "1ZjnsOl2OM8",
-        "title": "Bazda Caves",
-        "cr": "agelessrock",
-        "note": "Türkiye — the reference surface this pattern is measured against",
-        "sites": [
-          "Bazda Caves"
-        ]
-      },
-      {
-        "id": "zbEEa9bkdb8",
-        "title": "Compare Cave Dwellings",
-        "cr": "agelessrock",
-        "note": "Rock-cut interiors compared across regions"
-      },
-      {
-        "id": "q5Z_NNNORzs",
-        "title": "Mysteries of China",
-        "cr": "agelessrock",
-        "note": "Chinese sites surveyed together, Longyou among them"
-      }
+      { "id": "kun5oIBqGTo", "title": "Mysterious Striations at megalithic sites", "cr": "agelessrock",
+        "note": "The core comparison" },
+      { "id": "b7vGMD0vWK0", "title": "Quiz: Mysterious Megalithic Culture Gear Tracks", "cr": "agelessrock",
+        "note": "Gear-track forms, posed as a test" },
+      { "id": "1ZjnsOl2OM8", "title": "Bazda Caves", "cr": "agelessrock",
+        "note": "Türkiye — the reference surface", "sites": ["Bazda Caves"] },
+      { "id": "zbEEa9bkdb8", "title": "Compare Cave Dwellings", "cr": "agelessrock",
+        "note": "Rock-cut interiors, region to region" },
+      { "id": "q5Z_NNNORzs", "title": "Mysteries of China", "cr": "agelessrock",
+        "note": "Chinese sites surveyed together" }
     ],
-    "_sites_field": "Add a 'sites' list to a video once its coverage has been checked against the footage. It draws that study's own mini-map. Guessing which sites a comparison visits would be exactly the soft claim this section exists to avoid."
+    "_sites_field": "Add a 'sites' list once coverage is checked against the footage. It draws that study's mini-map. Guessing would be the soft claim this section exists to avoid."
   },
-  "geometry": {
-    "name": "Geometry",
-    "index": "No. 02",
-    "headline": "",
-    "claim": "",
-    "essay": [],
-    "videos_note": "",
-    "videos": []
-  },
+
   "precision": {
     "name": "Precision",
-    "index": "No. 03",
-    "headline": "",
-    "claim": "",
-    "essay": [],
-    "videos_note": "",
-    "videos": []
+    "index": "No. 02",
+    "headline": "Tolerances you would ask a machine shop for.",
+    "claim": "Joints you cannot slide paper into, surfaces flat to a fraction of a millimetre, corners cut square in granite — held across whole buildings, not one showpiece block.",
+    "essay": [
+      "Precision is measurable, which makes it the most testable thing in the Atlas. A flat face is either flat or it isn't. A joint either takes a feeler gauge or it doesn't. That is why it belongs in a comparative view: the question is not whether one wall is impressive, it is whether the same tolerance turns up in places with no contact.",
+      "What a video cannot give you is the number. Treat these as a survey of where to look, not as evidence of a figure."
+    ],
+    "videos_note": "Walkthroughs where the camera actually gets close enough to see the joint.",
+    "videos": [
+      { "id": "6RJ3Epd_SXk", "title": "Barabar — breathtaking precision and geometry in Indian granite caves", "cr": "unchartedx",
+        "note": "India · granite, mirror-polished interiors", "sites": ["Barabar Caves"] },
+      { "id": "frhysD0G4mg", "title": "The incredible precision of the 100-ton boxes in the Serapeum", "cr": "unchartedx",
+        "note": "Egypt · inside the boxes", "sites": ["Serapeum of Saqqara"] },
+      { "id": "Xp0HVEwCvRc", "title": "The most fierce city of the ancient world — Termessos", "cr": "protocivilization",
+        "note": "Türkiye · a whole city, not one wall", "sites": ["Termessos"] },
+      { "id": "Ckntr20aHlc", "title": "Ancient Ollantaytambo with Ben of UnchartedX", "cr": "brienf",
+        "note": "Peru · the six monoliths of the upper terrace", "sites": ["Ollantaytambo"] },
+      { "id": "U_XTMrm1gRQ", "title": "Aztec sculptures — machine-precision finish", "cr": "archaiclens",
+        "note": "Mexico · surface finish at close range", "sites": ["Tula (Tollan)"] },
+      { "id": "qLRqPjXmK38", "title": "Ethiopia's ancient megaliths, part 2 — pre-Aksumite Yeha", "cr": "secretsinstone",
+        "note": "Ethiopia · dressed joints, no mortar", "sites": ["Yeha"] }
+    ]
   },
+
   "polygonal": {
     "name": "Polygonal",
-    "index": "No. 04",
-    "headline": "",
-    "claim": "",
-    "essay": [],
-    "videos_note": "",
-    "videos": []
+    "index": "No. 03",
+    "headline": "No two blocks alike, and no mortar anywhere.",
+    "claim": "Many-sided stones cut to fit each other rather than to a standard — so no vertical joint runs through, and the wall flexes instead of failing.",
+    "essay": [
+      "Square your stone and you can stack fast, but the courses run straight through and that is exactly where a wall fails when the ground moves. Fit each block to its neighbours and the empty joints act as energy sinks. That is the practical reason the technique recurs on five continents.",
+      "What it doesn't explain is the tolerance at the top of the range, or joint faces that curve in two directions so a block cannot be lowered straight in along any axis."
+    ],
+    "videos_note": "Six walls, six countries, no contact between any of them.",
+    "videos": [
+      { "id": "a-QbC_vZr88", "title": "Polygonal walls of the giants in ancient Italy — Alatri", "cr": "megalithomania",
+        "note": "Italy", "sites": ["Alatri Acropolis"] },
+      { "id": "AdJMLqUmuYE", "title": "Megalithic Peru — exploring the evidence around Cusco", "cr": "brienf",
+        "note": "Peru · the 200-ton corner stones", "sites": ["Sacsayhuamán"] },
+      { "id": "SU2JhCOJ6X0", "title": "Meydan Kalesi — giant polygonal and cyclopean walls", "cr": "megalithomania",
+        "note": "Türkiye", "sites": ["Meydan Kalesi"] },
+      { "id": "Fdi1dcT3ofE", "title": "Megalithic technology in ancient Tonga", "cr": "megalithomania",
+        "note": "Tonga · the Pacific end of the pattern", "sites": ["Langi Pyramid Platforms (Lapaha)"] },
+      { "id": "KAqew1kywPw", "title": "Phimai temple — the greatest mystery of Thailand", "cr": "praveenmohan",
+        "note": "Thailand", "sites": ["Phimai (Prasat Hin Phimai)"] },
+      { "id": "S0Bz7yyXzMQ", "title": "Reassessing ancient Cambodia", "cr": "secretsinstone",
+        "note": "Cambodia", "sites": ["Koh Ker"] }
+    ]
   },
+
+  "geometry": {
+    "name": "Geometry",
+    "index": "No. 04",
+    "headline": "The same shapes, drawn by people who never met.",
+    "claim": "Circles, spirals, cup-and-ring marks, precise alignments and repeated proportions — turning up on every inhabited continent, in cultures with no route between them.",
+    "essay": [
+      "Geometry is the easiest pattern to over-read, because humans find shapes everywhere and a circle is not a fingerprint. The useful version of the question is narrower: not \"do circles recur\", but do specific constructions recur — the same alignment, the same ratio, the same motif executed the same way.",
+      "So these are chosen for what is on the stone rather than what is claimed about it."
+    ],
+    "videos_note": "Marks and layouts, filmed close. Read the shapes before reading anyone's theory of them.",
+    "videos": [
+      { "id": "xut5gv1kXlA", "title": "Loughcrew — megalithic art in ancient Ireland", "cr": "megalithomania",
+        "note": "Ireland · carved interiors", "sites": ["Loughcrew"] },
+      { "id": "tcI7orY4sHo", "title": "On the ground at Malta — cart ruts and mysterious origins", "cr": "archaiclens",
+        "note": "Malta · parallel tracks cut into bedrock", "sites": ["Malta Cart Ruts (Misraħ Għar il-Kbir)"] },
+      { "id": "FstsByGxWic", "title": "Sillustani — acoustic towers of Peru", "cr": "megalithomania",
+        "note": "Peru · circular towers, fitted stone", "sites": ["Sillustani"] },
+      { "id": "X1pbhrpaobg", "title": "Exploring the temple of Quetzalcoatl — Xochicalco", "cr": "megalithomania",
+        "note": "Mexico · relief geometry and an observatory shaft", "sites": ["Xochicalco"] },
+      { "id": "_YkcacbKozs", "title": "Exploring ancient Tahiti", "cr": "archaiclens",
+        "note": "French Polynesia · marae platforms", "sites": ["Marae Arahurahu (Tahiti)"] },
+      { "id": "u8Q_mrWMDuY", "title": "They destroyed every face on this ancient bridge", "cr": "praveenmohan",
+        "note": "Cambodia · repeated modular forms", "sites": ["Spean Praptos (Kampong Kdei Bridge)"] }
+    ]
+  },
+
   "scale": {
     "name": "Scale",
     "index": "No. 05",
-    "headline": "",
-    "claim": "",
-    "essay": [],
-    "videos_note": "",
-    "videos": []
+    "headline": "Stones no recorded method could move.",
+    "claim": "Blocks from 50 to 1,500 tons, quarried, dressed and — in most cases — carried somewhere else, by people whose documented toolkit was rope, timber and muscle.",
+    "essay": [
+      "Scale is the pattern people meet first and understand least, because a photograph cannot transmit mass. Numbers do not fix that either: 1,764,000 lb means nothing to a body. The translation that lands is people — 2,205 of them pushing at the same instant, just to start the Trilithon sliding.",
+      "You can stand next to six of these stones in Feel the Weight, at 1.7 m eye height, with a truck and a double-decker parked alongside for calibration."
+    ],
+    "videos_note": "The heaviest worked stones on earth, filmed from the ground. Then go and stand next to them.",
+    "videos": [
+      { "id": "8tnrkahCLHw", "title": "The 1,100-ton unfinished obelisk — carved with pounding stones?", "cr": "unchartedx",
+        "note": "Egypt · still attached to the bedrock", "sites": ["Unfinished Obelisk (Aswan)"] },
+      { "id": "VrPlrwuBiJk", "title": "Baalbek — the mega-platforms", "cr": "megalithomania",
+        "note": "Lebanon · the Trilithon, 800 tons each", "sites": ["Baalbek (Heliopolis)"] },
+      { "id": "UZJVXxoFMoo", "title": "Mysterious Yangshan monument", "cr": "agelessrock",
+        "note": "China · cut free on three sides, never moved", "sites": ["Yangshan Quarry"] },
+      { "id": "PCOzZBGv1pM", "title": "A thorough exploration of ancient Ollantaytambo", "cr": "brienf",
+        "note": "Peru · porphyry hauled across a river valley", "sites": ["Ollantaytambo"] },
+      { "id": "_UeV479h6kQ", "title": "The enormous megaliths of Osaka Castle", "cr": "ancientarch",
+        "note": "Japan · the largest castle stones ever set", "sites": ["Osaka Castle"] },
+      { "id": "-_jPhGqjnB4", "title": "Ethiopia's ancient megaliths, part 1 — the Aksum obelisks", "cr": "secretsinstone",
+        "note": "Ethiopia · a 520-ton stele that fell in the raising", "sites": ["Aksum Obelisks"] }
+    ]
   },
+
   "hardness": {
     "name": "Hardness",
     "index": "No. 06",
-    "headline": "",
-    "claim": "",
-    "essay": [],
-    "videos_note": "",
-    "videos": []
+    "headline": "Stone harder than the tools that shaped it.",
+    "claim": "Granite, diorite, basalt and andesite — 6 to 7 on Mohs — worked to a finish, by cultures whose surviving tools are copper and stone.",
+    "essay": [
+      "This is the criterion where the arithmetic is hardest to wave away. Copper is about 3 on Mohs; granite is 6 to 7. Softer does not cut harder. The orthodox answer is abrasion — sand, dolerite pounders, time — and for rough shaping it plainly works. The argument is about the finish, and about how long the numbers say it should have taken.",
+      "Only 31 sites in the Atlas carry this tag, which is under-tagging rather than scarcity. Treat the count as a floor."
+    ],
+    "videos_note": "Includes one experiment: someone actually trying to carve basalt the orthodox way.",
+    "videos": [
+      { "id": "d8Ejf5etV5U", "title": "The most precisely made granite object of ancient Egypt", "cr": "unchartedx",
+        "note": "Egypt · measured, not admired", "sites": ["Serapeum of Saqqara"] },
+      { "id": "CM7l7g66BWs", "title": "Is it possible to carve a temple in basalt? A real-life experiment", "cr": "protocivilization",
+        "note": "India · the test, not the theory", "sites": ["Kailasa Temple (Ellora Cave 16)"] },
+      { "id": "-0xhB3-GzAE", "title": "A complete exploration of megalithic Puma Punku and Tiwanaku", "cr": "brienf",
+        "note": "Bolivia · andesite, cut to interlocking modules", "sites": ["Puma Punku"] },
+      { "id": "_UeV479h6kQ", "title": "The enormous megaliths of Osaka Castle", "cr": "ancientarch",
+        "note": "Japan · granite at scale", "sites": ["Osaka Castle"] },
+      { "id": "FstsByGxWic", "title": "Sillustani — acoustic towers of Peru", "cr": "megalithomania",
+        "note": "Peru · andesite blocks, curved to a circle", "sites": ["Sillustani"] },
+      { "id": "-_jPhGqjnB4", "title": "Ethiopia's ancient megaliths, part 1 — the Aksum obelisks", "cr": "secretsinstone",
+        "note": "Ethiopia · granite steles with carved false doors", "sites": ["Aksum Obelisks"] }
+    ]
   },
+
   "stratigraphy": {
     "name": "Stratigraphy",
     "index": "No. 07",
-    "headline": "",
-    "claim": "",
-    "essay": [],
-    "videos_note": "",
-    "videos": []
+    "headline": "Ground that argues with the date on the sign.",
+    "claim": "Weathering, sediment and buried courses that read older than the accepted construction date — the one criterion where the evidence is under the building rather than in it.",
+    "essay": [
+      "This is the most contested thing the Atlas tracks, and the tag means a dispute exists — not that it has been settled. Geological dating of a monument is genuinely hard: erosion rates vary, fill gets redeposited, and a buried course can mean an older phase or a later repair.",
+      "So these are collected as the argument rather than the answer. Where a claim is disputed in the literature, that dispute is the point of the page."
+    ],
+    "videos_note": "Contested dating, filmed at the section rather than argued from a chair.",
+    "videos": [
+      { "id": "lNC_HRxf0XA", "title": "Ancient engineering on the Giza plateau", "cr": "unchartedx",
+        "note": "Egypt · the Sphinx enclosure walls", "sites": ["Great Sphinx of Giza"] },
+      { "id": "a1yiZasOSWs", "title": "Gunung Padang is 27,000 years old. The paper was retracted.", "cr": "cosmicsummit",
+        "note": "Indonesia · the retraction is part of the record", "sites": ["Gunung Padang"] },
+      { "id": "tL5OR8PPIFE", "title": "Atlantis in the Azores — examining the evidence on the ground", "cr": "archaiclens",
+        "note": "Portugal · sceptical fieldwork", "sites": ["Azores Pyramids (Pico Alto)"] },
+      { "id": "IDfs7uO_dhE", "title": "The 7,000-year-old Carrowmore megalithic cemetery", "cr": "megalithomania",
+        "note": "Ireland · older than the pyramids, undisputed", "sites": ["Carrowmore Megalithic Cemetery"] },
+      { "id": "9sLa3Tq3CaY", "title": "Is Sogmatar an ancient Sabian hall of records?", "cr": "archaiclens",
+        "note": "Türkiye · rock-cut, undated", "sites": ["Sogmatar"] },
+      { "id": "tGYWUc9BqHY", "title": "Phanom Rung temple — ancient underground technology", "cr": "praveenmohan",
+        "note": "Thailand · what is below the platform", "sites": ["Phanom Rung"] }
+    ]
   }
 }

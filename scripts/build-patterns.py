@@ -114,6 +114,7 @@ background:linear-gradient(180deg,#0E0E14,#0A0A0F);margin:0 0 14px}
 .maplegend{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
 color:var(--mist);display:flex;justify-content:space-between;gap:12px;margin:0 0 40px;flex-wrap:wrap}
 .vid .mini{border-top:1px solid var(--stone);background:#0A0A0F}
+.vid .mini .land{fill:#23232E;stroke:#30303D}
 .vid .mini svg{display:block;width:100%;height:auto}
 .country{margin:0 0 22px}
 .country h3{font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
@@ -147,25 +148,50 @@ footer a:hover{color:var(--champagne)}
 """
 
 
-def minimap(names, r=7.0, halo=True):
+def minimap(names, r=7.0, halo=True, window=None):
     """Equirectangular world with a dot per site. The projection is the crude
-    one on purpose — this is a spread indicator, not a chart to measure off."""
-    W = 1000.0
-    H = 500.0
-    dots = []
+    one on purpose — this is a spread indicator, not a chart to measure off.
+
+    `window` zooms to a regional box around the sites. A whole globe at card
+    width is 190 px across; one dot on it is unreadable. A 380-wide window is
+    about a continent, which is the scale at which "where is this" answers
+    itself."""
+    W, H = 1000.0, 500.0
+    pts = []
     for n in names:
-        if n not in site_pos:
-            continue
-        lat, lng = site_pos[n]
-        x = (lng + 180.0) / 360.0 * W
-        y = (90.0 - lat) / 180.0 * H
+        if n in site_pos:
+            lat, lng = site_pos[n]
+            pts.append(((lng + 180.0) / 360.0 * W, (90.0 - lat) / 180.0 * H))
+
+    if window and pts:
+        cx = sum(p[0] for p in pts) / len(pts)
+        cy = sum(p[1] for p in pts) / len(pts)
+        vw = float(window)
+        vh = vw * 0.52
+        vx = min(max(cx - vw / 2, 0.0), W - vw)
+        vy = min(max(cy - vh / 2, 30.0), H - vh - 60.0)
+        view = f"{vx:.0f} {vy:.0f} {vw:.0f} {vh:.0f}"
+        scale = vw / W                      # keep dots the same size on screen
+    else:
+        view = "0 60 1000 330"              # Antarctica holds no sites
+        scale = 1.0
+
+    dots = []
+    for x, y in pts:
+        rr = r * scale
         if halo:
-            dots.append(f'<circle class="halo" cx="{x:.1f}" cy="{y:.1f}" r="{r*2.1:.1f}"/>')
-        dots.append(f'<circle class="dot" cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}"><title>{e(n)}</title></circle>')
-    # Antarctica adds a third of the height and carries no sites — crop it off
-    return (f'<svg viewBox="0 60 1000 330" role="img" aria-label="World map, '
-            f'{len(dots) and len(names)} sites marked" preserveAspectRatio="xMidYMid meet">'
-            f'<path class="land" d="{world["path"]}"/>{"".join(dots)}</svg>')
+            dots.append(f'<circle class="halo" cx="{x:.1f}" cy="{y:.1f}" r="{rr*2.1:.1f}"/>')
+        dots.append(f'<circle class="dot" cx="{x:.1f}" cy="{y:.1f}" r="{rr:.1f}"/>')
+
+    return (f'<svg viewBox="{view}" role="img" aria-label="Map, {len(pts)} sites marked" '
+            f'preserveAspectRatio="xMidYMid slice">'
+            f'<use class="land" href="#landmass"/>{"".join(dots)}</svg>')
+
+
+def land_defs():
+    return ('<svg width="0" height="0" aria-hidden="true" focusable="false" '
+            'style="position:absolute">'
+            f'<defs><path id="landmass" d="{world["path"]}"/></defs></svg>')
 
 
 def video_card(v, sites_by_name):
@@ -182,7 +208,7 @@ def video_card(v, sites_by_name):
         # a per-card map only when the coverage has actually been indexed —
         # guessing which sites a comparison visits would be exactly the kind of
         # soft claim this section exists to avoid
-        + (f'<span class="mini">{minimap(v["sites"], r=11, halo=False)}</span>'
+        + (f'<span class="mini">{minimap(v["sites"], r=9, halo=True, window=360)}</span>'
            if v.get("sites") else "")
         + "</a>"
     )
@@ -255,6 +281,7 @@ def build(key, spec, order):
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
+{land_defs()}
 <header>
   <a class="home" href="/"><span>✦</span> The Ancient Atlas</a>
   <nav><a href="/">Atlas</a><a href="/library/">Library</a><a href="/creators/">Studies</a><a href="/sites/">Sites</a></nav>
@@ -408,6 +435,8 @@ one idea.</p>
 order = [k for k in ("machining", "precision", "polygonal", "geometry",
                      "scale", "hardness", "stratigraphy") if k in patterns]
 
+# keys beginning with "_" are notes to whoever edits the file next, not criteria
+patterns = {k: v for k, v in patterns.items() if not k.startswith("_")}
 bad = set(patterns) - VALID
 if bad:
     sys.exit(f"ABORT: patterns.json names criteria that are not in the site taxonomy: {sorted(bad)}")
