@@ -156,9 +156,12 @@ def pattern_card(key):
     names = [s["n"] for s in carriers]
     cs = {countries.get(n) for n in names if countries.get(n)}
     svg, plotted = constellation(names)
-    n_vid = len(spec.get("videos") or [])
-    meta = (f'{len(carriers)} sites<span>·</span>{len(cs)} countries'
-            f'<span>·</span>{n_vid} studies')
+    # The sites and countries figures earn their place: they describe the dots
+    # you can see on the card, so picture and caption fail together or not at
+    # all. The study count did not. Adding one comparison video silently made
+    # every shared card wrong, which is exactly the failure mode Jeff called out
+    # on the header cards, and it happened here within the hour.
+    meta = f'{len(carriers)} sites<span>·</span>{len(cs)} countries'
     return page(
         f'{svg}<div class="scrim"></div><div class="vig"></div><div class="rule"></div>'
         f'<div class="body">'

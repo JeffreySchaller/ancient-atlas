@@ -182,10 +182,14 @@ CARDS = {
         "One channel's life's work, laid back over the map.",
         "A study takes a single creator and shows you everywhere they have actually been.",
         "", ("Open the studies &rarr;", 'href="creators/"')),
+    # "The Atlas filmed none of this" was written to make a point about credit
+    # and overshot into a false claim: Ancient Atlas is a creator too, listed in
+    # the sidebar with everyone else, and now carries its own fieldwork. Same
+    # point, made true.
     "creators": card(
         "Creators",
-        "The Atlas filmed none of this.",
-        "It is built from the work of people who went there. Every clip is credited and links back.",
+        "Built with the people who went there.",
+        "Most of the footage is theirs, some of it is ours, and every clip is credited and links back.",
         "", ("Meet them &rarr;", 'href="creators/"')),
     "articles": card(
         "The Library",
@@ -360,11 +364,17 @@ for t in titles + bodies:
     if _re.search(r"[0-9]", t):
         sys.exit("ABORT: card copy carries a figure that will go stale: %r" % t)
 for must in ("Every stone here, someone stood next to.",
-             "The Atlas filmed none of this.",
+             "Built with the people who went there.",
              "One channel's life's work, laid back over the map."):
     assert must in src, "missing headline: %s" % must
 
+_own = sum(1 for lst in videos.values() for w in lst if w.get("cr") == "ancientatlas")
+if _own < 1:
+    sys.exit("ABORT: the Creators card says some of the footage is ours; "
+             "videos.json carries no ancientatlas wires to back that")
+
 print("9 header cards wired. Story-led, no printed counts.")
+print("Creators card claim checked: %d Ancient Atlas wires in videos.json." % _own)
 print("Integrity: feature.json resolves to %s (%d wires). %d sites, %d regions, %d articles."
       % (featured_name, featured_n, n_sites, n_regions, n_articles))
 print("Region bars keep their shape and lost their labels.")
