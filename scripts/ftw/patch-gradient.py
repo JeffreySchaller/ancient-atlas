@@ -332,11 +332,7 @@ BAND2 = "".join([
     'border-radius:999px;padding:8px 18px 8px 13px;background:rgba(201,168,76,.08)">',
       '<svg viewBox="0 0 60 20" width="38" height="12.7" fill="#E8B960" fill-rule="evenodd" aria-hidden="true" style="display:block;flex:none">',
       '<path d="{{ rideGlyph }}"/>', WHEELS, '</svg>',
-      '<span style="display:flex;flex-direction:column;gap:3px">',
-        '<b style="font-size:14.5px;font-weight:600;letter-spacing:-.01em;color:#F3D998;line-height:1">{{ rideName }}</b>',
-        '<span style="', MONO, 'font-size:8.5px;letter-spacing:.17em;text-transform:uppercase;color:#8A8779;',
-        'line-height:1">{{ rideNote }}</span>',
-      '</span>',
+      '<b style="font-size:15px;font-weight:600;letter-spacing:-.01em;color:#F3D998;line-height:1">{{ rideName }}</b>',
     '</div>',
   '</div>',
 
@@ -468,7 +464,6 @@ NEWPROPS = "\n".join([
 "      dimtxt: s.dimtxt,",
 "",
 "      rideGlyph: ride.d, rideName: ride.ride,",
-"      rideNote: 'Every silhouette below is one of these',",
 "      pickUs: () => this._pickRide('us'),",
 "      pickUk: () => this._pickRide('uk'),",
 "      pickAu: () => this._pickRide('au'),",
@@ -548,6 +543,7 @@ want(src.count("{{ pickUs }}") == 1 and src.count("{{ pickUk }}") == 1
      and src.count("{{ pickAu }}") == 1, "the three flags are not wired one each")
 want(src.count('data-swatch=""') == 1, "the swatch that names the vehicle is missing")
 want("{{ rideName }}" in src and "{{ rideGlyph }}" in src, "the swatch does not name what changed")
+want("rideNote" not in src, "the swatch still explains itself in a subtitle")
 want("@keyframes fw-swap" in src, "the swatch has nothing to flash with")
 want("{{ t.d }}" in src, "the truck field is not drawing the selected vehicle")
 want(src.count("{{ s.glyph }}") == 2,

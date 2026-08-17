@@ -266,6 +266,49 @@ src = src.replace("text-transform:uppercase;color:#6f6b60;pointer-events:none\">
   "text-transform:uppercase;color:#8d8879;pointer-events:none;"
   "text-shadow:0 0 10px rgba(10,10,14,.98),0 0 22px rgba(10,10,14,.9)\">Figure at six feet")
 
+# ------------------------------------------- 3c. the phone frame fits the stone
+# The phone stage was a fixed slab. The framing maths reserves whatever
+# horizontal room the subject needs, so on a narrow screen a 13.6 m stone gets
+# pushed far away and then floats in a column of empty black with the
+# interesting part occupying a fifth of it. The frame now takes its height from
+# the subject, which makes a long stone read as a letterbox and a cube read as
+# a square.
+FIT_ANCHOR = "const s = this.site(), w = s.m[0], h = s.m[1], d = s.m[2];\n    const vw ="
+FIT_ADD = ("const s = this.site(), w = s.m[0], h = s.m[1], d = s.m[2];\n"
+"    if (this.state.narrow === true) {\n"
+"      const layer = document.querySelector('[data-stagelayer]');\n"
+"      if (layer && layer.clientWidth > 0) {\n"
+"        /* visible world height is 1.2 * spanW / aspect, so the aspect that\n"
+"           makes the subject fill ~62% of the frame is 0.744 * spanW / spanH. */\n"
+"        const spanW = Math.sqrt(w * w + d * d) + 1.7;\n"
+"        const spanH = Math.max(h, HUMAN_H);\n"
+"        const want = Math.max(1.15, Math.min(2.6, 0.744 * spanW / spanH));\n"
+"        const px = Math.round(Math.max(150, Math.min(360, layer.clientWidth / want)));\n"
+"        if (Math.abs((parseFloat(layer.style.height) || 0) - px) > 2) {\n"
+"          layer.style.height = px + 'px';\n"
+"          layer.style.minHeight = '0px';\n"
+"          layer.style.maxHeight = 'none';\n"
+"        }\n"
+"      }\n"
+"    }\n"
+"    const vw =")
+if "layer.style.minHeight = '0px'" not in src:
+    if FIT_ANCHOR not in src:
+        sys.exit("ABORT: the framing entry point moved")
+    src = src.replace(FIT_ANCHOR, FIT_ADD, 1)
+
+# a phone is a touch device, and it already has one instruction too many
+src = src.replace("white-space:normal;text-shadow:0 0 10px rgba(10,10,14,.98),"
+                  "0 0 22px rgba(10,10,14,.9)\">Drag to turn it",
+                  "white-space:normal;text-shadow:0 0 10px rgba(10,10,14,.98),"
+                  "0 0 22px rgba(10,10,14,.9)\">Swipe to turn it")
+src, _tilt = cut_element(src, '<span data-tiltnote=""', "span")
+src = src.replace(
+    'position:absolute;left:11px;top:40px;display:flex;flex-direction:column;gap:6px;z-index:7',
+    'position:absolute;left:11px;top:38px;display:flex;flex-direction:row;gap:6px;z-index:7')
+
+src = src.replace(">01 &#183; The stone<", ">The stone<").replace(">01 · The stone<", ">The stone<")
+
 # --------------------------------------------------------- 4. the wiring
 src = src.replace(
     "      head: g.head, said: g.said, matter: g.matter, cards: g.cards,",
@@ -299,7 +342,12 @@ want("Figure at six feet" in src, "the scale label is missing from the stage")
 want("this.camera.aspect > 2.2 ? 1.46" in src, "the wide stage will crop the stone")
 want(src.count("text-shadow:0 0 10px rgba(10,10,14,.98)") == 3,
      "a stage corner label is unreadable over the stone")
-want("Drag to turn it" in src, "the turn instruction is missing from the stage")
+want("Drag to turn it" in src, "the turn instruction is missing from the desktop stage")
+want("Swipe to turn it" in src, "the phone was told to drag")
+want("data-tiltnote" not in src, "the phone still carries two turn instructions")
+want("layer.style.minHeight" in src, "the phone frame will not fit itself to the stone")
+want("left:11px;top:38px;display:flex;flex-direction:row" in src,
+     "the phone controls still stack taller than a short frame")
 want("{{ hintSpin }}" not in src, "the old instruction chip survives")
 want("h2:'bus'" in src, "the v6 copy did not land")
 want(src.count("{{ s.glyph }}") == 2, "a pill row lost its glyph")
