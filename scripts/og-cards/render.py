@@ -62,77 +62,95 @@ ROSE = "#C4726A"
 # you do, and every stone leads with its own simile, one word of it in italic
 # champagne, exactly as the page sets it.
 
-DO = [("TURN IT", "With your hand", BODY),
-      ("SCALE IT", "A person at six feet", BODY),
-      ("WEIGH IT", "In the truck outside", GOLD)]
+# ---------------------------------------------------------------- content
+# The previous set was a paragraph, a stat row and a headline that wrapped to
+# two lines. At the size a share card is actually seen, that is a grey block.
+#
+# Each card is now one short line and two drawings: the stone at true
+# proportions with a person beside it, and the whole weight as a field of
+# pickups. Nothing is implied or truncated - if a stone is 259 trucks, the card
+# draws 259 trucks and picks a size that fits them.
+
+HUMAN_M = 1.8288
+F150_LB = 2.2 * 2204.62
 
 CARDS = [
-    {
-        "file": "og.png",
-        "eyebrow": "SIX STONES \u00b7 TURN THEM WITH YOUR HAND",
-        "display": "Stand next to it. Then <em>count the trucks</em>.",
-        "display_size": 82,
-        "lead": "Six of the heaviest stones ever cut. Turn each one, put a "
-                "person beside it, and see the weight in the vehicle parked "
-                "outside your own house.",
-        "lead_width": 980,
-        "stats": DO,
-    },
-    {
-        "file": "og-giza.png",
-        "eyebrow": "GIZA BLOCK \u00b7 EGYPT",
-        "display": "One block. And then <em>two million</em> more.",
-        "display_size": 86,
-        "lead": "About what you could park on your driveway. Then the pyramid "
-                "needed it again, and again.",
-        "stats": DO,
-    },
-    {
-        "file": "og-ollan.png",
-        "eyebrow": "OLLANTAYTAMBO MONOLITH \u00b7 PERU",
-        "display": "Carried up a <em>mountain</em>.",
-        "display_size": 104,
-        "lead": "A row of them nose to tail, the length of a street, and every "
-                "one went uphill across a river.",
-        "stats": DO,
-    },
-    {
-        "file": "og-temple.png",
-        "eyebrow": "THE WESTERN STONE \u00b7 JERUSALEM",
-        "display": "Longer than a <em>bus</em>, and lifted into a wall.",
-        "display_size": 82,
-        "lead": "Enough to fill a supermarket car park, twice over, fused into "
-                "one piece and set above head height.",
-        "stats": DO,
-    },
-    {
-        "file": "og-trilithon.png",
-        "eyebrow": "THE TRILITHON \u00b7 BAALBEK, LEBANON",
-        "display": "Three of these, <em>side by side</em>, twenty feet up.",
-        "display_size": 78,
-        "lead": "A queue that would run out of the town. And then there are "
-                "three of them, matched, in a row.",
-        "stats": DO,
-    },
-    {
-        "file": "og-pregnant.png",
-        "eyebrow": "STONE OF THE PREGNANT WOMAN \u00b7 BAALBEK",
-        "display": "Still lying where it was <em>cut</em>.",
-        "display_size": 96,
-        "lead": "Dressed on every face and left in the quarry at an angle, as "
-                "though the job stopped mid-sentence.",
-        "stats": DO,
-    },
-    {
-        "file": "og-forgotten.png",
-        "eyebrow": "THE FORGOTTEN STONE \u00b7 BAALBEK",
-        "display": "The heaviest one is <em>still down there</em>.",
-        "display_size": 86,
-        "lead": "Found under the quarry floor within living memory, beneath "
-                "the stone everybody already knew about.",
-        "stats": DO,
-    },
+    {"file": "og.png",       "where": "SIX STONES \u00b7 GIZA TO BAALBEK",
+     "line": "Stand next to it.",       "dim": [13.6, 3.5, 3.3], "lb": 1256850},
+    {"file": "og-giza.png",  "where": "GIZA BLOCK \u00b7 EGYPT",
+     "line": "And then two million more.", "dim": [1.3, 1.15, 1.5], "lb": 5000},
+    {"file": "og-ollan.png", "where": "OLLANTAYTAMBO \u00b7 PERU",
+     "line": "Carried up a mountain.",  "dim": [1.7, 4.0, 0.9], "lb": 110250},
+    {"file": "og-temple.png", "where": "THE WESTERN STONE \u00b7 JERUSALEM",
+     "line": "Longer than a bus.",      "dim": [13.6, 3.5, 3.3], "lb": 1256850},
+    {"file": "og-trilithon.png", "where": "THE TRILITHON \u00b7 BAALBEK",
+     "line": "Three of these, in a row.", "dim": [19.0, 4.2, 3.6], "lb": 1764000},
+    {"file": "og-pregnant.png", "where": "THE PREGNANT WOMAN \u00b7 BAALBEK",
+     "line": "Left where it was cut.",  "dim": [20.5, 4.3, 4.7], "lb": 2205000},
+    {"file": "og-forgotten.png", "where": "THE FORGOTTEN STONE \u00b7 BAALBEK",
+     "line": "Still in the ground.",    "dim": [19.6, 5.5, 6.0], "lb": 3307500},
 ]
+
+# the F-150 the experience itself draws, so the card and the page agree
+TRUCK = ("M1.6 6L23.5 6L24.6 1.8L37.6 1.8L40.4 5.8L57 5.8L58.2 6.6L58.2 14.6"
+         "L50 14.6A4.4 3 0 0 0 41.2 14.6L17.4 14.6A4.4 3 0 0 0 8.6 14.6L1.6 14.6Z"
+         "M3.6 7.4L21.7 7.4L21.7 10.8L3.6 10.8Z"
+         "M26.6 3.4L32.8 3.4L32.8 6.8L26.6 6.8Z"
+         "M34 3.4L36.2 3.4L38 7L34 7Z"
+         "M9.7 15.4a3.3 3.3 0 1 0 6.6 0a3.3 3.3 0 1 0 -6.6 0"
+         "M11.65 15.4a1.35 1.35 0 1 0 2.7 0a1.35 1.35 0 1 0 -2.7 0"
+         "M42.3 15.4a3.3 3.3 0 1 0 6.6 0a3.3 3.3 0 1 0 -6.6 0"
+         "M44.25 15.4a1.35 1.35 0 1 0 2.7 0a1.35 1.35 0 1 0 -2.7 0")
+
+FIGURE = (
+    "M0 1.4a7.4 7.4 0 1 1-.1 0Z"
+    "M-3.6 17h7.2c5.1 0 9.2 3.5 9.8 8.6l2.2 20.4c.3 2.7-1.2 4.5-3.5 4.7"
+    "-2.2.2-4.1-1.4-4.4-4.1l-1.5-12.3-.8 20.5h-1.3l-2.4 45.9h-4.7l-1.6-34.6"
+    "-1.6 34.6h-4.7l-2.4-45.9h-1.3l-.8-20.5-1.5 12.3c-.3 2.7-2.2 4.3-4.4 4.1"
+    "-2.3-.2-3.8-2-3.5-4.7l2.2-20.4c.6-5.1 4.7-8.6 9.8-8.6Z")
+
+
+def stone_svg(dim, box_w=500, box_h=252):
+    """The block at true proportions with a six-foot figure beside it."""
+    length, height, depth = dim
+    tall = max(height, HUMAN_M)
+    scale = min(box_w * 0.80 / (length + 1.7), box_h * 0.86 / tall)
+    L, H = length * scale, height * scale
+    D = min(depth * scale * 0.42, H * 0.55)          # foreshortened top face
+    fig_h = HUMAN_M * scale
+    ground = box_h - 8
+    x0, y0 = 4, ground - H
+    fx = x0 + L + max(20, scale * 0.9)
+    return (
+      '<svg class="draw" viewBox="0 0 %d %d">' % (box_w, box_h) +
+      '<line class="gnd" x1="0" y1="%.1f" x2="%d" y2="%.1f"/>' % (ground, box_w, ground) +
+      '<path class="face" d="M%.1f %.1f h%.1f v%.1f h-%.1f Z"/>' % (x0, y0, L, H, L) +
+      '<path class="top" d="M%.1f %.1f l%.1f -%.1f h%.1f l-%.1f %.1f Z"/>'
+        % (x0, y0, D * 0.85, D, L, D * 0.85, D) +
+      '<g class="fig" transform="translate(%.1f %.1f) scale(%.4f)">' % (fx, ground - fig_h, fig_h / 100.0) +
+      '<path d="%s"/></g>' % FIGURE +
+      '</svg>')
+
+
+def truck_field(n, box_w=580, box_h=250, gap=4):
+    """Every truck, at whatever size makes every truck fit."""
+    best = None
+    for w in range(236, 5, -1):
+        h = w / 3.0
+        cols = max(1, int((box_w + gap) // (w + gap)))
+        rows = -(-n // cols)
+        if rows * (h + gap) - gap <= box_h:
+            best = (w, h, cols, rows)
+            break
+    if best is None:
+        sys.exit("ABORT: %d trucks will not fit the field at any size" % n)
+    w, h, cols, rows = best
+    cells = "".join(
+        '<svg class="tk" viewBox="0 0 60 20" fill-rule="evenodd" '
+        'style="width:%.2fpx;height:%.2fpx"><path d="%s"/></svg>' % (w, h, TRUCK)
+        for _ in range(n))
+    return ('<div class="field" style="gap:%dpx;max-width:%dpx">%s</div>'
+            % (gap, cols * (w + gap) - gap, cells)), (w, cols, rows)
 
 CSS = f"""
 @font-face {{
@@ -143,151 +161,103 @@ CSS = f"""
 @font-face {{
   font-family: 'Fraunces';
   src: url(data:font/woff2;base64,{FRAUNCES_I}) format('woff2-variations');
-  font-weight: 100 900;
-  font-style: italic;
+  font-weight: 100 900; font-style: italic;
 }}
 @font-face {{
   font-family: 'JetBrains Mono';
-  src: url(data:font/woff2;base64,{JBM400}) format('woff2');
-  font-weight: 400;
+  src: url(data:font/woff2;base64,{JBM400}) format('woff2'); font-weight: 400;
 }}
 @font-face {{
   font-family: 'JetBrains Mono';
-  src: url(data:font/woff2;base64,{JBM500}) format('woff2');
-  font-weight: 500;
+  src: url(data:font/woff2;base64,{JBM500}) format('woff2'); font-weight: 500;
 }}
-* {{ margin: 0; padding: 0; box-sizing: border-box; }}
-html, body {{ width: 1200px; height: 630px; }}
-body {{
-  background: #080706;
-  padding: 9px;
-  -webkit-font-smoothing: antialiased;
-}}
+* {{ margin:0; padding:0; box-sizing:border-box; }}
+html, body {{ width:1200px; height:630px; }}
+body {{ background:#080706; padding:9px; -webkit-font-smoothing:antialiased; }}
 .frame {{
-  width: 100%; height: 100%;
-  border: 1px solid rgba(232,184,75,0.30);
+  width:100%; height:100%;
+  border:1px solid rgba(232,184,75,0.30);
   background:
     radial-gradient(1100px 620px at 12% -8%, rgba(196,142,52,0.16) 0%, rgba(196,142,52,0.05) 38%, rgba(0,0,0,0) 72%),
     radial-gradient(700px 420px at 96% 106%, rgba(120,86,32,0.10) 0%, rgba(0,0,0,0) 70%),
     #0d0b09;
-  padding: 30px 68px 47px 68px;
-  display: flex;
-  flex-direction: column;
+  padding:30px 60px 34px 60px;
+  display:flex; flex-direction:column;
 }}
-/* ---------------------------------------------------------- brand row */
-.brand {{
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  flex: 0 0 auto;
-}}
-.brand img {{ width: 74px; height: 74px; display: block; }}
+.brand {{ display:flex; align-items:center; gap:20px; flex:0 0 auto; }}
+.brand img {{ width:64px; height:64px; display:block; }}
 .brand .words {{
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 500;
-  font-size: 19px;
-  letter-spacing: 0.28em;
-  white-space: nowrap;
+  font-family:'JetBrains Mono',monospace; font-weight:500; font-size:17px;
+  letter-spacing:0.26em; white-space:nowrap;
 }}
-.brand .mark {{ color: {GOLD}; }}
-.brand .sep  {{ color: rgba(232,184,75,0.45); padding: 0 2px; }}
-.brand .sub  {{ color: {MUTED}; }}
-/* ---------------------------------------------------------- middle */
-.middle {{
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 6px;
+.brand .mark {{ color:{GOLD}; }}
+.brand .sep {{ color:rgba(232,184,75,0.45); padding:0 2px; }}
+.brand .sub {{ color:{MUTED}; }}
+
+.body {{ flex:1 1 auto; display:flex; align-items:stretch; gap:40px; padding-top:4px; }}
+.left {{ width:500px; flex:0 0 auto; display:flex; flex-direction:column;
+  justify-content:space-between; padding:6px 0 2px; }}
+.line {{
+  font-family:'Fraunces',Georgia,serif; font-weight:700;
+  font-variation-settings:'opsz' 144,'SOFT' 0,'WONK' 1;
+  color:{CREAM}; font-size:60px; line-height:0.98; letter-spacing:-0.018em;
 }}
-.eyebrow {{
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 400;
-  font-size: 17px;
-  letter-spacing: 0.22em;
-  color: {MUTED};
-  margin-bottom: 18px;
+.where {{
+  font-family:'JetBrains Mono',monospace; font-size:15px; letter-spacing:0.2em;
+  color:{MUTED}; margin-top:14px;
 }}
-.display {{
-  font-family: 'Fraunces', Georgia, serif;
-  font-weight: 700;
-  font-variation-settings: 'opsz' 144, 'SOFT' 0, 'WONK' 1;
-  color: {CREAM};
-  line-height: 0.92;
-  letter-spacing: -0.012em;
-  margin-bottom: 20px;
+.draw {{ width:500px; height:252px; display:block; overflow:visible; }}
+.draw .gnd {{ stroke:rgba(237,230,218,0.16); stroke-width:1; }}
+.draw .face {{ fill:rgba(232,184,75,0.16); stroke:{GOLD}; stroke-width:1.6; }}
+.draw .top {{ fill:rgba(232,184,75,0.30); stroke:{GOLD}; stroke-width:1.6; }}
+.draw .fig path {{ fill:{CREAM}; stroke:none; }}
+
+.right {{ flex:1 1 auto; display:flex; flex-direction:column;
+  align-items:flex-start; justify-content:center; }}
+.tag {{
+  font-family:'JetBrains Mono',monospace; font-size:14px; letter-spacing:0.2em;
+  color:{MUTED}; margin-bottom:14px;
 }}
-.display em {{ font-style: italic; color: {GOLD}; }}
-.lead {{
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 400;
-  font-size: 27px;
-  line-height: 1.44;
-  color: {BODY};
-}}
-/* ---------------------------------------------------------- footer */
-.rule {{
-  flex: 0 0 auto;
-  height: 1px;
-  background: rgba(237,230,218,0.13);
-  margin-bottom: 22px;
-}}
-.stats {{
-  flex: 0 0 auto;
-  display: grid;
-  grid-template-columns: 357px 355px 1fr;
-  margin-bottom: 54px;
-}}
-.stats .label {{
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 15px;
-  letter-spacing: 0.18em;
-  color: #7C756A;
-  margin-bottom: 12px;
-}}
-.stats .value {{
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 25px;
-  letter-spacing: 0.01em;
-}}
+.tag b {{ color:{GOLD}; font-weight:500; }}
+.field {{ display:flex; flex-wrap:wrap; align-content:flex-start; }}
+.field .tk {{ display:block; flex:0 0 auto; fill:{GOLD}; opacity:0.92; }}
+
 .foot {{
-  flex: 0 0 auto;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 15px;
-  letter-spacing: 0.15em;
-  color: {DIM};
+  flex:0 0 auto; font-family:'JetBrains Mono',monospace; font-size:14px;
+  letter-spacing:0.15em; color:{DIM}; padding-top:10px;
 }}
 """
 
 
 def html_for(card):
-    stats = "".join(
-        f'<div><div class="label">{lab}</div>'
-        f'<div class="value" style="color:{col}">{val}</div></div>'
-        for lab, val, col in card["stats"]
-    )
+    n = max(1, round(card["lb"] / F150_LB))
+    field, _grid = truck_field(n)
     return f"""<!doctype html><html><head><meta charset="utf-8">
 <style>{CSS}</style></head><body>
 <div class="frame">
   <div class="brand">
     <img src="data:image/png;base64,{LOGO}" alt="">
-    <div class="words"><span class="mark">THE ANCIENT ATLAS</span><span class="sep"> · </span><span class="sub">FEEL THE WEIGHT</span></div>
+    <div class="words"><span class="mark">THE ANCIENT ATLAS</span><span class="sep"> \u00b7 </span><span class="sub">FEEL THE WEIGHT</span></div>
   </div>
-  <div class="middle">
-    <div class="eyebrow">{card['eyebrow']}</div>
-    <div class="display" style="font-size:{card['display_size']}px">{card['display']}</div>
-    <div class="lead" style="max-width:{card.get('lead_width', 1044)}px">{card['lead']}</div>
+  <div class="body">
+    <div class="left">
+      <div><div class="line">{card['line']}</div>
+      <div class="where">{card['where']}</div></div>
+      {stone_svg(card['dim'])}
+    </div>
+    <div class="right">
+      <div class="tag">ONE STONE, IN <b>FORD F-150s</b></div>
+      {field}
+    </div>
   </div>
-  <div class="rule"></div>
-  <div class="stats">{stats}</div>
-  <div class="foot">THEANCIENTATLAS.COM · EXPERIENCES</div>
+  <div class="foot">THEANCIENTATLAS.COM \u00b7 EXPERIENCES</div>
 </div>
 </body></html>"""
 
 
 # Playwright is not installed on the machine that has Chrome, and the fonts and
-# logo are already inlined as base64, so the page needs no network and no
-# automation layer. Write the seven documents and let Chrome screenshot them.
+# logo are inlined as base64, so the documents need no network and no
+# automation layer.
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 

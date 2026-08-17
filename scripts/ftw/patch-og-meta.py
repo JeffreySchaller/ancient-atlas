@@ -15,15 +15,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent
 OUT = ROOT / "public" / "experiences" / "feel-the-weight" / "index.html"
 BASE = "https://theancientatlas.com/experiences/feel-the-weight/"
-VER = "2"          # bump when the artwork changes; iMessage caches hard
+VER = "3"          # bump when the artwork changes; iMessage caches hard
 
 TITLE = "Feel the Weight · try to move it · The Ancient Atlas"
-DESC = ("Six of the heaviest stones ever cut. Turn each one with your hand, put "
-        "a person beside it, and see the weight in the vehicle parked outside "
-        "your own house.")
+DESC = ("Six of the heaviest stones ever cut. Turn each one, stand a person "
+        "beside it, and see the weight drawn out in pickup trucks.")
 IMG = BASE + "og.png?v=" + VER
-ALT = ("Stand next to it. Then count the trucks. Six stones from the Ancient "
-       "Atlas, weighed in pickups.")
+ALT = ("A scale drawing of the Western Stone with a person standing beside it, "
+       "and the same weight drawn as a field of pickup trucks.")
 
 BLOCK = "\n".join([
     '  <!-- share card - patch-og-meta.py, re-run after inject.py -->',
