@@ -309,6 +309,24 @@ src = src.replace(
 
 src = src.replace(">01 &#183; The stone<", ">The stone<").replace(">01 · The stone<", ">The stone<")
 
+# ------------------------------------------ 3d. one control, not three
+# Reset and Cinematic were two-thirds of the furniture on the stage and neither
+# earned it. Zoom is already clamped, and picking any stone restores the view,
+# so reset was insurance against a state you cannot reach. Double-click keeps
+# it available without spending a button on it.
+src, _reset = cut_element(src, '<div sc-camel-on-click="{{ resetView }}"')
+src, _reset2 = cut_element(src, '<div sc-camel-on-click="{{ resetView }}"')
+src, _cine = cut_element(src, '<div sc-camel-on-click="{{ toggleCine }}"')
+src, _cine2 = cut_element(src, '<div sc-camel-on-click="{{ toggleCine }}"')
+if _reset is None or _cine is None:
+    sys.exit("ABORT: the stage controls moved")
+
+BIND = "stage.dataset.fwBound = '1';"
+if "dblclick" not in src:
+    if BIND not in src:
+        sys.exit("ABORT: the stage binding moved")
+    src = src.replace(BIND, BIND + "\n    stage.addEventListener('dblclick', () => this._resetView());", 1)
+
 # --------------------------------------------------------- 4. the wiring
 src = src.replace(
     "      head: g.head, said: g.said, matter: g.matter, cards: g.cards,",
@@ -345,6 +363,11 @@ want(src.count("text-shadow:0 0 10px rgba(10,10,14,.98)") == 3,
 want("Drag to turn it" in src, "the turn instruction is missing from the desktop stage")
 want("Swipe to turn it" in src, "the phone was told to drag")
 want("data-tiltnote" not in src, "the phone still carries two turn instructions")
+want("{{ resetView }}" not in src and "{{ toggleCine }}" not in src,
+     "a stage control that earns nothing survives")
+want(src.count("sc-camel-on-click=\"{{ toggleSpin }}\"") == 2,
+     "the stage should be left with exactly one control per layout")
+want("dblclick" in src, "reset lost its last way back")
 want("layer.style.minHeight" in src, "the phone frame will not fit itself to the stone")
 want("left:11px;top:38px;display:flex;flex-direction:row" in src,
      "the phone controls still stack taller than a short frame")
