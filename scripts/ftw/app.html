@@ -437,7 +437,7 @@ button{font:inherit;background:none;border:0;color:inherit}
 </sc-if>
 
 <sc-if value="{{ isDesk }}" hint-placeholder-val="{{ true }}">
-  <section data-screen-label="D01 Specimen" style="max-width:1320px;margin:0 auto;padding:calc(47px + clamp(14px,3vh,38px)) clamp(20px,4vw,40px) 0;display:grid;grid-template-columns:minmax(0,1.618fr) minmax(330px,1fr);grid-template-rows:auto auto 1fr;gap:clamp(16px,2vw,26px) clamp(24px,3vw,46px);align-content:center;min-height:100vh">
+  <section data-screen-label="D01 Specimen" style="max-width:1320px;margin:0 auto;padding:calc(47px + clamp(14px,3vh,38px)) clamp(20px,4vw,40px) 0;display:grid;grid-template-columns:minmax(0,1.618fr) minmax(330px,1fr);grid-template-rows:auto auto 1fr;gap:clamp(16px,2vw,26px) clamp(24px,3vw,46px);align-content:center;min-height:auto">
     <div style="grid-column:2;grid-row:1;display:flex;flex-direction:column;gap:10px">
       <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.34em;text-transform:uppercase;color:#C9A84C">Put your hands on it</span>
       <h1 style="font-size:clamp(30px,2.9vw,44px);font-weight:600;line-height:1.04;letter-spacing:-.015em;color:#F3D998;text-wrap:pretty">{{ title }}</h1>
@@ -453,7 +453,7 @@ button{font:inherit;background:none;border:0;color:inherit}
     </div>
     </div>
 
-    <div data-quake="" style="grid-column:1;grid-row:1 / span 3;align-self:stretch;position:relative;width:100%;min-height:min(76vh,560px);border:1px solid rgba(201,168,76,.22);border-radius:16px;overflow:hidden;background:#0B0A0F;box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 20px 46px rgba(0,0,0,.55)">
+    <div data-quake="" style="grid-column:1;grid-row:1 / span 3;align-self:stretch;position:relative;width:100%;min-height:min(56vh,440px);border:1px solid rgba(201,168,76,.22);border-radius:16px;overflow:hidden;background:#0B0A0F;box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 20px 46px rgba(0,0,0,.55)">
       <div data-stage="" style="position:absolute;inset:0;cursor:grab;touch-action:none"></div>
       <i data-dust="" style="position:absolute;left:50%;bottom:6%;width:34%;height:26%;transform:translateX(-50%) scale(.35);opacity:0;pointer-events:none;background:radial-gradient(closest-side,rgba(214,196,152,.45),rgba(214,196,152,0) 72%)"></i>
 
@@ -511,11 +511,11 @@ button{font:inherit;background:none;border:0;color:inherit}
         <p data-msg="" style="font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.8;color:#F3D998;letter-spacing:.02em;min-height:46px;text-wrap:pretty">Press and hold. Push as hard as you can.</p>
         <div style="display:flex;flex-direction:column;gap:7px">
           <div style="display:flex;justify-content:space-between;align-items:baseline;font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:#8A8779"><span>Your push</span><span data-need="" style="color:#b8655a">{{ needLabel }}</span></div>
-          <div style="position:relative;height:13px;border-radius:7px;background:#08070c;border:1px solid rgba(201,168,76,.22);overflow:hidden;box-shadow:inset 0 2px 6px rgba(0,0,0,.9)">
+          <div sc-camel-on-pointer-down="{{ startHold }}" role="button" tabindex="0" aria-label="Press and hold to push" style="position:relative;height:22px;border-radius:11px;background:#08070c;border:1px solid rgba(201,168,76,.34);overflow:hidden;cursor:pointer;user-select:none;-webkit-user-select:none;touch-action:none;box-shadow:inset 0 2px 6px rgba(0,0,0,.9),0 0 0 1px rgba(201,168,76,.08)">
             <i data-meter="" style="position:absolute;left:0;top:0;bottom:0;width:0%;background:linear-gradient(180deg,#F3D998,#C9A84C 62%,#a8842f);box-shadow:0 0 12px rgba(232,185,96,.55)"></i>
           </div>
           </div>
-        <div sc-camel-on-pointer-down="{{ startHold }}" role="button" tabindex="0" aria-label="Hold to push" style="align-self:flex-start;margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#241c07;padding:17px 34px;border-radius:14px;cursor:pointer;user-select:none;touch-action:none;background:linear-gradient(180deg,#F0CE74,#D8B152 46%,#C9A84C);border:1px solid #f0d78f;transition:transform .07s,box-shadow .07s;transform:{{ btnTransform }};box-shadow:{{ btnShadow }}">{{ btnLabel }}</div>
+        <div sc-camel-on-pointer-down="{{ startHold }}" role="button" tabindex="0" aria-label="Hold to push" style="display:none;align-self:flex-start;margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#241c07;padding:17px 34px;border-radius:14px;cursor:pointer;user-select:none;touch-action:none;background:linear-gradient(180deg,#F0CE74,#D8B152 46%,#C9A84C);border:1px solid #f0d78f;transition:transform .07s,box-shadow .07s;transform:{{ btnTransform }};box-shadow:{{ btnShadow }}">{{ btnLabel }}</div>
       </div>
 
       <div data-tomb="" style="display:none;margin-top:14px;border:1px solid rgba(201,168,76,.28);border-radius:11px;background:#08070c;padding:15px 16px 13px">
@@ -549,13 +549,10 @@ button{font:inherit;background:none;border:0;color:inherit}
   </section>
 </sc-if>
 
-<section data-screen-label="04 Scale" style="max-width:1120px;margin:0 auto;padding:clamp(56px,9vw,104px) clamp(20px,4vw,40px) 0;display:flex;flex-direction:column;gap:clamp(20px,3vw,32px);scroll-snap-align:start">
-  <div data-rise="" style="display:flex;flex-direction:column;gap:9px;opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)">
-    <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:#C9A84C">04 · You have held these</span>
-    <p style="font-size:clamp(20px,2.6vw,30px);font-weight:500;line-height:1.28;color:#EDE7D8;max-width:30ch;text-wrap:pretty">Every one of these has been in your hands. Count them.</p>
-  </div>
+<section data-screen-label="04 Scale" style="max-width:1120px;margin:0 auto;padding:clamp(18px,2.4vw,30px) clamp(20px,4vw,40px) 0;display:flex;flex-direction:column;gap:clamp(20px,3vw,32px);scroll-snap-align:start">
+  
 
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(45%,190px),1fr));gap:clamp(10px,1.5vw,14px)">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(45%,168px),1fr));gap:clamp(8px,1.1vw,11px)">
     <div data-rise="" style="background:linear-gradient(180deg,rgba(24,21,32,.72),rgba(14,12,19,.72));border:1px solid rgba(201,168,76,.22);border-radius:13px;padding:18px 18px 17px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 6px 16px rgba(0,0,0,.4);opacity:0;transform:translateY(16px);transition:opacity .7s ease .04s,transform .7s cubic-bezier(.2,.7,.2,1) .04s">
       <i aria-hidden="true" style="display:block;width:26px;height:26px;margin-bottom:10px;background-image:url(data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2024%2024%27%20fill=%27none%27%20stroke=%27%23C9A84C%27%20stroke-width=%271.6%27%20stroke-linecap=%27round%27%20stroke-linejoin=%27round%27%3E%3Crect%20x=%277.1%27%20y=%273.9%27%20width=%279.8%27%20height=%273.2%27%20rx=%271.4%27/%3E%3Cpath%20d=%27M8.1%207.1C7%2011%206.5%2015.6%206.8%2020.3h10.4c.3-4.7-.2-9.3-1.3-13.2%27/%3E%3C/svg%3E);background-size:contain;background-repeat:no-repeat;opacity:.85"></i>
       <div style="font-size:clamp(26px,3vw,34px);font-weight:600;color:#F3D998;line-height:1;letter-spacing:-.01em">{{ rFlour }}</div>
@@ -668,7 +665,7 @@ button{font:inherit;background:none;border:0;color:inherit}
 </div>
 
 </x-dc>
-<script type="text/x-dc" data-dc-script="" data-props="{&quot;stone&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;giza&quot;,&quot;ollan&quot;,&quot;temple&quot;,&quot;trilithon&quot;,&quot;pregnant&quot;,&quot;forgotten&quot;],&quot;default&quot;:&quot;giza&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Arrival&quot;},&quot;pullMax&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:200,&quot;min&quot;:100,&quot;max&quot;:400,&quot;step&quot;:10,&quot;unit&quot;:&quot;lb&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;The lift&quot;},&quot;autoSpin&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;The lift&quot;},&quot;spinSpeed&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0.25,&quot;max&quot;:3,&quot;step&quot;:0.25,&quot;unit&quot;:&quot;×&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;The lift&quot;},&quot;figureColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#E8B960&quot;,&quot;options&quot;:[&quot;#C9A84C&quot;,&quot;#E8B960&quot;,&quot;#F3D998&quot;,&quot;#BFB9AC&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Scale figure&quot;},&quot;figureFill&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Scale figure&quot;},&quot;showDimension&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Scale figure&quot;},&quot;editionsBase&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://editions.theancientatlas.com&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Funnel&quot;},&quot;comparisonHref&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://theancientatlas.com/&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Funnel&quot;}}">
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;stone&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;giza&quot;,&quot;ollan&quot;,&quot;temple&quot;,&quot;trilithon&quot;,&quot;pregnant&quot;,&quot;forgotten&quot;],&quot;default&quot;:&quot;temple&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Arrival&quot;},&quot;pullMax&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:200,&quot;min&quot;:100,&quot;max&quot;:400,&quot;step&quot;:10,&quot;unit&quot;:&quot;lb&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;The lift&quot;},&quot;autoSpin&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;The lift&quot;},&quot;spinSpeed&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0.25,&quot;max&quot;:3,&quot;step&quot;:0.25,&quot;unit&quot;:&quot;×&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;The lift&quot;},&quot;figureColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#E8B960&quot;,&quot;options&quot;:[&quot;#C9A84C&quot;,&quot;#E8B960&quot;,&quot;#F3D998&quot;,&quot;#BFB9AC&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Scale figure&quot;},&quot;figureFill&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Scale figure&quot;},&quot;showDimension&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Scale figure&quot;},&quot;editionsBase&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://editions.theancientatlas.com&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Funnel&quot;},&quot;comparisonHref&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://theancientatlas.com/&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Funnel&quot;}}">
 const SITES = [
   { k:'giza', label:'Giza block', short:'Giza · 2.5 t', title:'One block. 2.5 tons.',
     sub:'The average stone in the Great Pyramid of Giza, and there are 2.3 million of them.',
@@ -757,7 +754,7 @@ const RAMP = 2.2, PLATEAU_AT = 1.25, GIVE_AT = 2.15;
 const MU = 0.25, CREEP_P = 0.6, CREEP_M = 0.09;
 
 class Component extends DCLogic {
-  state = { k:'giza', bw:180, soundOn:true, phase:'idle', tried:false, peak:0, narrow:null, shared:'', spinOn:true, cine:false };
+  state = { k:'temple', bw:180, soundOn:true, phase:'idle', tried:false, peak:0, narrow:null, shared:'', spinOn:true, cine:false };
 
   site() { return SITES.find(s => s.k === this.state.k) || SITES[0]; }
   pullMax() { return Math.max(60, +this.props.pullMax || 200); }
@@ -880,10 +877,10 @@ class Component extends DCLogic {
   /* ---------------- deep link ---------------- */
   _readLink() {
     let q;
-    try { q = new URLSearchParams(location.search); } catch (e) { return { k:this.props.stone || 'giza', at:null }; }
+    try { q = new URLSearchParams(location.search); } catch (e) { return { k:this.props.stone || 'temple', at:null }; }
     const qs = (q.get('stone') || q.get('s') || '').toString().toLowerCase().trim();
     const raw = (qs || this.props.stone || '').toString().toLowerCase().trim();
-    const k = ALIAS[raw] || (SITES.some(s => s.k === raw) ? raw : 'giza');
+    const k = ALIAS[raw] || (SITES.some(s => s.k === raw) ? raw : 'temple');
     const at = (q.get('at') || (qs ? 'lift' : '')) || null;
     return { k, at };
   }

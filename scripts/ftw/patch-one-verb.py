@@ -179,7 +179,10 @@ for aria in GLYPH:
 assert src.count('aria-label="Hold to push"') == 4, "push controls lost or duplicated"
 assert 'display:none;pointer-events:none;flex:none;' in src, "stage push still showing"
 assert "It has never been done alone" not in src, "the spoiler survives"
-assert src.count("{{ startHold }}") == 4, "a push handler was dropped"
+# At least four. A later patch in this directory moves the verb onto the
+# striker bar and adds a fifth, so an equality check here fails whenever the
+# two are run in sequence against an already-patched bundle.
+assert src.count("{{ startHold }}") >= 4, "a push handler was dropped"
 for aria in GLYPH:
     assert src.count('aria-label="' + aria + '"') >= 1, "lost control: " + aria
 
