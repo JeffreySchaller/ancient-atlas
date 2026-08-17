@@ -3,10 +3,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Creator Studies | The Ancient Atlas</title>
-<meta name="description" content="Close readings of the channels documenting the ancient world. Study No. 01: Ageless Rock — 281 walkthroughs across 195 sites on The Ancient Atlas.">
+<meta name="description" content="Close readings of the channels documenting the ancient world. A site page shows you a place. A body of work shows you a habit of mind.">
 <link rel="canonical" href="https://theancientatlas.com/creators/">
-<meta property="og:title" content="Creator Studies — The Ancient Atlas">
-<meta property="og:description" content="Study No. 01: Ageless Rock. 281 narrated studies across 195 sites.">
+<meta property="og:title" content="Creator Studies · The Ancient Atlas">
+<meta property="og:description" content="Study No. 01: Ageless Rock. Four ways of working stone, traced across one body of work.">
 <meta property="og:image" content="https://theancientatlas.com/og-image.png">
 <meta property="og:url" content="https://theancientatlas.com/creators/">
 <meta name="twitter:card" content="summary_large_image">
@@ -32,6 +32,7 @@ header{padding:clamp(56px,9vw,110px) 0 clamp(30px,5vw,54px)}
 h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,7vw,78px);line-height:1.04;
 letter-spacing:-.02em;margin:18px 0 20px}
 .deck{font-size:clamp(16px,2vw,19px);color:var(--cloud);max-width:60ch}
+.deck + .deck{margin-top:15px}
 .deck b{color:var(--ivory);font-weight:500}
 section{padding:clamp(34px,5vw,60px) 0;border-top:1px solid rgba(201,168,76,.14)}
 h2{font-family:var(--mono);font-size:11px;letter-spacing:.26em;text-transform:uppercase;
@@ -47,6 +48,23 @@ margin:10px 0 12px;letter-spacing:-.01em}
 border-top:1px solid rgba(201,168,76,.14);border-bottom:1px solid rgba(201,168,76,.14)}
 .stat b{display:block;font-family:var(--serif);font-size:34px;font-weight:600;color:var(--amber);line-height:1}
 .stat span{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}
+/* Three analogs where three counts used to be. A digital quantity is invisible,
+   so it gets rendered at a scale a body understands, and unlike a figure it does
+   not go stale as the archive grows. */
+.facts{display:flex;flex-direction:column;gap:0;margin:24px 0 28px;
+border-top:1px solid rgba(201,168,76,.16);border-bottom:1px solid rgba(201,168,76,.16)}
+.fact{display:flex;align-items:baseline;gap:18px;padding:13px 2px}
+.fact + .fact{border-top:1px solid rgba(201,168,76,.09)}
+.fact span{font-family:var(--mono);font-size:9.5px;letter-spacing:.17em;text-transform:uppercase;
+color:var(--amber);flex:none;width:74px}
+.fact p{margin:0;font-size:14.5px;line-height:1.5;color:var(--cloud)}
+/* The bar IS the analog. It says "one channel carries most of this" faster than
+   a number, and it cannot go stale. */
+th.barh{text-align:left;width:44%}
+td.bar{padding:11px 10px}
+td.bar i{display:block;height:5px;border-radius:4px;min-width:6px;
+box-shadow:0 0 10px rgba(232,185,96,.16)}
+@media(max-width:640px){.fact{flex-direction:column;gap:5px}.fact span{width:auto}}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
 padding:14px 22px;border-radius:10px;text-decoration:none;transition:.2s;font-weight:500}
@@ -94,10 +112,13 @@ footer a{color:var(--mist);text-decoration:none} footer a:hover{color:var(--ambe
 <header>
   <div class="kicker">Creator Studies</div>
   <h1>The people who<br>actually went looking</h1>
-  <p class="deck">The Atlas is 493 places. Almost none of them would be watchable without the
-  channels that documented them — <b>993 walkthroughs from 94 creators</b>. A Creator Study
-  is a close reading of one of those bodies of work: what it covers, what it keeps returning to,
-  and what it lets you see that a single site page never could.</p>
+  <p class="deck">Everything on this map that you can actually watch exists because somebody carried a
+  camera up a hill and pressed record. Nobody commissioned it. They went, and then they came back
+  and showed the rest of us.</p>
+  <p class="deck">A Creator Study is a close reading of one of those bodies of work. What it covers,
+  what it keeps circling back to, and what only comes into focus when you see the whole of it at
+  once. That last part is the reason to be here. A site page shows you a place. A body of work shows
+  you a habit of mind.</p>
 </header>
 
 <section>
@@ -107,14 +128,14 @@ footer a{color:var(--mist);text-decoration:none} footer a:hover{color:var(--ambe
       <div class="no">01</div>
       <h3>Ageless Rock</h3>
       <div class="who">Bernie Ong · @AgelessRock888</div>
-      <p class="body">Four ways of working stone, traced across 296 narrated studies. Not a travel channel — each episode is a researched visual study,
-      assembled and narrated rather than shot on location, which is precisely why the pattern is visible
-      from it. A traveller is bound by an itinerary. A researcher can set Ethiopia beside Peru on the
-      same screen.</p>
-      <div class="stats">
-        <div class="stat"><b>281</b><span>Walkthroughs wired</span></div>
-        <div class="stat"><b>195</b><span>Atlas sites covered</span></div>
-        <div class="stat"><b>28%</b><span>Of all Atlas footage</span></div>
+      <p class="body">Four ways of working stone, traced across a body of work built in the edit room rather than on the road. Not a travel channel. Each episode is assembled and narrated rather than shot on
+      location, and that is precisely why the pattern shows through it. A traveller is bound by an
+      itinerary. A researcher can set Ethiopia beside Peru on the same screen and let you look at
+      both at once.</p>
+      <div class="facts">
+        <div class="fact"><span>Reach</span><p>More of this map than any other single channel.</p></div>
+        <div class="fact"><span>Method</span><p>Assembled from research, so the argument is not bound by a flight path.</p></div>
+        <div class="fact"><span>Depth</span><p>Weeks of evenings, if you started tonight.</p></div>
       </div>
       <div class="btns">
         <a class="btn btn-solid" href="/creators/ageless-rock.html">Read the study</a>
@@ -135,41 +156,42 @@ footer a{color:var(--mist);text-decoration:none} footer a:hover{color:var(--ambe
 <section>
   <h2>Where the footage comes from</h2>
   <table>
-    <thead><tr><th>Channel</th><th>Handle</th><th class="num">Walkthroughs</th><th class="num">Sites</th></tr></thead>
+    <thead><tr><th>Channel</th><th>Handle</th><th class="barh">Share of the Atlas</th></tr></thead>
     <tbody>
-<tr class="lead"><td><i style="background:#8C6E4F"></i>Ageless Rock</td><td class="hnd">@AgelessRock888</td><td class="num">281</td><td class="num">195</td></tr>
-<tr><td><i style="background:#9C7CB1"></i>Hugh Newman / Megalithomania</td><td class="hnd">@MegalithomaniaUK</td><td class="num">84</td><td class="num">60</td></tr>
-<tr><td><i style="background:#5A9E94"></i>Stone Riddles</td><td class="hnd">@StoneRiddles</td><td class="num">67</td><td class="num">59</td></tr>
-<tr><td><i style="background:#81C784"></i>Brien Foerster</td><td class="hnd">@brienfoerster</td><td class="num">58</td><td class="num">39</td></tr>
-<tr><td><i style="background:#CE93D8"></i>Secrets in Stone</td><td class="hnd">@CassieCoppersmith</td><td class="num">54</td><td class="num">31</td></tr>
-<tr><td><i style="background:#64B5F6"></i>UnchartedX</td><td class="hnd">@UnchartedX</td><td class="num">43</td><td class="num">34</td></tr>
-<tr><td><i style="background:#A87644"></i>Archaic Lens</td><td class="hnd">@ArchaicLens</td><td class="num">37</td><td class="num">19</td></tr>
-<tr><td><i style="background:#5E80B8"></i>Universe Inside You</td><td class="hnd">@UniverseInsideYou</td><td class="num">36</td><td class="num">24</td></tr>
-<tr><td><i style="background:#6B7FB3"></i>Sorcerers of Stone</td><td class="hnd">@sorcerersofstone</td><td class="num">31</td><td class="num">21</td></tr>
-<tr><td><i style="background:#C8102E"></i>Türkiye Today</td><td class="hnd">@turkiyetoday</td><td class="num">25</td><td class="num">14</td></tr>
-<tr><td><i style="background:#DB6A6B"></i>Praveen Mohan</td><td class="hnd">@RealPraveenMohan</td><td class="num">24</td><td class="num">13</td></tr>
-<tr><td><i style="background:#E57373"></i>Mr.mountainbeast</td><td class="hnd">@Mr.mountainbeast.adventure</td><td class="num">17</td><td class="num">12</td></tr>
-<tr><td><i style="background:#5B9BD5"></i>Wandering Wolf</td><td class="hnd">@WanderingWolf</td><td class="num">16</td><td class="num">15</td></tr>
-<tr><td><i style="background:#8AB0D1"></i>Proto Civilization</td><td class="hnd">@ProtoCivilization</td><td class="num">15</td><td class="num">12</td></tr>
+<tr class="lead"><td><i style="background:#8C6E4F"></i>Ageless Rock</td><td class="hnd">@AgelessRock888</td><td class="bar"><i style="width:100%;background:linear-gradient(90deg,#8C6E4F,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#9C7CB1"></i>Hugh Newman / Megalithomania</td><td class="hnd">@MegalithomaniaUK</td><td class="bar"><i style="width:30%;background:linear-gradient(90deg,#9C7CB1,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#5A9E94"></i>Stone Riddles</td><td class="hnd">@StoneRiddles</td><td class="bar"><i style="width:24%;background:linear-gradient(90deg,#5A9E94,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#81C784"></i>Brien Foerster</td><td class="hnd">@brienfoerster</td><td class="bar"><i style="width:21%;background:linear-gradient(90deg,#81C784,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#CE93D8"></i>Secrets in Stone</td><td class="hnd">@CassieCoppersmith</td><td class="bar"><i style="width:19%;background:linear-gradient(90deg,#CE93D8,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#64B5F6"></i>UnchartedX</td><td class="hnd">@UnchartedX</td><td class="bar"><i style="width:15%;background:linear-gradient(90deg,#64B5F6,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#A87644"></i>Archaic Lens</td><td class="hnd">@ArchaicLens</td><td class="bar"><i style="width:13%;background:linear-gradient(90deg,#A87644,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#5E80B8"></i>Universe Inside You</td><td class="hnd">@UniverseInsideYou</td><td class="bar"><i style="width:13%;background:linear-gradient(90deg,#5E80B8,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#6B7FB3"></i>Sorcerers of Stone</td><td class="hnd">@sorcerersofstone</td><td class="bar"><i style="width:11%;background:linear-gradient(90deg,#6B7FB3,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#C8102E"></i>Türkiye Today</td><td class="hnd">@turkiyetoday</td><td class="bar"><i style="width:9%;background:linear-gradient(90deg,#C8102E,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#DB6A6B"></i>Praveen Mohan</td><td class="hnd">@RealPraveenMohan</td><td class="bar"><i style="width:9%;background:linear-gradient(90deg,#DB6A6B,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#E57373"></i>Mr.mountainbeast</td><td class="hnd">@Mr.mountainbeast.adventure</td><td class="bar"><i style="width:6%;background:linear-gradient(90deg,#E57373,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#5B9BD5"></i>Wandering Wolf</td><td class="hnd">@WanderingWolf</td><td class="bar"><i style="width:6%;background:linear-gradient(90deg,#5B9BD5,rgba(232,185,96,.85))"></i></td></tr>
+<tr><td><i style="background:#8AB0D1"></i>Proto Civilization</td><td class="hnd">@ProtoCivilization</td><td class="bar"><i style="width:5%;background:linear-gradient(90deg,#8AB0D1,rgba(232,185,96,.85))"></i></td></tr>
     </tbody>
   </table>
-  <p class="note">Counted from the Atlas itself, not from subscriber counts. Ageless Rock carries more of
-  the map than any other single channel — 281 walkthroughs against 84 for the next largest.</p>
+  <p class="note">Measured by what is wired into this map, not by subscriber count. The bars are
+  relative to each other: one channel carries more of the Atlas than any other, by a margin you can
+  see without being told the figure.</p>
 </section>
 
 <section>
   <div class="shop">
     <div>
       <div class="kicker">Editions</div>
-      <p>The Atlas is free and always will be. Editions is what keeps it that way — prints and pieces
-      for people who would rather look at this every day than scroll past it.</p>
+      <p>The Atlas is free and always will be. Editions is what keeps it that way: prints and
+      pieces for people who would rather look at this every day than scroll past it.</p>
     </div>
     <a class="btn btn-solid" href="https://editions.theancientatlas.com?from=creators" rel="noopener">Visit Editions →</a>
   </div>
 </section>
 
 <footer>
-  <a href="/">The Ancient Atlas</a> — a hand-curated map of the deep past ·
+  <a href="/">The Ancient Atlas</a>, a hand-curated map of the deep past ·
   <a href="/sites/">All sites</a> · <a href="/library/">Library</a> ·
   <a href="/contribute.html">Contribute</a> · <a href="/contact.html">Contact</a>
 </footer>

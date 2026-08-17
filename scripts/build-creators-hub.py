@@ -56,7 +56,7 @@ TOTAL_SITES = len({s for v in sites.values() for s in v})
 STUDY = {
     "no": "01", "slug": "ageless-rock", "name": "Ageless Rock", "person": "Bernie Ong",
     "handle": "@AgelessRock888",
-    "line": "Four ways of working stone, traced across 296 narrated studies.",
+    "line": "Four ways of working stone, traced across a body of work built in the edit room rather than on the road.",
 }
 
 def esc(t):
@@ -83,6 +83,7 @@ else:
 
 # ---------------------------------------------------------------- contributor table
 rows = []
+top_n = wires.most_common(1)[0][1]
 for k, n in wires.most_common(14):
     m = creators.get(k, {})
     nm = esc(m.get("name") or k)
@@ -91,7 +92,9 @@ for k, n in wires.most_common(14):
     lead = ' class="lead"' if k == "agelessrock" else ""
     rows.append(
         f'<tr{lead}><td><i style="background:{col}"></i>{nm}</td>'
-        f'<td class="hnd">{handle}</td><td class="num">{n}</td><td class="num">{len(sites[k])}</td></tr>')
+        f'<td class="hnd">{handle}</td>'
+        f'<td class="bar"><i style="width:{max(4, round(n / top_n * 100))}%;'
+        f'background:linear-gradient(90deg,{col},rgba(232,185,96,.85))"></i></td></tr>')
 rows = "\n".join(rows)
 
 share = AR_V / TOTAL_V * 100
@@ -101,10 +104,10 @@ html = f'''<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Creator Studies | The Ancient Atlas</title>
-<meta name="description" content="Close readings of the channels documenting the ancient world. Study No. 01: Ageless Rock — {AR_V} walkthroughs across {AR_S} sites on The Ancient Atlas.">
+<meta name="description" content="Close readings of the channels documenting the ancient world. A site page shows you a place. A body of work shows you a habit of mind.">
 <link rel="canonical" href="{BASE}/creators/">
-<meta property="og:title" content="Creator Studies — The Ancient Atlas">
-<meta property="og:description" content="Study No. 01: Ageless Rock. {AR_V} narrated studies across {AR_S} sites.">
+<meta property="og:title" content="Creator Studies · The Ancient Atlas">
+<meta property="og:description" content="Study No. 01: Ageless Rock. Four ways of working stone, traced across one body of work.">
 <meta property="og:image" content="{BASE}/og-image.png">
 <meta property="og:url" content="{BASE}/creators/">
 <meta name="twitter:card" content="summary_large_image">
@@ -130,6 +133,7 @@ header{{padding:clamp(56px,9vw,110px) 0 clamp(30px,5vw,54px)}}
 h1{{font-family:var(--serif);font-weight:600;font-size:clamp(40px,7vw,78px);line-height:1.04;
 letter-spacing:-.02em;margin:18px 0 20px}}
 .deck{{font-size:clamp(16px,2vw,19px);color:var(--cloud);max-width:60ch}}
+.deck + .deck{{margin-top:15px}}
 .deck b{{color:var(--ivory);font-weight:500}}
 section{{padding:clamp(34px,5vw,60px) 0;border-top:1px solid rgba(201,168,76,.14)}}
 h2{{font-family:var(--mono);font-size:11px;letter-spacing:.26em;text-transform:uppercase;
@@ -145,6 +149,23 @@ margin:10px 0 12px;letter-spacing:-.01em}}
 border-top:1px solid rgba(201,168,76,.14);border-bottom:1px solid rgba(201,168,76,.14)}}
 .stat b{{display:block;font-family:var(--serif);font-size:34px;font-weight:600;color:var(--amber);line-height:1}}
 .stat span{{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mist)}}
+/* Three analogs where three counts used to be. A digital quantity is invisible,
+   so it gets rendered at a scale a body understands, and unlike a figure it does
+   not go stale as the archive grows. */
+.facts{{display:flex;flex-direction:column;gap:0;margin:24px 0 28px;
+border-top:1px solid rgba(201,168,76,.16);border-bottom:1px solid rgba(201,168,76,.16)}}
+.fact{{display:flex;align-items:baseline;gap:18px;padding:13px 2px}}
+.fact + .fact{{border-top:1px solid rgba(201,168,76,.09)}}
+.fact span{{font-family:var(--mono);font-size:9.5px;letter-spacing:.17em;text-transform:uppercase;
+color:var(--amber);flex:none;width:74px}}
+.fact p{{margin:0;font-size:14.5px;line-height:1.5;color:var(--cloud)}}
+/* The bar IS the analog. It says "one channel carries most of this" faster than
+   a number, and it cannot go stale. */
+th.barh{{text-align:left;width:44%}}
+td.bar{{padding:11px 10px}}
+td.bar i{{display:block;height:5px;border-radius:4px;min-width:6px;
+box-shadow:0 0 10px rgba(232,185,96,.16)}}
+@media(max-width:640px){{.fact{{flex-direction:column;gap:5px}}.fact span{{width:auto}}}}
 .btns{{display:flex;gap:12px;flex-wrap:wrap}}
 .btn{{display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
 padding:14px 22px;border-radius:10px;text-decoration:none;transition:.2s;font-weight:500}}
@@ -192,10 +213,13 @@ footer a{{color:var(--mist);text-decoration:none}} footer a:hover{{color:var(--a
 <header>
   <div class="kicker">Creator Studies</div>
   <h1>The people who<br>actually went looking</h1>
-  <p class="deck">The Atlas is {TOTAL_SITES} places. Almost none of them would be watchable without the
-  channels that documented them — <b>{TOTAL_V} walkthroughs from {len(creators)} creators</b>. A Creator Study
-  is a close reading of one of those bodies of work: what it covers, what it keeps returning to,
-  and what it lets you see that a single site page never could.</p>
+  <p class="deck">Everything on this map that you can actually watch exists because somebody carried a
+  camera up a hill and pressed record. Nobody commissioned it. They went, and then they came back
+  and showed the rest of us.</p>
+  <p class="deck">A Creator Study is a close reading of one of those bodies of work. What it covers,
+  what it keeps circling back to, and what only comes into focus when you see the whole of it at
+  once. That last part is the reason to be here. A site page shows you a place. A body of work shows
+  you a habit of mind.</p>
 </header>
 
 <section>
@@ -205,14 +229,14 @@ footer a{{color:var(--mist);text-decoration:none}} footer a:hover{{color:var(--a
       <div class="no">{STUDY["no"]}</div>
       <h3>{STUDY["name"]}</h3>
       <div class="who">{STUDY["person"]} · {STUDY["handle"]}</div>
-      <p class="body">{STUDY["line"]} Not a travel channel — each episode is a researched visual study,
-      assembled and narrated rather than shot on location, which is precisely why the pattern is visible
-      from it. A traveller is bound by an itinerary. A researcher can set Ethiopia beside Peru on the
-      same screen.</p>
-      <div class="stats">
-        <div class="stat"><b>{AR_V}</b><span>Walkthroughs wired</span></div>
-        <div class="stat"><b>{AR_S}</b><span>Atlas sites covered</span></div>
-        <div class="stat"><b>{share:.0f}%</b><span>Of all Atlas footage</span></div>
+      <p class="body">{STUDY["line"]} Not a travel channel. Each episode is assembled and narrated rather than shot on
+      location, and that is precisely why the pattern shows through it. A traveller is bound by an
+      itinerary. A researcher can set Ethiopia beside Peru on the same screen and let you look at
+      both at once.</p>
+      <div class="facts">
+        <div class="fact"><span>Reach</span><p>More of this map than any other single channel.</p></div>
+        <div class="fact"><span>Method</span><p>Assembled from research, so the argument is not bound by a flight path.</p></div>
+        <div class="fact"><span>Depth</span><p>Weeks of evenings, if you started tonight.</p></div>
       </div>
       <div class="btns">
         <a class="btn btn-solid" href="/creators/ageless-rock.html">Read the study</a>
@@ -226,28 +250,29 @@ footer a{{color:var(--mist);text-decoration:none}} footer a:hover{{color:var(--a
 <section>
   <h2>Where the footage comes from</h2>
   <table>
-    <thead><tr><th>Channel</th><th>Handle</th><th class="num">Walkthroughs</th><th class="num">Sites</th></tr></thead>
+    <thead><tr><th>Channel</th><th>Handle</th><th class="barh">Share of the Atlas</th></tr></thead>
     <tbody>
 {rows}
     </tbody>
   </table>
-  <p class="note">Counted from the Atlas itself, not from subscriber counts. Ageless Rock carries more of
-  the map than any other single channel — {AR_V} walkthroughs against {runner_up[1]} for the next largest.</p>
+  <p class="note">Measured by what is wired into this map, not by subscriber count. The bars are
+  relative to each other: one channel carries more of the Atlas than any other, by a margin you can
+  see without being told the figure.</p>
 </section>
 
 <section>
   <div class="shop">
     <div>
       <div class="kicker">Editions</div>
-      <p>The Atlas is free and always will be. Editions is what keeps it that way — prints and pieces
-      for people who would rather look at this every day than scroll past it.</p>
+      <p>The Atlas is free and always will be. Editions is what keeps it that way: prints and
+      pieces for people who would rather look at this every day than scroll past it.</p>
     </div>
     <a class="btn btn-solid" href="https://editions.theancientatlas.com?from=creators" rel="noopener">Visit Editions →</a>
   </div>
 </section>
 
 <footer>
-  <a href="/">The Ancient Atlas</a> — a hand-curated map of the deep past ·
+  <a href="/">The Ancient Atlas</a>, a hand-curated map of the deep past ·
   <a href="/sites/">All sites</a> · <a href="/library/">Library</a> ·
   <a href="/contribute.html">Contribute</a> · <a href="/contact.html">Contact</a>
 </footer>
