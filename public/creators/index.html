@@ -39,7 +39,11 @@ h2{font-family:var(--mono);font-size:11px;letter-spacing:.26em;text-transform:up
 color:var(--champagne);margin-bottom:26px}
 .study{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(24px,4vw,52px);align-items:start}
 @media(max-width:860px){.study{grid-template-columns:1fr}}
-.no{font-family:var(--serif);font-size:clamp(56px,9vw,104px);line-height:.85;color:var(--stone);font-weight:600}
+/* An index against an entry, not a headline of its own. Baseline-aligned with
+   the name so the pair reads as one object. */
+.hd{display:flex;align-items:baseline;gap:clamp(12px,1.6vw,20px);flex-wrap:wrap}
+.no{font-family:var(--serif);font-size:clamp(38px,5.4vw,62px);line-height:.9;color:var(--stone);font-weight:600;flex:none}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .study h3{font-family:var(--serif);font-size:clamp(30px,4.4vw,46px);font-weight:600;line-height:1.08;
 margin:10px 0 12px;letter-spacing:-.01em}
 .study .who{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--mist);margin-bottom:18px}
@@ -66,6 +70,25 @@ td.bar i{display:block;height:5px;border-radius:4px;min-width:6px;
 box-shadow:0 0 10px rgba(232,185,96,.16)}
 @media(max-width:640px){.fact{flex-direction:column;gap:5px}.fact span{width:auto}}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
+/* Two doors, not two pills. Identical buttons say the choice does not matter;
+   the choice is the point. Each names what is behind it. */
+.doors-lede{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;
+text-transform:uppercase;color:var(--amber);margin:30px 0 11px}
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.door{display:block;text-decoration:none;border:1px solid rgba(201,168,76,.22);
+border-radius:12px;padding:15px 16px 14px;background:rgba(201,168,76,.035);
+transition:border-color .16s,background .16s,transform .16s}
+.door:hover{border-color:rgba(201,168,76,.55);background:rgba(201,168,76,.08);
+transform:translateY(-2px)}
+.door b{display:flex;align-items:baseline;justify-content:space-between;gap:10px;
+font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+color:var(--amber);font-weight:500;line-height:1.35}
+.door b i{font-style:normal;flex:none;transition:transform .16s}
+.door:hover b i{transform:translateX(4px)}
+.door p{margin:9px 0 0;font-size:13.5px;line-height:1.5;color:var(--cloud)}
+@media(max-width:860px){.doors{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.door,.door b i{transition:none}
+.door:hover{transform:none}.door:hover b i{transform:none}}
 .btn{display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
 padding:14px 22px;border-radius:10px;text-decoration:none;transition:.2s;font-weight:500}
 .btn-solid{background:linear-gradient(180deg,var(--amber),var(--champagne));color:#241c07;font-weight:600}
@@ -122,11 +145,10 @@ footer a{color:var(--mist);text-decoration:none} footer a:hover{color:var(--ambe
 </header>
 
 <section>
-  <h2>Study No. 01</h2>
+  <h2 class="sr-only">Study No. 01: Ageless Rock</h2>
   <div class="study">
     <div>
-      <div class="no">01</div>
-      <h3>Ageless Rock</h3>
+      <div class="hd"><span class="no">01</span><h3>Ageless Rock</h3></div>
       <div class="who">Bernie Ong · @AgelessRock888</div>
       <p class="body">Four ways of working stone, traced across a body of work built in the edit room rather than on the road. Not a travel channel. Each episode is assembled and narrated rather than shot on
       location, and that is precisely why the pattern shows through it. A traveller is bound by an
@@ -137,9 +159,16 @@ footer a{color:var(--mist);text-decoration:none} footer a:hover{color:var(--ambe
         <div class="fact"><span>Method</span><p>Assembled from research, so the argument is not bound by a flight path.</p></div>
         <div class="fact"><span>Depth</span><p>Weeks of evenings, if you started tonight.</p></div>
       </div>
-      <div class="btns">
-        <a class="btn btn-solid" href="/creators/ageless-rock.html">Read the study</a>
-        <a class="btn btn-ghost" href="/creators/ageless-rock-by-place.html">Browse by place</a>
+      <p class="doors-lede">Two ways in</p>
+      <div class="doors">
+        <a class="door" href="/creators/ageless-rock.html">
+          <b>Follow the argument <i>&rarr;</i></b>
+          <p>What repeats when you stop sorting these places by where they are. Four answers,
+          each with the footage that makes its case.</p></a>
+        <a class="door" href="/creators/ageless-rock-by-place.html">
+          <b>Start where you already care <i>&rarr;</i></b>
+          <p>Every episode filed by the place it studies rather than the day it was posted.
+          Begin with a country you know and let it lead you outward.</p></a>
       </div>
     </div>
       <div class="iv">
