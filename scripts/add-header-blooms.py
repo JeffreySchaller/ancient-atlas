@@ -111,12 +111,15 @@ def rows(pairs):
 
 
 def bars(pairs, top):
+    """Bars without labels. The shape carries the point, that the spread is
+    lopsided, and a shape stays true as the data grows in a way a printed
+    figure does not."""
     out = []
     for name, n in pairs:
-        pct = max(6, round(n / top * 100))
-        out.append(f'<div class="hb-brow"><span>{name}</span>'
-                   f'<i class="hb-bar" style="width:{pct}%"></i><b>{n}</b></div>')
-    return f'<div class="hb-rows">{"".join(out)}</div>'
+        pct = max(8, round(n / top * 100))
+        out.append('<div class="hb-brow"><span>' + name + '</span>'
+                   '<i class="hb-bar" style="width:' + str(pct) + '%"></i></div>')
+    return '<div class="hb-rows">' + ''.join(out) + '</div>'
 
 
 def glyph_row():
@@ -142,55 +145,67 @@ def card(kicker, title, sub="", body="", cta=None, side=""):
             + cta_html + "</div>")
 
 
+# Story, not inventory. Two reasons, both of them right.
+#
+# A printed count is a liability. It is correct for exactly as long as nobody
+# adds a site, and when it drifts nobody notices, so the reader quietly concludes
+# the Atlas cannot count its own rows. The live tile beside each card already
+# carries that number and is wired to the data. The card must not repeat it.
+#
+# And a figure is a poor way into a story. "618 sites" is a fact about a
+# database. "Every stone here, someone stood next to" is a reason to click. The
+# tile is the ledger; the card is the invitation. Two different jobs, and the
+# card was doing the tile's.
+#
+# The region bars are the one survivor, and they keep their shape while losing
+# their labels: the point is that the distribution is lopsided, and a bar stays
+# true as the data grows in a way a printed number does not.
 CARDS = {
     "sites": card(
         "The Atlas",
-        f"{n_sites} sites, placed by hand.",
-        "Every coordinate checked against the ground rather than scraped.",
-        rows([("With a walkthrough", n_vid),
-              ("Still waiting for one", n_sites - n_vid),
-              ("Regions", n_regions)]),
-        ("Browse the index →", 'href="sites/"')),
+        "Every stone here, someone stood next to.",
+        "Placed by hand and checked against the ground, not scraped from a list.",
+        "", ("Browse the index &rarr;", 'href="sites/"')),
     "video": card(
         "Walkthroughs",
-        f"{n_wires:,} walkthroughs, {n_creators} creators.",
-        f"{n_vid} of the {n_sites} sites have someone standing there with a camera.",
-        "", ("See the creators →", 'href="creators/"')),
+        "You do not have to take anyone's word.",
+        "Most of this map comes with someone walking you through it, camera in hand.",
+        "", ("See the creators &rarr;", 'href="creators/"')),
     "regions": card(
         "Where",
-        f"{n_regions} regions, unevenly.",
-        "", bars(regions.most_common(4), regions.most_common(1)[0][1]),
-        ("Browse the index →", 'href="sites/"')),
+        "The deep past is not evenly spread.",
+        "Some coastlines are crowded. Whole continents are nearly empty. Both are worth a look.",
+        bars(regions.most_common(4), regions.most_common(1)[0][1]),
+        ("Browse by region &rarr;", 'href="sites/"')),
     "studies": card(
-        "Creator Studies · No. 01",
-        f"{featured_name}, {featured_n} walkthroughs.",
-        "One channel's whole body of work, laid back over the map.",
-        "", ("Open the studies →", 'href="creators/"')),
+        "Creator Studies &middot; No. 01",
+        "One channel's life's work, laid back over the map.",
+        "A study takes a single creator and shows you everywhere they have actually been.",
+        "", ("Open the studies &rarr;", 'href="creators/"')),
     "creators": card(
-        f"{n_creators} voices",
-        f"{n_creators} people did the filming.",
-        "",
-        rows([(creators.get(k, {}).get("name", k), n) for k, n in top5]),
-        ("All 94 voices →", 'href="creators/"')),
+        "Creators",
+        "The Atlas filmed none of this.",
+        "It is built from the work of people who went there. Every clip is credited and links back.",
+        "", ("Meet them &rarr;", 'href="creators/"')),
     "articles": card(
         "The Library",
-        f"{n_articles} working frameworks.",
-        "How to read a site well, before anyone tells you what it means.",
-        rows([(t, "") for t, _ in ARTICLES[:4]] + [("and 3 more", "")]),
-        ("Open the Library →", 'href="library/index.html"')),
+        "How to read a site before anyone tells you what it means.",
+        "The vocabulary: what counts as a megalith, what a joint can prove, what the ground remembers.",
+        rows([(t, "") for t, _ in ARTICLES[:4]] + [("and more", "")]),
+        ("Open the Library &rarr;", 'href="library/index.html"')),
     "patterns": card(
         "Patterns",
         "The same idea, in places that never met.",
-        f"Seven engineering signatures, tracked across {n_sites} sites.",
-        glyph_row(), ("See the seven →", 'href="patterns/"')),
+        "Sort by method instead of by map and the coincidences stop looking like coincidences.",
+        glyph_row(), ("See the patterns &rarr;", 'href="patterns/"')),
     "support": card(
         "Support", "Free, and staying free.",
         "No ads, no paywall, nothing tracked beyond a page count.",
-        "", ("How to help →", 'href="#" onclick="openSupport();return false;"'), side=" hb--r"),
+        "", ("How to help &rarr;", 'href="#" onclick="openSupport();return false;"'), side=" hb--r"),
     "contact": card(
         "Contact", "Found something wrong?",
-        "Corrections and new-site suggestions land in the same inbox, and both get read.",
-        "", ("Get in touch →", 'href="contact.html"'), side=" hb--r"),
+        "Corrections and new sites land in the same inbox, and both get read.",
+        "", ("Get in touch &rarr;", 'href="contact.html"'), side=" hb--r"),
 }
 
 # ------------------------------------------------------------------- the tiles
@@ -325,14 +340,31 @@ if src != orig:
 n_wrap = src.count('class="hb-wrap"')
 assert n_wrap == 9, "expected 9 wrappers, got %d" % n_wrap
 assert src.count('class="hb-cta"') == 9, "expected 9 CTAs"
-assert src.count('<div class="hb"') + src.count('<div class="hb hb--r"') == 9, "card count wrong"
 assert src.count("hb-glyphs") >= 2, "pattern glyph row missing"
 assert ".hb-wrap > .stat-experiences" in src and ".hb-wrap > .stat-patterns" in src, \
     "scoped padding not extended to wrapped tiles"
 assert 'id="stat-articles">7<' in src, "articles tile not corrected to 7"
 assert src.count("fw-bloom") > 0 and src.count("ed-bloom") > 0, "existing blooms damaged"
 
-print(f"9 header cards wired. {n_sites} sites, {n_vid} with video, {n_wires} wires, "
-      f"{n_creators} creators, {n_articles} articles, {n_regions} regions.")
-print(f"Featured study: {featured_name} ({featured_n}).")
-print("NOTE: the Articles tile said 6; there are 7 published articles. Corrected to 7.")
+# The previous run passed every assertion above while a card read
+# "ageless-rock, 0 walkthroughs", because nothing asserted on what the cards
+# actually SAY. These do. A digit anywhere in a headline or body is now a build
+# failure, which enforces the no-stale-counts rule structurally rather than by
+# remembering to.
+import re as _re
+
+titles = _re.findall(r'<p class="hb-t">(.*?)</p>', src)
+bodies = _re.findall(r'<p class="hb-s">(.*?)</p>', src)
+assert len(titles) == 9, "expected 9 card headlines, got %d" % len(titles)
+for t in titles + bodies:
+    if _re.search(r"[0-9]", t):
+        sys.exit("ABORT: card copy carries a figure that will go stale: %r" % t)
+for must in ("Every stone here, someone stood next to.",
+             "The Atlas filmed none of this.",
+             "One channel's life's work, laid back over the map."):
+    assert must in src, "missing headline: %s" % must
+
+print("9 header cards wired. Story-led, no printed counts.")
+print("Integrity: feature.json resolves to %s (%d wires). %d sites, %d regions, %d articles."
+      % (featured_name, featured_n, n_sites, n_regions, n_articles))
+print("Region bars keep their shape and lost their labels.")
