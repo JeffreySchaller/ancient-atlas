@@ -292,7 +292,7 @@ button{font:inherit;background:none;border:0;color:inherit}
 @keyframes fw-dust{0%{opacity:0;transform:scale(.35)}14%{opacity:.85}100%{opacity:0;transform:scale(2.4)}}
 @keyframes fw-punch{0%{transform:scale(1)}22%{transform:scale(1.055)}100%{transform:scale(1)}}
 @keyframes fw-wipe{from{-webkit-mask-size:0% 100%;mask-size:0% 100%}to{-webkit-mask-size:130% 100%;mask-size:130% 100%}}
-@keyframes fw-swap{0%{background:rgba(232,185,96,.34);border-color:rgba(243,217,152,.9);transform:translateY(-2px)}100%{background:rgba(201,168,76,.08);border-color:rgba(232,185,96,.34);transform:none}} @keyframes fw-breathe{0%,100%{opacity:.34}50%{opacity:.9}}
+@keyframes fw-swap{0%{background:rgba(232,185,96,.34);border-color:rgba(243,217,152,.9);transform:translateY(-2px)}100%{background:rgba(201,168,76,.08);border-color:rgba(232,185,96,.34);transform:none}} @keyframes fw-swap{0%{background:rgba(232,185,96,.34);border-color:rgba(243,217,152,.9);transform:translateY(-2px)}100%{background:rgba(201,168,76,.08);border-color:rgba(232,185,96,.34);transform:none}} @keyframes fw-breathe{0%,100%{opacity:.34}50%{opacity:.9}}
 @keyframes fw-nudge{0%,100%{box-shadow:0 0 0 0 rgba(232,185,96,0)}50%{box-shadow:0 0 0 3px rgba(232,185,96,.17)}}
 .fw-nudge{animation:fw-nudge 2.8s ease-in-out infinite}
 @media (prefers-reduced-motion:reduce){.fw-nudge{animation:none;box-shadow:0 0 0 2px rgba(232,185,96,.15)}}
@@ -329,8 +329,8 @@ button{font:inherit;background:none;border:0;color:inherit}
 <sc-if value="{{ isPhone }}">
   <section data-screen-label="M01 The stone" style="position:relative;z-index:2;padding:67px 20px 16px;display:flex;flex-direction:column;justify-content:flex-start;gap:10px">
     <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#C9A84C">01 · The stone</span>
-    <h1 style="font-size:clamp(26px,8vw,38px);font-weight:600;line-height:1.08;letter-spacing:-.01em;color:#F3D998;text-wrap:pretty">{{ head }}</h1>
-    <p style="font-family:'JetBrains Mono',monospace;font-size:13.5px;line-height:1.7;color:#9a9689;letter-spacing:.02em;text-wrap:pretty">{{ said }}</p>
+    <h1 style="font-size:clamp(26px,8vw,38px);font-weight:600;line-height:1.08;letter-spacing:-.01em;color:#F3D998;text-wrap:pretty">{{ headLead }}<em style="font-style:italic;color:#C9A84C">{{ headEm }}</em>{{ headTail }}</h1>
+    <p style="font-size:16px;line-height:1.5;color:#C5C5D0;text-wrap:pretty">{{ said }}</p>
     <div style="display:flex;align-items:center;gap:9px;margin-top:4px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#8A8779">
       <i style="width:26px;height:1px;background:rgba(201,168,76,.5)"></i>{{ matter }}
     </div>
@@ -354,7 +354,7 @@ button{font:inherit;background:none;border:0;color:inherit}
       </div>
       <div style="position:absolute;left:11px;right:11px;bottom:12px;display:flex;align-items:flex-end;justify-content:space-between;gap:10px;z-index:7;pointer-events:none">
         <div style="display:flex;flex-direction:column;gap:5px;max-width:56%">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.05em;line-height:1.5;color:#b9b3a3;background:rgba(9,9,13,.74);border:1px solid rgba(201,168,76,.2);border-radius:8px;padding:5px 9px;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);white-space:normal">{{ hintSpin }}</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.05em;line-height:1.5;color:#b9b3a3;color:#8d8879;letter-spacing:.16em;text-transform:uppercase;white-space:normal;text-shadow:0 0 10px rgba(10,10,14,.98),0 0 22px rgba(10,10,14,.9)">Drag to turn it</span>
           
         </div>
         
@@ -381,23 +381,7 @@ button{font:inherit;background:none;border:0;color:inherit}
 </sc-if>
 
 <sc-if value="{{ isDesk }}" hint-placeholder-val="{{ true }}">
-  <section data-screen-label="D01 Specimen" style="max-width:1320px;margin:0 auto;padding:calc(47px + clamp(14px,3vh,38px)) clamp(20px,4vw,40px) 0;display:grid;grid-template-columns:minmax(0,1.618fr) minmax(330px,1fr);grid-template-rows:auto auto 1fr;gap:clamp(16px,2vw,26px) clamp(24px,3vw,46px);align-content:center;min-height:auto">
-    <div style="grid-column:2;grid-row:1;display:flex;flex-direction:column;gap:10px">
-      <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.34em;text-transform:uppercase;color:#C9A84C">Put your hands on it</span>
-      <h1 style="font-size:clamp(30px,2.9vw,44px);font-weight:600;line-height:1.04;letter-spacing:-.015em;color:#F3D998;text-wrap:pretty">{{ head }}</h1>
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11.5px;line-height:1.8;color:#8A8779;letter-spacing:.02em;text-wrap:pretty">{{ said }}</p>
-    </div>
-
-    <div style="grid-column:2;grid-row:2;display:flex;flex-direction:column;gap:9px">
-      <span style="font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.28em;text-transform:uppercase;color:#807d71">Pick another stone</span>
-      <div style="display:flex;gap:7px;flex-wrap:wrap">
-      <sc-for list="{{ stones }}" as="s" hint-placeholder-count="6">
-        <button sc-camel-on-click="{{ s.pick }}" class="{{ s.cls }}" style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.05em;padding:8px 13px;border-radius:999px;display:inline-flex;align-items:center;gap:7px;cursor:pointer;transition:background .15s,color .15s,border-color .15s,transform .15s;border:1px solid {{ s.border }};background:{{ s.bg }};color:{{ s.fg }};font-weight:{{ s.weight }};transform:{{ s.lift }}" style-hover="border-color:rgba(232,185,96,.65);color:#F3D998"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;flex:none;opacity:.9"><path d="{{ s.glyph }}"/></svg><span>{{ s.short }}</span></button>
-      </sc-for>
-    </div>
-    </div>
-
-    <div data-quake="" style="grid-column:1;grid-row:1 / span 3;align-self:stretch;position:relative;width:100%;min-height:min(56vh,440px);border:1px solid rgba(201,168,76,.22);border-radius:16px;overflow:hidden;background:#0B0A0F;box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 20px 46px rgba(0,0,0,.55)">
+  <section data-screen-label="D01 Specimen" style="max-width:1180px;margin:0 auto;padding:calc(47px + clamp(12px,2.4vh,30px)) clamp(20px,4vw,40px) 0;display:flex;flex-direction:column;gap:clamp(18px,2.6vw,30px)"><div data-quake="" style="position:relative;width:100%;height:clamp(300px,42vh,420px);border:1px solid rgba(201,168,76,.22);border-radius:16px;overflow:hidden;background:#0B0A0F;box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 20px 46px rgba(0,0,0,.55)">
       <div data-stage="" style="position:absolute;inset:0;cursor:grab;touch-action:none"></div>
       <i data-dust="" style="position:absolute;left:50%;bottom:6%;width:34%;height:26%;transform:translateX(-50%) scale(.35);opacity:0;pointer-events:none;background:radial-gradient(closest-side,rgba(214,196,152,.45),rgba(214,196,152,0) 72%)"></i>
 
@@ -413,20 +397,17 @@ button{font:inherit;background:none;border:0;color:inherit}
       </div>
       <div style="position:absolute;left:16px;right:16px;bottom:16px;display:flex;align-items:flex-end;justify-content:space-between;gap:10px;z-index:7;pointer-events:none">
         <div style="display:flex;flex-direction:column;gap:5px;max-width:56%">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.05em;line-height:1.5;color:#b9b3a3;background:rgba(9,9,13,.74);border:1px solid rgba(201,168,76,.2);border-radius:8px;padding:5px 9px;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);white-space:nowrap">{{ hintSpin }}</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.05em;line-height:1.5;color:#b9b3a3;color:#8d8879;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;text-shadow:0 0 10px rgba(10,10,14,.98),0 0 22px rgba(10,10,14,.9)">Drag to turn it</span>
           
         </div>
         
       </div>
 
-      <div style="position:absolute;top:13px;left:16px;right:16px;display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 14px;pointer-events:none">
+      <span style="position:absolute;right:16px;bottom:18px;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#8d8879;pointer-events:none;text-shadow:0 0 10px rgba(10,10,14,.98),0 0 22px rgba(10,10,14,.9)">Figure at six feet</span><div style="position:absolute;top:13px;left:16px;right:16px;display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 14px;pointer-events:none">
         <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#E8B960;text-shadow:0 0 14px rgba(232,185,96,.45)">{{ dimtxt }}</span>
-        <a href="#fw-weight" style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#F3D998;border:1px solid rgba(232,185,96,.5);border-radius:999px;padding:5px 13px;pointer-events:auto;white-space:nowrap;transition:background .2s,color .2s" style-hover="color:#0A0A0E;background:#E8B960">What it weighs &#8595;</a>
+        
       </div>
-    </div>
-
-    <div style="grid-column:2;grid-row:3;display:flex;flex-direction:column;justify-content:space-between;gap:15px;height:100%;border-top:1px solid rgba(201,168,76,.22);padding-top:17px;padding-bottom:2px"><div style="display:flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#8A8779;line-height:1.6"><i style="flex:none;width:22px;height:1px;background:rgba(201,168,76,.5)"></i>{{ matter }}</div><a href="#fw-weight" style="align-self:flex-start;display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#0A0A0E;background:#E8B960;border:1px solid #f0d78f;border-radius:11px;padding:13px 20px;transition:background .2s,transform .12s" style-hover="background:#F3D998;transform:translateY(-1px)">Now feel what it weighs<i style="font-style:normal">&#8595;</i></a></div>
-  </section>
+    </div><div class="v6-say" style="display:flex;flex-direction:column"><h1 style="font-size:clamp(29px,4.2vw,52px);font-weight:600;line-height:1.02;letter-spacing:-.022em;color:#F0EEE9;margin:0;max-width:24ch;text-wrap:pretty">{{ headLead }}<em style="font-style:italic;color:#C9A84C">{{ headEm }}</em>{{ headTail }}</h1><p style="font-size:clamp(15.5px,1.5vw,19px);line-height:1.5;color:#C5C5D0;max-width:46ch;margin:15px 0 0;text-wrap:pretty">{{ said }}</p><p style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:#C9A84C;margin:17px 0 0">{{ matter }}</p><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:clamp(18px,2.4vw,26px)"><sc-for list="{{ stones }}" as="s" hint-placeholder-count="6"><button sc-camel-on-click="{{ s.pick }}" class="{{ s.cls }}" style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;padding:9px 15px 9px 11px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:9px;transition:background .15s,color .15s,border-color .15s,transform .15s;border:1px solid {{ s.border }};background:{{ s.bg }};color:{{ s.fg }};font-weight:{{ s.weight }};transform:{{ s.lift }}" style-hover="border-color:rgba(232,185,96,.6);color:#F3D998"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:block;flex:none;opacity:.85"><path d="{{ s.glyph }}"/></svg><span>{{ s.short }}</span></button></sc-for></div></div></section>
 
   
 </sc-if>
@@ -435,7 +416,11 @@ button{font:inherit;background:none;border:0;color:inherit}
 
 
 
-<section id="fw-weight" data-screen-label="05 What it weighs" style="max-width:1120px;margin:0 auto;padding:clamp(30px,4.5vw,54px) clamp(20px,4vw,40px) 0;display:flex;flex-direction:column;gap:clamp(15px,2vw,21px);scroll-margin-top:58px;scroll-snap-align:start"><div data-rise="" style="display:flex;flex-direction:column;gap:10px;opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)"><span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:#C9A84C">Then &#183; what it weighs</span><p style="font-size:clamp(21px,2.7vw,32px);font-weight:500;line-height:1.26;color:#EDE7D8;max-width:30ch;margin:0;text-wrap:pretty">{{ truckHead }}</p></div><div style="display:flex;flex-wrap:wrap;align-items:center;gap:11px 14px"><div style="display:flex;gap:8px;flex:none"><button sc-camel-on-click="{{ pickUs }}" aria-label="Weigh it in American pickups" style="display:flex;align-items:center;gap:8px;padding:8px 14px 8px 9px;border-radius:12px;cursor:pointer;transition:background .18s,border-color .18s,transform .12s;border:1px solid {{ usBorder }};background:{{ usBg }};transform:{{ usLift }}"><svg viewBox="0 0 30 20" width="25" height="16.7" aria-hidden="true" style="display:block;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.45)"><rect width="30" height="20" fill="#FFFFFF"/><g fill="#B22234"><rect y="0" width="30" height="1.54"/><rect y="3.08" width="30" height="1.54"/><rect y="6.15" width="30" height="1.54"/><rect y="9.23" width="30" height="1.54"/><rect y="12.31" width="30" height="1.54"/><rect y="15.38" width="30" height="1.54"/><rect y="18.46" width="30" height="1.54"/></g><rect width="12" height="10.77" fill="#3C3B6E"/><g fill="#FFFFFF"><circle cx="2" cy="1.9" r=".78"/><circle cx="6" cy="1.9" r=".78"/><circle cx="10" cy="1.9" r=".78"/><circle cx="4" cy="4.4" r=".78"/><circle cx="8" cy="4.4" r=".78"/><circle cx="2" cy="6.9" r=".78"/><circle cx="6" cy="6.9" r=".78"/><circle cx="10" cy="6.9" r=".78"/><circle cx="4" cy="9.3" r=".78"/><circle cx="8" cy="9.3" r=".78"/></g></svg><span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:{{ usWeight }};letter-spacing:.16em;text-transform:uppercase;color:{{ usFg }}">US</span></button><button sc-camel-on-click="{{ pickUk }}" aria-label="Weigh it in British four-wheel drives" style="display:flex;align-items:center;gap:8px;padding:8px 14px 8px 9px;border-radius:12px;cursor:pointer;transition:background .18s,border-color .18s,transform .12s;border:1px solid {{ ukBorder }};background:{{ ukBg }};transform:{{ ukLift }}"><svg viewBox="0 0 30 20" width="25" height="16.7" aria-hidden="true" style="display:block;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.45)"><rect width="30" height="20" fill="#012169"/><path d="M0 0L30 20M30 0L0 20" stroke="#FFFFFF" stroke-width="4.2"/><path d="M0 0L30 20M30 0L0 20" stroke="#C8102E" stroke-width="2.1"/><path d="M15 0V20M0 10H30" stroke="#FFFFFF" stroke-width="6.6"/><path d="M15 0V20M0 10H30" stroke="#C8102E" stroke-width="3.9"/></svg><span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:{{ ukWeight }};letter-spacing:.16em;text-transform:uppercase;color:{{ ukFg }}">UK</span></button><button sc-camel-on-click="{{ pickAu }}" aria-label="Weigh it in Australian utes" style="display:flex;align-items:center;gap:8px;padding:8px 14px 8px 9px;border-radius:12px;cursor:pointer;transition:background .18s,border-color .18s,transform .12s;border:1px solid {{ auBorder }};background:{{ auBg }};transform:{{ auLift }}"><svg viewBox="0 0 30 20" width="25" height="16.7" aria-hidden="true" style="display:block;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.45)"><rect width="30" height="20" fill="#012169"/><path d="M0 0L15 10M15 0L0 10" stroke="#FFFFFF" stroke-width="2.3"/><path d="M0 0L15 10M15 0L0 10" stroke="#C8102E" stroke-width="1.15"/><path d="M7.5 0V10M0 5H15" stroke="#FFFFFF" stroke-width="3.5"/><path d="M7.5 0V10M0 5H15" stroke="#C8102E" stroke-width="2.1"/><g fill="#FFFFFF"><circle cx="7.5" cy="15.2" r="1.45"/><circle cx="22.2" cy="4.2" r=".85"/><circle cx="25.8" cy="8.6" r=".85"/><circle cx="21.6" cy="12.8" r=".85"/><circle cx="18.2" cy="8.2" r=".68"/><circle cx="23.6" cy="16" r=".58"/></g></svg><span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:{{ auWeight }};letter-spacing:.16em;text-transform:uppercase;color:{{ auFg }}">AU</span></button></div><div data-swatch="" style="display:flex;align-items:center;gap:12px;border:1px solid rgba(232,185,96,.34);border-radius:999px;padding:8px 18px 8px 13px;background:rgba(201,168,76,.08)"><svg viewBox="0 0 60 20" width="38" height="12.7" fill="#E8B960" fill-rule="evenodd" aria-hidden="true" style="display:block;flex:none"><path d="{{ rideGlyph }}"/></svg><span style="display:flex;flex-direction:column;gap:3px"><b style="font-size:14.5px;font-weight:600;letter-spacing:-.01em;color:#F3D998;line-height:1">{{ rideName }}</b><span style="font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.17em;text-transform:uppercase;color:#8A8779;line-height:1">{{ rideNote }}</span></span></div></div><div data-trucks="" style="display:flex;flex-wrap:wrap;gap:5px 6px;padding:4px 0;-webkit-mask-image:linear-gradient(90deg,#000 78%,transparent);mask-image:linear-gradient(90deg,#000 78%,transparent);-webkit-mask-size:0% 100%;mask-size:0% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat"><sc-for list="{{ trucks }}" as="t" hint-placeholder-count="48"><svg viewBox="0 0 60 20" width="30" height="10" fill="#C9A84C" fill-rule="evenodd" aria-hidden="true" style="flex:none;display:block;opacity:.92"><path d="{{ t.d }}"/></svg></sc-for></div><p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#8A8779;line-height:1.8;letter-spacing:.02em;max-width:62ch;text-wrap:pretty">{{ truckCap }}</p></section>
+
+
+
+
+<section id="fw-weight" data-screen-label="05 What it weighs" style="max-width:1120px;margin:0 auto;padding:clamp(30px,4.5vw,54px) clamp(20px,4vw,40px) 0;display:flex;flex-direction:column;gap:clamp(15px,2vw,21px);scroll-margin-top:58px;scroll-snap-align:start"><div data-rise="" style="display:flex;flex-direction:column;gap:10px;opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)"><span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:#C9A84C">Then &#183; what it weighs</span></div><div style="display:flex;flex-wrap:wrap;align-items:center;gap:11px 14px"><div style="display:flex;gap:8px;flex:none"><button sc-camel-on-click="{{ pickUs }}" aria-label="Weigh it in American pickups" style="display:flex;align-items:center;gap:8px;padding:8px 14px 8px 9px;border-radius:12px;cursor:pointer;transition:background .18s,border-color .18s,transform .12s;border:1px solid {{ usBorder }};background:{{ usBg }};transform:{{ usLift }}"><svg viewBox="0 0 30 20" width="25" height="16.7" aria-hidden="true" style="display:block;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.45)"><rect width="30" height="20" fill="#FFFFFF"/><g fill="#B22234"><rect y="0" width="30" height="1.54"/><rect y="3.08" width="30" height="1.54"/><rect y="6.15" width="30" height="1.54"/><rect y="9.23" width="30" height="1.54"/><rect y="12.31" width="30" height="1.54"/><rect y="15.38" width="30" height="1.54"/><rect y="18.46" width="30" height="1.54"/></g><rect width="12" height="10.77" fill="#3C3B6E"/><g fill="#FFFFFF"><circle cx="2" cy="1.9" r=".78"/><circle cx="6" cy="1.9" r=".78"/><circle cx="10" cy="1.9" r=".78"/><circle cx="4" cy="4.4" r=".78"/><circle cx="8" cy="4.4" r=".78"/><circle cx="2" cy="6.9" r=".78"/><circle cx="6" cy="6.9" r=".78"/><circle cx="10" cy="6.9" r=".78"/><circle cx="4" cy="9.3" r=".78"/><circle cx="8" cy="9.3" r=".78"/></g></svg><span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:{{ usWeight }};letter-spacing:.16em;text-transform:uppercase;color:{{ usFg }}">US</span></button><button sc-camel-on-click="{{ pickUk }}" aria-label="Weigh it in British four-wheel drives" style="display:flex;align-items:center;gap:8px;padding:8px 14px 8px 9px;border-radius:12px;cursor:pointer;transition:background .18s,border-color .18s,transform .12s;border:1px solid {{ ukBorder }};background:{{ ukBg }};transform:{{ ukLift }}"><svg viewBox="0 0 30 20" width="25" height="16.7" aria-hidden="true" style="display:block;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.45)"><rect width="30" height="20" fill="#012169"/><path d="M0 0L30 20M30 0L0 20" stroke="#FFFFFF" stroke-width="4.2"/><path d="M0 0L30 20M30 0L0 20" stroke="#C8102E" stroke-width="2.1"/><path d="M15 0V20M0 10H30" stroke="#FFFFFF" stroke-width="6.6"/><path d="M15 0V20M0 10H30" stroke="#C8102E" stroke-width="3.9"/></svg><span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:{{ ukWeight }};letter-spacing:.16em;text-transform:uppercase;color:{{ ukFg }}">UK</span></button><button sc-camel-on-click="{{ pickAu }}" aria-label="Weigh it in Australian utes" style="display:flex;align-items:center;gap:8px;padding:8px 14px 8px 9px;border-radius:12px;cursor:pointer;transition:background .18s,border-color .18s,transform .12s;border:1px solid {{ auBorder }};background:{{ auBg }};transform:{{ auLift }}"><svg viewBox="0 0 30 20" width="25" height="16.7" aria-hidden="true" style="display:block;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.45)"><rect width="30" height="20" fill="#012169"/><path d="M0 0L15 10M15 0L0 10" stroke="#FFFFFF" stroke-width="2.3"/><path d="M0 0L15 10M15 0L0 10" stroke="#C8102E" stroke-width="1.15"/><path d="M7.5 0V10M0 5H15" stroke="#FFFFFF" stroke-width="3.5"/><path d="M7.5 0V10M0 5H15" stroke="#C8102E" stroke-width="2.1"/><g fill="#FFFFFF"><circle cx="7.5" cy="15.2" r="1.45"/><circle cx="22.2" cy="4.2" r=".85"/><circle cx="25.8" cy="8.6" r=".85"/><circle cx="21.6" cy="12.8" r=".85"/><circle cx="18.2" cy="8.2" r=".68"/><circle cx="23.6" cy="16" r=".58"/></g></svg><span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:{{ auWeight }};letter-spacing:.16em;text-transform:uppercase;color:{{ auFg }}">AU</span></button></div><div data-swatch="" style="display:flex;align-items:center;gap:12px;border:1px solid rgba(232,185,96,.34);border-radius:999px;padding:8px 18px 8px 13px;background:rgba(201,168,76,.08)"><svg viewBox="0 0 60 20" width="38" height="12.7" fill="#E8B960" fill-rule="evenodd" aria-hidden="true" style="display:block;flex:none"><path d="{{ rideGlyph }}"/></svg><span style="display:flex;flex-direction:column;gap:3px"><b style="font-size:14.5px;font-weight:600;letter-spacing:-.01em;color:#F3D998;line-height:1">{{ rideName }}</b><span style="font-family:'JetBrains Mono',monospace;font-size:8.5px;letter-spacing:.17em;text-transform:uppercase;color:#8A8779;line-height:1">{{ rideNote }}</span></span></div></div><div data-trucks="" style="display:flex;flex-wrap:wrap;gap:5px 6px;padding:4px 0;-webkit-mask-image:linear-gradient(90deg,#000 78%,transparent);mask-image:linear-gradient(90deg,#000 78%,transparent);-webkit-mask-size:0% 100%;mask-size:0% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat"><sc-for list="{{ trucks }}" as="t" hint-placeholder-count="48"><svg viewBox="0 0 60 20" width="30" height="10" fill="#C9A84C" fill-rule="evenodd" aria-hidden="true" style="flex:none;display:block;opacity:.92"><path d="{{ t.d }}"/></svg></sc-for></div><p style="font-size:clamp(19px,2.4vw,30px);font-weight:500;line-height:1.24;color:#F0EEE9;max-width:30ch;margin:clamp(14px,1.8vw,20px) 0 0;text-wrap:pretty">{{ verdictLead }}<b style="color:#E8B960;font-weight:600">{{ verdictEm }}</b>{{ verdictTail }}</p><p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#8A8779;line-height:1.8;letter-spacing:.02em;max-width:62ch;text-wrap:pretty">{{ truckCap }}</p></section>
 
 <section data-screen-label="06 If you keep looking" style="max-width:1120px;margin:0 auto;padding:clamp(52px,8vw,96px) clamp(20px,4vw,40px) 0;display:flex;flex-direction:column;gap:clamp(14px,2vw,20px);scroll-snap-align:start"><span data-rise="" style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:#C9A84C;opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)">If you keep looking</span><div data-rise="" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,262px),1fr));gap:clamp(10px,1.4vw,14px);opacity:0;transform:translateY(16px);transition:opacity .7s ease .06s,transform .7s cubic-bezier(.2,.7,.2,1) .06s"><sc-for list="{{ cards }}" as="c" hint-placeholder-count="3"><div style="background:linear-gradient(180deg,rgba(24,21,32,.72),rgba(14,12,19,.72));border:1px solid rgba(201,168,76,.22);border-radius:13px;padding:19px 19px 18px;box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 6px 16px rgba(0,0,0,.4);display:flex;flex-direction:column;gap:9px"><i aria-hidden="true" style="width:19px;height:1px;background:rgba(201,168,76,.55)"></i><h3 style="font-size:18px;font-weight:600;line-height:1.24;letter-spacing:-.01em;color:#F3D998;margin:0;text-wrap:pretty">{{ c.t }}</h3><p style="font-size:14px;line-height:1.62;color:#cfcbc1;margin:0;text-wrap:pretty">{{ c.b }}</p></div></sc-for></div></section>
 
@@ -601,72 +586,81 @@ const LB_PER_T = 2204.62;
    trucks. cards are the layer for whoever is still reading. Nothing here
    contains a figure, because a figure is the one thing that goes stale
    without anyone noticing. */
+/* The headline is split in three because the middle word is set in italic
+   champagne, and the templating layer escapes markup. Same trick as the
+   Giza-block line further down the page, which already worked. */
 const GRADIENT = {
   giza: {
-    head:'The Giza Block', name:'Giza',
-    glyph:'M5 8.6l7-3.8 7 3.8v9.4H5z M5 8.6h14',
-    said:'The smallest stone here. It still parks like a pickup.',
-    matter:'Nummulitic limestone, cut from the plateau it stands on',
-    simile:'One truck. That is the unit. Everything else on this page is counted in these.',
+    name:'Giza block',
+    glyph:'M4 8 L12 4 L20 8 L20 17 L12 21 L4 17 Z M4 8 L12 12 L20 8 M12 12 L12 21',
+    h1:'One block. And then ', h2:'two million', h3:' more.',
+    said:'The average stone in the Great Pyramid. Nothing unusual about this one, which is the unsettling part.',
+    matter:'Local limestone',
+    v1:'About what you could park ', v2:'on your driveway', v3:'.',
     cards:[
-      { t:'Not one of them', b:'A pyramid is not a stone. It is this stone, repeated until you lose your place counting.' },
-      { t:'Dressed, not dumped', b:'The outer casing was faced smooth enough that the whole hill once threw light back like a mirror.' },
-      { t:'No wheel in the picture', b:'Nothing recovered on site explains the moving. The stones are the only surviving evidence of the method.' }
+      { t:'The pile', b:'Stacked one on another, this block and its two million siblings reach higher than any building would for the next four thousand years.' },
+      { t:'The fit', b:'The casing stones at the top were set close enough that a blade will not pass between them.' },
+      { t:'The catch', b:'Nothing about a single block is impressive. Everything about two million of them is.' }
     ] },
   ollan: {
-    head:'The Ollantaytambo Monolith', name:'Ollantaytambo',
-    glyph:'M4.5 20V7.6l3-1.2V20 M10.5 20V5.2l3-1.2V20 M16.5 20V8.6l3-1.2V20',
-    said:'Red porphyry, carried up out of a river valley and stood on a hill.',
-    matter:'Rhyolite porphyry, quarried on the far side of the Urubamba',
-    simile:'A convoy, nose to tail, and every one of them went uphill across a river.',
+    name:'Ollantaytambo',
+    glyph:'M3 20 L3 14 L9 14 L9 9 L15 9 L15 5 L21 5 M3 20 L21 20 L21 5',
+    h1:'Carried up a ', h2:'mountain', h3:'.',
+    said:'Quarried across a river and a valley, then brought uphill to a terrace nobody has explained.',
+    matter:'Rhyolite, from the far side of a valley',
+    v1:'A row of them nose to tail, ', v2:'the length of a street', v3:'.',
     cards:[
-      { t:'The river was in the way', b:'The quarry sits across a valley from the wall. The stones did not go around it.' },
-      { t:'Uphill the whole distance', b:'The ramp still scars the mountainside. Nothing about the route is convenient.' },
-      { t:'Left mid-sentence', b:'Stones lie along the road where the work stopped, still pointing at the wall they never reached.' }
+      { t:'The route', b:'The quarry is on the opposite mountainside. Whatever moved these went down, across a river, and then up.' },
+      { t:'The strays', b:'Some never arrived. They are still lying on the slope, dressed and abandoned, which is how the route is known at all.' },
+      { t:'The joint', b:'Where they did arrive, the faces meet without mortar and have held through earthquakes that flattened the colonial town below.' }
     ] },
   temple: {
-    head:'The Western Stone', name:'Western Stone',
-    glyph:'M2.5 9.4h19v5.2h-19z M4.5 6.6h15 M4.5 17.4h15',
-    said:'A single stone the length of a house, laid in a wall above head height.',
-    matter:'Meleke limestone, quarried and set in Jerusalem',
-    simile:'A full car park, fused into one piece, and then lifted.',
+    name:'The Western Stone',
+    glyph:'M2.5 9 H21.5 V15 H2.5 Z M8 9 V15 M15 9 V15',
+    h1:'Longer than a ', h2:'bus', h3:', and lifted into a wall.',
+    said:'The largest cut stone in the Temple Mount. It sits in a course above ground level, and today you can only see it underground.',
+    matter:'Meleke limestone',
+    v1:'Enough to fill ', v2:'a supermarket car park', v3:', twice over.',
     cards:[
-      { t:'Not on the ground', b:'It is not a foundation. There is wall beneath it and wall above it, and it is dead level.' },
-      { t:'The company it keeps', b:'Its neighbours are joined so closely that a blade will not pass between them.' },
-      { t:'The method', b:'No ramp survives, no crane, no account. There is only the stone, still in place, still carrying the courses above.' }
+      { t:'Not on the ground', b:'This is the part people miss. It was not dragged into place and left. It was raised, and set into a course with stones above it.' },
+      { t:'The company it keeps', b:'It is not alone. The same course carries several others of comparable size, cut to sit against it.' },
+      { t:'The method', b:'No proposed technique for placing it has been demonstrated at this scale. That is not a mystery claim, it is the state of the literature.' }
     ] },
   trilithon: {
-    head:'The Trilithon', name:'Trilithon',
-    glyph:'M2.6 8.4h5.4v7.2H2.6z M9.3 8.4h5.4v7.2H9.3z M16 8.4h5.4v7.2H16z',
-    said:'Three of them, side by side, each the length of a swimming pool.',
-    matter:'Limestone, the podium wall at Baalbek',
-    simile:'A stadium car park, in one stone. And then there are three of them, in a row.',
+    name:'The Trilithon',
+    glyph:'M3 21 V7 H7 V21 M10 21 V7 H14 V21 M17 21 V7 H21 V21 M2 5.5 H22',
+    h1:'Three of these, ', h2:'side by side', h3:', twenty feet up.',
+    said:'Baalbek. Not laid on the ground but raised into a wall, fitted so closely the joints still hold.',
+    matter:'Limestone, from a quarry under the modern town',
+    v1:'A queue that would ', v2:'run out of the town', v3:'.',
     cards:[
-      { t:'Raised, not rested', b:'They sit well clear of the ground, on a course of smaller stone that carries them without complaint.' },
-      { t:'Three, not one', b:'A single one would be the anomaly. There are three, matched, laid in a line.' },
-      { t:'Nobody has settled it', b:'Every proposed method has a step where the explanation goes quiet.' }
+      { t:'Three, not one', b:'The Trilithon is a set. Three stones of this size, in the same course, touching.' },
+      { t:'The height', b:'They are not at ground level. They sit on a foundation course already several metres high.' },
+      { t:'Downhill, at least', b:'The quarry is uphill of the site, which is the one mercy in the whole arrangement.' }
     ] },
   pregnant: {
-    head:'The Stone of the Pregnant Woman', name:'Pregnant Woman',
-    glyph:'M3.4 16.6l16.4-4.4 1.2 4.3-16.6 3.4z M2.5 20.4h19',
-    said:'Cut free, nearly moved, and left lying where the work stopped.',
-    matter:'Limestone, still in the quarry at Baalbek',
-    simile:'More vehicles than most people see in a week, in one piece, going nowhere.',
+    name:'Stone of the Pregnant Woman',
+    glyph:'M2.5 18 L14 8.5 L21.5 12.5 L10 21.5 Z M2.5 18 L2.5 15 L14 5.5 L21.5 9.5 L21.5 12.5',
+    h1:'Still lying where it was ', h2:'cut', h3:'.',
+    said:'Dressed on every face and left in the quarry at an angle, as though the job stopped mid-sentence.',
+    matter:'Limestone, still attached at one corner',
+    v1:'More than ', v2:'everyone on your street owns', v3:', combined.',
     cards:[
-      { t:'Still attached', b:'One corner never released from the bedrock. The stone is half quarry, half monument.' },
-      { t:'It was meant to travel', b:'It is dressed on the faces that would have shown. Somebody expected it to arrive.' },
-      { t:'And then it was not', b:'Whatever changed, changed before the last corner was cut.' }
+      { t:'Finished, and abandoned', b:'It is not a rough blank. The faces are dressed. Somebody completed the hard part and then walked away.' },
+      { t:'The angle', b:'It lies tilted because one corner was never separated from the bedrock. You can put your hand on the join.' },
+      { t:'The neighbours', b:'A second, heavier stone was found beside it in the same quarry, which suggests this one was not the ambition, only the survivor.' }
     ] },
   forgotten: {
-    head:'The Forgotten Stone', name:'Forgotten Stone',
-    glyph:'M2.5 9.2h19 M4.6 11h14.8v7.6H4.6z',
-    said:'The heaviest worked stone anyone has found, and it never left the yard.',
-    matter:'Limestone, found beneath the quarry floor',
-    simile:'A traffic jam that never clears. All of it is one stone, and it never moved.',
+    name:'The Forgotten Stone',
+    glyph:'M2 14 L12 8 L22 14 M2 14 V19 H22 V14 M2 19 H22',
+    h1:'Nobody has ever ', h2:'moved', h3:' this one.',
+    said:'The heaviest worked stone we know of. It is still in the ground, and it has never been anywhere else.',
+    matter:'Limestone, partly still buried',
+    v1:'It will not ', v2:'fit on your screen', v3:'.',
     cards:[
-      { t:'Found late', b:'It lay under the quarry floor until the ground beside it was opened again within living memory.' },
-      { t:'Bigger than the famous one', b:'The stone everybody photographs is the smaller of the pair.' },
-      { t:'An aircraft comparison fails', b:'A loaded airliner is not in the same conversation. Several of them together might be.' }
+      { t:'Found late', b:'It was uncovered in the same quarry in the 1990s, under the one everybody already knew about.' },
+      { t:'Still down there', b:'Only the top is exposed. The dimensions come from where the cut faces run into the ground.' },
+      { t:'The question it asks', b:'Somebody cut this deliberately, to size, for a purpose. The interesting question is not how they would have moved it. It is what they thought they were going to do with it.' }
     ] }
 };
 
@@ -1187,7 +1181,8 @@ class Component extends DCLogic {
     const subjH = Math.max(h, HUMAN_H);
     const cx = (left + right) / 2, W = right - left;
     const t = Math.tan(this.camera.fov * Math.PI / 360);
-    this.camDist = Math.max((subjH / 2) / t, (W / 2) / (t * this.camera.aspect)) * 1.2;
+    const need = Math.max((subjH / 2) / t, (W / 2) / (t * this.camera.aspect));
+    this.camDist = need * (this.camera.aspect > 2.2 ? 1.46 : 1.2);
     this.camTarget.set(cx, subjH * 0.5, 0);
   }
 
@@ -1672,7 +1667,7 @@ class Component extends DCLogic {
         const nudge = !sel && (xi === (selIdx + 1) % SITES.length || xi === (selIdx + 2) % SITES.length);
         return {
           cls: sel ? 'fw-sel' : (nudge ? 'fw-nudge' : ''),
-          label: (GRADIENT[x.k] || {}).head || x.label,
+          label: (GRADIENT[x.k] || {}).name || x.label,
           short: (GRADIENT[x.k] || {}).name || x.short,
           glyph: (GRADIENT[x.k] || {}).glyph || '',
           pick: () => {
@@ -1718,7 +1713,8 @@ class Component extends DCLogic {
       bwValue: bw,
       setBw: e => { const v = Math.max(60, Math.min(500, +e.target.value || 180)); this.setState({ bw: v }); },
 
-      head: g.head, said: g.said, matter: g.matter, cards: g.cards,
+      headLead: g.h1, headEm: g.h2, headTail: g.h3,
+      said: g.said, matter: g.matter, cards: g.cards,
       dimtxt: s.dimtxt,
 
       rideGlyph: ride.d, rideName: ride.ride,
@@ -1731,7 +1727,7 @@ class Component extends DCLogic {
       auBorder: RA.Border, auBg: RA.Bg, auFg: RA.Fg, auWeight: RA.Weight, auLift: RA.Lift,
 
       trucks,
-      truckHead: g.simile,
+      verdictLead: g.v1, verdictEm: g.v2, verdictTail: g.v3,
       truckCap: 'Every silhouette is one ' + ride.ride + ', the kind parked in driveways across ' +
         ride.where + '. All of them together are this one stone.',
 
