@@ -38,7 +38,14 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).parent.parent
 DATA = REPO_ROOT / "data"
 OUT = REPO_ROOT / "public" / "creators" / "ageless-rock.html"
-CATALOGUE = Path.home() / "Downloads" / "ageless-rock-videos.md"
+# The catalogue used to live in ~/Downloads, which is not a place a build
+# input can live: it vanished, and the builder was unrunnable until the
+# episode list was recovered out of the page it had already produced. The
+# repo copy is now the source of truth; a local Downloads copy still wins if
+# one exists, so an in-progress update is not silently ignored.
+_LOCAL = Path.home() / "Downloads" / "ageless-rock-videos.md"
+CATALOGUE = _LOCAL if _LOCAL.exists() else (
+    Path(__file__).resolve().parent.parent / "data" / "ageless-rock-catalogue.md")
 
 CREATOR_KEY = "agelessrock"
 HANDLE = "@AgelessRock888"
@@ -296,6 +303,8 @@ header.site{position:sticky;top:0;z-index:100;background:linear-gradient(180deg,
 .opening::after{content:'';position:absolute;inset:0;background:radial-gradient(1000px 500px at 50% -10%,rgba(201,168,76,.11),transparent 65%);pointer-events:none;z-index:-1}
 .issue{font-family:var(--mono);font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--champagne);font-weight:700;text-align:center;margin-bottom:clamp(22px,3.4vw,34px)}
 .issue span{color:var(--mist)}
+/* .qlabel and .alabel are no longer emitted; kept in case a future study
+   wants them back. */
 .qlabel{font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--mist);text-align:center;margin-bottom:20px}
 h1.q{font-family:var(--serif);font-weight:500;font-size:clamp(30px,4.7vw,58px);line-height:1.1;letter-spacing:-.022em;text-align:center;max-width:19ch;margin:0 auto;font-variation-settings:"opsz" 144}
 h1.q em{font-style:italic;color:var(--champagne)}
@@ -304,7 +313,8 @@ h1.q em{font-style:italic;color:var(--champagne)}
 p.answer{font-family:var(--serif);font-size:clamp(19px,2.5vw,29px);line-height:1.42;letter-spacing:-.008em;text-align:center;max-width:26ch;margin:0 auto;color:var(--ivory)}
 p.answer b{color:var(--amber);font-weight:600}
 p.answer-sub{font-size:clamp(15px,1.5vw,17px);line-height:1.7;color:var(--cloud);max-width:64ch;margin:clamp(28px,4vw,40px) auto 0;text-align:center}
-p.answer-sub b{color:var(--ivory);font-weight:600}
+/* Prose is one colour. Five accents on a screen is not emphasis. */
+p.answer-sub b{color:inherit;font-weight:inherit}
 .byline{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mist);text-align:center;margin-top:22px;line-height:1.9}
 .byline a{color:var(--champagne);text-decoration:none;border-bottom:1px solid rgba(201,168,76,.4)}
 .byline b{color:var(--cloud);font-weight:600}
@@ -317,9 +327,11 @@ p.answer-sub b{color:var(--ivory);font-weight:600}
 
 /* the filmstrip: proof there is footage, above the fold */
 .strip-lead{margin-top:clamp(26px,3.4vw,38px)}
-.strip-lead .lab{display:flex;align-items:baseline;justify-content:space-between;gap:16px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--mist);padding-bottom:11px;border-bottom:1px solid rgba(42,42,53,.7);margin-bottom:16px}
-.strip-lead .lab b{color:var(--champagne);font-weight:700}
-.strip-lead .lab i{font-style:normal;white-space:nowrap}
+/* The reel is the way in. It was labelled in ten-pixel mono, which is how you
+   hide something. */
+.strip-lead .lab{display:flex;align-items:baseline;justify-content:space-between;gap:20px;font-family:var(--sans);font-size:14.5px;line-height:1.5;letter-spacing:0;text-transform:none;color:var(--cloud);padding-bottom:13px;border-bottom:1px solid rgba(42,42,53,.7);margin-bottom:16px;text-align:left}
+.strip-lead .lab span{max-width:52ch}
+.strip-lead .lab i{font-style:normal;white-space:nowrap;font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--mist);flex:none}
 .reel{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:12px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--stone) transparent;-webkit-mask-image:linear-gradient(90deg,#000 0,#000 88%,transparent 100%);mask-image:linear-gradient(90deg,#000 0,#000 88%,transparent 100%)}
 .reel::-webkit-scrollbar{height:6px}
 .reel::-webkit-scrollbar-thumb{background:var(--stone);border-radius:4px}
@@ -689,23 +701,26 @@ def render(catalogue, by_site, sites, countries, stats):
 
 <section class="opening">
   <div class="wrap">
-    <div class="issue">The Ancient Atlas <span>·</span> Creator Study <span>·</span> No. 01</div>
-    <div class="qlabel">The question</div>
+    <div class="issue">The Ancient Atlas <span>·</span> Creator Study No. 01</div>
     <h1 class="q">What repeats when you stop sorting these places by <em>where they are</em>?</h1>
     <div class="qrule"></div>
-    <div class="alabel">The answer</div>
-    <p class="answer">Four ways of working stone do — and <b>Bernie Ong has spent 296 episodes tracing them.</b></p>
-    <p class="byline">{stats['videos']} narrated studies by <b>Bernie Ong</b> · <b>Ageless Rock</b> on YouTube · <a href="{e(CHANNEL_URL)}" target="_blank" rel="noopener">{e(HANDLE)} ↗</a></p>
+    <p class="answer">Four ways of working stone do, and Bernie Ong has spent years tracing them.</p>
+    <p class="byline">Bernie Ong · Ageless Rock on YouTube · <a href="{e(CHANNEL_URL)}" target="_blank" rel="noopener">{e(HANDLE)} ↗</a></p>
 
     <div class="strip-lead">
-      <div class="lab"><span>Start anywhere · <b>{len(teasers)} of his {stats['videos']} episodes</b>, one per country</span><i>Drag the reel →</i></div>
+      <div class="lab"><span>Start anywhere. One episode per country, and the pattern turns up
+      before anyone explains it.</span><i>Drag &rarr;</i></div>
       <div class="reel">{reel}</div>
     </div>
 
-    <p class="answer-sub">Ageless Rock is not a travel channel. Each episode is a <b>researched visual study</b> — assembled, sequenced and narrated rather than shot on location — and that is precisely why the pattern is visible from it. A traveller is bound by an itinerary. A researcher can set Ethiopia beside Peru on the same screen. Across <b>{stats['sites']} sites in {stats['countries']} countries</b>, doing exactly that, the same four methods keep surfacing. What follows is those four, then every episode he has made.</p>
+    <p class="answer-sub">Ageless Rock is not a travel channel. Each episode is assembled,
+    sequenced and narrated rather than shot on location, and that is precisely why the pattern is
+    visible from it. A traveller is bound by an itinerary. A researcher can set Ethiopia beside Peru
+    on the same screen, and do that often enough and the same four methods keep surfacing. What
+    follows is those four, and then every episode he has made.</p>
 
     <nav class="contents">{contents}</nav>
-    <div class="scrollcue">The four methods, then all {stats['videos']} episodes <span></span></div>
+    <div class="scrollcue">The four methods, then every episode <span></span></div>
   </div>
 </section>
 

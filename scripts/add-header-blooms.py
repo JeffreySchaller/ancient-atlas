@@ -181,7 +181,7 @@ CARDS = {
         "Creator Studies &middot; No. 01",
         "One channel's life's work, laid back over the map.",
         "A study takes a single creator and shows you everywhere they have actually been.",
-        "", ("Open the studies &rarr;", 'href="creators/"')),
+        "", ("Read Study No. 01 &rarr;", 'href="/creators/ageless-rock.html"')),
     # "The Atlas filmed none of this" was written to make a point about credit
     # and overshot into a false claim: Ancient Atlas is a creator too, listed in
     # the sidebar with everyone else, and now carries its own fieldwork. Same
