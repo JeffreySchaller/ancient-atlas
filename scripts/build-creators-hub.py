@@ -33,6 +33,8 @@ videos = load("videos.json")
 feature = load("feature.json")
 iv = feature.get("interview", {})
 IV_ID = (iv.get("id") or "").strip()
+rp = feature.get("reply", {})
+RP_ID = (rp.get("id") or "").strip()
 
 # ---------------------------------------------------------------- counts
 wires = collections.Counter()
@@ -62,6 +64,16 @@ STUDY = {
 def esc(t):
     return (t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
 
+# ---------------------------------------------------------------- the reply
+# A creator pointing back at us is worth more than anything we can say about
+# ourselves, so it sits inside the interview card rather than below the fold.
+if RP_ID:
+    reply = (f'<p class="iv-reply">And his answer: '
+             f'<a href="https://youtu.be/{RP_ID}" rel="noopener">'
+             f'{esc(rp.get("title",""))} \u2197</a></p>')
+else:
+    reply = ""
+
 # ---------------------------------------------------------------- interview block
 if IV_ID:
     interview = f'''      <div class="iv">
@@ -70,7 +82,7 @@ if IV_ID:
           allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"></iframe></div>
         <div class="iv-meta"><span class="tag tag-live">The interview</span>
           <p>{esc(iv.get("title",""))}</p>
-          <a class="btn btn-ghost" href="https://youtu.be/{IV_ID}" rel="noopener">Watch on the channel ↗</a></div>
+          <a class="btn btn-ghost" href="https://youtu.be/{IV_ID}" rel="noopener">Watch on the channel ↗</a>{reply}</div>
       </div>'''
 else:
     interview = '''      <div class="iv iv-soon">
@@ -203,6 +215,9 @@ padding:14px 22px;border-radius:10px;text-decoration:none;transition:.2s;font-we
 background:radial-gradient(circle at 50% 40%,rgba(201,168,76,.10),rgba(11,11,15,0) 70%),var(--slate)}}
 .iv-placeholder span{{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mist)}}
 .iv-meta{{padding:20px 22px 22px}}
+.iv-reply{{margin-top:11px;font-size:12.5px;line-height:1.6;color:var(--mist)}}
+.iv-reply a{{color:var(--champagne);text-decoration:none;border-bottom:1px solid rgba(201,168,76,.35)}}
+.iv-reply a:hover{{color:var(--amber)}}
 .iv-meta p{{color:var(--cloud);font-size:14.5px;margin:12px 0 16px}}
 .tag{{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
 color:var(--mist);border:1px solid rgba(201,168,76,.3);border-radius:999px;padding:4px 11px}}

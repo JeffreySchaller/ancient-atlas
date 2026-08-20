@@ -5,5 +5,11 @@
     "published": "2026-08-16",
     "note": "Set id to the 11-character YouTube ID on release day, or run scripts/set-interview.py <ID>. An empty id renders the 'coming' state everywhere instead of a broken embed."
   },
-  "featured_study": "ageless-rock"
+  "featured_study": "ageless-rock",
+  "reply": {
+    "id": "CB9d9SRtmOs",
+    "title": "Comparing 4 religions",
+    "published": "2026-08-17",
+    "note": "Bernie's answer to the interview: he opens the Atlas on screen and invites his audience to come and talk to us. Not a site walkthrough, so it lives here rather than in videos.json."
+  }
 }

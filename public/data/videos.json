@@ -1486,6 +1486,12 @@
   ],
   "Hawara Pyramid & Labyrinth": [
     {
+      "id": "7dAYDoCtIAU",
+      "title": "Nobody Has Seen Petrie's Labyrinth Since 1889",
+      "cr": "ancientatlas",
+      "added": "2026-08-17"
+    },
+    {
       "id": "F0QZW6rgr0Q",
       "title": "The Lost Labyrinth of Egypt Has Been Found (UnchartedX, CS25)",
       "cr": "unchartedx"
@@ -7264,6 +7270,15 @@
       "cr": "agelessrock",
       "added": "2026-08-07",
       "published": "2026-08-07"
+    }
+  ],
+  "Panoias Sanctuary": [
+    {
+      "id": "O1bIu4FFbEQ",
+      "title": "Panoias Sanctuary of Vale de Nogueiras Village",
+      "cr": "agelessrock",
+      "added": "2026-08-20",
+      "published": "2026-06-25"
     }
   ]
 }
