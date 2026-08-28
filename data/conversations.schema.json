@@ -1,0 +1,44 @@
+{
+  "$comment": "Machine-consumable bounds for docs/CONVERSATIONS_SPEC.md. Every key here is read by scripts/verify-conversations.py.",
+  "required_fields": [
+    "id",
+    "title",
+    "guest",
+    "episode"
+  ],
+  "required_when_published": [
+    "published"
+  ],
+  "id_pattern": "^[A-Za-z0-9_-]{11}$",
+  "id_length": 11,
+  "host_key": "ancientatlas",
+  "status_values": [
+    "coming"
+  ],
+  "max_overlap_with_videos_json": 0,
+  "allowed_fields": [
+    "id",
+    "title",
+    "guest",
+    "episode",
+    "published",
+    "sites",
+    "study",
+    "reply",
+    "status",
+    "recorded",
+    "note"
+  ],
+  "reply_fields": [
+    "id",
+    "title",
+    "published",
+    "note"
+  ],
+  "study_page": "public/creators/{slug}.html must exist",
+  "min_entries": 1,
+  "videos_copies": [
+    "data/videos.json",
+    "public/data/videos.json"
+  ]
+}

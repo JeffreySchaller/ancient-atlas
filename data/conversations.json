@@ -1,0 +1,35 @@
+{
+  "_note": "Creator Conversations. Episodes ABOUT sites, not walkthroughs OF them. See docs/CONVERSATIONS_SPEC.md. Validate with scripts/verify-conversations.py before commit.",
+  "conversations": [
+    {
+      "id": "2OSddPnrShw",
+      "title": "Why Are There So Many Underground Cities? In Conversation with Ageless Rock",
+      "guest": "agelessrock",
+      "episode": "CC01",
+      "published": "2026-08-16",
+      "sites": [],
+      "study": "ageless-rock",
+      "reply": {
+        "id": "CB9d9SRtmOs",
+        "title": "Comparing 4 religions",
+        "published": "2026-08-17",
+        "note": "The guest's answer: he opens the Atlas on screen and invites his audience to come and talk to us."
+      },
+      "note": "sites[] deliberately empty. Reachable via study. Populate only after someone who watched it names the sites actually discussed."
+    },
+    {
+      "id": "",
+      "status": "coming",
+      "title": "In Conversation with SOLSTICE HUNTER",
+      "guest": "solsticehunter",
+      "episode": "CC02",
+      "recorded": "2026-08-29",
+      "sites": [
+        {
+          "n": "Phnom Bok"
+        }
+      ],
+      "note": "Recording 2026-08-29. Framing (mini megaliths, cross-continental signatures) is planned, not yet recorded; title and sites are provisional until the episode exists."
+    }
+  ]
+}
