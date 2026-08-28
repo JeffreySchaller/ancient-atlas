@@ -568,6 +568,21 @@ body.climate-mode .zoom-hint{display:none!important}
 .cr-sort button.on{background:rgba(201,168,76,.18);color:var(--champagne);border:1px solid rgba(201,168,76,.4)}
 .cr-sort button:hover:not(.on){color:var(--ivory)}
 .cr-sort-label{font-family:var(--font-mono);font-size:10px;color:var(--mist);text-transform:uppercase;letter-spacing:.12em;margin-right:10px;align-self:center}
+/* Sticky view bar — the four groupings stay reachable while the modal scrolls */
+.cr-viewbar{position:sticky;top:0;z-index:6;margin:16px 0 0;padding:12px 0 14px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  background:linear-gradient(rgba(13,13,18,.97) 68%,rgba(13,13,18,.86) 88%,rgba(13,13,18,0));
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.cr-viewbar .cr-sort{margin-top:0}
+.cr-sort button small{display:block;font-size:8px;letter-spacing:.08em;opacity:.5;
+  text-transform:uppercase;margin-top:3px;font-weight:400}
+.cr-sort button.on small{opacity:.75}
+.cr-back{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-mono);font-size:10px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--champagne);background:rgba(201,168,76,.07);
+  border:1px solid rgba(201,168,76,.35);border-radius:9px;padding:9px 15px;cursor:pointer;
+  transition:all .15s;white-space:nowrap}
+.cr-back:hover{background:rgba(201,168,76,.16);color:var(--amber);border-color:rgba(201,168,76,.6)}
+.cr-back:focus-visible{outline:2px solid var(--champagne);outline-offset:2px}
 
 /* Timeline event markers above the slider — megafauna extinctions, solar Miyake events */
 .cs-events{position:absolute;left:0;right:0;bottom:11px;height:18px;pointer-events:none}
@@ -20742,12 +20757,20 @@ function formatRelativeDate(isoStr) {
 }
 
 let hubSortMode = 'bysite';  // 'curated' | 'alphabetical' | 'bysite' — By Site lands first: signal = diversity of voices per site, not volume per creator
+// When set, the Hub renders ONE creator's full library instead of a grouping.
+// Set only by openCreators(key); any grouping click clears it.
+let focusedCreator = null;
 function setHubSortMode(mode) {
   hubSortMode = mode;
-  openCreators(); // re-render
+  openCreators(); // re-render (clears focus)
 }
 
 function openCreators(scrollToKey) {
+  // A creator key focuses that creator. No key means show the current grouping.
+  // Previously this tried to scrollIntoView a #cr-section-<key> that does not
+  // exist in 'bysite' (the default) or 'latest', so clicking a creator silently
+  // did nothing. Focusing is deterministic across every mode.
+  focusedCreator = (scrollToKey && typeof CREATORS !== 'undefined' && CREATORS[scrollToKey]) ? scrollToKey : null;
   const modal = document.getElementById('creators-modal');
   const inner = document.getElementById('creators-modal-inner');
   if (!modal || !inner) return;
@@ -20947,7 +20970,9 @@ function openCreators(scrollToKey) {
 
   // Build the body content based on sort mode
   let bodyContent;
-  if (hubSortMode === 'curated') {
+  if (focusedCreator && CREATORS[focusedCreator]) {
+    bodyContent = renderSection(focusedCreator, CREATORS[focusedCreator]);
+  } else if (hubSortMode === 'curated') {
     bodyContent = [1, 2, 3].map(t => {
       if (!byTier[t] || byTier[t].length === 0) return '';
       const label = TIER_LABELS[t];
@@ -21066,7 +21091,10 @@ function openCreators(scrollToKey) {
       earlier.map(renderLatestCard).join('') + '</div>';
   }
 
-  const introText = hubSortMode === 'curated'
+  const focusIntro = focusedCreator && CREATORS[focusedCreator]
+    ? `Every walkthrough <strong>${CREATORS[focusedCreator].name}</strong> has contributed to the atlas. Click any thumbnail to jump to the site it covers, or step back to browse all ${Object.keys(CREATORS).length} voices.`
+    : null;
+  const introText = focusIntro ? focusIntro : hubSortMode === 'curated'
     ? `All <strong>${Object.keys(CREATORS).length}</strong> voices at a glance, grouped by editorial tier — <strong>Editorial Picks</strong> first, then <strong>Featured Voices</strong>, then <strong>Emerging &amp; New</strong>. Click any row to expand a creator's full library. Click any thumbnail to jump to the site it covers.`
     : hubSortMode === 'alphabetical'
     ? `Every creator A to Z. Click any row to expand their full walkthrough library.`
@@ -21082,12 +21110,15 @@ function openCreators(scrollToKey) {
       </div>
       <button class="cr-close" onclick="closeCreators()" title="Close">×</button>
     </div>
-    <div class="cr-sort">
-      <span class="cr-sort-label">Sort:</span>
-      <button class="${hubSortMode === 'curated' ? 'on' : ''}" onclick="setHubSortMode('curated')">Curated</button>
-      <button class="${hubSortMode === 'alphabetical' ? 'on' : ''}" onclick="setHubSortMode('alphabetical')">A–Z</button>
-      <button class="${hubSortMode === 'bysite' ? 'on' : ''}" onclick="setHubSortMode('bysite')">By Site</button>
-      <button class="${hubSortMode === 'latest' ? 'on' : ''}" onclick="setHubSortMode('latest')">Latest</button>
+    <div class="cr-viewbar">
+      ${focusedCreator ? `<button class="cr-back" onclick="openCreators()">&larr; All creators</button>` : ''}
+      <div class="cr-sort">
+        <span class="cr-sort-label">View:</span>
+        <button class="${!focusedCreator && hubSortMode === 'curated' ? 'on' : ''}" onclick="setHubSortMode('curated')">Curated<small>by tier</small></button>
+        <button class="${!focusedCreator && hubSortMode === 'alphabetical' ? 'on' : ''}" onclick="setHubSortMode('alphabetical')">A–Z<small>by name</small></button>
+        <button class="${!focusedCreator && hubSortMode === 'bysite' ? 'on' : ''}" onclick="setHubSortMode('bysite')">By Site<small>by place</small></button>
+        <button class="${!focusedCreator && hubSortMode === 'latest' ? 'on' : ''}" onclick="setHubSortMode('latest')">Latest<small>by date</small></button>
+      </div>
     </div>
     <div class="cr-intro">${introText}</div>
     ${bodyContent}
@@ -21098,15 +21129,8 @@ function openCreators(scrollToKey) {
   `;
   modal.classList.add('open');
   document.addEventListener('keydown', _crKey);
-  // Scroll to specific creator if requested
-  if (scrollToKey) {
-    setTimeout(() => {
-      const target = document.getElementById('cr-section-' + scrollToKey);
-      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 50);
-  } else {
-    inner.scrollTop = 0;
-  }
+  // A focused creator IS the body, so the top of the modal is the right landing.
+  inner.scrollTop = 0;
 }
 function closeCreators() {
   document.getElementById('creators-modal').classList.remove('open');
