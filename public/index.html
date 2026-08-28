@@ -19733,7 +19733,7 @@ function init() {
     'z-index:9999;';
   voyagerPane.appendChild(moonlitTint);
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png?key=cb1_2f14_1_3e66974f2b2042db5a6ccf9b', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
     subdomains: 'abcd',
     maxZoom: 19,
@@ -19744,7 +19744,7 @@ function init() {
 
   // Dark-mode labels on top of the dimmed Voyager base — already designed
   // for dark backgrounds, so no inversion needed.
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}{r}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}{r}.png?key=cb1_2f14_1_3e66974f2b2042db5a6ccf9b', {
     subdomains: 'abcd',
     maxZoom: 19,
     noWrap: true,
