@@ -1,0 +1,92 @@
+#!/bin/sh
+# Ancient Atlas pre-commit guard.
+# Wired via:  git config core.hooksPath scripts/githooks
+# Lives in the repo (not .git/hooks) so it is version-controlled and survives clones.
+#
+# Three invariants, each one a defect that has actually reached production:
+#   1. Trunk only. Work committed to a side branch has twice been forgotten for days.
+#   2. Site-count floor. A stale source once took the live atlas from 499 to 300.
+#   3. The three copies agree. Data lives in data/, public/data/ AND inlined in
+#      public/index.html; a JSON-only fix changes nothing a visitor sees.
+#
+# Deliberate branch work:  ATLAS_ALLOW_BRANCH=1 git commit ...
+# Genuine floor decrease:  edit scripts/githooks/site-floor.txt in the same commit.
+
+BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+
+if [ "$BRANCH" != "main" ] && [ "$ATLAS_ALLOW_BRANCH" != "1" ]; then
+  echo ""
+  echo "  ABORT: on branch '$BRANCH', not main."
+  echo "  The Atlas is trunk-only. Side branches get abandoned; main went 8 days"
+  echo "  without a deploy in Aug 2026 because two fixes landed on a stale branch."
+  echo ""
+  echo "  Switch to main, or if this branch is deliberate:"
+  echo "      ATLAS_ALLOW_BRANCH=1 git commit ..."
+  echo ""
+  exit 1
+fi
+
+/usr/bin/python3 - "$@" <<'PY' || exit 1
+import json, re, sys, pathlib
+
+fail = []
+
+def load(p):
+    d = json.loads(pathlib.Path(p).read_text(encoding='utf-8'))
+    return d if isinstance(d, list) else d.get('sites', d)
+
+try:
+    a = load('data/sites.json')
+    b = load('public/data/sites.json')
+except Exception as e:
+    print("  ABORT: could not read sites.json -- %s" % e); sys.exit(1)
+
+html = pathlib.Path('public/index.html').read_text(encoding='utf-8')
+m = re.search(r'const\s+SITES\s*=\s*(\[.*?\]);', html, re.S) or re.search(r'\bSITES\s*=\s*(\[.*?\]);', html, re.S)
+inline = json.loads(m.group(1)) if m else None
+
+floor = int(pathlib.Path('scripts/githooks/site-floor.txt').read_text().strip())
+
+if len(a) < floor:
+    fail.append("site count %d is BELOW the floor of %d (data/sites.json)" % (len(a), floor))
+
+if inline is None:
+    fail.append("could not parse the inlined SITES array in public/index.html")
+elif not (len(a) == len(b) == len(inline)):
+    fail.append("the three copies disagree: data/=%d  public/data/=%d  inlined=%d"
+                % (len(a), len(b), len(inline)))
+else:
+    na = {s.get('n') or s.get('name') for s in a}
+    ni = {s.get('n') or s.get('name') for s in inline}
+    if na != ni:
+        d = sorted(na ^ ni)[:6]
+        fail.append("data/sites.json and the inlined SITES differ by %d name(s): %s"
+                    % (len(na ^ ni), ', '.join(map(str, d))))
+
+try:
+    C = json.loads(pathlib.Path('data/categories.json').read_text(encoding='utf-8'))
+    ck = set(C.keys()) if isinstance(C, dict) else {c.get('key') for c in C}
+    orphan = sorted({s.get('cat') for s in a} - ck - {None})
+    if orphan:
+        n = sum(1 for s in a if s.get('cat') in orphan)
+        fail.append("%d site(s) use categories that are not defined: %s "
+                    "(these silently render as megalithic)" % (n, ', '.join(orphan)))
+except Exception:
+    pass
+
+if fail:
+    print("")
+    print("  ABORT: Atlas data-integrity check failed.")
+    for f in fail:
+        print("    - %s" % f)
+    print("")
+    print("  Nothing was committed. Fix, or adjust scripts/githooks/site-floor.txt")
+    print("  in this same commit if the decrease is deliberate and documented.")
+    print("")
+    sys.exit(1)
+
+import subprocess
+br = subprocess.run(['git','rev-parse','--abbrev-ref','HEAD'],
+                    capture_output=True, text=True).stdout.strip() or '?'
+print("  atlas pre-commit OK  (branch=%s, sites=%d, three copies agree)" % (br, len(a)))
+PY
