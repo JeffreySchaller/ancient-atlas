@@ -3101,14 +3101,6 @@
       "added": "2026-06-05"
     }
   ],
-  "Gornaya Shoria": [
-    {
-      "id": "NvzxNm3Mxcs",
-      "title": "Pre-Historic Megastructures of Russia In The Remote Wilderness",
-      "cr": "universeinside",
-      "added": "2026-06-05"
-    }
-  ],
   "Khara-Hora Shaft": [
     {
       "id": "J1QDP-Oqcr0",
@@ -3213,6 +3205,13 @@
       "added": "2026-07-09"
     }
   ],
+  "Syedra": [
+    {
+      "id": "zzy6j1MzOHE",
+      "cr": "protocivilization",
+      "title": "The Buried City on a Mountain Peak. Syedra | on-site walkthrough, Russian"
+    }
+  ],
   "Meydan Kalesi": [
     {
       "id": "SU2JhCOJ6X0",
@@ -3220,6 +3219,11 @@
       "cr": "megalithomania",
       "added": "2026-06-07",
       "published": "2023-06-10"
+    },
+    {
+      "id": "bh077QTPu8M",
+      "cr": "protocivilization",
+      "title": "Off the Records. The Nameless City | on-site walkthrough, Russian"
     }
   ],
   "Alaca Höyük": [
@@ -5242,6 +5246,12 @@
       "cr": "bassforge",
       "added": "2026-06-07",
       "published": "2026-01-15"
+    },
+    {
+      "id": "NvzxNm3Mxcs",
+      "title": "Pre-Historic Megastructures of Russia In The Remote Wilderness",
+      "cr": "universeinside",
+      "added": "2026-06-05"
     }
   ],
   "Sage Wall (Montana)": [

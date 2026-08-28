@@ -52,5 +52,17 @@
     "color": "#A8C66C",
     "bg": "rgba(168,198,108,.12)",
     "br": "rgba(168,198,108,.35)"
+  },
+  "tower": {
+    "label": "Tower",
+    "color": "#5FA89E",
+    "bg": "rgba(95,168,158,.12)",
+    "br": "rgba(95,168,158,.35)"
+  },
+  "monolithic": {
+    "label": "Monolithic",
+    "color": "#A2937E",
+    "bg": "rgba(162,147,126,.12)",
+    "br": "rgba(162,147,126,.35)"
   }
 }
