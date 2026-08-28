@@ -563,24 +563,26 @@ body.climate-mode .zoom-hint{display:none!important}
 .cr-cta-body{font-size:12px;color:var(--cloud);line-height:1.55;max-width:560px;margin:0 auto}
 
 /* Hub sort-mode toggle */
-.cr-sort{display:flex;align-items:center;gap:0;padding:3px;border-radius:10px;border:1px solid rgba(201,168,76,.25);background:rgba(13,13,18,.5);font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;margin-top:16px;width:fit-content}
-.cr-sort button{padding:6px 14px;border:none;background:transparent;color:var(--cloud);font-family:inherit;font-size:inherit;cursor:pointer;border-radius:7px;transition:all .15s;letter-spacing:.06em}
-.cr-sort button.on{background:rgba(201,168,76,.18);color:var(--champagne);border:1px solid rgba(201,168,76,.4)}
+.cr-sort{display:flex;align-items:center;gap:0;padding:4px;border-radius:12px;border:1px solid rgba(201,168,76,.38);background:rgba(13,13,18,.72);font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-top:16px;width:fit-content}
+.cr-sort button{padding:9px 18px;border:none;background:transparent;color:var(--cloud);font-family:inherit;font-size:inherit;cursor:pointer;border-radius:9px;transition:all .15s;letter-spacing:.06em;line-height:1.25}
+.cr-sort button.on{background:rgba(201,168,76,.22);color:var(--amber);border:1px solid rgba(201,168,76,.5)}
 .cr-sort button:hover:not(.on){color:var(--ivory)}
-.cr-sort-label{font-family:var(--font-mono);font-size:10px;color:var(--mist);text-transform:uppercase;letter-spacing:.12em;margin-right:10px;align-self:center}
+.cr-sort-label{font-family:var(--font-mono);font-size:11px;color:var(--mist);text-transform:uppercase;letter-spacing:.12em;margin:0 12px 0 10px;align-self:center}
 /* Sticky view bar — the four groupings stay reachable while the modal scrolls */
-.cr-viewbar{position:sticky;top:0;z-index:6;margin:16px 0 0;padding:12px 0 14px;
-  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
-  background:linear-gradient(rgba(13,13,18,.97) 68%,rgba(13,13,18,.86) 88%,rgba(13,13,18,0));
-  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.cr-viewbar{position:sticky;top:0;z-index:6;margin:16px -28px 0;padding:16px 28px 16px;
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  background:rgba(11,11,15,.97);
+  border-bottom:1px solid rgba(201,168,76,.22);
+  box-shadow:0 10px 26px rgba(0,0,0,.55);
+  backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2)}
 .cr-viewbar .cr-sort{margin-top:0}
-.cr-sort button small{display:block;font-size:8px;letter-spacing:.08em;opacity:.5;
-  text-transform:uppercase;margin-top:3px;font-weight:400}
-.cr-sort button.on small{opacity:.75}
-.cr-back{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-mono);font-size:10px;
-  letter-spacing:.12em;text-transform:uppercase;color:var(--champagne);background:rgba(201,168,76,.07);
-  border:1px solid rgba(201,168,76,.35);border-radius:9px;padding:9px 15px;cursor:pointer;
-  transition:all .15s;white-space:nowrap}
+.cr-sort button small{display:block;font-size:9.5px;letter-spacing:.1em;opacity:.62;
+  text-transform:uppercase;margin-top:4px;font-weight:400}
+.cr-sort button.on small{opacity:.85}
+.cr-back{display:inline-flex;align-items:center;gap:9px;font-family:var(--font-mono);font-size:11.5px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--champagne);background:rgba(201,168,76,.1);
+  border:1px solid rgba(201,168,76,.42);border-radius:11px;padding:13px 18px;cursor:pointer;
+  transition:all .15s;white-space:nowrap;font-weight:700}
 .cr-back:hover{background:rgba(201,168,76,.16);color:var(--amber);border-color:rgba(201,168,76,.6)}
 .cr-back:focus-visible{outline:2px solid var(--champagne);outline-offset:2px}
 
