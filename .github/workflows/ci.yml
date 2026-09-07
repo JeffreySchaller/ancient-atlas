@@ -31,13 +31,19 @@ jobs:
         with:
           python-version: '3.11'
 
+      # Live since 2026-09-07. Warning only: a retitle upstream is news, not a
+      # broken build, and YouTube being slow is not our problem to fail on.
+      # Add --strict to turn drift into a hard failure.
+      - name: Title drift (first-party wires)
+        run: python3 scripts/check-title-drift.py
+        continue-on-error: true
+
       # === Placeholder for Phase 2 — uncomment when scripts/verify-pr.py exists ===
+      # (oEmbed title checking is now handled by check-title-drift.py above;
+      #  verify-pr.py would still add creator-key and schema validation.)
       #
       # - name: Install dependencies
       #   run: pip install requests
-      #
-      # - name: oEmbed verification (creators + titles)
-      #   run: python3 scripts/verify-pr.py --check oembed
       #
       # - name: Duplicate detection (audit-videos.py)
       #   run: python3 scripts/audit-videos.py --strict

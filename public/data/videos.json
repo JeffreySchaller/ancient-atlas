@@ -8,6 +8,11 @@
       "published": "2026-06-10"
     },
     {
+      "id": "s-sBt-QH0FY",
+      "title": "I Found an Ancient Underground City Hidden in Turkey",
+      "cr": "mountainbeast"
+    },
+    {
       "id": "rpXa8hg35Lc",
       "title": "Underground City Hidden Beneath Türkiye #derinkuyu",
       "cr": "turkiyetoday",
@@ -27,11 +32,6 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-06-15"
-    },
-    {
-      "id": "s-sBt-QH0FY",
-      "title": "I Found an Ancient Underground City Hidden in Turkey",
-      "cr": "mountainbeast"
     },
     {
       "id": "qAx8NbA5Y0E",
@@ -55,6 +55,11 @@
   ],
   "Kaymakli Underground City": [
     {
+      "id": "s-sBt-QH0FY",
+      "title": "Ancient Underground Cities of Turkey",
+      "cr": "mountainbeast"
+    },
+    {
       "id": "qWbGNp_arS0",
       "title": "Kaymakli Underground City (Part 1/2) : Circular Stones = Stone Door?",
       "cr": "agelessrock",
@@ -67,11 +72,6 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-06-22"
-    },
-    {
-      "id": "s-sBt-QH0FY",
-      "title": "Ancient Underground Cities of Turkey",
-      "cr": "mountainbeast"
     },
     {
       "id": "0tiGV7QuSTA",
@@ -87,6 +87,26 @@
       "cr": "megalithomania",
       "added": "2026-06-07",
       "published": "2025-11-29"
+    },
+    {
+      "id": "7lAV4fJN8LY",
+      "title": "Super Civilization: Gobekli Tepe and Karahan Tepe (Hugh Newman, CS24)",
+      "cr": "megalithomania"
+    },
+    {
+      "id": "tkxGl5R8IPo",
+      "title": "Major New Discoveries at Göbekli Tepe, Karahan Tepe, Sefer Tepe & Sayburç",
+      "cr": "megalithomania"
+    },
+    {
+      "id": "zM906v4GDv4",
+      "title": "Göbekli Tepe and Karahan Tepe — The World's First Megaliths (Hugh Newman, Origins Conference)",
+      "cr": "megalithomania"
+    },
+    {
+      "id": "-JREGD-LrEw",
+      "title": "Supercivilization | How Karahan Tepe & Göbekli Tepe Are Rewriting History",
+      "cr": "megalithomania"
     },
     {
       "id": "mUFtP8HgV0s",
@@ -115,26 +135,6 @@
       "cr": "archaiclens",
       "added": "2026-06-08",
       "published": "2022-10-01"
-    },
-    {
-      "id": "7lAV4fJN8LY",
-      "title": "Super Civilization: Gobekli Tepe and Karahan Tepe (Hugh Newman, CS24)",
-      "cr": "megalithomania"
-    },
-    {
-      "id": "tkxGl5R8IPo",
-      "title": "Major New Discoveries at Göbekli Tepe, Karahan Tepe, Sefer Tepe & Sayburç",
-      "cr": "megalithomania"
-    },
-    {
-      "id": "zM906v4GDv4",
-      "title": "Göbekli Tepe and Karahan Tepe — The World's First Megaliths (Hugh Newman, Origins Conference)",
-      "cr": "megalithomania"
-    },
-    {
-      "id": "-JREGD-LrEw",
-      "title": "Supercivilization | How Karahan Tepe & Göbekli Tepe Are Rewriting History",
-      "cr": "megalithomania"
     },
     {
       "id": "v1-mVG_VwlE",
@@ -190,20 +190,6 @@
       "published": "2025-06-10"
     },
     {
-      "id": "9wcpoc0jmh4",
-      "title": "Where Humanity First Gathered",
-      "cr": "turkiyetoday",
-      "added": "2026-06-07",
-      "published": "2025-10-15"
-    },
-    {
-      "id": "iAuzwCMPxc8",
-      "title": "Face of first civilization found in Karahantepe",
-      "cr": "turkiyetoday",
-      "added": "2026-06-07",
-      "published": "2025-09-15"
-    },
-    {
       "id": "2vm0ado790U",
       "title": "I Found Ancient Engineering in Turkey That Shouldn't Exist",
       "cr": "mountainbeast"
@@ -227,6 +213,20 @@
       "id": "n2xET89pvHQ",
       "title": "New Carvings and Monumental Serpent at Karahan Tepe (Andrew Collins & Hugh Newman)",
       "cr": "megalithomania"
+    },
+    {
+      "id": "9wcpoc0jmh4",
+      "title": "Where Humanity First Gathered",
+      "cr": "turkiyetoday",
+      "added": "2026-06-07",
+      "published": "2025-10-15"
+    },
+    {
+      "id": "iAuzwCMPxc8",
+      "title": "Face of first civilization found in Karahantepe",
+      "cr": "turkiyetoday",
+      "added": "2026-06-07",
+      "published": "2025-09-15"
     }
   ],
   "Great Pyramid of Giza (Khufu)": [
@@ -245,6 +245,22 @@
       "published": "2025-02-20"
     },
     {
+      "id": "umfm0vIATL4",
+      "title": "Every Block Was Placed By Hand. About 2.3 Million of Them.",
+      "cr": "ancientatlas",
+      "added": "2026-09-07"
+    },
+    {
+      "id": "lNC_HRxf0XA",
+      "title": "Ancient Engineering on the Giza Plateau (REDUX)",
+      "cr": "unchartedx"
+    },
+    {
+      "id": "tQxeAfLgO60",
+      "title": "The Middle Pyramid Megalithic Complex",
+      "cr": "unchartedx"
+    },
+    {
       "id": "7F7hBRrovVE",
       "title": "7 Wonders of Ancient Pyramids in Egypt",
       "cr": "agelessrock",
@@ -257,16 +273,6 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2022-06-01"
-    },
-    {
-      "id": "lNC_HRxf0XA",
-      "title": "Ancient Engineering on the Giza Plateau (REDUX)",
-      "cr": "unchartedx"
-    },
-    {
-      "id": "tQxeAfLgO60",
-      "title": "The Middle Pyramid Megalithic Complex",
-      "cr": "unchartedx"
     },
     {
       "id": "Fl0Qp6x1ZOI",
@@ -307,16 +313,16 @@
       "published": "2022-10-15"
     },
     {
+      "id": "tQxeAfLgO60",
+      "title": "The Middle Pyramid Megalithic Complex",
+      "cr": "unchartedx"
+    },
+    {
       "id": "1-xPbEOaPCE",
       "title": "Is Khafre's Pyramid a man-made structure?",
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2022-06-08"
-    },
-    {
-      "id": "tQxeAfLgO60",
-      "title": "The Middle Pyramid Megalithic Complex",
-      "cr": "unchartedx"
     },
     {
       "id": "4TxEARCLRMc",
@@ -426,6 +432,36 @@
       "added": "2026-07-09"
     },
     {
+      "id": "AdJMLqUmuYE",
+      "title": "Megalithic Peru: Exploring The Evidence Around Cusco",
+      "cr": "brienf"
+    },
+    {
+      "id": "AcdJovuxD_8",
+      "title": "Megalithic Peru: Cuzco Before The Inca",
+      "cr": "brienf"
+    },
+    {
+      "id": "7NxBJJKOuxw",
+      "title": "Exploring The Astonishing Megalithic Walls Of Cusco Peru",
+      "cr": "brienf"
+    },
+    {
+      "id": "8-oPVquUEi4",
+      "title": "Who Built the Incredible Megalithic Structures of Cusco?",
+      "cr": "unchartedx"
+    },
+    {
+      "id": "pW35c6PwpVc",
+      "title": "Sacsayhuamán | Beneath The Megalithic Walls",
+      "cr": "megalithomania"
+    },
+    {
+      "id": "HzPUHKYkC70",
+      "title": "Beneath the Megaliths | Exclusive Sacsayhuamán Tunnel Exploration",
+      "cr": "megalithomania"
+    },
+    {
       "id": "cDYJcpLlthc",
       "title": "Exploring Real Lost Cities in Peru | Archaic Lens",
       "cr": "archaiclens",
@@ -482,36 +518,6 @@
       "published": "2023-01-15"
     },
     {
-      "id": "AdJMLqUmuYE",
-      "title": "Megalithic Peru: Exploring The Evidence Around Cusco",
-      "cr": "brienf"
-    },
-    {
-      "id": "AcdJovuxD_8",
-      "title": "Megalithic Peru: Cuzco Before The Inca",
-      "cr": "brienf"
-    },
-    {
-      "id": "7NxBJJKOuxw",
-      "title": "Exploring The Astonishing Megalithic Walls Of Cusco Peru",
-      "cr": "brienf"
-    },
-    {
-      "id": "8-oPVquUEi4",
-      "title": "Who Built the Incredible Megalithic Structures of Cusco?",
-      "cr": "unchartedx"
-    },
-    {
-      "id": "pW35c6PwpVc",
-      "title": "Sacsayhuamán | Beneath The Megalithic Walls",
-      "cr": "megalithomania"
-    },
-    {
-      "id": "HzPUHKYkC70",
-      "title": "Beneath the Megaliths | Exclusive Sacsayhuamán Tunnel Exploration",
-      "cr": "megalithomania"
-    },
-    {
       "id": "BUqidXgrLeU",
       "title": "The Strangest Structures of Ancient Peru",
       "cr": "ombio"
@@ -539,6 +545,26 @@
       "title": "Deep Dive Ollantaytambo, Part 2",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "Ckntr20aHlc",
+      "title": "Ancient Ollantaytambo Peru with Ben of UnchartedX",
+      "cr": "brienf"
+    },
+    {
+      "id": "PCOzZBGv1pM",
+      "title": "A Thorough Exploration Of Ancient Ollantaytambo",
+      "cr": "brienf"
+    },
+    {
+      "id": "UG3-RK21pBQ",
+      "title": "MASSIVE granite stones left on the road to Ollantaytambo",
+      "cr": "unchartedx"
+    },
+    {
+      "id": "v5gQaDrE6Zc",
+      "title": "Magic Trick At Ollantaytambo In Peru",
+      "cr": "brienf"
     },
     {
       "id": "JSLlvWKdtrs",
@@ -574,26 +600,6 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-09-22"
-    },
-    {
-      "id": "Ckntr20aHlc",
-      "title": "Ancient Ollantaytambo Peru with Ben of UnchartedX",
-      "cr": "brienf"
-    },
-    {
-      "id": "PCOzZBGv1pM",
-      "title": "A Thorough Exploration Of Ancient Ollantaytambo",
-      "cr": "brienf"
-    },
-    {
-      "id": "UG3-RK21pBQ",
-      "title": "MASSIVE granite stones left on the road to Ollantaytambo",
-      "cr": "unchartedx"
-    },
-    {
-      "id": "v5gQaDrE6Zc",
-      "title": "Magic Trick At Ollantaytambo In Peru",
-      "cr": "brienf"
     },
     {
       "id": "kujKXWLh3l8",
@@ -672,13 +678,6 @@
   ],
   "Baalbek (Heliopolis)": [
     {
-      "id": "sFA7vf1Z2vQ",
-      "title": "Gigantic Ancient Structure our Technology Can't Replicate: Baalbek",
-      "cr": "universeinside",
-      "added": "2026-06-06",
-      "published": "2026-04-19"
-    },
-    {
       "id": "VrPlrwuBiJk",
       "title": "Baalbek Temple: The Mega-Platforms Built by Giants",
       "cr": "megalithomania",
@@ -694,6 +693,13 @@
       "id": "y-uSdiMqhFU",
       "title": "The Astonishing Megalithic Site Of Baalbek In Lebanon",
       "cr": "brienf"
+    },
+    {
+      "id": "sFA7vf1Z2vQ",
+      "title": "Gigantic Ancient Structure our Technology Can't Replicate: Baalbek",
+      "cr": "universeinside",
+      "added": "2026-06-06",
+      "published": "2026-04-19"
     },
     {
       "id": "IEN11qqivxo",
@@ -763,10 +769,21 @@
   ],
   "Machu Picchu": [
     {
+      "id": "nPmq9Iz3XJc",
+      "title": "Half of Machu Picchu Is Underground · with Brien Foerster",
+      "cr": "ancientatlas",
+      "added": "2026-09-07"
+    },
+    {
       "id": "jRFWrjraVpw",
       "title": "Strange Machu Picchu: The Mysterious Stones on Circuit 3",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "JMAKRKkdOlw",
+      "title": "The Origins of Machu Picchu",
+      "cr": "unchartedx"
     },
     {
       "id": "WckJe9zddB0",
@@ -788,11 +805,6 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-09-01"
-    },
-    {
-      "id": "JMAKRKkdOlw",
-      "title": "The Origins of Machu Picchu",
-      "cr": "unchartedx"
     },
     {
       "id": "BUqidXgrLeU",
@@ -843,13 +855,6 @@
       "added": "2026-08-13"
     },
     {
-      "id": "9UmWBipJkGc",
-      "title": "Stonehenge sarsen stones as tall as a 3-story building | Archaic Lens",
-      "cr": "archaiclens",
-      "added": "2026-06-08",
-      "published": "2024-03-15"
-    },
-    {
       "id": "3BHEAy4_Zk0",
       "title": "Stonehenge Had Three Types of Stone. The Third Changes Everything.",
       "cr": "randallcarlson"
@@ -868,6 +873,13 @@
       "id": "KROazBEn5ss",
       "title": "Stonehenge, Giants and Druids — a conversation with Hugh Newman",
       "cr": "unchartedx"
+    },
+    {
+      "id": "9UmWBipJkGc",
+      "title": "Stonehenge sarsen stones as tall as a 3-story building | Archaic Lens",
+      "cr": "archaiclens",
+      "added": "2026-06-08",
+      "published": "2024-03-15"
     },
     {
       "id": "j6jkBmRBR7U",
@@ -954,20 +966,6 @@
       "published": "2024-08-22"
     },
     {
-      "id": "Rda15KOGr6o",
-      "title": "7 Reasons Angkor Wat Cannot Be Built by Human",
-      "cr": "agelessrock",
-      "added": "2026-06-07",
-      "published": "2023-01-22"
-    },
-    {
-      "id": "t5yrTx7udT4",
-      "title": "Angkor Archaeological Park is insanely huge. So how can the history vanish?",
-      "cr": "agelessrock",
-      "added": "2026-06-07",
-      "published": "2023-01-15"
-    },
-    {
       "id": "PdyvOXTOVOE",
       "title": "Discover the Marvels of Angkor Wat: The Ultimate Temple Experience in 4K",
       "cr": "megaworldasia",
@@ -993,6 +991,20 @@
       "title": "Reassessing Ancient Cambodia (Quest for Ancient Civilizations) — Angkor Wat segment",
       "cr": "secretsinstone",
       "t": 198
+    },
+    {
+      "id": "Rda15KOGr6o",
+      "title": "7 Reasons Angkor Wat Cannot Be Built by Human",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-22"
+    },
+    {
+      "id": "t5yrTx7udT4",
+      "title": "Angkor Archaeological Park is insanely huge. So how can the history vanish?",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-01-15"
     },
     {
       "id": "C5jpbwizxBs",
@@ -1186,16 +1198,16 @@
   ],
   "Dolmen of Menga": [
     {
+      "id": "xw_vqNk5LiI",
+      "title": "Megalithic Technology in Ancient Spain: The Massive Antequera Dolmens",
+      "cr": "megalithomania"
+    },
+    {
       "id": "54PvavQtuCg",
       "title": "\"H\" Symbol Found at 5500-year-old Dolmen de Menga | Archaic Lens",
       "cr": "archaiclens",
       "added": "2026-06-08",
       "published": "2024-05-01"
-    },
-    {
-      "id": "xw_vqNk5LiI",
-      "title": "Megalithic Technology in Ancient Spain: The Massive Antequera Dolmens",
-      "cr": "megalithomania"
     },
     {
       "id": "WZo6sw2y-4k",
@@ -1357,18 +1369,18 @@
   ],
   "Nabta Playa": [
     {
-      "id": "VD1BIZCB-TA",
-      "title": "Robert Bauval | Nabta Playa and the Origins of Egypt | Megalithomania Interview",
-      "cr": "megalithomania",
-      "added": "2026-06-06",
-      "published": "2026-05-25"
-    },
-    {
       "id": "qR23zjLwYvM",
       "title": "Nabta Playa | 8000 Year Old Stone Circles in Southern Egypt & the Orion Connection | Megalithomania",
       "cr": "megalithomania",
       "added": "2026-06-09",
       "published": "2023-08-15"
+    },
+    {
+      "id": "VD1BIZCB-TA",
+      "title": "Robert Bauval | Nabta Playa and the Origins of Egypt | Megalithomania Interview",
+      "cr": "megalithomania",
+      "added": "2026-06-06",
+      "published": "2026-05-25"
     },
     {
       "id": "j6jkBmRBR7U",
@@ -1671,13 +1683,6 @@
   ],
   "Bent Pyramid (Dahshur)": [
     {
-      "id": "9tEsueLITPw",
-      "title": "Mind Bending Bent Pyramid of Egypt",
-      "cr": "agelessrock",
-      "added": "2026-06-07",
-      "published": "2023-04-22"
-    },
-    {
       "id": "cMF81GcDOjg",
       "title": "Ancient Engineering: Talking Quarrying, Columns, the Bent Pyramid",
       "cr": "unchartedx"
@@ -1686,16 +1691,16 @@
       "id": "TFtntxFeD9c",
       "title": "Exploring The Red And Bent Pyramids At Dashur In Egypt",
       "cr": "brienf"
+    },
+    {
+      "id": "9tEsueLITPw",
+      "title": "Mind Bending Bent Pyramid of Egypt",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-04-22"
     }
   ],
   "Red Pyramid (Dahshur)": [
-    {
-      "id": "6aqRoGIdVb8",
-      "title": "Red Pyramid is highly unlikely a tomb.",
-      "cr": "agelessrock",
-      "added": "2026-06-07",
-      "published": "2023-05-06"
-    },
     {
       "id": "dt1MsjMg_4M",
       "title": "The Mystery of Sneferu and his 3 Huge Pyramids — full tour inside the Red Pyramid",
@@ -1705,20 +1710,27 @@
       "id": "HtXZCm4qFL4",
       "title": "Inside The Red Pyramid | Exploring Its Three Interior Chambers",
       "cr": "megalithomania"
+    },
+    {
+      "id": "6aqRoGIdVb8",
+      "title": "Red Pyramid is highly unlikely a tomb.",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-05-06"
     }
   ],
   "Black Pyramid (Dahshur)": [
+    {
+      "id": "29-O2Ie3J-s",
+      "title": "Special Permission Access into the Structure Below the Black Pyramid of Dashur",
+      "cr": "unchartedx"
+    },
     {
       "id": "mb9EdRZHNgU",
       "title": "The Black Pyramid of Amenemhat III in Dahshur, Egypt",
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-05-13"
-    },
-    {
-      "id": "29-O2Ie3J-s",
-      "title": "Special Permission Access into the Structure Below the Black Pyramid of Dashur",
-      "cr": "unchartedx"
     }
   ],
   "Pyramid of Meidum": [
@@ -1730,16 +1742,16 @@
       "published": "2020-07-19"
     },
     {
+      "id": "MHFy7S_h3OY",
+      "title": "The Pyramid of Meidum | High Technology in Old Kingdom Egypt",
+      "cr": "megalithomania"
+    },
+    {
       "id": "DaAs-bMKOF0",
       "title": "Mysteries at Meidum are more mysterious than you think...",
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-04-15"
-    },
-    {
-      "id": "MHFy7S_h3OY",
-      "title": "The Pyramid of Meidum | High Technology in Old Kingdom Egypt",
-      "cr": "megalithomania"
     }
   ],
   "Osireion (Abydos)": [
@@ -1797,16 +1809,16 @@
       "added": "2026-07-11"
     },
     {
+      "id": "wFaSOrc9BsM",
+      "title": "Stylos Tholos Tomb | Mycenaean Stone Technology in Ancient Crete",
+      "cr": "megalithomania"
+    },
+    {
       "id": "fbxcgeCUjKU",
       "title": "Lions Gate, Mycenae | Archaic Lens",
       "cr": "archaiclens",
       "added": "2026-06-08",
       "published": "2024-05-15"
-    },
-    {
-      "id": "wFaSOrc9BsM",
-      "title": "Stylos Tholos Tomb | Mycenaean Stone Technology in Ancient Crete",
-      "cr": "megalithomania"
     }
   ],
   "Delphi": [
@@ -1815,6 +1827,16 @@
       "title": "Polygonal Walls Everywhere!! In Delphi",
       "cr": "stoneriddles",
       "added": "2026-07-11"
+    },
+    {
+      "id": "P0jklLX0PLs",
+      "title": "Delphi | Oracle of the Priestesses, Polygonal Walls & the Sacred Omphalos",
+      "cr": "megalithomania"
+    },
+    {
+      "id": "Syxhe0rbumc",
+      "title": "The Mysterious Polygonal Wall of Delphi, Greece",
+      "cr": "megalithomania"
     },
     {
       "id": "mQEO8uXZpbE",
@@ -1829,16 +1851,6 @@
       "cr": "archaiclens",
       "added": "2026-06-08",
       "published": "2024-05-25"
-    },
-    {
-      "id": "P0jklLX0PLs",
-      "title": "Delphi | Oracle of the Priestesses, Polygonal Walls & the Sacred Omphalos",
-      "cr": "megalithomania"
-    },
-    {
-      "id": "Syxhe0rbumc",
-      "title": "The Mysterious Polygonal Wall of Delphi, Greece",
-      "cr": "megalithomania"
     }
   ],
   "Mnajdra": [
@@ -1898,6 +1910,16 @@
   ],
   "Boncuklu Tarla": [
     {
+      "id": "YzmVIf7eDQg",
+      "title": "13,000 yr-old Megaliths of Boncuklu Tarla | Before Göbekli Tepe",
+      "cr": "megalithomania"
+    },
+    {
+      "id": "0qp9XhisFqE",
+      "title": "Before Göbekli Tepe | Boncuklu Tarla | Exclusive Site Exploration & Museum Visit",
+      "cr": "megalithomania"
+    },
+    {
       "id": "TdufvBG0Ye0",
       "title": "The Protective Secret Beneath Izmir",
       "cr": "turkiyetoday",
@@ -1910,16 +1932,6 @@
       "cr": "turkiyetoday",
       "added": "2026-06-07",
       "published": "2025-11-15"
-    },
-    {
-      "id": "YzmVIf7eDQg",
-      "title": "13,000 yr-old Megaliths of Boncuklu Tarla | Before Göbekli Tepe",
-      "cr": "megalithomania"
-    },
-    {
-      "id": "0qp9XhisFqE",
-      "title": "Before Göbekli Tepe | Boncuklu Tarla | Exclusive Site Exploration & Museum Visit",
-      "cr": "megalithomania"
     }
   ],
   "Sayburç": [
@@ -2062,6 +2074,11 @@
   ],
   "Cholula": [
     {
+      "id": "XxfE4qxW-QE",
+      "title": "Cholula | The World's Largest Pyramid is in Ancient Mexico (Not Egypt!)",
+      "cr": "megalithomania"
+    },
+    {
       "id": "V0wTRWFqh-8",
       "title": "Pyramids of Mesoamerica",
       "cr": "agelessrock",
@@ -2074,11 +2091,6 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2026-04-15"
-    },
-    {
-      "id": "XxfE4qxW-QE",
-      "title": "Cholula | The World's Largest Pyramid is in Ancient Mexico (Not Egypt!)",
-      "cr": "megalithomania"
     }
   ],
   "Chichén Itzá": [
@@ -2095,13 +2107,6 @@
   ],
   "Palenque": [
     {
-      "id": "ZjSTfRmEqU4",
-      "title": "Ruins of Palenque",
-      "cr": "agelessrock",
-      "added": "2026-06-07",
-      "published": "2026-04-08"
-    },
-    {
       "id": "-EXuCbFUlAg",
       "title": "The Ancient Mayan Site Of Palenque In Chiapas Mexico",
       "cr": "brienf"
@@ -2110,6 +2115,13 @@
       "id": "JmtzTqs-SSs",
       "title": "Palenque, Lord Pakal & Maya Mysteries | Megalithic Marvels Interview with Hugh Newman",
       "cr": "megalithomania"
+    },
+    {
+      "id": "ZjSTfRmEqU4",
+      "title": "Ruins of Palenque",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2026-04-08"
     }
   ],
   "Tulum": [
@@ -2205,16 +2217,16 @@
   ],
   "Daisen Kofun": [
     {
+      "id": "pJg5TeXmmIk",
+      "title": "The Mysterious, Enormous and Incredible Mozu Tombs of Ancient Japan | Ancient Architects",
+      "cr": "ancientarch"
+    },
+    {
       "id": "7PtSa57GKHs",
       "title": "Daisen Kofun in Mozu Cluster - Largest Tomb in the World",
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-01-01"
-    },
-    {
-      "id": "pJg5TeXmmIk",
-      "title": "The Mysterious, Enormous and Incredible Mozu Tombs of Ancient Japan | Ancient Architects",
-      "cr": "ancientarch"
     },
     {
       "id": "kknPtZsfhVg",
@@ -2475,13 +2487,6 @@
   ],
   "Prambanan": [
     {
-      "id": "GP0gKHEXWzA",
-      "title": "Phenomenal Perturbing Prambanan Temple",
-      "cr": "agelessrock",
-      "added": "2026-06-07",
-      "published": "2023-06-25"
-    },
-    {
       "id": "8-JeHJeLgJs",
       "title": "Buddhist Stupas Found in Hindu Temple of Prambanan? Indonesia's Earthquake Effect",
       "cr": "praveenmohan"
@@ -2505,6 +2510,13 @@
       "id": "6tFEgfCEHVE",
       "title": "The Prambanan Ramayana — Episode 1",
       "cr": "praveenmohan"
+    },
+    {
+      "id": "GP0gKHEXWzA",
+      "title": "Phenomenal Perturbing Prambanan Temple",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-06-25"
     }
   ],
   "Yonaguni Monument": [
@@ -2750,6 +2762,12 @@
   ],
   "Beng Mealea": [
     {
+      "id": "S0Bz7yyXzMQ",
+      "title": "Reassessing Ancient Cambodia (Quest for Ancient Civilizations) — LiDAR pattern at Beng Mealea",
+      "cr": "secretsinstone",
+      "t": 549
+    },
+    {
       "id": "AvU2_ZYgFIc",
       "title": "Beng Mealea (2/2) : So big but yet so lost",
       "cr": "agelessrock",
@@ -2762,15 +2780,21 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-08-27"
-    },
-    {
-      "id": "S0Bz7yyXzMQ",
-      "title": "Reassessing Ancient Cambodia (Quest for Ancient Civilizations) — LiDAR pattern at Beng Mealea",
-      "cr": "secretsinstone",
-      "t": 549
     }
   ],
   "Preah Khan of Kompong Svay": [
+    {
+      "id": "1uOd1oFYnfI",
+      "title": "Inside PREAH KHAN KOMPONG SVAY's Overgrown Stone City",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
+    },
+    {
+      "id": "S0Bz7yyXzMQ",
+      "title": "Reassessing Ancient Cambodia (Quest for Ancient Civilizations) — Preah Khan of Kompong Svay segment",
+      "cr": "secretsinstone",
+      "t": 549
+    },
     {
       "id": "BDsXbbQO2S4",
       "title": "Preah Khan Temple of Kampong Svay (5/5) : Sacred Temple of the Far East",
@@ -2805,18 +2829,6 @@
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-04-23"
-    },
-    {
-      "id": "1uOd1oFYnfI",
-      "title": "Inside PREAH KHAN KOMPONG SVAY's Overgrown Stone City",
-      "cr": "megaworldasia",
-      "added": "2026-07-15"
-    },
-    {
-      "id": "S0Bz7yyXzMQ",
-      "title": "Reassessing Ancient Cambodia (Quest for Ancient Civilizations) — Preah Khan of Kompong Svay segment",
-      "cr": "secretsinstone",
-      "t": 549
     }
   ],
   "Chalcatzingo": [
@@ -2960,13 +2972,6 @@
   ],
   "Banteay Srei": [
     {
-      "id": "qIOd9Qt8Rvc",
-      "title": "Banteay Srei Temple : Citadel of Women",
-      "cr": "agelessrock",
-      "added": "2026-06-07",
-      "published": "2023-08-06"
-    },
-    {
       "id": "4pWx9w8AU1A",
       "title": "KBAL SPEAN & BANTEAY SREY: Hidden Angkor Temples | Off the Beaten Track",
       "cr": "megaworldasia",
@@ -2976,6 +2981,13 @@
       "id": "P6Re7ZsfYvI",
       "title": "Lathed artifacts at Banteay Srei temple in Cambodia",
       "cr": "secretsinstone"
+    },
+    {
+      "id": "qIOd9Qt8Rvc",
+      "title": "Banteay Srei Temple : Citadel of Women",
+      "cr": "agelessrock",
+      "added": "2026-06-07",
+      "published": "2023-08-06"
     }
   ],
   "Preah Ko": [
@@ -3141,17 +3153,17 @@
   ],
   "Kbal Spean (Valley of a Thousand Lingams)": [
     {
+      "id": "4pWx9w8AU1A",
+      "title": "KBAL SPEAN & BANTEAY SREY: Hidden Angkor Temples | Off the Beaten Track",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
+    },
+    {
       "id": "Lkt0N6jJvOY",
       "title": "It's NOT Human: I Found an Active UFO Nuclear Reactor | Ravana's Lingam Exposed!",
       "cr": "praveenmohan",
       "added": "2026-06-06",
       "published": "2026-04-26"
-    },
-    {
-      "id": "4pWx9w8AU1A",
-      "title": "KBAL SPEAN & BANTEAY SREY: Hidden Angkor Temples | Off the Beaten Track",
-      "cr": "megaworldasia",
-      "added": "2026-07-15"
     }
   ],
   "Phnom Bok": [
@@ -3179,13 +3191,6 @@
   ],
   "Tarawasi": [
     {
-      "id": "CUGsT9KKErE",
-      "title": "Megalithic Tarawasi: Peru's Hidden Mystery with Brien Foerster",
-      "cr": "secretsinstone",
-      "added": "2026-06-07",
-      "published": "2026-05-17"
-    },
-    {
       "id": "UrBKXFctyic",
       "title": "Was Tarawasi exposed to very high heat? (with Brien Foerster) | Secrets in Stone",
       "cr": "secretsinstone",
@@ -3203,6 +3208,13 @@
       "title": "Hidden Messages at Tarawasi",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "CUGsT9KKErE",
+      "title": "Megalithic Tarawasi: Peru's Hidden Mystery with Brien Foerster",
+      "cr": "secretsinstone",
+      "added": "2026-06-07",
+      "published": "2026-05-17"
     }
   ],
   "Syedra": [
@@ -3586,17 +3598,17 @@
   ],
   "Bayon Temple": [
     {
+      "id": "PQOLL2bclnU",
+      "title": "THE BAYON: Angkor's Strangest Temple — Mesmerizing Four-Faced Stupas",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
+    },
+    {
       "id": "SIJm3OYQP-g",
       "title": "Who built the mysterious Bayon Temple in Angkor Thom?",
       "cr": "agelessrock",
       "added": "2026-06-07",
       "published": "2023-01-29"
-    },
-    {
-      "id": "PQOLL2bclnU",
-      "title": "THE BAYON: Angkor's Strangest Temple — Mesmerizing Four-Faced Stupas",
-      "cr": "megaworldasia",
-      "added": "2026-07-15"
     }
   ],
   "West Baray": [

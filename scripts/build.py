@@ -43,6 +43,10 @@ BLOCKS = [
     ('civilizations.json',  'SITE_CULTURES',  dict),
     ('tags.json',           'SITE_TAGS',      dict),
     ('search-aliases.json', 'SEARCH_ALIASES', dict),
+    # Conversations are a separate lane from VIDEOS by design: a video is
+    # walked or discussed, never both (verify-conversations.py rule R1).
+    # Registered here so the Creator Hub block survives a rebuild.
+    ('conversations.json',  'CONVERSATIONS',  dict),
 ]
 
 # ============================================================

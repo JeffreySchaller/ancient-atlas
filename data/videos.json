@@ -1,6 +1,5 @@
 {
-  "Derinkuyu Underground City": [
-    {
+  "Derinkuyu Underground City": [    {
       "id": "s-sBt-QH0FY",
       "title": "I Found an Ancient Underground City Hidden in Turkey",
       "cr": "mountainbeast"
@@ -53,8 +52,7 @@
       "published": "2026-06-10"
     }
   ],
-  "Kaymakli Underground City": [
-    {
+  "Kaymakli Underground City": [    {
       "id": "s-sBt-QH0FY",
       "title": "Ancient Underground Cities of Turkey",
       "cr": "mountainbeast"
@@ -230,6 +228,12 @@
     }
   ],
   "Great Pyramid of Giza (Khufu)": [
+    {
+      "id": "umfm0vIATL4",
+      "title": "Every Block Was Placed By Hand. About 2.3 Million of Them.",
+      "cr": "ancientatlas",
+      "added": "2026-09-07"
+    },
     {
       "id": "lNC_HRxf0XA",
       "title": "Ancient Engineering on the Giza Plateau (REDUX)",
@@ -762,6 +766,12 @@
     }
   ],
   "Machu Picchu": [
+    {
+      "id": "nPmq9Iz3XJc",
+      "title": "Half of Machu Picchu Is Underground · with Brien Foerster",
+      "cr": "ancientatlas",
+      "added": "2026-09-07"
+    },
     {
       "id": "4LCZvM6lMms",
       "title": "Machu Picchu Travel Guide | Ancient Ruins in the Clouds",
@@ -3360,8 +3370,7 @@
       "published": "2025-10-13"
     }
   ],
-  "Mazi Underground City": [
-    {
+  "Mazi Underground City": [    {
       "id": "nW9HJH9XdVo",
       "title": "Mazi Underground City",
       "cr": "agelessrock",
