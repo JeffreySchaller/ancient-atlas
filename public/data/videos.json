@@ -231,6 +231,12 @@
   ],
   "Great Pyramid of Giza (Khufu)": [
     {
+      "id": "umfm0vIATL4",
+      "title": "Every Block Was Placed By Hand. About 2.3 Million of Them.",
+      "cr": "ancientatlas",
+      "added": "2026-09-07"
+    },
+    {
       "id": "DIDur3aI3pg",
       "title": "I Found Something INSIDE the Great Pyramid They Never Talk About (Mr.mountainbeast)",
       "cr": "mountainbeast",
@@ -243,12 +249,6 @@
       "cr": "mountainbeast",
       "added": "2026-06-09",
       "published": "2025-02-20"
-    },
-    {
-      "id": "umfm0vIATL4",
-      "title": "Every Block Was Placed By Hand. About 2.3 Million of Them.",
-      "cr": "ancientatlas",
-      "added": "2026-09-07"
     },
     {
       "id": "lNC_HRxf0XA",
@@ -430,6 +430,12 @@
       "title": "Mystery at Sacsayhuaman's Water Temple",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "L7_5f10eWoY",
+      "title": "Unexplained Ancient Machining Hidden in the Caves of Megalithic Peru",
+      "cr": "mattdavid",
+      "added": "2026-09-12"
     },
     {
       "id": "AdJMLqUmuYE",
@@ -842,17 +848,17 @@
   ],
   "Stonehenge": [
     {
+      "id": "YV785pzbE8E",
+      "title": "Sonic Temple in the Stonehenge Landscape | Durrington Shafts Mystery | Megalithomania Documentary",
+      "cr": "megalithomania",
+      "added": "2026-08-13"
+    },
+    {
       "id": "E8ADC7PwAZ8",
       "title": "He Found England's Most Impossible Ancient Site | Hugh Newman Vs Praveen Mohan",
       "cr": "praveenmohan",
       "added": "2026-06-09",
       "published": "2026-06-03"
-    },
-    {
-      "id": "YV785pzbE8E",
-      "title": "Sonic Temple in the Stonehenge Landscape | Durrington Shafts Mystery | Megalithomania Documentary",
-      "cr": "megalithomania",
-      "added": "2026-08-13"
     },
     {
       "id": "3BHEAy4_Zk0",
@@ -924,6 +930,12 @@
   ],
   "Angkor Wat": [
     {
+      "id": "PdyvOXTOVOE",
+      "title": "Discover the Marvels of Angkor Wat: The Ultimate Temple Experience in 4K",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
+    },
+    {
       "id": "s7TqoLPfaqI",
       "title": "Forgotten Angkor: LiDAR Reveals Hidden Technology | Secrets in Stone",
       "cr": "secretsinstone",
@@ -964,12 +976,6 @@
       "cr": "mountainbeast",
       "added": "2026-06-09",
       "published": "2024-08-22"
-    },
-    {
-      "id": "PdyvOXTOVOE",
-      "title": "Discover the Marvels of Angkor Wat: The Ultimate Temple Experience in 4K",
-      "cr": "megaworldasia",
-      "added": "2026-07-15"
     },
     {
       "id": "IC60jWARajc",
@@ -1147,6 +1153,18 @@
   ],
   "Newgrange": [
     {
+      "id": "smBYtvhILDw",
+      "title": "Do the myths about Newgrange offer an insight into its function or purpose?",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
+    },
+    {
+      "id": "R0s74JgOMf8",
+      "title": "Fascinating alignment of Newgrange and other ancient sites",
+      "cr": "anthonymurphy",
+      "added": "2026-07-14"
+    },
+    {
       "id": "515ecDeMpqY",
       "title": "Newgrange: Cygnus, Venus & Secret Alignments - Anthony Murphy & Hugh Newman",
       "cr": "megalithomania",
@@ -1159,18 +1177,6 @@
       "cr": "megalithomania",
       "added": "2026-06-09",
       "published": "2023-09-15"
-    },
-    {
-      "id": "smBYtvhILDw",
-      "title": "Do the myths about Newgrange offer an insight into its function or purpose?",
-      "cr": "anthonymurphy",
-      "added": "2026-07-14"
-    },
-    {
-      "id": "R0s74JgOMf8",
-      "title": "Fascinating alignment of Newgrange and other ancient sites",
-      "cr": "anthonymurphy",
-      "added": "2026-07-14"
     },
     {
       "id": "KVXWZkwV0RQ",
@@ -1369,18 +1375,18 @@
   ],
   "Nabta Playa": [
     {
-      "id": "qR23zjLwYvM",
-      "title": "Nabta Playa | 8000 Year Old Stone Circles in Southern Egypt & the Orion Connection | Megalithomania",
-      "cr": "megalithomania",
-      "added": "2026-06-09",
-      "published": "2023-08-15"
-    },
-    {
       "id": "VD1BIZCB-TA",
       "title": "Robert Bauval | Nabta Playa and the Origins of Egypt | Megalithomania Interview",
       "cr": "megalithomania",
       "added": "2026-06-06",
       "published": "2026-05-25"
+    },
+    {
+      "id": "qR23zjLwYvM",
+      "title": "Nabta Playa | 8000 Year Old Stone Circles in Southern Egypt & the Orion Connection | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-06-09",
+      "published": "2023-08-15"
     },
     {
       "id": "j6jkBmRBR7U",
@@ -1467,13 +1473,6 @@
       "published": "2026-05-21"
     },
     {
-      "id": "wbK0cK9U19g",
-      "title": "The Forbidden Caves of India: Barabar | Documentary (Запретные пещеры Индии, ru/en dub)",
-      "cr": "protocivilization",
-      "added": "2026-06-09",
-      "published": "2024-12-10"
-    },
-    {
       "id": "6RJ3Epd_SXk",
       "title": "BARABAR — Breathtaking Precision and Geometry Discovered in Ancient Indian Granite Caves",
       "cr": "unchartedx"
@@ -1482,6 +1481,13 @@
       "id": "YNmkfDWprdE",
       "title": "Lost Technology of Ancient India? The Enigmatic Barabar Caves",
       "cr": "ancientarch"
+    },
+    {
+      "id": "wbK0cK9U19g",
+      "title": "The Forbidden Caves of India: Barabar | Documentary (Запретные пещеры Индии, ru/en dub)",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2024-12-10"
     },
     {
       "id": "8YBFjn5Gv_Y",
@@ -1664,13 +1670,6 @@
       "published": "2024-11-05"
     },
     {
-      "id": "A-wTHDMLSAk",
-      "title": "More mysterious than the pyramids: the Aswan Quarry 3D | Documentary (ru/en dub)",
-      "cr": "protocivilization",
-      "added": "2026-06-09",
-      "published": "2024-09-20"
-    },
-    {
       "id": "8tnrkahCLHw",
       "title": "The 1100 ton Unfinished Obelisk — Carved with Pounding Stones?",
       "cr": "unchartedx"
@@ -1679,6 +1678,13 @@
       "id": "FfnJlLSS5cs",
       "title": "1200 Ton Unfinished Obelisk At Aswan In Egypt",
       "cr": "brienf"
+    },
+    {
+      "id": "A-wTHDMLSAk",
+      "title": "More mysterious than the pyramids: the Aswan Quarry 3D | Documentary (ru/en dub)",
+      "cr": "protocivilization",
+      "added": "2026-06-09",
+      "published": "2024-09-20"
     }
   ],
   "Bent Pyramid (Dahshur)": [
@@ -2034,6 +2040,12 @@
       "added": "2026-07-09"
     },
     {
+      "id": "1-Vbx5y5wco",
+      "title": "Evidence of Unknown Ancient Technology? Exploring Sikllakancha in Cusco, Peru",
+      "cr": "sorcerersofstone",
+      "added": "2026-09-12"
+    },
+    {
       "id": "NKt0es1zrcM",
       "title": "Ancient labyrinth at Qenqo in Peru",
       "cr": "brienf"
@@ -2041,17 +2053,17 @@
   ],
   "Pisac": [
     {
+      "id": "GWv9q7355tA",
+      "title": "Megalithic Pisac",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
       "id": "t99792Z1e00",
       "title": "Ancient Pisaq In The Sacred Valley Of Peru: Inca And Megalithic Aspects",
       "cr": "brienf",
       "added": "2026-06-09",
       "published": "2024-06-10"
-    },
-    {
-      "id": "GWv9q7355tA",
-      "title": "Megalithic Pisac",
-      "cr": "sorcerersofstone",
-      "added": "2026-07-09"
     },
     {
       "id": "XUSC0BY3NFM",
@@ -2622,6 +2634,13 @@
   ],
   "Vat Phou": [
     {
+      "id": "kZNPjP8FtRk",
+      "title": "WAT PHOU: Secrets of the Ancient Khmer Temple on the Mekong",
+      "cr": "megaworldasia",
+      "added": "2026-07-15",
+      "published": "2025-11-23"
+    },
+    {
       "id": "Sks7sXjLpcY",
       "title": "Vat Phou's Shattered Megaliths: Clues to an Ancient Catastrophe in Laos | Secrets in Stone",
       "cr": "secretsinstone",
@@ -2648,13 +2667,6 @@
       "cr": "secretsinstone",
       "added": "2026-06-09",
       "published": "2025-12-10"
-    },
-    {
-      "id": "kZNPjP8FtRk",
-      "title": "WAT PHOU: Secrets of the Ancient Khmer Temple on the Mekong",
-      "cr": "megaworldasia",
-      "added": "2026-07-15",
-      "published": "2025-11-23"
     },
     {
       "id": "e9wph-07s2U",
@@ -2699,6 +2711,12 @@
   ],
   "Koh Ker": [
     {
+      "id": "_G4RzGZRl-A",
+      "title": "KOH KER: 36 Meters High and Completely Off the Beaten Path",
+      "cr": "megaworldasia",
+      "added": "2026-07-15"
+    },
+    {
       "id": "l4ep1QxufRc",
       "title": "Koh Ker's HIDDEN 7-Tier Pyramid & Colossal Lingas — Part 1 | Secrets in Stone",
       "cr": "secretsinstone",
@@ -2732,12 +2750,6 @@
       "cr": "secretsinstone",
       "added": "2026-06-09",
       "published": "2025-11-05"
-    },
-    {
-      "id": "_G4RzGZRl-A",
-      "title": "KOH KER: 36 Meters High and Completely Off the Beaten Path",
-      "cr": "megaworldasia",
-      "added": "2026-07-15"
     },
     {
       "id": "S0Bz7yyXzMQ",
@@ -3191,13 +3203,6 @@
   ],
   "Tarawasi": [
     {
-      "id": "UrBKXFctyic",
-      "title": "Was Tarawasi exposed to very high heat? (with Brien Foerster) | Secrets in Stone",
-      "cr": "secretsinstone",
-      "added": "2026-06-09",
-      "published": "2026-05-15"
-    },
-    {
       "id": "1m2bn7MccCA",
       "title": "Amazing New Discovery at Tarawasi!",
       "cr": "sorcerersofstone",
@@ -3215,6 +3220,13 @@
       "cr": "secretsinstone",
       "added": "2026-06-07",
       "published": "2026-05-17"
+    },
+    {
+      "id": "UrBKXFctyic",
+      "title": "Was Tarawasi exposed to very high heat? (with Brien Foerster) | Secrets in Stone",
+      "cr": "secretsinstone",
+      "added": "2026-06-09",
+      "published": "2026-05-15"
     }
   ],
   "Syedra": [
@@ -4856,6 +4868,12 @@
   ],
   "Step Pyramid of Djoser": [
     {
+      "id": "wpywqa71YRY",
+      "title": "Step Pyramid of Saqqara with UnchartedX | Fieldwork Walkthrough · Egypt",
+      "cr": "ancientatlas",
+      "added": "2026-07-09"
+    },
+    {
       "id": "s6KLDlxTJ_c",
       "title": "Deep Under The Step Pyramid At Saqqara In Egypt April 2025",
       "cr": "brienf",
@@ -4875,12 +4893,6 @@
       "cr": "unchartedx",
       "added": "2026-06-09",
       "published": "2022-02-26"
-    },
-    {
-      "id": "wpywqa71YRY",
-      "title": "Step Pyramid of Saqqara with UnchartedX | Fieldwork Walkthrough · Egypt",
-      "cr": "ancientatlas",
-      "added": "2026-07-09"
     },
     {
       "id": "uERtkstQuxw",
@@ -5773,17 +5785,17 @@
   ],
   "Coricancha (Qorikancha)": [
     {
+      "id": "KI9DXw6eqR0",
+      "title": "Ancient Builders of the Qoricancha?",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
       "id": "dxmSz3N3HeU",
       "title": "UnchartedX Podcast! Ollantaytambo, Coricancha and the Temple of the Moon with the Snake Bros!",
       "cr": "unchartedx",
       "added": "2026-06-09",
       "published": "2021-03-18"
-    },
-    {
-      "id": "KI9DXw6eqR0",
-      "title": "Ancient Builders of the Qoricancha?",
-      "cr": "sorcerersofstone",
-      "added": "2026-07-09"
     }
   ],
   "Tanis (San el-Hagar)": [
@@ -5997,17 +6009,17 @@
   ],
   "Saihuite Stone": [
     {
+      "id": "fFW0mlKOeug",
+      "title": "Megalithic Sayhuite",
+      "cr": "sorcerersofstone",
+      "added": "2026-07-09"
+    },
+    {
       "id": "SJ373Pa2RU0",
       "title": "Decoding The Mysterious Saihuite Stone In Peru With American Engineer Arlan Andrews",
       "cr": "brienf",
       "added": "2026-06-09",
       "published": "2022-10-15"
-    },
-    {
-      "id": "fFW0mlKOeug",
-      "title": "Megalithic Sayhuite",
-      "cr": "sorcerersofstone",
-      "added": "2026-07-09"
     }
   ],
   "Byblos (Jbeil)": [
@@ -6290,13 +6302,6 @@
   ],
   "Loughcrew": [
     {
-      "id": "xut5gv1kXlA",
-      "title": "Loughcrew | Megalithic Art in Ancient Ireland & The Winnemucca Connection | Megalithomania",
-      "cr": "megalithomania",
-      "added": "2026-06-09",
-      "published": "2024-10-08"
-    },
-    {
       "id": "ZNrigPnGhOk",
       "title": "Loughcrew: myths, history and astronomy of a Neolithic cemetery in Ireland",
       "cr": "anthonymurphy",
@@ -6307,6 +6312,13 @@
       "title": "The Hill of the Witch — the Cairns of Loughcrew, a quick guide",
       "cr": "anthonymurphy",
       "added": "2026-07-14"
+    },
+    {
+      "id": "xut5gv1kXlA",
+      "title": "Loughcrew | Megalithic Art in Ancient Ireland & The Winnemucca Connection | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-06-09",
+      "published": "2024-10-08"
     }
   ],
   "Carrowmore Megalithic Cemetery": [
@@ -6559,6 +6571,12 @@
       "title": "Cusco's Chincanas, Part 2: Zone X",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "L7_5f10eWoY",
+      "title": "Unexplained Ancient Machining Hidden in the Caves of Megalithic Peru",
+      "cr": "mattdavid",
+      "added": "2026-09-12"
     }
   ],
   "Pnyx": [
@@ -7301,6 +7319,14 @@
       "cr": "agelessrock",
       "added": "2026-08-20",
       "published": "2026-06-25"
+    }
+  ],
+  "Temple of Isis (Fondi)": [
+    {
+      "id": "OpS5_utKSvY",
+      "title": "A fantastic wall at the Temple of Isis (Italy)",
+      "cr": "stoneriddles",
+      "added": "2026-09-12"
     }
   ]
 }

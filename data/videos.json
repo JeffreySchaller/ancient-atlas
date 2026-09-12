@@ -1,5 +1,6 @@
 {
-  "Derinkuyu Underground City": [    {
+  "Derinkuyu Underground City": [
+    {
       "id": "s-sBt-QH0FY",
       "title": "I Found an Ancient Underground City Hidden in Turkey",
       "cr": "mountainbeast"
@@ -52,7 +53,8 @@
       "published": "2026-06-10"
     }
   ],
-  "Kaymakli Underground City": [    {
+  "Kaymakli Underground City": [
+    {
       "id": "s-sBt-QH0FY",
       "title": "Ancient Underground Cities of Turkey",
       "cr": "mountainbeast"
@@ -529,6 +531,12 @@
       "title": "Mystery at Sacsayhuaman's Water Temple",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "L7_5f10eWoY",
+      "title": "Unexplained Ancient Machining Hidden in the Caves of Megalithic Peru",
+      "cr": "mattdavid",
+      "added": "2026-09-12"
     }
   ],
   "Ollantaytambo": [
@@ -2035,6 +2043,12 @@
       "title": "Cusco's Chincanas, Part 3: Qenko, the Alien-Looking Site",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "1-Vbx5y5wco",
+      "title": "Evidence of Unknown Ancient Technology? Exploring Sikllakancha in Cusco, Peru",
+      "cr": "sorcerersofstone",
+      "added": "2026-09-12"
     }
   ],
   "Pisac": [
@@ -3370,7 +3384,8 @@
       "published": "2025-10-13"
     }
   ],
-  "Mazi Underground City": [    {
+  "Mazi Underground City": [
+    {
       "id": "nW9HJH9XdVo",
       "title": "Mazi Underground City",
       "cr": "agelessrock",
@@ -6556,6 +6571,12 @@
       "title": "Cusco's Chincanas, Part 2: Zone X",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "L7_5f10eWoY",
+      "title": "Unexplained Ancient Machining Hidden in the Caves of Megalithic Peru",
+      "cr": "mattdavid",
+      "added": "2026-09-12"
     }
   ],
   "Pnyx": [
@@ -7298,6 +7319,14 @@
       "cr": "agelessrock",
       "added": "2026-08-20",
       "published": "2026-06-25"
+    }
+  ],
+  "Temple of Isis (Fondi)": [
+    {
+      "id": "OpS5_utKSvY",
+      "title": "A fantastic wall at the Temple of Isis (Italy)",
+      "cr": "stoneriddles",
+      "added": "2026-09-12"
     }
   ]
 }

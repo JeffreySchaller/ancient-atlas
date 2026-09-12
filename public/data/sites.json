@@ -796,8 +796,8 @@
   },
   {
     "n": "Qenqo",
-    "lat": -13.4978,
-    "lng": -71.9614,
+    "lat": -13.5089,
+    "lng": -71.9707,
     "cat": "megalithic",
     "region": "South America",
     "tier": 2,
@@ -1592,7 +1592,7 @@
     "cat": "megalithic",
     "region": "Asia",
     "tier": 1,
-    "desc": "Indonesian megalithic site dated controversially to as early as 25,000 BCE by ground-penetrating radar studies. If confirmed, it would be the oldest pyramid structure on Earth.",
+    "desc": "Terraced andesite hill in West Java. Seismic tomography and ground-penetrating radar imaged structures beneath the visible megalithic terraces, and a 2023 paper read them as construction beginning around 25,000 BCE. Archaeological Prospection retracted that paper in March 2024, finding its radiocarbon dates came from soil not associated with anything demonstrably man-made. The authors dispute the retraction. Carbon dates carbon; what it belonged to is the open question.",
     "signal": "open",
     "criteria": [
       "scale",
@@ -7810,5 +7810,18 @@
       "url": "/library/the-convergence-question.html",
       "title": "The Convergence Question"
     }
+  },
+  {
+    "n": "Temple of Isis (Fondi)",
+    "lat": 41.3523,
+    "lng": 13.4421,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "polygonal"
+    ],
+    "desc": "Terraced complex on Colle delle Monache above Fondi in southern Lazio, now occupied by Villa Placitelli. A dry-laid polygonal limestone terrace of roughly 64 by 79 m survives up to 4.5 m high, with four barrel-vaulted underground cisterns and the remains of a three-apsed building; in the plain below beside the Via Appia runs the 153 m reticulate Muro Varroniano. Construction technique places it in the late Republican period. Nineteenth and twentieth century scholars proposed it as a sanctuary of Isis on the strength of sculptural finds, an attribution the regional park itself records as lacking definitive confirmation. Same limestone massif, and the same polygonal tradition, as Norba and Alatri."
   }
 ]

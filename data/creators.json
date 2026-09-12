@@ -671,5 +671,12 @@
     "subs": "seed source · pre-dates the creator index",
     "color": "#B8B07E",
     "tier": 3
+  },
+  "mattdavid": {
+    "name": "Matt David",
+    "handle": "@MatthewRobertDavid",
+    "subs": "5.18K subs · first-person Peru fieldwork · caves and tool marks around Cusco",
+    "color": "#9E7B8F",
+    "tier": 2
   }
 }
