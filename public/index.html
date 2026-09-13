@@ -583,6 +583,15 @@ body.climate-mode .zoom-hint{display:none!important}
 .cr-tier:first-of-type .cr-tier-header{margin-top:8px;border-top:none;padding-top:8px}
 .cr-tier-label{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--champagne);font-weight:700;margin-bottom:4px}
 .cr-tier-note{font-size:11px;color:var(--mist);font-style:italic;line-height:1.5}
+.cr-fold-body{display:none}
+.cr-fold-body.open{display:block}
+.cr-fold-sum{display:flex;align-items:center;justify-content:space-between;width:100%;
+  padding:6px 10px;border:1px solid transparent;border-radius:8px;background:transparent;
+  color:var(--mist);font-family:var(--font-sans);font-size:10.5px;cursor:pointer;
+  transition:background .15s,color .15s}
+.cr-fold-sum:hover{background:rgba(30,30,40,.6);color:var(--cloud)}
+.cr-fold-chev{transition:transform .2s;font-size:13px;line-height:1}
+.cr-fold-sum[aria-expanded="true"] .cr-fold-chev{transform:rotate(90deg)}
 .cr-mini-all{display:flex;align-items:center;justify-content:center;gap:6px;padding:7px 10px;margin-top:6px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.28);border-radius:8px;color:var(--champagne);font-family:var(--font-mono);font-size:9px;text-transform:uppercase;letter-spacing:.1em;cursor:pointer;transition:all .15s;width:100%;font-weight:600}
 .cr-mini-all:hover{background:rgba(201,168,76,.16);border-color:var(--champagne);transform:translateY(-1px)}
 
@@ -1896,8 +1905,8 @@ body.present #broadcast-controls{
   <div class="stats">
     <div class="hb-wrap"><div class="hb-tile"><div class="stat-val" id="stat-sites">0</div><div class="stat-lbl">Sites</div></div><div class="hb" aria-hidden="true"><p class="hb-k">The Atlas</p><p class="hb-t">Every stone here, someone stood next to.</p><p class="hb-s">Placed by hand and checked against the ground, not scraped from a list.</p><a class="hb-cta" href="sites/">Browse the index &rarr;</a></div></div>
     <div class="hb-wrap"><div class="hb-tile"><div class="stat-val" id="stat-vids">0</div><div class="stat-lbl">With Video</div></div><div class="hb" aria-hidden="true"><p class="hb-k">Walkthroughs</p><p class="hb-t">You do not have to take anyone's word.</p><p class="hb-s">Most of this map comes with someone walking you through it, camera in hand.</p><a class="hb-cta" href="creators/">See the creators &rarr;</a></div></div>
-    <div class="hb-wrap"><div class="hb-tile"><div class="stat-val" id="stat-regions">0</div><div class="stat-lbl">Regions</div></div><div class="hb" aria-hidden="true"><p class="hb-k">Where</p><p class="hb-t">The deep past is not evenly spread.</p><p class="hb-s">Some coastlines are crowded. Whole continents are nearly empty. Both are worth a look.</p><div class="hb-rows"><div class="hb-brow"><span>Asia</span><i class="hb-bar" style="width:100%"></i></div><div class="hb-brow"><span>Europe</span><i class="hb-bar" style="width:77%"></i></div><div class="hb-brow"><span>Türkiye</span><i class="hb-bar" style="width:46%"></i></div><div class="hb-brow"><span>South America</span><i class="hb-bar" style="width:31%"></i></div></div><a class="hb-cta" href="sites/">Browse by region &rarr;</a></div></div>
-    <div class="hb-wrap"><div class="hb-tile" onclick="openCreators()" title="View all creators"><div class="stat-val" id="stat-creators">0</div><div class="stat-lbl">Creators</div></div><div class="hb" aria-hidden="true"><p class="hb-k">Creators</p><p class="hb-t">Built with the people who went there.</p><p class="hb-s">Most of the footage is theirs, some of it is ours, and every clip is credited and links back.</p><a class="hb-cta" href="creators/">Meet them &rarr;</a></div></div>
+    
+    
     <div class="stat-divider" aria-hidden="true"></div>
     <div class="hb-wrap"><a class="nav-tile is-featured is-new" href="creators/" title="Creator Studies"><svg class="nav-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 2.2 L13.7 10.3 L21.8 12 L13.7 13.7 L12 21.8 L10.3 13.7 L2.2 12 L10.3 10.3 Z"/></svg><span class="nav-lbl">Studies</span></a><div class="hb" aria-hidden="true"><p class="hb-k">Creator Studies &middot; No. 01</p><p class="hb-t">One channel's life's work, laid back over the map.</p><p class="hb-s">A study takes a single creator and shows you everywhere they have actually been.</p><a class="hb-cta" href="/creators/ageless-rock.html">Read Study No. 01 &rarr;</a></div></div>
     <div class="fw-wrap">
@@ -1928,8 +1937,8 @@ body.present #broadcast-controls{
         <a class="ed-cta-full" href="https://editions.theancientatlas.com" target="_blank" rel="noopener">Claim yours →</a>
       </div>
     </div>
-    <div class="hb-wrap"><div class="nav-tile" onclick="openSupport()" title="Support the Atlas"><svg class="nav-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 20.1 C12 20.1 3.7 15.2 3.7 9.7 C3.7 7.1 5.6 5.4 7.9 5.4 C9.6 5.4 11.1 6.4 12 7.8 C12.9 6.4 14.4 5.4 16.1 5.4 C18.4 5.4 20.3 7.1 20.3 9.7 C20.3 15.2 12 20.1 12 20.1 Z"/></svg><span class="nav-lbl">Support</span></div><div class="hb hb--r" aria-hidden="true"><p class="hb-k">Support</p><p class="hb-t">Free, and staying free.</p><p class="hb-s">No ads, no paywall, nothing tracked beyond a page count.</p><a class="hb-cta" href="#" onclick="openSupport();return false;">How to help &rarr;</a></div></div>
-    <div class="hb-wrap"><a class="nav-tile" href="contact.html" title="Contact"><svg class="nav-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3.3 6.4 H20.7 V17.6 H3.3 Z"/><path d="M3.3 7.1 L12 13.1 L20.7 7.1"/></svg><span class="nav-lbl">Contact</span></a><div class="hb hb--r" aria-hidden="true"><p class="hb-k">Contact</p><p class="hb-t">Found something wrong?</p><p class="hb-s">Corrections and new sites land in the same inbox, and both get read.</p><a class="hb-cta" href="contact.html">Get in touch &rarr;</a></div></div>
+    
+    
   </div>
 </header>
 <main>
@@ -1937,16 +1946,14 @@ body.present #broadcast-controls{
     <div id="sidebar-controls">
       <div class="search-wrap">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        <input type="text" id="search" placeholder="Search 200+ ancient sites, regions, eras..." autocomplete="off" />
+        <input type="text" id="search" placeholder="Search ancient sites, regions, eras..." autocomplete="off" />
         <div class="search-suggestions" id="search-suggestions"></div>
       </div>
-      <div class="sb-section sb-section-creators">
-        <span class="sb-section-label">Creators</span>
-        <span class="sb-creators-count" id="sb-creators-count">17 voices</span>
-        <span class="sb-section-rule"></span>
-        <button class="sb-see-all" onclick="openCreators()" title="View all creators in the Hub">See all <span class="sb-see-all-arrow">↗</span></button>
-      </div>
-      <div id="creator-mini-list"></div>
+      <!-- Place and type lead. A newcomer does not know who anyone is yet, so
+           asking them to pick a creator first is asking the data model's
+           question rather than theirs. Creators keep their whole section, just
+           below the fold, reached by the same See all that always opened the
+           Hub. Measured: this is where 45 of 66 above-fold targets lived. -->
       <div class="sb-section">Where</div>
       <div id="region-filters"></div>
       <div id="country-filters"></div>
@@ -1958,6 +1965,13 @@ body.present #broadcast-controls{
       <div id="toggle-filters"></div>
       <div class="sb-section">View</div>
       <div id="view-filters"></div>
+      <div class="sb-section sb-section-creators">
+        <span class="sb-section-label">Creators</span>
+        <span class="sb-creators-count" id="sb-creators-count">17 voices</span>
+        <span class="sb-section-rule"></span>
+        <button class="sb-see-all" onclick="openCreators()" title="View all creators in the Hub">See all <span class="sb-see-all-arrow">↗</span></button>
+      </div>
+      <div id="creator-mini-list"></div>
     </div>
     <div class="sidebar-count" id="sidebar-count"></div>
     <div id="site-list"></div>
@@ -19936,7 +19950,20 @@ function init() {
 
   // Stats
   const sitesWithVids = FILTERED_SITES.filter(s => VIDEOS[s.n]).length;
+  // stat-regions and stat-creators no longer sit in the header; keep the
+  // writes harmless rather than scattering null guards through the file.
+  ['stat-regions','stat-creators'].forEach(function(id){
+    if (!document.getElementById(id)) {
+      var d = document.createElement('div'); d.id = id; d.style.display = 'none';
+      document.body.appendChild(d);
+    }
+  });
   document.getElementById('stat-sites').textContent = FILTERED_SITES.length;
+  // The placeholder used to be hard-coded "200+" while the header said 619 -
+  // the one line that sets a newcomer's expectations, undercounting by 3x.
+  // Read it from the data instead.
+  var _si = document.getElementById('search');
+  if (_si) _si.placeholder = 'Search ' + SITES.length + ' ancient sites, regions, eras...';
   document.getElementById('stat-vids').textContent = sitesWithVids;
   document.getElementById('stat-regions').textContent = ALL_REGIONS.length;
   document.getElementById('stat-creators').textContent = Object.keys(CREATORS).length;
@@ -20011,8 +20038,12 @@ function init() {
   map.createPane('voyagerBase');
   const voyagerPane = map.getPane('voyagerBase');
   voyagerPane.style.zIndex = 200;
+  // Land and water were separating at about 4% luminance, which is why the map
+  // read as grey-on-near-black and nothing pulled the eye. More contrast and a
+  // little more light widen that gap; saturation stays low so the ground stays
+  // ground and the champagne pins remain the only warm thing on screen.
   voyagerPane.style.filter =
-    'brightness(0.5) saturate(0.7) contrast(1.35) hue-rotate(-8deg)';
+    'brightness(0.62) saturate(0.62) contrast(1.62) hue-rotate(-8deg)';
 
   // Deep-navy multiply overlay above the tiles — cools the warm tan land tones
   // and dims the road amber toward the brand's moonlight palette. z-index keeps
@@ -21136,6 +21167,13 @@ function toneCreators() {
   _creatorsToned = true;
 }
 
+function toggleCreatorFold(btn) {
+  var body = document.getElementById('cr-fold-body');
+  if (!body) return;
+  var open = body.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+
 function getCreatorStats() {
   const stats = {};
   Object.keys(CREATORS).forEach(k => { stats[k] = { sites: new Map(), videos: [] }; });
@@ -21173,7 +21211,15 @@ function renderSidebarCreators() {
       <span class="cr-mini-count">${count}</span>
     </button>`;
   }).join('');
-  wrap.innerHTML = rows + `<button class="cr-mini-all" onclick="openCreators()">View all ${totalCount} creators →</button>`;
+  // <details> will not hold these closed: .cr-mini sets display:flex and an
+  // author rule beats the UA's hiding of a closed details' children. Explicit
+  // toggle instead.
+  wrap.innerHTML =
+    `<button class="cr-fold-sum" aria-expanded="false" aria-controls="cr-fold-body" onclick="toggleCreatorFold(this)">` +
+      `<span>Top ${tier1.length} by coverage</span><span class="cr-fold-chev">\u203A</span>` +
+    `</button>` +
+    `<div class="cr-fold-body" id="cr-fold-body">${rows}</div>` +
+    `<button class="cr-mini-all" onclick="openCreators()">View all ${totalCount} creators \u2192</button>`;
 }
 
 
