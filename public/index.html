@@ -245,7 +245,140 @@ text-decoration:none;box-shadow:0 6px 16px rgba(201,168,76,.22);margin-top:12px}
 main{flex:1;display:flex;position:relative;overflow:hidden}
 
 /* Sidebar — entire column scrolls as one. Controls flow naturally, country tree floats to the bottom. */
-#sidebar{width:340px;flex-shrink:0;background:rgba(13,13,18,.98);border-right:1px solid rgba(42,42,53,.4);display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden;z-index:500;scrollbar-gutter:stable}
+#sidebar{width:340px;flex-shrink:0;background:rgba(13,13,18,.98);border-right:1px solid rgba(42,42,53,.4);display:flex;flex-direction:column;overflow-y:auto;overflow-x:hidden;z-index:500;scrollbar-gutter:stable;transition:margin-left .6s cubic-bezier(.33,0,.15,1),opacity .38s ease}
+
+/* Cinema mode : at the fullest zoom out the rail steps aside so the world runs
+   edge to edge. Entered automatically when the map reaches its zoom floor,
+   left again on the first zoom in, or manually via the edge chevron. */
+body.cinema #sidebar{margin-left:-341px;opacity:0;pointer-events:none}
+#cinema-exit{position:absolute;left:0;top:50%;transform:translateY(-50%) translateX(-14px);z-index:620;
+  width:26px;height:64px;display:flex;align-items:center;justify-content:center;cursor:pointer;
+  background:rgba(13,13,18,.82);backdrop-filter:blur(10px);
+  border:1px solid rgba(42,42,53,.6);border-left:none;border-radius:0 10px 10px 0;
+  color:var(--mist);opacity:0;visibility:hidden;
+  transition:transform .45s cubic-bezier(.33,0,.15,1) .15s,opacity .3s ease .15s,visibility 0s linear .6s,color .2s,background .2s}
+#cinema-exit:hover{color:var(--champagne);background:rgba(30,30,40,.92)}
+#cinema-exit svg{width:13px;height:13px}
+body.cinema #cinema-exit{transform:translateY(-50%) translateX(0);opacity:1;visibility:visible;
+  transition:transform .45s cubic-bezier(.33,0,.15,1) .15s,opacity .3s ease .15s,visibility 0s linear 0s,color .2s,background .2s}
+body.mobile #cinema-exit,body.present #cinema-exit{display:none}
+
+/* ============================================================
+   DEPTH RAIL
+   The zoom axis, redrawn in proportion to how much this atlas
+   actually reveals per zoom level. Measured from the 619 site
+   coordinates: group count rises fastest around z4.5-6 and is
+   effectively finished by z13. The rail stretches the band that
+   reveals and compresses the band that only magnifies, so the
+   same drag distance buys precision where there is something to
+   see and speed where there is not. The ridge on the left of the
+   track IS that profile - the weight is visible before it is felt.
+   ============================================================ */
+/* At rest this is a channel and a grip. Nothing else. The measurement layer -
+   bands, detents, the stratum name - is still there and still exact, it just
+   waits to be touched. An instrument shows you everything; an object shows you
+   nothing and is simply correct the moment you put a hand on it. */
+#depth-rail{position:absolute;right:22px;top:50%;z-index:615;
+  --dock:0px;
+  transform:translateY(-50%) translateX(var(--dock));
+  width:30px;display:flex;align-items:stretch;
+  opacity:0;visibility:hidden;
+  transition:opacity .5s ease,visibility 0s linear .5s,
+             transform .55s cubic-bezier(.22,1,.36,1);
+  touch-action:none;-webkit-user-select:none;user-select:none}
+/* The detail panel slides in from the right on the same curve; the rail
+   travels out of its way and re-seats rather than being covered. */
+body.detail-open #depth-rail{--dock:calc(-1 * (var(--detail-w,420px) + 16px))}
+#depth-rail.ready{opacity:1;visibility:visible;transition:opacity .5s ease,visibility 0s linear 0s}
+#depth-rail:focus{outline:none}
+#depth-rail:focus-visible .dr-track{border-color:rgba(201,168,76,.55)}
+
+.dr-strata{display:none}
+.dr-stratum{position:absolute;right:0;font-family:var(--font-mono);font-size:8px;
+  letter-spacing:.13em;color:var(--mist);opacity:.62;white-space:nowrap;
+  transition:opacity .3s,color .3s;pointer-events:none;padding-right:9px}
+.dr-stratum::after{content:'';position:absolute;right:0;top:50%;width:5px;height:1px;
+  background:currentColor;opacity:.55}
+.dr-stratum.on{opacity:1;color:var(--champagne)}
+
+/* The channel is bedded in a plate rather than floating. Hermes hardware is
+   always seated in something; so is anything that takes a load. */
+.dr-track{position:relative;width:30px;flex-shrink:0;cursor:ns-resize;
+  background:linear-gradient(180deg,rgba(7,7,10,.55),rgba(12,12,17,.55));
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(150,156,166,.07);border-radius:15px;
+  box-shadow:inset 0 2px 7px rgba(0,0,0,.5);
+  transition:background .45s ease,border-color .45s ease,box-shadow .45s ease}
+#depth-rail:hover .dr-track,#depth-rail.dragging .dr-track{
+  background:linear-gradient(180deg,rgba(7,7,10,.94),rgba(12,12,17,.94));
+  border-color:rgba(150,156,166,.26);
+  box-shadow:inset 0 2px 7px rgba(0,0,0,.8),inset 0 -1px 0 rgba(255,255,255,.05),
+             0 1px 0 rgba(255,255,255,.035),0 6px 22px rgba(0,0,0,.5)}
+/* End-stop bearings. They sit where travel terminates and nowhere else. */
+.dr-track::before,.dr-track::after{content:'';position:absolute;left:50%;opacity:0;
+  transition:opacity .45s ease;
+  width:3px;height:3px;margin-left:-1.5px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#9BA0A8,#4A4E55 60%,#2A2D33);
+  box-shadow:0 0 0 .5px rgba(0,0,0,.6),0 1px 0 rgba(255,255,255,.07)}
+.dr-track::before{top:4px}
+.dr-track::after{bottom:4px}
+#depth-rail:hover .dr-track::before,#depth-rail:hover .dr-track::after,
+#depth-rail.dragging .dr-track::before,#depth-rail.dragging .dr-track::after{opacity:1}
+.dr-ridge{position:absolute;inset:0;overflow:hidden;border-radius:15px;pointer-events:none;
+  opacity:0;transition:opacity .45s ease}
+#depth-rail:hover .dr-ridge,#depth-rail.dragging .dr-ridge{opacity:1}
+.dr-ridge svg{position:absolute;inset:0;width:100%;height:100%}
+/* A metal's specular takes the tint of the metal, never pure white, and it
+   lightens without clipping. soft-light does both; screen would blow out. */
+.dr-sheen{fill:url(#dr-ti);mix-blend-mode:soft-light;pointer-events:none}
+.dr-bands{opacity:.95}
+
+.dr-detent{position:absolute;left:4px;right:4px;height:1px;
+  background:rgba(197,197,208,.28);pointer-events:none;opacity:0;
+  transition:background .25s,opacity .45s ease}
+#depth-rail:hover .dr-detent,#depth-rail.dragging .dr-detent{opacity:1}
+.dr-detent.on{background:rgba(201,168,76,.65)}
+
+/* Palladium, not gold. The ridge behind it is champagne because it is DATA;
+   the grip is cool metal because it is the thing you operate. Separating the
+   two languages is an information fix before it is a styling one, and it is
+   also exactly the warm-leather / cool-hardware pairing being referenced. */
+.dr-grip{position:absolute;left:-5px;right:-5px;height:22px;margin-top:-11px;
+  --spec:0.5;
+  border-radius:5px;pointer-events:none;overflow:hidden;
+  background:linear-gradient(180deg,#8E939B 0%,#6E737B 14%,#494E56 50%,#33373D 86%,#22262B 100%);
+  border:1px solid rgba(18,20,23,.9);
+  box-shadow:0 2px 8px rgba(0,0,0,.6),0 0 0 .5px rgba(178,184,193,.28),
+             inset 0 1px 0 rgba(226,230,236,.5),inset 0 -1px 0 rgba(0,0,0,.42)}
+/* Brushed metal throws a directional highlight. If that highlight does not
+   move when the part moves it is a sticker, so its position and intensity are
+   driven by travel: --spec is 0 at the top of the rail, 1 at the floor. */
+.dr-grip::before{content:'';position:absolute;left:0;right:0;height:3px;
+  top:calc(9% + var(--spec) * 70%);
+  background:linear-gradient(180deg,transparent,rgba(233,237,242,.9),transparent);
+  opacity:calc(.34 - var(--spec) * .17);transition:none}
+.dr-grip::after{content:'';position:absolute;left:8px;right:8px;top:50%;height:9px;
+  margin-top:-4.5px;opacity:.42;
+  background:repeating-linear-gradient(180deg,
+    rgba(20,22,25,.85) 0 1px,rgba(198,204,212,.42) 1px 2px,transparent 2px 3px)}
+#depth-rail.dragging .dr-grip{
+  box-shadow:0 3px 13px rgba(0,0,0,.72),0 0 0 .5px rgba(205,211,220,.5),
+             inset 0 1px 0 rgba(240,244,250,.62),inset 0 -1px 0 rgba(0,0,0,.45)}
+/* a spring-loaded detent overshoots and settles; it does not glide home */
+@keyframes dr-seat{0%{transform:translateY(0)}38%{transform:translateY(1.5px)}
+  70%{transform:translateY(-0.5px)}100%{transform:translateY(0)}}
+#depth-rail.seating .dr-grip{animation:dr-seat .26s cubic-bezier(.3,1.4,.5,1)}
+
+.dr-readout{position:absolute;right:calc(100% + 14px);top:50%;transform:translateY(-50%);
+  font-family:var(--font-serif);font-size:13px;font-style:italic;letter-spacing:.01em;
+  color:var(--cloud);white-space:nowrap;opacity:0;
+  transition:opacity .3s ease;pointer-events:none;
+  text-shadow:0 1px 8px rgba(0,0,0,.9)}
+#depth-rail:hover .dr-readout,#depth-rail.dragging .dr-readout{opacity:1}
+
+body.mobile #depth-rail,body.present #depth-rail{display:none}
+/* the rail replaces the +/- buttons on desktop; mobile keeps them */
+body:not(.mobile) .leaflet-control-zoom{display:none}
 #sidebar-controls{padding:16px 16px 12px;display:flex;flex-direction:column;gap:10px;flex-shrink:0;border-bottom:1px solid rgba(42,42,53,.3)}
 .search-wrap{position:relative;width:100%}
 .search-wrap svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--mist);pointer-events:none}
@@ -442,7 +575,7 @@ body.climate-mode .zoom-hint{display:none!important}
 .cr-mini-name{flex:1;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--cloud)}
 .cr-mini:hover .cr-mini-name{color:var(--ivory)}
 .cr-mini-count{font-family:var(--font-mono);font-size:9px;color:var(--mist);background:rgba(201,168,76,.06);padding:1px 6px;border-radius:5px;border:1px solid rgba(201,168,76,.15);flex-shrink:0}
-.cr-mini-tier{color:var(--champagne);font-size:10px;flex-shrink:0;text-shadow:0 0 6px rgba(201,168,76,.5)}
+.cr-mini-tier{color:rgba(201,168,76,.45);font-size:9px;flex-shrink:0}
 
 /* Hub tier section headers */
 .cr-tier{margin-bottom:8px}
@@ -658,7 +791,7 @@ body.grid-mode .leaflet-control-zoom{display:none}
 .view-toggle button{padding:4px 10px;border:none;background:transparent;color:var(--cloud);font-family:inherit;font-size:inherit;cursor:pointer;border-radius:7px;transition:all .15s;display:flex;align-items:center;gap:4px}
 .view-toggle button.on{background:rgba(201,168,76,.18);color:var(--champagne);border:1px solid rgba(201,168,76,.4)}
 .view-toggle svg{width:11px;height:11px}
-.leaflet-container{background:#0a0a10!important;font-family:var(--font-sans)!important}
+.leaflet-container{background:#2F3436!important;font-family:var(--font-sans)!important}
 .leaflet-control-zoom{border:none!important;box-shadow:0 4px 20px rgba(0,0,0,.4)!important}
 .leaflet-control-zoom a{background:var(--charcoal)!important;color:var(--cloud)!important;border:1px solid var(--stone)!important;width:36px!important;height:36px!important;line-height:36px!important;font-size:16px!important;border-radius:0!important;transition:all .2s}
 .leaflet-control-zoom a:first-child{border-radius:10px 10px 0 0!important}
@@ -1840,6 +1973,14 @@ body.present #broadcast-controls{
   </div>
   <div id="map-wrap">
     <div id="map"></div>
+    <div id="cinema-exit" onclick="exitCinema(true)" title="Show the sidebar" role="button" aria-label="Show the sidebar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+    <div id="depth-rail" tabindex="0" role="slider" aria-label="Map depth" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="dr-strata"></div>
+      <div class="dr-track">
+        <div class="dr-ridge"><svg preserveAspectRatio="none" viewBox="0 0 30 400"><defs><clipPath id="dr-clip"><path/></clipPath><linearGradient id="dr-ti" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8DCE2" stop-opacity="0"/><stop offset=".44" stop-color="#DDE2E9" stop-opacity=".22"/><stop offset=".5" stop-color="#E9EDF3" stop-opacity=".38"/><stop offset=".56" stop-color="#DDE2E9" stop-opacity=".22"/><stop offset="1" stop-color="#D8DCE2" stop-opacity="0"/></linearGradient></defs><g clip-path="url(#dr-clip)"><g class="dr-bands"/><rect class="dr-sheen" x="0" y="0" width="30" height="400"/></g><path class="dr-edge" fill="none" stroke="rgba(226,230,236,.22)" stroke-width="1" vector-effect="non-scaling-stroke"/></svg></div>
+        <div class="dr-grip"><div class="dr-readout"></div></div>
+      </div>
+    </div>
     <div id="grid-view"></div>
     <div id="climate-panel">
       <div id="cp-info"></div>
@@ -19799,13 +19940,37 @@ function init() {
   document.getElementById('stat-vids').textContent = sitesWithVids;
   document.getElementById('stat-regions').textContent = ALL_REGIONS.length;
   document.getElementById('stat-creators').textContent = Object.keys(CREATORS).length;
+  toneCreators();   // re-key every creator dot to its share of the atlas, before anything renders
 
   // Map
+  // Minimum zoom is not a fixed number : it is the zoom at which exactly one
+  // copy of the world spans the container. Below that Leaflet would letterbox
+  // the map (dead bars left and right) or, with wrapping on, repeat it. Tying
+  // the floor to the viewport means the fullest zoom out is always "the whole
+  // world, edge to edge" on any screen.
+  function worldFitZoom() {
+    const el = document.getElementById('map');
+    const w = el ? el.clientWidth : 0;
+    if (!w) return 2;
+    return Math.max(0, Math.log(w / 256) / Math.LN2);
+  }
+
   map = L.map('map', {
     center: [25, 30],
     zoom: 3,
-    minZoom: 2,
+    minZoom: worldFitZoom(),
     maxZoom: 18,
+    // A fractional minZoom is unreachable under Leaflet's default zoomSnap of 1:
+    // _limitZoom rounds before it clamps, and it runs twice on the way through
+    // setView, so 2.74 rounds straight back up to 3. zoomSnap 0 turns the
+    // rounding off; zoomDelta 1 keeps the buttons and keyboard stepping by one.
+    zoomSnap: 0,
+    zoomDelta: 1,
+    // zoomSnap also sets the wheel handler's step quantum, so turning it off
+    // made a trackpad flick move a tenth of what it used to. Measured against
+    // the old snap-1 feel: default 60 gives 0.10 of a level per modest flick,
+    // 7 gives 0.78 against the 1.0 it used to move. Buttons are unaffected.
+    wheelPxPerZoomLevel: 7,
     zoomControl: true,
     attributionControl: true,
     maxBounds: [[-85, -180], [85, 180]],
@@ -19836,6 +20001,10 @@ function init() {
   });
   map.addControl(new ResetViewControl());
 
+  // Rail steps aside at the zoom floor : see CINEMA MODE below.
+  map.on('zoomend', syncCinema);
+  setTimeout(initDepthRail, 300);
+
   // Voyager color tiles in a dedicated pane, heavily desaturated and tinted
   // navy for a moonlit-Milky-Way feel : modern infrastructure recedes to faint
   // traces, water and land remain quietly differentiated.
@@ -19855,13 +20024,87 @@ function init() {
     'z-index:9999;';
   voyagerPane.appendChild(moonlitTint);
 
+  // ---------------------------------------------------------------
+  // ANCHOR WORLD
+  // Measured: sweeping the depth rail took map coverage to 0% within 68ms and
+  // held it there for the whole gesture, recovering ~800ms after release. Not
+  // the network - tiles return in 15ms median - and not localhost, which only
+  // serves the HTML. Leaflet prunes the previous level the moment the zoom
+  // changes, and no intermediate level survives long enough to paint.
+  //
+  // A pinned L.tileLayer does not fix it: Leaflet rebuilds a layer's grid on
+  // every setView even when the tile level is unchanged, so the fallback went
+  // down with everything else (40 tiles -> 2, unloaded, at each commit).
+  //
+  // So the fallback is not a Leaflet layer. It is 64 plain images in a div we
+  // own, laid out as the whole world at z3 and positioned by projection. Leaflet
+  // cannot prune what it does not manage, so there is always a correct - if
+  // coarse - picture of where you are underneath the detailed map. The tiles
+  // come from the browser cache, since Leaflet has already fetched this level.
+  // ---------------------------------------------------------------
+  const ANCHOR_N = 8;                 // 8x8 = the whole world at z3
+  const WORLD_LAT = 85.0511287798066;
+  const anchorWorld = document.createElement('div');
+  anchorWorld.className = 'aa-anchor';
+  anchorWorld.style.cssText = 'position:absolute;left:0;top:0;width:0;height:0;z-index:0;pointer-events:none';
+  const anchorTiles = [];
+  (function buildAnchorWorld() {
+    const subs = 'abcd';
+    for (let x = 0; x < ANCHOR_N; x++) {
+      for (let y = 0; y < ANCHOR_N; y++) {
+        const img = document.createElement('img');
+        img.src = 'https://' + subs[(x + y) % 4] +
+          '.basemaps.cartocdn.com/rastertiles/voyager_nolabels/3/' + x + '/' + y +
+          '@2x.png?key=cb1_2f14_1_3e66974f2b2042db5a6ccf9b';
+        img.style.cssText = 'position:absolute;display:none';
+        img.decoding = 'async';
+        img._ax = x; img._ay = y;
+        anchorTiles.push(img);
+        anchorWorld.appendChild(img);
+      }
+    }
+  })();
+  voyagerPane.appendChild(anchorWorld);
+
+  // Each tile is placed on its own rather than scaling one wrapper. A wrapper
+  // sized to the whole world needs 67 million pixels at z18 and Chrome clamps
+  // elements at about 2^24, which silently put the fallback in the wrong place
+  // and took coverage to 0 at the deepest zooms. Per-tile, the largest element
+  // is an eighth of that and stays inside the limit. Off-screen tiles are
+  // hidden so the layout cost stays with what is actually visible.
+  function placeAnchorWorld() {
+    const nw = map.latLngToLayerPoint([WORLD_LAT, -180]);
+    const se = map.latLngToLayerPoint([-WORLD_LAT, 180]);
+    const t = (se.x - nw.x) / ANCHOR_N;
+    const size = document.getElementById('map');
+    const pad = 400;
+    const vnw = map.containerPointToLayerPoint([-pad, -pad]);
+    const vse = map.containerPointToLayerPoint([size.clientWidth + pad, size.clientHeight + pad]);
+    for (let i = 0; i < anchorTiles.length; i++) {
+      const img = anchorTiles[i];
+      const L = nw.x + img._ax * t, T = nw.y + img._ay * t;
+      if (L + t < vnw.x || L > vse.x || T + t < vnw.y || T > vse.y) {
+        if (img.style.display !== 'none') img.style.display = 'none';
+        continue;
+      }
+      img.style.display = 'block';
+      img.style.left = L + 'px';
+      img.style.top = T + 'px';
+      img.style.width = t + 'px';
+      img.style.height = t + 'px';
+    }
+  }
+  map.on('move zoom zoomend moveend viewreset resize', placeAnchorWorld);
+  placeAnchorWorld();
+
   L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png?key=cb1_2f14_1_3e66974f2b2042db5a6ccf9b', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
     subdomains: 'abcd',
     maxZoom: 19,
     noWrap: true,
     bounds: [[-85, -180], [85, 180]],
-    pane: 'voyagerBase'
+    pane: 'voyagerBase',
+    zIndex: 2
   }).addTo(map);
 
   // Dark-mode labels on top of the dimmed Voyager base — already designed
@@ -20822,6 +21065,77 @@ function dismissZoomHint() {
 // Page-like full-screen view showing each creator's full body of work
 // Data-driven: pulls from VIDEOS automatically as new videos are added
 // ============================================================
+// ============================================================
+// CREATOR TONE
+// The dots used to carry 74 distinct hues across 95 creators, from a
+// palette unrelated to this one. Measured against the categorical rules:
+//   normal-vision worst adjacent  dE 9.2   (floor is 15 - a hard fail)
+//   colour-blind  worst adjacent  dE 2.7   (floor is 8)
+//   lightness spread              0.69-0.89 across the set
+// Which is the finding, not a nitpick: no palette can hold 95 categories.
+// Eight is the practical ceiling for identity-by-hue, so past that colour
+// has to stop carrying identity - the NAME carries identity, it is right
+// there - and start carrying magnitude.
+//
+// So the dot is now a single-hue sequential ramp keyed to how much of the
+// atlas that creator actually covers. One hue, lightness and chroma rising
+// together, stepped in OKLab so the band is perceptually even. The key is the
+// creator's own video count, never its rank, so filtering the list never
+// repaints the survivors.
+//
+// Two scaling decisions, both forced by the real distribution (median 1, top
+// 282): log rather than linear or sqrt, because a linear scale puts almost
+// everyone at the dim end; and the scale is set by the SECOND largest
+// contributor, because Ageless Rock at 282 is 3.4x the next and on a raw max
+// it compressed the entire visible list into the bottom third of the ramp.
+// Anything at or above that cap saturates. The rule only has an effect when
+// an outlier actually exists - with an even distribution the second largest
+// is the largest and nothing changes.
+// ============================================================
+const TONE_LO = [0.4562, 0.0234, 0.0430];   // #4A4536 in OKLab - present but quiet
+const TONE_HI = [0.8100, 0.0246, 0.1085];   // #E8B960 (--amber) - the full archive
+
+function creatorTone(count, scale) {
+  const t = Math.max(0, Math.min(1, Math.log1p(count) / Math.log1p(Math.max(1, scale))));
+  const L = TONE_LO[0] + t * (TONE_HI[0] - TONE_LO[0]);
+  const cLo = Math.hypot(TONE_LO[1], TONE_LO[2]);
+  const cHi = Math.hypot(TONE_HI[1], TONE_HI[2]);
+  const hue = Math.atan2(TONE_HI[2], TONE_HI[1]);      // one hue, locked
+  const C = cLo + t * (cHi - cLo);
+  return oklabToHex(L, C * Math.cos(hue), C * Math.sin(hue));
+}
+
+function oklabToHex(L, a, b) {
+  const l = Math.pow(L + 0.3963377774 * a + 0.2158037573 * b, 3);
+  const m = Math.pow(L - 0.1055613458 * a - 0.0638541728 * b, 3);
+  const s = Math.pow(L - 0.0894841775 * a - 1.2914855480 * b, 3);
+  const to = v => {
+    const c = v <= 0.0031308 ? 12.92 * v : 1.055 * Math.pow(Math.max(v, 0), 1 / 2.4) - 0.055;
+    return Math.max(0, Math.min(255, Math.round(c * 255)));
+  };
+  const r = to( 4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s);
+  const g = to(-1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s);
+  const bl = to(-0.0041960863 * l - 0.7034186147 * m + 1.7076147010 * s);
+  return '#' + [r, g, bl].map(v => v.toString(16).padStart(2, '0')).join('').toUpperCase();
+}
+
+// Re-tone every creator from the real counts, once, at startup. Downstream
+// code keeps reading c.color, so the sidebar, the hub and the site cards all
+// move together.
+let _creatorsToned = false;
+function toneCreators() {
+  if (_creatorsToned) return;
+  const stats = getCreatorStats();
+  const counts = Object.keys(CREATORS)
+    .map(k => stats[k].videos.length)
+    .sort((a, b) => b - a);
+  const scale = counts.length > 1 ? counts[1] : (counts[0] || 1);
+  Object.keys(CREATORS).forEach(k => {
+    CREATORS[k].color = creatorTone(stats[k].videos.length, scale);
+  });
+  _creatorsToned = true;
+}
+
 function getCreatorStats() {
   const stats = {};
   Object.keys(CREATORS).forEach(k => { stats[k] = { sites: new Map(), videos: [] }; });
@@ -20840,6 +21154,7 @@ function getCreatorStats() {
 function renderSidebarCreators() {
   const wrap = document.getElementById('creator-mini-list');
   if (!wrap) return;
+  toneCreators();
   const stats = getCreatorStats();
   // Sidebar surfaces ONLY tier 1 (Editorial Picks). Tier 2/3 live in the full Hub.
   const totalCount = Object.keys(CREATORS).length;
@@ -21777,6 +22092,7 @@ function showDetail(site) {
   const detail = document.getElementById('detail');
   detail.className = 'open';
   detail.style.display = 'flex';
+  setRailDock(true);
 
   // Find nearby sites (within ~50km)
   const nearby = FILTERED_SITES
@@ -21936,6 +22252,7 @@ function closeDetail() {
   const detail = document.getElementById('detail');
   detail.style.display = 'none';
   detail.className = '';
+  setRailDock(false);
   selectedSite = null;
   renderSidebar();
 }
@@ -22029,7 +22346,7 @@ function togglePresent() {
 
     // Close detail panel, invalidate map size
     closeDetail();
-    setTimeout(() => map.invalidateSize(), 100);
+    setTimeout(() => { map.invalidateSize(); refitZoomFloor(); }, 100);
 
     // Re-render markers at larger size
     renderMarkers();
@@ -22043,7 +22360,7 @@ function togglePresent() {
     const callout = document.getElementById('site-callout');
     callout.className = '';
     callout.style.display = 'none';
-    setTimeout(() => map.invalidateSize(), 100);
+    setTimeout(() => { map.invalidateSize(); refitZoomFloor(); }, 100);
     renderMarkers();
   }
 }
@@ -22226,7 +22543,7 @@ function updateMobileMode() {
   } else if (mobile && !portrait) {
     // Landscape: ensure map is sized correctly after the layout flip
     if (typeof map !== 'undefined' && map) {
-      setTimeout(() => map.invalidateSize(), 100);
+      setTimeout(() => { map.invalidateSize(); refitZoomFloor(); }, 100);
     }
   }
 }
@@ -22780,6 +23097,456 @@ function renderMobileCreatorSection(key, c, s) {
 
 // React to orientation changes + viewport resize
 window.addEventListener('resize', updateMobileMode);
+
+// Re-seat the zoom floor whenever the map box changes width, so the world keeps
+// filling the frame after a resize, a sidebar toggle or a device rotation.
+function refitZoomFloor() {
+  if (typeof map === 'undefined' || !map || typeof map.setMinZoom !== 'function') return;
+  const el = document.getElementById('map');
+  if (!el || !el.clientWidth) return;
+  const z = Math.max(0, Math.log(el.clientWidth / 256) / Math.LN2);
+  if (Math.abs(z - map.getMinZoom()) > 0.01) map.setMinZoom(z);
+}
+window.addEventListener('resize', refitZoomFloor);
+
+// ============================================================
+// DEPTH RAIL  -  a zoom axis weighted by what the atlas reveals
+//
+// The weight is not an easing curve chosen by feel. REVEAL[] is
+// measured from the 619 site coordinates in sites.json: cluster
+// the points on the same 45px grid the map uses, count distinct
+// groups at each zoom, and take the rate of change. That rate,
+// normalised, is the resistance.
+//
+// Per the coupling law, a real process changes more than one
+// thing at once, so the single measured quantity drives four:
+//   1. rail geometry - dense zoom bands occupy more rail length
+//   2. drag gain     - which makes them slower to cross
+//   3. the ridge     - drawn from the same array, so weight is seen
+//   4. friction      - momentum dies faster in dense bands
+// Change REVEAL and all four move together. That is the test.
+// ============================================================
+
+// ZAMMITT BANDS
+// Norman Zammitt's transitions read as light because band edges sit at equal
+// PERCEPTUAL distance, not equal width - so bands are thin where colour moves
+// fast and thick where it idles. Edges computed by walking the rail and
+// accumulating OKLab arc length; anchors are all atlas palette values
+// (--stone, --violet lean, --mist, --champagne, --amber).
+//
+// Colour here encodes DEPTH, not revelation. Tying it to revelation was the
+// first attempt and it measured badly: revelation rises then falls, so the
+// colour trajectory doubled back on itself and equal-arc-length banding -
+// which assumes a smooth monotone path - gave cv 0.324. Depth is monotone.
+// Anchors were also too light on the first pass: --mist at face value floated
+// the band out of the atlas family, so the ramp is graded down to sit between
+// --stone and --champagne. 20 bands, measured:
+//   equal-arc (shipped)  cv 0.046
+//   equal-width          cv 0.879    <- 19x worse
+// 20 bands measured better still (cv 0.017) but each step was too small to see;
+// 12 trades a little evenness for legibility, which is the point of banding.
+// Note the widths the rule produces: 24.8%, 24.0%, 15.1% through the cold end
+// where the colour idles, tightening to 3.25% each through the turn into gold.
+// That rhythm was not chosen. It falls out of equal perceptual spacing.
+// Width still carries revelation, so the two channels say two different things.
+const ZAM=[[0.0000,0.2476,'#272731'],[0.2476,0.4879,'#2F2F3C'],[0.4879,0.6386,'#393741'],[0.6386,0.6953,'#45413F'],
+[0.6953,0.7520,'#4F493B'],[0.7520,0.8050,'#5A5136'],[0.8050,0.8375,'#665A35'],[0.8375,0.8700,'#726337'],
+[0.8700,0.9025,'#7F6C39'],[0.9025,0.9350,'#8C763C'],[0.9350,0.9675,'#997F3D'],[0.9675,1.0000,'#A6893F']];
+const ZAM_SEAM = 0.03;   // plateau with a hairline seam, not a hard edge or a fade
+const BAND_DEFS_HEAD = '<clipPath id="dr-clip"><path/></clipPath>' +
+  '<linearGradient id="dr-ti" x1="0" y1="0" x2="0" y2="1">' +
+  '<stop offset="0" stop-color="#D8DCE2" stop-opacity="0"/>' +
+  '<stop offset=".44" stop-color="#DDE2E9" stop-opacity=".22"/>' +
+  '<stop offset=".5" stop-color="#E9EDF3" stop-opacity=".38"/>' +
+  '<stop offset=".56" stop-color="#DDE2E9" stop-opacity=".22"/>' +
+  '<stop offset="1" stop-color="#D8DCE2" stop-opacity="0"/></linearGradient>';
+
+// resistance at z = index * 0.5, z 0 .. 18, normalised to peak
+const REVEAL = [0.087,0.167,0.281,0.365,0.417,0.479,0.677,0.771,0.875,1,0.896,
+  0.938,0.938,0.906,0.885,0.823,0.688,0.51,0.573,0.427,0.406,0.354,0.323,0.323,
+  0.323,0.25,0.167,0.177,0.156,0.104,0.052,0.083,0.083,0.062,0.052,0.031,0.052];
+
+// stratum edges = quartiles of cumulative revelation, not round numbers
+const STRATA = [
+  { name: 'World',  top: 4.0  },
+  { name: 'Region', top: 6.25 },
+  { name: 'Site',   top: 8.75 },
+  { name: 'Stone',  top: 18   }
+];
+
+const RAIL_K = 2.2;      // how hard the mass integral stretches the axis
+const SNAP_Z = 0.22;     // detent capture radius, in zoom levels
+const RAIL_PX = 400;     // svg viewBox height for the ridge
+const RAIL_PAD = 11;     // px inset at each end so the grip travels inside the track
+
+function revealAt(z) {
+  var i = z * 2, lo = Math.floor(i), hi = Math.ceil(i);
+  if (lo < 0) return REVEAL[0];
+  if (hi > REVEAL.length - 1) return REVEAL[REVEAL.length - 1];
+  var f = i - lo;
+  return REVEAL[lo] * (1 - f) + REVEAL[hi] * f;
+}
+
+// cumulative "mass" from the map's own floor. Rebuilt whenever the floor
+// moves, which is why cinema mode reshapes the rail as well as the map.
+var railTable = null;
+function buildRailTable() {
+  if (typeof map === 'undefined' || !map) return;
+  var z0 = map.getMinZoom(), z1 = map.getMaxZoom(), step = 0.125, t = [], m = 0;
+  for (var z = z0; z <= z1 + 1e-9; z += step) {
+    if (z > z0) m += (1 + RAIL_K * (revealAt(z) + revealAt(z - step)) / 2) * step;
+    t.push([z, m]);
+  }
+  railTable = { t: t, total: m || 1, z0: z0, z1: t[t.length - 1][0] };
+}
+function massOf(z) {
+  if (!railTable) buildRailTable();
+  var t = railTable.t;
+  if (z <= t[0][0]) return 0;
+  if (z >= t[t.length - 1][0]) return railTable.total;
+  for (var i = 1; i < t.length; i++) {
+    if (t[i][0] >= z) {
+      var f = (z - t[i-1][0]) / (t[i][0] - t[i-1][0]);
+      return t[i-1][1] + f * (t[i][1] - t[i-1][1]);
+    }
+  }
+  return railTable.total;
+}
+function zoomOfMass(m) {
+  if (!railTable) buildRailTable();
+  var t = railTable.t;
+  m = Math.max(0, Math.min(railTable.total, m));
+  for (var i = 1; i < t.length; i++) {
+    if (t[i][1] >= m) {
+      var span = t[i][1] - t[i-1][1];
+      var f = span > 0 ? (m - t[i-1][1]) / span : 0;
+      return t[i-1][0] + f * (t[i][0] - t[i-1][0]);
+    }
+  }
+  return railTable.z1;
+}
+// fraction 0 (deepest, top of rail) .. 1 (floor, bottom of rail)
+function fracOfZoom(z) { return 1 - massOf(z) / railTable.total; }
+function zoomOfFrac(f) { return zoomOfMass((1 - f) * railTable.total); }
+
+// One mapping, used by the grip, the detents, the labels, the ridge and the
+// pointer. If these ever disagree the control lies about where it is.
+function railTravel(el) {
+  var h = el.getBoundingClientRect().height;
+  return { top: RAIL_PAD, span: Math.max(1, h - RAIL_PAD * 2), h: h };
+}
+function railPctOfFrac(el, f) {
+  var t = railTravel(el);
+  return ((t.top + f * t.span) / t.h) * 100;
+}
+
+function stratumAt(z) {
+  for (var i = 0; i < STRATA.length; i++) if (z <= STRATA[i].top) return STRATA[i].name;
+  return STRATA[STRATA.length - 1].name;
+}
+
+function railEls() {
+  var r = document.getElementById('depth-rail');
+  if (!r) return null;
+  return { root: r, track: r.querySelector('.dr-track'), grip: r.querySelector('.dr-grip'),
+           clip: r.querySelector('#dr-clip path'), edge: r.querySelector('.dr-edge'),
+           bands: r.querySelector('.dr-bands'), bandDefs: r.querySelector('.dr-ridge defs'),
+           sheen: r.querySelector('.dr-sheen'), strata: r.querySelector('.dr-strata'),
+           readout: r.querySelector('.dr-readout') };
+}
+
+function drawRail() {
+  var e = railEls(); if (!e || typeof map === 'undefined' || !map) return;
+  buildRailTable();
+  var h = Math.max(190, Math.min(280, Math.round(document.getElementById('map').clientHeight * 0.30)));
+  e.track.style.height = h + 'px';
+  e.root.style.height = h + 'px';
+
+  // ridge: width at each point is the measured resistance there
+  var pts = [], N = 64;
+  for (var i = 0; i <= N; i++) {
+    var f = i / N, z = zoomOfFrac(f);
+    var t = railTravel(e.track);
+    pts.push([2 + revealAt(z) * 21, ((t.top + f * t.span) / t.h) * RAIL_PX]);
+  }
+  var d = 'M2,' + pts[0][1].toFixed(1) + ' ' + pts.map(function (p) { return 'L' + p[0].toFixed(2) + ',' + p[1].toFixed(1); }).join(' ') + ' L2,' + pts[pts.length-1][1].toFixed(1) + ' Z';
+  e.clip.setAttribute('d', d);
+  e.edge.setAttribute('d', d);
+
+  // Band stack, painted through the silhouette. Each band fades over its last
+  // 3% into the one below: a hard stack reads as separate objects, a smooth
+  // gradient reads as no structure, and the narrow overlap does both at once.
+  var t = railTravel(e.track), top = (t.top / t.h) * RAIL_PX, span = (t.span / t.h) * RAIL_PX;
+  var defs = '', rects = '';
+  ZAM.forEach(function (b, i) {
+    var y0 = top + b[0] * span, y1 = top + b[1] * span, h = y1 - y0;
+    var gid = 'zb' + i;
+    defs += '<linearGradient id="' + gid + '" x1="0" y1="0" x2="0" y2="1">' +
+            '<stop offset="0" stop-color="' + b[2] + '"/>' +
+            '<stop offset="' + (1 - ZAM_SEAM).toFixed(3) + '" stop-color="' + b[2] + '"/>' +
+            '<stop offset="1" stop-color="' + b[2] + '" stop-opacity="0"/></linearGradient>';
+    rects += '<rect x="0" y="' + y0.toFixed(2) + '" width="30" height="' +
+             (h + (i < ZAM.length - 1 ? h * ZAM_SEAM : 0)).toFixed(2) +
+             '" fill="url(#' + gid + ')"/>';
+  });
+  e.bandDefs.innerHTML = BAND_DEFS_HEAD + defs;
+  e.root.querySelector('#dr-clip path').setAttribute('d', d);
+  e.bands.innerHTML = rects;
+
+  // detents + stratum labels at the measured boundaries
+  Array.prototype.forEach.call(e.track.querySelectorAll('.dr-detent'), function (n) { n.remove(); });
+  e.strata.innerHTML = '';
+  var prev = railTable.z0;
+  STRATA.forEach(function (st, idx) {
+    if (idx < STRATA.length - 1 && st.top > railTable.z0 && st.top < railTable.z1) {
+      var det = document.createElement('div');
+      det.className = 'dr-detent'; det.dataset.z = st.top;
+      det.style.top = railPctOfFrac(e.track, fracOfZoom(st.top)) + '%';
+      e.track.appendChild(det);
+    }
+  });
+  e.root.classList.add('ready');
+  syncRail();
+}
+
+function syncRail() {
+  var e = railEls(); if (!e || !railTable || typeof map === 'undefined' || !map) return;
+  var z = Math.max(railTable.z0, Math.min(railTable.z1, map.getZoom()));
+  var f = fracOfZoom(z);
+  e.grip.style.top = railPctOfFrac(e.track, f) + '%';
+  // the brushed highlight tracks the part: 0 at the top of travel, 1 at the floor
+  e.grip.style.setProperty('--spec', f.toFixed(3));
+  // one light source for the whole instrument: the band sheen rides the grip
+  if (e.sheen) {
+    var t2 = railTravel(e.track);
+    var yc = ((t2.top + f * t2.span) / t2.h) * RAIL_PX;
+    e.sheen.setAttribute('y', (yc - RAIL_PX / 2).toFixed(1));
+  }
+  e.readout.textContent = stratumAt(z);
+  e.root.setAttribute('aria-valuenow', Math.round((1 - f) * 100));
+  e.root.setAttribute('aria-valuetext', stratumAt(z));
+  Array.prototype.forEach.call(e.track.querySelectorAll('.dr-detent'), function (d) {
+    d.classList.toggle('on', Math.abs(z - +d.dataset.z) < SNAP_Z);
+  });
+}
+
+// ---- interaction -------------------------------------------------
+var railDrag = null, railAnim = null;
+
+// The grip is feedback and must never lag. The map is a render and cannot keep
+// up: committing a zoom every pointermove (~19ms) gave the tile layer no window
+// to paint and measured 0% coverage for the whole gesture. So the two are
+// decoupled - the grip tracks the pointer immediately, the map commits at
+// RAIL_COMMIT_MS, which is tuned to the measured tile load time.
+const RAIL_COMMIT_MS = 110;
+var railPending = null, railCommitAt = 0;
+
+function railCommit(force) {
+  if (railPending === null) return;
+  var now = performance.now();
+  if (!force && now - railCommitAt < RAIL_COMMIT_MS) return;
+  railCommitAt = now;
+  var z = railPending; railPending = null;
+  map.setZoom(z, { animate: false });
+}
+
+function railZoomTo(z, animate) {
+  z = Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), z));
+  map.setZoom(z, { animate: !!animate });
+}
+
+function railFracFromEvent(ev, e) {
+  var r = e.track.getBoundingClientRect(), t = railTravel(e.track);
+  return Math.max(0, Math.min(1, (ev.clientY - r.top - t.top) / t.span));
+}
+
+function railPreview(e, f) {
+  // paint the control immediately, independent of the map
+  var z = Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), zoomOfFrac(f)));
+  e.grip.style.top = railPctOfFrac(e.track, f) + '%';
+  e.grip.style.setProperty('--spec', f.toFixed(3));
+  e.readout.textContent = stratumAt(z);
+  if (e.sheen) {
+    var t = railTravel(e.track);
+    e.sheen.setAttribute('y', ((((t.top + f * t.span) / t.h) * RAIL_PX) - RAIL_PX / 2).toFixed(1));
+  }
+  railPending = z;
+  railCommit(false);
+}
+
+function onRailDown(ev) {
+  var e = railEls(); if (!e) return;
+  if (railAnim) { cancelAnimationFrame(railAnim); railAnim = null; }
+  e.root.classList.add('dragging');
+  e.track.setPointerCapture && e.track.setPointerCapture(ev.pointerId);
+  var f = railFracFromEvent(ev, e);
+  railDrag = { samples: [[performance.now(), f]] };
+  railCommitAt = 0;
+  railPreview(e, f);
+  ev.preventDefault();
+}
+
+function onRailMove(ev) {
+  if (!railDrag) return;
+  var e = railEls(); if (!e) return;
+  var f = railFracFromEvent(ev, e);
+  railDrag.samples.push([performance.now(), f]);
+  if (railDrag.samples.length > 6) railDrag.samples.shift();
+  railPreview(e, f);
+  ev.preventDefault();
+}
+
+function onRailUp(ev) {
+  if (!railDrag) return;
+  var e = railEls();
+  if (e) e.root.classList.remove('dragging');
+  var s = railDrag.samples, v = 0;
+  if (s.length >= 2) {
+    var a = s[0], b = s[s.length - 1], dt = b[0] - a[0];
+    if (dt > 0) v = (b[1] - a[1]) / dt;   // rail fractions per ms
+  }
+  railDrag = null;
+  railCommit(true);          // never strand the map behind the grip
+  railCoast(v);
+}
+
+// Momentum. Friction is the measured resistance at the zoom you are
+// passing through, so a flick carries across the empty deep end and
+// dies quickly in the band that is actually revealing sites.
+function railCoast(v) {
+  if (!railTable) return;
+  var last = performance.now();
+  function step(now) {
+    var dt = Math.min(48, now - last); last = now;
+    var z = map.getZoom();
+    var friction = 0.0042 + 0.0125 * revealAt(z);
+    v *= Math.exp(-friction * dt);
+    if (Math.abs(v) < 0.00006) { railCommit(true); railSettle(); return; }
+    var f = Math.max(0, Math.min(1, fracOfZoom(z) + v * dt));
+    var e2 = railEls();
+    if (e2) railPreview(e2, f); else railZoomTo(zoomOfFrac(f), false);
+    if (f <= 0 || f >= 1) { railCommit(true); railSettle(); return; }
+    railAnim = requestAnimationFrame(step);
+  }
+  railAnim = requestAnimationFrame(step);
+}
+
+// Detents catch only if you are already close. They guide; they do not grab.
+function railSettle() {
+  railAnim = null;
+  var z = map.getZoom(), best = null, bd = SNAP_Z;
+  STRATA.forEach(function (st) {
+    if (st.top >= railTable.z1) return;
+    var d = Math.abs(z - st.top);
+    if (d < bd) { bd = d; best = st.top; }
+  });
+  if (best !== null && Math.abs(best - z) > 0.004) {
+    railZoomTo(best, true);
+    var e = railEls();
+    if (e) {
+      e.root.classList.remove('seating');
+      void e.root.offsetWidth;              // restart the animation
+      e.root.classList.add('seating');
+      setTimeout(function () { e.root.classList.remove('seating'); }, 300);
+    }
+  }
+  syncRail();
+}
+
+function onRailKey(ev) {
+  if (typeof map === 'undefined' || !map) return;
+  var z = map.getZoom(), handled = true;
+  if (ev.key === 'ArrowUp')        railZoomTo(z + 0.5, true);
+  else if (ev.key === 'ArrowDown') railZoomTo(z - 0.5, true);
+  else if (ev.key === 'PageUp')    railZoomTo((STRATA.find(function (s) { return s.top > z + 0.01; }) || { top: map.getMaxZoom() }).top, true);
+  else if (ev.key === 'PageDown')  railZoomTo((STRATA.slice().reverse().find(function (s) { return s.top < z - 0.01; }) || { top: map.getMinZoom() }).top, true);
+  else if (ev.key === 'Home')      railZoomTo(map.getMinZoom(), true);
+  else handled = false;
+  if (handled) { ev.preventDefault(); syncRail(); }
+}
+
+// The panel's width is read, not assumed: it is 420px until the viewport is
+// narrow, then it is calc(100vw - 20px). Measuring keeps the rail clear either way.
+function setRailDock(on) {
+  var rail = document.getElementById('depth-rail');
+  if (!rail) return;
+  document.body.classList.toggle('detail-open', !!on);
+  if (on) {
+    var d = document.getElementById('detail');
+    var w = d ? Math.round(d.getBoundingClientRect().width) : 420;
+    rail.style.setProperty('--detail-w', w + 'px');
+  }
+}
+
+function initDepthRail() {
+  var e = railEls(); if (!e || typeof map === 'undefined' || !map) return;
+  e.track.addEventListener('pointerdown', onRailDown);
+  e.track.addEventListener('pointermove', onRailMove);
+  e.track.addEventListener('pointerup', onRailUp);
+  e.track.addEventListener('pointercancel', onRailUp);
+  e.root.addEventListener('keydown', onRailKey);
+  map.on('zoom zoomend', syncRail);
+  map.on('zoomend', function () { if (!railDrag && !railAnim) syncRail(); });
+  window.addEventListener('resize', function () { setTimeout(drawRail, 120); });
+  drawRail();
+}
+
+
+// ============================================================
+// CINEMA MODE
+// The zoom floor is "one whole world, edge to edge" (see worldFitZoom). At that
+// zoom the 340px rail is eating a fifth of the world, so the rail steps aside
+// and the floor is recomputed against the wider box : the world grows to fill
+// it. Zooming back in returns the rail. The chevron overrides either way.
+// ============================================================
+let cinemaSuppressed = false;
+let cinemaResizeTimer = null;
+
+function atZoomFloor() {
+  if (typeof map === 'undefined' || !map) return false;
+  return map.getZoom() <= map.getMinZoom() + 0.02;
+}
+
+// Keep Leaflet's idea of its own size honest while the rail slides, then
+// re-seat the zoom floor once the box has stopped moving.
+function settleAfterRailMove() {
+  if (cinemaResizeTimer) clearInterval(cinemaResizeTimer);
+  const started = Date.now();
+  cinemaResizeTimer = setInterval(() => {
+    if (typeof map !== 'undefined' && map) map.invalidateSize({ animate: false, pan: false });
+    if (Date.now() - started > 680) {
+      clearInterval(cinemaResizeTimer);
+      cinemaResizeTimer = null;
+      refitZoomFloor();
+      drawRail();
+    }
+  }, 40);
+}
+
+function setCinema(on) {
+  if (document.body.classList.contains('cinema') === on) return;
+  document.body.classList.toggle('cinema', on);
+  settleAfterRailMove();
+}
+
+function exitCinema(manual) {
+  if (manual) cinemaSuppressed = true;
+  setCinema(false);
+}
+
+function syncCinema() {
+  if (typeof map === 'undefined' || !map) return;
+  if (document.body.classList.contains('mobile') || document.body.classList.contains('present')) {
+    setCinema(false);
+    return;
+  }
+  if (atZoomFloor()) {
+    if (!cinemaSuppressed) setCinema(true);
+  } else {
+    cinemaSuppressed = false;
+    setCinema(false);
+  }
+}
 window.addEventListener('orientationchange', () => {
   // orientationchange fires before the new dimensions settle — wait a frame
   setTimeout(updateMobileMode, 120);
