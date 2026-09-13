@@ -278,6 +278,15 @@ body.mobile #cinema-exit,body.present #cinema-exit{display:none}
    bands, detents, the stratum name - is still there and still exact, it just
    waits to be touched. An instrument shows you everything; an object shows you
    nothing and is simply correct the moment you put a hand on it. */
+.sb-how{display:flex;align-items:center;gap:8px;width:100%;padding:7px 14px;
+  background:transparent;border:none;cursor:pointer;color:var(--mist);
+  font-family:var(--font-sans);font-size:11px;text-align:left;transition:color .15s}
+.sb-how:hover{color:var(--cloud)}
+.sb-how span[aria-hidden]{width:15px;height:15px;line-height:13px;text-align:center;
+  border:1px solid rgba(138,138,154,.4);border-radius:50%;font-size:9px;flex-shrink:0}
+.sb-how:hover span[aria-hidden]{border-color:rgba(201,168,76,.5);color:var(--champagne)}
+.sb-how:focus{outline:none}
+.sb-how:focus-visible span[aria-hidden]{box-shadow:0 0 0 2px rgba(201,168,76,.5)}
 /* ===== Welcome ===== */
 #welcome{position:fixed;inset:0;z-index:4000;display:flex;align-items:center;justify-content:center;
   padding:24px;opacity:0;transition:opacity .5s ease}
@@ -2120,6 +2129,9 @@ body.present #broadcast-controls{
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.4-9.7-9.4C1.1 8.5 3.2 5 6.5 5c2 0 3.8 1.1 4.5 2.6.8-1.5 2.5-2.6 4.5-2.6 3.3 0 5.4 3.5 4.2 6.6C19.5 16.6 12 21 12 21z"/></svg>
       <span>Support the Atlas</span>
       <span class="sb-support-arrow">→</span>
+    </button>
+    <button class="sb-how" onclick="replayWelcome()" title="How this works">
+      <span aria-hidden="true">?</span><span class="sb-how-lbl">How this works</span>
     </button>
     <a href="contact.html" class="sb-contact" title="Report an error or suggest a site">
       Spot an error? Suggest a site &rarr;
@@ -22595,6 +22607,9 @@ document.addEventListener('keydown', e => {
   if (e.key === 'p' || e.key === 'P') {
     togglePresent();
   }
+  if (e.key === '?') {
+    replayWelcome();
+  }
   // ESC to dismiss callout or close video
   if (e.key === 'Escape') {
     if (activeVideoCard) closeVideo(activeVideoCard);
@@ -23351,6 +23366,24 @@ function maybeShowWelcome() {
   var cap = document.getElementById('wc-cap1');
   if (cap && window.matchMedia && matchMedia('(pointer:coarse)').matches) cap.textContent = 'Tap a pin';
 
+  welcomeReturnFocus = document.activeElement;
+  showWelcome();
+}
+
+// Dismissed means dismissed - it never returns on its own. This is the way
+// back: the ? key, matching the site's existing "press P" idiom, and a quiet
+// control in the rail footer for anyone on a tablet with no keyboard.
+function replayWelcome() {
+  var w = document.getElementById('welcome');
+  if (!w || !w.hidden) return;
+  var cap = document.getElementById('wc-cap1');
+  if (cap && window.matchMedia && matchMedia('(pointer:coarse)').matches) cap.textContent = 'Tap a pin';
+  showWelcome();
+}
+
+function showWelcome() {
+  var w = document.getElementById('welcome');
+  if (!w) return;
   welcomeReturnFocus = document.activeElement;
   w.hidden = false;
   requestAnimationFrame(function () {
