@@ -278,6 +278,86 @@ body.mobile #cinema-exit,body.present #cinema-exit{display:none}
    bands, detents, the stratum name - is still there and still exact, it just
    waits to be touched. An instrument shows you everything; an object shows you
    nothing and is simply correct the moment you put a hand on it. */
+/* ===== Welcome ===== */
+#welcome{position:fixed;inset:0;z-index:4000;display:flex;align-items:center;justify-content:center;
+  padding:24px;opacity:0;transition:opacity .5s ease}
+#welcome.up{opacity:1}
+#welcome[hidden]{display:none}
+.wc-scrim{position:absolute;inset:0;background:rgba(8,8,12,.74);backdrop-filter:blur(3px)}
+.wc-card{position:relative;max-width:760px;width:100%;
+  background:linear-gradient(180deg,#15151C,#101016);
+  border:1px solid rgba(201,168,76,.22);border-radius:18px;
+  padding:38px 40px 32px;text-align:center;
+  box-shadow:0 40px 90px rgba(0,0,0,.7),0 0 0 1px rgba(0,0,0,.5);
+  transform:translateY(10px) scale(.99);transition:transform .5s cubic-bezier(.22,1,.36,1)}
+#welcome.up .wc-card{transform:none}
+.wc-x{position:absolute;top:14px;right:16px;width:28px;height:28px;border:none;border-radius:8px;
+  background:transparent;color:var(--mist);font-size:13px;cursor:pointer;transition:all .15s}
+.wc-x:hover{background:rgba(255,255,255,.06);color:var(--ivory)}
+.wc-kicker{font-family:var(--font-mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--champagne);margin:0 0 14px;opacity:.9}
+.wc-card h2{font-family:var(--font-serif);font-weight:400;font-size:31px;line-height:1.2;
+  margin:0 0 34px;color:var(--ivory);letter-spacing:-.01em}
+.wc-sub{font-size:13.5px;line-height:1.6;color:var(--mist);margin:0 auto 30px;max-width:470px}
+.wc-sub span{color:var(--cloud)}
+.wc-steps{display:flex;gap:18px;justify-content:center;margin-bottom:30px}
+.wc-step{flex:1 1 0;min-width:0;margin:0}
+.wc-step svg{width:100%;height:auto;display:block;border-radius:8px}
+.wc-step figcaption{margin-top:11px;font-size:11.5px;color:var(--cloud);
+  display:flex;align-items:center;justify-content:center;gap:7px}
+.wc-step figcaption b{font-family:var(--font-mono);font-size:9px;font-weight:500;color:var(--champagne);
+  width:16px;height:16px;line-height:16px;border:1px solid rgba(201,168,76,.4);border-radius:50%}
+/* frame internals */
+.wc-ground{fill:#23242A}
+.wc-land{fill:#2E3036}
+.wc-pin{fill:rgba(201,168,76,.38)}
+.wc-pin-hot{fill:#C9A84C}
+.wc-ring{fill:none;stroke:rgba(201,168,76,.55);stroke-width:1.4}
+.wc-cursor{fill:var(--ivory);stroke:#0C0C11;stroke-width:1.6;stroke-linejoin:round}
+.wc-panel{fill:#14141A;stroke:rgba(201,168,76,.2)}
+.wc-bar{fill:rgba(197,197,208,.22)}
+.wc-bar-title{fill:rgba(201,168,76,.55)}
+.wc-arrow{stroke:rgba(201,168,76,.7);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.wc-screen{fill:#0C0C11;stroke:rgba(197,197,208,.14)}
+.wc-play{fill:#C9A84C}
+.wc-track{fill:rgba(197,197,208,.16)}
+/* The three frames share one 4.2s clock and take their turn inside it, so the
+   row reads left to right as a single sequence rather than three things
+   blinking at each other. Each holds its finished state for the rest of the
+   loop, which keeps every frame legible as a still diagram at any moment. */
+.wc-cursor-g,.wc-ring,.wc-slide,.wc-arrow-g,.wc-fill{transform-box:fill-box}
+.wc-cursor-g{transform-origin:50% 50%;animation:wc-press 4.2s ease-in-out infinite}
+@keyframes wc-press{0%,3%{transform:translate(4px,5px)}10%{transform:translate(0,0)}
+  14%{transform:translate(0,2.5px)}20%,100%{transform:translate(0,0)}}
+.wc-ring{animation:wc-tap 4.2s ease-out infinite}
+@keyframes wc-tap{0%,12%{opacity:0;r:6}18%{opacity:.85;r:9}34%{opacity:0;r:17}100%{opacity:0;r:17}}
+.wc-slide{transform-origin:0 0;animation:wc-slide-in 4.2s cubic-bezier(.22,1,.36,1) infinite}
+@keyframes wc-slide-in{0%,30%{transform:translateX(30px);opacity:0}
+  44%,100%{transform:translateX(0);opacity:1}}
+.wc-arrow-g{animation:wc-arrow-in 4.2s ease-out infinite}
+@keyframes wc-arrow-in{0%,26%{opacity:0}36%{opacity:1}82%{opacity:1}100%{opacity:0}}
+.wc-fill{fill:#C9A84C;transform-origin:0 50%;animation:wc-play 4.2s ease-in-out infinite}
+@keyframes wc-play{0%,56%{transform:scaleX(.03)}94%,100%{transform:scaleX(1)}}
+.wc-go{font-family:var(--font-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:600;padding:12px 30px;border-radius:10px;cursor:pointer;
+  background:rgba(201,168,76,.14);border:1px solid rgba(201,168,76,.5);color:var(--champagne);
+  transition:all .18s}
+.wc-go:hover{background:rgba(201,168,76,.24);border-color:var(--champagne);transform:translateY(-1px)}
+.wc-go:focus{outline:none}
+.wc-go:focus-visible{outline:none;box-shadow:0 0 0 1px var(--obsidian),0 0 0 3px rgba(201,168,76,.55)}
+.wc-x:focus{outline:none}
+.wc-x:focus-visible{outline:none;box-shadow:0 0 0 2px rgba(201,168,76,.5)}
+@media (max-width:680px){
+  .wc-card{padding:30px 22px 26px}
+  .wc-card h2{font-size:22px}
+  .wc-steps{flex-direction:column;gap:16px;max-width:260px;margin:0 auto 26px}
+}
+@media (prefers-reduced-motion:reduce){
+  .wc-fill,.wc-ring,.wc-cursor-g,.wc-slide,.wc-arrow-g{animation:none}
+  .wc-fill{transform:scaleX(1)}
+  .wc-slide,.wc-arrow-g{opacity:1;transform:none}
+  #welcome,.wc-card{transition:none}
+}
 #depth-rail{position:absolute;right:22px;top:50%;z-index:615;
   --dock:0px;
   transform:translateY(-50%) translateX(var(--dock));
@@ -583,15 +663,6 @@ body.climate-mode .zoom-hint{display:none!important}
 .cr-tier:first-of-type .cr-tier-header{margin-top:8px;border-top:none;padding-top:8px}
 .cr-tier-label{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--champagne);font-weight:700;margin-bottom:4px}
 .cr-tier-note{font-size:11px;color:var(--mist);font-style:italic;line-height:1.5}
-.cr-fold-body{display:none}
-.cr-fold-body.open{display:block}
-.cr-fold-sum{display:flex;align-items:center;justify-content:space-between;width:100%;
-  padding:6px 10px;border:1px solid transparent;border-radius:8px;background:transparent;
-  color:var(--mist);font-family:var(--font-sans);font-size:10.5px;cursor:pointer;
-  transition:background .15s,color .15s}
-.cr-fold-sum:hover{background:rgba(30,30,40,.6);color:var(--cloud)}
-.cr-fold-chev{transition:transform .2s;font-size:13px;line-height:1}
-.cr-fold-sum[aria-expanded="true"] .cr-fold-chev{transform:rotate(90deg)}
 .cr-mini-all{display:flex;align-items:center;justify-content:center;gap:6px;padding:7px 10px;margin-top:6px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.28);border-radius:8px;color:var(--champagne);font-family:var(--font-mono);font-size:9px;text-transform:uppercase;letter-spacing:.1em;cursor:pointer;transition:all .15s;width:100%;font-weight:600}
 .cr-mini-all:hover{background:rgba(201,168,76,.16);border-color:var(--champagne);transform:translateY(-1px)}
 
@@ -1941,6 +2012,74 @@ body.present #broadcast-controls{
     
   </div>
 </header>
+<!-- ============================================================
+     WELCOME
+     One sheet, three frames, one way out. IKEA puts the whole assembly on a
+     single sheet rather than a carousel you click through, and the frames
+     carry the meaning so the words can stay short enough to skip.
+     It teaches exactly one thing - that a pin opens a walkthrough and the
+     walkthrough plays here - because that is the only part of this interface
+     nobody can guess. Everyone already knows how a map works.
+     Shown once. Dismissable four ways. Numbers come from the data.
+     ============================================================ -->
+<div id="welcome" hidden>
+  <div class="wc-scrim" onclick="closeWelcome()"></div>
+  <div class="wc-card" role="dialog" aria-modal="true" aria-labelledby="wc-title">
+    <button class="wc-x" onclick="closeWelcome()" aria-label="Close and open the map">&#10005;</button>
+    <p class="wc-kicker">The Ancient Atlas</p>
+    <h2 id="wc-title">Curious what&rsquo;s actually out there?</h2>
+
+    <div class="wc-steps">
+      <figure class="wc-step">
+        <svg viewBox="0 0 200 132" aria-hidden="true">
+          <rect class="wc-ground" x="0" y="0" width="200" height="132" rx="7"/>
+          <path class="wc-land" d="M14 96 C40 78 58 88 76 74 C96 58 118 66 140 52 C158 41 178 46 190 38 L190 132 L14 132 Z"/>
+          <circle class="wc-pin" cx="72" cy="62" r="3.4"/><circle class="wc-pin" cx="128" cy="86" r="3.4"/>
+          <circle class="wc-pin" cx="156" cy="54" r="3.4"/><circle class="wc-pin" cx="44" cy="80" r="3.4"/>
+          <circle class="wc-pin-hot" cx="100" cy="52" r="6"/>
+          <circle class="wc-ring" cx="100" cy="52" r="12"/>
+          <g class="wc-cursor-g"><path class="wc-cursor" d="M104 60 L104 86 L110.5 79.5 L115 89 L119.5 87 L115 77.5 L124 77 Z"/></g>
+        </svg>
+        <figcaption><b>1</b><span id="wc-cap1">Click a pin</span></figcaption>
+      </figure>
+
+      <figure class="wc-step">
+        <svg viewBox="0 0 200 132" aria-hidden="true">
+          <rect class="wc-ground" x="0" y="0" width="200" height="132" rx="7"/>
+          <path class="wc-land" d="M10 96 C30 80 44 88 58 76 C72 63 88 68 104 58 L104 132 L10 132 Z"/>
+          <circle class="wc-pin-hot" cx="78" cy="56" r="5"/>
+          <g class="wc-slide">
+            <rect class="wc-panel" x="112" y="8" width="80" height="116" rx="6"/>
+            <rect class="wc-bar wc-bar-title" x="122" y="22" width="46" height="7" rx="3"/>
+            <rect class="wc-bar" x="122" y="38" width="60" height="4" rx="2"/>
+            <rect class="wc-bar" x="122" y="47" width="52" height="4" rx="2"/>
+            <rect class="wc-bar" x="122" y="56" width="58" height="4" rx="2"/>
+          </g>
+          <g class="wc-arrow-g">
+            <path class="wc-arrow" d="M96 66 L110 66"/><path class="wc-arrow" d="M105 61 L110 66 L105 71"/>
+          </g>
+        </svg>
+        <figcaption><b>2</b>It opens</figcaption>
+      </figure>
+
+      <figure class="wc-step">
+        <svg viewBox="0 0 200 132" aria-hidden="true">
+          <rect class="wc-ground" x="0" y="0" width="200" height="132" rx="7"/>
+          <rect class="wc-panel" x="16" y="8" width="168" height="116" rx="6"/>
+          <rect class="wc-screen" x="28" y="20" width="144" height="66" rx="4"/>
+          <path class="wc-play" d="M92 42 L112 53 L92 64 Z"/>
+          <rect class="wc-track" x="28" y="94" width="144" height="4" rx="2"/>
+          <rect class="wc-fill" x="28" y="94" width="144" height="4" rx="2"/>
+          <rect class="wc-bar" x="28" y="108" width="86" height="4" rx="2"/>
+        </svg>
+        <figcaption><b>3</b>It plays here</figcaption>
+      </figure>
+    </div>
+
+    <button class="wc-go" onclick="closeWelcome()">Open the map</button>
+  </div>
+</div>
+
 <main>
   <div id="sidebar">
     <div id="sidebar-controls">
@@ -1949,11 +2088,20 @@ body.present #broadcast-controls{
         <input type="text" id="search" placeholder="Search ancient sites, regions, eras..." autocomplete="off" />
         <div class="search-suggestions" id="search-suggestions"></div>
       </div>
-      <!-- Place and type lead. A newcomer does not know who anyone is yet, so
-           asking them to pick a creator first is asking the data model's
-           question rather than theirs. Creators keep their whole section, just
-           below the fold, reached by the same See all that always opened the
-           Hub. Measured: this is where 45 of 66 above-fold targets lived. -->
+      <!-- Creators lead. An earlier pass moved them below Where and Type and
+           folded the list away, on the reasoning that a newcomer does not know
+           who anyone is yet. That reasoning is sound and it was still wrong:
+           the creators are what this atlas is celebrating, and burying the
+           people whose footage the whole thing is built from to save three
+           above-fold targets is optimising the measurement instead of the
+           point. The header cuts did most of that work anyway. -->
+      <div class="sb-section sb-section-creators">
+        <span class="sb-section-label">Creators</span>
+        <span class="sb-creators-count" id="sb-creators-count">17 voices</span>
+        <span class="sb-section-rule"></span>
+        <button class="sb-see-all" onclick="openCreators()" title="View all creators in the Hub">See all <span class="sb-see-all-arrow">↗</span></button>
+      </div>
+      <div id="creator-mini-list"></div>
       <div class="sb-section">Where</div>
       <div id="region-filters"></div>
       <div id="country-filters"></div>
@@ -1965,13 +2113,6 @@ body.present #broadcast-controls{
       <div id="toggle-filters"></div>
       <div class="sb-section">View</div>
       <div id="view-filters"></div>
-      <div class="sb-section sb-section-creators">
-        <span class="sb-section-label">Creators</span>
-        <span class="sb-creators-count" id="sb-creators-count">17 voices</span>
-        <span class="sb-section-rule"></span>
-        <button class="sb-see-all" onclick="openCreators()" title="View all creators in the Hub">See all <span class="sb-see-all-arrow">↗</span></button>
-      </div>
-      <div id="creator-mini-list"></div>
     </div>
     <div class="sidebar-count" id="sidebar-count"></div>
     <div id="site-list"></div>
@@ -20031,6 +20172,7 @@ function init() {
   // Rail steps aside at the zoom floor : see CINEMA MODE below.
   map.on('zoomend', syncCinema);
   setTimeout(initDepthRail, 300);
+  setTimeout(maybeShowWelcome, 650);
 
   // Voyager color tiles in a dedicated pane, heavily desaturated and tinted
   // navy for a moonlit-Milky-Way feel : modern infrastructure recedes to faint
@@ -21167,13 +21309,6 @@ function toneCreators() {
   _creatorsToned = true;
 }
 
-function toggleCreatorFold(btn) {
-  var body = document.getElementById('cr-fold-body');
-  if (!body) return;
-  var open = body.classList.toggle('open');
-  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-}
-
 function getCreatorStats() {
   const stats = {};
   Object.keys(CREATORS).forEach(k => { stats[k] = { sites: new Map(), videos: [] }; });
@@ -21211,14 +21346,7 @@ function renderSidebarCreators() {
       <span class="cr-mini-count">${count}</span>
     </button>`;
   }).join('');
-  // <details> will not hold these closed: .cr-mini sets display:flex and an
-  // author rule beats the UA's hiding of a closed details' children. Explicit
-  // toggle instead.
-  wrap.innerHTML =
-    `<button class="cr-fold-sum" aria-expanded="false" aria-controls="cr-fold-body" onclick="toggleCreatorFold(this)">` +
-      `<span>Top ${tier1.length} by coverage</span><span class="cr-fold-chev">\u203A</span>` +
-    `</button>` +
-    `<div class="cr-fold-body" id="cr-fold-body">${rows}</div>` +
+  wrap.innerHTML = rows +
     `<button class="cr-mini-all" onclick="openCreators()">View all ${totalCount} creators \u2192</button>`;
 }
 
@@ -23154,6 +23282,84 @@ function refitZoomFloor() {
   if (Math.abs(z - map.getMinZoom()) > 0.01) map.setMinZoom(z);
 }
 window.addEventListener('resize', refitZoomFloor);
+
+// ============================================================
+// WELCOME
+// Shown once. Suppressed for anyone arriving at a specific place by link,
+// because they already asked a question and a lesson is an interruption.
+// Storage is wrapped: Safari private mode throws on write rather than
+// no-opping, and a thrown error here would take the rest of init with it.
+// ============================================================
+const WELCOME_KEY = 'aa_welcomeSeen_v1';
+var welcomeReturnFocus = null;
+
+function welcomeSeen() {
+  try { return localStorage.getItem(WELCOME_KEY) === '1'; } catch (e) { return false; }
+}
+function markWelcomeSeen() {
+  try { localStorage.setItem(WELCOME_KEY, '1'); } catch (e) {}
+}
+
+function closeWelcome() {
+  var w = document.getElementById('welcome');
+  if (!w || w.hidden) return;
+  markWelcomeSeen();
+  w.classList.remove('up');
+  document.removeEventListener('keydown', welcomeKey);
+  setTimeout(function () {
+    w.hidden = true;
+    var back = welcomeReturnFocus && document.body.contains(welcomeReturnFocus)
+      ? welcomeReturnFocus : document.getElementById('search');
+    if (back && back.focus) back.focus({ preventScroll: true });
+    welcomeReturnFocus = null;
+  }, 420);
+}
+
+// aria-modal is a promise about where the keyboard can go, so keep it:
+// Escape leaves, and Tab cycles inside the card instead of wandering into
+// the map behind it.
+function welcomeKey(ev) {
+  if (ev.key === 'Escape') { closeWelcome(); return; }
+  if (ev.key !== 'Tab') return;
+  var card = document.querySelector('#welcome .wc-card');
+  if (!card) return;
+  var f = card.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+  if (!f.length) return;
+  var first = f[0], last = f[f.length - 1];
+  if (ev.shiftKey && document.activeElement === first) { ev.preventDefault(); last.focus(); }
+  else if (!ev.shiftKey && document.activeElement === last) { ev.preventDefault(); first.focus(); }
+  else if (!card.contains(document.activeElement)) { ev.preventDefault(); first.focus(); }
+}
+
+function maybeShowWelcome() {
+  var w = document.getElementById('welcome');
+  if (!w) return;
+  // a deep link is a question already asked; do not answer a different one
+  if (welcomeSeen() || location.hash.length > 1 || location.search.length > 1) return;
+  if (document.body.classList.contains('present')) return;
+
+  // A question rather than a claim. A statement asks to be believed; a
+  // question hands the reason back to the reader, and this audience's reason
+  // is that they want to check for themselves. The three frames are the
+  // answer, which is why they can stay almost wordless.
+  //
+  // No counts here by choice. An early draft read "619 places. Someone stood
+  // at every one." - which is not true: 495 of the 619 have a walkthrough.
+  // The header carries the numbers; this carries the idea.
+
+  // the instruction has to match the hand the reader actually has
+  var cap = document.getElementById('wc-cap1');
+  if (cap && window.matchMedia && matchMedia('(pointer:coarse)').matches) cap.textContent = 'Tap a pin';
+
+  welcomeReturnFocus = document.activeElement;
+  w.hidden = false;
+  requestAnimationFrame(function () {
+    w.classList.add('up');
+    var go = w.querySelector('.wc-go');
+    if (go) go.focus({ preventScroll: true });
+  });
+  document.addEventListener('keydown', welcomeKey);
+}
 
 // ============================================================
 // DEPTH RAIL  -  a zoom axis weighted by what the atlas reveals
