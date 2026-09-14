@@ -7823,5 +7823,19 @@
       "polygonal"
     ],
     "desc": "Terraced complex on Colle delle Monache above Fondi in southern Lazio, now occupied by Villa Placitelli. A dry-laid polygonal limestone terrace of roughly 64 by 79 m survives up to 4.5 m high, with four barrel-vaulted underground cisterns and the remains of a three-apsed building; in the plain below beside the Via Appia runs the 153 m reticulate Muro Varroniano. Construction technique places it in the late Republican period. Nineteenth and twentieth century scholars proposed it as a sanctuary of Isis on the strength of sculptural finds, an attribution the regional park itself records as lacking definitive confirmation. Same limestone massif, and the same polygonal tradition, as Norba and Alatri."
+  },
+  {
+    "n": "Medamud",
+    "lat": 25.7343,
+    "lng": 32.7099,
+    "cat": "temple",
+    "region": "Egypt",
+    "tier": 3,
+    "signal": "open",
+    "criteria": [
+      "stratigraphy",
+      "scale"
+    ],
+    "desc": "Temple of Montu at Nag el-Madamud, 8 km east-north-east of Luxor, ancient Madu. Montu was the falcon war god of the Theban nome and the dynastic deity of the 11th Dynasty — four of its kings were named Mentuhotep, 'Montu is satisfied' — before Amun displaced him at Karnak. What makes the site worth the ride out is what is under it. Fernand Bisson de la Roque, excavating for the IFAO from 1925, found a walled temple of the late Old Kingdom or First Intermediate Period lying complete beneath the present one : two pylons set one behind the other, and past them a double cave sanctuary whose underground chambers were marked at the surface by mounds of earth, which he read as primeval mounds. The 12th Dynasty levelled that and rebuilt at much larger scale; work continued through the Second Intermediate Period and the New Kingdom, of which mostly inscriptions survive, and on into the Ptolemaic and Roman temples of Montu, Harpocrates and Raet-Tawy that stand today. The two monumental Ptolemaic gateways, of Ptolemy III and Ptolemy IV, were excavated by Alexandre Varille in 1939 and are now in the Musée des Beaux-Arts de Lyon. Conventional reading : an ordinary provincial cult centre, continuously rebuilt for some two and a half thousand years, of interest mainly for the Middle Kingdom statuary it produced. Independent reading : the earliest phase is the one that resists. A cave sanctuary marked by artificial mounds is not standard Old Kingdom temple vocabulary, the phase is known almost entirely from one excavator's reading of it, and the dating of that substructure has been argued back and forth between the Old and Middle Kingdoms ever since. The site is still partly buried and under active excavation, so the sequence is not closed."
   }
 ]

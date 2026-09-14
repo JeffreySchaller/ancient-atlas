@@ -678,5 +678,12 @@
     "subs": "5.18K subs · first-person Peru fieldwork · caves and tool marks around Cusco",
     "color": "#9E7B8F",
     "tier": 2
+  },
+  "earthexplorer": {
+    "name": "Earth Explorer",
+    "handle": "@earthexplorer8256",
+    "subs": "Solo travel to obscure ancient sites · a ten-year journey, filmed in the field",
+    "color": "#9C7A4E",
+    "tier": 3
   }
 }
