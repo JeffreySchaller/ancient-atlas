@@ -356,10 +356,24 @@ body.mobile #cinema-exit,body.present #cinema-exit{display:none}
 .wc-go:focus-visible{outline:none;box-shadow:0 0 0 1px var(--obsidian),0 0 0 3px rgba(201,168,76,.55)}
 .wc-x:focus{outline:none}
 .wc-x:focus-visible{outline:none;box-shadow:0 0 0 2px rgba(201,168,76,.5)}
-@media (max-width:680px){
-  .wc-card{padding:30px 22px 26px}
-  .wc-card h2{font-size:22px}
-  .wc-steps{flex-direction:column;gap:16px;max-width:260px;margin:0 auto 26px}
+/* Stacking the three frames turned a one-sheet diagram into a scroll: measured
+   860px of card in a 667px iPhone SE viewport, with the top 96px cut off above
+   the screen and the headline unreachable. They stay in a row and shrink -
+   they are diagrams, they read small - and the card is capped to the viewport
+   with its own scroll as a last resort rather than silently overflowing. */
+@media (max-width:820px){
+  .wc-card{padding:26px 20px 22px;max-height:calc(100vh - 32px);overflow-y:auto}
+  .wc-card h2{font-size:21px;margin-bottom:24px}
+  .wc-kicker{margin-bottom:10px}
+  .wc-steps{gap:10px;margin-bottom:22px}
+  .wc-step figcaption{margin-top:8px;font-size:10px;gap:5px}
+  .wc-step figcaption b{width:14px;height:14px;line-height:14px;font-size:8px}
+  .wc-go{padding:11px 24px}
+}
+@media (max-height:560px){
+  .wc-card{padding:18px 20px 16px;max-height:calc(100vh - 20px);overflow-y:auto}
+  .wc-card h2{font-size:18px;margin-bottom:16px}
+  .wc-steps{margin-bottom:16px}
 }
 @media (prefers-reduced-motion:reduce){
   .wc-fill,.wc-ring,.wc-cursor-g,.wc-slide,.wc-arrow-g{animation:none}
@@ -20184,7 +20198,7 @@ function init() {
   // Rail steps aside at the zoom floor : see CINEMA MODE below.
   map.on('zoomend', syncCinema);
   setTimeout(initDepthRail, 300);
-  setTimeout(maybeShowWelcome, 650);
+  setTimeout(scheduleWelcome, 650);
 
   // Voyager color tiles in a dedicated pane, heavily desaturated and tinted
   // navy for a moonlit-Milky-Way feel : modern infrastructure recedes to faint
@@ -23308,6 +23322,14 @@ window.addEventListener('resize', refitZoomFloor);
 const WELCOME_KEY = 'aa_welcomeSeen_v1';
 var welcomeReturnFocus = null;
 
+function mapIsOnScreen() {
+  var mw = document.getElementById('map-wrap');
+  if (!mw) return false;
+  if (getComputedStyle(mw).display === 'none') return false;
+  var m = document.getElementById('map');
+  return !!(m && m.clientWidth > 0);
+}
+
 function welcomeSeen() {
   try { return localStorage.getItem(WELCOME_KEY) === '1'; } catch (e) { return false; }
 }
@@ -23348,10 +23370,20 @@ function welcomeKey(ev) {
 
 function maybeShowWelcome() {
   var w = document.getElementById('welcome');
-  if (!w) return;
+  if (!w) return true;
   // a deep link is a question already asked; do not answer a different one
-  if (welcomeSeen() || location.hash.length > 1 || location.search.length > 1) return;
-  if (document.body.classList.contains('present')) return;
+  if (welcomeSeen() || location.hash.length > 1 || location.search.length > 1) return true;
+  if (document.body.classList.contains('present')) return true;
+
+  // The card teaches one thing: a pin opens a walkthrough and it plays here.
+  // In portrait there is no map and no rail - #map-wrap is display:none and the
+  // page renders the mobile feed instead - so every frame would be describing
+  // an interface the reader will never see, stacked as a third instruction on
+  // top of the two banners that layout already carries. Gate on the map being
+  // present rather than on a width, so this stays correct if the breakpoints
+  // move. Deliberately does NOT mark the card as seen: rotate into landscape,
+  // the map appears, and the lesson becomes true and gets shown.
+  if (!mapIsOnScreen()) return false;
 
   // A question rather than a claim. A statement asks to be believed; a
   // question hands the reason back to the reader, and this audience's reason
@@ -23368,6 +23400,23 @@ function maybeShowWelcome() {
 
   welcomeReturnFocus = document.activeElement;
   showWelcome();
+  return true;
+}
+
+// The map is not laid out yet when init finishes, so a single check answered
+// "no map" for every desktop visitor and then never asked again. Poll briefly,
+// and listen for the rotation that turns a feed into a map, since portrait
+// leaves the card unseen rather than spent.
+function scheduleWelcome() {
+  var tries = 0;
+  (function attempt() {
+    if (maybeShowWelcome() === true) return;
+    if (++tries > 12) return;            // about 5s, then stop asking
+    setTimeout(attempt, 400);
+  })();
+  window.addEventListener('orientationchange', function () {
+    setTimeout(maybeShowWelcome, 500);
+  });
 }
 
 // Dismissed means dismissed - it never returns on its own. This is the way
@@ -23376,6 +23425,7 @@ function maybeShowWelcome() {
 function replayWelcome() {
   var w = document.getElementById('welcome');
   if (!w || !w.hidden) return;
+  if (!mapIsOnScreen()) return;
   var cap = document.getElementById('wc-cap1');
   if (cap && window.matchMedia && matchMedia('(pointer:coarse)').matches) cap.textContent = 'Tap a pin';
   showWelcome();
