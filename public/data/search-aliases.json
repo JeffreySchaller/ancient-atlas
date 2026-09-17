@@ -11,5 +11,9 @@
   "rock cut": "rock-cut carved monolithic",
   "underground": "subterranean tunnel cave",
   "stone circle": "megalithic henge",
-  "pyramid": "ziggurat tomb"
+  "pyramid": "ziggurat tomb",
+  "tonala": "iglesia vieja chiapas zoque",
+  "tonalá": "iglesia vieja chiapas zoque",
+  "ruinas de tonala": "iglesia vieja chiapas zoque",
+  "ruinas de tonalá": "iglesia vieja chiapas zoque"
 }

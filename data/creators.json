@@ -685,5 +685,12 @@
     "subs": "Solo travel to obscure ancient sites · a ten-year journey, filmed in the field",
     "color": "#9C7A4E",
     "tier": 3
+  },
+  "arxproject": {
+    "name": "The ARX Project",
+    "handle": "@arxprojectmx",
+    "subs": "Mesoamerican origins · bilingual field investigations across Mexico",
+    "color": "#6E8C7A",
+    "tier": 3
   }
 }
