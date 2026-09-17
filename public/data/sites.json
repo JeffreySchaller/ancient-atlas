@@ -7876,5 +7876,73 @@
       "precision"
     ],
     "desc": "Three granite boulders on the piedmont about a kilometre west of the Río Pijijiapan, where the first foothills of the Sierra Madre meet the Chiapas coastal plain. Each is carved on its smoothest face, and the technique is consistent across all three : the ground around each figure was lowered by one to three centimetres to leave the silhouette standing, then the detail was cut in as incision. Apart from a single small mound there is nothing here — no settlement, no platforms, just the stones in the broken ground. Carlos Navarrete published the corpus for the New World Archaeological Foundation, and dated it by comparison with the Cuadros and Jocotal ceramic phases at Salinas La Blanca on the Guatemalan Pacific coast, now placed at 1200-850 BCE. Conventional reading : Olmec-style relief on the Pacific route, contemporary with the heartland centres on the Gulf and part of the same vocabulary as the boulder carvings at San Lorenzo, La Venta and Chalcatzingo. The interest is in the position rather than the puzzle. This is Olmec work 400 km from the Gulf heartland, sited on no settlement at all, on the corridor that runs down the Pacific plain toward Guatemala — the stones are a statement made on a road, not at a capital, which is a different kind of evidence about how far that culture's reach actually ran."
+  },
+  {
+    "n": "Izapa",
+    "lat": 14.9234,
+    "lng": -92.1798,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "criteria": [
+      "scale",
+      "geometry"
+    ],
+    "desc": "Large Formative centre in the Soconusco of Chiapas, at the foot of Volcán Tacaná, running about 1.5 km north to south with 161 mapped mounds, six major plazas and roughly 250,000 cubic metres of architecture. The whole layout is set 21 degrees east of true north. Occupied from about 1500 BCE by Mixe-Zoquean groups — the same language family as the builders of Iglesia Vieja up the coast, and the family most often connected to the Olmec — with its apogee between roughly 500 BCE and 100 CE and occupation continuing to about 1200 CE. Its carved stelae are dense enough that they named a tradition : the Izapan style turns up along the Pacific piedmont and into the highlands at Takalik Abaj and Kaminaljuyu, and sits chronologically and iconographically between Olmec and Maya. Stela 5, the so-called Tree of Life stone, carries a crowded scene that has been argued over for seventy years; a 1950s reading by M. Wells Jakeman took it as a depiction of a Book of Mormon narrative, which Mesoamerican archaeology has not accepted, while the stone itself remains genuinely difficult and genuinely important."
+  },
+  {
+    "n": "Piedras Negras",
+    "lat": 17.1684,
+    "lng": -91.2618,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 2,
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Yo'k'ib', the great entrance : the largest Maya city of the Usumacinta basin, on the river's bank inside what is now the Sierra del Lacandón national park in Petén. Ceramics put occupation from about 700 BCE, and the city reached its extent and its power between 450 and 810 CE, with a long documented rivalry across the river with Yaxchilán. Its importance to the field is out of proportion even to its size. Piedras Negras produced an unusually large body of dated sculpture, and it was on those stelae that Tatiana Proskouriakoff showed the inscriptions were recording the births, accessions and deaths of actual rulers — the step that turned Maya writing from ornament and calendar into history, and the foundation everything since has been built on. The site is remote enough that it has stayed largely unrestored."
+  },
+  {
+    "n": "Río Bec",
+    "lat": 18.3793,
+    "lng": -89.3585,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 3,
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "Maya site in southern Campeche — not Petén, despite how it is often billed — that gave its name to an entire architectural style. The Río Bec façade is architecture built as illusion. Two solid masonry towers flank a long range building; the stairways up their faces are a motif rather than stairs, too steep to climb and leading nowhere; the temples on top are solid masses with no rooms inside; the doorways are niches cut to look like doors. The towers narrow as they rise to fake greater height. The style appears in the 7th century and runs into the early 12th, spreading to neighbouring sites and sitting close to the Chenes style to its northwest. Teoberto Maler mentioned the place at the end of the 19th century without ever going there; Maurice de Périgny was the first European to reach and report it, and it was effectively lost again until 1912. A CNRS team under Dominique Michelet has been mapping and excavating the groups since the 2000s. Much of it remains unrestored, which is most of its appeal."
+  },
+  {
+    "n": "San Miguel Ixtapan",
+    "lat": 18.8075,
+    "lng": -100.1553,
+    "cat": "megalithic",
+    "region": "Central America",
+    "tier": 3,
+    "criteria": [
+      "precision",
+      "geometry"
+    ],
+    "desc": "Ceremonial centre in the Tierra Caliente of the State of México, in the municipality of Tejupilco, in a part of the country that has barely been surveyed. Four occupation stages are recognised : Late Classic 500-700 CE, an Epiclassic apogee 750-900 during Teotihuacán's decline, Early Postclassic reuse and modification 900-1200, then abandonment and a Mexica return. The ball court is a double-T, about 50 m by 7.5 m, with a great many richly furnished burials along its south side, and a carved stone maquette of the site was found here in 1958 — excavation did not begin until 1985. The name is Nahuatl for the place of salt, and the salt is still worked : hundreds of monolithic evaporation pans are cut straight into the banks of the Aquiagua and San Felipe rivers and remain in use. What draws attention now is a corpus of carved megalithic slabs recovered from ranches around the village and at San Francisco Los Nopales a few kilometres away, more than a dozen documented so far, one of them three tons and one sitting on what appears to be a buried pyramidal structure. The films argue the precision of their geometric carving has no Mesoamerican parallel and resembles Tiwanaku work in Bolivia. That comparison is theirs and rests on visual similarity; no contact is established. The slabs themselves are real, unexplained in style, and being rescued one at a time from farmland."
+  },
+  {
+    "n": "Teotitlán del Valle",
+    "lat": 17.0292,
+    "lng": -96.52,
+    "cat": "settlement",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Zapotec town in the Tlacolula valley, 31 km from Oaxaca at the foot of the Sierra Juárez, known in Zapotec as Xaguixe, the place at the foot of the mountain, and known to everyone else for the wool rugs woven here on hand looms. It is one of the earliest Zapotec foundations in the valley and has kept its language. The reason it is in the atlas is that nobody yet knows what is underneath it. From 2025 a UNAM geophysics team working under INAH has been running ground-penetrating radar and electrical resistivity tomography across the municipal square, the churchyard and the nave of the church itself, looking for the subterranean layout of the Zapotec centre the living town sits on. This is open work with nothing published. The record is here for the question, not for an answer."
+  },
+  {
+    "n": "Valle de Bravo Petroglyphs",
+    "lat": 19.1961,
+    "lng": -100.1558,
+    "cat": "monolithic",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Carvings in the bed of the Presa Miguel Alemán in the State of México, a reservoir that drowned the valley in 1947. After months of drought in early 2024 the water fell far enough to expose dozens of them for the first time in decades : scale models of pyramids and ceremonial staircases cut into the rock, along with what have been read as astronomical markers, abstract symbols and figures. A Teotihuacán-era date, somewhere in the range 200 BCE to 700 CE, has been proposed for them; it is a proposal rather than a finding. The site's difficulty is its own : it is only visible when the reservoir drops, which is exactly why so little work has been done on it, and why an ordinary drought year is also the only research window."
   }
 ]
