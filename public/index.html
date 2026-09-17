@@ -20196,11 +20196,38 @@ function buildFuseIndex() {
   });
 }
 
-// Expand a query through the synonym dictionary (rung 6)
-function expandQuery(q) {
+// Expand a query through the synonym dictionary (rung 6).
+//
+// Returns a LIST of patterns, not one concatenated string, and that is the
+// whole point. Fuse matches a pattern against one field at a time, so gluing
+// the synonyms onto the query makes the pattern harder to satisfy rather than
+// easier - the expansion was destroying results instead of broadening them.
+// Measured against the live index before this change:
+//
+//     query          bare    expanded
+//     pyramid          76           0
+//     andean          307           0
+//     stone circle     80           5
+//     underground      94           4
+//     mesopotamia       5           1
+//
+// Someone typing "pyramid" into an atlas of 623 ancient sites got nothing at
+// all. The caller now searches each term separately and unions the results by
+// best score, so a synonym can only ever add matches.
+//
+// The query as typed stays one pattern - splitting it would turn a deliberate
+// two-word search like "tonala chiapas" into two loose ones. Only the alias
+// VALUE is split.
+function queryTerms(q) {
   const lower = q.toLowerCase().trim();
-  if (SEARCH_ALIASES[lower]) return lower + ' ' + SEARCH_ALIASES[lower];
-  return lower;
+  const terms = [lower];
+  const alias = SEARCH_ALIASES[lower];
+  if (alias) {
+    for (const t of alias.split(/\s+/)) {
+      if (t.length >= 2 && terms.indexOf(t) === -1) terms.push(t);
+    }
+  }
+  return terms;
 }
 
 // ============================================================
@@ -20946,7 +20973,7 @@ function getFiltered() {
 
   // If search is active, use Fuse.js fuzzy ranking against the filtered pool
   if (searchTerm && searchTerm.length >= 1 && fuseIndex) {
-    const expanded = expandQuery(searchTerm);
+    const terms = queryTerms(searchTerm);
     // Re-build a Fuse instance scoped to the current pool so filter combinations work
     const scoped = new Fuse(pool, fuseIndex.options || {
       keys: [
@@ -20963,7 +20990,17 @@ function getFiltered() {
       minMatchCharLength: 2,
       includeScore: true
     });
-    return scoped.search(expanded).map(r => r.item);
+    // union across terms, each site keeping its best (lowest) Fuse score
+    const best = new Map();
+    for (const t of terms) {
+      for (const r of scoped.search(t)) {
+        const prev = best.get(r.item);
+        if (prev === undefined || r.score < prev) best.set(r.item, r.score);
+      }
+    }
+    return Array.from(best.entries())
+                .sort((a, b) => a[1] - b[1])
+                .map(e => e[0]);
   }
 
   return pool;
