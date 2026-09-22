@@ -7944,5 +7944,41 @@
     "region": "Central America",
     "tier": 3,
     "desc": "Carvings in the bed of the Presa Miguel Alemán in the State of México, a reservoir that drowned the valley in 1947. After months of drought in early 2024 the water fell far enough to expose dozens of them for the first time in decades : scale models of pyramids and ceremonial staircases cut into the rock, along with what have been read as astronomical markers, abstract symbols and figures. A Teotihuacán-era date, somewhere in the range 200 BCE to 700 CE, has been proposed for them; it is a proposal rather than a finding. The site's difficulty is its own : it is only visible when the reservoir drops, which is exactly why so little work has been done on it, and why an ordinary drought year is also the only research window."
+  },
+  {
+    "n": "Eastern Han Cliff Tombs (Sichuan)",
+    "lat": 28.82,
+    "lng": 105.9849,
+    "cat": "tomb",
+    "region": "Asia",
+    "tier": 3,
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Location approximate. The film does not say where this is, so the pin sits on the Hejiang cliff-tomb group in Luzhou — the creator's home prefecture — which is a documented Eastern Han complex of the same kind; the actual group may be elsewhere in Sichuan. What the film shows is a cliff-tomb cemetery cut some 1,800 years ago into the rock of a Sichuan mountainside, the chambers finished not as burial slots but as complete domestic interiors — rooms laid out like a house for the living. That much is ordinary for the tradition : Sichuan's Eastern Han cliff tombs run to thousands of chambers along the Min, Yangtze, Chishui and Xishui valleys, and the best-studied groups at Jiangkou and Mahao carry carved furniture, painted stone coffins and, at Mahao, some of the earliest Buddhist images known in China. The film's own question is narrower and better : where did the spoil go. Cutting chambers of that size out of a cliff produces an enormous volume of broken rock, and there is no talus, no spoil heap, nothing below the cliff face. Somebody carried it away."
+  },
+  {
+    "n": "Sichuan Cave Fortress (999 AD)",
+    "lat": 28.871,
+    "lng": 105.442,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 3,
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Location approximate. The film gives only the province, so the pin sits on Luzhou, the creator's base; the site may be anywhere in Sichuan. A three-storey fortress cut into solid rock, entered through a single stone door of about 400 kg that still swings by hand, opening onto interconnected chambers, concealed passages and enough of them to get lost in. The date given on film is precise — carved in 999 AD, which puts it in the early Northern Song — and the local guide's account is the only source for it. The walls inside are black with soot, which the film reads as evidence of a fire attack, a siege rather than a hearth. Another Chinese channel appears to cover the same fortress, giving the same 999 date and the same hand-pushed stone door, and calls it 青龙寨, Qinglong Zhai; no authoritative source or coordinate was found under that name, so the atlas does not assert it."
+  },
+  {
+    "n": "Hubei Cliff Dwelling",
+    "lat": 30.2951,
+    "lng": 109.4796,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 3,
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Location approximate. The film names only Hubei, so the pin sits on Enshi, where Hubei's cliff dwellings are concentrated — 恩施崖居, described by National Geographic China as fossil specimens in the history of vernacular dwelling — but the site may be elsewhere in the province. An entire mountainside hollowed out by hand into dozens of stone rooms, fitted out to be lived in rather than sheltered in, reached across a cliff face. The labour is the point and so is the question behind it : this is not a cave anyone improved, it is a building excavated rather than built, and the reason people chose to make a home this way — war, most likely, as at the other Chinese cliff settlements — is not recorded anywhere on the site."
   }
 ]

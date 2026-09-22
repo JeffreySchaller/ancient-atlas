@@ -10318,6 +10318,42 @@ const SITES = [
     "region": "Central America",
     "tier": 3,
     "desc": "Carvings in the bed of the Presa Miguel Alemán in the State of México, a reservoir that drowned the valley in 1947. After months of drought in early 2024 the water fell far enough to expose dozens of them for the first time in decades : scale models of pyramids and ceremonial staircases cut into the rock, along with what have been read as astronomical markers, abstract symbols and figures. A Teotihuacán-era date, somewhere in the range 200 BCE to 700 CE, has been proposed for them; it is a proposal rather than a finding. The site's difficulty is its own : it is only visible when the reservoir drops, which is exactly why so little work has been done on it, and why an ordinary drought year is also the only research window."
+  },
+  {
+    "n": "Eastern Han Cliff Tombs (Sichuan)",
+    "lat": 28.82,
+    "lng": 105.9849,
+    "cat": "tomb",
+    "region": "Asia",
+    "tier": 3,
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Location approximate. The film does not say where this is, so the pin sits on the Hejiang cliff-tomb group in Luzhou — the creator's home prefecture — which is a documented Eastern Han complex of the same kind; the actual group may be elsewhere in Sichuan. What the film shows is a cliff-tomb cemetery cut some 1,800 years ago into the rock of a Sichuan mountainside, the chambers finished not as burial slots but as complete domestic interiors — rooms laid out like a house for the living. That much is ordinary for the tradition : Sichuan's Eastern Han cliff tombs run to thousands of chambers along the Min, Yangtze, Chishui and Xishui valleys, and the best-studied groups at Jiangkou and Mahao carry carved furniture, painted stone coffins and, at Mahao, some of the earliest Buddhist images known in China. The film's own question is narrower and better : where did the spoil go. Cutting chambers of that size out of a cliff produces an enormous volume of broken rock, and there is no talus, no spoil heap, nothing below the cliff face. Somebody carried it away."
+  },
+  {
+    "n": "Sichuan Cave Fortress (999 AD)",
+    "lat": 28.871,
+    "lng": 105.442,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 3,
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Location approximate. The film gives only the province, so the pin sits on Luzhou, the creator's base; the site may be anywhere in Sichuan. A three-storey fortress cut into solid rock, entered through a single stone door of about 400 kg that still swings by hand, opening onto interconnected chambers, concealed passages and enough of them to get lost in. The date given on film is precise — carved in 999 AD, which puts it in the early Northern Song — and the local guide's account is the only source for it. The walls inside are black with soot, which the film reads as evidence of a fire attack, a siege rather than a hearth. Another Chinese channel appears to cover the same fortress, giving the same 999 date and the same hand-pushed stone door, and calls it 青龙寨, Qinglong Zhai; no authoritative source or coordinate was found under that name, so the atlas does not assert it."
+  },
+  {
+    "n": "Hubei Cliff Dwelling",
+    "lat": 30.2951,
+    "lng": 109.4796,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 3,
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Location approximate. The film names only Hubei, so the pin sits on Enshi, where Hubei's cliff dwellings are concentrated — 恩施崖居, described by National Geographic China as fossil specimens in the history of vernacular dwelling — but the site may be elsewhere in the province. An entire mountainside hollowed out by hand into dozens of stone rooms, fitted out to be lived in rather than sheltered in, reached across a cliff face. The labour is the point and so is the question behind it : this is not a cave anyone improved, it is a building excavated rather than built, and the reason people chose to make a home this way — war, most likely, as at the other Chinese cliff settlements — is not recorded anywhere on the site."
   }
 ];
 
@@ -11029,6 +11065,13 @@ const CREATORS = {
     "handle": "@arxprojectmx",
     "subs": "Mesoamerican origins · bilingual field investigations across Mexico",
     "color": "#6E8C7A",
+    "tier": 3
+  },
+  "luzhouabo": {
+    "name": "Luzhou Abo",
+    "handle": "@luzhouabo",
+    "subs": "泸州阿波 · Sichuan-based · unmapped cliff dwellings, cave forts and stone villages across China",
+    "color": "#7E8CA8",
     "tier": 3
   }
 };
@@ -18638,6 +18681,33 @@ const VIDEOS = {
       "added": "2026-09-17",
       "published": "2024-03-08"
     }
+  ],
+  "Eastern Han Cliff Tombs (Sichuan)": [
+    {
+      "id": "sJ4Iw4U2m2k",
+      "title": "China's eeriest Han cliff tombs: 1,800-year-old homes. Giant stones vanished mysteriously",
+      "cr": "luzhouabo",
+      "added": "2026-09-22",
+      "published": "2026-09-09"
+    }
+  ],
+  "Sichuan Cave Fortress (999 AD)": [
+    {
+      "id": "4edw4Jt9980",
+      "title": "999 AD Carved: Sichuan's Thousand-Year-Old Mysterious Palace",
+      "cr": "luzhouabo",
+      "added": "2026-09-22",
+      "published": "2026-09-17"
+    }
+  ],
+  "Hubei Cliff Dwelling": [
+    {
+      "id": "blJo5t7Ory4",
+      "title": "A thousand-year-old cliff dwelling in Hubei: an entire mountain hollowed out",
+      "cr": "luzhouabo",
+      "added": "2026-09-22",
+      "published": "2026-08-00"
+    }
   ]
 };
 
@@ -18977,7 +19047,9 @@ const SITE_YEARS = {
   "Izapa": -850,
   "Piedras Negras": 450,
   "Río Bec": 700,
-  "San Miguel Ixtapan": 750
+  "San Miguel Ixtapan": 750,
+  "Eastern Han Cliff Tombs (Sichuan)": 100,
+  "Sichuan Cave Fortress (999 AD)": 999
 };
 
 function formatYear(y){
@@ -19624,7 +19696,10 @@ const SITE_COUNTRIES = {
   "Río Bec": "Mexico",
   "San Miguel Ixtapan": "Mexico",
   "Teotitlán del Valle": "Mexico",
-  "Valle de Bravo Petroglyphs": "Mexico"
+  "Valle de Bravo Petroglyphs": "Mexico",
+  "Eastern Han Cliff Tombs (Sichuan)": "China",
+  "Sichuan Cave Fortress (999 AD)": "China",
+  "Hubei Cliff Dwelling": "China"
 };
 
 const SITE_CULTURES = {
@@ -19827,7 +19902,10 @@ const SITE_CULTURES = {
   "Río Bec": "Classic Maya (Río Bec style)",
   "San Miguel Ixtapan": "Epiclassic central Mexican (Matlatzinca-related)",
   "Teotitlán del Valle": "Zapotec",
-  "Valle de Bravo Petroglyphs": "Central Mexican (Teotihuacán-era, proposed)"
+  "Valle de Bravo Petroglyphs": "Central Mexican (Teotihuacán-era, proposed)",
+  "Eastern Han Cliff Tombs (Sichuan)": "Eastern Han",
+  "Sichuan Cave Fortress (999 AD)": "Northern Song (reported)",
+  "Hubei Cliff Dwelling": "Not established"
 };
 
 // Free-form tags for synonym/concept search (Bronze Age, sacred geometry, etc.)
@@ -19880,7 +19958,10 @@ const SITE_TAGS = {
   "Río Bec": "mexico campeche rio bec maya towers false stairs chenes calakmul perigny maler michelet cnrs unrestored",
   "San Miguel Ixtapan": "mexico estado de mexico tejupilco san miguel ixtapan salt salinas aquiagua san francisco los nopales megalithic slabs carved epiclassic matlatzinca tiwanaku comparison",
   "Teotitlán del Valle": "mexico oaxaca tlacolula teotitlan del valle zapotec xaguixe gpr ground penetrating radar resistivity unam inah rugs",
-  "Valle de Bravo Petroglyphs": "mexico estado de mexico valle de bravo presa miguel aleman petroglyphs pyramid models reservoir drought carvings"
+  "Valle de Bravo Petroglyphs": "mexico estado de mexico valle de bravo presa miguel aleman petroglyphs pyramid models reservoir drought carvings",
+  "Eastern Han Cliff Tombs (Sichuan)": "china sichuan cliff tombs yamu eastern han rock-cut burial chambers luzhou hejiang spoil approximate location",
+  "Sichuan Cave Fortress (999 AD)": "china sichuan cave fortress dongzhai rock-cut stone door northern song 999 qinglongzhai luzhou approximate location",
+  "Hubei Cliff Dwelling": "china hubei enshi cliff dwelling yaju rock-cut stone houses hollowed mountain approximate location"
 };
 
 // Synonym expansion — common search terms that should pull broader sets

@@ -692,5 +692,12 @@
     "subs": "Mesoamerican origins · bilingual field investigations across Mexico",
     "color": "#6E8C7A",
     "tier": 3
+  },
+  "luzhouabo": {
+    "name": "Luzhou Abo",
+    "handle": "@luzhouabo",
+    "subs": "泸州阿波 · Sichuan-based · unmapped cliff dwellings, cave forts and stone villages across China",
+    "color": "#7E8CA8",
+    "tier": 3
   }
 }
