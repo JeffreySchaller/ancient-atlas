@@ -699,5 +699,12 @@
     "subs": "泸州阿波 · Sichuan-based · unmapped cliff dwellings, cave forts and stone villages across China",
     "color": "#7E8CA8",
     "tier": 3
+  },
+  "haswelltravelled": {
+    "name": "Haswell Travelled",
+    "handle": "@HaswellTravelled",
+    "subs": "James Haswell · on-location travel films and archaeological site visits",
+    "color": "#7D9D91",
+    "tier": 3
   }
 }

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "AfdDPl7iLu8",
+    "title": "The Nuragic Civilisation of Bronze Age Sardinia",
+    "channel": "Dan Davis History",
+    "url": "https://www.youtube.com/watch?v=AfdDPl7iLu8",
+    "status": "needs_footage_and_site_review"
+  },
+  {
+    "id": "lrnINa5zaTo",
+    "title": "Sardinia - Sacred Well, Astronomical Observatory or Water Ritual Temple?",
+    "channel": "Jacquelyn Atkins",
+    "url": "https://www.youtube.com/watch?v=lrnINa5zaTo",
+    "status": "needs_footage_and_site_review"
+  },
+  {
+    "id": "iOuXIRGQnLk",
+    "title": "Ancient Ruins and Tombs for Giants: The part of Sardinia most people don't know. SARDINIA MOTO TOUR",
+    "channel": "TheRidingZebra",
+    "url": "https://www.youtube.com/watch?v=iOuXIRGQnLk",
+    "status": "needs_footage_and_site_review"
+  },
+  {
+    "id": "KBu3J8v7kfU",
+    "title": "Nuraghe from Ancient Civilization - Su Nuraxi di Barumini, Sardinia, Italy 4K",
+    "channel": "Haswell Travelled",
+    "url": "https://www.youtube.com/watch?v=KBu3J8v7kfU",
+    "status": "accepted",
+    "site": "Sardinia Nuraghi (Su Nuraxi)",
+    "reviewed": "2026-10-23",
+    "review_note": "Uploader metadata and sampled on-location playback verified; historical claims not independently endorsed."
+  },
+  {
+    "id": "FZRBwGtS_As",
+    "title": "Megalithic Sacred Wells of Sardinia | Exploring the Bronze Age 'Sa Testa' Site | Megalithomania",
+    "channel": "MegalithomaniaUK",
+    "url": "https://www.youtube.com/watch?v=FZRBwGtS_As",
+    "status": "accepted",
+    "site": "Sacred Well of Sa Testa",
+    "reviewed": "2026-10-23",
+    "review_note": "Uploader metadata and sampled on-location playback verified; historical claims not independently endorsed."
+  },
+  {
+    "id": "nGp-GWDv4B0",
+    "title": "Megalithic Technology in Sardinia | Rock-Carved Hypogeums & the Giant Stone Bull of Sant’Andrea Priu",
+    "channel": "Megalithomania",
+    "url": "https://www.youtube.com/watch?v=nGp-GWDv4B0",
+    "status": "accepted",
+    "site": "San Andrea Priù",
+    "reviewed": "2026-10-23",
+    "review_note": "Uploader metadata and sampled on-location playback verified; historical claims not independently endorsed."
+  }
+]
