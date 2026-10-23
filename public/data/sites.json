@@ -7993,5 +7993,23 @@
       "scale"
     ],
     "desc": "A branching geoglyph cut into the northern face of the Paracas Peninsula, visible from boats crossing Pisco Bay. Roughly 180 metres long, its deep grooves stand out against the desert slope. Its makers, date and purpose remain uncertain. Protected within the Paracas National Reserve."
+  },
+  {
+    "n": "Nuraghe Losa",
+    "lat": 40.1169,
+    "lng": 8.79007,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A Bronze Age basalt nuraghe on the Abbasanta plateau. A central tower and three-lobed bastion contain corbelled chambers and passages; a surrounding wall encloses the remains of a settlement. Excavations began in the 1890s and revealed a long history of occupation."
+  },
+  {
+    "n": "Nuraghe Arrubiu",
+    "lat": 39.661944,
+    "lng": 9.2975,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A large Bronze Age nuragic complex near Orroli, with a central tower enclosed by a five-tower bastion and additional outer defences. Courtyards and corbelled chambers survive among basalt walls coloured by reddish lichens. Excavated pottery records connections with the wider Mediterranean."
   }
 ]

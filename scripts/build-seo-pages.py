@@ -32,6 +32,7 @@ from pathlib import Path
 from urllib.parse import quote
 
 REPO_ROOT = Path(__file__).parent.parent
+SARDINIA_GUIDE_SITES = {film["site"] for film in json.loads((REPO_ROOT / "data" / "sardinia-guide.json").read_text())["films"]}
 DATA = REPO_ROOT / "data"
 OUT = REPO_ROOT / "public" / "sites"
 BASE = "https://theancientatlas.com"
@@ -264,6 +265,9 @@ def main():
                     f'<span class="c"> · {html.escape(cr)}</span></span></a>'
                 )
             vid_html = f"<h2>Walkthrough videos ({len(wires)})</h2>" + "".join(items)
+
+        if name in SARDINIA_GUIDE_SITES:
+            vid_html += '<p><a href="/creators/sardinia">Explore Sardinia with local guides and other creators →</a></p>'
 
         near = sorted((o for o in sites if o["n"] != name), key=lambda o: haversine(s, o))[:3]
         near_html = "<h2>Nearby sites</h2><ul class=\"nearby\">" + "".join(
