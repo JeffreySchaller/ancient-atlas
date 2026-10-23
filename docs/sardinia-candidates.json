@@ -49,5 +49,61 @@
     "site": "San Andrea Priù",
     "reviewed": "2026-10-23",
     "review_note": "Uploader metadata and sampled on-location playback verified; historical claims not independently endorsed."
+  },
+  {
+    "id": "aSUbwMSH5nI",
+    "title": "Nuraghe Arrubiu con Sardegna Sacra e Prospettive Vegetali tour",
+    "channel": "Sardegna Sacra",
+    "url": "https://www.youtube.com/watch?v=aSUbwMSH5nI",
+    "site": "Nuraghe Arrubiu",
+    "status": "accepted",
+    "reviewed": "2026-10-23",
+    "review_note": "Uploader metadata and sampled original video frames at 90s and 180s confirm on-location footage. Guided site visit. Not a full-film factual review."
+  },
+  {
+    "id": "44FzDVy6cxE",
+    "title": "SARDEGNA ARCHEOLOGICA: IL NURAGHE LOSA DI ABBASANTA",
+    "channel": "Sardegna Storica",
+    "url": "https://www.youtube.com/watch?v=44FzDVy6cxE",
+    "site": "Nuraghe Losa",
+    "status": "accepted",
+    "reviewed": "2026-10-23",
+    "review_note": "Uploader metadata and sampled original video frames at 90s and 180s confirm on-location footage. Guided site visit. Not a full-film factual review."
+  },
+  {
+    "id": "3s1AS9qMLrQ",
+    "title": "Nuraghe Santu Antine Torralba con Nadia Canu",
+    "channel": "Sardegna Turistica",
+    "url": "https://www.youtube.com/watch?v=3s1AS9qMLrQ",
+    "site": "Nuraghe Santu Antine",
+    "status": "accepted",
+    "reviewed": "2026-10-23",
+    "review_note": "Uploader metadata and sampled original video frames at 90s and 180s confirm on-location footage. On-site conversation. Not a full-film factual review."
+  },
+  {
+    "id": "qGzL-Kuzfpo",
+    "title": "NURAGHE SANTU ANTINE - un gioiello della SARDEGNA!",
+    "channel": "Marco Mura",
+    "url": "https://www.youtube.com/watch?v=qGzL-Kuzfpo",
+    "site": "Nuraghe Santu Antine",
+    "status": "accepted",
+    "reviewed": "2026-10-23",
+    "review_note": "Uploader metadata and sampled original video frames at 90s and 130s confirm on-location footage. Short site visit. Not a full-film factual review."
+  },
+  {
+    "id": "dwpSZQN874Y",
+    "title": "NURAGHE SERUCI di Gonnesa - Intervista Eleonora Fontana e Annalisa Anolfo.",
+    "channel": "Amici di Sardegna Official",
+    "url": "https://www.youtube.com/watch?v=dwpSZQN874Y",
+    "status": "deferred",
+    "review_note": "On-site interview with local association; Seruci pin not yet reviewed. Deferred for next batch."
+  },
+  {
+    "id": "kn00MXE1RWc",
+    "title": "NURAGHE LOSA. Perché si chiama Losa? La guida lo svela ai pellegrini",
+    "channel": "ignazio serra",
+    "url": "https://www.youtube.com/watch?v=kn00MXE1RWc",
+    "status": "deferred",
+    "review_note": "Short guide talk at Losa; broader guided visit selected for this batch."
   }
 ]

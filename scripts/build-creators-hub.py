@@ -292,6 +292,9 @@ footer a{{color:var(--mist);text-decoration:none}} footer a:hover{{color:var(--a
 </section>
 
 <section>
+  <p class="kicker">Field visits · Sardinia</p>
+  <h2><a href="/creators/sardinia">Sardinia through its creators →</a></h2>
+  <p class="note">Local guides, on-site visits and Stone Riddles’ full documentary. Watch the original films and follow the people behind them.</p>
   <p><a href="/creators/ancient-atlas">Films and Shorts from Ancient Atlas →</a></p>
 <h2>Where the footage comes from</h2>
   <table>

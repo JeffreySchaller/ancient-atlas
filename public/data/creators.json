@@ -706,5 +706,33 @@
     "subs": "James Haswell · on-location travel films and archaeological site visits",
     "color": "#7D9D91",
     "tier": 3
+  },
+  "sardegnasacra": {
+    "name": "Sardegna Sacra",
+    "handle": "@sardegnasacra",
+    "subs": "Ilaria Montis · archaeologist and guide working in Sardinia · Italian-language site visits",
+    "color": "#92AC86",
+    "tier": 2
+  },
+  "sardegnastorica": {
+    "name": "Sardegna Storica",
+    "handle": "@sardegnastorica6867",
+    "subs": "Sardinian archaeology and heritage · visits and interviews with local specialists",
+    "color": "#BC9874",
+    "tier": 2
+  },
+  "sardegnaturistica": {
+    "name": "Sardegna Turistica",
+    "handle": "@sardegnaturistica9590",
+    "subs": "Sardinian cultural heritage channel · on-site conversations with archaeologists",
+    "color": "#83A6BB",
+    "tier": 2
+  },
+  "marcomura": {
+    "name": "Marco Mura",
+    "handle": "@MarcoMura",
+    "subs": "Travel filmmaker from Alghero · Italian-language visits in Sardinia and beyond",
+    "color": "#B598BF",
+    "tier": 3
   }
 }

@@ -6736,7 +6736,7 @@
   "Sardinia Nuraghi (Su Nuraxi)": [
     {
       "id": "q0YNkMIt3BY",
-      "title": "Documentary Stone Riddles II — Archaeological Treasures of Sardinia",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
       "cr": "stoneriddles",
       "added": "2026-07-11"
     },
@@ -6950,10 +6950,24 @@
   ],
   "Nuraghe Santu Antine": [
     {
+      "id": "3s1AS9qMLrQ",
+      "title": "Nuraghe Santu Antine Torralba con Nadia Canu",
+      "cr": "sardegnaturistica",
+      "added": "2026-10-23",
+      "published": "2023-02-03"
+    },
+    {
       "id": "fPXkyRFkvew",
       "title": "Nuraghe Santu Antine",
       "cr": "stoneriddles",
       "added": "2026-07-11"
+    },
+    {
+      "id": "qGzL-Kuzfpo",
+      "title": "NURAGHE SANTU ANTINE - un gioiello della SARDEGNA!",
+      "cr": "marcomura",
+      "added": "2026-10-23",
+      "published": "2020-11-22"
     }
   ],
   "Giants' Grave S'Ena e Thomes": [
@@ -7626,6 +7640,24 @@
       "cr": "megalithomania",
       "added": "2026-10-23",
       "published": "2020-03-15"
+    }
+  ],
+  "Nuraghe Losa": [
+    {
+      "id": "44FzDVy6cxE",
+      "title": "SARDEGNA ARCHEOLOGICA: IL NURAGHE LOSA DI ABBASANTA",
+      "cr": "sardegnastorica",
+      "added": "2026-10-23",
+      "published": "2022-12-03"
+    }
+  ],
+  "Nuraghe Arrubiu": [
+    {
+      "id": "aSUbwMSH5nI",
+      "title": "Nuraghe Arrubiu con Sardegna Sacra e Prospettive Vegetali tour",
+      "cr": "sardegnasacra",
+      "added": "2026-10-23",
+      "published": "2019-03-14"
     }
   ]
 }
