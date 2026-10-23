@@ -1986,6 +1986,7 @@ body.present #broadcast-controls{
 .unit-toggle.unit-attention{animation:unitPulse 1.2s ease-out 2;box-shadow:0 0 0 0 rgba(201,168,76,.55)}@keyframes unitPulse{0%{box-shadow:0 0 0 0 rgba(201,168,76,.55)}60%{box-shadow:0 0 0 12px rgba(201,168,76,0)}100%{box-shadow:0 0 0 0 rgba(201,168,76,0)}}
 </style>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script defer src="/assets/js/analytics.js"></script>
 </head>
 <body>
 <div id="app">
@@ -22784,6 +22785,7 @@ function renderLibraryRef(site) {
 }
 
 function showDetail(site) {
+  window.atlasAnalytics?.('atlas_site_view', site.n);
   const cat = CATS[site.cat] || CATS.megalithic;
   const detail = document.getElementById('detail');
   detail.className = 'open';
@@ -23471,6 +23473,7 @@ function renderMobileSiteSection(siteName, siteData, videos) {
 // the tap is unambiguously user-initiated, so the popup blocker never fires.
 // On phones with the YouTube app installed, the new tab routes to the app.
 function openYouTubeVideo(videoId, ts) {
+  window.atlasAnalytics?.('atlas_video_open', videoId);
   if (!videoId) return;
   // Optional timestamp deep-link — one documentary can power many site cards
   const tsSuffix = (ts && Number(ts) > 0) ? `&t=${Number(ts)}s` : '';
@@ -23501,6 +23504,7 @@ function openYouTubeVideo(videoId, ts) {
 let currentClusterContext = null;  // array of sites, or null
 
 function showMobileSiteSheet(site) {
+  window.atlasAnalytics?.('atlas_site_view', site.n);
   const sheet = document.getElementById('mobile-site-sheet');
   const body = document.getElementById('mss-body');
   if (!sheet || !body || !site) return;
