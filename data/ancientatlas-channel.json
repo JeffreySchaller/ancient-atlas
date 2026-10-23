@@ -1,0 +1,440 @@
+{
+  "handle": "@AncientAtlasMap",
+  "checked": "2026-10-23",
+  "scope": "Public Videos and Shorts tabs; livestream tab not checked",
+  "items": [
+    {
+      "id": "oKdXnR-uFW0",
+      "title": "A Space Shuttle Engineer Looks at the King's Chamber",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=oKdXnR-uFW0",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "zLU3OEQ23LM",
+      "title": "The Paracas Candelabra & Islas Ballestas · A Boat Trip Off Peru in 4K",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=zLU3OEQ23LM",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "6r90XRNQtUA",
+      "title": "The More We Looked, the More Caves We Found",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=6r90XRNQtUA",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "OwuHQw9Kz4I",
+      "title": "Moray · A Slow Walk Through the Inca Circles of Peru's Sacred Valley (4K)",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=OwuHQw9Kz4I",
+      "catalog_status": "mapped",
+      "site": "Moray"
+    },
+    {
+      "id": "XVeZ-xoUYCc",
+      "title": "You Know More Than You Think",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=XVeZ-xoUYCc",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "ECaPVE-uDDE",
+      "title": "Sillustani · A Slow Walk to the Towers Above Lake Umayo, Peru",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=ECaPVE-uDDE",
+      "catalog_status": "mapped",
+      "site": "Sillustani"
+    },
+    {
+      "id": "i6ehCHkzf3Y",
+      "title": "Inside Qorikancha, the Inca Temple Under a Church · Brien Foerster & Jimmy Church",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=i6ehCHkzf3Y",
+      "catalog_status": "mapped",
+      "site": "Coricancha (Qorikancha)"
+    },
+    {
+      "id": "nIeos8fSbjk",
+      "title": "Why Do Ancient Cities End Up Underground?",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=nIeos8fSbjk",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "sSxekluuFfc",
+      "title": "Hidden on Purpose: The Chamber Under Dendera",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=sSxekluuFfc",
+      "catalog_status": "mapped",
+      "site": "Dendera Temple Complex"
+    },
+    {
+      "id": "wVtuI4CIIXY",
+      "title": "Where Did All the Stone Go?",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=wVtuI4CIIXY",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "0rwtMIIRmg8",
+      "title": "Nepal Lost a Whole Valley in 24 Hours. That Was the Teardrop.",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=0rwtMIIRmg8",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "zqYJ_H1TYpM",
+      "title": "Angkor Wat's Dating Problem, with Solstice Hunter",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=zqYJ_H1TYpM",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "nPmq9Iz3XJc",
+      "title": "Half of Machu Picchu Is Underground · with Brien Foerster",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=nPmq9Iz3XJc",
+      "catalog_status": "mapped"
+    },
+    {
+      "id": "umfm0vIATL4",
+      "title": "Every Block Was Placed By Hand. About 2.3 Million of Them.",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=umfm0vIATL4",
+      "catalog_status": "mapped"
+    },
+    {
+      "id": "2OSddPnrShw",
+      "title": "200 Underground Cities. Nobody Left a Chisel.",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=2OSddPnrShw",
+      "catalog_status": "conversation"
+    },
+    {
+      "id": "7dAYDoCtIAU",
+      "title": "Nobody Has Seen Petrie's Labyrinth Since 1889",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=7dAYDoCtIAU",
+      "catalog_status": "mapped"
+    },
+    {
+      "id": "zolCFgN1R2E",
+      "title": "Predynastic Diorite Vases | Museum Collection · Cairo",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=zolCFgN1R2E",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "wpywqa71YRY",
+      "title": "Step Pyramid of Saqqara with UnchartedX | Fieldwork Walkthrough · Egypt",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=wpywqa71YRY",
+      "catalog_status": "mapped"
+    },
+    {
+      "id": "klMOuvunIq8",
+      "title": "Great Pyramid Top to Bottom with UnchartedX | Fieldwork · Egypt",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=klMOuvunIq8",
+      "catalog_status": "mapped",
+      "site": "Great Pyramid of Giza (Khufu)"
+    },
+    {
+      "id": "ecy2Lu_euOY",
+      "title": "Grand Egyptian Museum with UnchartedX | Museum Walkthrough · Cairo",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=ecy2Lu_euOY",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "WqmEgFcN9s0",
+      "title": "Serapeum of Saqqara with UnchartedX | Fieldwork Walkthrough · Egypt",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=WqmEgFcN9s0",
+      "catalog_status": "mapped"
+    },
+    {
+      "id": "T5T3ty0-jbs",
+      "title": "Osiris Shaft with UnchartedX | Fieldwork Walkthrough · Egypt",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=T5T3ty0-jbs",
+      "catalog_status": "mapped"
+    },
+    {
+      "id": "Mh40gYv9ChI",
+      "title": "Granite Sarcophagus Saw Marks | Museum Collection · Cairo",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=Mh40gYv9ChI",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "8QInSsT_YkI",
+      "title": "Unfinished Obelisk of Aswan with UnchartedX | Fieldwork · Egypt",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=8QInSsT_YkI",
+      "catalog_status": "mapped",
+      "site": "Unfinished Obelisk (Aswan)"
+    },
+    {
+      "id": "GXq5-ga0hcA",
+      "title": "The Osireion | Fieldwork Walkthrough · Egypt with UnchartedX",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=GXq5-ga0hcA",
+      "catalog_status": "mapped"
+    },
+    {
+      "id": "bnslsxXi3RY",
+      "title": "60 Metres Under Cappadocia: Walking Inside Derinkuyu Underground City",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=bnslsxXi3RY",
+      "catalog_status": "mapped"
+    },
+    {
+      "id": "-AyC2HA-cEg",
+      "title": "What If You Put a 100-Ton Stone in the Wrong Place?",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/-AyC2HA-cEg",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "gwO79yXBHnA",
+      "title": "You Know More Than You Think | Look Again",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/gwO79yXBHnA",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "wcAwukyt18k",
+      "title": "Why Do These Caves Look So Similar? #china #rockcutcaves",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/wcAwukyt18k",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "kiLoYrvQZr8",
+      "title": "Explain This Wall Like I’m Five. Look Closer. #JimmyChurch #Qorikancha #cusco",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/kiLoYrvQZr8",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "9USQPJo4wW4",
+      "title": "Someone carved this in 1886. Should we be angry? #AncientAtlas #dendera #pompeii #AncientGraffiti",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/9USQPJo4wW4",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "clYx6d01YKk",
+      "title": "One wall. Four layers. #ancient #cusco #perú #peru #incas",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/clYx6d01YKk",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "NPH5LepSp40",
+      "title": "This room was hidden under two false floors #pyramidsofegypt #ancient #dendera  #ancientatlas",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/NPH5LepSp40",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "PLvpni3NMLI",
+      "title": "This Short About RoboCop Has Nothing to Do With Ancient Technology #robocop #shorts",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/PLvpni3NMLI",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "0qy7J1v7N3k",
+      "title": "Why it's called Chicxulub #ancient #AncientAtlas #chicxulub  #BoatyMcBoatface",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/0qy7J1v7N3k",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "P7FWrbqnzIY",
+      "title": "Moving one granite boulder cost $10 million #ancient #history #LevitatedMass",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/P7FWrbqnzIY",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "ummazRXDU3o",
+      "title": "The Great Lakes Are Tipping Toward Detroit",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/ummazRXDU3o",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "IwJ6Z497q8E",
+      "title": "What Cambodia's Megalithic Blocks Are Made Of #cambodia #ancient  #megaliths  #ancientarchitecture",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/IwJ6Z497q8E",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "T4uGsraD1NQ",
+      "title": "Jesus. Buddha. Krishna. A Peruvian paqo names the same door.",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/T4uGsraD1NQ",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "iQLql2SC5wY",
+      "title": "Giza and Machu Picchu, tuned to the same note",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/iQLql2SC5wY",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "A2z0k7zxIk8",
+      "title": "Millions of chisels. So where are they? #ancienthistory  #cappadocia  #archaeology",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/A2z0k7zxIk8",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "-WfIwkRTyl8",
+      "title": "They moved a thousand tons. On what? #ancienthistory #egypt #engineering",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/-WfIwkRTyl8",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "UiBVHHOqslI",
+      "title": "2,300,000 blocks in 20 years",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/UiBVHHOqslI",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "infboqq5_Tc",
+      "title": "Four people see Borobudur at the same time #archaeology #travel #pyramidsofegypt #shorts #borobudur",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/infboqq5_Tc",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "wCsZ9Pcay98",
+      "title": "Underground cities are terrible defense. So why? #archaeology #travel #underground #cappadocia",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/wCsZ9Pcay98",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "jU8DTJA5lJw",
+      "title": "We measured a pyramid block in Ford F-150s",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/jU8DTJA5lJw",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "X8__RwjYJQA",
+      "title": "What kind of tourist would you have been?",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/X8__RwjYJQA",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "LbSGo66MNzM",
+      "title": "This is how you carve a 1,000-ton obelisk",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/LbSGo66MNzM",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "kzPVEsWOLB4",
+      "title": "Stone vases older than the pyramids",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/kzPVEsWOLB4",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "imw0upcygtU",
+      "title": "How do you shape granite to fit this tight? | Ollantaytambo, Peru",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/imw0upcygtU",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "cTytalZ-bzs",
+      "title": "How were these joints made? | Ollantaytambo, Peru",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/cTytalZ-bzs",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "4Ash-goFZ8Q",
+      "title": "There's a hole under the Great Pyramid",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/4Ash-goFZ8Q",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "LcRCfU8RFu4",
+      "title": "We shined a light on the King's Chamber granite box",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/LcRCfU8RFu4",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "pO_Ijwt5Dr4",
+      "title": "4,700-year-old (possibly older) pottery, up close",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/pO_Ijwt5Dr4",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "2MYn9MmTIZU",
+      "title": "The oldest pyramid hides 5.7 km of tunnels",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/2MYn9MmTIZU",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "tVD0htZgBsM",
+      "title": "The largest museum on Earth, up close",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/tVD0htZgBsM",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "mRQgLBILi5o",
+      "title": "24 giant boxes are buried under Saqqara",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/mRQgLBILi5o",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "Ut-j0dlSdRc",
+      "title": "You could stand inside this granite box",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/Ut-j0dlSdRc",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "YtiiSpkCZmg",
+      "title": "There's water at the bottom of Giza",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/YtiiSpkCZmg",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "ZeEU-vLPImk",
+      "title": "The granite ruin hiding behind an Egyptian temple",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/ZeEU-vLPImk",
+      "catalog_status": "needs_review"
+    },
+    {
+      "id": "HZPAPn7tc8s",
+      "title": "There's a city 60 meters under Cappadocia",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/HZPAPn7tc8s",
+      "catalog_status": "needs_review"
+    }
+  ]
+}

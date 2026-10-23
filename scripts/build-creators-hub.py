@@ -292,7 +292,8 @@ footer a{{color:var(--mist);text-decoration:none}} footer a:hover{{color:var(--a
 </section>
 
 <section>
-  <h2>Where the footage comes from</h2>
+  <p><a href="/creators/ancient-atlas">Films and Shorts from Ancient Atlas →</a></p>
+<h2>Where the footage comes from</h2>
   <table>
     <thead><tr><th>Channel</th><th>Handle</th><th class="barh">Share of the Atlas</th></tr></thead>
     <tbody>
