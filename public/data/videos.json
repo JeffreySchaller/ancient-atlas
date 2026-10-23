@@ -2,7 +2,7 @@
   "Derinkuyu Underground City": [
     {
       "id": "bnslsxXi3RY",
-      "title": "Derinkuyu Underground City | Fieldwork Walkthrough · Türkiye",
+      "title": "60 Metres Under Cappadocia: Walking Inside Derinkuyu Underground City",
       "cr": "ancientatlas",
       "added": "2026-06-10",
       "published": "2026-06-10"
@@ -234,13 +234,15 @@
       "id": "umfm0vIATL4",
       "title": "Every Block Was Placed By Hand. About 2.3 Million of Them.",
       "cr": "ancientatlas",
-      "added": "2026-09-07"
+      "added": "2026-09-07",
+      "published": "2026-08-22"
     },
     {
       "id": "klMOuvunIq8",
       "title": "Great Pyramid Top to Bottom with UnchartedX | Fieldwork · Egypt",
       "cr": "ancientatlas",
-      "added": "2026-10-23"
+      "added": "2026-10-23",
+      "published": "2026-06-12"
     },
     {
       "id": "DIDur3aI3pg",
@@ -389,6 +391,13 @@
   ],
   "Serapeum of Saqqara": [
     {
+      "id": "WqmEgFcN9s0",
+      "title": "Serapeum of Saqqara with UnchartedX | Fieldwork Walkthrough · Egypt",
+      "cr": "ancientatlas",
+      "added": "2026-07-09",
+      "published": "2026-06-12"
+    },
+    {
       "id": "d8Ejf5etV5U",
       "title": "The MOST Precisely Made Granite Object of Ancient Egypt",
       "cr": "unchartedx"
@@ -398,12 +407,6 @@
       "title": "The Incredible Precision of the 100 ton boxes in the Serapeum",
       "cr": "unchartedx",
       "added": "2025-11-01"
-    },
-    {
-      "id": "WqmEgFcN9s0",
-      "title": "Serapeum of Saqqara with UnchartedX | Fieldwork Walkthrough · Egypt",
-      "cr": "ancientatlas",
-      "added": "2026-07-09"
     },
     {
       "id": "p3b8tAKFfmM",
@@ -784,7 +787,8 @@
       "id": "nPmq9Iz3XJc",
       "title": "Half of Machu Picchu Is Underground · with Brien Foerster",
       "cr": "ancientatlas",
-      "added": "2026-09-07"
+      "added": "2026-09-07",
+      "published": "2026-08-29"
     },
     {
       "id": "JMAKRKkdOlw",
@@ -1513,7 +1517,8 @@
       "id": "7dAYDoCtIAU",
       "title": "Nobody Has Seen Petrie's Labyrinth Since 1889",
       "cr": "ancientatlas",
-      "added": "2026-08-17"
+      "added": "2026-08-17",
+      "published": "2026-08-08"
     },
     {
       "id": "F0QZW6rgr0Q",
@@ -1679,7 +1684,8 @@
       "id": "8QInSsT_YkI",
       "title": "Unfinished Obelisk of Aswan with UnchartedX | Fieldwork · Egypt",
       "cr": "ancientatlas",
-      "added": "2026-10-23"
+      "added": "2026-10-23",
+      "published": "2026-06-12"
     },
     {
       "id": "x_X-VRU5m1s",
@@ -2023,7 +2029,8 @@
       "id": "ECaPVE-uDDE",
       "title": "Sillustani · A Slow Walk to the Towers Above Lake Umayo, Peru",
       "cr": "ancientatlas",
-      "added": "2026-10-23"
+      "added": "2026-10-23",
+      "published": "2026-10-04"
     },
     {
       "id": "JOHIRKvWOlo",
@@ -2055,7 +2062,8 @@
       "id": "OwuHQw9Kz4I",
       "title": "Moray · A Slow Walk Through the Inca Circles of Peru's Sacred Valley (4K)",
       "cr": "ancientatlas",
-      "added": "2026-10-23"
+      "added": "2026-10-23",
+      "published": "2026-10-11"
     },
     {
       "id": "UlIyFXrOJ8M",
@@ -4941,6 +4949,13 @@
   ],
   "Step Pyramid of Djoser": [
     {
+      "id": "wpywqa71YRY",
+      "title": "Step Pyramid of Saqqara with UnchartedX | Fieldwork Walkthrough · Egypt",
+      "cr": "ancientatlas",
+      "added": "2026-07-09",
+      "published": "2026-06-12"
+    },
+    {
       "id": "s6KLDlxTJ_c",
       "title": "Deep Under The Step Pyramid At Saqqara In Egypt April 2025",
       "cr": "brienf",
@@ -4960,12 +4975,6 @@
       "cr": "unchartedx",
       "added": "2026-06-09",
       "published": "2022-02-26"
-    },
-    {
-      "id": "wpywqa71YRY",
-      "title": "Step Pyramid of Saqqara with UnchartedX | Fieldwork Walkthrough · Egypt",
-      "cr": "ancientatlas",
-      "added": "2026-07-09"
     },
     {
       "id": "uERtkstQuxw",
@@ -5861,7 +5870,8 @@
       "id": "i6ehCHkzf3Y",
       "title": "Inside Qorikancha, the Inca Temple Under a Church · Brien Foerster & Jimmy Church",
       "cr": "ancientatlas",
-      "added": "2026-10-23"
+      "added": "2026-10-23",
+      "published": "2026-10-04"
     },
     {
       "id": "dxmSz3N3HeU",
@@ -5968,12 +5978,6 @@
   ],
   "Dendera Temple Complex": [
     {
-      "id": "sSxekluuFfc",
-      "title": "Hidden on Purpose: The Chamber Under Dendera",
-      "cr": "ancientatlas",
-      "added": "2026-10-23"
-    },
-    {
       "id": "b_dYzSmcMso",
       "title": "Secret knowledge of ancient Egypt: Temple of Hathor Part 1 (Тайное знание древнего Египта, ru/en dub)",
       "cr": "protocivilization",
@@ -6064,7 +6068,7 @@
       "title": "Osiris Shaft with UnchartedX | Fieldwork Walkthrough · Egypt",
       "cr": "ancientatlas",
       "added": "2026-06-13",
-      "published": "2026-06-13"
+      "published": "2026-06-12"
     },
     {
       "id": "hxq5QhSjX-g",
@@ -6735,6 +6739,13 @@
       "title": "Documentary Stone Riddles II — Archaeological Treasures of Sardinia",
       "cr": "stoneriddles",
       "added": "2026-07-11"
+    },
+    {
+      "id": "KBu3J8v7kfU",
+      "title": "Nuraghe from Ancient Civilization - Su Nuraxi di Barumini, Sardinia, Italy 4K",
+      "cr": "haswelltravelled",
+      "added": "2026-10-23",
+      "published": "2021-04-30"
     }
   ],
   "Hyrtakina": [
@@ -6954,6 +6965,13 @@
     }
   ],
   "Sacred Well of Sa Testa": [
+    {
+      "id": "FZRBwGtS_As",
+      "title": "Megalithic Sacred Wells of Sardinia | Exploring the Bronze Age 'Sa Testa' Site | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-10-23",
+      "published": "2021-07-05"
+    },
     {
       "id": "4XylNHgkWNg",
       "title": "Holy Well Sa Testa",
@@ -7590,6 +7608,24 @@
       "cr": "luzhouabo",
       "added": "2026-09-22",
       "published": "2026-08-00"
+    }
+  ],
+  "Paracas Candelabra": [
+    {
+      "id": "zLU3OEQ23LM",
+      "title": "The Paracas Candelabra & Islas Ballestas · A Boat Trip Off Peru in 4K",
+      "cr": "ancientatlas",
+      "added": "2026-10-23",
+      "published": "2026-10-18"
+    }
+  ],
+  "San Andrea Priù": [
+    {
+      "id": "nGp-GWDv4B0",
+      "title": "Megalithic Technology in Sardinia | Rock-Carved Hypogeums & the Giant Stone Bull of Sant’Andrea Priu",
+      "cr": "megalithomania",
+      "added": "2026-10-23",
+      "published": "2020-03-15"
     }
   ]
 }

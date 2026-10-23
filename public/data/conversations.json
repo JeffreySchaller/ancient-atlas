@@ -28,18 +28,20 @@
       "note": "Sites named by the guest on the recording: \"So I did Derinkuyu, Kemakli, Mazi.\" Kemakli is Kaymakli. Populated 2026-09-07 from the Riverside transcript, per the standing rule that sites are only added once someone who was there names them. Retitled on YouTube after publication; oEmbed still served the original question-form title as of 2026-09-07."
     },
     {
-      "id": "",
-      "status": "coming",
-      "title": "In Conversation with SOLSTICE HUNTER",
+      "id": "zqYJ_H1TYpM",
+      "title": "Angkor Wat's Dating Problem, with Solstice Hunter",
       "guest": "solsticehunter",
       "episode": "CC02",
-      "recorded": "2026-08-29",
       "sites": [
         {
-          "n": "Phnom Bok"
+          "n": "Angkor Wat"
+        },
+        {
+          "n": "Ta Keo"
         }
       ],
-      "note": "Recording 2026-08-29. Framing (mini megaliths, cross-continental signatures) is planned, not yet recorded; title and sites are provisional until the episode exists."
+      "note": "Published episode verified from the channel description and chapter list on 2026-10-23. Angkor Wat is the main subject; Ta Keo has a dedicated chapter at 23:15. Other passing references are not mapped.",
+      "published": "2026-09-08"
     }
   ]
 }

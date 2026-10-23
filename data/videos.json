@@ -47,7 +47,7 @@
     },
     {
       "id": "bnslsxXi3RY",
-      "title": "Derinkuyu Underground City | Fieldwork Walkthrough · Türkiye",
+      "title": "60 Metres Under Cappadocia: Walking Inside Derinkuyu Underground City",
       "cr": "ancientatlas",
       "added": "2026-06-10",
       "published": "2026-06-10"
@@ -234,7 +234,8 @@
       "id": "umfm0vIATL4",
       "title": "Every Block Was Placed By Hand. About 2.3 Million of Them.",
       "cr": "ancientatlas",
-      "added": "2026-09-07"
+      "added": "2026-09-07",
+      "published": "2026-08-22"
     },
     {
       "id": "lNC_HRxf0XA",
@@ -300,7 +301,8 @@
       "id": "klMOuvunIq8",
       "title": "Great Pyramid Top to Bottom with UnchartedX | Fieldwork · Egypt",
       "cr": "ancientatlas",
-      "added": "2026-10-23"
+      "added": "2026-10-23",
+      "published": "2026-06-12"
     }
   ],
   "Pyramid of Khafre": [
@@ -409,7 +411,8 @@
       "id": "WqmEgFcN9s0",
       "title": "Serapeum of Saqqara with UnchartedX | Fieldwork Walkthrough · Egypt",
       "cr": "ancientatlas",
-      "added": "2026-07-09"
+      "added": "2026-07-09",
+      "published": "2026-06-12"
     }
   ],
   "Sacsayhuamán": [
@@ -784,7 +787,8 @@
       "id": "nPmq9Iz3XJc",
       "title": "Half of Machu Picchu Is Underground · with Brien Foerster",
       "cr": "ancientatlas",
-      "added": "2026-09-07"
+      "added": "2026-09-07",
+      "published": "2026-08-29"
     },
     {
       "id": "4LCZvM6lMms",
@@ -1518,7 +1522,8 @@
       "id": "7dAYDoCtIAU",
       "title": "Nobody Has Seen Petrie's Labyrinth Since 1889",
       "cr": "ancientatlas",
-      "added": "2026-08-17"
+      "added": "2026-08-17",
+      "published": "2026-08-08"
     }
   ],
   "La Venta": [
@@ -1703,7 +1708,8 @@
       "id": "8QInSsT_YkI",
       "title": "Unfinished Obelisk of Aswan with UnchartedX | Fieldwork · Egypt",
       "cr": "ancientatlas",
-      "added": "2026-10-23"
+      "added": "2026-10-23",
+      "published": "2026-06-12"
     }
   ],
   "Bent Pyramid (Dahshur)": [
@@ -2040,7 +2046,8 @@
       "id": "ECaPVE-uDDE",
       "title": "Sillustani · A Slow Walk to the Towers Above Lake Umayo, Peru",
       "cr": "ancientatlas",
-      "added": "2026-10-23"
+      "added": "2026-10-23",
+      "published": "2026-10-04"
     }
   ],
   "Tipón": [
@@ -2060,7 +2067,8 @@
       "id": "OwuHQw9Kz4I",
       "title": "Moray · A Slow Walk Through the Inca Circles of Peru's Sacred Valley (4K)",
       "cr": "ancientatlas",
-      "added": "2026-10-23"
+      "added": "2026-10-23",
+      "published": "2026-10-11"
     }
   ],
   "Qenqo": [
@@ -4972,7 +4980,8 @@
       "id": "wpywqa71YRY",
       "title": "Step Pyramid of Saqqara with UnchartedX | Fieldwork Walkthrough · Egypt",
       "cr": "ancientatlas",
-      "added": "2026-07-09"
+      "added": "2026-07-09",
+      "published": "2026-06-12"
     }
   ],
   "Zedekiah's Cave": [
@@ -5874,7 +5883,8 @@
       "id": "i6ehCHkzf3Y",
       "title": "Inside Qorikancha, the Inca Temple Under a Church · Brien Foerster & Jimmy Church",
       "cr": "ancientatlas",
-      "added": "2026-10-23"
+      "added": "2026-10-23",
+      "published": "2026-10-04"
     }
   ],
   "Tanis (San el-Hagar)": [
@@ -5973,12 +5983,6 @@
       "cr": "protocivilization",
       "added": "2026-06-09",
       "published": "2025-02-08"
-    },
-    {
-      "id": "sSxekluuFfc",
-      "title": "Hidden on Purpose: The Chamber Under Dendera",
-      "cr": "ancientatlas",
-      "added": "2026-10-23"
     }
   ],
   "Myra": [
@@ -6071,7 +6075,7 @@
       "title": "Osiris Shaft with UnchartedX | Fieldwork Walkthrough · Egypt",
       "cr": "ancientatlas",
       "added": "2026-06-13",
-      "published": "2026-06-13"
+      "published": "2026-06-12"
     }
   ],
   "Killarumiyoq": [
@@ -6735,6 +6739,13 @@
       "title": "Documentary Stone Riddles II — Archaeological Treasures of Sardinia",
       "cr": "stoneriddles",
       "added": "2026-07-11"
+    },
+    {
+      "id": "KBu3J8v7kfU",
+      "title": "Nuraghe from Ancient Civilization - Su Nuraxi di Barumini, Sardinia, Italy 4K",
+      "cr": "haswelltravelled",
+      "added": "2026-10-23",
+      "published": "2021-04-30"
     }
   ],
   "Hyrtakina": [
@@ -6959,6 +6970,13 @@
       "title": "Holy Well Sa Testa",
       "cr": "stoneriddles",
       "added": "2026-07-11"
+    },
+    {
+      "id": "FZRBwGtS_As",
+      "title": "Megalithic Sacred Wells of Sardinia | Exploring the Bronze Age 'Sa Testa' Site | Megalithomania",
+      "cr": "megalithomania",
+      "added": "2026-10-23",
+      "published": "2021-07-05"
     }
   ],
   "Nuraghe Su Mulinu": [
@@ -7590,6 +7608,24 @@
       "cr": "luzhouabo",
       "added": "2026-09-22",
       "published": "2026-08-00"
+    }
+  ],
+  "Paracas Candelabra": [
+    {
+      "id": "zLU3OEQ23LM",
+      "title": "The Paracas Candelabra & Islas Ballestas · A Boat Trip Off Peru in 4K",
+      "cr": "ancientatlas",
+      "added": "2026-10-23",
+      "published": "2026-10-18"
+    }
+  ],
+  "San Andrea Priù": [
+    {
+      "id": "nGp-GWDv4B0",
+      "title": "Megalithic Technology in Sardinia | Rock-Carved Hypogeums & the Giant Stone Bull of Sant’Andrea Priu",
+      "cr": "megalithomania",
+      "added": "2026-10-23",
+      "published": "2020-03-15"
     }
   ]
 }
