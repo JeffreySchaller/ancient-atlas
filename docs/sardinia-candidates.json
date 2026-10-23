@@ -105,5 +105,29 @@
     "url": "https://www.youtube.com/watch?v=kn00MXE1RWc",
     "status": "deferred",
     "review_note": "Short guide talk at Losa; broader guided visit selected for this batch."
+  },
+  {
+    "id": "APkwYt_lPaQ",
+    "title": "Una veloce visita al nuraghe Is Orixeddus (2025).",
+    "channel": "Sardinian Warrior",
+    "url": "https://www.youtube.com/watch?v=APkwYt_lPaQ",
+    "status": "needs_footage_and_site_review",
+    "review_note": "Discovered via YouTube search; local identity, exact places and on-location footage still require verification."
+  },
+  {
+    "id": "2pBTs8XtKlE",
+    "title": "I Nuraghi di Quartu: (1) Serra Paulis - guida al sito archeologico",
+    "channel": "Sardinian Warrior",
+    "url": "https://www.youtube.com/watch?v=2pBTs8XtKlE",
+    "status": "needs_footage_and_site_review",
+    "review_note": "Discovered via YouTube search; local identity, exact places and on-location footage still require verification."
+  },
+  {
+    "id": "IBxcC4eUKD0",
+    "title": "ESCURSIONI TALANA_Escursione ai Nuraghi e alle Tombe dei Giganti",
+    "channel": "Escursioni Talana",
+    "url": "https://www.youtube.com/watch?v=IBxcC4eUKD0",
+    "status": "needs_footage_and_site_review",
+    "review_note": "Discovered via YouTube search; local identity, exact places and on-location footage still require verification."
   }
 ]
