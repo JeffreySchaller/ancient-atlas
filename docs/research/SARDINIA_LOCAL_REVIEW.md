@@ -8,7 +8,7 @@ Metadata saved in `sardinia-local-review-2026-10-23.json` includes uploader iden
 
 - Sardegna Sacra / Ilaria Montis: https://www.sardegnasacra.it/la-nostra-storia/ and https://www.sardegnasacra.it/team/ establish the Sardinia-based archaeology and guiding project. Video credits Prospettive Vegetali too; both are named in the guide.
 - Sardegna Storica: uploader describes Alessandro Usai guiding Simona Scioni at Losa. https://cultura.gov.it/index.php/luogo/abbasanta-nuraghe-losa confirms the site context and names Usai as responsible. Guide credits both people and links the original channel.
-- Sardegna Turistica: uploader identifies the on-site Santu Antine conversation with archaeologist Nadia Canu. Labelled as an on-site conversation in the guide, not a continuous walk.
+- Sardegna Turistica: uploader identifies the on-site Santu Antine conversation with archaeologist Nadia Canu. Additional frames at 600 and 1,200 seconds show details of the monument and the guide inside a chamber. Labelled as a guided visit and conversation, not a continuous walk.
 - Marco Mura: uploader description identifies him as Sardinian, from Alghero, and living in the UK. Guide says originally from Alghero, not currently resident in Sardinia.
 
 ## New pins
