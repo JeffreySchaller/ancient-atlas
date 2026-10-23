@@ -414,6 +414,7 @@ def render_page(tree, unplaced, stats):
 <link rel="preconnect" href="https://i.ytimg.com" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>{CSS}</style>
+<script defer src="/assets/js/analytics.js"></script>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>

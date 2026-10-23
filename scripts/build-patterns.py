@@ -350,6 +350,7 @@ def build(key, spec, order):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>{CSS}</style>
+<script defer src="/assets/js/analytics.js"></script>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
@@ -520,6 +521,7 @@ color:var(--champagne);transition:border-color .18s,color .18s}}
 .pcard:hover .pgo{{color:var(--amber);border-top-color:rgba(201,168,76,.32)}}
 .pcard:hover .pgo i{{transform:translateX(3px)}}
 </style>
+<script defer src="/assets/js/analytics.js"></script>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
