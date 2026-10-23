@@ -23154,6 +23154,7 @@ function noEmbedIds() {
 }
 
 function playVideo(id, title, creatorName, cardEl, ts) {
+  if (!cardEl || !cardEl.classList.contains('playing')) window.atlasAnalytics?.('atlas_video_open', id);
   const isLocal = location.protocol === 'file:';
   const tsSuffix = (ts && Number(ts) > 0) ? `&t=${Number(ts)}s` : '';
 
