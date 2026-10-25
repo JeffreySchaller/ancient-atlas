@@ -8,7 +8,7 @@
       "format": "Guided site visit",
       "language": "Italian",
       "note": "Archaeologist and guide Ilaria Montis explores Arrubiu with Prospettive Vegetali. Sardegna Sacra works on the ground in Sardinia.",
-      "group": "local"
+      "group": "sardinian_voices"
     },
     {
       "id": "44FzDVy6cxE",
@@ -17,7 +17,7 @@
       "format": "Guided site visit",
       "language": "Italian",
       "note": "Alessandro Usai guides Simona Scioni through the basalt monument and its surrounding archaeological remains.",
-      "group": "local"
+      "group": "sardinian_voices"
     },
     {
       "id": "3s1AS9qMLrQ",
@@ -26,7 +26,7 @@
       "format": "Guided visit and conversation",
       "language": "Italian",
       "note": "Archaeologist Nadia Canu discusses Santu Antine with Sardegna Turistica, moving from the exterior into its stone chambers.",
-      "group": "local"
+      "group": "sardinian_voices"
     },
     {
       "id": "qGzL-Kuzfpo",
@@ -34,8 +34,17 @@
       "site": "Nuraghe Santu Antine",
       "format": "Short site visit",
       "language": "Italian",
-      "note": "A three-minute visit inside and around the nuraghe from travel filmmaker Marco Mura, originally from Alghero.",
-      "group": "local"
+      "note": "A three-minute visit inside and around the nuraghe from Marco Mura, a Sardinian-born filmmaker from Alghero who describes himself as UK-based.",
+      "group": "sardinian_voices"
+    },
+    {
+      "id": "WF9z0xAtLfE",
+      "creator": "nuragando",
+      "site": "Hypogeum of Sas Puntas",
+      "format": "Short site visit",
+      "language": "Site footage",
+      "note": "A close look at the carved exterior and interior of Sas Puntas near Tissi, from Sardinia-focused channel Nuragando.",
+      "group": "sardinian_voices"
     },
     {
       "id": "KBu3J8v7kfU",
