@@ -289,6 +289,9 @@ def main():
     print(f"  Creators:    {len(data['CREATORS'])}")
     print(f"  Walkthroughs: {sum(len(v) for v in data['VIDEOS'].values())}")
 
+    # Image-led island guides are generated before the sitemap.
+    __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'build-island-guides.py')], check=True)
+
     # SEO layer — regenerate static per-site pages + sitemap (added 2026-07-13)
     __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'build-own-channel.py')], check=True)
     __import__('subprocess').run(
