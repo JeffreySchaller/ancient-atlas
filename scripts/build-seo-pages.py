@@ -32,6 +32,7 @@ from pathlib import Path
 from urllib.parse import quote
 
 REPO_ROOT = Path(__file__).parent.parent
+SARDINIA_GUIDE_SITES = {film["site"] for film in json.loads((REPO_ROOT / "data" / "sardinia-guide.json").read_text())["films"]}
 DATA = REPO_ROOT / "data"
 OUT = REPO_ROOT / "public" / "sites"
 BASE = "https://theancientatlas.com"
@@ -256,14 +257,21 @@ def main():
         if wires:
             items = []
             for v in wires:
+                seconds = int(v.get("t") or 0)
+                stamp = f"{seconds//3600}:{seconds%3600//60:02d}:{seconds%60:02d}" if seconds >= 3600 else f"{seconds//60}:{seconds%60:02d}"
+                jump = f"&amp;t={seconds}s" if seconds else ""
+                start_label = f" · Starts at {stamp}" if seconds else ""
                 cr = creators.get(v.get("cr"), {}).get("name", "YouTube")
                 items.append(
-                    f'<a class="vid" href="https://www.youtube.com/watch?v={v["id"]}" rel="noopener">'
+                    f'<a class="vid" href="https://www.youtube.com/watch?v={v["id"]}{jump}" rel="noopener">'
                     f'<img src="https://i.ytimg.com/vi/{v["id"]}/hqdefault.jpg" alt="{html.escape(v["title"])}" loading="lazy" />'
                     f'<span><span class="t">{html.escape(v["title"])}</span>'
-                    f'<span class="c"> · {html.escape(cr)}</span></span></a>'
+                    f'<span class="c"> · {html.escape(cr)}{start_label}</span></span></a>'
                 )
-            vid_html = f"<h2>Walkthrough videos ({len(wires)})</h2>" + "".join(items)
+            vid_html = f"<h2>Films and site visits ({len(wires)})</h2>" + "".join(items)
+
+        if name in SARDINIA_GUIDE_SITES:
+            vid_html += '<p><a href="/creators/sardinia">Explore Sardinia with local guides and other creators →</a></p>'
 
         near = sorted((o for o in sites if o["n"] != name), key=lambda o: haversine(s, o))[:3]
         near_html = "<h2>Nearby sites</h2><ul class=\"nearby\">" + "".join(
@@ -287,17 +295,21 @@ def main():
                 {
                     "@type": "VideoObject",
                     "name": v["title"],
-                    "url": f"https://www.youtube.com/watch?v={v['id']}",
+                    "url": f"https://www.youtube.com/watch?v={v['id']}" + (f"&t={int(v['t'])}s" if v.get("t") else ""),
                     "thumbnailUrl": f"https://i.ytimg.com/vi/{v['id']}/hqdefault.jpg",
                 }
                 for v in wires
             ]
 
+        sources_html = ""
+        if s.get("sources"):
+            sources_html = '<p class="meta">Site reference: ' + ' · '.join(f'<a href="{html.escape(x["url"], quote=True)}">{html.escape(x["label"])}</a>' for x in s['sources']) + '</p>'
         body = f"""<h1>{html.escape(name)}</h1>
 <div class="badges">{badges}</div>
 <p class="desc">{html.escape(s.get('desc') or '')}</p>
 <p class="meta">{s['lat']:.4f}°, {s['lng']:.4f}°</p>
 {look}
+{sources_html}
 <a class="cta" href="/?site={quote(name)}">Open in the Atlas map →</a>
 {vid_html}
 {near_html}"""

@@ -706,5 +706,54 @@
     "subs": "James Haswell · on-location travel films and archaeological site visits",
     "color": "#7D9D91",
     "tier": 3
+  },
+  "sardegnasacra": {
+    "name": "Sardegna Sacra",
+    "handle": "@sardegnasacra",
+    "subs": "Ilaria Montis · archaeologist and guide working in Sardinia · Italian-language site visits",
+    "color": "#92AC86",
+    "tier": 2
+  },
+  "sardegnastorica": {
+    "name": "Sardegna Storica",
+    "handle": "@sardegnastorica6867",
+    "subs": "Sardinian archaeology and heritage · visits and interviews with local specialists",
+    "color": "#BC9874",
+    "tier": 2
+  },
+  "sardegnaturistica": {
+    "name": "Sardegna Turistica",
+    "handle": "@sardegnaturistica9590",
+    "subs": "Sardinian cultural heritage channel · on-site conversations with archaeologists",
+    "color": "#83A6BB",
+    "tier": 2
+  },
+  "marcomura": {
+    "name": "Marco Mura",
+    "handle": "@MarcoMura",
+    "subs": "Travel filmmaker from Alghero · Italian-language visits in Sardinia and beyond",
+    "color": "#B598BF",
+    "tier": 3
+  },
+  "marcvillinger": {
+    "name": "Dr. Marc Villinger",
+    "handle": "@marcvillinger",
+    "subs": "On-location travel films · Cucuruzzu archaeological site visit",
+    "color": "#83A498",
+    "tier": 3
+  },
+  "videotourist": {
+    "name": "Video Tourist Adventures",
+    "handle": "@video-tourist",
+    "subs": "Travel and archaeological site visits · videoturysta.eu",
+    "color": "#9EAE7A",
+    "tier": 3
+  },
+  "valincotv": {
+    "name": "valinco tv",
+    "handle": "@valincotv",
+    "subs": "Corsican landscape and heritage · filmed site visits and time-lapses",
+    "color": "#7DA7B5",
+    "tier": 3
   }
 }

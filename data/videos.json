@@ -6736,9 +6736,11 @@
   "Sardinia Nuraghi (Su Nuraxi)": [
     {
       "id": "q0YNkMIt3BY",
-      "title": "Documentary Stone Riddles II — Archaeological Treasures of Sardinia",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
       "cr": "stoneriddles",
-      "added": "2026-07-11"
+      "added": "2026-07-11",
+      "t": 1953,
+      "published": "2025-01-31"
     },
     {
       "id": "KBu3J8v7kfU",
@@ -6954,6 +6956,28 @@
       "title": "Nuraghe Santu Antine",
       "cr": "stoneriddles",
       "added": "2026-07-11"
+    },
+    {
+      "id": "3s1AS9qMLrQ",
+      "title": "Nuraghe Santu Antine Torralba con Nadia Canu",
+      "cr": "sardegnaturistica",
+      "added": "2026-10-23",
+      "published": "2023-02-03"
+    },
+    {
+      "id": "qGzL-Kuzfpo",
+      "title": "NURAGHE SANTU ANTINE - un gioiello della SARDEGNA!",
+      "cr": "marcomura",
+      "added": "2026-10-23",
+      "published": "2020-11-22"
+    },
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 1176,
+      "published": "2025-01-31"
     }
   ],
   "Giants' Grave S'Ena e Thomes": [
@@ -7626,6 +7650,223 @@
       "cr": "megalithomania",
       "added": "2026-10-23",
       "published": "2020-03-15"
+    },
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 4984,
+      "published": "2025-01-31"
+    }
+  ],
+  "Nuraghe Losa": [
+    {
+      "id": "44FzDVy6cxE",
+      "title": "SARDEGNA ARCHEOLOGICA: IL NURAGHE LOSA DI ABBASANTA",
+      "cr": "sardegnastorica",
+      "added": "2026-10-23",
+      "published": "2022-12-03"
+    },
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 969,
+      "published": "2025-01-31"
+    }
+  ],
+  "Nuraghe Arrubiu": [
+    {
+      "id": "aSUbwMSH5nI",
+      "title": "Nuraghe Arrubiu con Sardegna Sacra e Prospettive Vegetali tour",
+      "cr": "sardegnasacra",
+      "added": "2026-10-23",
+      "published": "2019-03-14"
+    },
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 1733,
+      "published": "2025-01-31"
+    }
+  ],
+  "Nuraghe Orolo": [
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 823,
+      "published": "2025-01-31"
+    }
+  ],
+  "Giants' Grave of Li Lolghi": [
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 3083,
+      "published": "2025-01-31"
+    }
+  ],
+  "Giants' Grave of Coddu Vecchiu": [
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 3196,
+      "published": "2025-01-31"
+    }
+  ],
+  "Sacred Spring of Su Tempiesu": [
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 3785,
+      "published": "2025-01-31"
+    }
+  ],
+  "Sacred Well of Santa Cristina": [
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 4018,
+      "published": "2025-01-31"
+    },
+    {
+      "id": "-vs7rrKPFDs",
+      "title": "The Impossible Precision of The Well of Santa Cristina: Why This Italian Well Matches Peru",
+      "cr": "earthexplorer",
+      "added": "2026-10-24",
+      "published": "2026-07-21"
+    }
+  ],
+  "Sanctuary of Santa Vittoria (Serri)": [
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 4193,
+      "published": "2025-01-31"
+    }
+  ],
+  "Pranu Muttedu": [
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 5428,
+      "published": "2025-01-31"
+    }
+  ],
+  "Tamuli Archaeological Complex": [
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 5625,
+      "published": "2025-01-31"
+    }
+  ],
+  "Sa Coveccada Dolmen": [
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 5675,
+      "published": "2025-01-31"
+    }
+  ],
+  "Monte d'Accoddi": [
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 6121,
+      "published": "2025-01-31"
+    }
+  ],
+  "Monte Baranta": [
+    {
+      "id": "q0YNkMIt3BY",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "t": 6253,
+      "published": "2025-01-31"
+    }
+  ],
+  "Cucuruzzu (Corsica)": [
+    {
+      "id": "LM5C_Zr9nGE",
+      "title": "Visite de les sites archéologiques de Cucuruzzu, Levie en Corse",
+      "cr": "marcvillinger",
+      "added": "2026-10-24",
+      "published": "2019-10-06"
+    }
+  ],
+  "Araghju (Corsica)": [
+    {
+      "id": "N6TpJFxjHfc",
+      "title": "[4K] South Corsica Megalithic Sites, Araghju & Tappa Bronze Age Fortresses (videoturysta.eu)",
+      "cr": "videotourist",
+      "added": "2026-10-24",
+      "published": "2026-04-19",
+      "t": 5
+    }
+  ],
+  "Tappa (Corsica)": [
+    {
+      "id": "N6TpJFxjHfc",
+      "title": "[4K] South Corsica Megalithic Sites, Araghju & Tappa Bronze Age Fortresses (videoturysta.eu)",
+      "cr": "videotourist",
+      "added": "2026-10-24",
+      "published": "2026-04-19",
+      "t": 145
+    }
+  ],
+  "Filitosa (Corsica)": [
+    {
+      "id": "eXeX73aspL4",
+      "title": "France Corse Site archéologique Filitosa et musée / France Corsica Filitosa archaeological site",
+      "cr": "horsfrontieres",
+      "added": "2026-10-24",
+      "published": "2024-08-24"
+    }
+  ],
+  "Funtanaccia Dolmen (Corsica)": [
+    {
+      "id": "BO2Hv4XvfFQ",
+      "title": "A visiter, Le plateau de Cauria (dolmen & menhir) en timelapse en Corse vers Sartene",
+      "cr": "valincotv",
+      "added": "2026-10-24",
+      "published": "2017-09-02",
+      "t": 190
+    }
+  ],
+  "I Stantari (Corsica)": [
+    {
+      "id": "BO2Hv4XvfFQ",
+      "title": "A visiter, Le plateau de Cauria (dolmen & menhir) en timelapse en Corse vers Sartene",
+      "cr": "valincotv",
+      "added": "2026-10-24",
+      "published": "2017-09-02",
+      "t": 245
     }
   ]
 }
