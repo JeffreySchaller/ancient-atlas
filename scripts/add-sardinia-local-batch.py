@@ -13,12 +13,13 @@ def main():
         if s['n'] not in {x['n'] for x in sites}: sites.append(s)
         countries[s['n']]='Italy'
     new_creators={
+      'nuragando':dict(name='Nuragando',handle='@nuragando',subs='Sardinian archaeological sites · ground-level visits and aerial footage',color='#8EA887',tier=3),
       'sardegnasacra':dict(name='Sardegna Sacra',handle='@sardegnasacra',subs='Ilaria Montis · archaeologist and guide working in Sardinia · Italian-language site visits',color='#92AC86',tier=2),
       'sardegnastorica':dict(name='Sardegna Storica',handle='@sardegnastorica6867',subs='Sardinian archaeology and heritage · visits and interviews with local specialists',color='#BC9874',tier=2),
       'sardegnaturistica':dict(name='Sardegna Turistica',handle='@sardegnaturistica9590',subs='Sardinian cultural heritage channel · on-site conversations with archaeologists',color='#83A6BB',tier=2),
       'marcomura':dict(name='Marco Mura',handle='@MarcoMura',subs='Travel filmmaker from Alghero · Italian-language visits in Sardinia and beyond',color='#B598BF',tier=3)}
     for k,v in new_creators.items(): creators.setdefault(k,v)
-    placements={'44FzDVy6cxE':('Nuraghe Losa','sardegnastorica'),'aSUbwMSH5nI':('Nuraghe Arrubiu','sardegnasacra'),'3s1AS9qMLrQ':('Nuraghe Santu Antine','sardegnaturistica'),'qGzL-Kuzfpo':('Nuraghe Santu Antine','marcomura')}
+    placements={'WF9z0xAtLfE':('Hypogeum of Sas Puntas','nuragando'),'44FzDVy6cxE':('Nuraghe Losa','sardegnastorica'),'aSUbwMSH5nI':('Nuraghe Arrubiu','sardegnasacra'),'3s1AS9qMLrQ':('Nuraghe Santu Antine','sardegnaturistica'),'qGzL-Kuzfpo':('Nuraghe Santu Antine','marcomura')}
     for ident,(site,cr) in placements.items():
         x=meta[ident];d=x['upload_date']
         if not any(v['id']==ident for v in videos.setdefault(site,[])):videos[site].append(dict(id=ident,title=x['title'],cr=cr,added='2026-10-23',published=f'{d[:4]}-{d[4:6]}-{d[6:]}'))

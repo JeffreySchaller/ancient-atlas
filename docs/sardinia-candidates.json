@@ -129,5 +129,23 @@
     "url": "https://www.youtube.com/watch?v=IBxcC4eUKD0",
     "status": "needs_footage_and_site_review",
     "review_note": "Discovered via YouTube search; local identity, exact places and on-location footage still require verification."
+  },
+  {
+    "id": "WF9z0xAtLfE",
+    "title": "Ipogeo Sas Puntas, Tissi",
+    "channel": "Nuragando",
+    "url": "https://www.youtube.com/watch?v=WF9z0xAtLfE",
+    "site": "Hypogeum of Sas Puntas",
+    "status": "accepted",
+    "reviewed": "2026-10-23",
+    "review_note": "Recommended channel by Claude; independently verified uploader metadata and original video frames at 30s and 80s, exterior and interior."
+  },
+  {
+    "id": "n3soSXoFh50",
+    "title": "Domus de janas Corongiu, Pimentel",
+    "channel": "Nuragando",
+    "url": "https://www.youtube.com/watch?v=n3soSXoFh50",
+    "status": "deferred",
+    "review_note": "Only 11 seconds; longer Sas Puntas site visit selected for this batch."
   }
 ]

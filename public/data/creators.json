@@ -755,5 +755,12 @@
     "subs": "Corsican landscape and heritage · filmed site visits and time-lapses",
     "color": "#7DA7B5",
     "tier": 3
+  },
+  "nuragando": {
+    "name": "Nuragando",
+    "handle": "@nuragando",
+    "subs": "Sardinian archaeological sites · ground-level visits and aerial footage",
+    "color": "#8EA887",
+    "tier": 3
   }
 }
