@@ -134,6 +134,7 @@ footer{max-width:760px;margin:44px auto 0;padding-top:18px;border-top:1px solid 
 
 def page_shell(title, desc_meta, canonical, og_image, body, jsonld=None):
     ld = f'<script type="application/ld+json">{jsonld}</script>\n' if jsonld else ""
+    photo_styles = '<link rel="stylesheet" href="/assets/site-photos.css">\n' if 'id="photographs"' in body else ''
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -154,7 +155,7 @@ def page_shell(title, desc_meta, canonical, og_image, body, jsonld=None):
 <style>{CSS}</style>
 <script defer src="/assets/js/analytics.js"></script>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-{ld}</head>
+{ld}{photo_styles}</head>
 <body>
 <header><a href="/"><span>✦</span> The Ancient Atlas</a></header>
 <main>
@@ -202,7 +203,7 @@ def main():
     # sitemap entirely, because only library/ was globbed. That made every page
     # under /creators/ invisible to search - including the one the YouTube
     # channel is about to point at. Any hand-authored section belongs here.
-    for section in ("creators", "experiences", "patterns", "islands"):
+    for section in ("creators", "experiences", "patterns", "islands", "photos"):
         d = REPO_ROOT / "public" / section
         if not d.exists():
             continue
@@ -212,6 +213,7 @@ def main():
         for page in sorted(d.glob("*/index.html")):
             urls.append(f"{BASE}/{section}/{page.parent.name}/")
 
+    photos = load('site-photos.json')
     count = 0
     for s in sites:
         name, slug = s["n"], slugs[s["n"]]
@@ -253,6 +255,14 @@ def main():
                     break
             look += "</div>"
 
+        photo_html = ""
+        if photos.get(name):
+            photo_html = '<section id="photographs"><h2>Photographs</h2><div class="site-photo-grid">'
+            for p in photos[name]:
+                esc = lambda v: html.escape(str(v), quote=True)
+                photo_html += f'<figure><a href="{esc(p["source"])}"><img src="{esc(p["image"])}" alt="{esc(p["caption"])}" width="{p["width"]}" height="{p["height"]}" loading="lazy"></a><figcaption>{esc(p["caption"])}<div class="photo-credit">{esc(p["author"])} · <a href="{esc(p["license_url"])}">{esc(p["license"])}</a> · <a href="{esc(p["source"])}">Original on Wikimedia Commons ↗</a></div></figcaption></figure>'
+            photo_html += '</div><p class="photo-changes">Resized and converted to WebP. Full composition retained; no colour edits. Each image retains its stated licence.</p></section>\n'
+            og_image = BASE + photos[name][0]['image']
         vid_html = ""
         if wires:
             items = []
@@ -311,7 +321,7 @@ def main():
 {look}
 {sources_html}
 <a class="cta" href="/?site={quote(name)}">Open in the Atlas map →</a>
-{vid_html}
+{photo_html}{vid_html}
 {near_html}"""
 
         (OUT / f"{slug}.html").write_text(

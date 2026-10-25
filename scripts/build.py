@@ -37,6 +37,7 @@ BLOCKS = [
     ('creators.json',       'CREATORS',       dict),
     ('tours.json',          'TOURS',          dict),
     ('videos.json',         'VIDEOS',         dict),
+    ('site-photos.json',    'SITE_PHOTOS',    dict),
     ('categories.json',     'CATS',           dict),
     ('eras.json',           'SITE_YEARS',     dict),
     ('countries.json',      'SITE_COUNTRIES', dict),
@@ -291,6 +292,8 @@ def main():
 
     # Image-led island guides are generated before the sitemap.
     __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'build-island-guides.py')], check=True)
+
+    __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'build-site-photo-index.py')], check=True)
 
     # SEO layer — regenerate static per-site pages + sitemap (added 2026-07-13)
     __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'build-own-channel.py')], check=True)

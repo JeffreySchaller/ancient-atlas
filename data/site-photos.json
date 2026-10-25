@@ -1,0 +1,1287 @@
+{
+  "Sardinia Nuraghi (Su Nuraxi)": [
+    {
+      "id": "p001",
+      "image": "/img/sites/p001.webp",
+      "width": 1800,
+      "height": 1126,
+      "caption": "Sardinia Nuraghi (Su Nuraxi)",
+      "author": "Norbert Nagel",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nuraghe_Su_Nuraxi_-_Barumini_-_Sardinia_-_Italy_-_05.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/6/64/Nuraghe_Su_Nuraxi_-_Barumini_-_Sardinia_-_Italy_-_05.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Nuraghe Su Nuraxi - Barumini - Sardinia - Italy - 05.jpg",
+        "description": "Su Nuraxi is a nuragic archaeological site in Barumini, Sardinia, Italy. The complex is centred around a three-storey tower built around the 16th century BC."
+      }
+    },
+    {
+      "id": "p002",
+      "image": "/img/sites/p002.webp",
+      "width": 1800,
+      "height": 1201,
+      "caption": "Sardinia Nuraghi (Su Nuraxi)",
+      "author": "Norbert Nagel",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nuraghe_Su_Nuraxi_-_Barumini_-_Sardinia_-_Italy_-_16.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Nuraghe_Su_Nuraxi_-_Barumini_-_Sardinia_-_Italy_-_16.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Nuraghe Su Nuraxi - Barumini - Sardinia - Italy - 16.jpg",
+        "description": "View of the village from the central tower. Su Nuraxi is a nuragic archaeological site in Barumini, Sardinia, Italy. The complex is centred around a three-storey tower built around the 16th century BC."
+      }
+    },
+    {
+      "image": "/img/islands/sardinia-1.webp",
+      "author": "Michel Royon",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source": "https://commons.wikimedia.org/wiki/File:Nuraghe_village.JPG",
+      "id": "guide-s1",
+      "width": 1592,
+      "height": 984,
+      "caption": "A village around the towers",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24"
+    },
+    {
+      "image": "/img/islands/sardinia-4.webp",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:1997_wurde_Su_Nuraxi_UNESCO_Weltkulturerbe._13.jpg",
+      "id": "guide-s4",
+      "width": 1800,
+      "height": 1200,
+      "caption": "People for scale",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24"
+    }
+  ],
+  "Nuraghe Santu Antine": [
+    {
+      "id": "p003",
+      "image": "/img/sites/p003.webp",
+      "width": 1200,
+      "height": 1800,
+      "caption": "Nuraghe Santu Antine",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:21_m._war_die_Nuraghe_Santu_Antine_urspr%C3%BCnglich_hoch._08.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/d/db/21_m._war_die_Nuraghe_Santu_Antine_urspr%C3%BCnglich_hoch._08.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:21 m. war die Nuraghe Santu Antine ursprünglich hoch. 08.jpg",
+        "description": "The Nuraghe Santu  Antine."
+      }
+    },
+    {
+      "id": "p004",
+      "image": "/img/sites/p004.webp",
+      "width": 1800,
+      "height": 1406,
+      "caption": "Nuraghe Santu Antine",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:21_m._war_die_Nuraghe_Santu_Antine_urspr%C3%BCnglich_hoch._23.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/3/3b/21_m._war_die_Nuraghe_Santu_Antine_urspr%C3%BCnglich_hoch._23.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:21 m. war die Nuraghe Santu Antine ursprünglich hoch. 23.jpg",
+        "description": "The Nuraghe Santu  Antine."
+      }
+    },
+    {
+      "image": "/img/islands/sardinia-2.webp",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:21_m._war_die_Nuraghe_Santu_Antine_urspr%C3%BCnglich_hoch._01.jpg",
+      "id": "guide-s2",
+      "width": 1800,
+      "height": 1200,
+      "caption": "A tower on a monumental scale",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24"
+    },
+    {
+      "image": "/img/islands/sardinia-3.webp",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:21_m._war_die_Nuraghe_Santu_Antine_urspr%C3%BCnglich_hoch._09.jpg",
+      "id": "guide-s3",
+      "width": 1800,
+      "height": 1200,
+      "caption": "A corridor through stone",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24"
+    }
+  ],
+  "San Andrea Priù": [
+    {
+      "id": "p005",
+      "image": "/img/sites/p005.webp",
+      "width": 800,
+      "height": 600,
+      "caption": "San Andrea Priù",
+      "author": "fadda  domenico ange…",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:INGRESSO_TOMBA_DEL_CAPO,_NECROPOLI_SANT%27ANDREA_PRIU_-_panoramio.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/5/56/INGRESSO_TOMBA_DEL_CAPO%2C_NECROPOLI_SANT%27ANDREA_PRIU_-_panoramio.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:INGRESSO TOMBA DEL CAPO, NECROPOLI SANT'ANDREA PRIU - panoramio.jpg",
+        "description": "INGRESSO TOMBA DEL CAPO: NECROPOLI SANT'ANDREA PRIU"
+      }
+    },
+    {
+      "id": "p006",
+      "image": "/img/sites/p006.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "San Andrea Priù",
+      "author": "Mboesch",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Necropoli-sant-andrea-priu-tomba-a-camera.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/71/Necropoli-sant-andrea-priu-tomba-a-camera.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Necropoli-sant-andrea-priu-tomba-a-camera.jpg",
+        "description": "Necropoli Sant'Andrea Priu"
+      }
+    }
+  ],
+  "Giants' Grave S'Ena e Thomes": [
+    {
+      "id": "p007",
+      "image": "/img/sites/p007.webp",
+      "width": 1800,
+      "height": 1196,
+      "caption": "Giants' Grave S'Ena e Thomes",
+      "author": "Ruiu Michele",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Tomba_dei_giganti2.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Tomba_dei_giganti2.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Tomba dei giganti2.jpg",
+        "description": "Tomba dei giganti S´ena ´e Thomes Dorgali"
+      }
+    }
+  ],
+  "Sacred Well of Sa Testa": [
+    {
+      "id": "p009",
+      "image": "/img/sites/p009.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Sacred Well of Sa Testa",
+      "author": "Gianni Careddu",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Olbia_-_Pozzo_sacro_di_Sa_Testa_(19).JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Olbia_-_Pozzo_sacro_di_Sa_Testa_%2819%29.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Olbia - Pozzo sacro di Sa Testa (19).JPG",
+        "description": "Pozzo sacro di Sa Testa"
+      }
+    }
+  ],
+  "Nuraghe Su Mulinu": [
+    {
+      "id": "p010",
+      "image": "/img/sites/p010.webp",
+      "width": 1400,
+      "height": 1000,
+      "caption": "Nuraghe Su Mulinu",
+      "author": "Aggrucar",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Su_Mulinu_Villanovafranca.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Su_Mulinu_Villanovafranca.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Su Mulinu Villanovafranca.jpg",
+        "description": "Sito archeologico del nuraghe Su Mulinu con vista dell'abitato di Villanovafranca."
+      }
+    },
+    {
+      "id": "p011",
+      "image": "/img/sites/p011.webp",
+      "width": 1350,
+      "height": 1800,
+      "caption": "Nuraghe Su Mulinu",
+      "author": "Aggrucar",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Su_mulinu_-_scale.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/1/12/Su_mulinu_-_scale.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Su mulinu - scale.jpg",
+        "description": "Interno del nuraghe Su Mulinu a Villanovafranca."
+      }
+    }
+  ],
+  "Iloi Complex (Sedilo)": [
+    {
+      "id": "p012",
+      "image": "/img/sites/p012.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Iloi Complex (Sedilo)",
+      "author": "Stefania Zeta",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nuraghe_Iloi.JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Nuraghe_Iloi.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Nuraghe Iloi.JPG",
+        "description": "Nuraghe e tomba di gigante n.2 di Iloi - MIBAC"
+      }
+    },
+    {
+      "id": "p013",
+      "image": "/img/sites/p013.webp",
+      "width": 1800,
+      "height": 978,
+      "caption": "Iloi Complex (Sedilo)",
+      "author": "Cristiano Cani",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tomba_dei_Giganti_Iloi_02_D.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Tomba_dei_Giganti_Iloi_02_D.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Tomba dei Giganti Iloi 02 D.jpg",
+        "description": "Nuraghe e tomba di gigante n.2 di Iloi - MIBAC"
+      }
+    }
+  ],
+  "Protonuraghe Bruncu Madugui": [
+    {
+      "id": "p014",
+      "image": "/img/sites/p014.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Protonuraghe Bruncu Madugui",
+      "author": "it:Utente:Maurocuccu",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Particolare_del_Nuraghe_Bruncu_Madugui.JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Particolare_del_Nuraghe_Bruncu_Madugui.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Particolare del Nuraghe Bruncu Madugui.JPG",
+        "description": "Nuraga \"Bruncu Madugui\"."
+      }
+    }
+  ],
+  "Nuraghe Serbissi": [
+    {
+      "id": "p015",
+      "image": "/img/sites/p015.webp",
+      "width": 1800,
+      "height": 1205,
+      "caption": "Nuraghe Serbissi",
+      "author": "MrAndre",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nuraghe_serbissi_front.JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Nuraghe_serbissi_front.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Nuraghe serbissi front.JPG",
+        "description": "Nuraghe Serbissi"
+      }
+    },
+    {
+      "id": "p016",
+      "image": "/img/sites/p016.webp",
+      "width": 1800,
+      "height": 1205,
+      "caption": "Nuraghe Serbissi",
+      "author": "MrAndre",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nuraghe_serbissi_panorama.JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Nuraghe_serbissi_panorama.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Nuraghe serbissi panorama.JPG",
+        "description": "Nuraghe Serbissi"
+      }
+    }
+  ],
+  "Nuraghe Piscu": [
+    {
+      "id": "p017",
+      "image": "/img/sites/p017.webp",
+      "width": 1024,
+      "height": 479,
+      "caption": "Nuraghe Piscu",
+      "author": "Cristiano Cani",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nuraghe_Piscu.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Nuraghe_Piscu.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Nuraghe Piscu.jpg",
+        "description": "Nuraghe Piscu, Subito dopo Suelli, proseguendo per Mandas, sulla sinistra della strada."
+      }
+    }
+  ],
+  "Nuraghe Corbos": [
+    {
+      "id": "p018",
+      "image": "/img/sites/p018.webp",
+      "width": 480,
+      "height": 379,
+      "caption": "Nuraghe Corbos",
+      "author": "Angelo Morittu",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Wiki_corbos_0801.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Wiki_corbos_0801.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Wiki corbos 0801.jpg",
+        "description": "Nuraghe Corbos - it:Silanus"
+      }
+    }
+  ],
+  "Giants' Grave of Imbertighe": [
+    {
+      "id": "p019",
+      "image": "/img/sites/p019.webp",
+      "width": 1200,
+      "height": 1800,
+      "caption": "Giants' Grave of Imbertighe",
+      "author": "Gianni Careddu",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Borore_-_Tomba_dei_giganti_di_Imbertighe_(05).JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/9/93/Borore_-_Tomba_dei_giganti_di_Imbertighe_%2805%29.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Borore - Tomba dei giganti di Imbertighe (05).JPG",
+        "description": "Tomba dei giganti di Imbertighe"
+      }
+    },
+    {
+      "id": "p020",
+      "image": "/img/sites/p020.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Giants' Grave of Imbertighe",
+      "author": "Gianni Careddu",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Borore_-_Tomba_dei_giganti_di_Imbertighe_(13).JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Borore_-_Tomba_dei_giganti_di_Imbertighe_%2813%29.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Borore - Tomba dei giganti di Imbertighe (13).JPG",
+        "description": "Tomba dei giganti di Imbertighe"
+      }
+    }
+  ],
+  "Sacred Well Is Pirois": [
+    {
+      "id": "p021",
+      "image": "/img/sites/p021.webp",
+      "width": 600,
+      "height": 450,
+      "caption": "Sacred Well Is Pirois",
+      "author": "Aschy",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pozzo_Is_pirois.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Pozzo_Is_pirois.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Pozzo Is pirois.jpg",
+        "description": "Pozzo Is Pirois Villaputzu"
+      }
+    },
+    {
+      "id": "p022",
+      "image": "/img/sites/p022.webp",
+      "width": 1600,
+      "height": 1060,
+      "caption": "Sacred Well Is Pirois",
+      "author": "Aga Khan (IT)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pozzo_sacro_Is_Pirois-tholos_hole_seen_from_above_DSC_6002.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Pozzo_sacro_Is_Pirois-tholos_hole_seen_from_above_DSC_6002.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Pozzo sacro Is Pirois-tholos hole seen from above DSC 6002.jpg",
+        "description": "Pozzo sacro Is Pirois (Villaputzu, Sardinia, Italy) hole of the lower chamber as seen from the upper structure"
+      }
+    }
+  ],
+  "Nuraghe Losa": [
+    {
+      "id": "p023",
+      "image": "/img/sites/p023.webp",
+      "width": 600,
+      "height": 349,
+      "caption": "Nuraghe Losa",
+      "author": "No machine-readable author provided. Jack Aubrey~commonswiki assumed (based on copyright claims).",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Nuraghe_Losa.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Nuraghe_Losa.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Nuraghe Losa.jpg",
+        "description": "Northern view.\nOwn work.\n3.10.2006"
+      }
+    },
+    {
+      "id": "p024",
+      "image": "/img/sites/p024.webp",
+      "width": 1202,
+      "height": 1800,
+      "caption": "Nuraghe Losa",
+      "author": "CV1958",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Nuraghe_Losa_02.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/4/49/Nuraghe_Losa_02.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Nuraghe Losa 02.jpg",
+        "description": "Bronze-Age towers, widely distributed across Sardinia"
+      }
+    }
+  ],
+  "Nuraghe Arrubiu": [
+    {
+      "id": "p026",
+      "image": "/img/sites/p026.webp",
+      "width": 1800,
+      "height": 869,
+      "caption": "Nuraghe Arrubiu",
+      "author": "Silvia Seu",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Panoramica_Nuraghe_Arrubiu.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/5/52/Panoramica_Nuraghe_Arrubiu.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Panoramica Nuraghe Arrubiu.jpg",
+        "description": "nuraghe Arrubiu"
+      }
+    }
+  ],
+  "Sacred Well of Santa Cristina": [
+    {
+      "id": "p027",
+      "image": "/img/sites/p027.webp",
+      "width": 1600,
+      "height": 1060,
+      "caption": "Sacred Well of Santa Cristina",
+      "author": "Aga Khan (IT)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Santa_Cristina_Pozzo_Sacro_Esterno_5849.JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Santa_Cristina_Pozzo_Sacro_Esterno_5849.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Santa Cristina Pozzo Sacro Esterno 5849.JPG",
+        "description": "Santa Cristina Pozzo Sacro Esterno"
+      }
+    },
+    {
+      "id": "p028",
+      "image": "/img/sites/p028.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Sacred Well of Santa Cristina",
+      "author": "Daniel Ventura",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Santuario_nuragico_di_Santa_Cristina_(Paulilatino_07.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Santuario_nuragico_di_Santa_Cristina_%28Paulilatino_07.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Santuario nuragico di Santa Cristina (Paulilatino 07.jpg",
+        "description": "המעיין הקדוש של סנטה קריסטינה"
+      }
+    },
+    {
+      "image": "/img/islands/sardinia-5.webp",
+      "author": "Carlo Pelagalli",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Pozzo_sacro_di_Santa_Cristina,_dal_fondo_del_pozzo._-_panoramio.jpg",
+      "id": "guide-s5",
+      "width": 1800,
+      "height": 1200,
+      "caption": "The staircase from below",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24"
+    },
+    {
+      "image": "/img/islands/sardinia-6.webp",
+      "author": "Aga Khan (IT)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Santa_Cristina_Pozzo_Sacro_Tholos_Del_pozzo_5833.JPG",
+      "id": "guide-s6",
+      "width": 1600,
+      "height": 1060,
+      "caption": "A chamber closing toward the sky",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24"
+    }
+  ],
+  "Sacred Spring of Su Tempiesu": [
+    {
+      "id": "p029",
+      "image": "/img/sites/p029.webp",
+      "width": 1800,
+      "height": 1205,
+      "caption": "Sacred Spring of Su Tempiesu",
+      "author": "Maurizio Aresu 2",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Fonte_sacra_%22Su_Tempiesu%22_-_Orune_10_gennaio_2015.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Fonte_sacra_%22Su_Tempiesu%22_-_Orune_10_gennaio_2015.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Fonte sacra \"Su Tempiesu\" - Orune 10 gennaio 2015.jpg",
+        "description": "fonte sacra Su Tempiesu - Orune"
+      }
+    },
+    {
+      "id": "p030",
+      "image": "/img/sites/p030.webp",
+      "width": 1333,
+      "height": 1800,
+      "caption": "Sacred Spring of Su Tempiesu",
+      "author": "Rafael Brix",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Su_Tempiesu.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/5/53/Su_Tempiesu.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Su Tempiesu.jpg",
+        "description": "sacred source Su Tempiesu near Orune, Sardegna, Italy"
+      }
+    }
+  ],
+  "Sanctuary of Santa Vittoria (Serri)": [
+    {
+      "id": "p031",
+      "image": "/img/sites/p031.webp",
+      "width": 1800,
+      "height": 1193,
+      "caption": "Sanctuary of Santa Vittoria (Serri)",
+      "author": "Aga Khan (IT)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Santa_Vittoria_di_Serri_Capanna_dell%27ascia_bipenne_DSC_7847.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Santa_Vittoria_di_Serri_Capanna_dell%27ascia_bipenne_DSC_7847.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Santa Vittoria di Serri Capanna dell'ascia bipenne DSC 7847.jpg",
+        "description": "Nuragic sanctuary of Santa Vittoria (Serri - Sardinia - Italy) - Hut of the double headed ax"
+      }
+    },
+    {
+      "id": "p032",
+      "image": "/img/sites/p032.webp",
+      "width": 1800,
+      "height": 685,
+      "caption": "Sanctuary of Santa Vittoria (Serri)",
+      "author": "Aga Khan (IT)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Santa_Vittoria_di_Serri_capanna_delle_riunioni_federali.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Santa_Vittoria_di_Serri_capanna_delle_riunioni_federali.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Santa Vittoria di Serri capanna delle riunioni federali.jpg",
+        "description": "capanna delle riunioni (curia)"
+      }
+    }
+  ],
+  "Monte d'Accoddi": [
+    {
+      "id": "p033",
+      "image": "/img/sites/p033.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Monte d'Accoddi",
+      "author": "Daniel Ventura",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Altare_preistorico_di_Monte_d%27_Accoddi_09.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Altare_preistorico_di_Monte_d%27_Accoddi_09.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Altare preistorico di Monte d' Accoddi 09.jpg",
+        "description": "האתר הפיהיטורי במונטה אקונדי"
+      }
+    }
+  ],
+  "Monte Baranta": [
+    {
+      "id": "p035",
+      "image": "/img/sites/p035.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Monte Baranta",
+      "author": "Gianni Careddu",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Olmedo_-_Monte_Baranta_(03).JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Olmedo_-_Monte_Baranta_%2803%29.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Olmedo - Monte Baranta (03).JPG",
+        "description": "Complesso prenuragico di Monte Baranta, Olmedo, Sardegna, Italy"
+      }
+    },
+    {
+      "id": "p036",
+      "image": "/img/sites/p036.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Monte Baranta",
+      "author": "Gianni Careddu",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Olmedo_-_Monte_Baranta_(12).JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/1/16/Olmedo_-_Monte_Baranta_%2812%29.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Olmedo - Monte Baranta (12).JPG",
+        "description": "Complesso prenuragico di Monte Baranta, Olmedo, Sardegna, Italy"
+      }
+    }
+  ],
+  "Nuraghe Orolo": [
+    {
+      "id": "p037",
+      "image": "/img/sites/p037.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Nuraghe Orolo",
+      "author": "Gianni Careddu",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bortigali_-_Nuraghe_Orolo_(10).JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/0/04/Bortigali_-_Nuraghe_Orolo_%2810%29.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Bortigali - Nuraghe Orolo (10).JPG",
+        "description": "Nuraghe Orolo"
+      }
+    },
+    {
+      "id": "p038",
+      "image": "/img/sites/p038.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Nuraghe Orolo",
+      "author": "Gianni Careddu",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Bortigali_-_Nuraghe_Orolo_(29).JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/73/Bortigali_-_Nuraghe_Orolo_%2829%29.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Bortigali - Nuraghe Orolo (29).JPG",
+        "description": "Nuraghe Orolo"
+      }
+    }
+  ],
+  "Pranu Muttedu": [
+    {
+      "id": "p039",
+      "image": "/img/sites/p039.webp",
+      "width": 1800,
+      "height": 1080,
+      "caption": "Pranu Muttedu",
+      "author": "Cristiano Cani",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Area_archeologica_di_Pranu_Muttedu_02.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Area_archeologica_di_Pranu_Muttedu_02.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Area archeologica di Pranu Muttedu 02.jpg",
+        "description": "Area archeologica di Pranu Muttedu - MIBAC"
+      }
+    },
+    {
+      "id": "p040",
+      "image": "/img/sites/p040.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Pranu Muttedu",
+      "author": "Photograph by Mike Peel (www.mikepeel.net).",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Area_archeologica_di_Pranu_Muttedu_2025_022.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Area_archeologica_di_Pranu_Muttedu_2025_022.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Area archeologica di Pranu Muttedu 2025 022.jpg",
+        "description": "Necropolis of Pranu Muttedu"
+      }
+    }
+  ],
+  "Tamuli Archaeological Complex": [
+    {
+      "id": "p041",
+      "image": "/img/sites/p041.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Tamuli Archaeological Complex",
+      "author": "Gianni Careddu",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Macomer_-_Area_archeologica_di_Tamuli_(17).JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/3/32/Macomer_-_Area_archeologica_di_Tamuli_%2817%29.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Macomer - Area archeologica di Tamuli (17).JPG",
+        "description": "Macomer - Area archeologica di Tamuli -"
+      }
+    },
+    {
+      "id": "p042",
+      "image": "/img/sites/p042.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Tamuli Archaeological Complex",
+      "author": "Gianni Careddu",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Macomer_-_Area_archeologica_di_Tamuli_(21).JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/3/33/Macomer_-_Area_archeologica_di_Tamuli_%2821%29.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Macomer - Area archeologica di Tamuli (21).JPG",
+        "description": "Macomer - Area archeologica di Tamuli -"
+      }
+    }
+  ],
+  "Sa Coveccada Dolmen": [
+    {
+      "id": "p043",
+      "image": "/img/sites/p043.webp",
+      "width": 768,
+      "height": 1024,
+      "caption": "Sa Coveccada Dolmen",
+      "author": "zagordemores",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mores02.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/9/92/Mores02.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Mores02.jpg",
+        "description": "Mores, Sardegna, ItaliaSa Coveccada, Fronte"
+      }
+    },
+    {
+      "id": "p044",
+      "image": "/img/sites/p044.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Sa Coveccada Dolmen",
+      "author": "Gianni Careddu",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Mores_-_Dolmen_di_Sa_Coveccada_(02).JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Mores_-_Dolmen_di_Sa_Coveccada_%2802%29.JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Mores - Dolmen di Sa Coveccada (02).JPG",
+        "description": "Mores - Dolmen di Sa Coveccada"
+      }
+    }
+  ],
+  "Giants' Grave of Li Lolghi": [
+    {
+      "id": "p045",
+      "image": "/img/sites/p045.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Giants' Grave of Li Lolghi",
+      "author": "Mboesch",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Arzachena-tomba-giganti-li-lolghi-b.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/2/23/Arzachena-tomba-giganti-li-lolghi-b.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Arzachena-tomba-giganti-li-lolghi-b.jpg",
+        "description": "Tomba dei giganti di Li Lolghi (Arzachena)"
+      }
+    },
+    {
+      "id": "p046",
+      "image": "/img/sites/p046.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Giants' Grave of Li Lolghi",
+      "author": "Mboesch",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Arzachena-tomba-giganti-li-lolghi-rueckansicht.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Arzachena-tomba-giganti-li-lolghi-rueckansicht.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Arzachena-tomba-giganti-li-lolghi-rueckansicht.jpg",
+        "description": "Tomba dei giganti di Li Lolghi (Arzachena): Rückansicht"
+      }
+    }
+  ],
+  "Giants' Grave of Coddu Vecchiu": [
+    {
+      "id": "p047",
+      "image": "/img/sites/p047.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Giants' Grave of Coddu Vecchiu",
+      "author": "Mboesch",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Arzachena-tomba-giganti-coddu-ecchju-a.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Arzachena-tomba-giganti-coddu-ecchju-a.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Arzachena-tomba-giganti-coddu-ecchju-a.jpg",
+        "description": "Arzachena: Tomba dei giganti Coddu 'Ecchju"
+      }
+    },
+    {
+      "id": "p048",
+      "image": "/img/sites/p048.webp",
+      "width": 1800,
+      "height": 1202,
+      "caption": "Giants' Grave of Coddu Vecchiu",
+      "author": "Steddie1970",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Tomba_dei_Giganti_di_Coddu_Ecchju_-_vista_frontale.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Tomba_dei_Giganti_di_Coddu_Ecchju_-_vista_frontale.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Tomba dei Giganti di Coddu Ecchju - vista frontale.jpg",
+        "description": "Tomba di Coddu Ecchju - Vista frontale"
+      }
+    }
+  ],
+  "Cucuruzzu (Corsica)": [
+    {
+      "id": "p049",
+      "image": "/img/sites/p049.webp",
+      "width": 1800,
+      "height": 1198,
+      "caption": "Cucuruzzu (Corsica)",
+      "author": "Jean-Pol GRANDMONT",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cucuruzzu_Capula_JPG1.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/78/Cucuruzzu_Capula_JPG1.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Cucuruzzu Capula JPG1.jpg",
+        "description": "Levie France (Corse-du-Sud), the ruins of  the Capula castle."
+      }
+    },
+    {
+      "id": "p050",
+      "image": "/img/sites/p050.webp",
+      "width": 1800,
+      "height": 1202,
+      "caption": "Cucuruzzu (Corsica)",
+      "author": "Jean-Pol GRANDMONT",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cucuruzzu_JPG3.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Cucuruzzu_JPG3.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Cucuruzzu JPG3.jpg",
+        "description": "Levie France (Corse-du-Sud), the ruins of  the Cucuruzzu prehistoric castle."
+      }
+    }
+  ],
+  "Araghju (Corsica)": [
+    {
+      "id": "p051",
+      "image": "/img/sites/p051.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Araghju (Corsica)",
+      "author": "Julian Nyča",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Casteddu_d%27Araghju_%E2%80%93_04.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/8/86/Casteddu_d%27Araghju_%E2%80%93_04.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Casteddu d'Araghju – 04.jpg",
+        "description": "Prähistorische Ruinen des Casteddu d'Araghju bei Porto-Vecchio, Korsika"
+      }
+    },
+    {
+      "id": "p052",
+      "image": "/img/sites/p052.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Araghju (Corsica)",
+      "author": "Julian Nyča",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Casteddu_d%27Araghju_%E2%80%93_02.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/9/98/Casteddu_d%27Araghju_%E2%80%93_02.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Casteddu d'Araghju – 02.jpg",
+        "description": "Prähistorische Ruinen des Casteddu d'Araghju bei Porto-Vecchio, Korsika"
+      }
+    },
+    {
+      "image": "/img/islands/corsica-c039.webp",
+      "author": "Julian Nyča",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Casteddu_d%27Araghju_%E2%80%93_17.jpg",
+      "id": "guide-c039",
+      "width": 1800,
+      "height": 1199,
+      "caption": "Through the wall",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24"
+    }
+  ],
+  "Tappa (Corsica)": [
+    {
+      "id": "p054",
+      "image": "/img/sites/p054.webp",
+      "width": 1350,
+      "height": 1800,
+      "caption": "Tappa (Corsica)",
+      "author": "TeletubAstyanax",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Site_torr%C3%A9en_de_Tappa_01.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Site_torr%C3%A9en_de_Tappa_01.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Site torréen de Tappa 01.jpg",
+        "description": "Site torréen de Tappa"
+      }
+    }
+  ],
+  "Ceccia (Corsica)": [
+    {
+      "id": "p055",
+      "image": "/img/sites/p055.webp",
+      "width": 1800,
+      "height": 1200,
+      "caption": "Ceccia (Corsica)",
+      "author": "Julian Nyča",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Casteddu_di_Ceccia_06.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/0/06/Casteddu_di_Ceccia_06.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Casteddu di Ceccia 06.jpg",
+        "description": "Der prähistorische Torre von Ceccia auf Korsika"
+      }
+    },
+    {
+      "id": "p056",
+      "image": "/img/sites/p056.webp",
+      "width": 1200,
+      "height": 1800,
+      "caption": "Ceccia (Corsica)",
+      "author": "Julian Nyča",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Casteddu_di_Ceccia_05.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Casteddu_di_Ceccia_05.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Casteddu di Ceccia 05.jpg",
+        "description": "Der prähistorische Torre von Ceccia auf Korsika"
+      }
+    },
+    {
+      "image": "/img/islands/corsica-c057.webp",
+      "author": "Julian Nyča",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Casteddu_di_Ceccia_09.jpg",
+      "id": "guide-c057",
+      "width": 1000,
+      "height": 1500,
+      "caption": "Inside the chamber",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24"
+    }
+  ],
+  "Funtanaccia Dolmen (Corsica)": [
+    {
+      "id": "p057",
+      "image": "/img/sites/p057.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Funtanaccia Dolmen (Corsica)",
+      "author": "Quirinalis",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dolmen_de_Funtanaccia_avant_gauche.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Dolmen_de_Funtanaccia_avant_gauche.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Dolmen de Funtanaccia avant gauche.jpg",
+        "description": "This building is indexed in the base Mérimée, a database of architectural heritage maintained by the French Ministry of Culture, under the reference PA00099114 .\n\n\nbrezhoneg ∙ català ∙ Deutsch ∙ English ∙ español ∙ Esperanto ∙ euskara ∙ français ∙ italiano ∙ magyar ∙ Nederlands ∙ português do Brasil ∙ português ∙ română ∙ sicilianu ∙ slovenščina ∙ suomi ∙ svenska ∙ Ελληνικά ∙ беларуская (тарашкевіца) ∙ кыргызча ∙ македонски ∙ русский ∙ українська ∙ ไทย ∙ বাংলা ∙ 中文 ∙ +/−"
+      }
+    },
+    {
+      "id": "p058",
+      "image": "/img/sites/p058.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Funtanaccia Dolmen (Corsica)",
+      "author": "Telperion",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Dolmen_de_Funtanaccia_(2).jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Dolmen_de_Funtanaccia_%282%29.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Dolmen de Funtanaccia (2).jpg",
+        "description": "Funtanaccia dolmen, located on the Cauria plateau near Sartène (Corse-du-Sud)."
+      }
+    }
+  ],
+  "Filitosa (Corsica)": [
+    {
+      "id": "p059",
+      "image": "/img/sites/p059.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Filitosa (Corsica)",
+      "author": "Mousemac",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Ancient_guardians_of_Corsica.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/0/00/Ancient_guardians_of_Corsica.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Ancient guardians of Corsica.jpg",
+        "description": "Filotosa is an ancient monument in the canton of Petreto-Bicchisano, in the Corse du Sud."
+      }
+    },
+    {
+      "id": "p060",
+      "image": "/img/sites/p060.webp",
+      "width": 1800,
+      "height": 1292,
+      "caption": "Filitosa (Corsica)",
+      "author": "Markus3 (Marc ROUSSEL)",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "source": "https://commons.wikimedia.org/wiki/File:Filitosa_statue-menhir_V_(de_face_avec_%C3%A9p%C3%A9e_et_poignard)_1.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/5/57/Filitosa_statue-menhir_V_%28de_face_avec_%C3%A9p%C3%A9e_et_poignard%29_1.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Filitosa statue-menhir V (de face avec épée et poignard) 1.jpg",
+        "description": "Filitosa (Corse-du-Sud, France) - Statue-menhir nommée \"Filitosa V\"."
+      }
+    },
+    {
+      "image": "/img/islands/corsica-c083.webp",
+      "author": "Braucher",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Filitosa_site,_south_of_Corsica.jpg",
+      "id": "guide-c083",
+      "width": 1800,
+      "height": 1013,
+      "caption": "Figures among the stonework",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24"
+    }
+  ],
+  "I Stantari (Corsica)": [
+    {
+      "id": "p061",
+      "image": "/img/sites/p061.webp",
+      "width": 1800,
+      "height": 1349,
+      "caption": "I Stantari (Corsica)",
+      "author": "This illustration was made by (User:Royonx) and released under the license(s) stated above. You are free to use it for any purpose as long as you credit me and follow the terms of the license.\nExample :  © Michel Royon / Wikimedia Commons\nIf you use this image outside of the Wikimedia projects, I would be happy to hear from you par courriel ( royonx  gmail.com). Thanks !\n\n\nCe message en français",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cauria-stantari_alignement.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/71/Cauria-stantari_alignement.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Cauria-stantari alignement.jpg",
+        "description": "Aligned megaliths in Cauria-Stantari in south Corsica"
+      }
+    },
+    {
+      "id": "p062",
+      "image": "/img/sites/p062.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "I Stantari (Corsica)",
+      "author": "Telperion",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cauria_-_I_Stantari.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/9/95/Cauria_-_I_Stantari.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Cauria - I Stantari.jpg",
+        "description": "I Stantari is a megalith alignment located on the Cauria plateau, near Sartène (Corse-du-Sud)."
+      }
+    }
+  ],
+  "Renaghju (Corsica)": [
+    {
+      "id": "p063",
+      "image": "/img/sites/p063.webp",
+      "width": 1350,
+      "height": 1800,
+      "caption": "Renaghju (Corsica)",
+      "author": "Quirinalis",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Alignements_de_Renaghju_1.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/6/61/Alignements_de_Renaghju_1.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Alignements de Renaghju 1.jpg",
+        "description": "Coucher de soleil"
+      }
+    },
+    {
+      "id": "p064",
+      "image": "/img/sites/p064.webp",
+      "width": 1350,
+      "height": 1800,
+      "caption": "Renaghju (Corsica)",
+      "author": "Quirinalis",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Alignements_de_Renaghju_2.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Alignements_de_Renaghju_2.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Alignements de Renaghju 2.jpg",
+        "description": "Coucher de soleil"
+      }
+    }
+  ],
+  "Palaggiu (Corsica)": [
+    {
+      "id": "p065",
+      "image": "/img/sites/p065.webp",
+      "width": 1800,
+      "height": 1014,
+      "caption": "Palaggiu (Corsica)",
+      "author": "jean-michel gobet",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Menhirs_de_Palaggiu_-_panoramio.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Menhirs_de_Palaggiu_-_panoramio.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Menhirs de Palaggiu - panoramio.jpg",
+        "description": "Menhirs de Palaggiu"
+      }
+    }
+  ]
+}
