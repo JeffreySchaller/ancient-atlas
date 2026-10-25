@@ -201,7 +201,7 @@ def main():
     # sitemap entirely, because only library/ was globbed. That made every page
     # under /creators/ invisible to search - including the one the YouTube
     # channel is about to point at. Any hand-authored section belongs here.
-    for section in ("creators", "experiences", "patterns"):
+    for section in ("creators", "experiences", "patterns", "islands"):
         d = REPO_ROOT / "public" / section
         if not d.exists():
             continue
