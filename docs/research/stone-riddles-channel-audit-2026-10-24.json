@@ -1,0 +1,1696 @@
+{
+  "checked": "2026-10-24",
+  "channel": "https://www.youtube.com/@StoneRiddles",
+  "scope": "Public Videos and Shorts tab inventories, accessible descriptions, targeted original footage, and Italy documentary transcript plus frame review. Not a claim that every frame of every upload was watched.",
+  "counts": {
+    "regular_videos": 84,
+    "shorts": 80,
+    "new_sites": 18,
+    "documentary_timestamp_links": 15
+  },
+  "new_sites": [
+    "Acropolis of Circeii",
+    "Acropolis of Ferentino",
+    "Caslasc (Giornico)",
+    "Fonte di Uore",
+    "Giants’ Tomb of Uore",
+    "Grotte di Torri",
+    "Kazarma Bridge (Arkadiko)",
+    "Orto della Regina",
+    "Polygonal Walls of Amelia",
+    "Polygonal Walls of Castel San Pietro Romano",
+    "Ponte Alto (Terracina)",
+    "Porta Aurea (Castellonorato)",
+    "Porta Foca (Segni)",
+    "Porta Sanguinaria (Ferentino)",
+    "Pyrgi Walls (Santa Severa)",
+    "Sanctuary of Pietrabbondante",
+    "Spacco della Regina (Ansedonia)",
+    "Trebula Balliensis"
+  ],
+  "entries": [
+    {
+      "id": "-6ng3pml2zU",
+      "title": "The Garden of the Queen in Roccamonfina",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=-6ng3pml2zU",
+      "status": "mapped film",
+      "sites": [
+        "Orto della Regina"
+      ]
+    },
+    {
+      "id": "ox2IFbGiX6A",
+      "title": "A Megalithic Bridge in Terracina",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=ox2IFbGiX6A",
+      "status": "mapped film",
+      "sites": [
+        "Ponte Alto (Terracina)"
+      ]
+    },
+    {
+      "id": "f6Wxh7QzM1M",
+      "title": "The Quarry of the Walls of Cosa!?",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=f6Wxh7QzM1M",
+      "status": "mapped film",
+      "sites": [
+        "Spacco della Regina (Ansedonia)"
+      ]
+    },
+    {
+      "id": "sHfJcNwOLgc",
+      "title": "Temple or Villa?",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=sHfJcNwOLgc",
+      "status": "location follow-up",
+      "sites": [],
+      "note": "Unnamed Terracina wall: name and exact location unresolved. Monticchio is a lead, not a confirmed identification."
+    },
+    {
+      "id": "fvlTrsosxiU",
+      "title": "An (almost) live glimpse of Cosa-Italy",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=fvlTrsosxiU",
+      "status": "mapped film",
+      "sites": [
+        "Cosa"
+      ]
+    },
+    {
+      "id": "OpS5_utKSvY",
+      "title": "A fantastic wall at the Temple of Isis (italy)",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=OpS5_utKSvY",
+      "status": "mapped film",
+      "sites": [
+        "Temple of Isis (Fondi)"
+      ]
+    },
+    {
+      "id": "t2UK9ZC-cso",
+      "title": "Well preserved polygonal remains in Fondi, Italy",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=t2UK9ZC-cso",
+      "status": "location follow-up",
+      "sites": [],
+      "note": "Fondi urban walls: site identified, exact filmed wall segment awaits confirmation."
+    },
+    {
+      "id": "eaUAcww0i5Q",
+      "title": "The Golden Gate of Castellonorato",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=eaUAcww0i5Q",
+      "status": "mapped film",
+      "sites": [
+        "Porta Aurea (Castellonorato)"
+      ]
+    },
+    {
+      "id": "H8jwBnfCYzk",
+      "title": "Puffy blocks at Formia, Italy",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=H8jwBnfCYzk",
+      "status": "location follow-up",
+      "sites": [],
+      "note": "Formia polygonal masonry: exact filmed section awaits confirmation; do not substitute Via Solaro without a match."
+    },
+    {
+      "id": "Dcdw1ZhEPx0",
+      "title": "Large blocks in Sezze, Italy",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=Dcdw1ZhEPx0",
+      "status": "location follow-up",
+      "sites": [],
+      "note": "Sezze walls: site identified, precise filmed wall or gateway awaits confirmation."
+    },
+    {
+      "id": "3WyGs5eiEp4",
+      "title": "Norba: the Great Wall of Italy",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=3WyGs5eiEp4",
+      "status": "mapped film",
+      "sites": [
+        "Norba"
+      ]
+    },
+    {
+      "id": "uCQlsruon8s",
+      "title": "Mysterious walls at Hyrtakina",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=uCQlsruon8s",
+      "status": "mapped film",
+      "sites": [
+        "Hyrtakina"
+      ]
+    },
+    {
+      "id": "FxSgUJVt7gk",
+      "title": "The acropolis of ancient Polyrrhenia",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=FxSgUJVt7gk",
+      "status": "mapped film",
+      "sites": [
+        "Polyrrhenia"
+      ]
+    },
+    {
+      "id": "RT4VQAa1b6U",
+      "title": "The closed harbour of Falasarna",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=RT4VQAa1b6U",
+      "status": "mapped film",
+      "sites": [
+        "Falasarna"
+      ]
+    },
+    {
+      "id": "_LPW4WiEuLg",
+      "title": "4 km of polygonal walls at Aptera!",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=_LPW4WiEuLg",
+      "status": "mapped film",
+      "sites": [
+        "Aptera"
+      ]
+    },
+    {
+      "id": "OwWF4lpCCdA",
+      "title": "The vaulted tomb of Stylos",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=OwWF4lpCCdA",
+      "status": "mapped film",
+      "sites": [
+        "Stylos Tholos Tomb"
+      ]
+    },
+    {
+      "id": "uHNtyaIc51Q",
+      "title": "The Tholos tomb of Kamilari",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=uHNtyaIc51Q",
+      "status": "mapped film",
+      "sites": [
+        "Kamilari Tholos Tomb"
+      ]
+    },
+    {
+      "id": "SwDngsk1SBo",
+      "title": "Large blocks at Phaistos",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=SwDngsk1SBo",
+      "status": "mapped film",
+      "sites": [
+        "Phaistos"
+      ]
+    },
+    {
+      "id": "jEbUvHHZWBA",
+      "title": "The stone city of Lato",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=jEbUvHHZWBA",
+      "status": "mapped film",
+      "sites": [
+        "Lato"
+      ]
+    },
+    {
+      "id": "q0YNkMIt3BY",
+      "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=q0YNkMIt3BY",
+      "status": "mapped film",
+      "sites": [
+        "Sardinia Nuraghi (Su Nuraxi)",
+        "Nuraghe Santu Antine",
+        "San Andrea Priù",
+        "Nuraghe Losa",
+        "Nuraghe Arrubiu",
+        "Nuraghe Orolo",
+        "Giants' Grave of Li Lolghi",
+        "Giants' Grave of Coddu Vecchiu",
+        "Sacred Spring of Su Tempiesu",
+        "Sacred Well of Santa Cristina",
+        "Sanctuary of Santa Vittoria (Serri)",
+        "Pranu Muttedu",
+        "Tamuli Archaeological Complex",
+        "Sa Coveccada Dolmen",
+        "Monte d'Accoddi",
+        "Monte Baranta"
+      ]
+    },
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=HrdQDqa3G-w",
+      "status": "mapped film",
+      "sites": [
+        "Cosa",
+        "Rusellae",
+        "Orbetello",
+        "Alatri Acropolis",
+        "Norba",
+        "Polygonal Walls of Amelia",
+        "Grotte di Torri",
+        "Alba Fucens",
+        "Acropolis of Ferentino",
+        "Acropolis of Circeii",
+        "Segni (Signia)",
+        "Porta Saracena (Segni)",
+        "Polygonal Walls of Castel San Pietro Romano",
+        "Pyrgi Walls (Santa Severa)",
+        "Porta Foca (Segni)"
+      ]
+    },
+    {
+      "id": "kMF9IfvJFZA",
+      "title": "Was the location of ancient Greek cities part of a plan?",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=kMF9IfvJFZA",
+      "status": "not mapped as walkthrough",
+      "sites": [],
+      "note": "Thematic presentation, not a verified site walkthrough."
+    },
+    {
+      "id": "b7hG-LASJIU",
+      "title": "Was the Messene wall really built in 85 days??",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=b7hG-LASJIU",
+      "status": "mapped film",
+      "sites": [
+        "Arcadian Gate (Messene)"
+      ]
+    },
+    {
+      "id": "InyRx5M2XEQ",
+      "title": "The natural pillars of Meteora",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=InyRx5M2XEQ",
+      "status": "not mapped as walkthrough",
+      "sites": [],
+      "note": "Meteora natural pillars: no individual historic monument confirmed."
+    },
+    {
+      "id": "anKyo0ISMtw",
+      "title": "The cyclopean stone blocks of Pnyx",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=anKyo0ISMtw",
+      "status": "mapped film",
+      "sites": [
+        "Pnyx"
+      ]
+    },
+    {
+      "id": "VIpMXqxD50Q",
+      "title": "Exquisitely preserved walls at Eleutherai",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=VIpMXqxD50Q",
+      "status": "mapped film",
+      "sites": [
+        "Eleutherai Fortress"
+      ]
+    },
+    {
+      "id": "R-OZrCgyRuU",
+      "title": "Walls in the sea at Siphai",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=R-OZrCgyRuU",
+      "status": "mapped film",
+      "sites": [
+        "Siphai (Tipha)"
+      ]
+    },
+    {
+      "id": "8MfM9WVc77A",
+      "title": "Polygonal and megalithic stones at Panopeus",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=8MfM9WVc77A",
+      "status": "mapped film",
+      "sites": [
+        "Panopeus"
+      ]
+    },
+    {
+      "id": "a91ukD2vy3s",
+      "title": "The wonders of Orchomenos",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=a91ukD2vy3s",
+      "status": "mapped film",
+      "sites": [
+        "Orchomenos (Boeotia)"
+      ]
+    },
+    {
+      "id": "cVlboPnBbm0",
+      "title": "The majestic Treasury of Minyas",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=cVlboPnBbm0",
+      "status": "mapped film",
+      "sites": [
+        "Orchomenos (Boeotia)"
+      ]
+    },
+    {
+      "id": "lX1FndaE63o",
+      "title": "Polygonal walls EVERYWHERE!!  In Delphi",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=lX1FndaE63o",
+      "status": "mapped film",
+      "sites": [
+        "Delphi"
+      ]
+    },
+    {
+      "id": "dZ7SHYP8Td0",
+      "title": "The towers of Lilaia",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=dZ7SHYP8Td0",
+      "status": "mapped film",
+      "sites": [
+        "Lilaia"
+      ]
+    },
+    {
+      "id": "1Eihw8GtnEk",
+      "title": "The walls at the acropolis of Proerna",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=1Eihw8GtnEk",
+      "status": "mapped film",
+      "sites": [
+        "Proerna"
+      ]
+    },
+    {
+      "id": "sU8YyTARPuQ",
+      "title": "The ancient oracle of Dodona",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=sU8YyTARPuQ",
+      "status": "mapped film",
+      "sites": [
+        "Dodona"
+      ]
+    },
+    {
+      "id": "betc2ZPMeQY",
+      "title": "The enigmatic Necromanteion",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=betc2ZPMeQY",
+      "status": "mapped film",
+      "sites": [
+        "Nekromanteion of Acheron"
+      ]
+    },
+    {
+      "id": "WhXLtIJmvRg",
+      "title": "The polygonal city of Cassope",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=WhXLtIJmvRg",
+      "status": "mapped film",
+      "sites": [
+        "Cassope"
+      ]
+    },
+    {
+      "id": "0Bp4pCUIxFw",
+      "title": "Unique polygonal vaulted arch at Oiniades",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=0Bp4pCUIxFw",
+      "status": "mapped film",
+      "sites": [
+        "Oiniades"
+      ]
+    },
+    {
+      "id": "4vxuZMiKyik",
+      "title": "Massive walls and unusual constructions at New Pleuron",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=4vxuZMiKyik",
+      "status": "mapped film",
+      "sites": [
+        "New Pleuron"
+      ]
+    },
+    {
+      "id": "SrBzJlzIjdw",
+      "title": "Mixture of architectural styles at the city of Messene",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=SrBzJlzIjdw",
+      "status": "mapped film",
+      "sites": [
+        "Arcadian Gate (Messene)"
+      ]
+    },
+    {
+      "id": "EWTuv1WUk6M",
+      "title": "Colossal walls at Messene",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=EWTuv1WUk6M",
+      "status": "mapped film",
+      "sites": [
+        "Arcadian Gate (Messene)"
+      ]
+    },
+    {
+      "id": "KirEaArhQKE",
+      "title": "Polygonal masonry, megalithism and precision stone cuts at Epidaurus",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=KirEaArhQKE",
+      "status": "mapped film",
+      "sites": [
+        "Epidaurus"
+      ]
+    },
+    {
+      "id": "JN29fgkckrk",
+      "title": "The Treasury of Tyrins",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=JN29fgkckrk",
+      "status": "mapped film",
+      "sites": [
+        "Tiryns"
+      ]
+    },
+    {
+      "id": "d9sLt8szPGU",
+      "title": "The Mysterious ruins of Ogas",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=d9sLt8szPGU",
+      "status": "mapped film",
+      "sites": [
+        "Acropolis Oga (Methana)"
+      ]
+    },
+    {
+      "id": "0YucYn8-6F8",
+      "title": "The Acropolis of Methana",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=0YucYn8-6F8",
+      "status": "mapped film",
+      "sites": [
+        "Methana Acropolis (Palaiokastro)"
+      ]
+    },
+    {
+      "id": "p-fGEVNiMbk",
+      "title": "Little known polygonal walls at Kazarma",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=p-fGEVNiMbk",
+      "status": "mapped film",
+      "sites": [
+        "Kazarma Acropolis"
+      ]
+    },
+    {
+      "id": "2Dust-UkG9M",
+      "title": "Beautiful polygonal walls at Agios Adrianos",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=2Dust-UkG9M",
+      "status": "mapped film",
+      "sites": [
+        "Agios Adrianos Fort"
+      ]
+    },
+    {
+      "id": "SjgkEj_ynKc",
+      "title": "Massive blocks at Tyrins",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=SjgkEj_ynKc",
+      "status": "mapped film",
+      "sites": [
+        "Tiryns"
+      ]
+    },
+    {
+      "id": "82mjHuq-A_U",
+      "title": "The seaside polygonal walls of Asine",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=82mjHuq-A_U",
+      "status": "mapped film",
+      "sites": [
+        "Asine"
+      ]
+    },
+    {
+      "id": "q8MVH0-EosY",
+      "title": "The cyclopean walls of Midea",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=q8MVH0-EosY",
+      "status": "mapped film",
+      "sites": [
+        "Midea"
+      ]
+    },
+    {
+      "id": "roVE1FS6B2g",
+      "title": "The Gigantic Treasuries of Mycenae",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=roVE1FS6B2g",
+      "status": "mapped film",
+      "sites": [
+        "Mycenae"
+      ]
+    },
+    {
+      "id": "DjsNO-KtSGY",
+      "title": "Huge polygonal walls at Mycenae",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=DjsNO-KtSGY",
+      "status": "mapped film",
+      "sites": [
+        "Mycenae"
+      ]
+    },
+    {
+      "id": "z6yUigPi1nw",
+      "title": "The polygonal pyramid of Hellinikon",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=z6yUigPi1nw",
+      "status": "mapped film",
+      "sites": [
+        "Pyramid of Hellinikon"
+      ]
+    },
+    {
+      "id": "mBfZCWeqvyE",
+      "title": "The Heraion sanctuary near Argos",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=mBfZCWeqvyE",
+      "status": "mapped film",
+      "sites": [
+        "Heraion of Argos"
+      ]
+    },
+    {
+      "id": "Ow168stx8Tc",
+      "title": "Presentation of our trip to Greece in the search of megalithic and polygonal sites",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=Ow168stx8Tc",
+      "status": "not mapped as walkthrough",
+      "sites": [],
+      "note": "Trip presentation: named-place leads retained for later footage review; no new location inferred from mention alone."
+    },
+    {
+      "id": "4XylNHgkWNg",
+      "title": "Holy well Sa Testa",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=4XylNHgkWNg",
+      "status": "mapped film",
+      "sites": [
+        "Sacred Well of Sa Testa"
+      ]
+    },
+    {
+      "id": "fPXkyRFkvew",
+      "title": "Nuraghe Santu antine",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=fPXkyRFkvew",
+      "status": "mapped film",
+      "sites": [
+        "Nuraghe Santu Antine"
+      ]
+    },
+    {
+      "id": "J2VMdsME5Tw",
+      "title": "Nuraghe Corbos",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=J2VMdsME5Tw",
+      "status": "mapped film",
+      "sites": [
+        "Nuraghe Corbos"
+      ]
+    },
+    {
+      "id": "sxjQaWCPwFs",
+      "title": "Giant's grave of Imbertighi",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=sxjQaWCPwFs",
+      "status": "mapped film",
+      "sites": [
+        "Giants' Grave of Imbertighe"
+      ]
+    },
+    {
+      "id": "Ku-C9KQfFDs",
+      "title": "Giant's grave of Uore",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=Ku-C9KQfFDs",
+      "status": "mapped film",
+      "sites": [
+        "Giants’ Tomb of Uore"
+      ]
+    },
+    {
+      "id": "ch-_WQBTW6k",
+      "title": "The fake Holy well of Uore",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=ch-_WQBTW6k",
+      "status": "mapped film",
+      "sites": [
+        "Fonte di Uore"
+      ]
+    },
+    {
+      "id": "8a8ScKzwvjk",
+      "title": "Giant's grave Mura Cuada",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=8a8ScKzwvjk",
+      "status": "mapped film",
+      "sites": [
+        "Giants' Grave Mura Cuada"
+      ]
+    },
+    {
+      "id": "KHnZUUOYGdM",
+      "title": "Domus de Janas Pimentel",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=KHnZUUOYGdM",
+      "status": "mapped film",
+      "sites": [
+        "Domus de Janas of Corongiu (Pimentel)"
+      ]
+    },
+    {
+      "id": "r8uvqh0FlZg",
+      "title": "Protonuraghe Bruncu Madugui",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=r8uvqh0FlZg",
+      "status": "mapped film",
+      "sites": [
+        "Protonuraghe Bruncu Madugui"
+      ]
+    },
+    {
+      "id": "dV4rrVRh3s0",
+      "title": "Nuraghe Su mulinu",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=dV4rrVRh3s0",
+      "status": "mapped film",
+      "sites": [
+        "Nuraghe Su Mulinu"
+      ]
+    },
+    {
+      "id": "DQUKBXqSNqQ",
+      "title": "Hypogeic structure Sas Puntas",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=DQUKBXqSNqQ",
+      "status": "mapped film",
+      "sites": [
+        "Hypogeum of Sas Puntas"
+      ]
+    },
+    {
+      "id": "Td0WzA0B084",
+      "title": "Giant's Grave Su Monte 'e S'Abe",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=Td0WzA0B084",
+      "status": "mapped film",
+      "sites": [
+        "Giants' Grave Su Mont'e s'Abe"
+      ]
+    },
+    {
+      "id": "6hx-B9RLTeE",
+      "title": "The Messapic walls of Castro - Puglia",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=6hx-B9RLTeE",
+      "status": "mapped film",
+      "sites": [
+        "Messapian Walls of Castro"
+      ]
+    },
+    {
+      "id": "TvZERmkhybU",
+      "title": "Via Cava (hollow way) of S. Sebastiano",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=TvZERmkhybU",
+      "status": "mapped film",
+      "sites": [
+        "Via Cava di San Sebastiano"
+      ]
+    },
+    {
+      "id": "--X_JHRRXZY",
+      "title": "The protostoric site of mount Bisenzio",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=--X_JHRRXZY",
+      "status": "mapped film",
+      "sites": [
+        "Bisenzio (Visentium)"
+      ]
+    },
+    {
+      "id": "Hl3aDTQu1xY",
+      "title": "Etruscan necropolis of puntone",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=Hl3aDTQu1xY",
+      "status": "mapped film",
+      "sites": [
+        "Etruscan Necropolis of Puntone"
+      ]
+    },
+    {
+      "id": "DEmecP35nhY",
+      "title": "The archaeological area of Juvanum - Abruzzo",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=DEmecP35nhY",
+      "status": "mapped film",
+      "sites": [
+        "Juvanum"
+      ]
+    },
+    {
+      "id": "BzccSfaChPI",
+      "title": "The megalithic wall of Monte Pallano",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=BzccSfaChPI",
+      "status": "mapped film",
+      "sites": [
+        "Monte Pallano"
+      ]
+    },
+    {
+      "id": "sIFCCZ6Obwo",
+      "title": "Polygonal site of Cosa in Tuscany from drone",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=sIFCCZ6Obwo",
+      "status": "mapped film",
+      "sites": [
+        "Cosa"
+      ]
+    },
+    {
+      "id": "WmpVd4_wi3g",
+      "title": "Black Pyramid of Poggio Conte",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=WmpVd4_wi3g",
+      "status": "not mapped as walkthrough",
+      "sites": [],
+      "note": "Natural rock formation. Hermitage of Poggio Conte is a possible separate historic-site lead, not yet verified in the footage."
+    },
+    {
+      "id": "SargCH8f2aY",
+      "title": "The polygonal walls of Cosa - Tuscany",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=SargCH8f2aY",
+      "status": "mapped film",
+      "sites": [
+        "Cosa"
+      ]
+    },
+    {
+      "id": "wDngCen-mDg",
+      "title": "Nuraghe Piricu",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=wDngCen-mDg",
+      "status": "mapped film",
+      "sites": [
+        "Nuraghe Piricu"
+      ]
+    },
+    {
+      "id": "fUKJ4B6fu2M",
+      "title": "Nuraghe Piscu",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=fUKJ4B6fu2M",
+      "status": "mapped film",
+      "sites": [
+        "Nuraghe Piscu"
+      ]
+    },
+    {
+      "id": "-lfnWb9nmik",
+      "title": "Holy well Is Pirois",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=-lfnWb9nmik",
+      "status": "mapped film",
+      "sites": [
+        "Sacred Well Is Pirois"
+      ]
+    },
+    {
+      "id": "BB2aD_Iy25s",
+      "title": "Nuraghe Serbissi",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=BB2aD_Iy25s",
+      "status": "mapped film",
+      "sites": [
+        "Nuraghe Serbissi"
+      ]
+    },
+    {
+      "id": "7ucq1eHx58U",
+      "title": "Giant's grave S'ena e Thomes",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=7ucq1eHx58U",
+      "status": "mapped film",
+      "sites": [
+        "Giants' Grave S'Ena e Thomes"
+      ]
+    },
+    {
+      "id": "eblUVqvytvc",
+      "title": "Giant's graves of Iloi",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=eblUVqvytvc",
+      "status": "mapped film",
+      "sites": [
+        "Iloi Complex (Sedilo)"
+      ]
+    },
+    {
+      "id": "op6kl9oSIFE",
+      "title": "Nuraghe Iloi",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=op6kl9oSIFE",
+      "status": "mapped film",
+      "sites": [
+        "Iloi Complex (Sedilo)"
+      ]
+    },
+    {
+      "id": "KL_iGB5TvCo",
+      "title": "Nuraghe Santa Barbara Bauladu",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=KL_iGB5TvCo",
+      "status": "mapped film",
+      "sites": [
+        "Nuraghe Santa Barbara (Bauladu)"
+      ]
+    },
+    {
+      "id": "SRsHL77f0cY",
+      "title": "Domus de Janasi Iloi",
+      "format": "video",
+      "url": "https://www.youtube.com/watch?v=SRsHL77f0cY",
+      "status": "mapped film",
+      "sites": [
+        "Iloi Complex (Sedilo)"
+      ]
+    },
+    {
+      "id": "ki-l8QOnCuc",
+      "title": "Mega Wall Details",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=ki-l8QOnCuc",
+      "status": "named location already mapped",
+      "sites": [
+        "Pnyx"
+      ]
+    },
+    {
+      "id": "1QCQ6xQSC4k",
+      "title": "The Mega Wall Right Under Your Nose!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=1QCQ6xQSC4k",
+      "status": "named location already mapped",
+      "sites": [
+        "Pnyx"
+      ]
+    },
+    {
+      "id": "IYEpSSkQtG4",
+      "title": "Exquisite Walls!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=IYEpSSkQtG4",
+      "status": "named location already mapped",
+      "sites": [
+        "Eleutherai Fortress"
+      ]
+    },
+    {
+      "id": "azEa7egoTbk",
+      "title": "The walls of Caslasc, Giornico, Switzerland",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=azEa7egoTbk",
+      "status": "members-only: named site mapped",
+      "sites": [
+        "Caslasc (Giornico)"
+      ],
+      "note": "Public title available; video could not be inspected without channel membership. Named monuments independently researched where possible."
+    },
+    {
+      "id": "HQ8QSDkL68w",
+      "title": "The Birthplace of Dionysus",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=HQ8QSDkL68w",
+      "status": "named location already mapped",
+      "sites": [
+        "Eleutherai Fortress"
+      ]
+    },
+    {
+      "id": "vzKOAu9bRtU",
+      "title": "Why I've never heard of this site?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=vzKOAu9bRtU",
+      "status": "named location already mapped",
+      "sites": [
+        "Siphai (Tipha)"
+      ]
+    },
+    {
+      "id": "Y7VH4AsXIaU",
+      "title": "Porta Foca, Segni, Italy",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=Y7VH4AsXIaU",
+      "status": "members-only: named site mapped",
+      "sites": [
+        "Porta Foca (Segni)"
+      ],
+      "note": "Public title available; video could not be inspected without channel membership. Named monuments independently researched where possible."
+    },
+    {
+      "id": "sedPhRTDa1U",
+      "title": "Walls in the sea?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=sedPhRTDa1U",
+      "status": "named location already mapped",
+      "sites": [
+        "Siphai (Tipha)"
+      ]
+    },
+    {
+      "id": "1_pTouXHXQo",
+      "title": "I'd like to have a balcony parapet like this!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=1_pTouXHXQo",
+      "status": "named location already mapped",
+      "sites": [
+        "Panopeus"
+      ]
+    },
+    {
+      "id": "CiQQAaYpmME",
+      "title": "The Strange Fortress Nobody talks about",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=CiQQAaYpmME",
+      "status": "named location already mapped",
+      "sites": [
+        "Panopeus"
+      ]
+    },
+    {
+      "id": "v3m0rm5QJls",
+      "title": "Another Impressive Polygonal Wall... Why?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=v3m0rm5QJls",
+      "status": "named location already mapped",
+      "sites": [
+        "Orchomenos (Boeotia)"
+      ]
+    },
+    {
+      "id": "1KRGbW6iJ_M",
+      "title": "Rooms Atop a Wall?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=1KRGbW6iJ_M",
+      "status": "named location already mapped",
+      "sites": [
+        "Orchomenos (Boeotia)"
+      ]
+    },
+    {
+      "id": "nUeWPiVRo98",
+      "title": "What Was This Citadel really for?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=nUeWPiVRo98",
+      "status": "named location already mapped",
+      "sites": [
+        "Orchomenos (Boeotia)"
+      ]
+    },
+    {
+      "id": "EIMEgqyNPtU",
+      "title": "Porta Saracena, Segni, Italy",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=EIMEgqyNPtU",
+      "status": "members-only: named site mapped",
+      "sites": [
+        "Porta Saracena (Segni)"
+      ],
+      "note": "Public title available; video could not be inspected without channel membership. Named monuments independently researched where possible."
+    },
+    {
+      "id": "jTUy_3TvOu8",
+      "title": "A Stairway Cut Into Solid Rock",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=jTUy_3TvOu8",
+      "status": "named location already mapped",
+      "sites": [
+        "Orchomenos (Boeotia)"
+      ]
+    },
+    {
+      "id": "LP-v6CdIww4",
+      "title": "Last days of our trip",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=LP-v6CdIww4",
+      "status": "location follow-up",
+      "sites": [],
+      "note": "Travel update, no confirmed monument identification."
+    },
+    {
+      "id": "tIDqcSlLRDs",
+      "title": "Quite an amazing wall!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=tIDqcSlLRDs",
+      "status": "named location already mapped",
+      "sites": [
+        "Orchomenos (Boeotia)"
+      ]
+    },
+    {
+      "id": "nw_Oii0_kQw",
+      "title": "Porta Sanguinaria in Ferentino, Italy",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=nw_Oii0_kQw",
+      "status": "members-only: named site mapped",
+      "sites": [
+        "Porta Sanguinaria (Ferentino)"
+      ],
+      "note": "Public title available; video could not be inspected without channel membership. Named monuments independently researched where possible."
+    },
+    {
+      "id": "2RVUeMhV8jk",
+      "title": "More huge doorways!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=2RVUeMhV8jk",
+      "status": "named location already mapped",
+      "sites": [
+        "Orchomenos (Boeotia)"
+      ]
+    },
+    {
+      "id": "UohI7ADxO2k",
+      "title": "Pietrabbondante, Molise, Italy",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=UohI7ADxO2k",
+      "status": "members-only: named site mapped",
+      "sites": [
+        "Sanctuary of Pietrabbondante"
+      ],
+      "note": "Public title available; video could not be inspected without channel membership. Named monuments independently researched where possible."
+    },
+    {
+      "id": "LpXWe5PW_KY",
+      "title": "Megaliths all over the place!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=LpXWe5PW_KY",
+      "status": "named location already mapped",
+      "sites": [
+        "Delphi"
+      ]
+    },
+    {
+      "id": "MZ41nTLtLis",
+      "title": "The Sungate at Trebula Baliensis, Campania, Italy",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=MZ41nTLtLis",
+      "status": "members-only: named site mapped",
+      "sites": [
+        "Trebula Balliensis"
+      ],
+      "note": "Public title available; video could not be inspected without channel membership. Named monuments independently researched where possible."
+    },
+    {
+      "id": "9z-gCVZv6f8",
+      "title": "Temple or Villa??",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=9z-gCVZv6f8",
+      "status": "location follow-up",
+      "sites": [],
+      "note": "Same unnamed Terracina wall as Temple or Villa?"
+    },
+    {
+      "id": "bvLfSizqVMQ",
+      "title": "Orto della Regina. Campania, Italy",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=bvLfSizqVMQ",
+      "status": "members-only: named site mapped",
+      "sites": [
+        "Orto della Regina"
+      ],
+      "note": "Public title available; video could not be inspected without channel membership. Named monuments independently researched where possible."
+    },
+    {
+      "id": "TxhEDbpQ4CU",
+      "title": "The King of walls!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=TxhEDbpQ4CU",
+      "status": "members-only: unlocated",
+      "sites": [],
+      "note": "Public title available; video could not be inspected without channel membership. Named monuments independently researched where possible."
+    },
+    {
+      "id": "-_vlEz0M3-8",
+      "title": "A megalithic bridge in Terracina",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=-_vlEz0M3-8",
+      "status": "members-only: named site mapped",
+      "sites": [
+        "Ponte Alto (Terracina)"
+      ],
+      "note": "Public title available; video could not be inspected without channel membership. Named monuments independently researched where possible."
+    },
+    {
+      "id": "MG0oAqe6Xvg",
+      "title": "What was in those people's minds??",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=MG0oAqe6Xvg",
+      "status": "named location already mapped",
+      "sites": [
+        "Delphi"
+      ]
+    },
+    {
+      "id": "SKsBLV8Mz0w",
+      "title": "3 temples to the same God?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=SKsBLV8Mz0w",
+      "status": "named location already mapped",
+      "sites": [
+        "Delphi"
+      ]
+    },
+    {
+      "id": "YOeiNT-lW5I",
+      "title": "Egypt-Italy connection?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=YOeiNT-lW5I",
+      "status": "named location already mapped",
+      "sites": [
+        "Temple of Isis (Fondi)"
+      ]
+    },
+    {
+      "id": "NXeg2BhytX8",
+      "title": "A big tower!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=NXeg2BhytX8",
+      "status": "named location already mapped",
+      "sites": [
+        "Lilaia"
+      ]
+    },
+    {
+      "id": "TiQX-oX08RY",
+      "title": "A peculiar walk",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=TiQX-oX08RY",
+      "status": "named location already mapped",
+      "sites": [
+        "Proerna"
+      ]
+    },
+    {
+      "id": "4Lf2OEl5KeA",
+      "title": "Dangerous encounters?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=4Lf2OEl5KeA",
+      "status": "named location already mapped",
+      "sites": [
+        "Proerna"
+      ]
+    },
+    {
+      "id": "5V7OvH21apM",
+      "title": "A very nice polygonal wall in the modern city!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=5V7OvH21apM",
+      "status": "location follow-up",
+      "sites": [],
+      "note": "Fondi urban walls; exact section not yet confirmed."
+    },
+    {
+      "id": "XMdpxBqk2Yc",
+      "title": "More big blocks!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=XMdpxBqk2Yc",
+      "status": "named location already mapped",
+      "sites": [
+        "Dodona"
+      ]
+    },
+    {
+      "id": "7E5p9CrH8D0",
+      "title": "Huge walled ancient sanctuary!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=7E5p9CrH8D0",
+      "status": "named location already mapped",
+      "sites": [
+        "Dodona"
+      ]
+    },
+    {
+      "id": "TduvazHLS-4",
+      "title": "Gateway to Hades!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=TduvazHLS-4",
+      "status": "named location already mapped",
+      "sites": [
+        "Nekromanteion of Acheron"
+      ]
+    },
+    {
+      "id": "R8Z5AHBrzl0",
+      "title": "A polygonal Golden Gate",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=R8Z5AHBrzl0",
+      "status": "named location already mapped",
+      "sites": [
+        "Porta Aurea (Castellonorato)"
+      ]
+    },
+    {
+      "id": "xZ2vRLP0dIw",
+      "title": "Kind of a labyrinth!?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=xZ2vRLP0dIw",
+      "status": "named location already mapped",
+      "sites": [
+        "Nekromanteion of Acheron"
+      ]
+    },
+    {
+      "id": "g1YeT_Bt2hM",
+      "title": "Amazing joints!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=g1YeT_Bt2hM",
+      "status": "named location already mapped",
+      "sites": [
+        "Nekromanteion of Acheron"
+      ]
+    },
+    {
+      "id": "iXw0qpqnz2k",
+      "title": "Outskirts of an ancient temple?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=iXw0qpqnz2k",
+      "status": "named location already mapped",
+      "sites": [
+        "Nekromanteion of Acheron"
+      ]
+    },
+    {
+      "id": "5rAK5EJ6My8",
+      "title": "A 15-ton sitting bench?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=5rAK5EJ6My8",
+      "status": "named location already mapped",
+      "sites": [
+        "Cassope"
+      ]
+    },
+    {
+      "id": "JU33bjt4dBQ",
+      "title": "The \"defensive\" wall has smaller stones...",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=JU33bjt4dBQ",
+      "status": "named location already mapped",
+      "sites": [
+        "Cassope"
+      ]
+    },
+    {
+      "id": "JfIF34ofU-w",
+      "title": "A (polygonal) theatre in the Clouds!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=JfIF34ofU-w",
+      "status": "named location already mapped",
+      "sites": [
+        "Cassope"
+      ]
+    },
+    {
+      "id": "aCbny_IkHV4",
+      "title": "Ancient Greece Had Neighborhoods Like This!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=aCbny_IkHV4",
+      "status": "named location already mapped",
+      "sites": [
+        "Cassope"
+      ]
+    },
+    {
+      "id": "c9QZ71j0wC8",
+      "title": "An Ancient Greek Hotel??",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=c9QZ71j0wC8",
+      "status": "named location already mapped",
+      "sites": [
+        "Cassope"
+      ]
+    },
+    {
+      "id": "E9LBCGvohMs",
+      "title": "Modern built on ancient",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=E9LBCGvohMs",
+      "status": "location follow-up",
+      "sites": [],
+      "note": "Sezze town walls; exact section not yet confirmed."
+    },
+    {
+      "id": "o-dqDyko7CM",
+      "title": "it's not over yet: the acropolis!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=o-dqDyko7CM",
+      "status": "named location already mapped",
+      "sites": [
+        "Oiniades"
+      ]
+    },
+    {
+      "id": "ooHI4iuPXnk",
+      "title": "Ships Once Came Here!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=ooHI4iuPXnk",
+      "status": "named location already mapped",
+      "sites": [
+        "Oiniades"
+      ]
+    },
+    {
+      "id": "LokmJRBh23k",
+      "title": "A hybrid turret!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=LokmJRBh23k",
+      "status": "named location already mapped",
+      "sites": [
+        "Oiniades"
+      ]
+    },
+    {
+      "id": "AWK1BMv-RXo",
+      "title": "Deeper exploration",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=AWK1BMv-RXo",
+      "status": "named location already mapped",
+      "sites": [
+        "Norba"
+      ]
+    },
+    {
+      "id": "A9EH6Ydux7Q",
+      "title": "The Ancient Greeks Used True Arches!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=A9EH6Ydux7Q",
+      "status": "named location already mapped",
+      "sites": [
+        "Oiniades"
+      ]
+    },
+    {
+      "id": "pwd3TaJT1Zw",
+      "title": "These Stones Fit TOO Well",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=pwd3TaJT1Zw",
+      "status": "named location already mapped",
+      "sites": [
+        "Oiniades"
+      ]
+    },
+    {
+      "id": "ooill1t1AYs",
+      "title": "The Great wall of Italy!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=ooill1t1AYs",
+      "status": "named location already mapped",
+      "sites": [
+        "Norba"
+      ]
+    },
+    {
+      "id": "VB9VOp4gs5U",
+      "title": "More walls and gates",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=VB9VOp4gs5U",
+      "status": "named location already mapped",
+      "sites": [
+        "New Pleuron"
+      ]
+    },
+    {
+      "id": "Kb0FqTDeS1g",
+      "title": "A very elaborate cistern?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=Kb0FqTDeS1g",
+      "status": "named location already mapped",
+      "sites": [
+        "New Pleuron"
+      ]
+    },
+    {
+      "id": "op4NxneRb0M",
+      "title": "The mystery deepens...",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=op4NxneRb0M",
+      "status": "named location already mapped",
+      "sites": [
+        "New Pleuron"
+      ]
+    },
+    {
+      "id": "tLC_QRXFAhI",
+      "title": "An interesting comparison!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=tLC_QRXFAhI",
+      "status": "location follow-up",
+      "sites": [],
+      "note": "Unlocated masonry comparison; description does not name the site."
+    },
+    {
+      "id": "yeoc61Ex9rk",
+      "title": "..but in between classical hellenistic styles, we find...",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=yeoc61Ex9rk",
+      "status": "named location already mapped",
+      "sites": [
+        "Arcadian Gate (Messene)"
+      ]
+    },
+    {
+      "id": "dFY31BH6sEM",
+      "title": "Some classical hellenistic stuff!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=dFY31BH6sEM",
+      "status": "named location already mapped",
+      "sites": [
+        "Arcadian Gate (Messene)"
+      ]
+    },
+    {
+      "id": "GsfmGHLKtso",
+      "title": "Where has most of the wall gone?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=GsfmGHLKtso",
+      "status": "named location already mapped",
+      "sites": [
+        "Arcadian Gate (Messene)"
+      ]
+    },
+    {
+      "id": "u78B4y0kmtY",
+      "title": "Km of Walls and towers!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=u78B4y0kmtY",
+      "status": "named location already mapped",
+      "sites": [
+        "Arcadian Gate (Messene)"
+      ]
+    },
+    {
+      "id": "uKrMaApoAEc",
+      "title": "People with huge resources!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=uKrMaApoAEc",
+      "status": "named location already mapped",
+      "sites": [
+        "Arcadian Gate (Messene)"
+      ]
+    },
+    {
+      "id": "cRxOUkUP6LQ",
+      "title": "What happened here?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=cRxOUkUP6LQ",
+      "status": "named location already mapped",
+      "sites": [
+        "Arcadian Gate (Messene)"
+      ]
+    },
+    {
+      "id": "pr-fZIz5J1A",
+      "title": "Machined blocks?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=pr-fZIz5J1A",
+      "status": "named location already mapped",
+      "sites": [
+        "Epidaurus"
+      ]
+    },
+    {
+      "id": "DRoPR-sdkUw",
+      "title": "An unexpected wall!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=DRoPR-sdkUw",
+      "status": "named location already mapped",
+      "sites": [
+        "Epidaurus"
+      ]
+    },
+    {
+      "id": "VgYLdRGo6OU",
+      "title": "Maybe a heritage from a previous culture?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=VgYLdRGo6OU",
+      "status": "named location already mapped",
+      "sites": [
+        "Epidaurus"
+      ]
+    },
+    {
+      "id": "ycDrsjaecQs",
+      "title": "What is that?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=ycDrsjaecQs",
+      "status": "named location already mapped",
+      "sites": [
+        "Acropolis Oga (Methana)"
+      ]
+    },
+    {
+      "id": "aSiV0pqB2rs",
+      "title": "Tomb or temple?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=aSiV0pqB2rs",
+      "status": "named location already mapped",
+      "sites": [
+        "Tiryns"
+      ]
+    },
+    {
+      "id": "ODqfBnbZyhI",
+      "title": "The myth of cyclopean walls",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=ODqfBnbZyhI",
+      "status": "named location already mapped",
+      "sites": [
+        "Tiryns"
+      ]
+    },
+    {
+      "id": "SJkr7BMbx_I",
+      "title": "One city. Three masonry styles. Why?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=SJkr7BMbx_I",
+      "status": "named location already mapped",
+      "sites": [
+        "Mycenae"
+      ]
+    },
+    {
+      "id": "EzWkjB993NE",
+      "title": "You might have never heard of this site!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=EzWkjB993NE",
+      "status": "named location already mapped",
+      "sites": [
+        "Methana Acropolis (Palaiokastro)"
+      ]
+    },
+    {
+      "id": "N5Ro5gYkzmE",
+      "title": "it may look like Egypt, but it isn't!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=N5Ro5gYkzmE",
+      "status": "named location already mapped",
+      "sites": [
+        "Mycenae"
+      ]
+    },
+    {
+      "id": "kbWon1yxBrE",
+      "title": "The most ancient bridge in history!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=kbWon1yxBrE",
+      "status": "mapped film",
+      "sites": [
+        "Kazarma Bridge (Arkadiko)"
+      ]
+    },
+    {
+      "id": "DXRlUOR6Mpo",
+      "title": "Built in an impossible place!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=DXRlUOR6Mpo",
+      "status": "named location already mapped",
+      "sites": [
+        "Kazarma Acropolis"
+      ]
+    },
+    {
+      "id": "7PfGVNN9EAw",
+      "title": "A megalithic party!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=7PfGVNN9EAw",
+      "status": "named location already mapped",
+      "sites": [
+        "Mycenae"
+      ]
+    },
+    {
+      "id": "dLOImzBcAvg",
+      "title": "Were they really fortresses?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=dLOImzBcAvg",
+      "status": "named location already mapped",
+      "sites": [
+        "Agios Adrianos Fort"
+      ]
+    },
+    {
+      "id": "i4HByJKKkjU",
+      "title": "Is it easy to build polygonal?",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=i4HByJKKkjU",
+      "status": "named location already mapped",
+      "sites": [
+        "Asine"
+      ]
+    },
+    {
+      "id": "ZXNF4fHMFKk",
+      "title": "Forgotten cyclopean wall?? (Greece)",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=ZXNF4fHMFKk",
+      "status": "named location already mapped",
+      "sites": [
+        "Midea"
+      ]
+    },
+    {
+      "id": "nWdOvEW_axg",
+      "title": "A pyramid made of polygonal blocks!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=nWdOvEW_axg",
+      "status": "named location already mapped",
+      "sites": [
+        "Pyramid of Hellinikon"
+      ]
+    },
+    {
+      "id": "rjF0RdPUuzY",
+      "title": "Ancient 20-ton stone block!",
+      "format": "short",
+      "url": "https://www.youtube.com/watch?v=rjF0RdPUuzY",
+      "status": "named location already mapped",
+      "sites": [
+        "Heraion of Argos"
+      ]
+    }
+  ]
+}

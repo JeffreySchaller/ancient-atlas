@@ -3473,22 +3473,32 @@
   },
   {
     "n": "Rusellae",
-    "lat": 42.8167,
-    "lng": 11.1333,
-    "cat": "megalithic",
+    "lat": 42.8274218,
+    "lng": 11.1633244,
+    "cat": "city",
     "region": "Europe",
-    "tier": 2,
+    "tier": 3,
     "signal": "open",
     "criteria": [
       "polygonal",
       "scale",
       "geometry"
     ],
-    "desc": "Etruscan-Roman city in Tuscany, near Grosseto, with one of Italy's longest surviving cyclopean walls (~3 km perimeter). Polygonal masonry with bent-corner joinery comparable to Vetulonia and Cosa. Multiple construction phases visible. Conventional dating: 7th c. BCE Etruscan, Roman expansion in 3rd c. BCE. Independent reading: the cyclopean phase predates the Etruscan attribution and aligns with the broader Mediterranean polygonal masonry tradition that Hugh Newman documents from Türkiye through Greece and Italy.",
+    "desc": "Etruscan and Roman city near Grosseto. Massive polygonal fortifications enclose the hills, with streets, houses, a forum and an amphitheatre surviving inside the archaeological park.",
     "library_ref": {
       "url": "/library/the-convergence-question.html",
       "title": "The Convergence Question"
-    }
+    },
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://parchiarcheomaremma.cultura.gov.it/siti-musei/parco-archeologico-di-roselle/"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://megalithicminutiae.com/site-map/"
+      }
+    ]
   },
   {
     "n": "Orbetello",
@@ -8343,6 +8353,372 @@
       {
         "label": "Gateway location",
         "url": "https://www.wikidata.org/wiki/Q87146870"
+      }
+    ]
+  },
+  {
+    "n": "Orto della Regina",
+    "lat": 41.2994135,
+    "lng": 13.9440409,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Polygonal stone enclosure on Monte La Frascara in the Roccamonfina volcanic landscape. Large dry-laid blocks form the surviving hilltop fortification.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://www.caicaserta.it/escursioni/frascara.pdf"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://www.wikidata.org/wiki/Q67591219"
+      }
+    ]
+  },
+  {
+    "n": "Giants’ Tomb of Uore",
+    "lat": 40.215472,
+    "lng": 8.776875,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Bronze Age collective tomb near Borore, with a semicircular facade and a partly buried arched stele. This pin marks the tomb, rather than the nearby nuraghe or spring. The monument stands on private land.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://idese.cultura.gov.it/place/tomba-dei-giganti-di-uore/"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://www.megalithic.co.uk/article.php?sid=52847"
+      }
+    ]
+  },
+  {
+    "n": "Porta Aurea (Castellonorato)",
+    "lat": 41.2857681,
+    "lng": 13.6707595,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Monumental stone gateway and wall remains at Palombara near Castellonorato, Formia. The archaeological site received a cultural-interest declaration in 2026. It is on private land; access requires the owner’s permission.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://trasparenza.cultura.gov.it/archivio96_atti-a-rilevanza-esterna-o-provvedimenti-di-tutela-e-valorizzazione_0_279180_950_1.html"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://megalithicminutiae.com/site-map/"
+      }
+    ]
+  },
+  {
+    "n": "Ponte Alto (Terracina)",
+    "lat": 41.3137267,
+    "lng": 13.1976287,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Ancient road bridge on the Appian route northwest of Terracina. Its surviving stone arch and large masonry blocks can be examined separately from the city walls and temples.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://whc.unesco.org/document/200879"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://megalithicminutiae.com/site-map/"
+      }
+    ]
+  },
+  {
+    "n": "Spacco della Regina (Ansedonia)",
+    "lat": 42.40748,
+    "lng": 11.29276,
+    "cat": "underground",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Coastal rock cleft beside the ancient waterworks of Portus Cosanus, near Ansedonia. Stone Riddles also visits the nearby Tagliata Etrusca channel. The film’s proposed quarry interpretation is not treated here as an established identification.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://comune.orbetello.gr.it/wp-content/uploads/2025/04/Approfondimento_paesaggio.pdf"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://www.openstreetmap.org/node/1204286966"
+      }
+    ]
+  },
+  {
+    "n": "Polygonal Walls of Amelia",
+    "lat": 42.55372,
+    "lng": 12.41726,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Large fitted limestone blocks form the surviving southern fortifications of ancient Ameria. The circuit has several building phases, with later town buildings incorporating stretches of the ancient masonry.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://www.turismoamelia.it/en/exploring-amelia/the-ancient-city-walls/"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://commons.wikimedia.org/wiki/File:Mura_poligonali,_Amelia_(Italy).JPG"
+      }
+    ]
+  },
+  {
+    "n": "Grotte di Torri",
+    "lat": 42.2023288,
+    "lng": 12.6709247,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Polygonal masonry enclosure beneath a later rural building in Fara in Sabina. Often discussed as the substructures of a Roman villa, it also preserves underground spaces. Historical identifications and the function of the enclosure have varied.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://sabap-met-rm.cultura.gov.it/wp-content/uploads/2024/05/Lazio-e-Sabina-11.pdf"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://megalithicminutiae.com/grotte-di-torri/"
+      }
+    ]
+  },
+  {
+    "n": "Acropolis of Ferentino",
+    "lat": 41.6957106,
+    "lng": 13.257582,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Ancient acropolis beneath the cathedral of Ferentino, with polygonal masonry and Roman monumental building phases. This pin identifies the upper archaeological complex, not the separate Porta Sanguinaria gate.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://megalithicminutiae.com/ferentino/"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://megalithicminutiae.com/site-map/"
+      }
+    ]
+  },
+  {
+    "n": "Acropolis of Circeii",
+    "lat": 41.2302501,
+    "lng": 13.0830388,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Polygonal limestone fortifications on Monte Circeo above San Felice Circeo. The national park identifies the surviving circuit with the middle Republican period. This is the hilltop acropolis, separate from the lower historic town.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://www.parcocirceo.it/pun_dettaglio.php?id_pun=2034"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://megalithicminutiae.com/site-map/"
+      }
+    ]
+  },
+  {
+    "n": "Polygonal Walls of Castel San Pietro Romano",
+    "lat": 41.8456428,
+    "lng": 12.8959355,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Large dry-laid limestone blocks form the ancient fortification circuit above Palestrina. Medieval rebuilding added towers and blocked older openings. The municipality dates the original enclosure to the late sixth century BCE.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://www.comune.castelsanpietroromano.rm.it/vivere_il_comune/luoghi/luogo_9.html"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://megalithicminutiae.com/site-map/"
+      }
+    ]
+  },
+  {
+    "n": "Pyrgi Walls (Santa Severa)",
+    "lat": 42.01646,
+    "lng": 11.95808,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Polygonal walls of the Roman maritime colony, partly incorporated into the later Castle of Santa Severa. This pin marks the castle-side wall complex, separately from the Etruscan sanctuary farther along the coast.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://www.castellodisantasevera.it/pyrgi/"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://www.castellodisantasevera.it/wp-content/uploads/2022/12/Carta-dei-Servizi-e-norme-di-visita-Complesso-Santa-Severa-2022.pdf"
+      },
+      {
+        "label": "Museum complex location",
+        "url": "https://progettoframe.it/anagrafe/750/"
+      }
+    ]
+  },
+  {
+    "n": "Kazarma Bridge (Arkadiko)",
+    "lat": 37.59363,
+    "lng": 22.937556,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Bronze Age stone bridge on the ancient route between Tiryns and Epidauros. Its narrow corbelled opening is built from large limestone blocks. This pin marks the bridge, separately from the nearby Kazarma acropolis.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://web.archive.org/web/20080408153052/http://odysseus.culture.gr/h/2/eh251.jsp?obj_id=1710"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://en.wikipedia.org/wiki/Arkadiko_Bridge"
+      }
+    ]
+  },
+  {
+    "n": "Fonte di Uore",
+    "lat": 40.2136829,
+    "lng": 8.7733536,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Spring structure near Borore, listed as Fonte Nuragica Uore in the Sardinian regional heritage inventory. Stone Riddles questions its interpretation; that argument is the filmmaker’s view, rather than a settled reclassification. The pin follows regional inventory record 968.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://www.regione.sardegna.it/documenti/1_274_20131028192143.pdf"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://www.sardegnaautonomie.it/comuni/comune-di-borore"
+      }
+    ]
+  },
+  {
+    "n": "Caslasc (Giornico)",
+    "lat": 46.3935742702,
+    "lng": 8.872095765,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Triangular dry-stone fortification above Giornico, also called Castellaccio. Its massive walls are documented by a Swiss archaeological field survey; construction date and original function remain uncertain. A Stone Riddles clip names the site but is members-only.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://archeobase.ch/ark:/17447/x35524"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://www.giornico.ch/Altri-monumenti-92d69d00?MasterId=g1_440"
+      },
+      {
+        "label": "Stone Riddles clip (members-only)",
+        "url": "https://www.youtube.com/shorts/azEa7egoTbk"
+      }
+    ]
+  },
+  {
+    "n": "Porta Foca (Segni)",
+    "lat": 41.694823,
+    "lng": 13.0267943,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Ancient gateway in Segni’s polygonal stone fortifications. This pin identifies Porta Foca separately from Porta Saracena and the broader town site.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://www.comune.segni.rm.it/vivere_il_comune/territorio/territorio_1.html"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://www.openstreetmap.org/node/2517396472"
+      },
+      {
+        "label": "Stone Riddles clip (members-only)",
+        "url": "https://www.youtube.com/shorts/Y7VH4AsXIaU"
+      }
+    ]
+  },
+  {
+    "n": "Porta Sanguinaria (Ferentino)",
+    "lat": 41.6903207,
+    "lng": 13.2544819,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Southern gateway of Ferentino, with polygonal lower masonry, a Roman stone arch and later medieval work above. The distinct building phases remain visible in the facade.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://www.comune.ferentino.fr.it/it/page/porta-sanguinaria"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://www.wikidata.org/wiki/Q107063842"
+      },
+      {
+        "label": "Stone Riddles clip (members-only)",
+        "url": "https://www.youtube.com/shorts/nw_Oii0_kQw"
+      }
+    ]
+  },
+  {
+    "n": "Sanctuary of Pietrabbondante",
+    "lat": 41.7407365,
+    "lng": 14.3846698,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Samnite sanctuary at Calcatello, with a monumental theatre and temples. Excavation distinguishes this religious and political complex from a Roman town. The location pin identifies the sanctuary rather than modern Pietrabbondante.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://www.inasaroma.org/sito-pietrabbondante/"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://megalithicminutiae.com/site-map/"
+      },
+      {
+        "label": "Stone Riddles clip (members-only)",
+        "url": "https://www.youtube.com/shorts/UohI7ADxO2k"
+      }
+    ]
+  },
+  {
+    "n": "Trebula Balliensis",
+    "lat": 41.2280313,
+    "lng": 14.2606872,
+    "cat": "city",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "Archaeological area near Treglia, with large-block fortifications, a monumental gateway and Roman remains. This pin follows the archaeological enclosure, rather than the modern municipal offices in Pontelatone.",
+    "sources": [
+      {
+        "label": "Site research",
+        "url": "https://www.comune.pontelatone.ce.it/vivere_il_comune/luoghi/luogo_2.html"
+      },
+      {
+        "label": "Location reference",
+        "url": "https://megalithicminutiae.com/site-map/"
+      },
+      {
+        "label": "Stone Riddles clip (members-only)",
+        "url": "https://www.youtube.com/shorts/MZ41nTLtLis"
       }
     ]
   }

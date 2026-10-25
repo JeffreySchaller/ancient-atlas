@@ -3548,6 +3548,13 @@
       "published": "2026-09-13"
     },
     {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 3254,
+      "added": "2026-10-24"
+    },
+    {
       "id": "SargCH8f2aY",
       "title": "The Polygonal Walls of Cosa — Tuscany",
       "cr": "stoneriddles",
@@ -3569,6 +3576,13 @@
   ],
   "Rusellae": [
     {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 325,
+      "added": "2026-10-24"
+    },
+    {
       "id": "E0FKiizs86M",
       "title": "Mysterious Cyclopean Wall of Rusellae",
       "cr": "agelessrock",
@@ -3586,6 +3600,13 @@
     }
   ],
   "Orbetello": [
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 3069,
+      "added": "2026-10-24"
+    },
     {
       "id": "mpc6eIDU59U",
       "title": "When was Cyclopean Wall in Orbetello built?",
@@ -4757,6 +4778,13 @@
     }
   ],
   "Alatri Acropolis": [
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 1478,
+      "added": "2026-10-24"
+    },
     {
       "id": "a-QbC_vZr88",
       "title": "Polygonal Walls of the Giants in Ancient Italy | Alatri Megalithic Acropolis | Megalithomania",
@@ -7269,6 +7297,13 @@
       "cr": "stoneriddles",
       "added": "2026-08-07",
       "published": "2026-08-07"
+    },
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 2095,
+      "added": "2026-10-24"
     }
   ],
   "Cutimbo": [
@@ -7874,6 +7909,157 @@
       "added": "2026-10-24",
       "published": "2017-09-02",
       "t": 245
+    }
+  ],
+  "Orto della Regina": [
+    {
+      "id": "-6ng3pml2zU",
+      "title": "The Garden of the Queen in Roccamonfina",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "published": "2026-10-22"
+    }
+  ],
+  "Giants’ Tomb of Uore": [
+    {
+      "id": "Ku-C9KQfFDs",
+      "title": "Giant's grave of Uore",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "published": "2024-07-09"
+    }
+  ],
+  "Porta Aurea (Castellonorato)": [
+    {
+      "id": "eaUAcww0i5Q",
+      "title": "The Golden Gate of Castellonorato",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "published": "2026-08-28"
+    }
+  ],
+  "Ponte Alto (Terracina)": [
+    {
+      "id": "ox2IFbGiX6A",
+      "title": "A Megalithic Bridge in Terracina",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "published": "2026-10-15"
+    }
+  ],
+  "Spacco della Regina (Ansedonia)": [
+    {
+      "id": "f6Wxh7QzM1M",
+      "title": "The Quarry of the Walls of Cosa!?",
+      "cr": "stoneriddles",
+      "added": "2026-10-24",
+      "published": "2026-10-08"
+    }
+  ],
+  "Polygonal Walls of Amelia": [
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 484,
+      "added": "2026-10-24"
+    }
+  ],
+  "Grotte di Torri": [
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 711,
+      "added": "2026-10-24"
+    }
+  ],
+  "Alba Fucens": [
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 882,
+      "added": "2026-10-24"
+    }
+  ],
+  "Acropolis of Ferentino": [
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 1301,
+      "added": "2026-10-24"
+    }
+  ],
+  "Acropolis of Circeii": [
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 1804,
+      "added": "2026-10-24"
+    }
+  ],
+  "Segni (Signia)": [
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 2487,
+      "added": "2026-10-24"
+    }
+  ],
+  "Porta Saracena (Segni)": [
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 2515,
+      "added": "2026-10-24"
+    }
+  ],
+  "Polygonal Walls of Castel San Pietro Romano": [
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 2838,
+      "added": "2026-10-24"
+    }
+  ],
+  "Pyrgi Walls (Santa Severa)": [
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 2930,
+      "added": "2026-10-24"
+    }
+  ],
+  "Kazarma Bridge (Arkadiko)": [
+    {
+      "id": "kbWon1yxBrE",
+      "title": "The most ancient bridge in history!",
+      "cr": "stoneriddles",
+      "added": "2026-10-24"
+    }
+  ],
+  "Fonte di Uore": [
+    {
+      "id": "ch-_WQBTW6k",
+      "title": "The fake Holy well of Uore",
+      "cr": "stoneriddles",
+      "added": "2026-10-24"
+    }
+  ],
+  "Porta Foca (Segni)": [
+    {
+      "id": "HrdQDqa3G-w",
+      "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
+      "cr": "stoneriddles",
+      "t": 2590,
+      "added": "2026-10-24"
     }
   ]
 }
