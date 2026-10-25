@@ -1060,21 +1060,33 @@
   },
   {
     "n": "Gavrinis",
-    "lat": 47.5706,
-    "lng": -2.8969,
+    "lat": 47.5719335,
+    "lng": -2.898572,
     "cat": "tomb",
     "region": "Europe",
     "tier": 2,
-    "desc": "Island passage tomb in the Gulf of Morbihan with extraordinary carved stone surfaces. Every stone in the passage is covered in swirling patterns and concentric arcs."
+    "desc": "Island passage tomb in the Gulf of Morbihan with extraordinary carved stone surfaces. Every stone in the passage is covered in swirling patterns and concentric arcs.",
+    "sources": [
+      {
+        "label": "Monument location reference",
+        "url": "https://www.wikidata.org/wiki/Q2933238"
+      }
+    ]
   },
   {
     "n": "Locmariaquer",
-    "lat": 47.5714,
-    "lng": -2.9458,
+    "lat": 47.571611,
+    "lng": -2.949778,
     "cat": "megalithic",
     "region": "Europe",
     "tier": 2,
-    "desc": "Home of the Grand Menhir Brisé: once the largest standing stone in Europe at 20m tall and 330 tons, now broken into four pieces."
+    "desc": "Home of the Grand Menhir Brisé: once the largest standing stone in Europe at 20m tall and 330 tons, now broken into four pieces.",
+    "sources": [
+      {
+        "label": "Monument location reference",
+        "url": "https://www.wikidata.org/wiki/Q991810"
+      }
+    ]
   },
   {
     "n": "Ġgantija Temples",
@@ -2817,8 +2829,8 @@
   },
   {
     "n": "Alatri Acropolis",
-    "lat": 41.7283,
-    "lng": 13.3422,
+    "lat": 41.724717,
+    "lng": 13.344505,
     "cat": "city",
     "region": "Europe",
     "tier": 2,
@@ -2829,12 +2841,18 @@
     "library_ref": {
       "url": "/library/the-convergence-question.html",
       "title": "The Convergence Question"
-    }
+    },
+    "sources": [
+      {
+        "label": "Monument location reference",
+        "url": "https://www.wikidata.org/wiki/Q3604769"
+      }
+    ]
   },
   {
     "n": "Alba Fucens",
-    "lat": 42.0764,
-    "lng": 13.4129,
+    "lat": 42.07905972595881,
+    "lng": 13.411468116682508,
     "cat": "city",
     "region": "Europe",
     "tier": 3,
@@ -2845,7 +2863,13 @@
     "library_ref": {
       "url": "/library/the-convergence-question.html",
       "title": "The Convergence Question"
-    }
+    },
+    "sources": [
+      {
+        "label": "Monument location reference",
+        "url": "https://www.wikidata.org/wiki/Q944515"
+      }
+    ]
   },
   {
     "n": "Segni (Signia)",
@@ -2881,12 +2905,18 @@
   },
   {
     "n": "Pyramid of Bomarzo",
-    "lat": 42.475,
-    "lng": 12.2486,
+    "lat": 42.4813194444,
+    "lng": 12.26425,
     "cat": "pyramid",
     "region": "Europe",
     "tier": 3,
-    "desc": "Stepped pyramid altar carved from a single tuff outcrop in the woods of central Italy, near Viterbo. Discovered in 1991. Officially Etruscan (~7th century BCE), though no other Etruscan structure matches its form. Channels, basins, and steps cut with surprising precision."
+    "desc": "A large peperino boulder carved with stairways and platforms in the woods near Bomarzo, within Soriano nel Cimino. Commonly called the Etruscan Pyramid; its date and original function remain uncertain.",
+    "sources": [
+      {
+        "label": "Monument location reference",
+        "url": "https://archeologiaepaesaggio.wordpress.com/2021/02/15/la-piramide-di-bomarzo/"
+      }
+    ]
   },
   {
     "n": "Filitosa (Corsica)",
@@ -8294,6 +8324,25 @@
       {
         "label": "Corsica tourism",
         "url": "https://www.visit-corsica.com/content/download/29485/4533581/file/Guide25SartenaisValincoTaravo.pdf"
+      }
+    ]
+  },
+  {
+    "n": "Porta Saracena (Segni)",
+    "lat": 41.6979901,
+    "lng": 13.016936,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "A monumental gateway in the polygonal stone walls of ancient Segni. Large fitted blocks frame the passage through the wall. This pin marks the gate itself, separately from the broader Segni town site.",
+    "sources": [
+      {
+        "label": "Segni gateway and walls",
+        "url": "https://www.italia.it/en/lazio/segni/the-porta-saracena-and-the-cyclopean-walls"
+      },
+      {
+        "label": "Gateway location",
+        "url": "https://www.wikidata.org/wiki/Q87146870"
       }
     ]
   }

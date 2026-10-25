@@ -2128,7 +2128,7 @@ body.present #broadcast-controls{
         <button class="sb-see-all" onclick="openCreators()" title="View all creators in the Hub">See all <span class="sb-see-all-arrow">↗</span></button>
       </div>
       <div id="creator-mini-list"></div>
-      <a href="/photos/" style="display:block;margin:14px 0 22px;color:var(--champagne);font-size:12px;text-decoration:none">Explore island photographs →</a>
+      <a href="/photos/" style="display:block;margin:14px 0 22px;color:var(--champagne);font-size:12px;text-decoration:none">Explore site photographs →</a>
       <div class="sb-section">Where</div>
       <div id="region-filters"></div>
       <div id="country-filters"></div>
@@ -3445,21 +3445,33 @@ const SITES = [
   },
   {
     "n": "Gavrinis",
-    "lat": 47.5706,
-    "lng": -2.8969,
+    "lat": 47.5719335,
+    "lng": -2.898572,
     "cat": "tomb",
     "region": "Europe",
     "tier": 2,
-    "desc": "Island passage tomb in the Gulf of Morbihan with extraordinary carved stone surfaces. Every stone in the passage is covered in swirling patterns and concentric arcs."
+    "desc": "Island passage tomb in the Gulf of Morbihan with extraordinary carved stone surfaces. Every stone in the passage is covered in swirling patterns and concentric arcs.",
+    "sources": [
+      {
+        "label": "Monument location reference",
+        "url": "https://www.wikidata.org/wiki/Q2933238"
+      }
+    ]
   },
   {
     "n": "Locmariaquer",
-    "lat": 47.5714,
-    "lng": -2.9458,
+    "lat": 47.571611,
+    "lng": -2.949778,
     "cat": "megalithic",
     "region": "Europe",
     "tier": 2,
-    "desc": "Home of the Grand Menhir Brisé: once the largest standing stone in Europe at 20m tall and 330 tons, now broken into four pieces."
+    "desc": "Home of the Grand Menhir Brisé: once the largest standing stone in Europe at 20m tall and 330 tons, now broken into four pieces.",
+    "sources": [
+      {
+        "label": "Monument location reference",
+        "url": "https://www.wikidata.org/wiki/Q991810"
+      }
+    ]
   },
   {
     "n": "Ġgantija Temples",
@@ -5202,8 +5214,8 @@ const SITES = [
   },
   {
     "n": "Alatri Acropolis",
-    "lat": 41.7283,
-    "lng": 13.3422,
+    "lat": 41.724717,
+    "lng": 13.344505,
     "cat": "city",
     "region": "Europe",
     "tier": 2,
@@ -5214,12 +5226,18 @@ const SITES = [
     "library_ref": {
       "url": "/library/the-convergence-question.html",
       "title": "The Convergence Question"
-    }
+    },
+    "sources": [
+      {
+        "label": "Monument location reference",
+        "url": "https://www.wikidata.org/wiki/Q3604769"
+      }
+    ]
   },
   {
     "n": "Alba Fucens",
-    "lat": 42.0764,
-    "lng": 13.4129,
+    "lat": 42.07905972595881,
+    "lng": 13.411468116682508,
     "cat": "city",
     "region": "Europe",
     "tier": 3,
@@ -5230,7 +5248,13 @@ const SITES = [
     "library_ref": {
       "url": "/library/the-convergence-question.html",
       "title": "The Convergence Question"
-    }
+    },
+    "sources": [
+      {
+        "label": "Monument location reference",
+        "url": "https://www.wikidata.org/wiki/Q944515"
+      }
+    ]
   },
   {
     "n": "Segni (Signia)",
@@ -5266,12 +5290,18 @@ const SITES = [
   },
   {
     "n": "Pyramid of Bomarzo",
-    "lat": 42.475,
-    "lng": 12.2486,
+    "lat": 42.4813194444,
+    "lng": 12.26425,
     "cat": "pyramid",
     "region": "Europe",
     "tier": 3,
-    "desc": "Stepped pyramid altar carved from a single tuff outcrop in the woods of central Italy, near Viterbo. Discovered in 1991. Officially Etruscan (~7th century BCE), though no other Etruscan structure matches its form. Channels, basins, and steps cut with surprising precision."
+    "desc": "A large peperino boulder carved with stairways and platforms in the woods near Bomarzo, within Soriano nel Cimino. Commonly called the Etruscan Pyramid; its date and original function remain uncertain.",
+    "sources": [
+      {
+        "label": "Monument location reference",
+        "url": "https://archeologiaepaesaggio.wordpress.com/2021/02/15/la-piramide-di-bomarzo/"
+      }
+    ]
   },
   {
     "n": "Filitosa (Corsica)",
@@ -10681,6 +10711,25 @@ const SITES = [
         "url": "https://www.visit-corsica.com/content/download/29485/4533581/file/Guide25SartenaisValincoTaravo.pdf"
       }
     ]
+  },
+  {
+    "n": "Porta Saracena (Segni)",
+    "lat": 41.6979901,
+    "lng": 13.016936,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "A monumental gateway in the polygonal stone walls of ancient Segni. Large fitted blocks frame the passage through the wall. This pin marks the gate itself, separately from the broader Segni town site.",
+    "sources": [
+      {
+        "label": "Segni gateway and walls",
+        "url": "https://www.italia.it/en/lazio/segni/the-porta-saracena-and-the-cyclopean-walls"
+      },
+      {
+        "label": "Gateway location",
+        "url": "https://www.wikidata.org/wiki/Q87146870"
+      }
+    ]
   }
 ];
 
@@ -12824,6 +12873,364 @@ const SITE_PHOTOS = {
       "evidence": {
         "file_title": "File:Menhirs de Palaggiu - panoramio.jpg",
         "description": "Menhirs de Palaggiu"
+      }
+    }
+  ],
+  "Gavrinis": [
+    {
+      "id": "bi001",
+      "collection": "Brittany",
+      "image": "/img/sites/bi001.webp",
+      "width": 1800,
+      "height": 1147,
+      "caption": "Gavrinis: the passage entrance",
+      "author": "Myrabella",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cairn_Gavrinis_entrance.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cairn_Gavrinis_entrance.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Cairn Gavrinis entrance.jpg",
+        "description": "The entrance of the Gavrinis cairn, on Gavrinis Island in the Gulf of Morbihan (Brittany, France)."
+      }
+    },
+    {
+      "id": "bi002",
+      "collection": "Brittany",
+      "image": "/img/sites/bi002.webp",
+      "width": 1800,
+      "height": 1307,
+      "caption": "Gavrinis cairn across the water",
+      "author": "François de Dijon",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Gavrinis_1a.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/6/66/Gavrinis_1a.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Gavrinis 1a.jpg",
+        "description": "Gavrinis passage grave, Brittany, France"
+      }
+    }
+  ],
+  "Barnenez": [
+    {
+      "id": "bi004",
+      "collection": "Brittany",
+      "image": "/img/sites/bi004.webp",
+      "width": 1600,
+      "height": 1200,
+      "caption": "Barnenez: the long cairn façade",
+      "author": "No machine-readable author provided. NewPapillon assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Barnenez_front2.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Barnenez_front2.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Barnenez front2.jpg",
+        "description": "Front of the Cairn de Barnenez"
+      }
+    },
+    {
+      "id": "bi005",
+      "collection": "Brittany",
+      "image": "/img/sites/bi005.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Barnenez: a stone-lined passage",
+      "author": "Gerhard Haubold",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:B_5_Cairn_von_Barnenez_C.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/9/9f/B_5_Cairn_von_Barnenez_C.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:B 5 Cairn von Barnenez C.jpg",
+        "description": "Cairn von Barnenez, Dolmengang C"
+      }
+    },
+    {
+      "id": "bi006",
+      "collection": "Brittany",
+      "image": "/img/sites/bi006.webp",
+      "width": 1800,
+      "height": 1278,
+      "caption": "Barnenez: exposed stone chambers",
+      "author": "Florent Ls",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cairn_of_Barnenez_-_20th_century_quarrying..JPG",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Cairn_of_Barnenez_-_20th_century_quarrying..JPG",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Cairn of Barnenez - 20th century quarrying..JPG",
+        "description": "Qarry destruction done during 20th century"
+      }
+    }
+  ],
+  "Locmariaquer": [
+    {
+      "id": "bi007",
+      "collection": "Brittany",
+      "image": "/img/sites/bi007.webp",
+      "width": 1800,
+      "height": 1196,
+      "caption": "Table des Marchand: the cairn entrance",
+      "author": "Myrabella",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Cairn_Table_des_Marchand_Locmariaquer.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/3/33/Cairn_Table_des_Marchand_Locmariaquer.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Cairn Table des Marchand Locmariaquer.jpg",
+        "description": "The restored cairn of the dolmen called 'La Table des Marchand' in Locmariaquer (Morbihan, Brittany, France)"
+      }
+    },
+    {
+      "id": "bi008",
+      "collection": "Brittany",
+      "image": "/img/sites/bi008.webp",
+      "width": 1800,
+      "height": 1127,
+      "caption": "Locmariaquer: the broken Grand Menhir",
+      "author": "Broken_menhir.jpg: Bjørn som tegner\nderivative work: Myrabella (talk)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Broken_menhir_edit.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/4/49/Broken_menhir_edit.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Broken menhir edit.jpg",
+        "description": "The Broken Menhir of Er Grah in Locmariaquer, Brittany"
+      }
+    },
+    {
+      "id": "bi020",
+      "collection": "Brittany",
+      "image": "/img/sites/bi020.webp",
+      "width": 1800,
+      "height": 1196,
+      "caption": "Table des Marchand: the engraved capstone",
+      "author": "Myrabella",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Locmariaquer_Table_des_Marchand_dalle_plafond.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/3/34/Locmariaquer_Table_des_Marchand_dalle_plafond.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Locmariaquer Table des Marchand dalle plafond.jpg",
+        "description": "The engraved capstone of the 'Table des Marchand' dolmen in Locmariaquer (Morbihan, Brittany, France). The carved motives are, from right to left: a hafted axe, a crook, and an incomplete bovine. This huge orthogneiss slab was broken. The upper bit was found in the Gavrinis dolmen."
+      }
+    }
+  ],
+  "Porta Saracena (Segni)": [
+    {
+      "id": "bi010",
+      "collection": "Mainland Italy",
+      "image": "/img/sites/bi010.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Porta Saracena: inside the gateway",
+      "author": "pietro scerrato",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Porta_Saracena_(interno)_-_panoramio.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Porta_Saracena_%28interno%29_-_panoramio.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Porta Saracena (interno) - panoramio.jpg",
+        "description": "Porta Saracena (interno)"
+      }
+    },
+    {
+      "id": "bi011",
+      "collection": "Mainland Italy",
+      "image": "/img/sites/bi011.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Porta Saracena: the polygonal gateway",
+      "author": "pietro scerrato",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Porta_Saracena_-_panoramio.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/4/45/Porta_Saracena_-_panoramio.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Porta Saracena - panoramio.jpg",
+        "description": "Porta Saracena"
+      }
+    }
+  ],
+  "Alba Fucens": [
+    {
+      "id": "bi012",
+      "collection": "Mainland Italy",
+      "image": "/img/sites/bi012.webp",
+      "width": 1800,
+      "height": 760,
+      "caption": "Alba Fucens: a gateway in the city walls",
+      "author": "Rjdeadly",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:City_walls_Alba_Fucens.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/8/87/City_walls_Alba_Fucens.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:City walls Alba Fucens.jpg",
+        "description": "City walls Alba Fucens"
+      }
+    },
+    {
+      "id": "bi013",
+      "collection": "Mainland Italy",
+      "image": "/img/sites/bi013.webp",
+      "width": 1800,
+      "height": 1800,
+      "caption": "Alba Fucens: polygonal wall detail",
+      "author": "Barbara_Bertini",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Massa_d%27Albe_-_Area_archeologica_di_Alba_Fucens_-_2026-09-25_06-55-27_003.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Massa_d%27Albe_-_Area_archeologica_di_Alba_Fucens_-_2026-09-25_06-55-27_003.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Massa d'Albe - Area archeologica di Alba Fucens - 2026-09-25 06-55-27 003.jpg",
+        "description": "Area archeologica di Alba Fucens - dettaglio delle mura in opera poligonale"
+      }
+    }
+  ],
+  "Pyramid of Bomarzo": [
+    {
+      "id": "bi014",
+      "collection": "Mainland Italy",
+      "image": "/img/sites/bi014.webp",
+      "width": 1355,
+      "height": 1800,
+      "caption": "Bomarzo: stairways cut into the rock",
+      "author": "Mfortini",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Piramide_Etrusca_o_Piramide_di_Bomarzo.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/4/46/Piramide_Etrusca_o_Piramide_di_Bomarzo.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Piramide Etrusca o Piramide di Bomarzo.jpg",
+        "description": "La piramide di Bomarzo, si ritiene che risalga al periodo etrusco"
+      }
+    }
+  ],
+  "Alatri Acropolis": [
+    {
+      "id": "bi015",
+      "collection": "Mainland Italy",
+      "image": "/img/sites/bi015.webp",
+      "width": 1279,
+      "height": 958,
+      "caption": "Alatri: Porta Maggiore",
+      "author": "Megalos Alexandros at Italian Wikipedia",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:Alatri_-_Porta_Maggiore.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Alatri_-_Porta_Maggiore.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Alatri - Porta Maggiore.jpg",
+        "description": "Questa foto è stata scattata da me. Ne autorizzo il libero uso su Wikipedia"
+      }
+    },
+    {
+      "id": "bi016",
+      "collection": "Mainland Italy",
+      "image": "/img/sites/bi016.webp",
+      "width": 1350,
+      "height": 1800,
+      "caption": "Alatri: the gateway from inside",
+      "author": "pietro scerrato",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Porta_Maggiore_vista_dall%27interno_-_panoramio.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Porta_Maggiore_vista_dall%27interno_-_panoramio.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Porta Maggiore vista dall'interno - panoramio.jpg",
+        "description": "Porta Maggiore vista dall'interno"
+      }
+    }
+  ],
+  "Norba": [
+    {
+      "id": "bi017",
+      "collection": "Mainland Italy",
+      "image": "/img/sites/bi017.webp",
+      "width": 1800,
+      "height": 1350,
+      "caption": "Norba: the approach to Porta Maggiore",
+      "author": "pietro scerrato",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Antica_Norba,_Porta_Maggiore_-_panoramio.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Antica_Norba%2C_Porta_Maggiore_-_panoramio.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Antica Norba, Porta Maggiore - panoramio.jpg",
+        "description": "Antica Norba, Porta Maggiore"
+      }
+    },
+    {
+      "id": "bi018",
+      "collection": "Mainland Italy",
+      "image": "/img/sites/bi018.webp",
+      "width": 1200,
+      "height": 1600,
+      "caption": "Norba: the gateway bastion",
+      "author": "Torquatus",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Norba,_detail_of_Porta_Maggiore_bastion.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/6/62/Norba%2C_detail_of_Porta_Maggiore_bastion.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Norba, detail of Porta Maggiore bastion.jpg",
+        "description": "A detail of the polygonal masonry bastion flanking the Porta Maggiore."
+      }
+    },
+    {
+      "id": "bi019",
+      "collection": "Mainland Italy",
+      "image": "/img/sites/bi019.webp",
+      "width": 1600,
+      "height": 1200,
+      "caption": "Norba: the Minor Acropolis temple podium",
+      "author": "Torquatus",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Norba_temple_podium_of_the_Minor_Acropolis.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/0/07/Norba_temple_podium_of_the_Minor_Acropolis.jpg",
+      "changes": "Resized and converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-24",
+      "evidence": {
+        "file_title": "File:Norba temple podium of the Minor Acropolis.jpg",
+        "description": "A polygonal masonry temple podium on the Minor Acropolis of ancient Norba."
       }
     }
   ]
@@ -21068,7 +21475,8 @@ const SITE_YEARS = {
   "Funtanaccia Dolmen (Corsica)": -1500,
   "I Stantari (Corsica)": -1500,
   "Renaghju (Corsica)": -4000,
-  "Palaggiu (Corsica)": -2000
+  "Palaggiu (Corsica)": -2000,
+  "Porta Saracena (Segni)": -500
 };
 
 function formatYear(y){
@@ -21740,7 +22148,8 @@ const SITE_COUNTRIES = {
   "Funtanaccia Dolmen (Corsica)": "France",
   "I Stantari (Corsica)": "France",
   "Renaghju (Corsica)": "France",
-  "Palaggiu (Corsica)": "France"
+  "Palaggiu (Corsica)": "France",
+  "Porta Saracena (Segni)": "Italy"
 };
 
 const SITE_CULTURES = {
@@ -21965,7 +22374,8 @@ const SITE_CULTURES = {
   "Funtanaccia Dolmen (Corsica)": "Prehistoric Corsican",
   "I Stantari (Corsica)": "Prehistoric Corsican",
   "Renaghju (Corsica)": "Prehistoric Corsican",
-  "Palaggiu (Corsica)": "Prehistoric Corsican"
+  "Palaggiu (Corsica)": "Prehistoric Corsican",
+  "Porta Saracena (Segni)": "Ancient Italy"
 };
 
 // Free-form tags for synonym/concept search (Bronze Age, sacred geometry, etc.)

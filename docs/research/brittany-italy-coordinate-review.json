@@ -1,0 +1,62 @@
+[
+  {
+    "site": "Gavrinis",
+    "before": [
+      47.5706,
+      -2.8969
+    ],
+    "after": [
+      47.5719335,
+      -2.898572
+    ],
+    "source": "https://www.wikidata.org/wiki/Q2933238"
+  },
+  {
+    "site": "Locmariaquer",
+    "before": [
+      47.5714,
+      -2.9458
+    ],
+    "after": [
+      47.571611,
+      -2.949778
+    ],
+    "source": "https://www.wikidata.org/wiki/Q991810"
+  },
+  {
+    "site": "Alatri Acropolis",
+    "before": [
+      41.7283,
+      13.3422
+    ],
+    "after": [
+      41.724717,
+      13.344505
+    ],
+    "source": "https://www.wikidata.org/wiki/Q3604769"
+  },
+  {
+    "site": "Alba Fucens",
+    "before": [
+      42.0764,
+      13.4129
+    ],
+    "after": [
+      42.07905972595881,
+      13.411468116682508
+    ],
+    "source": "https://www.wikidata.org/wiki/Q944515"
+  },
+  {
+    "site": "Pyramid of Bomarzo",
+    "before": [
+      42.475,
+      12.2486
+    ],
+    "after": [
+      42.4813194444,
+      12.26425
+    ],
+    "source": "https://archeologiaepaesaggio.wordpress.com/2021/02/15/la-piramide-di-bomarzo/"
+  }
+]
