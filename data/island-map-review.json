@@ -1,0 +1,541 @@
+{
+  "reviewed": "2026-10-24",
+  "new_sites": [
+    {
+      "site": {
+        "n": "Sacred Well of Santa Cristina",
+        "lat": 40.061142,
+        "lng": 8.730972,
+        "cat": "temple",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A descending stairway of carefully dressed basalt leads to a circular water chamber beneath a corbelled roof. The well belongs to a larger Nuragic sanctuary near Paulilatino, with a nuraghe and later religious buildings nearby.",
+        "sources": [
+          {
+            "label": "Sardegna Turismo",
+            "url": "https://www.sardegnaturismo.it/en/explore/sanctuary-santa-cristina"
+          }
+        ]
+      },
+      "country": "Italy",
+      "era": -1000,
+      "civilization": "Nuragic",
+      "coordinate_source": "https://it.wikipedia.org/?curid=3553580"
+    },
+    {
+      "site": {
+        "n": "Sacred Spring of Su Tempiesu",
+        "lat": 40.41083,
+        "lng": 9.41278,
+        "cat": "temple",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A Nuragic water sanctuary built against a spring-bearing rock face near Orune. Carefully worked basalt and trachyte form a roofed shrine, vestibule and water channels, preserving an unusual view of the architecture above a sacred spring.",
+        "sources": [
+          {
+            "label": "Sardegna Turismo",
+            "url": "https://www.sardegnaturismo.it/it/esplora/su-tempiesu"
+          }
+        ]
+      },
+      "country": "Italy",
+      "era": -1200,
+      "civilization": "Nuragic",
+      "coordinate_source": "https://fr.wikipedia.org/?curid=16533850"
+    },
+    {
+      "site": {
+        "n": "Sanctuary of Santa Vittoria (Serri)",
+        "lat": 39.71313,
+        "lng": 9.10689,
+        "cat": "temple",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A large Nuragic sanctuary on the plateau of Serri, with a sacred well, gathering spaces and the remains of other buildings. Its extensive layout shows the water monument within a wider ceremonial settlement.",
+        "sources": [
+          {
+            "label": "Sardegna Turismo",
+            "url": "https://www.sardegnaturismo.it/it/esplora/santuario-di-santa-vittoria"
+          }
+        ]
+      },
+      "country": "Italy",
+      "era": -1100,
+      "civilization": "Nuragic",
+      "coordinate_source": "https://it.wikipedia.org/?curid=1593331"
+    },
+    {
+      "site": {
+        "n": "Monte d'Accoddi",
+        "lat": 40.79111111,
+        "lng": 8.44888889,
+        "cat": "temple",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A raised prehistoric altar-platform approached by a long ramp near Sassari. Excavations revealed successive building phases, with standing stones, large slabs and settlement remains around the monument.",
+        "sources": [
+          {
+            "label": "Sardegna Turismo",
+            "url": "https://www.sardegnaturismo.it/it/esplora/tempio-altare-di-monte-daccoddi"
+          }
+        ]
+      },
+      "country": "Italy",
+      "era": -3500,
+      "civilization": "Pre-Nuragic Sardinian",
+      "coordinate_source": "https://en.wikipedia.org/?curid=27308046"
+    },
+    {
+      "site": {
+        "n": "Monte Baranta",
+        "lat": 40.632309,
+        "lng": 8.397174,
+        "cat": "megalithic",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A Copper Age complex above Olmedo with a massive stone enclosure, a long wall and a horseshoe-shaped structure overlooking the cliff. Nearby standing stones and settlement remains broaden the picture beyond the enclosure itself.",
+        "sources": [
+          {
+            "label": "Sardegna Turismo",
+            "url": "https://sardegnaturismo.it/it/esplora/fortezza-di-monte-baranta"
+          }
+        ]
+      },
+      "country": "Italy",
+      "era": -2500,
+      "civilization": "Pre-Nuragic Sardinian",
+      "coordinate_source": "https://fr.wikipedia.org/?curid=17198703"
+    },
+    {
+      "site": {
+        "n": "Nuraghe Orolo",
+        "lat": 40.28777778,
+        "lng": 8.81333333,
+        "cat": "megalithic",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A multi-tower nuraghe near Bortigali, with a tall central tower and a surrounding bastion. Corbelled rooms, an internal stair and substantial entrance lintels make it a useful comparison with Losa and Santu Antine.",
+        "sources": [
+          {
+            "label": "Sardegna Turismo",
+            "url": "https://www.sardegnaturismo.it/it/esplora/nuraghe-orolo"
+          }
+        ]
+      },
+      "country": "Italy",
+      "era": -1500,
+      "civilization": "Nuragic",
+      "coordinate_source": "https://fr.wikipedia.org/?curid=16536035"
+    },
+    {
+      "site": {
+        "n": "Pranu Muttedu",
+        "lat": 39.56763611,
+        "lng": 9.26799722,
+        "cat": "megalithic",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A prehistoric funerary landscape near Goni, with standing stones, tombs and circular settings among cork oaks. Menhirs appear in rows, pairs and groups around the burial monuments.",
+        "sources": [
+          {
+            "label": "Sardegna Turismo",
+            "url": "https://www.sardegnaturismo.it/en/explore/pranu-muttedu-park"
+          }
+        ]
+      },
+      "country": "Italy",
+      "era": -3000,
+      "civilization": "Pre-Nuragic Sardinian",
+      "coordinate_source": "https://en.wikipedia.org/?curid=52064898"
+    },
+    {
+      "site": {
+        "n": "Tamuli Archaeological Complex",
+        "lat": 40.260833,
+        "lng": 8.717778,
+        "cat": "megalithic",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A Nuragic complex near Macomer containing a nuraghe, settlement remains and giants’ tombs. Six conical stone betyls stand beside one tomb; three bear paired raised features.",
+        "sources": [
+          {
+            "label": "Sardegna Turismo",
+            "url": "https://www.sardegnaturismo.it/it/esplora/parco-archeologico-di-tamuli"
+          }
+        ]
+      },
+      "country": "Italy",
+      "era": -1500,
+      "civilization": "Nuragic",
+      "coordinate_source": "https://it.wikipedia.org/?curid=4006898"
+    },
+    {
+      "site": {
+        "n": "Sa Coveccada Dolmen",
+        "lat": 40.508239,
+        "lng": 8.866694,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A monumental slab-built dolmen near Mores, with an enormous capstone and an opening in its front slab. Its surviving chamber is one of Sardinia’s most distinctive large-stone burial monuments.",
+        "sources": [
+          {
+            "label": "Sardegna Turismo",
+            "url": "https://www.sardegnaturismo.it/en/explore/mores"
+          }
+        ]
+      },
+      "country": "Italy",
+      "era": -3000,
+      "civilization": "Pre-Nuragic Sardinian",
+      "coordinate_source": "https://it.wikipedia.org/?curid=4240038"
+    },
+    {
+      "site": {
+        "n": "Giants' Grave of Li Lolghi",
+        "lat": 41.06669,
+        "lng": 9.33369,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A long collective burial monument near Arzachena, with a curved forecourt of upright slabs and a tall central stele. A small opening at the stele’s base leads toward the burial corridor.",
+        "sources": [
+          {
+            "label": "Sardegna Turismo",
+            "url": "https://www.sardegnaturismo.it/it/esplora/li-lolghi"
+          }
+        ]
+      },
+      "country": "Italy",
+      "era": -1600,
+      "civilization": "Nuragic",
+      "coordinate_source": "https://fr.wikipedia.org/?curid=17276931"
+    },
+    {
+      "site": {
+        "n": "Giants' Grave of Coddu Vecchiu",
+        "lat": 41.05025,
+        "lng": 9.3558,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A giants’ tomb near Arzachena with a prominent arched stele, curved forecourt and a slab-roofed burial corridor. The monument records successive construction phases rather than a single unchanging design.",
+        "sources": [
+          {
+            "label": "Sardegna Turismo",
+            "url": "https://www.sardegnaturismo.it/en/explore/giants-tomb-coddu-vecchiu"
+          }
+        ]
+      },
+      "country": "Italy",
+      "era": -1600,
+      "civilization": "Nuragic",
+      "coordinate_source": "https://en.wikipedia.org/?curid=40539180"
+    },
+    {
+      "site": {
+        "n": "Cucuruzzu (Corsica)",
+        "lat": 41.72472222,
+        "lng": 9.12666667,
+        "cat": "megalithic",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A Bronze Age casteddu near Levie, where dry-stone walls and chambers incorporate enormous natural granite boulders. A torra retains part of its stone roof, while the wider site includes the remains of a settlement.",
+        "sources": [
+          {
+            "label": "Collectivité de Corse",
+            "url": "https://www.isula.corsica/patrimoine/Le-site-archeologique-de-Cucuruzzu-Capula_a12.html"
+          }
+        ]
+      },
+      "country": "France",
+      "era": -1500,
+      "civilization": "Bronze Age Corsican",
+      "coordinate_source": "https://en.wikipedia.org/?curid=20564245"
+    },
+    {
+      "site": {
+        "n": "Araghju (Corsica)",
+        "lat": 41.64805556,
+        "lng": 9.26222222,
+        "cat": "megalithic",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A Bronze Age hilltop enclosure above the Porto-Vecchio plain. Massive granite walls surround inner rooms and passages, with a substantial lintel over the main entrance.",
+        "sources": [
+          {
+            "label": "Corsica tourism",
+            "url": "https://www.portovecchio-tourisme.corsica/en/historic-sites/u-casteddu-daraghju/"
+          }
+        ]
+      },
+      "country": "France",
+      "era": -1500,
+      "civilization": "Bronze Age Corsican",
+      "coordinate_source": "https://en.wikipedia.org/?curid=20564212"
+    },
+    {
+      "site": {
+        "n": "Tappa (Corsica)",
+        "lat": 41.552272,
+        "lng": 9.231043,
+        "cat": "megalithic",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A Bronze Age fortified settlement near Porto-Vecchio, with a stone tower and enclosure fitted to a rocky outcrop. Large blocks, lintelled openings and circular rooms survive amid the vegetation.",
+        "sources": [
+          {
+            "label": "Corsica tourism",
+            "url": "https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Intimate-Corsica/Play-at-being-an-archaeologist-around-Porto-Vecchio"
+          }
+        ]
+      },
+      "country": "France",
+      "era": -1600,
+      "civilization": "Bronze Age Corsican",
+      "coordinate_source": "https://www.baladesencorse.fr/sites-de-corse-du-sud/2a-porto-vecchio/protohistoire-site-archeologique-de-tappa"
+    },
+    {
+      "site": {
+        "n": "Ceccia (Corsica)",
+        "lat": 41.5611,
+        "lng": 9.2481,
+        "cat": "megalithic",
+        "region": "Europe",
+        "tier": 3,
+        "desc": "A prehistoric tower site on a granite height near the village of Ceccia. Curved masonry and surviving chambers provide another view of the Torrean building tradition in southern Corsica.",
+        "sources": [
+          {
+            "label": "Corsica tourism",
+            "url": "https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Intimate-Corsica/Play-at-being-an-archaeologist-around-Porto-Vecchio"
+          }
+        ]
+      },
+      "country": "France",
+      "era": -1400,
+      "civilization": "Bronze Age Corsican",
+      "coordinate_source": "https://en.wikipedia.org/?curid=20564236"
+    },
+    {
+      "site": {
+        "n": "Funtanaccia Dolmen (Corsica)",
+        "lat": 41.5294,
+        "lng": 8.9181,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A collective burial chamber on the Cauria plateau, built from upright granite slabs supporting a single great capstone. It belongs to the same archaeological landscape as the nearby I Stantari and Renaghju standing stones.",
+        "sources": [
+          {
+            "label": "Collectivité de Corse",
+            "url": "https://www.isula.corsica/patrimoine/Les-sites-archeologiques-du-pianu-de-Cauria_a11.html"
+          }
+        ]
+      },
+      "country": "France",
+      "era": -1500,
+      "civilization": "Prehistoric Corsican",
+      "coordinate_source": "https://fr.wikipedia.org/?curid=10830734"
+    },
+    {
+      "site": {
+        "n": "I Stantari (Corsica)",
+        "lat": 41.53027778,
+        "lng": 8.92194444,
+        "cat": "megalithic",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "Standing-stone alignments on the Cauria plateau, including human-shaped statue-menhirs with carved weapons and other details. The site forms part of a larger prehistoric landscape with Renaghju and Funtanaccia.",
+        "sources": [
+          {
+            "label": "Collectivité de Corse",
+            "url": "https://www.isula.corsica/patrimoine/Les-sites-archeologiques-du-pianu-de-Cauria_a11.html"
+          }
+        ]
+      },
+      "country": "France",
+      "era": -1500,
+      "civilization": "Prehistoric Corsican",
+      "coordinate_source": "https://en.wikipedia.org/?curid=20564341"
+    },
+    {
+      "site": {
+        "n": "Renaghju (Corsica)",
+        "lat": 41.5265,
+        "lng": 8.9211,
+        "cat": "megalithic",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A prehistoric standing-stone site on the Cauria plateau, with numerous granite menhirs in a landscape occupied over several periods. Nearby I Stantari and Funtanaccia show other forms of Corsican megalithic construction.",
+        "sources": [
+          {
+            "label": "Collectivité de Corse",
+            "url": "https://www.isula.corsica/patrimoine/Les-sites-archeologiques-du-pianu-de-Cauria_a11.html"
+          }
+        ]
+      },
+      "country": "France",
+      "era": -4000,
+      "civilization": "Prehistoric Corsican",
+      "coordinate_source": "https://fr.wikipedia.org/?curid=15567818"
+    },
+    {
+      "site": {
+        "n": "Palaggiu (Corsica)",
+        "lat": 41.557123,
+        "lng": 8.886791,
+        "cat": "megalithic",
+        "region": "Europe",
+        "tier": 2,
+        "desc": "A major concentration of standing stones in southern Corsica near Sartène. Groups of granite menhirs extend across the landscape, offering a broad comparison with standing-stone sites in neighbouring Sardinia.",
+        "sources": [
+          {
+            "label": "Corsica tourism",
+            "url": "https://www.visit-corsica.com/content/download/29485/4533581/file/Guide25SartenaisValincoTaravo.pdf"
+          }
+        ]
+      },
+      "country": "France",
+      "era": -2000,
+      "civilization": "Prehistoric Corsican",
+      "coordinate_source": "https://fr.wikipedia.org/?curid=930736"
+    }
+  ],
+  "documentary": {
+    "id": "q0YNkMIt3BY",
+    "title": "Documentary Stone Riddles II  - Archaeological Treasures of Sardinia - full version",
+    "placements": [
+      {
+        "site": "Nuraghe Orolo",
+        "seconds": 823,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Nuraghe Losa",
+        "seconds": 969,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Nuraghe Santu Antine",
+        "seconds": 1176,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Nuraghe Arrubiu",
+        "seconds": 1733,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Sardinia Nuraghi (Su Nuraxi)",
+        "seconds": 1953,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Giants' Grave of Li Lolghi",
+        "seconds": 3083,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Giants' Grave of Coddu Vecchiu",
+        "seconds": 3196,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Sacred Spring of Su Tempiesu",
+        "seconds": 3785,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Sacred Well of Santa Cristina",
+        "seconds": 4018,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Sanctuary of Santa Vittoria (Serri)",
+        "seconds": 4193,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "San Andrea Priù",
+        "seconds": 4984,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Pranu Muttedu",
+        "seconds": 5428,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Tamuli Archaeological Complex",
+        "seconds": 5625,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Sa Coveccada Dolmen",
+        "seconds": 5675,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Monte d'Accoddi",
+        "seconds": 6121,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      },
+      {
+        "site": "Monte Baranta",
+        "seconds": 6253,
+        "verification": "Named introduction in English automatic transcript; sampled original frame checked"
+      }
+    ]
+  },
+  "additional_videos": [
+    {
+      "id": "-vs7rrKPFDs",
+      "creator": "earthexplorer",
+      "site": "Sacred Well of Santa Cristina",
+      "seconds": 0,
+      "format": "On-location exploration"
+    },
+    {
+      "id": "LM5C_Zr9nGE",
+      "creator": "marcvillinger",
+      "site": "Cucuruzzu (Corsica)",
+      "seconds": 0,
+      "format": "Site visit"
+    },
+    {
+      "id": "N6TpJFxjHfc",
+      "creator": "videotourist",
+      "site": "Araghju (Corsica)",
+      "seconds": 5,
+      "format": "Site visit"
+    },
+    {
+      "id": "N6TpJFxjHfc",
+      "creator": "videotourist",
+      "site": "Tappa (Corsica)",
+      "seconds": 145,
+      "format": "Site visit"
+    },
+    {
+      "id": "eXeX73aspL4",
+      "creator": "horsfrontieres",
+      "site": "Filitosa (Corsica)",
+      "seconds": 0,
+      "format": "Site visit"
+    },
+    {
+      "id": "BO2Hv4XvfFQ",
+      "creator": "valincotv",
+      "site": "Funtanaccia Dolmen (Corsica)",
+      "seconds": 190,
+      "format": "On-location time-lapse"
+    },
+    {
+      "id": "BO2Hv4XvfFQ",
+      "creator": "valincotv",
+      "site": "I Stantari (Corsica)",
+      "seconds": 245,
+      "format": "On-location time-lapse"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "checked": "2026-10-24",
+  "films": [
+    {
+      "id": "aSUbwMSH5nI",
+      "creator": "sardegnasacra",
+      "site": "Nuraghe Arrubiu",
+      "format": "Guided site visit",
+      "language": "Italian",
+      "note": "Archaeologist and guide Ilaria Montis explores Arrubiu with Prospettive Vegetali. Sardegna Sacra works on the ground in Sardinia.",
+      "group": "local"
+    },
+    {
+      "id": "44FzDVy6cxE",
+      "creator": "sardegnastorica",
+      "site": "Nuraghe Losa",
+      "format": "Guided site visit",
+      "language": "Italian",
+      "note": "Alessandro Usai guides Simona Scioni through the basalt monument and its surrounding archaeological remains.",
+      "group": "local"
+    },
+    {
+      "id": "3s1AS9qMLrQ",
+      "creator": "sardegnaturistica",
+      "site": "Nuraghe Santu Antine",
+      "format": "Guided visit and conversation",
+      "language": "Italian",
+      "note": "Archaeologist Nadia Canu discusses Santu Antine with Sardegna Turistica, moving from the exterior into its stone chambers.",
+      "group": "local"
+    },
+    {
+      "id": "qGzL-Kuzfpo",
+      "creator": "marcomura",
+      "site": "Nuraghe Santu Antine",
+      "format": "Short site visit",
+      "language": "Italian",
+      "note": "A three-minute visit inside and around the nuraghe from travel filmmaker Marco Mura, originally from Alghero.",
+      "group": "local"
+    },
+    {
+      "id": "KBu3J8v7kfU",
+      "creator": "haswelltravelled",
+      "site": "Sardinia Nuraghi (Su Nuraxi)",
+      "format": "Site visit",
+      "language": "English",
+      "note": "James Haswell takes a camera through the stone passages and archaeological complex at Barumini.",
+      "group": "more"
+    },
+    {
+      "id": "FZRBwGtS_As",
+      "creator": "megalithomania",
+      "site": "Sacred Well of Sa Testa",
+      "format": "Site visit",
+      "language": "English",
+      "note": "Megalithomania explores the sacred well near Olbia, alongside Stone Riddles’ existing coverage on the map.",
+      "group": "more"
+    },
+    {
+      "id": "nGp-GWDv4B0",
+      "creator": "megalithomania",
+      "site": "San Andrea Priù",
+      "format": "Site visit",
+      "language": "English",
+      "note": "A visit to the rock-cut chambers and carved stone landscape near Bonorva.",
+      "group": "more"
+    },
+    {
+      "id": "-vs7rrKPFDs",
+      "creator": "earthexplorer",
+      "site": "Sacred Well of Santa Cristina",
+      "format": "On-location exploration",
+      "language": "English",
+      "note": "Earth Explorer descends the stairs and examines the well’s masonry. The film includes the creator’s interpretations and comparisons.",
+      "group": "more"
+    }
+  ],
+  "chapters": [
+    {
+      "seconds": 823,
+      "label": "13:43 · Nuraghe Orolo"
+    },
+    {
+      "seconds": 969,
+      "label": "16:09 · Nuraghe Losa"
+    },
+    {
+      "seconds": 1176,
+      "label": "19:36 · Nuraghe Santu Antine"
+    },
+    {
+      "seconds": 1733,
+      "label": "28:53 · Nuraghe Arrubiu"
+    },
+    {
+      "seconds": 1953,
+      "label": "32:33 · Sardinia Nuraghi (Su Nuraxi)"
+    },
+    {
+      "seconds": 3083,
+      "label": "51:23 · Giants' Grave of Li Lolghi"
+    },
+    {
+      "seconds": 3196,
+      "label": "53:16 · Giants' Grave of Coddu Vecchiu"
+    },
+    {
+      "seconds": 3785,
+      "label": "1:03:05 · Sacred Spring of Su Tempiesu"
+    },
+    {
+      "seconds": 4018,
+      "label": "1:06:58 · Sacred Well of Santa Cristina"
+    },
+    {
+      "seconds": 4193,
+      "label": "1:09:53 · Sanctuary of Santa Vittoria (Serri)"
+    },
+    {
+      "seconds": 4984,
+      "label": "1:23:04 · San Andrea Priù"
+    },
+    {
+      "seconds": 5428,
+      "label": "1:30:28 · Pranu Muttedu"
+    },
+    {
+      "seconds": 5625,
+      "label": "1:33:45 · Tamuli Archaeological Complex"
+    },
+    {
+      "seconds": 5675,
+      "label": "1:34:35 · Sa Coveccada Dolmen"
+    },
+    {
+      "seconds": 6121,
+      "label": "1:42:01 · Monte d'Accoddi"
+    },
+    {
+      "seconds": 6253,
+      "label": "1:44:13 · Monte Baranta"
+    }
+  ]
+}

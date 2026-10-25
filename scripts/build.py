@@ -294,6 +294,8 @@ def main():
 
     # SEO layer — regenerate static per-site pages + sitemap (added 2026-07-13)
     __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'build-own-channel.py')], check=True)
+    __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'build-sardinia-guide.py')], check=True)
+    __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'build-creators-hub.py')], check=True)
     __import__('subprocess').run(
         ['python3', __import__('os').path.join(__import__('os').path.dirname(__file__), 'build-seo-pages.py')],
         check=True)

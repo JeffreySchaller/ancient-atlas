@@ -7993,5 +7993,308 @@
       "scale"
     ],
     "desc": "A branching geoglyph cut into the northern face of the Paracas Peninsula, visible from boats crossing Pisco Bay. Roughly 180 metres long, its deep grooves stand out against the desert slope. Its makers, date and purpose remain uncertain. Protected within the Paracas National Reserve."
+  },
+  {
+    "n": "Nuraghe Losa",
+    "lat": 40.1169,
+    "lng": 8.79007,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A Bronze Age basalt nuraghe on the Abbasanta plateau. A central tower and three-lobed bastion contain corbelled chambers and passages; a surrounding wall encloses the remains of a settlement. Excavations began in the 1890s and revealed a long history of occupation."
+  },
+  {
+    "n": "Nuraghe Arrubiu",
+    "lat": 39.661944,
+    "lng": 9.2975,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A large Bronze Age nuragic complex near Orroli, with a central tower enclosed by a five-tower bastion and additional outer defences. Courtyards and corbelled chambers survive among basalt walls coloured by reddish lichens. Excavated pottery records connections with the wider Mediterranean."
+  },
+  {
+    "n": "Sacred Well of Santa Cristina",
+    "lat": 40.061142,
+    "lng": 8.730972,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A descending stairway of carefully dressed basalt leads to a circular water chamber beneath a corbelled roof. The well belongs to a larger Nuragic sanctuary near Paulilatino, with a nuraghe and later religious buildings nearby.",
+    "sources": [
+      {
+        "label": "Sardegna Turismo",
+        "url": "https://www.sardegnaturismo.it/en/explore/sanctuary-santa-cristina"
+      }
+    ]
+  },
+  {
+    "n": "Sacred Spring of Su Tempiesu",
+    "lat": 40.41083,
+    "lng": 9.41278,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A Nuragic water sanctuary built against a spring-bearing rock face near Orune. Carefully worked basalt and trachyte form a roofed shrine, vestibule and water channels, preserving an unusual view of the architecture above a sacred spring.",
+    "sources": [
+      {
+        "label": "Sardegna Turismo",
+        "url": "https://www.sardegnaturismo.it/it/esplora/su-tempiesu"
+      }
+    ]
+  },
+  {
+    "n": "Sanctuary of Santa Vittoria (Serri)",
+    "lat": 39.71313,
+    "lng": 9.10689,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A large Nuragic sanctuary on the plateau of Serri, with a sacred well, gathering spaces and the remains of other buildings. Its extensive layout shows the water monument within a wider ceremonial settlement.",
+    "sources": [
+      {
+        "label": "Sardegna Turismo",
+        "url": "https://www.sardegnaturismo.it/it/esplora/santuario-di-santa-vittoria"
+      }
+    ]
+  },
+  {
+    "n": "Monte d'Accoddi",
+    "lat": 40.79111111,
+    "lng": 8.44888889,
+    "cat": "temple",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A raised prehistoric altar-platform approached by a long ramp near Sassari. Excavations revealed successive building phases, with standing stones, large slabs and settlement remains around the monument.",
+    "sources": [
+      {
+        "label": "Sardegna Turismo",
+        "url": "https://www.sardegnaturismo.it/it/esplora/tempio-altare-di-monte-daccoddi"
+      }
+    ]
+  },
+  {
+    "n": "Monte Baranta",
+    "lat": 40.632309,
+    "lng": 8.397174,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A Copper Age complex above Olmedo with a massive stone enclosure, a long wall and a horseshoe-shaped structure overlooking the cliff. Nearby standing stones and settlement remains broaden the picture beyond the enclosure itself.",
+    "sources": [
+      {
+        "label": "Sardegna Turismo",
+        "url": "https://sardegnaturismo.it/it/esplora/fortezza-di-monte-baranta"
+      }
+    ]
+  },
+  {
+    "n": "Nuraghe Orolo",
+    "lat": 40.28777778,
+    "lng": 8.81333333,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A multi-tower nuraghe near Bortigali, with a tall central tower and a surrounding bastion. Corbelled rooms, an internal stair and substantial entrance lintels make it a useful comparison with Losa and Santu Antine.",
+    "sources": [
+      {
+        "label": "Sardegna Turismo",
+        "url": "https://www.sardegnaturismo.it/it/esplora/nuraghe-orolo"
+      }
+    ]
+  },
+  {
+    "n": "Pranu Muttedu",
+    "lat": 39.56763611,
+    "lng": 9.26799722,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A prehistoric funerary landscape near Goni, with standing stones, tombs and circular settings among cork oaks. Menhirs appear in rows, pairs and groups around the burial monuments.",
+    "sources": [
+      {
+        "label": "Sardegna Turismo",
+        "url": "https://www.sardegnaturismo.it/en/explore/pranu-muttedu-park"
+      }
+    ]
+  },
+  {
+    "n": "Tamuli Archaeological Complex",
+    "lat": 40.260833,
+    "lng": 8.717778,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A Nuragic complex near Macomer containing a nuraghe, settlement remains and giants’ tombs. Six conical stone betyls stand beside one tomb; three bear paired raised features.",
+    "sources": [
+      {
+        "label": "Sardegna Turismo",
+        "url": "https://www.sardegnaturismo.it/it/esplora/parco-archeologico-di-tamuli"
+      }
+    ]
+  },
+  {
+    "n": "Sa Coveccada Dolmen",
+    "lat": 40.508239,
+    "lng": 8.866694,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A monumental slab-built dolmen near Mores, with an enormous capstone and an opening in its front slab. Its surviving chamber is one of Sardinia’s most distinctive large-stone burial monuments.",
+    "sources": [
+      {
+        "label": "Sardegna Turismo",
+        "url": "https://www.sardegnaturismo.it/en/explore/mores"
+      }
+    ]
+  },
+  {
+    "n": "Giants' Grave of Li Lolghi",
+    "lat": 41.06669,
+    "lng": 9.33369,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A long collective burial monument near Arzachena, with a curved forecourt of upright slabs and a tall central stele. A small opening at the stele’s base leads toward the burial corridor.",
+    "sources": [
+      {
+        "label": "Sardegna Turismo",
+        "url": "https://www.sardegnaturismo.it/it/esplora/li-lolghi"
+      }
+    ]
+  },
+  {
+    "n": "Giants' Grave of Coddu Vecchiu",
+    "lat": 41.05025,
+    "lng": 9.3558,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A giants’ tomb near Arzachena with a prominent arched stele, curved forecourt and a slab-roofed burial corridor. The monument records successive construction phases rather than a single unchanging design.",
+    "sources": [
+      {
+        "label": "Sardegna Turismo",
+        "url": "https://www.sardegnaturismo.it/en/explore/giants-tomb-coddu-vecchiu"
+      }
+    ]
+  },
+  {
+    "n": "Cucuruzzu (Corsica)",
+    "lat": 41.72472222,
+    "lng": 9.12666667,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A Bronze Age casteddu near Levie, where dry-stone walls and chambers incorporate enormous natural granite boulders. A torra retains part of its stone roof, while the wider site includes the remains of a settlement.",
+    "sources": [
+      {
+        "label": "Collectivité de Corse",
+        "url": "https://www.isula.corsica/patrimoine/Le-site-archeologique-de-Cucuruzzu-Capula_a12.html"
+      }
+    ]
+  },
+  {
+    "n": "Araghju (Corsica)",
+    "lat": 41.64805556,
+    "lng": 9.26222222,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A Bronze Age hilltop enclosure above the Porto-Vecchio plain. Massive granite walls surround inner rooms and passages, with a substantial lintel over the main entrance.",
+    "sources": [
+      {
+        "label": "Corsica tourism",
+        "url": "https://www.portovecchio-tourisme.corsica/en/historic-sites/u-casteddu-daraghju/"
+      }
+    ]
+  },
+  {
+    "n": "Tappa (Corsica)",
+    "lat": 41.552272,
+    "lng": 9.231043,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A Bronze Age fortified settlement near Porto-Vecchio, with a stone tower and enclosure fitted to a rocky outcrop. Large blocks, lintelled openings and circular rooms survive amid the vegetation.",
+    "sources": [
+      {
+        "label": "Corsica tourism",
+        "url": "https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Intimate-Corsica/Play-at-being-an-archaeologist-around-Porto-Vecchio"
+      }
+    ]
+  },
+  {
+    "n": "Ceccia (Corsica)",
+    "lat": 41.5611,
+    "lng": 9.2481,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 3,
+    "desc": "A prehistoric tower site on a granite height near the village of Ceccia. Curved masonry and surviving chambers provide another view of the Torrean building tradition in southern Corsica.",
+    "sources": [
+      {
+        "label": "Corsica tourism",
+        "url": "https://www.visit-corsica.com/en/Explore-Corsica/Our-inspirations/Intimate-Corsica/Play-at-being-an-archaeologist-around-Porto-Vecchio"
+      }
+    ]
+  },
+  {
+    "n": "Funtanaccia Dolmen (Corsica)",
+    "lat": 41.5294,
+    "lng": 8.9181,
+    "cat": "tomb",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A collective burial chamber on the Cauria plateau, built from upright granite slabs supporting a single great capstone. It belongs to the same archaeological landscape as the nearby I Stantari and Renaghju standing stones.",
+    "sources": [
+      {
+        "label": "Collectivité de Corse",
+        "url": "https://www.isula.corsica/patrimoine/Les-sites-archeologiques-du-pianu-de-Cauria_a11.html"
+      }
+    ]
+  },
+  {
+    "n": "I Stantari (Corsica)",
+    "lat": 41.53027778,
+    "lng": 8.92194444,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "Standing-stone alignments on the Cauria plateau, including human-shaped statue-menhirs with carved weapons and other details. The site forms part of a larger prehistoric landscape with Renaghju and Funtanaccia.",
+    "sources": [
+      {
+        "label": "Collectivité de Corse",
+        "url": "https://www.isula.corsica/patrimoine/Les-sites-archeologiques-du-pianu-de-Cauria_a11.html"
+      }
+    ]
+  },
+  {
+    "n": "Renaghju (Corsica)",
+    "lat": 41.5265,
+    "lng": 8.9211,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A prehistoric standing-stone site on the Cauria plateau, with numerous granite menhirs in a landscape occupied over several periods. Nearby I Stantari and Funtanaccia show other forms of Corsican megalithic construction.",
+    "sources": [
+      {
+        "label": "Collectivité de Corse",
+        "url": "https://www.isula.corsica/patrimoine/Les-sites-archeologiques-du-pianu-de-Cauria_a11.html"
+      }
+    ]
+  },
+  {
+    "n": "Palaggiu (Corsica)",
+    "lat": 41.557123,
+    "lng": 8.886791,
+    "cat": "megalithic",
+    "region": "Europe",
+    "tier": 2,
+    "desc": "A major concentration of standing stones in southern Corsica near Sartène. Groups of granite menhirs extend across the landscape, offering a broad comparison with standing-stone sites in neighbouring Sardinia.",
+    "sources": [
+      {
+        "label": "Corsica tourism",
+        "url": "https://www.visit-corsica.com/content/download/29485/4533581/file/Guide25SartenaisValincoTaravo.pdf"
+      }
+    ]
   }
 ]
