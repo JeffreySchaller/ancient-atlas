@@ -1984,6 +1984,7 @@ body.present #broadcast-controls{
 .library-ref-card{display:flex;align-items:center;gap:10px;margin:18px 0 6px;padding:12px 14px;border:1px solid rgba(201,168,76,.28);border-radius:8px;background:rgba(201,168,76,.05);text-decoration:none;color:var(--ivory);transition:all .15s}.library-ref-card:hover{border-color:rgba(201,168,76,.55);background:rgba(201,168,76,.10)}.library-ref-card .lr-icon{flex-shrink:0;width:22px;height:22px;color:var(--champagne);opacity:.9}.library-ref-card .lr-text{display:flex;flex-direction:column;flex:1;min-width:0;line-height:1.3}.library-ref-card .lr-eyebrow{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne);opacity:.85;margin-bottom:2px}.library-ref-card .lr-title{font-family:var(--font-serif);font-size:14.5px;font-weight:600;font-variation-settings:"opsz" 24;color:var(--ivory)}.library-ref-card .lr-arrow{flex-shrink:0;color:var(--champagne);opacity:.7;transition:transform .15s}.library-ref-card:hover .lr-arrow{transform:translateX(3px);opacity:1}
 .cr-vdate{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:10px;letter-spacing:.08em;color:var(--mist,#8A8A9A);margin-top:3px;text-transform:uppercase;font-weight:500}.cr-vcard:hover .cr-vdate{color:var(--cloud,#C5C5D0)}.cr-recent-divider{margin:24px 0 16px;padding:10px 14px;border-top:1px solid rgba(201,168,76,.18);font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne,#C9A84C);opacity:.85;font-weight:600}
 .unit-toggle.unit-attention{animation:unitPulse 1.2s ease-out 2;box-shadow:0 0 0 0 rgba(201,168,76,.55)}@keyframes unitPulse{0%{box-shadow:0 0 0 0 rgba(201,168,76,.55)}60%{box-shadow:0 0 0 12px rgba(201,168,76,0)}100%{box-shadow:0 0 0 0 rgba(201,168,76,0)}}
+.mss-vtitle:has(.journey-credit){display:block;-webkit-line-clamp:unset;overflow:visible}.journey-film .mf-vcard{width:100%}.journey-link{display:block;color:var(--champagne);font-size:12px;padding:8px 4px;min-height:36px;overflow-wrap:anywhere}.journey-credit{display:block;font-size:12px;color:var(--champagne);margin-top:6px}.journey-hint{font-size:12px;color:var(--mist);margin:12px 0}.journey-next{border-top:1px solid var(--border, #39343a);padding:18px 0;margin-top:18px}.journey-next h3{font-size:15px;margin:0 0 10px}.journey-next a{display:block;padding:10px 0;color:var(--champagne);font-size:13px}.journey-next span{color:var(--mist);font-size:11px}.journey-link:focus-visible,.journey-next a:focus-visible{outline:2px solid var(--champagne);outline-offset:2px}
 </style>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script defer src="/assets/js/analytics.js"></script>
@@ -26470,6 +26471,21 @@ function renderLibraryRef(site) {
   </a>`;
 }
 
+function journeyEscape(value) {
+  return String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function journeyChannel(v) {
+  const cr = CREATORS[v.cr];
+  if (!cr || !cr.handle) return '';
+  const handle = cr.handle.startsWith('@') ? cr.handle : '@' + cr.handle;
+  return `<a class="journey-link" href="https://www.youtube.com/${journeyEscape(handle)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">More from ${journeyEscape(cr.name)} on YouTube ↗</a>`;
+}
+function renderExploreNext(site) {
+  if (!site) return '';
+  const nearby = SITES.filter(s => s.n !== site.n).map(s => ({site:s, distance:haversine(site.lat, site.lng, s.lat, s.lng)})).sort((a,b) => a.distance-b.distance).slice(0,3);
+  return `<nav class="journey-next" aria-label="Keep exploring"><h3>Keep exploring</h3>${nearby.map(({site:s,distance}) => `<a href="/?site=${encodeURIComponent(s.n)}">${journeyEscape(s.n)} <span>${Math.round(distance)} km away</span></a>`).join('')}<a href="/creators/">Discover more creators →</a><a href="/creators/ancient-atlas.html">Ancient Atlas films →</a></nav>`;
+}
+
 function showDetail(site) {
   window.atlasAnalytics?.('atlas_site_view', site.n);
   const cat = CATS[site.cat] || CATS.megalithic;
@@ -26540,13 +26556,13 @@ function showDetail(site) {
         <div class="divider"></div>
         <div class="videos-title">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg>
-          Walkthrough Videos
+          Films and site visits
         </div>
         ${videos.map((v, i) => {
           const cr = v.cr && CREATORS[v.cr] ? CREATORS[v.cr] : null;
           const crName = cr ? cr.name : '';
           return `
-          <div class="vcard" id="vc-${v.id}" onclick="playVideo('${v.id}','${v.title.replace(/'/g,"\\'")}','${crName.replace(/'/g,"\\'")}',this,${v.t || 0})">
+          <div class="vcard" id="vc-${v.id}" role="button" tabindex="0" aria-label="Play ${journeyEscape(v.title)}" onkeydown="if(event.target === this &amp;&amp; (event.key === 'Enter' || event.key === ' ')){event.preventDefault();this.click()}" onclick="playVideo('${v.id}','${v.title.replace(/'/g,"\\'")}','${crName.replace(/'/g,"\\'")}',this,${v.t || 0})">
             <div class="vthumb">
               <img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="${v.title}" loading="lazy" />
               <div class="play-overlay">
@@ -26558,12 +26574,12 @@ function showDetail(site) {
               ${cr ? `<div style="font-size:10px;margin-top:3px;display:flex;align-items:center;gap:4px"><span style="width:6px;height:6px;border-radius:50%;background:${cr.color};display:inline-block"></span><span style="color:${cr.color};font-family:var(--font-mono)">${cr.name}</span></div>` : ''}
               <div class="vwatch">▶ ${v.t ? "Start at " + formatTimestamp(v.t) : "Play on site"}</div>
             </div>
-          </div>`;
+          </div>${journeyChannel(v)}<a class="journey-link" href="https://www.youtube.com/watch?v=${v.id}${v.t ? '&amp;t='+v.t+'s' : ''}" target="_blank" rel="noopener">Watch on YouTube ↗</a>`;
         }).join('')}
       ` : ''}
       ${nearby.length > 0 ? `
         <div class="divider"></div>
-        <div class="nearby-title">Nearby Sites (within 50km / 30mi)</div>
+        <div class="nearby-title">Keep exploring · Nearby sites</div>
         ${nearby.map(n => {
           const nc = CATS[n.cat] || CATS.megalithic;
           return `<div class="nearby-item" onclick="selectSiteByName('${n.n.replace(/'/g, "\\'")}')">
@@ -26574,6 +26590,7 @@ function showDetail(site) {
         }).join('')}
       ` : ''}
       <div class="divider"></div>
+      <a class="journey-link" href="/creators/">Discover more creators →</a><a class="journey-link" href="/creators/ancient-atlas.html">Ancient Atlas films →</a>
       <button class="detail-share" type="button" onclick="shareSite('${site.n.replace(/'/g, "\\'")}')" title="Copy a direct link to this site">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="6" cy="12" r="3"/>
@@ -27128,7 +27145,7 @@ function renderMobileSiteSection(siteName, siteData, videos) {
       alsoLine = `<div class="mf-valso">Also covers ${shown}${overflow}</div>`;
     }
 
-    return `<button class="mf-vcard" type="button" onclick="openYouTubeVideo('${v.id}', ${v.t || 0})" title="${safeTitle}">
+    return `<div class="journey-film"><button class="mf-vcard" type="button" onclick="openYouTubeVideo('${v.id}', ${v.t || 0})" title="${safeTitle}">
       <div class="mf-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)">
         <div class="mf-vplay">▶</div>
       </div>
@@ -27138,7 +27155,7 @@ function renderMobileSiteSection(siteName, siteData, videos) {
         ${crName ? `<div class="mf-vcreator" style="--cr-color:${crColor}"><span class="mf-vcreator-dot"></span>${crName}</div>` : ''}
         ${alsoLine}
       </div>
-    </button>`;
+    </button>${journeyChannel(v)}</div>`;
   }).join('');
 
   // Build a stable, URL-safe id so the deep-link handler can scrollIntoView() to this section
@@ -27155,7 +27172,7 @@ function renderMobileSiteSection(siteName, siteData, videos) {
       </div>
     </div>
     ${renderSitePhotos(siteName)}
-    <div class="mf-vgrid">${cards}</div>
+    <p class="journey-hint">Watch on YouTube; your place in the Atlas stays here.</p><div class="mf-vgrid">${cards}</div>${renderExploreNext(siteData)}
   </div>`;
 }
 
@@ -27170,20 +27187,15 @@ function openYouTubeVideo(videoId, ts) {
   // Optional timestamp deep-link — one documentary can power many site cards
   const tsSuffix = (ts && Number(ts) > 0) ? `&t=${Number(ts)}s` : '';
   const url = `https://www.youtube.com/watch?v=${videoId}${tsSuffix}`;
-  // Try window.open first
-  const win = window.open(url, '_blank', 'noopener');
-  if (!win) {
-    // Fallback: programmatic anchor click. Works even when popup blockers
-    // are aggressive about window.open. This pattern is the most reliable
-    // cross-browser navigation primitive in tap handlers.
-    const a = document.createElement('a');
-    a.href = url;
-    a.target = '_blank';
-    a.rel = 'noopener';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  }
+  // One anchor activation: noopener window.open may return null even after
+  // successfully opening, so a second fallback can launch duplicate tabs.
+  const a = document.createElement('a');
+  a.href = url;
+  a.target = '_blank';
+  a.rel = 'noopener';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
 }
 
 // ============================================================
@@ -27211,12 +27223,12 @@ function showMobileSiteSheet(site) {
 
   let videosBlock = '';
   if (videos.length > 0) {
-    videosBlock = `<div class="mss-videos-label">${videos.length} ${videos.length === 1 ? 'walkthrough' : 'walkthroughs'} · tap to watch</div>
+    videosBlock = `<div class="mss-videos-label">${videos.length} ${videos.length === 1 ? 'film' : 'films'} · watch on YouTube</div>
       <div class="mss-videos">
         ${videos.map(v => `<button class="mss-vid" type="button" onclick="openYouTubeVideo('${v.id}', ${v.t || 0})">
           <div class="mss-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)"></div>
-          <div class="mss-vtitle">${v.title}</div>
-        </button>`).join('')}
+          <div class="mss-vtitle">${v.title}<span class="journey-credit">Film by ${journeyEscape(CREATORS[v.cr]?.name || 'YouTube')}${v.t ? ' · From ' + formatTimestamp(Number(v.t)) : ''}</span></div>
+        </button>${journeyChannel(v)}`).join('')}
       </div>`;
   } else {
     videosBlock = `<div class="mss-empty">No walkthroughs linked yet for this site.</div>`;
@@ -27230,6 +27242,7 @@ function showMobileSiteSheet(site) {
     <div class="mss-desc">${site.desc || ''}</div>
     ${renderSitePhotos(site.n)}
     ${videosBlock}
+    ${renderExploreNext(site)}
   `;
   sheet.classList.add('open');
   if (typeof window._atlasOpenModalState === 'function') window._atlasOpenModalState();

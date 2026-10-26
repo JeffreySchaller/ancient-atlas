@@ -119,7 +119,7 @@ h2{font-size:14px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.16em;
 .vid{display:flex;gap:14px;align-items:center;border:1px solid rgba(255,255,255,.08);border-radius:10px;background:var(--panel);padding:10px;margin:0 0 10px;text-decoration:none}
 .vid img{width:132px;height:74px;object-fit:cover;border-radius:6px;flex-shrink:0}
 .vid .t{color:var(--ivory);font-size:15px;line-height:1.35}
-.vid .c{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--mist);margin-top:5px}
+.film{margin-bottom:22px}.film-credit{display:inline-block;padding:5px 0;font-size:13px}.watch-label{display:block;color:var(--champagne);font-size:13px;margin-top:7px}.film-hint{color:var(--mist);font-size:14px;margin-bottom:14px}h3{font-size:16px;margin:18px 0 10px}a:focus-visible{outline:2px solid var(--champagne);outline-offset:4px}.vid>span{min-width:0;overflow-wrap:anywhere}.vid .c{display:block;font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--mist);margin-top:5px}
 ul.nearby{list-style:none}
 ul.nearby li{margin:0 0 8px;font-size:15px}
 ul.nearby .d{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--mist);margin-left:8px}
@@ -128,7 +128,7 @@ footer{max-width:760px;margin:44px auto 0;padding-top:18px;border-top:1px solid 
 .dir ul{list-style:none;columns:2;column-gap:34px}
 .dir li{margin:0 0 7px;font-size:15px;break-inside:avoid}
 .dir .co{color:var(--mist);font-size:12.5px;margin-left:6px}
-@media(max-width:560px){.dir ul{columns:1}h1{font-size:27px}}
+@media(max-width:560px){.vid img{width:96px;height:54px}.dir ul{columns:1}h1{font-size:27px}}
 """.strip()
 
 
@@ -271,24 +271,28 @@ def main():
                 stamp = f"{seconds//3600}:{seconds%3600//60:02d}:{seconds%60:02d}" if seconds >= 3600 else f"{seconds//60}:{seconds%60:02d}"
                 jump = f"&amp;t={seconds}s" if seconds else ""
                 start_label = f" · Starts at {stamp}" if seconds else ""
-                cr = creators.get(v.get("cr"), {}).get("name", "YouTube")
+                creator = creators.get(v.get("cr"), {})
+                cr = creator.get("name", "YouTube")
+                handle = creator.get("handle", "")
+                channel = "https://www.youtube.com/" + (handle if handle.startswith("@") else "@" + handle)
+                credit = f'<a class="film-credit" href="{html.escape(channel, quote=True)}" target="_blank" rel="noopener">More from {html.escape(cr)} on YouTube ↗</a>' if handle else ""
                 items.append(
-                    f'<a class="vid" href="https://www.youtube.com/watch?v={v["id"]}{jump}" rel="noopener">'
+                    f'<article class="film"><a class="vid" href="https://www.youtube.com/watch?v={v["id"]}{jump}" target="_blank" rel="noopener">'
                     f'<img src="https://i.ytimg.com/vi/{v["id"]}/hqdefault.jpg" alt="{html.escape(v["title"])}" loading="lazy" />'
                     f'<span><span class="t">{html.escape(v["title"])}</span>'
-                    f'<span class="c"> · {html.escape(cr)}{start_label}</span></span></a>'
+                    f'<span class="c">Film by {html.escape(cr)}{start_label}</span><span class="watch-label">Watch on YouTube ↗</span></span></a>{credit}</article>'
                 )
-            vid_html = f"<h2>Films and site visits ({len(wires)})</h2>" + "".join(items)
+            vid_html = f'<h2 id="films">Films and site visits ({len(wires)})</h2><p class="film-hint">Watch on the creator’s channel. This page stays open so you can keep exploring.</p>' + "".join(items)
 
         if name in SARDINIA_GUIDE_SITES:
             vid_html += '<p><a href="/creators/sardinia">Explore Sardinia with local guides and other creators →</a></p>'
 
         near = sorted((o for o in sites if o["n"] != name), key=lambda o: haversine(s, o))[:3]
-        near_html = "<h2>Nearby sites</h2><ul class=\"nearby\">" + "".join(
+        near_html = f'<section aria-label="Keep exploring"><h2>Keep exploring</h2><p><a href="/?site={quote(name)}">Explore around {html.escape(name)} on the map →</a></p><h3>Nearby sites</h3><ul class="nearby">' + "".join(
             f'<li><a href="/sites/{slugs[o["n"]]}.html">{html.escape(o["n"])}</a>'
             f'<span class="d">{haversine(s, o):.0f} km</span></li>'
             for o in near
-        ) + "</ul>"
+        ) + '</ul><p><a href="/creators/">Discover more creators →</a> · <a href="/creators/ancient-atlas.html">Ancient Atlas films →</a></p></section>'
 
         ld = {
             "@context": "https://schema.org",
