@@ -762,5 +762,12 @@
     "subs": "Sardinian archaeological sites · ground-level visits and aerial footage",
     "color": "#8EA887",
     "tier": 3
+  },
+  "schwendicolours": {
+    "name": "Schwendi Colours",
+    "handle": "@LensSchwendi",
+    "subs": "Corsica · landscape and heritage walks",
+    "color": "#87AD98",
+    "tier": 2
   }
 }

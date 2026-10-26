@@ -8891,5 +8891,74 @@
     "tier": 3,
     "criteria": [],
     "desc": "Granite uprights define a chamber and passage on elevated ground near Cunha Baixa. Charcoal recovered during archaeological work places construction around 3140–2880 BCE. A large fallen slab lies beside the chamber, while remnants of the surrounding mound preserve part of its original funerary setting."
+  },
+  {
+    "n": "Oriu di Cubia",
+    "lat": 41.5122068,
+    "lng": 8.9977696,
+    "cat": "settlement",
+    "region": "France",
+    "tier": 3,
+    "desc": "A doorway closes a naturally hollowed granite boulder on Monacia’s heritage trail. The surrounding shelters have a long history of human use; the rock cavity and the added wall are different parts of the story.",
+    "sources": [
+      {
+        "label": "Monacia heritage trail · municipal source",
+        "url": "https://monacia-aullene.fr/le-sentier-du-patrimoine/"
+      },
+      {
+        "label": "Oriu de Cubia · local heritage project",
+        "url": "https://monacia.github.io/oriu/"
+      },
+      {
+        "label": "OpenStreetMap · named shelter position",
+        "url": "https://www.openstreetmap.org/node/9111961980"
+      }
+    ]
+  },
+  {
+    "n": "Oriu di Grussettu",
+    "lat": 41.5203732,
+    "lng": 8.9883105,
+    "cat": "settlement",
+    "region": "France",
+    "tier": 3,
+    "desc": "A vast granite overhang shelters a stone-walled enclosure above Monacia-d’Aullène. Follow the curved natural roof and the small doorway beneath. Also called Oriu de Serraggia.",
+    "sources": [
+      {
+        "label": "Oriu Grussettu · recorded walking route",
+        "url": "https://www.visorando.com/randonnee-oriu-grussetu-depuis-serragia/"
+      },
+      {
+        "label": "Les orii du Fretu · local heritage",
+        "url": "https://www.orizonte.corsica/patrimoniu/les-orii-du-fretu/"
+      },
+      {
+        "label": "OpenStreetMap · named shelter position",
+        "url": "https://www.openstreetmap.org/node/2908066569"
+      }
+    ]
+  },
+  {
+    "n": "Oriu di i Canni",
+    "lat": 41.5088773,
+    "lng": 9.1982622,
+    "cat": "settlement",
+    "region": "France",
+    "tier": 3,
+    "desc": "A pointed granite shelter with a fitted stone façade, door and window. The roof is naturally weathered rock. Private property, currently closed to visitors; enjoy the photograph rather than entering the site.",
+    "sources": [
+      {
+        "label": "Oriu di i Canni · photograph and identification",
+        "url": "https://commons.wikimedia.org/wiki/File:L%27Ori%C3%B9_de_Canni.jpg"
+      },
+      {
+        "label": "Current access note · local accommodation provider",
+        "url": "https://www.corse-palombaggia.com/a-voir-a-faire/les-sentiers-du-patrimoine/oriu-di-i-canni/"
+      },
+      {
+        "label": "OpenStreetMap · named shelter position",
+        "url": "https://www.openstreetmap.org/node/4229995792"
+      }
+    ]
   }
 ]

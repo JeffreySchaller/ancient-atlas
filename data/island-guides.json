@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-24",
+  "reviewed": "2026-10-26",
   "corsica": [
     {
       "id": "C008",
@@ -236,6 +236,30 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
       "source": "https://commons.wikimedia.org/wiki/File:Santa_Cristina_Pozzo_Sacro_Tholos_Del_pozzo_5833.JPG",
       "changes": "Resized and converted to WebP; image unchanged."
+    }
+  ],
+  "orii": [
+    {
+      "id": "oriu-canni",
+      "image": "/img/sites/oriu-canni.webp",
+      "width": 1536,
+      "height": 926,
+      "caption": "Oriu di i Canni · Sotta",
+      "author": "Espirat",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:L%27Ori%C3%B9_de_Canni.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/79/L%27Ori%C3%B9_de_Canni.jpg",
+      "changes": "Converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-26",
+      "evidence": {
+        "file_title": "File:L'Oriù de Canni.jpg",
+        "description": "L'oriù (abri de bergers), de Canni"
+      },
+      "site": "Oriu di i Canni",
+      "title": "A house inside a rock",
+      "description": "Natural granite. A human doorway.",
+      "category": "Rock shelters"
     }
   ]
 }

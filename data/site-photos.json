@@ -1641,5 +1641,25 @@
         "description": "A polygonal masonry temple podium on the Minor Acropolis of ancient Norba."
       }
     }
+  ],
+  "Oriu di i Canni": [
+    {
+      "id": "oriu-canni",
+      "image": "/img/sites/oriu-canni.webp",
+      "width": 1536,
+      "height": 926,
+      "caption": "Oriu di i Canni · Sotta",
+      "author": "Espirat",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source": "https://commons.wikimedia.org/wiki/File:L%27Ori%C3%B9_de_Canni.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/79/L%27Ori%C3%B9_de_Canni.jpg",
+      "changes": "Converted to WebP. Full composition retained; no colour edits.",
+      "reviewed": "2026-10-26",
+      "evidence": {
+        "file_title": "File:L'Oriù de Canni.jpg",
+        "description": "L'oriù (abri de bergers), de Canni"
+      }
+    }
   ]
 }
