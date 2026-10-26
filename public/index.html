@@ -1985,12 +1985,13 @@ body.present #broadcast-controls{
 .cr-vdate{font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:10px;letter-spacing:.08em;color:var(--mist,#8A8A9A);margin-top:3px;text-transform:uppercase;font-weight:500}.cr-vcard:hover .cr-vdate{color:var(--cloud,#C5C5D0)}.cr-recent-divider{margin:24px 0 16px;padding:10px 14px;border-top:1px solid rgba(201,168,76,.18);font-family:var(--font-mono),"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne,#C9A84C);opacity:.85;font-weight:600}
 .unit-toggle.unit-attention{animation:unitPulse 1.2s ease-out 2;box-shadow:0 0 0 0 rgba(201,168,76,.55)}@keyframes unitPulse{0%{box-shadow:0 0 0 0 rgba(201,168,76,.55)}60%{box-shadow:0 0 0 12px rgba(201,168,76,0)}100%{box-shadow:0 0 0 0 rgba(201,168,76,0)}}
 .mss-vtitle:has(.journey-credit){display:block;-webkit-line-clamp:unset;overflow:visible}.journey-film .mf-vcard{width:100%}.journey-link{display:block;color:var(--champagne);font-size:12px;padding:8px 4px;min-height:36px;overflow-wrap:anywhere}.journey-credit{display:block;font-size:12px;color:var(--champagne);margin-top:6px}.journey-hint{font-size:12px;color:var(--mist);margin:12px 0}.journey-next{border-top:1px solid var(--border, #39343a);padding:18px 0;margin-top:18px}.journey-next h3{font-size:15px;margin:0 0 10px}.journey-next a{display:block;padding:10px 0;color:var(--champagne);font-size:13px}.journey-next span{color:var(--mist);font-size:11px}.journey-link:focus-visible,.journey-next a:focus-visible{outline:2px solid var(--champagne);outline-offset:2px}
+#watch-feed-return{display:none}body.watch-map #mobile-feed{display:none!important}body.watch-map main{display:flex!important;width:100vw;height:100dvh}body.watch-map #map-wrap{display:block!important;width:100%;height:100%}body.watch-map #map{width:100%;height:100%}@media(max-width:950px){body.watch-map header,body.watch-map #sidebar,body.watch-map #detail{display:none!important}body.watch-map #watch-feed-return{display:block;position:fixed;top:12px;left:60px;z-index:3000;background:#15151c;color:#e8e4d8;padding:10px;border:1px solid #c9a84c;border-radius:6px}}
 </style>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script defer src="/assets/js/analytics.js"></script>
 <link rel="stylesheet" href="/assets/site-photos.css">
 <script src="/assets/js/site-photos.js"></script>
-</head>
+<link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script></head>
 <body>
 <div id="app">
 <header>
@@ -15936,6 +15937,12 @@ const VIDEOS = {
       "id": "Yd6ESBxIa0c",
       "title": "Ancient Tipon In Peru",
       "cr": "brienf"
+    },
+    {
+      "id": "N0IvaD4xnMk",
+      "title": "The Megalithic Evidence They Don't Want You to See at Tipon",
+      "cr": "earthexplorer",
+      "added": "2026-10-26"
     }
   ],
   "Moray": [
@@ -26483,7 +26490,7 @@ function journeyChannel(v) {
 function renderExploreNext(site) {
   if (!site) return '';
   const nearby = SITES.filter(s => s.n !== site.n).map(s => ({site:s, distance:haversine(site.lat, site.lng, s.lat, s.lng)})).sort((a,b) => a.distance-b.distance).slice(0,3);
-  return `<nav class="journey-next" aria-label="Keep exploring"><h3>Keep exploring</h3>${nearby.map(({site:s,distance}) => `<a href="/?site=${encodeURIComponent(s.n)}">${journeyEscape(s.n)} <span>${Math.round(distance)} km away</span></a>`).join('')}<a href="/creators/">Discover more creators →</a><a href="/creators/ancient-atlas.html">Ancient Atlas films →</a></nav>`;
+  return `<nav class="journey-next" aria-label="Keep exploring"><h3>Keep exploring</h3>${nearby.map(({site:s,distance}) => `<a href="/?site=${encodeURIComponent(s.n)}" onclick="event.preventDefault();selectSiteByName(decodeURIComponent(this.search.slice(6)))">${journeyEscape(s.n)} <span>${Math.round(distance)} km away</span></a>`).join('')}<a href="/creators/">Discover more creators →</a><a href="/creators/ancient-atlas.html">Ancient Atlas films →</a></nav>`;
 }
 
 function showDetail(site) {
@@ -26858,53 +26865,28 @@ function noEmbedIds() {
 }
 
 function playVideo(id, title, creatorName, cardEl, ts) {
-  if (!cardEl || !cardEl.classList.contains('playing')) window.atlasAnalytics?.('atlas_video_open', id);
-  const isLocal = location.protocol === 'file:';
-  const tsSuffix = (ts && Number(ts) > 0) ? `&t=${Number(ts)}s` : '';
-
-  // file:// can't embed YouTube iframes, and neither can embed-disabled
-  // videos — open both in a new tab instead
-  if (isLocal || noEmbedIds().has(id)) {
-    window.open(`https://www.youtube.com/watch?v=${id}${tsSuffix}`, '_blank');
-    return;
-  }
-
-  // If clicking the same card that's already playing, close it
-  if (cardEl && cardEl.classList.contains('playing')) {
-    closeVideo(cardEl);
-    return;
-  }
-  // Close any previously playing card
-  if (activeVideoCard) closeVideo(activeVideoCard);
-
-  const startParam = (ts && Number(ts) > 0) ? `&start=${Number(ts)}` : '';
-  const embedUrl = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&modestbranding=1${startParam}`;
-
-  if (presentMode) {
-    // Broadcast mode: show floating player
-    const fp = document.getElementById('floating-player');
-    fp.innerHTML = `
-      <div style="position:relative;width:100%;padding-bottom:56.25%">
-        <iframe src="${embedUrl}" style="position:absolute;inset:0;width:100%;height:100%;border:none" allow="autoplay;encrypted-media" allowfullscreen></iframe>
-      </div>
-      <div style="padding:12px 16px;display:flex;align-items:center;justify-content:space-between">
-        <div>
-          <div style="font-family:var(--font-sans);font-size:13px;font-weight:600;color:#e8e6e1">${title}</div>
-          ${creatorName ? `<div style="font-family:var(--font-mono);font-size:11px;color:var(--champagne);margin-top:2px">${creatorName}</div>` : ''}
-        </div>
-        <button onclick="closeFloatingPlayer()" style="background:rgba(255,255,255,.1);border:none;color:white;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center">✕</button>
-      </div>
-    `;
-    fp.classList.add('visible');
-  } else {
-    // Normal mode: inline embed in the card
-    const thumb = cardEl.querySelector('.vthumb');
-    thumb.innerHTML = `<iframe src="${embedUrl}" allow="autoplay;encrypted-media" allowfullscreen></iframe><button class="vcard-close" onclick="event.stopPropagation();closeVideo(document.getElementById('vc-${id}'))">✕</button>`;
-    cardEl.classList.add('playing');
-    activeVideoCard = cardEl;
-    // Scroll the card into view
-    cardEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }
+  if (location.protocol === 'file:' || noEmbedIds().has(id)) { openYouTubeVideo(id, ts); return; }
+  const wire = Object.values(VIDEOS).flat().find(v => v.id === id);
+  const cr = wire ? CREATORS[wire.cr] : null;
+  window._atlasWatchingSite = (selectedSite && (VIDEOS[selectedSite.n] || []).some(v => v.id === id) ? selectedSite : null) || SITES.find(s => (VIDEOS[s.n] || []).some(v => v.id === id));
+  window.AtlasPlayer.open({id, title, creator:cr?.name || creatorName, handle:cr?.handle, start:ts});
+}
+function watchAtlasVideo(id, ts) {
+  const v = Object.values(VIDEOS).flat().find(v => v.id === id);
+  playVideo(id, v?.title || 'Film', CREATORS[v?.cr]?.name || '', null, ts);
+}
+window.atlasExploreMap = function() {
+  if (isMobileViewport()) document.body.classList.add('watch-map');
+  updateMobileMode();
+  closeMobileSiteSheet();
+  closeDetail();
+  map.invalidateSize();
+  const site = window._atlasWatchingSite;
+  if (site) map.setView([site.lat, site.lng], Math.max(map.getZoom(), 10));
+};
+function returnToAtlasFeed() {
+  document.body.classList.remove('watch-map');
+  updateMobileMode();
 }
 
 function closeVideo(cardEl) {
@@ -26917,6 +26899,7 @@ function closeVideo(cardEl) {
 }
 
 function closeFloatingPlayer() {
+  window.AtlasPlayer?.close();
   const fp = document.getElementById('floating-player');
   fp.classList.remove('visible');
   fp.innerHTML = '';
@@ -26940,7 +26923,7 @@ function isPortrait() {
 }
 function updateMobileMode() {
   const mobile = isMobileViewport();
-  const portrait = isPortrait();
+  const portrait = isPortrait() && !document.body.classList.contains('watch-map');
   document.body.classList.toggle('mobile', mobile);
   document.body.classList.toggle('mobile-portrait', mobile && portrait);
   document.body.classList.toggle('mobile-landscape', mobile && !portrait);
@@ -27145,7 +27128,7 @@ function renderMobileSiteSection(siteName, siteData, videos) {
       alsoLine = `<div class="mf-valso">Also covers ${shown}${overflow}</div>`;
     }
 
-    return `<div class="journey-film"><button class="mf-vcard" type="button" onclick="openYouTubeVideo('${v.id}', ${v.t || 0})" title="${safeTitle}">
+    return `<div class="journey-film"><button class="mf-vcard" type="button" onclick="watchAtlasVideo('${v.id}', ${v.t || 0})" title="${safeTitle}">
       <div class="mf-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)">
         <div class="mf-vplay">▶</div>
       </div>
@@ -27172,7 +27155,7 @@ function renderMobileSiteSection(siteName, siteData, videos) {
       </div>
     </div>
     ${renderSitePhotos(siteName)}
-    <p class="journey-hint">Watch on YouTube; your place in the Atlas stays here.</p><div class="mf-vgrid">${cards}</div>${renderExploreNext(siteData)}
+    <p class="journey-hint">Watch here, then keep exploring. Creator channels are linked below.</p><div class="mf-vgrid">${cards}</div>${renderExploreNext(siteData)}
   </div>`;
 }
 
@@ -27223,9 +27206,9 @@ function showMobileSiteSheet(site) {
 
   let videosBlock = '';
   if (videos.length > 0) {
-    videosBlock = `<div class="mss-videos-label">${videos.length} ${videos.length === 1 ? 'film' : 'films'} · watch on YouTube</div>
+    videosBlock = `<div class="mss-videos-label">${videos.length} ${videos.length === 1 ? 'film' : 'films'} · watch here</div>
       <div class="mss-videos">
-        ${videos.map(v => `<button class="mss-vid" type="button" onclick="openYouTubeVideo('${v.id}', ${v.t || 0})">
+        ${videos.map(v => `<button class="mss-vid" type="button" onclick="watchAtlasVideo('${v.id}', ${v.t || 0})">
           <div class="mss-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)"></div>
           <div class="mss-vtitle">${v.title}<span class="journey-credit">Film by ${journeyEscape(CREATORS[v.cr]?.name || 'YouTube')}${v.t ? ' · From ' + formatTimestamp(Number(v.t)) : ''}</span></div>
         </button>${journeyChannel(v)}`).join('')}
@@ -27485,7 +27468,7 @@ function renderMobileCreatorSection(key, c, s) {
     // iOS Safari can silently block <a target="_blank"> inside fixed-position
     // containers because the popup blocker doesn't always classify the tap
     // as user-initiated. A button + onclick is the bulletproof path.
-    return `<button class="mf-vcard" type="button" onclick="openYouTubeVideo('${v.id}', ${v.t || 0})" title="${safeTitle}">
+    return `<button class="mf-vcard" type="button" onclick="watchAtlasVideo('${v.id}', ${v.t || 0})" title="${safeTitle}">
       <div class="mf-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)">
         <div class="mf-vplay">▶</div>
       </div>
@@ -28129,5 +28112,5 @@ document.addEventListener('DOMContentLoaded', () => {
     <a href="/library/megaliths.html" target="_blank" rel="noopener" id="library-drawer-footer-link">Open in new tab →</a>
   </footer>
 </aside>
-</body>
+<button id="watch-feed-return" onclick="returnToAtlasFeed()">Back to films</button></body>
 </html>
