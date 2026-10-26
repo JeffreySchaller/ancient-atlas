@@ -1,0 +1,94 @@
+{
+  "reviewed": "2026-10-26",
+  "sites": [
+    {
+      "name": "Oriu di Cubia",
+      "lat": 41.5122068,
+      "lng": 8.9977696,
+      "osm_node": 9111961980,
+      "coordinate_basis": "Named cave-entrance feature in OpenStreetMap; not a village or trailhead pin. Grussettu node source is field survey.",
+      "sources": [
+        {
+          "label": "Monacia heritage trail · municipal source",
+          "url": "https://monacia-aullene.fr/le-sentier-du-patrimoine/"
+        },
+        {
+          "label": "Oriu de Cubia · local heritage project",
+          "url": "https://monacia.github.io/oriu/"
+        },
+        {
+          "label": "OpenStreetMap · named shelter position",
+          "url": "https://www.openstreetmap.org/node/9111961980"
+        }
+      ]
+    },
+    {
+      "name": "Oriu di Grussettu",
+      "lat": 41.5203732,
+      "lng": 8.9883105,
+      "osm_node": 2908066569,
+      "coordinate_basis": "Named cave-entrance feature in OpenStreetMap; not a village or trailhead pin. Grussettu node source is field survey.",
+      "sources": [
+        {
+          "label": "Oriu Grussettu · recorded walking route",
+          "url": "https://www.visorando.com/randonnee-oriu-grussetu-depuis-serragia/"
+        },
+        {
+          "label": "Les orii du Fretu · local heritage",
+          "url": "https://www.orizonte.corsica/patrimoniu/les-orii-du-fretu/"
+        },
+        {
+          "label": "OpenStreetMap · named shelter position",
+          "url": "https://www.openstreetmap.org/node/2908066569"
+        }
+      ]
+    },
+    {
+      "name": "Oriu di i Canni",
+      "lat": 41.5088773,
+      "lng": 9.1982622,
+      "osm_node": 4229995792,
+      "coordinate_basis": "Named cave-entrance feature in OpenStreetMap; not a village or trailhead pin. Grussettu node source is field survey.",
+      "sources": [
+        {
+          "label": "Oriu di i Canni · photograph and identification",
+          "url": "https://commons.wikimedia.org/wiki/File:L%27Ori%C3%B9_de_Canni.jpg"
+        },
+        {
+          "label": "Current access note · local accommodation provider",
+          "url": "https://www.corse-palombaggia.com/a-voir-a-faire/les-sentiers-du-patrimoine/oriu-di-i-canni/"
+        },
+        {
+          "label": "OpenStreetMap · named shelter position",
+          "url": "https://www.openstreetmap.org/node/4229995792"
+        }
+      ]
+    }
+  ],
+  "film_placement": {
+    "id": "3_Km-hwFPYA",
+    "site": "Oriu di Grussettu",
+    "seconds": 220,
+    "basis": "Original film shows the large double overhang after the uphill detour, matched against the named Grussettu/Seraggia route photographs. Earlier shelters on the trail are not individually timestamped because the film does not label them."
+  },
+  "dating": "No construction date assigned to these walls. Natural cavities are not labelled as cut stone or prehistoric polygonal masonry.",
+  "photograph": {
+    "id": "oriu-canni",
+    "image": "/img/sites/oriu-canni.webp",
+    "width": 1536,
+    "height": 926,
+    "caption": "Oriu di i Canni · Sotta",
+    "author": "Espirat",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:L%27Ori%C3%B9_de_Canni.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/7/79/L%27Ori%C3%B9_de_Canni.jpg",
+    "changes": "Converted to WebP. Full composition retained; no colour edits.",
+    "reviewed": "2026-10-26",
+    "evidence": {
+      "file_title": "File:L'Oriù de Canni.jpg",
+      "description": "L'oriù (abri de bergers), de Canni"
+    }
+  },
+  "access": "Canni private/closed: OSM access=private and local notice; do not suggest an entry route."
+}
