@@ -1987,6 +1987,7 @@ body.present #broadcast-controls{
 .mss-vtitle:has(.journey-credit){display:block;-webkit-line-clamp:unset;overflow:visible}.journey-film .mf-vcard{width:100%}.journey-link{display:block;color:var(--champagne);font-size:12px;padding:8px 4px;min-height:36px;overflow-wrap:anywhere}.journey-credit{display:block;font-size:12px;color:var(--champagne);margin-top:6px}.journey-hint{font-size:12px;color:var(--mist);margin:12px 0}.journey-next{border-top:1px solid var(--border, #39343a);padding:18px 0;margin-top:18px}.journey-next h3{font-size:15px;margin:0 0 10px}.journey-next a{display:block;padding:10px 0;color:var(--champagne);font-size:13px}.journey-next span{color:var(--mist);font-size:11px}.journey-link:focus-visible,.journey-next a:focus-visible{outline:2px solid var(--champagne);outline-offset:2px}
 #watch-feed-return{display:none}body.watch-map #mobile-feed{display:none!important}body.watch-map main{display:flex!important;width:100vw;height:100dvh}body.watch-map #map-wrap{display:block!important;width:100%;height:100%}body.watch-map #map{width:100%;height:100%}@media(max-width:950px){body.watch-map header,body.watch-map #sidebar,body.watch-map #detail{display:none!important}body.watch-map #watch-feed-return{display:block;position:fixed;top:12px;left:60px;z-index:3000;background:#15151c;color:#e8e4d8;padding:10px;border:1px solid #c9a84c;border-radius:6px}}
 .film-actions{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}.film-action{display:inline-flex;align-items:center;padding:4px 7px;min-height:26px;border:1px solid rgba(201,168,76,.28);border-radius:5px;color:var(--champagne);font:10px/1.2 var(--font-sans);text-decoration:none}.film-action:hover{background:rgba(201,168,76,.12)}.film-action:focus-visible{outline:2px solid var(--champagne);outline-offset:2px}.journey-film>.film-action{margin-top:4px}
+.oga-panel{padding:30px 22px 24px;position:relative;overflow:auto;color:var(--ivory)}.oga-close{position:absolute;right:14px;top:12px;background:none;border:0;color:var(--mist);font-size:25px;cursor:pointer}.oga-location{font:10px var(--font-mono);letter-spacing:.14em;color:var(--champagne);margin:0 0 10px}.oga-panel h2{font:600 29px/1.1 var(--font-serif);margin:0 0 12px}.oga-intro{font-size:14px;line-height:1.55;color:var(--cloud);margin:0 0 22px}.oga-film{margin-bottom:22px}.oga-thumbnail{display:block;position:relative;width:100%;aspect-ratio:16/9;padding:0;overflow:hidden;border:1px solid #4c4435;border-radius:10px;cursor:pointer;background:#15151c}.oga-thumbnail img{width:100%;height:100%;object-fit:cover}.oga-thumbnail span{position:absolute;inset:0;display:grid;place-items:center;font-size:28px;color:white;text-shadow:0 2px 12px #000;background:#0002}.oga-film-title{font-size:15px;line-height:1.35;margin:12px 0 5px}.oga-credit{font-size:12px;color:var(--mist);margin:0 0 15px}.oga-credit a{color:var(--champagne);text-decoration:none}.oga-watch{display:block;width:100%;border:0;border-radius:8px;background:var(--champagne);color:#15151c;padding:13px;font-size:16px;font-weight:700;cursor:pointer}.oga-reassurance{font-size:11px;line-height:1.5;color:var(--mist);margin:8px 0}.oga-youtube{font-size:11px;color:var(--mist)}.oga-character{display:flex;align-items:center;gap:8px;color:var(--champagne);font-size:12px;margin:18px 0}.oga-details{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:14px 0}.oga-panel summary{cursor:pointer;font-size:13px;color:var(--cloud)}.oga-details p{font-size:13px;line-height:1.65;color:var(--mist);margin-top:12px}.oga-coords{font-family:var(--font-mono);font-size:11px!important}.oga-nearby h3{font-size:14px;margin:20px 0 9px}.oga-nearby a{display:flex;justify-content:space-between;gap:12px;padding:9px 0;color:var(--cloud);font-size:12px;text-decoration:none}.oga-nearby small{white-space:nowrap;color:var(--mist);font-size:10px}.oga-nearby details{margin-top:8px}.oga-panel button:focus-visible,.oga-panel a:focus-visible,.oga-panel summary:focus-visible{outline:2px solid var(--champagne);outline-offset:3px}
 </style>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script defer src="/assets/js/analytics.js"></script>
@@ -26494,6 +26495,29 @@ function renderExploreNext(site) {
   return `<nav class="journey-next" aria-label="Keep exploring"><h3>Keep exploring</h3>${nearby.map(({site:s,distance}) => `<a href="/?site=${encodeURIComponent(s.n)}" onclick="event.preventDefault();selectSiteByName(decodeURIComponent(this.search.slice(6)))">${journeyEscape(s.n)} <span>${Math.round(distance)} km away</span></a>`).join('')}<a href="/creators/">Discover more creators →</a><a href="/creators/ancient-atlas.html">Ancient Atlas films →</a></nav>`;
 }
 
+function renderOgaPreview(site) {
+  const v = VIDEOS[site.n][0], cr = CREATORS[v.cr];
+  const nearby = SITES.filter(s => s.n !== site.n).map(s => ({...s, dist:haversine(site.lat,site.lng,s.lat,s.lng)})).sort((a,b)=>a.dist-b.dist).slice(0,8);
+  const row = s => `<a href="/?site=${encodeURIComponent(s.n)}" onclick="event.preventDefault();selectSiteByName(decodeURIComponent(this.search.slice(6)))"><span>${journeyEscape(s.n)}</span><small>${s.dist.toFixed(1)} km →</small></a>`;
+  return `<div class="oga-panel">
+    <button class="oga-close" onclick="closeDetail()" aria-label="Close site panel">×</button>
+    <p class="oga-location">METHANA · GREECE</p>
+    <h2>Acropolis Oga</h2>
+    <p class="oga-intro">Explore ancient volcanic-stone walls above the Methana peninsula.</p>
+    <section aria-label="Watch this site" class="oga-film">
+      <button class="oga-thumbnail" onclick="watchAtlasVideo('${v.id}',0)" aria-label="Watch ${journeyEscape(v.title)} here"><img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="Preview of Stone Riddles’ film about Oga"><span aria-hidden="true">▶</span></button>
+      <p class="oga-film-title">${journeyEscape(v.title)}</p>
+      <p class="oga-credit">A film by <a href="https://www.youtube.com/${cr.handle}" target="_blank" rel="noopener">${journeyEscape(cr.name)} ↗</a></p>
+      <button class="oga-watch" onclick="watchAtlasVideo('${v.id}',0)">▶ Watch here</button>
+      <p class="oga-reassurance">Plays in the Atlas. Keep exploring while you watch.</p>
+      <a class="oga-youtube" href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener">Open on YouTube ↗</a>
+    </section>
+    <div class="oga-character"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 20V7l5-3 5 2 1 14M14 20V8l5-2 2 3v11M2 20h20"/></svg><span>Megalithic stonework</span></div>
+    <details class="oga-details"><summary>About this site</summary><p>${journeyEscape(site.desc)}</p><p class="oga-coords">${site.lat}° N, ${site.lng}° E</p><p>Its date and interpretation remain uncertain.</p></details>
+    <nav class="oga-nearby" aria-label="Nearby places"><h3>Explore nearby</h3>${nearby.slice(0,3).map(row).join('')}<details><summary>More nearby</summary>${nearby.slice(3).map(row).join('')}</details></nav>
+  </div>`;
+}
+
 function showDetail(site) {
   window.atlasAnalytics?.('atlas_site_view', site.n);
   const cat = CATS[site.cat] || CATS.megalithic;
@@ -26501,6 +26525,7 @@ function showDetail(site) {
   detail.className = 'open';
   detail.style.display = 'flex';
   setRailDock(true);
+  if (site.n === 'Acropolis Oga (Methana)') { detail.innerHTML = renderOgaPreview(site); return; }
 
   // Find nearby sites (within ~50km)
   const nearby = FILTERED_SITES
