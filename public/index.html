@@ -26876,7 +26876,7 @@ function watchAtlasVideo(id, ts) {
   playVideo(id, v?.title || 'Film', CREATORS[v?.cr]?.name || '', null, ts);
 }
 window.atlasExploreMap = function() {
-  document.body.classList.add('watch-map');
+  if (isMobileViewport()) document.body.classList.add('watch-map');
   updateMobileMode();
   closeMobileSiteSheet();
   closeDetail();
