@@ -8061,5 +8061,104 @@
       "t": 2590,
       "added": "2026-10-24"
     }
+  ],
+  "Santa María de la Piscina": [
+    {
+      "id": "NWsmDGTBv0M",
+      "title": "Necropolis of San Vicente de la Sonsierra & Santa María de la Piscina Hermitage",
+      "cr": "agelessrock",
+      "added": "2026-10-26",
+      "published": "2026-10-16"
+    }
+  ],
+  "San Vítor de Barxacova Necropolis": [
+    {
+      "id": "of3xtCIgsbM",
+      "title": "The Necropolis of San Vitor da Barxacova",
+      "cr": "agelessrock",
+      "added": "2026-10-26",
+      "published": "2026-10-06"
+    }
+  ],
+  "San Andrés Necropolis (Sonsierra)": [
+    {
+      "id": "4nTNnRPH9Xc",
+      "title": "Necropolis of San Andres @ San Vicente de la Sonsierra",
+      "cr": "agelessrock",
+      "added": "2026-10-26",
+      "published": "2026-09-26"
+    }
+  ],
+  "Regumiel de la Sierra Necropolis": [
+    {
+      "id": "xmo5kuoH5EY",
+      "title": "Necropolis of Regumiel de la Sierra",
+      "cr": "agelessrock",
+      "added": "2026-10-26",
+      "published": "2026-09-06"
+    }
+  ],
+  "Cuyacabras Necropolis": [
+    {
+      "id": "cZw2O1dM-mk",
+      "title": "Necropolis of Cuyacabras",
+      "cr": "agelessrock",
+      "added": "2026-10-26",
+      "published": "2026-08-27"
+    }
+  ],
+  "Castro de Ulaca": [
+    {
+      "id": "zrAogTbp-mU",
+      "title": "Castro de Ulaca of Solosancho",
+      "cr": "agelessrock",
+      "added": "2026-10-26",
+      "published": "2026-08-14"
+    }
+  ],
+  "Maryam Korkor": [
+    {
+      "id": "NZFdNMSSR0Y",
+      "title": "Maryam Korkor Rock Cut Church",
+      "cr": "agelessrock",
+      "added": "2026-10-26",
+      "published": "2024-11-19"
+    }
+  ],
+  "Abuna Yemata Guh": [
+    {
+      "id": "IWhBeOlEEZw",
+      "title": "Abuna Yemata Rock Cut Church",
+      "cr": "agelessrock",
+      "added": "2026-10-26",
+      "published": "2024-11-14"
+    }
+  ],
+  "Wukro Cherkos": [
+    {
+      "id": "J8Fww-MU5qw",
+      "title": "Wukro Cherkos Rock Cut Church",
+      "cr": "agelessrock",
+      "added": "2026-10-26",
+      "published": "2024-11-09"
+    }
+  ],
+  "Mikael Imba": [
+    {
+      "id": "grgL5S2ADkc",
+      "title": "Mikael Imba Rock Cut Cave Church",
+      "cr": "agelessrock",
+      "added": "2026-10-26",
+      "published": "2024-10-30"
+    }
+  ],
+  "Abreha we Atsbeha": [
+    {
+      "id": "5ktd7APveuM",
+      "title": "Abreha & Atsbeha Rock Cut Cave Church",
+      "cr": "agelessrock",
+      "added": "2026-10-26",
+      "published": "2024-10-25"
+    }
   ]
 }

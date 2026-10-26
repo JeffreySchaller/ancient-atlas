@@ -38,14 +38,8 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).parent.parent
 DATA = REPO_ROOT / "data"
 OUT = REPO_ROOT / "public" / "creators" / "ageless-rock.html"
-# The catalogue used to live in ~/Downloads, which is not a place a build
-# input can live: it vanished, and the builder was unrunnable until the
-# episode list was recovered out of the page it had already produced. The
-# repo copy is now the source of truth; a local Downloads copy still wins if
-# one exists, so an in-progress update is not silently ignored.
-_LOCAL = Path.home() / "Downloads" / "ageless-rock-videos.md"
-CATALOGUE = _LOCAL if _LOCAL.exists() else (
-    Path(__file__).resolve().parent.parent / "data" / "ageless-rock-catalogue.md")
+# The versioned catalogue is authoritative; stale Downloads copies must not override it.
+CATALOGUE = REPO_ROOT / "data" / "ageless-rock-catalogue.md"
 
 CREATOR_KEY = "agelessrock"
 HANDLE = "@AgelessRock888"

@@ -1,0 +1,2673 @@
+{
+  "checked": "2026-10-26",
+  "channel": "https://www.youtube.com/@AgelessRock888",
+  "base_commit": "bfecb681ee3b2b7211ad34ca0369fe69ca4937ce",
+  "scope": "Public regular uploads; no public Shorts or Streams tab returned by YouTube.",
+  "counts": {
+    "regular_uploads": 304,
+    "mapped_films": 283,
+    "new_place_candidate_episodes": 9,
+    "missing_films_at_existing_sites": 5,
+    "exact_placement_review": 1,
+    "already_featured_reply": 1,
+    "general_comparisons": 5
+  },
+  "limitations": "Metadata/ID comparison, not full-film or coordinate verification. Candidate episodes may cover multiple monuments. Ageless Rock describes these as compiled research/opinion films; do not label as personally filmed walks without evidence.",
+  "uploads": [
+    {
+      "id": "NWsmDGTBv0M",
+      "title": "Necropolis of San Vicente de la Sonsierra & Santa María de la Piscina Hermitage",
+      "url": "https://www.youtube.com/watch?v=NWsmDGTBv0M",
+      "upload_date": "20261016",
+      "duration": 680,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "At San Vicente de la Sonsierra Necropolis, tombs and dolmens around a Hermitage offers little clue.\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #spain #necropolis",
+      "chapters": [
+        {
+          "start_time": 0,
+          "title": "Exploring the necropolis",
+          "end_time": 83
+        },
+        {
+          "start_time": 83,
+          "title": "Analyzing tomb designs",
+          "end_time": 151
+        },
+        {
+          "start_time": 151,
+          "title": "Skepticism of archaeological claims",
+          "end_time": 240
+        },
+        {
+          "start_time": 240,
+          "title": "Historical context and anomalies",
+          "end_time": 343
+        },
+        {
+          "start_time": 343,
+          "title": "Church architecture and origins",
+          "end_time": 486
+        },
+        {
+          "start_time": 486,
+          "title": "Surrounding sites and structures",
+          "end_time": 602
+        },
+        {
+          "start_time": 602,
+          "title": "Conclusion and final thoughts",
+          "end_time": 680
+        }
+      ],
+      "webpage_url": "https://www.youtube.com/watch?v=NWsmDGTBv0M",
+      "status": "candidate_new_places"
+    },
+    {
+      "id": "of3xtCIgsbM",
+      "title": "The Necropolis of San Vitor da Barxacova",
+      "url": "https://www.youtube.com/watch?v=of3xtCIgsbM",
+      "upload_date": "20261006",
+      "duration": 911,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "There are 56 tombs and a chapel. But yet there is no story of how they got here.\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #spain #necropolis",
+      "chapters": [
+        {
+          "start_time": 0,
+          "title": "Introduction to the site",
+          "end_time": 55
+        },
+        {
+          "start_time": 55,
+          "title": "Archaeology and mystery",
+          "end_time": 385
+        },
+        {
+          "start_time": 385,
+          "title": "The privileged tomb",
+          "end_time": 531
+        },
+        {
+          "start_time": 531,
+          "title": "Analyzing technical design",
+          "end_time": 730
+        },
+        {
+          "start_time": 730,
+          "title": "Evidence and conclusions",
+          "end_time": 865
+        },
+        {
+          "start_time": 865,
+          "title": "Final thoughts",
+          "end_time": 911
+        }
+      ],
+      "webpage_url": "https://www.youtube.com/watch?v=of3xtCIgsbM",
+      "status": "candidate_new_places"
+    },
+    {
+      "id": "4nTNnRPH9Xc",
+      "title": "Necropolis of San Andres @ San Vicente de la Sonsierra",
+      "url": "https://www.youtube.com/watch?v=4nTNnRPH9Xc",
+      "upload_date": "20260926",
+      "duration": 541,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "Are these elongated holes actually tombs?\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #spain #necropolis #sanandres",
+      "chapters": [
+        {
+          "start_time": 0,
+          "title": "Introduction to the site",
+          "end_time": 36
+        },
+        {
+          "start_time": 36,
+          "title": "Doubts about burial purpose",
+          "end_time": 136
+        },
+        {
+          "start_time": 136,
+          "title": "Lack of funerary evidence",
+          "end_time": 222
+        },
+        {
+          "start_time": 222,
+          "title": "Structural and location anomalies",
+          "end_time": 355
+        },
+        {
+          "start_time": 355,
+          "title": "Technology and orientation",
+          "end_time": 403
+        },
+        {
+          "start_time": 403,
+          "title": "Alternative site interpretations",
+          "end_time": 541
+        }
+      ],
+      "webpage_url": "https://www.youtube.com/watch?v=4nTNnRPH9Xc",
+      "status": "candidate_new_places"
+    },
+    {
+      "id": "4L7w1SlQAoU",
+      "title": "Necropolis of Remelluri in Bastida",
+      "url": "https://www.youtube.com/watch?v=4L7w1SlQAoU",
+      "status": "mapped",
+      "site": "Necropolis of Remelluri"
+    },
+    {
+      "id": "xmo5kuoH5EY",
+      "title": "Necropolis of Regumiel de la Sierra",
+      "url": "https://www.youtube.com/watch?v=xmo5kuoH5EY",
+      "upload_date": "20260906",
+      "duration": 672,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "This site has dinosaur footprints that will challenge the dating of anthropomorphic tombs.\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #spain #necropolis",
+      "chapters": [
+        {
+          "start_time": 0,
+          "title": "Introduction to Regumiel",
+          "end_time": 61
+        },
+        {
+          "start_time": 61,
+          "title": "The town and its history",
+          "end_time": 146
+        },
+        {
+          "start_time": 146,
+          "title": "Archaeological excavations",
+          "end_time": 246
+        },
+        {
+          "start_time": 246,
+          "title": "Tomb analysis and findings",
+          "end_time": 344
+        },
+        {
+          "start_time": 344,
+          "title": "Unanswered questions",
+          "end_time": 448
+        },
+        {
+          "start_time": 448,
+          "title": "Bedrock and architecture",
+          "end_time": 526
+        },
+        {
+          "start_time": 526,
+          "title": "Dinosaur footprints and conclusion",
+          "end_time": 672
+        }
+      ],
+      "webpage_url": "https://www.youtube.com/watch?v=xmo5kuoH5EY",
+      "status": "candidate_new_places"
+    },
+    {
+      "id": "cZw2O1dM-mk",
+      "title": "Necropolis of Cuyacabras",
+      "url": "https://www.youtube.com/watch?v=cZw2O1dM-mk",
+      "upload_date": "20260827",
+      "duration": 770,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "A church with no remnants and a necropolis with no skeletal remains. \n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #spain #cuyacabras",
+      "chapters": [
+        {
+          "start_time": 0,
+          "title": "Introduction to Cuyacabras",
+          "end_time": 84
+        },
+        {
+          "start_time": 84,
+          "title": "Analyzing site structures",
+          "end_time": 183
+        },
+        {
+          "start_time": 183,
+          "title": "Typologies of the tombs",
+          "end_time": 308
+        },
+        {
+          "start_time": 308,
+          "title": "Bedrock markings and tools",
+          "end_time": 402
+        },
+        {
+          "start_time": 402,
+          "title": "Church remains and features",
+          "end_time": 551
+        },
+        {
+          "start_time": 551,
+          "title": "Evidence of unknown builders",
+          "end_time": 650
+        },
+        {
+          "start_time": 650,
+          "title": "Global context and conclusion",
+          "end_time": 770
+        }
+      ],
+      "webpage_url": "https://www.youtube.com/watch?v=cZw2O1dM-mk",
+      "status": "candidate_new_places"
+    },
+    {
+      "id": "CB9d9SRtmOs",
+      "title": "Comparing 4 religions",
+      "url": "https://www.youtube.com/watch?v=CB9d9SRtmOs",
+      "upload_date": "20260817",
+      "duration": 244,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "https://youtu.be/2OSddPnrShw?si=oCvDEZZ2Z-Pq5qTl\n\nInvitation to chat with Ancient Atlas\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #religion #atlas",
+      "chapters": null,
+      "webpage_url": "https://www.youtube.com/watch?v=CB9d9SRtmOs",
+      "status": "already_featured_reply"
+    },
+    {
+      "id": "zrAogTbp-mU",
+      "title": "Castro de Ulaca of Solosancho",
+      "url": "https://www.youtube.com/watch?v=zrAogTbp-mU",
+      "upload_date": "20260814",
+      "duration": 974,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "Everything made out of bedrock is not be explained.\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #spain #solosancho",
+      "chapters": [
+        {
+          "start_time": 0,
+          "title": "Overview of Castro de Ulaca",
+          "end_time": 152
+        },
+        {
+          "start_time": 152,
+          "title": "Heritage status and protection",
+          "end_time": 183
+        },
+        {
+          "start_time": 183,
+          "title": "The sacrificial altar",
+          "end_time": 359
+        },
+        {
+          "start_time": 359,
+          "title": "Megalithic stone structures",
+          "end_time": 576
+        },
+        {
+          "start_time": 576,
+          "title": "Sauna and forge structures",
+          "end_time": 729
+        },
+        {
+          "start_time": 729,
+          "title": "Towers and cultural remnants",
+          "end_time": 817
+        },
+        {
+          "start_time": 817,
+          "title": "Global megalithic parallels",
+          "end_time": 974
+        }
+      ],
+      "webpage_url": "https://www.youtube.com/watch?v=zrAogTbp-mU",
+      "status": "candidate_new_places"
+    },
+    {
+      "id": "DO1OTMfOCtg",
+      "title": "Megalith of Azores",
+      "url": "https://www.youtube.com/watch?v=DO1OTMfOCtg",
+      "status": "mapped",
+      "site": "Azores Pyramids (Pico Alto)"
+    },
+    {
+      "id": "OH1QxxJDSyI",
+      "title": "Was Azores once part of Atlantis?",
+      "url": "https://www.youtube.com/watch?v=OH1QxxJDSyI",
+      "status": "mapped",
+      "site": "Azores Pyramids (Pico Alto)"
+    },
+    {
+      "id": "2IHcg6B4hS0",
+      "title": "Necropolis of São João [St. John] de Areias Parish",
+      "url": "https://www.youtube.com/watch?v=2IHcg6B4hS0",
+      "upload_date": "20260715",
+      "duration": 918,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "Elongated tombs too shallow for burials. \n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #portugal #tombs",
+      "chapters": null,
+      "webpage_url": "https://www.youtube.com/watch?v=2IHcg6B4hS0",
+      "status": "candidate_new_places"
+    },
+    {
+      "id": "BV80xafPst0",
+      "title": "Tombs of Nelas",
+      "url": "https://www.youtube.com/watch?v=BV80xafPst0",
+      "upload_date": "20260705",
+      "duration": 918,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "Are dolmens and anthropomorphic tombs the Portuguese way of burying the dead?\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong",
+      "chapters": null,
+      "webpage_url": "https://www.youtube.com/watch?v=BV80xafPst0",
+      "status": "candidate_new_places"
+    },
+    {
+      "id": "O1bIu4FFbEQ",
+      "title": "Panoias Sanctuary of Vale de Nogueiras Village",
+      "url": "https://www.youtube.com/watch?v=O1bIu4FFbEQ",
+      "status": "mapped",
+      "site": "Panoias Sanctuary"
+    },
+    {
+      "id": "sJ7fhhe9F6I",
+      "title": "Longroiva Monuments",
+      "url": "https://www.youtube.com/watch?v=sJ7fhhe9F6I",
+      "upload_date": "20260615",
+      "duration": 622,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "Two anthropomorphic tombs, a tower and a circular stone might prove an advance civilization coexisted on planet earth.\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #portugal #tombs",
+      "chapters": null,
+      "webpage_url": "https://www.youtube.com/watch?v=sJ7fhhe9F6I",
+      "status": "candidate_new_places"
+    },
+    {
+      "id": "GQOLob9ZK7E",
+      "title": "Tombs and Dolmens of Fornos de Algodres",
+      "url": "https://www.youtube.com/watch?v=GQOLob9ZK7E",
+      "status": "mapped",
+      "site": "Tombs and Dolmens of Fornos de Algodres"
+    },
+    {
+      "id": "96gC9A1jmQg",
+      "title": "Forcadas Tombs & Cortiçõ Dolmen",
+      "url": "https://www.youtube.com/watch?v=96gC9A1jmQg",
+      "status": "mapped",
+      "site": "Forcadas Tombs & Cortiço Dolmen"
+    },
+    {
+      "id": "QfrIiH0qF18",
+      "title": "Necropolis of Sao Gens",
+      "url": "https://www.youtube.com/watch?v=QfrIiH0qF18",
+      "status": "mapped",
+      "site": "Necropolis of Sao Gens"
+    },
+    {
+      "id": "qnH9XNBhrBQ",
+      "title": "Necropolis of Saint Michael (Sao Miguel) @ Monsanto",
+      "url": "https://www.youtube.com/watch?v=qnH9XNBhrBQ",
+      "status": "mapped",
+      "site": "Necropolis of Saint Michael (Sao Miguel)"
+    },
+    {
+      "id": "A4cG95SYO_M",
+      "title": "Necropolis of Moreira de Rei",
+      "url": "https://www.youtube.com/watch?v=A4cG95SYO_M",
+      "status": "mapped",
+      "site": "Necropolis of Moreira de Rei"
+    },
+    {
+      "id": "V0wTRWFqh-8",
+      "title": "Pyramids of Mesoamerica",
+      "url": "https://www.youtube.com/watch?v=V0wTRWFqh-8",
+      "status": "mapped",
+      "site": "Cholula"
+    },
+    {
+      "id": "Z32PamswaU0",
+      "title": "A Millennium of Calakmul",
+      "url": "https://www.youtube.com/watch?v=Z32PamswaU0",
+      "status": "mapped",
+      "site": "Calakmul"
+    },
+    {
+      "id": "JSUSZEDVHj4",
+      "title": "Cholula Pyramid",
+      "url": "https://www.youtube.com/watch?v=JSUSZEDVHj4",
+      "status": "mapped",
+      "site": "Cholula"
+    },
+    {
+      "id": "ZjSTfRmEqU4",
+      "title": "Ruins of Palenque",
+      "url": "https://www.youtube.com/watch?v=ZjSTfRmEqU4",
+      "status": "mapped",
+      "site": "Palenque"
+    },
+    {
+      "id": "BlYHXSV9uxo",
+      "title": "Dzibanche : Temple of the Lintels and others",
+      "url": "https://www.youtube.com/watch?v=BlYHXSV9uxo",
+      "status": "mapped",
+      "site": "Dzibanche"
+    },
+    {
+      "id": "WIad3TXcX3A",
+      "title": "Dzibanche : Temple of the Cormorant",
+      "url": "https://www.youtube.com/watch?v=WIad3TXcX3A",
+      "status": "mapped",
+      "site": "Dzibanche"
+    },
+    {
+      "id": "TRJ4nBL_LdE",
+      "title": "Dzibanche : Temple of the Owl",
+      "url": "https://www.youtube.com/watch?v=TRJ4nBL_LdE",
+      "status": "mapped",
+      "site": "Dzibanche"
+    },
+    {
+      "id": "rTAOCwaDqgA",
+      "title": "Chichen Itza : Lesser Known Structures of an Ancient City",
+      "url": "https://www.youtube.com/watch?v=rTAOCwaDqgA",
+      "status": "mapped",
+      "site": "Chichen Itza"
+    },
+    {
+      "id": "JD8uBRvSDO8",
+      "title": "Chichen Itza : Sacred Cenote",
+      "url": "https://www.youtube.com/watch?v=JD8uBRvSDO8",
+      "status": "mapped",
+      "site": "Chichen Itza"
+    },
+    {
+      "id": "Mm-Vath0XHk",
+      "title": "Chichen Itza : Ossuary Pyramid",
+      "url": "https://www.youtube.com/watch?v=Mm-Vath0XHk",
+      "status": "mapped",
+      "site": "Chichen Itza"
+    },
+    {
+      "id": "K3G54tBHhtQ",
+      "title": "Chichen Itza : Observatory Tower",
+      "url": "https://www.youtube.com/watch?v=K3G54tBHhtQ",
+      "status": "mapped",
+      "site": "Chichen Itza"
+    },
+    {
+      "id": "4vj6HPtGqi4",
+      "title": "Chichen Itza : Amazing Acoustics @ Temple of The Warriors",
+      "url": "https://www.youtube.com/watch?v=4vj6HPtGqi4",
+      "status": "mapped",
+      "site": "Chichen Itza"
+    },
+    {
+      "id": "DbPSuRt32V4",
+      "title": "Chichen Itza : The Great Ball Court",
+      "url": "https://www.youtube.com/watch?v=DbPSuRt32V4",
+      "status": "mapped",
+      "site": "Chichen Itza"
+    },
+    {
+      "id": "cTzxU3nYSkA",
+      "title": "Chichen Itza :  Astounding Acoustic at Pyramid of Kukulkan",
+      "url": "https://www.youtube.com/watch?v=cTzxU3nYSkA",
+      "status": "mapped",
+      "site": "Chichen Itza"
+    },
+    {
+      "id": "h2YFnGc8RdA",
+      "title": "Chichen Itza clap echo effect",
+      "url": "https://www.youtube.com/watch?v=h2YFnGc8RdA",
+      "status": "mapped",
+      "site": "Chichen Itza"
+    },
+    {
+      "id": "uFv2PoBdvj4",
+      "title": "Chichen Itza : Astronomical Pyramid of Kukulkan",
+      "url": "https://www.youtube.com/watch?v=uFv2PoBdvj4",
+      "status": "mapped",
+      "site": "Chichen Itza"
+    },
+    {
+      "id": "nNuOW1JUrT0",
+      "title": "Pyramids at Coba",
+      "url": "https://www.youtube.com/watch?v=nNuOW1JUrT0",
+      "status": "mapped",
+      "site": "Coba"
+    },
+    {
+      "id": "pGAQOQzRjTA",
+      "title": "Chachchoben Ruins : Pyramids and Monuments",
+      "url": "https://www.youtube.com/watch?v=pGAQOQzRjTA",
+      "status": "mapped",
+      "site": "Chacchoben"
+    },
+    {
+      "id": "EEShawZwoFQ",
+      "title": "Chacchoben Ruins : Pyramid 1",
+      "url": "https://www.youtube.com/watch?v=EEShawZwoFQ",
+      "status": "mapped",
+      "site": "Chacchoben"
+    },
+    {
+      "id": "dIRMbwH9ul8",
+      "title": "Huyuk Underground City",
+      "url": "https://www.youtube.com/watch?v=dIRMbwH9ul8",
+      "status": "mapped",
+      "site": "Höyük Underground City"
+    },
+    {
+      "id": "Ca2uUIh8OYE",
+      "title": "Mucur Underground City",
+      "url": "https://www.youtube.com/watch?v=Ca2uUIh8OYE",
+      "status": "mapped",
+      "site": "Mucur Underground City"
+    },
+    {
+      "id": "WxtKfaSlzNs",
+      "title": "Midyat Caves or Matiate Underground City",
+      "url": "https://www.youtube.com/watch?v=WxtKfaSlzNs",
+      "status": "mapped",
+      "site": "Matiate (Midyat) Underground City"
+    },
+    {
+      "id": "aFMzYu1u2-U",
+      "title": "Mysterious Manazan Caves and Thrilling Taskale Granaries",
+      "url": "https://www.youtube.com/watch?v=aFMzYu1u2-U",
+      "status": "mapped",
+      "site": "Manazan Caves & Taşkale Granaries"
+    },
+    {
+      "id": "1XnVlmwiOWo",
+      "title": "Kayasehir Rock City",
+      "url": "https://www.youtube.com/watch?v=1XnVlmwiOWo",
+      "status": "mapped",
+      "site": "Nevşehir Underground City"
+    },
+    {
+      "id": "zDqunWbprGs",
+      "title": "Dulkadilri Underground City",
+      "url": "https://www.youtube.com/watch?v=zDqunWbprGs",
+      "status": "mapped",
+      "site": "Dulkadirli Underground City"
+    },
+    {
+      "id": "1ZjnsOl2OM8",
+      "title": "Bazda Caves",
+      "url": "https://www.youtube.com/watch?v=1ZjnsOl2OM8",
+      "status": "mapped",
+      "site": "Bazda Caves"
+    },
+    {
+      "id": "GmuLXYPzH8A",
+      "title": "The Mysterious Dara Ancient City",
+      "url": "https://www.youtube.com/watch?v=GmuLXYPzH8A",
+      "status": "mapped",
+      "site": "Dara Ancient City"
+    },
+    {
+      "id": "XAs8VmSD4gA",
+      "title": "Ersele Underground City",
+      "url": "https://www.youtube.com/watch?v=XAs8VmSD4gA",
+      "status": "mapped",
+      "site": "Ersele Underground City"
+    },
+    {
+      "id": "nW9HJH9XdVo",
+      "title": "Mazi Underground City",
+      "url": "https://www.youtube.com/watch?v=nW9HJH9XdVo",
+      "status": "mapped",
+      "site": "Mazi Underground City"
+    },
+    {
+      "id": "WkUUEQBvnZY",
+      "title": "Ozkonak Underground City",
+      "url": "https://www.youtube.com/watch?v=WkUUEQBvnZY",
+      "status": "mapped",
+      "site": "Özkonak Underground City"
+    },
+    {
+      "id": "nhqtFw8CJLk",
+      "title": "Ozluce Underground City",
+      "url": "https://www.youtube.com/watch?v=nhqtFw8CJLk",
+      "status": "mapped",
+      "site": "Özlüce Underground City"
+    },
+    {
+      "id": "0iDI4tXtH8A",
+      "title": "Tatlarin Underground City",
+      "url": "https://www.youtube.com/watch?v=0iDI4tXtH8A",
+      "status": "mapped",
+      "site": "Tatlarin Underground City"
+    },
+    {
+      "id": "TB-aKnBAgww",
+      "title": "Gaziemir Underground City",
+      "url": "https://www.youtube.com/watch?v=TB-aKnBAgww",
+      "status": "mapped",
+      "site": "Gaziemir Underground City"
+    },
+    {
+      "id": "BTyiM6SFBCY",
+      "title": "Aydintepe Underground City",
+      "url": "https://www.youtube.com/watch?v=BTyiM6SFBCY",
+      "status": "mapped",
+      "site": "Aydıntepe Underground City"
+    },
+    {
+      "id": "_zAGOAJVgvI",
+      "title": "Agirnas Underground City",
+      "url": "https://www.youtube.com/watch?v=_zAGOAJVgvI",
+      "status": "mapped",
+      "site": "Ağırnas Underground City"
+    },
+    {
+      "id": "Gx9ypiw_dLo",
+      "title": "Kirkgoz Underground City",
+      "url": "https://www.youtube.com/watch?v=Gx9ypiw_dLo",
+      "status": "mapped",
+      "site": "Kırkgöz Underground City"
+    },
+    {
+      "id": "xdW6AVcAoz8",
+      "title": "St. Mercurius Underground City",
+      "url": "https://www.youtube.com/watch?v=xdW6AVcAoz8",
+      "status": "mapped",
+      "site": "St. Mercurius Underground City"
+    },
+    {
+      "id": "iVdP3GDHe0w",
+      "title": "The Amazing Top-Down Rock Cut Monastery of Gumusler",
+      "url": "https://www.youtube.com/watch?v=iVdP3GDHe0w",
+      "status": "mapped",
+      "site": "Gümüşler Rock-Cut Monastery"
+    },
+    {
+      "id": "sJk29ra2qgc",
+      "title": "Uaxactun : Astronomical Ancient Achivement",
+      "url": "https://www.youtube.com/watch?v=sJk29ra2qgc",
+      "status": "mapped",
+      "site": "Uaxactun"
+    },
+    {
+      "id": "SNHgrHRFem8",
+      "title": "Nakum : Large City with Little Information",
+      "url": "https://www.youtube.com/watch?v=SNHgrHRFem8",
+      "status": "mapped",
+      "site": "Nakum"
+    },
+    {
+      "id": "_Lws9iEiE-s",
+      "title": "Yaxha : City of Astronomical Alignments",
+      "url": "https://www.youtube.com/watch?v=_Lws9iEiE-s",
+      "status": "mapped",
+      "site": "Yaxha"
+    },
+    {
+      "id": "7bAPadYWISI",
+      "title": "Naranjo : Land of Pyramids",
+      "url": "https://www.youtube.com/watch?v=7bAPadYWISI",
+      "status": "mapped",
+      "site": "Naranjo"
+    },
+    {
+      "id": "eh9WIsuWuQ8",
+      "title": "Tikal : Chambers of Temples and Palaces",
+      "url": "https://www.youtube.com/watch?v=eh9WIsuWuQ8",
+      "status": "mapped",
+      "site": "Tikal"
+    },
+    {
+      "id": "vo65N-ExKJw",
+      "title": "Tikal : Lost World Pyramid (Mundo Perdido)",
+      "url": "https://www.youtube.com/watch?v=vo65N-ExKJw",
+      "status": "mapped",
+      "site": "Tikal"
+    },
+    {
+      "id": "JMk7ojsArNE",
+      "title": "Tikal : Pyramid VI - Temple of Inscriptions",
+      "url": "https://www.youtube.com/watch?v=JMk7ojsArNE",
+      "status": "mapped",
+      "site": "Tikal"
+    },
+    {
+      "id": "apBUt97t8kg",
+      "title": "Tikal : Pyramid V - A Titan Among Giants",
+      "url": "https://www.youtube.com/watch?v=apBUt97t8kg",
+      "status": "mapped",
+      "site": "Tikal"
+    },
+    {
+      "id": "s0zzmLAhmwY",
+      "title": "Tikal : Pyramid IV - Temple of Twin Headed Serpent",
+      "url": "https://www.youtube.com/watch?v=s0zzmLAhmwY",
+      "status": "mapped",
+      "site": "Tikal"
+    },
+    {
+      "id": "E7USr3aIlmA",
+      "title": "Tikal : Pyramid III - Temple of Jaguar Priest",
+      "url": "https://www.youtube.com/watch?v=E7USr3aIlmA",
+      "status": "mapped",
+      "site": "Tikal"
+    },
+    {
+      "id": "IqgLI8h9Ce8",
+      "title": "Tikal : Pyramid II - Temple of The Masks",
+      "url": "https://www.youtube.com/watch?v=IqgLI8h9Ce8",
+      "status": "mapped",
+      "site": "Tikal"
+    },
+    {
+      "id": "2ofM2HBkEao",
+      "title": "Tikal : Pyramid I - Temple of Jaguar",
+      "url": "https://www.youtube.com/watch?v=2ofM2HBkEao",
+      "status": "mapped",
+      "site": "Tikal"
+    },
+    {
+      "id": "bZuLboPOpwE",
+      "title": "Qadamgah Mithra Temple",
+      "url": "https://www.youtube.com/watch?v=bZuLboPOpwE",
+      "status": "mapped",
+      "site": "Qadamgah"
+    },
+    {
+      "id": "c74fUFW_NPY",
+      "title": "Qadamgah Monument : Awesome but Alone without story",
+      "url": "https://www.youtube.com/watch?v=c74fUFW_NPY",
+      "status": "mapped",
+      "site": "Qadamgah"
+    },
+    {
+      "id": "vZVC1yopTJ8",
+      "title": "Mysterious Unfinished Tomb of King Darius III",
+      "url": "https://www.youtube.com/watch?v=vZVC1yopTJ8",
+      "status": "mapped",
+      "site": "Persepolis"
+    },
+    {
+      "id": "X84t7LR7AO4",
+      "title": "Persepolis : Persian remnants of unknown origin",
+      "url": "https://www.youtube.com/watch?v=X84t7LR7AO4",
+      "status": "mapped",
+      "site": "Persepolis"
+    },
+    {
+      "id": "VuiDRW52vl4",
+      "title": "Pasargadae Archaeological Site  : Area 51 of Iran",
+      "url": "https://www.youtube.com/watch?v=VuiDRW52vl4",
+      "status": "mapped",
+      "site": "Pasargadae"
+    },
+    {
+      "id": "EAKa-ZOYR9o",
+      "title": "Naqsh-e Rustam : Fantastic Four of Persia",
+      "url": "https://www.youtube.com/watch?v=EAKa-ZOYR9o",
+      "status": "mapped",
+      "site": "Naqsh-e Rustam"
+    },
+    {
+      "id": "4_LEdZwhRUo",
+      "title": "Tall-e Takht Wall (Cyclopean Wall of Pasargadae)",
+      "url": "https://www.youtube.com/watch?v=4_LEdZwhRUo",
+      "status": "mapped",
+      "site": "Tall-e Takht (Cyclopean Wall of Pasargadae)"
+    },
+    {
+      "id": "VUf1Qo7JK1s",
+      "title": "Tomb of Cambyses I ( or Cube of Zoroaster? )",
+      "url": "https://www.youtube.com/watch?v=VUf1Qo7JK1s",
+      "status": "mapped",
+      "site": "Zendan-e Soleyman (Tomb of Cambyses I?)"
+    },
+    {
+      "id": "LmY6HkAg6tg",
+      "title": "Cube of Zoroaster (Ka’abah-e Zarthost)",
+      "url": "https://www.youtube.com/watch?v=LmY6HkAg6tg",
+      "status": "mapped",
+      "site": "Cube of Zoroaster (Ka'bah-ye Zartosht)"
+    },
+    {
+      "id": "opg30waN_yY",
+      "title": "Persia : Daughter's Tomb ( Gur Dokthar )",
+      "url": "https://www.youtube.com/watch?v=opg30waN_yY",
+      "status": "mapped",
+      "site": "Gur Dokthar (Daughter's Tomb)"
+    },
+    {
+      "id": "HFgMrpzkDG8",
+      "title": "Persia : Tomb of Cyrus The Great",
+      "url": "https://www.youtube.com/watch?v=HFgMrpzkDG8",
+      "status": "mapped",
+      "site": "Tomb of Cyrus the Great"
+    },
+    {
+      "id": "IKScQCLj2F4",
+      "title": "Mysterious Circular Stones Around the World",
+      "url": "https://www.youtube.com/watch?v=IKScQCLj2F4",
+      "upload_date": "20250209",
+      "duration": 784,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "How many circular stones do you need to believe that someone else was here first?\n\nThis video is a compilation of materials that forms my own thoughts and opinions – Bernie Ong \n\n#megalith #circularstone #stonewheel",
+      "chapters": [
+        {
+          "start_time": 0,
+          "title": "Introduction to mysteries",
+          "end_time": 37
+        },
+        {
+          "start_time": 37,
+          "title": "Circular doors in Turkey",
+          "end_time": 172
+        },
+        {
+          "start_time": 172,
+          "title": "Analyzing stone door placement",
+          "end_time": 240
+        },
+        {
+          "start_time": 240,
+          "title": "Subterranean sites in Italy",
+          "end_time": 272
+        },
+        {
+          "start_time": 272,
+          "title": "Mysterious stones in India",
+          "end_time": 315
+        },
+        {
+          "start_time": 315,
+          "title": "Bedrock sites in Israel",
+          "end_time": 382
+        },
+        {
+          "start_time": 382,
+          "title": "Stone artifacts in Peru",
+          "end_time": 441
+        },
+        {
+          "start_time": 441,
+          "title": "Artifacts on Guam",
+          "end_time": 504
+        },
+        {
+          "start_time": 504,
+          "title": "Unfinished work in India",
+          "end_time": 531
+        },
+        {
+          "start_time": 531,
+          "title": "Millstones in England",
+          "end_time": 573
+        },
+        {
+          "start_time": 573,
+          "title": "Stone currency on Yap",
+          "end_time": 622
+        },
+        {
+          "start_time": 622,
+          "title": "Summary of global findings",
+          "end_time": 784
+        }
+      ],
+      "webpage_url": "https://www.youtube.com/watch?v=IKScQCLj2F4",
+      "status": "general_comparison_no_single_pin"
+    },
+    {
+      "id": "2XQNNf1LlYE",
+      "title": "Mills and Stones @ Millstones of Stanage",
+      "url": "https://www.youtube.com/watch?v=2XQNNf1LlYE",
+      "upload_date": "20250202",
+      "duration": 844,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "How many stones does a millstone need?\nHow many millstones does Stanage need?\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that forms my own thoughts and opinions – Bernie Ong \n\n#megalith #derbyshire #peakdistrict #stanageedge",
+      "chapters": [
+        {
+          "start_time": 0,
+          "title": "Mysterious circular stones",
+          "end_time": 90
+        },
+        {
+          "start_time": 90,
+          "title": "Mainstream theories",
+          "end_time": 181
+        },
+        {
+          "start_time": 181,
+          "title": "Questioning the quarry logic",
+          "end_time": 354
+        },
+        {
+          "start_time": 354,
+          "title": "Inconsistencies in design",
+          "end_time": 573
+        },
+        {
+          "start_time": 573,
+          "title": "Evidence of ancient builders",
+          "end_time": 755
+        },
+        {
+          "start_time": 755,
+          "title": "Conclusion and reflections",
+          "end_time": 844
+        }
+      ],
+      "webpage_url": "https://www.youtube.com/watch?v=2XQNNf1LlYE",
+      "status": "needs_exact_placement_review"
+    },
+    {
+      "id": "vtYn9wJaC4g",
+      "title": "Ancient Fishpond and Fishtrap",
+      "url": "https://www.youtube.com/watch?v=vtYn9wJaC4g",
+      "status": "mapped",
+      "site": "Hawaiian Heiaus"
+    },
+    {
+      "id": "71H0fyHpB2s",
+      "title": "Energies of Ancient Temples",
+      "url": "https://www.youtube.com/watch?v=71H0fyHpB2s",
+      "status": "mapped",
+      "site": "Hawaiian Heiaus"
+    },
+    {
+      "id": "ywRHXRbADMs",
+      "title": "Healing Heiaus of Hawaii",
+      "url": "https://www.youtube.com/watch?v=ywRHXRbADMs",
+      "status": "mapped",
+      "site": "Hawaiian Heiaus"
+    },
+    {
+      "id": "-Ze9JcGD6Ts",
+      "title": "Healing Stones of Oahu",
+      "url": "https://www.youtube.com/watch?v=-Ze9JcGD6Ts",
+      "status": "mapped",
+      "site": "Healing Stones of Kapaemahu (Oahu)"
+    },
+    {
+      "id": "NqJY9gJK5pg",
+      "title": "Megalithic Culture @ Necker Island",
+      "url": "https://www.youtube.com/watch?v=NqJY9gJK5pg",
+      "status": "mapped",
+      "site": "Necker Island Megalithic Site"
+    },
+    {
+      "id": "9lOgKCRTYLI",
+      "title": "Mysterious Menehune Fishpond",
+      "url": "https://www.youtube.com/watch?v=9lOgKCRTYLI",
+      "status": "mapped",
+      "site": "Menehune Fishpond (Alekoko)"
+    },
+    {
+      "id": "i7MelPWI5Ms",
+      "title": "Mysterious Megalithic Menehune Ditch",
+      "url": "https://www.youtube.com/watch?v=i7MelPWI5Ms",
+      "status": "mapped",
+      "site": "Menehune Ditch (Kīkīaola)"
+    },
+    {
+      "id": "knPtO2v4U1E",
+      "title": "Heiaus of Hawaii : Ancient Temple and Ancient Ponds",
+      "url": "https://www.youtube.com/watch?v=knPtO2v4U1E",
+      "status": "mapped",
+      "site": "Hawaiian Heiaus"
+    },
+    {
+      "id": "0AS2SVcXYj4",
+      "title": "Heiaus of Hawaii : Intriguing Hawaiian Terraces",
+      "url": "https://www.youtube.com/watch?v=0AS2SVcXYj4",
+      "status": "mapped",
+      "site": "Hawaiian Heiaus"
+    },
+    {
+      "id": "0v6lAJf_Qe8",
+      "title": "Heiaus of Hawaii : Wonders of Wailua",
+      "url": "https://www.youtube.com/watch?v=0v6lAJf_Qe8",
+      "status": "mapped",
+      "site": "Wailua River Heiaus (Kauai)"
+    },
+    {
+      "id": "4jNkHMbNSnE",
+      "title": "Heiaus of Hawaii : Astronomical Megalithic Platforms",
+      "url": "https://www.youtube.com/watch?v=4jNkHMbNSnE",
+      "status": "mapped",
+      "site": "Hawaiian Heiaus"
+    },
+    {
+      "id": "QFRy-wesnk0",
+      "title": "Heiaus of Hawaii : Mysterious Megalithic Platforms",
+      "url": "https://www.youtube.com/watch?v=QFRy-wesnk0",
+      "status": "mapped",
+      "site": "Hawaiian Heiaus"
+    },
+    {
+      "id": "r5H5oFQvcYY",
+      "title": "Abba Yohani Rock Cut Church",
+      "url": "https://www.youtube.com/watch?v=r5H5oFQvcYY",
+      "status": "mapped",
+      "site": "Abba Yohani Rock-Cut Church"
+    },
+    {
+      "id": "d12SDZsPWqs",
+      "title": "Daniel Korkor Rock Cut Church",
+      "url": "https://www.youtube.com/watch?v=d12SDZsPWqs",
+      "status": "mapped",
+      "site": "Daniel Korkor Rock-Cut Church"
+    },
+    {
+      "id": "NZFdNMSSR0Y",
+      "title": "Maryam Korkor Rock Cut Church",
+      "url": "https://www.youtube.com/watch?v=NZFdNMSSR0Y",
+      "upload_date": "20241119",
+      "duration": 513,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "A rock cut church with no reliable history.\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #ethiopia #tigray",
+      "chapters": null,
+      "webpage_url": "https://www.youtube.com/watch?v=NZFdNMSSR0Y",
+      "status": "missing_film_existing_site",
+      "site": "Maryam Korkor"
+    },
+    {
+      "id": "IWhBeOlEEZw",
+      "title": "Abuna Yemata Rock Cut Church",
+      "url": "https://www.youtube.com/watch?v=IWhBeOlEEZw",
+      "upload_date": "20241114",
+      "duration": 558,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "A rock hewn church so high, only the brave would dare to worship God.\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #ethiopia #tigray",
+      "chapters": [
+        {
+          "start_time": 0,
+          "title": "Introduction to Abuna Yemata",
+          "end_time": 63
+        },
+        {
+          "start_time": 63,
+          "title": "Geology and location",
+          "end_time": 120
+        },
+        {
+          "start_time": 120,
+          "title": "Theories of construction",
+          "end_time": 184
+        },
+        {
+          "start_time": 184,
+          "title": "Spiritual significance",
+          "end_time": 241
+        },
+        {
+          "start_time": 241,
+          "title": "Debating historical origins",
+          "end_time": 356
+        },
+        {
+          "start_time": 356,
+          "title": "Interior and legacy",
+          "end_time": 444
+        },
+        {
+          "start_time": 444,
+          "title": "Risks and final thoughts",
+          "end_time": 558
+        }
+      ],
+      "webpage_url": "https://www.youtube.com/watch?v=IWhBeOlEEZw",
+      "status": "missing_film_existing_site",
+      "site": "Abuna Yemata Guh"
+    },
+    {
+      "id": "J8Fww-MU5qw",
+      "title": "Wukro Cherkos Rock Cut Church",
+      "url": "https://www.youtube.com/watch?v=J8Fww-MU5qw",
+      "upload_date": "20241109",
+      "duration": 525,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "Did ancient Ethiopians actually carve a church out of bedrock?\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #ethoipia #tigray",
+      "chapters": null,
+      "webpage_url": "https://www.youtube.com/watch?v=J8Fww-MU5qw",
+      "status": "missing_film_existing_site",
+      "site": "Wukro Cherkos"
+    },
+    {
+      "id": "2AddrT9bApM",
+      "title": "Rock Cave Cut Church of Medhane Alem Adi Kasho",
+      "url": "https://www.youtube.com/watch?v=2AddrT9bApM",
+      "status": "mapped",
+      "site": "Medhane Alem Adi Kasho"
+    },
+    {
+      "id": "grgL5S2ADkc",
+      "title": "Mikael Imba Rock Cut Cave Church",
+      "url": "https://www.youtube.com/watch?v=grgL5S2ADkc",
+      "upload_date": "20241030",
+      "duration": 684,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "A rock cut church with a strange facade is evidence of a civilization that came before us. \n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #ethiopia #tigray",
+      "chapters": [
+        {
+          "start_time": 0,
+          "title": "Introduction to Michael Amba",
+          "end_time": 86
+        },
+        {
+          "start_time": 86,
+          "title": "Mysterious architectural cues",
+          "end_time": 218
+        },
+        {
+          "start_time": 218,
+          "title": "Bedrock excavation analysis",
+          "end_time": 358
+        },
+        {
+          "start_time": 358,
+          "title": "Questioning religious origins",
+          "end_time": 490
+        },
+        {
+          "start_time": 490,
+          "title": "Rectangular holes and interior",
+          "end_time": 660
+        },
+        {
+          "start_time": 660,
+          "title": "Final conclusions",
+          "end_time": 684
+        }
+      ],
+      "webpage_url": "https://www.youtube.com/watch?v=grgL5S2ADkc",
+      "status": "missing_film_existing_site",
+      "site": "Mikael Imba"
+    },
+    {
+      "id": "5ktd7APveuM",
+      "title": "Abreha & Atsbeha Rock Cut Cave Church",
+      "url": "https://www.youtube.com/watch?v=5ktd7APveuM",
+      "upload_date": "20241025",
+      "duration": 521,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "Were these twin brothers actually experts in cave carving church?\n\nhttps://theancientatlas.com/\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\n#megalith #ethiopia #tigray",
+      "chapters": [
+        {
+          "start_time": 0,
+          "title": "Introduction to the site",
+          "end_time": 62
+        },
+        {
+          "start_time": 62,
+          "title": "Historical context",
+          "end_time": 108
+        },
+        {
+          "start_time": 108,
+          "title": "Analyzing the exterior",
+          "end_time": 284
+        },
+        {
+          "start_time": 284,
+          "title": "Construction methodology",
+          "end_time": 363
+        },
+        {
+          "start_time": 363,
+          "title": "Interior architecture",
+          "end_time": 430
+        },
+        {
+          "start_time": 430,
+          "title": "Legends and conclusions",
+          "end_time": 521
+        }
+      ],
+      "webpage_url": "https://www.youtube.com/watch?v=5ktd7APveuM",
+      "status": "missing_film_existing_site",
+      "site": "Abreha we Atsbeha"
+    },
+    {
+      "id": "sI9wknFPjfk",
+      "title": "Debra Damo Monastery of Ethiopia",
+      "url": "https://www.youtube.com/watch?v=sI9wknFPjfk",
+      "status": "mapped",
+      "site": "Debra Damo Monastery"
+    },
+    {
+      "id": "qU321I6o61c",
+      "title": "Adadi Maryam Monolithic Church",
+      "url": "https://www.youtube.com/watch?v=qU321I6o61c",
+      "status": "mapped",
+      "site": "Adadi Maryam Monolithic Church"
+    },
+    {
+      "id": "v-M13a2B0Y8",
+      "title": "Monolithic Church of Nazugn Mariam",
+      "url": "https://www.youtube.com/watch?v=v-M13a2B0Y8",
+      "status": "mapped",
+      "site": "Nazugn Mariam Monolithic Church"
+    },
+    {
+      "id": "eW1L7uDH2Zc",
+      "title": "Monolithic Church of Geneta Mariam",
+      "url": "https://www.youtube.com/watch?v=eW1L7uDH2Zc",
+      "status": "mapped",
+      "site": "Geneta Mariam Monolithic Church"
+    },
+    {
+      "id": "IcUfttZ1XR8",
+      "title": "Washa Mikael Rock Cut Church",
+      "url": "https://www.youtube.com/watch?v=IcUfttZ1XR8",
+      "status": "mapped",
+      "site": "Washa Mikael Rock-Cut Church"
+    },
+    {
+      "id": "GiPd3BzwP2U",
+      "title": "Giant Buddha of Bamiyan",
+      "url": "https://www.youtube.com/watch?v=GiPd3BzwP2U",
+      "status": "mapped",
+      "site": "Bamiyan"
+    },
+    {
+      "id": "83zjOOhP_Lg",
+      "title": "Keyan Big Buddha",
+      "url": "https://www.youtube.com/watch?v=83zjOOhP_Lg",
+      "status": "mapped",
+      "site": "Keyan Big Buddha"
+    },
+    {
+      "id": "S3PqiO2QTh8",
+      "title": "Giant Buddha of Rongxian",
+      "url": "https://www.youtube.com/watch?v=S3PqiO2QTh8",
+      "status": "mapped",
+      "site": "Rongxian Giant Buddha"
+    },
+    {
+      "id": "pyeAf6_f8dI",
+      "title": "Giant Buddha of Yuji Mountain",
+      "url": "https://www.youtube.com/watch?v=pyeAf6_f8dI",
+      "status": "mapped",
+      "site": "Yuji Mountain Buddha"
+    },
+    {
+      "id": "H4VN1ay68Bg",
+      "title": "Giant Buddha of Tianlong Shan Grottoes",
+      "url": "https://www.youtube.com/watch?v=H4VN1ay68Bg",
+      "status": "mapped",
+      "site": "Tianlong Shan Grottoes"
+    },
+    {
+      "id": "dOLrT9nuzPU",
+      "title": "Giant Buddha of Elephant Mountain Grottoes",
+      "url": "https://www.youtube.com/watch?v=dOLrT9nuzPU",
+      "status": "mapped",
+      "site": "Elephant Mountain Grottoes"
+    },
+    {
+      "id": "XZEiRg1RGng",
+      "title": "Giant Buddha of Bingling Temple Grottoes",
+      "url": "https://www.youtube.com/watch?v=XZEiRg1RGng",
+      "status": "mapped",
+      "site": "Bingling Temple Grottoes"
+    },
+    {
+      "id": "YCb_rI3zlkY",
+      "title": "Giant Buddha of Xumishan Grottoes",
+      "url": "https://www.youtube.com/watch?v=YCb_rI3zlkY",
+      "status": "mapped",
+      "site": "Xumishan Grottoes"
+    },
+    {
+      "id": "LkyC_0lg57M",
+      "title": "Giant Buddhas of Yungang Grottoes",
+      "url": "https://www.youtube.com/watch?v=LkyC_0lg57M",
+      "status": "mapped",
+      "site": "Yungang Grottoes"
+    },
+    {
+      "id": "MXmPInmNZNU",
+      "title": "Mysterious and Marvelous Marquesas",
+      "url": "https://www.youtube.com/watch?v=MXmPInmNZNU",
+      "status": "mapped",
+      "site": "Marquesas Islands"
+    },
+    {
+      "id": "p6bjaujVnqE",
+      "title": "Kosrae Island : Megaliths of Leluh Island",
+      "url": "https://www.youtube.com/watch?v=p6bjaujVnqE",
+      "status": "mapped",
+      "site": "Kosrae Leluh Island"
+    },
+    {
+      "id": "z8qRrFvZ1qQ",
+      "title": "Temwen Island 2 : Magnetized City of Nan Madol",
+      "url": "https://www.youtube.com/watch?v=z8qRrFvZ1qQ",
+      "status": "mapped",
+      "site": "Nan Madol"
+    },
+    {
+      "id": "4nPk4n7K0Mc",
+      "title": "Temwen Island 1 : Megalithic City of Nan Madol",
+      "url": "https://www.youtube.com/watch?v=4nPk4n7K0Mc",
+      "status": "mapped",
+      "site": "Nan Madol"
+    },
+    {
+      "id": "oSSpTjmHNMg",
+      "title": "Palau Island 2 : Rai Stone & Earthwork Terraces",
+      "url": "https://www.youtube.com/watch?v=oSSpTjmHNMg",
+      "status": "mapped",
+      "site": "Palau Megalithic Site"
+    },
+    {
+      "id": "Ieg9F3YQljQ",
+      "title": "Palau Island 1 : Island of Monolithic Mysteries",
+      "url": "https://www.youtube.com/watch?v=Ieg9F3YQljQ",
+      "status": "mapped",
+      "site": "Palau Megalithic Site"
+    },
+    {
+      "id": "fhVtZ_0NM9U",
+      "title": "Yap Island 2: Rai Stone + Fei Stone = Limestone",
+      "url": "https://www.youtube.com/watch?v=fhVtZ_0NM9U",
+      "status": "mapped",
+      "site": "Yap Rai Stones"
+    },
+    {
+      "id": "WpLN2WB6Pyw",
+      "title": "Yap Island 1: Money! Money! Money!",
+      "url": "https://www.youtube.com/watch?v=WpLN2WB6Pyw",
+      "status": "mapped",
+      "site": "Yap Rai Stones"
+    },
+    {
+      "id": "oXweT9vwq24",
+      "title": "Kedulan Temple 2 : A Trinity Mystery",
+      "url": "https://www.youtube.com/watch?v=oXweT9vwq24",
+      "status": "mapped",
+      "site": "Kedulan"
+    },
+    {
+      "id": "qDduNWHpPB8",
+      "title": "Kedulan Temple 1 : A Sunken Treasure",
+      "url": "https://www.youtube.com/watch?v=qDduNWHpPB8",
+      "status": "mapped",
+      "site": "Kedulan"
+    },
+    {
+      "id": "PR_IBAO6dNg",
+      "title": "Sari Temple : Once a Glittering Golden Temple",
+      "url": "https://www.youtube.com/watch?v=PR_IBAO6dNg",
+      "status": "mapped",
+      "site": "Sari"
+    },
+    {
+      "id": "nvvPSTFRGCE",
+      "title": "Lumbung Temple : “Rice Barn” Temple with no history and no rice",
+      "url": "https://www.youtube.com/watch?v=nvvPSTFRGCE",
+      "status": "mapped",
+      "site": "Lumbung"
+    },
+    {
+      "id": "VVuEZUycuoo",
+      "title": "Bubrah Temple : Restored Temple with Damaged History",
+      "url": "https://www.youtube.com/watch?v=VVuEZUycuoo",
+      "status": "mapped",
+      "site": "Bubrah"
+    },
+    {
+      "id": "4aCkVXA9Vok",
+      "title": "Barong Temple : 3 minus 1 = Confuse",
+      "url": "https://www.youtube.com/watch?v=4aCkVXA9Vok",
+      "status": "mapped",
+      "site": "Barong"
+    },
+    {
+      "id": "6uOG_3yOlEQ",
+      "title": "Banyunibo Temple : A Temple with Sacred Layout",
+      "url": "https://www.youtube.com/watch?v=6uOG_3yOlEQ",
+      "status": "mapped",
+      "site": "Banyunibo"
+    },
+    {
+      "id": "JsBqssFs7KY",
+      "title": "Kidron Valley of Tombs : Tomb of King David",
+      "url": "https://www.youtube.com/watch?v=JsBqssFs7KY",
+      "status": "mapped",
+      "site": "Kidron Valley Tombs"
+    },
+    {
+      "id": "mggFDhg2Blc",
+      "title": "Kidron Valley of Tombs : Tomb of the Prophets",
+      "url": "https://www.youtube.com/watch?v=mggFDhg2Blc",
+      "status": "mapped",
+      "site": "Kidron Valley Tombs"
+    },
+    {
+      "id": "LuT3lfx0lHQ",
+      "title": "Kidron Valley of Tombs : Tomb of Jehoshaphat",
+      "url": "https://www.youtube.com/watch?v=LuT3lfx0lHQ",
+      "status": "mapped",
+      "site": "Kidron Valley Tombs"
+    },
+    {
+      "id": "JI_GONchbbA",
+      "title": "Kidron Valley of Tombs : Sons of Hezir’s Tomb",
+      "url": "https://www.youtube.com/watch?v=JI_GONchbbA",
+      "status": "mapped",
+      "site": "Kidron Valley Tombs"
+    },
+    {
+      "id": "5tJr2SR9Jtk",
+      "title": "Kidron Valley of Tombs : Where is Pharaoh’s Daughter Tomb?",
+      "url": "https://www.youtube.com/watch?v=5tJr2SR9Jtk",
+      "status": "mapped",
+      "site": "Kidron Valley Tombs"
+    },
+    {
+      "id": "w-2wiRWTTDU",
+      "title": "Kidron Valley of Tombs : Where is Absalom’s Tomb?",
+      "url": "https://www.youtube.com/watch?v=w-2wiRWTTDU",
+      "status": "mapped",
+      "site": "Kidron Valley Tombs"
+    },
+    {
+      "id": "vhzH8rqsrFI",
+      "title": "Kidron Valley of Tombs : Where is Zechariah’s Tomb?",
+      "url": "https://www.youtube.com/watch?v=vhzH8rqsrFI",
+      "status": "mapped",
+      "site": "Kidron Valley Tombs"
+    },
+    {
+      "id": "QPshss9J9oE",
+      "title": "Sumbawa : An Island of Megalithic Mysteries",
+      "url": "https://www.youtube.com/watch?v=QPshss9J9oE",
+      "status": "mapped",
+      "site": "Sumbawa Megaliths"
+    },
+    {
+      "id": "CKIDugjXb6M",
+      "title": "Sumbawa : Megaliths of Ai Renung – The Phantom Five",
+      "url": "https://www.youtube.com/watch?v=CKIDugjXb6M",
+      "status": "mapped",
+      "site": "Sumbawa Megaliths"
+    },
+    {
+      "id": "6nnKGlyel54",
+      "title": "Sumbawa : Megaliths of Raboran - Sarcophagi or something else?",
+      "url": "https://www.youtube.com/watch?v=6nnKGlyel54",
+      "status": "mapped",
+      "site": "Sumbawa Megaliths"
+    },
+    {
+      "id": "pOJRzSf1aZ0",
+      "title": "Sumba : Mysterious Megalithic Tombs",
+      "url": "https://www.youtube.com/watch?v=pOJRzSf1aZ0",
+      "status": "mapped",
+      "site": "Sumba Megalithic Tombs"
+    },
+    {
+      "id": "n2Ke5kyDXjs",
+      "title": "Pura Agung Besakih : A Temple Too Grand To Be Unheard Off",
+      "url": "https://www.youtube.com/watch?v=n2Ke5kyDXjs",
+      "status": "mapped",
+      "site": "Pura Besakih"
+    },
+    {
+      "id": "sUoWWFHMYM8",
+      "title": "Penataran Agung Lempuyang Luhur : A World Class Temple",
+      "url": "https://www.youtube.com/watch?v=sUoWWFHMYM8",
+      "status": "mapped",
+      "site": "Pura Lempuyang Luhur"
+    },
+    {
+      "id": "rU6PvkJHGDg",
+      "title": "Megalith of Tampaksiring at Gunung Kawi",
+      "url": "https://www.youtube.com/watch?v=rU6PvkJHGDg",
+      "status": "mapped",
+      "site": "Tampaksiring (Gunung Kawi)"
+    },
+    {
+      "id": "PxvnrVm1ebk",
+      "title": "Kravan - A Five Structure Temple",
+      "url": "https://www.youtube.com/watch?v=PxvnrVm1ebk",
+      "status": "mapped",
+      "site": "Kravan"
+    },
+    {
+      "id": "AvU2_ZYgFIc",
+      "title": "Beng Mealea (2/2) :  So big but yet so lost",
+      "url": "https://www.youtube.com/watch?v=AvU2_ZYgFIc",
+      "status": "mapped",
+      "site": "Beng Mealea"
+    },
+    {
+      "id": "5MEuk-zSSJo",
+      "title": "Beng Mealea (1/2) : An Advance Temple Layout",
+      "url": "https://www.youtube.com/watch?v=5MEuk-zSSJo",
+      "status": "mapped",
+      "site": "Beng Mealea"
+    },
+    {
+      "id": "jDekkDT73GM",
+      "title": "Veal Phtei : A Temple Too Tiny",
+      "url": "https://www.youtube.com/watch?v=jDekkDT73GM",
+      "status": "mapped",
+      "site": "Veal Phtei"
+    },
+    {
+      "id": "rugyshug2Hw",
+      "title": "Bat Chum Temple : Three Shrines and a Baray",
+      "url": "https://www.youtube.com/watch?v=rugyshug2Hw",
+      "status": "mapped",
+      "site": "Bat Chum"
+    },
+    {
+      "id": "qIOd9Qt8Rvc",
+      "title": "Banteay Srei Temple : Citadel of Women",
+      "url": "https://www.youtube.com/watch?v=qIOd9Qt8Rvc",
+      "status": "mapped",
+      "site": "Banteay Srei"
+    },
+    {
+      "id": "jKxR3s8tXqU",
+      "title": "Phnom Chisor : A Temple With Unique Design",
+      "url": "https://www.youtube.com/watch?v=jKxR3s8tXqU",
+      "status": "mapped",
+      "site": "Phnom Chisor"
+    },
+    {
+      "id": "T5XA5spGcMo",
+      "title": "Neam Rup Temple : Astronomical Effort for a Tiny Temple",
+      "url": "https://www.youtube.com/watch?v=T5XA5spGcMo",
+      "status": "mapped",
+      "site": "Neam Rup (Pleasant Temple)"
+    },
+    {
+      "id": "Mmr4jWW_mok",
+      "title": "Banteay Prei Temple : Fortress of the Jungle",
+      "url": "https://www.youtube.com/watch?v=Mmr4jWW_mok",
+      "status": "mapped",
+      "site": "Banteay Prei (Angkor)"
+    },
+    {
+      "id": "j2d5REgnT8E",
+      "title": "Chaw Srei Vibol Temple (2/2) : The Mysterious Ley Line",
+      "url": "https://www.youtube.com/watch?v=j2d5REgnT8E",
+      "status": "mapped",
+      "site": "Chaw Srei Vibol"
+    },
+    {
+      "id": "P3zld0Ms99g",
+      "title": "Chaw Srei Vibol Temple (1/2) : A Temple with Intelligent Design",
+      "url": "https://www.youtube.com/watch?v=P3zld0Ms99g",
+      "status": "mapped",
+      "site": "Chaw Srei Vibol"
+    },
+    {
+      "id": "8XsaxhoeOo8",
+      "title": "Banteay Prei Nokor Temple : The Black Sandstone Temple",
+      "url": "https://www.youtube.com/watch?v=8XsaxhoeOo8",
+      "status": "mapped",
+      "site": "Banteay Prei Nokor"
+    },
+    {
+      "id": "Q956NTYeLMg",
+      "title": "Banteay Toap : Mysterious Fortress of the Army",
+      "url": "https://www.youtube.com/watch?v=Q956NTYeLMg",
+      "status": "mapped",
+      "site": "Banteay Toap"
+    },
+    {
+      "id": "FQNxobvdgKY",
+      "title": "Banteay Chhmar (3/3) : Fortress of Cats with Satellite Temples",
+      "url": "https://www.youtube.com/watch?v=FQNxobvdgKY",
+      "status": "mapped",
+      "site": "Banteay Chhmar"
+    },
+    {
+      "id": "YiEgi42zUt4",
+      "title": "Banteay Chhmar (2/3) : Baray with a Snaky Mebon",
+      "url": "https://www.youtube.com/watch?v=YiEgi42zUt4",
+      "status": "mapped",
+      "site": "Banteay Chhmar"
+    },
+    {
+      "id": "Qy2hWsf_dnA",
+      "title": "Banteay Chhmar (1/3) : Layout of an Advance Civilization",
+      "url": "https://www.youtube.com/watch?v=Qy2hWsf_dnA",
+      "status": "mapped",
+      "site": "Banteay Chhmar"
+    },
+    {
+      "id": "BDsXbbQO2S4",
+      "title": "Preah Khan Temple of Kampong Svay (5/5) : Sacred Temple of the Far East (Cambodia)",
+      "url": "https://www.youtube.com/watch?v=BDsXbbQO2S4",
+      "status": "mapped",
+      "site": "Preah Khan of Kompong Svay"
+    },
+    {
+      "id": "Ae9bCWgrGxk",
+      "title": "Preah Khan Temple of Kampong Svay (4/5) : The Water Tanks Inside",
+      "url": "https://www.youtube.com/watch?v=Ae9bCWgrGxk",
+      "status": "mapped",
+      "site": "Preah Khan of Kompong Svay"
+    },
+    {
+      "id": "9VFs7ERqmVQ",
+      "title": "Preah Khan Temple of Kampong Svay (3/5) : The Temples Inside",
+      "url": "https://www.youtube.com/watch?v=9VFs7ERqmVQ",
+      "status": "mapped",
+      "site": "Preah Khan of Kompong Svay"
+    },
+    {
+      "id": "vcLjTumN2Bc",
+      "title": "Preah Khan Temple of Kampong Svay (2/5) : The Baray",
+      "url": "https://www.youtube.com/watch?v=vcLjTumN2Bc",
+      "status": "mapped",
+      "site": "Preah Khan of Kompong Svay"
+    },
+    {
+      "id": "eJkYv4H6D50",
+      "title": "Preah Khan Temple of Kampong Svay (1/5) : The Moat",
+      "url": "https://www.youtube.com/watch?v=eJkYv4H6D50",
+      "status": "mapped",
+      "site": "Preah Khan of Kompong Svay"
+    },
+    {
+      "id": "LWRbFWJPRJo",
+      "title": "Banteay Kdei Temple : A Piquant Prasat linked to Srah Srang",
+      "url": "https://www.youtube.com/watch?v=LWRbFWJPRJo",
+      "status": "mapped",
+      "site": "Banteay Kdei"
+    },
+    {
+      "id": "LF1VmkbCYTs",
+      "title": "Srah Srang - Lost Underwater Temple",
+      "url": "https://www.youtube.com/watch?v=LF1VmkbCYTs",
+      "status": "mapped",
+      "site": "Srah Srang"
+    },
+    {
+      "id": "PFKtlgzqrx0",
+      "title": "Preah Khan Temple (3/3) : A Lost Temple",
+      "url": "https://www.youtube.com/watch?v=PFKtlgzqrx0",
+      "status": "mapped",
+      "site": "Preah Khan (Angkor)"
+    },
+    {
+      "id": "mScLJsNZWck",
+      "title": "Preah Khan Temple (2/3) : Preah Khan Reach = The Sacred Sword",
+      "url": "https://www.youtube.com/watch?v=mScLJsNZWck",
+      "status": "mapped",
+      "site": "Preah Khan (Angkor)"
+    },
+    {
+      "id": "57r9TKVHAbw",
+      "title": "Preah Khan Temple (1/3) : Yin & Yang of Outer Structure",
+      "url": "https://www.youtube.com/watch?v=57r9TKVHAbw",
+      "status": "mapped",
+      "site": "Preah Khan (Angkor)"
+    },
+    {
+      "id": "5wi-4YE3hj0",
+      "title": "Jayatataka Baray + Neak Poan Temple = Healthy",
+      "url": "https://www.youtube.com/watch?v=5wi-4YE3hj0",
+      "status": "mapped",
+      "site": "Neak Poan (Jayatataka Baray)"
+    },
+    {
+      "id": "-_2Q5f6CrbU",
+      "title": "Neak Poan Temple & Jayatataka Baray : Anavatapta Lake Connection",
+      "url": "https://www.youtube.com/watch?v=-_2Q5f6CrbU",
+      "status": "mapped",
+      "site": "Neak Poan (Jayatataka Baray)"
+    },
+    {
+      "id": "x5NHxYAFyvM",
+      "title": "Jayatataka Baray & Neak Poan Temple in the Mebon",
+      "url": "https://www.youtube.com/watch?v=x5NHxYAFyvM",
+      "status": "mapped",
+      "site": "Neak Poan (Jayatataka Baray)"
+    },
+    {
+      "id": "hrAFQ2tPujs",
+      "title": "East Baray and Mebon is a temple in a moat",
+      "url": "https://www.youtube.com/watch?v=hrAFQ2tPujs",
+      "status": "mapped",
+      "site": "East Baray"
+    },
+    {
+      "id": "lLvDAm02Gxg",
+      "title": "West Mebon is a temple in a moat",
+      "url": "https://www.youtube.com/watch?v=lLvDAm02Gxg",
+      "status": "mapped",
+      "site": "West Mebon"
+    },
+    {
+      "id": "k_6sk8u6R3E",
+      "title": "West Baray of an Angkorian City",
+      "url": "https://www.youtube.com/watch?v=k_6sk8u6R3E",
+      "status": "mapped",
+      "site": "West Baray"
+    },
+    {
+      "id": "CVvoxiE3OGg",
+      "title": "Ellora Caves 32 to 34 : Inconceivable India",
+      "url": "https://www.youtube.com/watch?v=CVvoxiE3OGg",
+      "status": "mapped",
+      "site": "Ellora Caves"
+    },
+    {
+      "id": "-26jmwmSVls",
+      "title": "Ellora Caves 30 to 31 : Illustrious India",
+      "url": "https://www.youtube.com/watch?v=-26jmwmSVls",
+      "status": "mapped",
+      "site": "Ellora Caves"
+    },
+    {
+      "id": "GMiNzaskpP0",
+      "title": "Ellora Cave 29 : Improbable India",
+      "url": "https://www.youtube.com/watch?v=GMiNzaskpP0",
+      "status": "mapped",
+      "site": "Ellora Caves"
+    },
+    {
+      "id": "B8sc0JG9Hqw",
+      "title": "Ellora Caves 25 to 28 : Incomprehensible India",
+      "url": "https://www.youtube.com/watch?v=B8sc0JG9Hqw",
+      "status": "mapped",
+      "site": "Ellora Caves"
+    },
+    {
+      "id": "OTmBxbBdxCs",
+      "title": "Ellora Caves 22 to 24 : Incredible India",
+      "url": "https://www.youtube.com/watch?v=OTmBxbBdxCs",
+      "status": "mapped",
+      "site": "Ellora Caves"
+    },
+    {
+      "id": "0XZt9sT600w",
+      "title": "Ellora Caves 17 to 21 : Imposing India",
+      "url": "https://www.youtube.com/watch?v=0XZt9sT600w",
+      "status": "mapped",
+      "site": "Ellora Caves"
+    },
+    {
+      "id": "AJohwLrSRrc",
+      "title": "Ellora cave 16 (surrounding) : Impossible India",
+      "url": "https://www.youtube.com/watch?v=AJohwLrSRrc",
+      "status": "mapped",
+      "site": "Kailasa Temple (Ellora Cave 16)"
+    },
+    {
+      "id": "zyg8sG5W1mI",
+      "title": "Ellora Caves 11 to 15 : Insane India",
+      "url": "https://www.youtube.com/watch?v=zyg8sG5W1mI",
+      "status": "mapped",
+      "site": "Ellora Caves"
+    },
+    {
+      "id": "rZUvCU6aLRs",
+      "title": "Ellora Caves 1 to 10 : Intriguing India",
+      "url": "https://www.youtube.com/watch?v=rZUvCU6aLRs",
+      "status": "mapped",
+      "site": "Ellora Caves"
+    },
+    {
+      "id": "JSLlvWKdtrs",
+      "title": "Ollantaytambo : Endless mysteries",
+      "url": "https://www.youtube.com/watch?v=JSLlvWKdtrs",
+      "status": "mapped",
+      "site": "Ollantaytambo"
+    },
+    {
+      "id": "9VQHhu3DRrg",
+      "title": "Ollantaytambo - What is the story @ Wall of 6 Monoliths?",
+      "url": "https://www.youtube.com/watch?v=9VQHhu3DRrg",
+      "status": "mapped",
+      "site": "Ollantaytambo"
+    },
+    {
+      "id": "i3Yw5TODKlk",
+      "title": "Ollantaytambo - Land of the Giants?",
+      "url": "https://www.youtube.com/watch?v=i3Yw5TODKlk",
+      "status": "mapped",
+      "site": "Ollantaytambo"
+    },
+    {
+      "id": "n5rhXvUKmmI",
+      "title": "Ollantaytambo - Bedrock Terrace for Farming?",
+      "url": "https://www.youtube.com/watch?v=n5rhXvUKmmI",
+      "status": "mapped",
+      "site": "Ollantaytambo"
+    },
+    {
+      "id": "Osu8NEjk2rI",
+      "title": "Ollantaytambo - Aqueducts of Unknown Origin",
+      "url": "https://www.youtube.com/watch?v=Osu8NEjk2rI",
+      "status": "mapped",
+      "site": "Ollantaytambo"
+    },
+    {
+      "id": "HcO2Gsg9-Bc",
+      "title": "Aurangabad Caves - Eastern Group : More Indian caves with Peruvian similarity.",
+      "url": "https://www.youtube.com/watch?v=HcO2Gsg9-Bc",
+      "status": "mapped",
+      "site": "Aurangabad Caves"
+    },
+    {
+      "id": "noCNgUwi8BE",
+      "title": "Aurangabad Caves - Western Group (2/2) : Indians and Peruvians had same idea?",
+      "url": "https://www.youtube.com/watch?v=noCNgUwi8BE",
+      "status": "mapped",
+      "site": "Aurangabad Caves"
+    },
+    {
+      "id": "z53Z4YQjLbI",
+      "title": "Aurangabad Caves - Western Group (1/2) : Cave Temples so old, no one knows anything for sure",
+      "url": "https://www.youtube.com/watch?v=z53Z4YQjLbI",
+      "status": "mapped",
+      "site": "Aurangabad Caves"
+    },
+    {
+      "id": "WckJe9zddB0",
+      "title": "Machu Picchu (3/3) : Mysterious Temple of the Sun and Temple Mount",
+      "url": "https://www.youtube.com/watch?v=WckJe9zddB0",
+      "status": "mapped",
+      "site": "Machu Picchu"
+    },
+    {
+      "id": "2mjf6UI3VHQ",
+      "title": "Machu Picchu (2/3) : Step Pyramid on Top?",
+      "url": "https://www.youtube.com/watch?v=2mjf6UI3VHQ",
+      "status": "mapped",
+      "site": "Machu Picchu"
+    },
+    {
+      "id": "1AWZs3hwqWg",
+      "title": "Machu Picchu (1/3) : What happened here?",
+      "url": "https://www.youtube.com/watch?v=1AWZs3hwqWg",
+      "status": "mapped",
+      "site": "Machu Picchu"
+    },
+    {
+      "id": "7ZEm8hS2ppw",
+      "title": "Borobudur (Part 4/4) : Borobudur was built when stones were soft like clay",
+      "url": "https://www.youtube.com/watch?v=7ZEm8hS2ppw",
+      "status": "mapped",
+      "site": "Borobudur"
+    },
+    {
+      "id": "jDWx0u48eHc",
+      "title": "Borobudur (3/4) : In the beginning there was Wisdom and Wisdom was Buddha",
+      "url": "https://www.youtube.com/watch?v=jDWx0u48eHc",
+      "status": "mapped",
+      "site": "Borobudur"
+    },
+    {
+      "id": "lJSGbQXuBr8",
+      "title": "Borobudur (Part 2/4) : A monument we barely know",
+      "url": "https://www.youtube.com/watch?v=lJSGbQXuBr8",
+      "status": "mapped",
+      "site": "Borobudur"
+    },
+    {
+      "id": "X49i3_PNWsA",
+      "title": "Borobudur (Part 1/4) : A huge stepped pyramid?",
+      "url": "https://www.youtube.com/watch?v=X49i3_PNWsA",
+      "status": "mapped",
+      "site": "Borobudur"
+    },
+    {
+      "id": "OO7aBMneVR4",
+      "title": "Is Petite Pawon Temple for Worship?",
+      "url": "https://www.youtube.com/watch?v=OO7aBMneVR4",
+      "status": "mapped",
+      "site": "Pawon"
+    },
+    {
+      "id": "syjj8Xww7Fs",
+      "title": "Mysterious Mendut Temple on Ley Line",
+      "url": "https://www.youtube.com/watch?v=syjj8Xww7Fs",
+      "status": "mapped",
+      "site": "Mendut"
+    },
+    {
+      "id": "uU2vxLPhAdA",
+      "title": "Ijo Temple on Ijo Hill is very  mojo",
+      "url": "https://www.youtube.com/watch?v=uU2vxLPhAdA",
+      "status": "mapped",
+      "site": "Ijo"
+    },
+    {
+      "id": "ysfRtduVV4Q",
+      "title": "Stupendous Sojiwan Temple with a taste of mystery",
+      "url": "https://www.youtube.com/watch?v=ysfRtduVV4Q",
+      "status": "mapped",
+      "site": "Sojiwan"
+    },
+    {
+      "id": "vLX686DLnrc",
+      "title": "Ratu Boko (4/4) : Is this a palace in another dimension?",
+      "url": "https://www.youtube.com/watch?v=vLX686DLnrc",
+      "status": "mapped",
+      "site": "Ratu Boko"
+    },
+    {
+      "id": "XPpYzLHr3gQ",
+      "title": "Ratu Boko (3/4) : How can we not know anything about this site?",
+      "url": "https://www.youtube.com/watch?v=XPpYzLHr3gQ",
+      "status": "mapped",
+      "site": "Ratu Boko"
+    },
+    {
+      "id": "RLZm5_5b3sw",
+      "title": "Ratu Boko (2/4) : Lots of platforms but still no clue",
+      "url": "https://www.youtube.com/watch?v=RLZm5_5b3sw",
+      "status": "mapped",
+      "site": "Ratu Boko"
+    },
+    {
+      "id": "XnQG4mYzAFQ",
+      "title": "Ratu Boko (1/4) : Who built Ratu Boko Palace?",
+      "url": "https://www.youtube.com/watch?v=XnQG4mYzAFQ",
+      "status": "mapped",
+      "site": "Ratu Boko"
+    },
+    {
+      "id": "6Gk8UVc-SCo",
+      "title": "Sambisari Temple (2/2) : Is it related to Pyramid of The Feathered Serpent in Mexico?",
+      "url": "https://www.youtube.com/watch?v=6Gk8UVc-SCo",
+      "status": "mapped",
+      "site": "Sambisari"
+    },
+    {
+      "id": "LeWQrudrMZg",
+      "title": "Sambisari Temple (1/2) : A stupendous temple 6.5m below ground level.",
+      "url": "https://www.youtube.com/watch?v=LeWQrudrMZg",
+      "status": "mapped",
+      "site": "Sambisari"
+    },
+    {
+      "id": "eonkC5jh-ns",
+      "title": "Sewu Temple (2/2) : Blueprints of builders found in Cambodia, Mexico and Iran?",
+      "url": "https://www.youtube.com/watch?v=eonkC5jh-ns",
+      "status": "mapped",
+      "site": "Sewu Temple"
+    },
+    {
+      "id": "K0YK_LvtETE",
+      "title": "Sewu Temple (1/2) : Head Spinning Sewu Temple of Klaten in Java",
+      "url": "https://www.youtube.com/watch?v=K0YK_LvtETE",
+      "status": "mapped",
+      "site": "Sewu Temple"
+    },
+    {
+      "id": "RJDSJvg50E4",
+      "title": "Is KalasanTemple in Indonesia related to Chichen Izta Temple in Mexico?",
+      "url": "https://www.youtube.com/watch?v=RJDSJvg50E4",
+      "status": "mapped",
+      "site": "Kalasan"
+    },
+    {
+      "id": "Pi1GSU0tyPM",
+      "title": "Phenomenal Plaosan of Prambanan in Java, Indonesia",
+      "url": "https://www.youtube.com/watch?v=Pi1GSU0tyPM",
+      "status": "mapped",
+      "site": "Plaosan"
+    },
+    {
+      "id": "GP0gKHEXWzA",
+      "title": "Phenomenal Perturbing Prambanan Temple",
+      "url": "https://www.youtube.com/watch?v=GP0gKHEXWzA",
+      "status": "mapped",
+      "site": "Prambanan"
+    },
+    {
+      "id": "mb9EdRZHNgU",
+      "title": "The Black Pyramid of Amenemhat III in Dahshur, Egypt",
+      "url": "https://www.youtube.com/watch?v=mb9EdRZHNgU",
+      "status": "mapped",
+      "site": "Black Pyramid (Dahshur)"
+    },
+    {
+      "id": "kun5oIBqGTo",
+      "title": "Mysterious Striations at megalithic sites.",
+      "url": "https://www.youtube.com/watch?v=kun5oIBqGTo",
+      "upload_date": "20230325",
+      "duration": 626,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "Megalithic culture leaves behind many tool marks. Mysterious long striation is one of them.\n\n#megalith #striation #mystery \n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong",
+      "chapters": null,
+      "webpage_url": "https://www.youtube.com/watch?v=kun5oIBqGTo",
+      "status": "general_comparison_no_single_pin"
+    },
+    {
+      "id": "fPDY_011IOk",
+      "title": "Amazing Giant Buddha of Tiantishan (Heavenly Stairs Mountain) Grottoes in China",
+      "url": "https://www.youtube.com/watch?v=fPDY_011IOk",
+      "status": "mapped",
+      "site": "Tiantishan Grottoes"
+    },
+    {
+      "id": "CcYact99C0U",
+      "title": "Magnificent Mengshan Giant Buddha of China",
+      "url": "https://www.youtube.com/watch?v=CcYact99C0U",
+      "status": "mapped",
+      "site": "Mengshan Giant Buddha"
+    },
+    {
+      "id": "bZT0zUREisk",
+      "title": "Did Buddhist monks create Pitalkhora Caves site?",
+      "url": "https://www.youtube.com/watch?v=bZT0zUREisk",
+      "status": "mapped",
+      "site": "Pitalkhora Caves"
+    },
+    {
+      "id": "yTWX9Nnyfy4",
+      "title": "Amazing Ajanta and some Crazy Calculations.",
+      "url": "https://www.youtube.com/watch?v=yTWX9Nnyfy4",
+      "status": "mapped",
+      "site": "Ajanta Caves"
+    },
+    {
+      "id": "Zwxp5Yw8HmE",
+      "title": "Gigantic Monoliths and Mysterious Rock Cut Burials of Toraja, Indonesia",
+      "url": "https://www.youtube.com/watch?v=Zwxp5Yw8HmE",
+      "status": "mapped",
+      "site": "Toraja Rock-Cut Burials"
+    },
+    {
+      "id": "7F7hBRrovVE",
+      "title": "7 Wonders of Ancient Pyramids in Egypt",
+      "url": "https://www.youtube.com/watch?v=7F7hBRrovVE",
+      "status": "mapped",
+      "site": "Great Pyramid of Giza (Khufu)"
+    },
+    {
+      "id": "6aqRoGIdVb8",
+      "title": "Red Pyramid is highly unlikely a tomb.",
+      "url": "https://www.youtube.com/watch?v=6aqRoGIdVb8",
+      "status": "mapped",
+      "site": "Red Pyramid (Dahshur)"
+    },
+    {
+      "id": "9tEsueLITPw",
+      "title": "Mind Bending Bent Pyramid of Egypt",
+      "url": "https://www.youtube.com/watch?v=9tEsueLITPw",
+      "status": "mapped",
+      "site": "Bent Pyramid (Dahshur)"
+    },
+    {
+      "id": "DaAs-bMKOF0",
+      "title": "Mysteries at Meidum are more mysterious than you think...",
+      "url": "https://www.youtube.com/watch?v=DaAs-bMKOF0",
+      "status": "mapped",
+      "site": "Pyramid of Meidum"
+    },
+    {
+      "id": "uERtkstQuxw",
+      "title": "Pyramid of Djoser = Pyramid of Joseph ?",
+      "url": "https://www.youtube.com/watch?v=uERtkstQuxw",
+      "status": "mapped",
+      "site": "Step Pyramid of Djoser"
+    },
+    {
+      "id": "qafmKW7gQDA",
+      "title": "Ambager Church Complex of Amhara, Ethiopia",
+      "url": "https://www.youtube.com/watch?v=qafmKW7gQDA",
+      "status": "mapped",
+      "site": "Ambager Church Complex"
+    },
+    {
+      "id": "2kNvKb0VM2g",
+      "title": "Mysterious Cluster of Kofuns in Saitobaru.",
+      "url": "https://www.youtube.com/watch?v=2kNvKb0VM2g",
+      "status": "mapped",
+      "site": "Saitobaru Kofun Cluster"
+    },
+    {
+      "id": "PdMY7oDI_lU",
+      "title": "Megalithic and futuristic kofuns of Sakitama",
+      "url": "https://www.youtube.com/watch?v=PdMY7oDI_lU",
+      "status": "mapped",
+      "site": "Sakitama Kofun Cluster"
+    },
+    {
+      "id": "nDYYy-3rG6I",
+      "title": "Kaymakli Underground City (Part 2/2) - Narrative that doesn't make sense",
+      "url": "https://www.youtube.com/watch?v=nDYYy-3rG6I",
+      "status": "mapped",
+      "site": "Kaymakli Underground City"
+    },
+    {
+      "id": "qWbGNp_arS0",
+      "title": "Kaymakli Underground City (Part 1/2) : Circular Stones = Stone Door?",
+      "url": "https://www.youtube.com/watch?v=qWbGNp_arS0",
+      "status": "mapped",
+      "site": "Kaymakli Underground City"
+    },
+    {
+      "id": "FLNFTRN7SkI",
+      "title": "Derinkuyu (Part 2/2) : Tool Marks + Zoroastrianism = Underground City",
+      "url": "https://www.youtube.com/watch?v=FLNFTRN7SkI",
+      "status": "mapped",
+      "site": "Derinkuyu Underground City"
+    },
+    {
+      "id": "jtyIbbt7LTo",
+      "title": "Derinkuyu (Part 1/2) : Underground City - Do you want to run or dig?",
+      "url": "https://www.youtube.com/watch?v=jtyIbbt7LTo",
+      "status": "mapped",
+      "site": "Derinkuyu Underground City"
+    },
+    {
+      "id": "COCcbw4vii8",
+      "title": "Rosslyn Chapel + Rosslyn Castle = Megalithic Site ?!?!",
+      "url": "https://www.youtube.com/watch?v=COCcbw4vii8",
+      "status": "mapped",
+      "site": "Rosslyn Chapel & Castle"
+    },
+    {
+      "id": "m1EOoFpn_cg",
+      "title": "Gilmerton Cove (2/2) : Jacob's Pillow = Coronation Stone ?",
+      "url": "https://www.youtube.com/watch?v=m1EOoFpn_cg",
+      "status": "mapped",
+      "site": "Gilmerton Cove"
+    },
+    {
+      "id": "aF5PEPtZWUc",
+      "title": "Gilmerton Cove (1/2) : Creepy Underground of Scotland",
+      "url": "https://www.youtube.com/watch?v=aF5PEPtZWUc",
+      "status": "mapped",
+      "site": "Gilmerton Cove"
+    },
+    {
+      "id": "51coNJLDx5s",
+      "title": "[ Cyclopean Wall of ] Vetulonia - Lost [ Megalithic ]  City of Gold",
+      "url": "https://www.youtube.com/watch?v=51coNJLDx5s",
+      "status": "mapped",
+      "site": "Vetulonia"
+    },
+    {
+      "id": "mpc6eIDU59U",
+      "title": "When was Cyclopean Wall in Orbetello built?",
+      "url": "https://www.youtube.com/watch?v=mpc6eIDU59U",
+      "status": "mapped",
+      "site": "Orbetello"
+    },
+    {
+      "id": "E0FKiizs86M",
+      "title": "Mysterious Cyclopean Wall of Rusellae",
+      "url": "https://www.youtube.com/watch?v=E0FKiizs86M",
+      "status": "mapped",
+      "site": "Rusellae"
+    },
+    {
+      "id": "6tyAZMqTok8",
+      "title": "Is the Cyclopean Wall of Cosa man-made?",
+      "url": "https://www.youtube.com/watch?v=6tyAZMqTok8",
+      "status": "mapped",
+      "site": "Cosa"
+    },
+    {
+      "id": "zbEEa9bkdb8",
+      "title": "Compare Cave Dwellings",
+      "url": "https://www.youtube.com/watch?v=zbEEa9bkdb8",
+      "upload_date": "20221120",
+      "duration": 415,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "Let's compare these megalithic cave dwellings around the world. They are very much the same in architecture and very hard to use for long term simply because they lack the basic needs of human nature.\n\n#megalithic #cappadociaturkey #cavehouse \n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong",
+      "chapters": null,
+      "webpage_url": "https://www.youtube.com/watch?v=zbEEa9bkdb8",
+      "status": "general_comparison_no_single_pin"
+    },
+    {
+      "id": "vzsfqVKlYz4",
+      "title": "Can you solve the mystery at Rota Quarry?",
+      "url": "https://www.youtube.com/watch?v=vzsfqVKlYz4",
+      "status": "mapped",
+      "site": "Rota Quarry (As Nieves)"
+    },
+    {
+      "id": "raeuYv9mP0w",
+      "title": "Latte Stones in Tiny Tinian",
+      "url": "https://www.youtube.com/watch?v=raeuYv9mP0w",
+      "status": "mapped",
+      "site": "Latte Stones of Tinian"
+    },
+    {
+      "id": "HWqycLvzXTU",
+      "title": "Megalithic Latte Stones of Guam",
+      "url": "https://www.youtube.com/watch?v=HWqycLvzXTU",
+      "status": "mapped",
+      "site": "Latte Stones of Guam"
+    },
+    {
+      "id": "lJBDgRqMpWI",
+      "title": "Padmanabhaswamy Temple (Part 2/2) : The Richest Megalithic Temple",
+      "url": "https://www.youtube.com/watch?v=lJBDgRqMpWI",
+      "status": "mapped",
+      "site": "Padmanabhaswamy Temple"
+    },
+    {
+      "id": "LFTcDkDnMjQ",
+      "title": "Padmanabhaswamy Temple (Part 1/2) - Is there any connection with Angkor Thom?",
+      "url": "https://www.youtube.com/watch?v=LFTcDkDnMjQ",
+      "status": "mapped",
+      "site": "Padmanabhaswamy Temple"
+    },
+    {
+      "id": "6OvZxQshNVE",
+      "title": "Tiger Pyramid + Snake Kings + Orion Constellation = Maya Civilization at El Mirador",
+      "url": "https://www.youtube.com/watch?v=6OvZxQshNVE",
+      "status": "mapped",
+      "site": "El Mirador"
+    },
+    {
+      "id": "q3PpYNjS6kg",
+      "title": "White Ghost in Xunantunich Pyramid in Belize",
+      "url": "https://www.youtube.com/watch?v=q3PpYNjS6kg",
+      "status": "mapped",
+      "site": "Xunantunich"
+    },
+    {
+      "id": "Aop4aDWydYI",
+      "title": "Is La Danta Pyramid larger than Khufu's Pyramid?",
+      "url": "https://www.youtube.com/watch?v=Aop4aDWydYI",
+      "status": "mapped",
+      "site": "El Mirador"
+    },
+    {
+      "id": "nvgxmcA8qnU",
+      "title": "Lamanai Pyramids of Belize - Few Temples but No Palace?",
+      "url": "https://www.youtube.com/watch?v=nvgxmcA8qnU",
+      "status": "mapped",
+      "site": "Lamanai"
+    },
+    {
+      "id": "8DwN_N5jxpc",
+      "title": "Zaculeu Pyramids in Guatemala... Tomb? Palace? Temple?",
+      "url": "https://www.youtube.com/watch?v=8DwN_N5jxpc",
+      "status": "mapped",
+      "site": "Zaculeu"
+    },
+    {
+      "id": "1xEUxYIh_VQ",
+      "title": "Caracol Pyramids of Belize are more mysterious than you think.",
+      "url": "https://www.youtube.com/watch?v=1xEUxYIh_VQ",
+      "status": "mapped",
+      "site": "Caracol"
+    },
+    {
+      "id": "SIJm3OYQP-g",
+      "title": "Who built the mysterious Bayon Temple in Angkor Thom ?",
+      "url": "https://www.youtube.com/watch?v=SIJm3OYQP-g",
+      "status": "mapped",
+      "site": "Bayon Temple"
+    },
+    {
+      "id": "Rda15KOGr6o",
+      "title": "7 Reasons Angkor Wat Cannot Be Built by Human",
+      "url": "https://www.youtube.com/watch?v=Rda15KOGr6o",
+      "status": "mapped",
+      "site": "Angkor Wat"
+    },
+    {
+      "id": "t5yrTx7udT4",
+      "title": "Angkor Archaeological Park is insanely huge. So how can the history vanish?",
+      "url": "https://www.youtube.com/watch?v=t5yrTx7udT4",
+      "status": "mapped",
+      "site": "Angkor Wat"
+    },
+    {
+      "id": "b7vGMD0vWK0",
+      "title": "Quiz : Mysterious Megalithic Culture Gear Tracks (Turn up the volume for background music)",
+      "url": "https://www.youtube.com/watch?v=b7vGMD0vWK0",
+      "upload_date": "20220906",
+      "duration": 376,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "At a glance, the mysterious gear tracks seems to be for splitting bedrock. However, they are in mysterious spots that make no sense. They are random in locations and sizes. They seem to have no known purpose. In fact, if you study carefully, they are made with tools we don't have at the point of history.\n\nMusic : The Beacon - Zachariah Hickman\n\n#megalith #niches #cavetemple \n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong",
+      "chapters": null,
+      "webpage_url": "https://www.youtube.com/watch?v=b7vGMD0vWK0",
+      "status": "general_comparison_no_single_pin"
+    },
+    {
+      "id": "42-TXfjLNcE",
+      "title": "Mysterious Caves + Pyramid + Stone Wheels = Horvat",
+      "url": "https://www.youtube.com/watch?v=42-TXfjLNcE",
+      "status": "mapped",
+      "site": "Horvat Midras"
+    },
+    {
+      "id": "WB_pqZjeK80",
+      "title": "Amazing Xuankong Temple (Hanging Temple) of Shanxi, China",
+      "url": "https://www.youtube.com/watch?v=WB_pqZjeK80",
+      "status": "mapped",
+      "site": "Xuankong Temple (Hanging Temple)"
+    },
+    {
+      "id": "AV2S-_osfas",
+      "title": "Mysterious giant jar in Naneghat no one is talking about.",
+      "url": "https://www.youtube.com/watch?v=AV2S-_osfas",
+      "status": "mapped",
+      "site": "Naneghat"
+    },
+    {
+      "id": "F3MjnNYCSRA",
+      "title": "Top-Down Rock-Cut Bedrock Stupa of Takht-e Rustam",
+      "url": "https://www.youtube.com/watch?v=F3MjnNYCSRA",
+      "status": "mapped",
+      "site": "Takht-e Rustam (Afghanistan)"
+    },
+    {
+      "id": "Wii86ebnCn8",
+      "title": "Who made monoliths and stone tables in Nias Island of Indonesia?",
+      "url": "https://www.youtube.com/watch?v=Wii86ebnCn8",
+      "status": "mapped",
+      "site": "Nias Island Megaliths"
+    },
+    {
+      "id": "mxz6ktrGCRw",
+      "title": "Pyramid / Temple of the Feathered Serpent @ Teotihuacan",
+      "url": "https://www.youtube.com/watch?v=mxz6ktrGCRw",
+      "status": "mapped",
+      "site": "Pyramid of the Feathered Serpent (Teotihuacan)"
+    },
+    {
+      "id": "jyn1dC7fgNE",
+      "title": "Did giants built Pyramid of the Moon in Teotihuacan?",
+      "url": "https://www.youtube.com/watch?v=jyn1dC7fgNE",
+      "status": "mapped",
+      "site": "Pyramid of the Moon (Teotihuacan)"
+    },
+    {
+      "id": "BcH0PjNCfWg",
+      "title": "Clueless @ Pyramids of the Sun at Teotihuacan",
+      "url": "https://www.youtube.com/watch?v=BcH0PjNCfWg",
+      "status": "mapped",
+      "site": "Pyramid of the Sun (Teotihuacan)"
+    },
+    {
+      "id": "3lsp77wh6tU",
+      "title": "Does Koichi Kofun Cluster in Japan have something to do with giants?",
+      "url": "https://www.youtube.com/watch?v=3lsp77wh6tU",
+      "status": "mapped",
+      "site": "Koichi Kofun Cluster"
+    },
+    {
+      "id": "scQeyaB6Kvs",
+      "title": "Hodota Kofun Cluster remains a mystery....",
+      "url": "https://www.youtube.com/watch?v=scQeyaB6Kvs",
+      "status": "mapped",
+      "site": "Hodota Kofun Cluster"
+    },
+    {
+      "id": "7PtSa57GKHs",
+      "title": "Daisen Kofun in Mozu Cluster - Largest Tomb in the World",
+      "url": "https://www.youtube.com/watch?v=7PtSa57GKHs",
+      "status": "mapped",
+      "site": "Daisen Kofun"
+    },
+    {
+      "id": "oHrkACXQ3Kg",
+      "title": "Balang Gergasi di Situs Megalitik Lembah Bada",
+      "url": "https://www.youtube.com/watch?v=oHrkACXQ3Kg",
+      "status": "mapped",
+      "site": "Bada Valley Megaliths"
+    },
+    {
+      "id": "CVRIfc21tbc",
+      "title": "Mysterious Giant Stone Jars of Bada Valley in Sulawesi",
+      "url": "https://www.youtube.com/watch?v=CVRIfc21tbc",
+      "status": "mapped",
+      "site": "Bada Valley Megaliths"
+    },
+    {
+      "id": "0RKIciQL54s",
+      "title": "Dharmrajeshwar Temple ... a monolithic top-down rock cut bedrock of mystery",
+      "url": "https://www.youtube.com/watch?v=0RKIciQL54s",
+      "status": "mapped",
+      "site": "Dharmrajeshwar Temple"
+    },
+    {
+      "id": "Zz02DiKqHBo",
+      "title": "Who Made Over 2,000 Giant Jars in Laos?",
+      "url": "https://www.youtube.com/watch?v=Zz02DiKqHBo",
+      "status": "mapped",
+      "site": "Plain of Jars"
+    },
+    {
+      "id": "nC92mpGoV74",
+      "title": "Lalibela Churches (Part 2/3) : Mysterious Rock-Cut Monolithic Churches of Lalibela - Northern Group",
+      "url": "https://www.youtube.com/watch?v=nC92mpGoV74",
+      "status": "mapped",
+      "site": "Lalibela Rock-Hewn Churches"
+    },
+    {
+      "id": "YojKBBuJdjE",
+      "title": "Lalibela Churches (Part 3/3) : Largest Monolithic Bedrock Church in the World - Eastern Group",
+      "url": "https://www.youtube.com/watch?v=YojKBBuJdjE",
+      "status": "mapped",
+      "site": "Lalibela Rock-Hewn Churches"
+    },
+    {
+      "id": "ivW_t6bo0es",
+      "title": "Lalibela Churches (Part 1/3) : Is the Church of St. George in Lalibela carved by Ethiopians?",
+      "url": "https://www.youtube.com/watch?v=ivW_t6bo0es",
+      "status": "mapped",
+      "site": "Lalibela Rock-Hewn Churches"
+    },
+    {
+      "id": "56LYtSvC7BA",
+      "title": "Menkaure gave us a clue how pyramid was made.",
+      "url": "https://www.youtube.com/watch?v=56LYtSvC7BA",
+      "status": "mapped",
+      "site": "Pyramid of Menkaure"
+    },
+    {
+      "id": "1-xPbEOaPCE",
+      "title": "Is Khafre's Pyramid a man-made structure?",
+      "url": "https://www.youtube.com/watch?v=1-xPbEOaPCE",
+      "status": "mapped",
+      "site": "Pyramid of Khafre"
+    },
+    {
+      "id": "b-kk-FyPhtE",
+      "title": "Khufu's Pyramid - Simple Impossible Calculation",
+      "url": "https://www.youtube.com/watch?v=b-kk-FyPhtE",
+      "status": "mapped",
+      "site": "Great Pyramid of Giza (Khufu)"
+    },
+    {
+      "id": "dSRNkksXZ1o",
+      "title": "Who Built Kailasa Temple?",
+      "url": "https://www.youtube.com/watch?v=dSRNkksXZ1o",
+      "status": "mapped",
+      "site": "Kailasa Temple (Ellora Cave 16)"
+    },
+    {
+      "id": "giJoaNJmgPw",
+      "title": "The Mysterious Dazu Rock Carving and Grottoes in China.",
+      "url": "https://www.youtube.com/watch?v=giJoaNJmgPw",
+      "status": "mapped",
+      "site": "Dazu Rock Carvings"
+    },
+    {
+      "id": "aflyBTMSA9g",
+      "title": "Who Built The Jerusalem Archaeological Park in Israel?",
+      "url": "https://www.youtube.com/watch?v=aflyBTMSA9g",
+      "status": "mapped",
+      "site": "Jerusalem Archaeological Park"
+    },
+    {
+      "id": "dTW47WWxxoo",
+      "title": "The Mysterious Shilmala River - Sahasralinga",
+      "url": "https://www.youtube.com/watch?v=dTW47WWxxoo",
+      "status": "mapped",
+      "site": "Sahasralinga (Shilmala River)"
+    },
+    {
+      "id": "ieYxHh-tMDA",
+      "title": "Mysterious Magnificent Matisi Grottoes in China",
+      "url": "https://www.youtube.com/watch?v=ieYxHh-tMDA",
+      "status": "mapped",
+      "site": "Matisi Grottoes"
+    },
+    {
+      "id": "3PhxvzpHXJ8",
+      "title": "The Mysterious Hezekiah's Tunnel",
+      "url": "https://www.youtube.com/watch?v=3PhxvzpHXJ8",
+      "status": "mapped",
+      "site": "Hezekiah's Tunnel"
+    },
+    {
+      "id": "YL3lltYne3U",
+      "title": "The mysteries of Chennakeshava Temple in Belur, India",
+      "url": "https://www.youtube.com/watch?v=YL3lltYne3U",
+      "status": "mapped",
+      "site": "Chennakeshava Temple (Belur)"
+    },
+    {
+      "id": "SEPNAIhGZtA",
+      "title": "Dafo (Great Buddha) Temple in China",
+      "url": "https://www.youtube.com/watch?v=SEPNAIhGZtA",
+      "status": "mapped",
+      "site": "Zhangye Dafo Temple"
+    },
+    {
+      "id": "n9Z_g9DcJXM",
+      "title": "The Mysterious Zedekiah's Cave in Israel",
+      "url": "https://www.youtube.com/watch?v=n9Z_g9DcJXM",
+      "status": "mapped",
+      "site": "Zedekiah's Cave"
+    },
+    {
+      "id": "18lEAXbeGhw",
+      "title": "The Mysteries at Hoysaleshwara Temple",
+      "url": "https://www.youtube.com/watch?v=18lEAXbeGhw",
+      "status": "mapped",
+      "site": "Hoysaleshwara Temple"
+    },
+    {
+      "id": "gnbmvsPWuHY",
+      "title": "The Mysterious Maijishan Grottoes in China",
+      "url": "https://www.youtube.com/watch?v=gnbmvsPWuHY",
+      "status": "mapped",
+      "site": "Maijishan Grottoes"
+    },
+    {
+      "id": "2s-ZHU8nQMU",
+      "title": "Megaliths at Temple Mount in Israel?",
+      "url": "https://www.youtube.com/watch?v=2s-ZHU8nQMU",
+      "status": "mapped",
+      "site": "Temple Mount Megaliths"
+    },
+    {
+      "id": "IrnsAWcPLqM",
+      "title": "Who Created Barabar Caves in India?",
+      "url": "https://www.youtube.com/watch?v=IrnsAWcPLqM",
+      "status": "mapped",
+      "site": "Barabar Caves"
+    },
+    {
+      "id": "q5Z_NNNORzs",
+      "title": "Mysteries of China",
+      "url": "https://www.youtube.com/watch?v=q5Z_NNNORzs",
+      "upload_date": "20220320",
+      "duration": 173,
+      "uploader": "Ageless Rock",
+      "uploader_url": "https://www.youtube.com/@AgelessRock888",
+      "description": "China is full of mysteries. Hundreds of pyramids if not thousands. Mysterious megalithic tunnels. Thousands of rock cut grottoes and too many giant Buddhas that is impossibly human work of art. We all give credit to those who left behind some inscription. However, the tool marks tell a different story.\n\nThis video is a compilation of materials that form my own thoughts and opinions – Bernie Ong\n\nMusic : Icelandic Arpeggios - DivKid\n\n#china #megalith #mystery",
+      "chapters": null,
+      "webpage_url": "https://www.youtube.com/watch?v=q5Z_NNNORzs",
+      "status": "general_comparison_no_single_pin"
+    },
+    {
+      "id": "sPAkmkyje8A",
+      "title": "Mysterious Longmen Grottoes in Henan, China",
+      "url": "https://www.youtube.com/watch?v=sPAkmkyje8A",
+      "status": "mapped",
+      "site": "Longmen Grottoes"
+    },
+    {
+      "id": "4ogImPDlsSk",
+      "title": "Mysterious Mogao Grottoes in Gansu, China",
+      "url": "https://www.youtube.com/watch?v=4ogImPDlsSk",
+      "status": "mapped",
+      "site": "Mogao Grottoes"
+    },
+    {
+      "id": "NkLghqHyUWM",
+      "title": "The Mysterious Leshan  Giant Buddha in China",
+      "url": "https://www.youtube.com/watch?v=NkLghqHyUWM",
+      "status": "mapped",
+      "site": "Leshan Giant Buddha"
+    },
+    {
+      "id": "FpL5c3xRlEs",
+      "title": "The Mysterious Goguryeo Tombs in China",
+      "url": "https://www.youtube.com/watch?v=FpL5c3xRlEs",
+      "status": "mapped",
+      "site": "Goguryeo Tombs (Jilin)"
+    },
+    {
+      "id": "jwgL_gXRces",
+      "title": "The Mysterious Qin Shi Huang Mausoleum in China",
+      "url": "https://www.youtube.com/watch?v=jwgL_gXRces",
+      "status": "mapped",
+      "site": "Qin Shi Huang Mausoleum"
+    },
+    {
+      "id": "gt_6fP9GMgs",
+      "title": "The Mysterious Great White Pyramid / Maoling Mausoleum in China",
+      "url": "https://www.youtube.com/watch?v=gt_6fP9GMgs",
+      "status": "mapped",
+      "site": "Maoling Mausoleum (Great White Pyramid)"
+    },
+    {
+      "id": "A7Ewz9Mjfq4",
+      "title": "The Mysterious Shaohao Tomb / Mausoleum in China",
+      "url": "https://www.youtube.com/watch?v=A7Ewz9Mjfq4",
+      "status": "mapped",
+      "site": "Shaohao Mausoleum"
+    },
+    {
+      "id": "St9OQDq2PGc",
+      "title": "Mysterious Wushan Grottoes",
+      "url": "https://www.youtube.com/watch?v=St9OQDq2PGc",
+      "status": "mapped",
+      "site": "Wushan Grottoes (Lashao Temple)"
+    },
+    {
+      "id": "UZJVXxoFMoo",
+      "title": "Mysterious Yangshan Monument",
+      "url": "https://www.youtube.com/watch?v=UZJVXxoFMoo",
+      "status": "mapped",
+      "site": "Yangshan Quarry"
+    },
+    {
+      "id": "9WqTASklAWY",
+      "title": "The Mysterious Longyou Caves in China",
+      "url": "https://www.youtube.com/watch?v=9WqTASklAWY",
+      "status": "mapped",
+      "site": "Longyou Caves"
+    },
+    {
+      "id": "tvin563SMCo",
+      "title": "Mysteries of Huashan Grottoes in China",
+      "url": "https://www.youtube.com/watch?v=tvin563SMCo",
+      "status": "mapped",
+      "site": "Huashan Grottoes"
+    }
+  ]
+}
