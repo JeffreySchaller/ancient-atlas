@@ -1987,6 +1987,74 @@ body.present #broadcast-controls{
 .mss-vtitle:has(.journey-credit){display:block;-webkit-line-clamp:unset;overflow:visible}.journey-film .mf-vcard{width:100%}.journey-link{display:block;color:var(--champagne);font-size:12px;padding:8px 4px;min-height:36px;overflow-wrap:anywhere}.journey-credit{display:block;font-size:12px;color:var(--champagne);margin-top:6px}.journey-hint{font-size:12px;color:var(--mist);margin:12px 0}.journey-next{border-top:1px solid var(--border, #39343a);padding:18px 0;margin-top:18px}.journey-next h3{font-size:15px;margin:0 0 10px}.journey-next a{display:block;padding:10px 0;color:var(--champagne);font-size:13px}.journey-next span{color:var(--mist);font-size:11px}.journey-link:focus-visible,.journey-next a:focus-visible{outline:2px solid var(--champagne);outline-offset:2px}
 #watch-feed-return{display:none}body.watch-map #mobile-feed{display:none!important}body.watch-map main{display:flex!important;width:100vw;height:100dvh}body.watch-map #map-wrap{display:block!important;width:100%;height:100%}body.watch-map #map{width:100%;height:100%}@media(max-width:950px){body.watch-map header,body.watch-map #sidebar,body.watch-map #detail{display:none!important}body.watch-map #watch-feed-return{display:block;position:fixed;top:12px;left:60px;z-index:3000;background:#15151c;color:#e8e4d8;padding:10px;border:1px solid #c9a84c;border-radius:6px}}
 .film-actions{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}.film-action{display:inline-flex;align-items:center;padding:4px 7px;min-height:26px;border:1px solid rgba(201,168,76,.28);border-radius:5px;color:var(--champagne);font:10px/1.2 var(--font-sans);text-decoration:none}.film-action:hover{background:rgba(201,168,76,.12)}.film-action:focus-visible{outline:2px solid var(--champagne);outline-offset:2px}.journey-film>.film-action{margin-top:4px}
+.oga-panel{padding:30px 22px 24px;position:relative;overflow:auto;color:var(--ivory)}.oga-close{position:absolute;right:14px;top:12px;background:none;border:0;color:var(--mist);font-size:25px;cursor:pointer}.oga-location{font:10px var(--font-mono);letter-spacing:.14em;color:var(--champagne);margin:0 0 10px}.oga-panel h2{font:600 29px/1.1 var(--font-serif);margin:0 0 12px}.oga-intro{font-size:14px;line-height:1.55;color:var(--cloud);margin:0 0 22px}.oga-film{margin-bottom:22px}.oga-thumbnail{display:block;position:relative;width:100%;aspect-ratio:16/9;padding:0;overflow:hidden;border:1px solid #4c4435;border-radius:10px;cursor:pointer;background:#15151c}.oga-thumbnail img{width:100%;height:100%;object-fit:cover}.oga-thumbnail span{position:absolute;inset:0;display:grid;place-items:center;font-size:28px;color:white;text-shadow:0 2px 12px #000;background:#0002}.oga-film-title{font-size:15px;line-height:1.35;margin:12px 0 5px}.oga-credit{font-size:12px;color:var(--mist);margin:0 0 15px}.oga-credit a{color:var(--champagne);text-decoration:none}.oga-watch{display:block;width:100%;border:0;border-radius:8px;background:var(--champagne);color:#15151c;padding:13px;font-size:16px;font-weight:700;cursor:pointer}.oga-reassurance{font-size:11px;line-height:1.5;color:var(--mist);margin:8px 0}.oga-youtube{font-size:11px;color:var(--mist)}.oga-character{display:flex;align-items:center;gap:8px;color:var(--champagne);font-size:12px;margin:18px 0}.oga-details{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:14px 0}.oga-panel summary{cursor:pointer;font-size:13px;color:var(--cloud)}.oga-details p{font-size:13px;line-height:1.65;color:var(--mist);margin-top:12px}.oga-coords{font-family:var(--font-mono);font-size:11px!important}.oga-nearby h3{font-size:14px;margin:20px 0 9px}.oga-nearby a{display:flex;justify-content:space-between;gap:12px;padding:9px 0;color:var(--cloud);font-size:12px;text-decoration:none}.oga-nearby small{white-space:nowrap;color:var(--mist);font-size:10px}.oga-nearby details{margin-top:8px}.oga-panel button:focus-visible,.oga-panel a:focus-visible,.oga-panel summary:focus-visible{outline:2px solid var(--champagne);outline-offset:3px}
+.oga-voices{font-size:11px;line-height:1.6;color:var(--mist);margin:0 0 16px}.oga-characteristics{display:flex;flex-wrap:wrap;gap:8px 14px}.oga-characteristics .oga-character{margin:8px 0;font-size:11px}.oga-save{margin-top:12px;background:none;border:1px solid var(--champagne);color:var(--champagne);padding:7px;border-radius:5px}.oga-film+.oga-film{border-top:1px solid var(--border);padding-top:18px}.mf-site-section .oga-panel{padding:18px 0}.oga-creator-jump{background:none;border:0;border-bottom:1px solid rgba(201,168,76,.35);padding:3px 0;color:var(--champagne);font:inherit;cursor:pointer}
+@media(max-width:950px){
+  /* ===== Mobile site bottom-sheet ===== */
+  #mobile-site-sheet{display:none;position:fixed;inset:0;z-index:5000}
+  #mobile-site-sheet.open{display:block}
+  .mss-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.55);animation:mssFadeIn .2s ease-out}
+  @keyframes mssFadeIn{from{opacity:0}to{opacity:1}}
+  .mss-card{
+    position:absolute;
+    left:0;right:0;bottom:0;
+    background:linear-gradient(180deg,rgba(22,22,29,.98) 0%,rgba(13,13,18,.99) 100%);
+    border-top:1px solid rgba(201,168,76,.25);
+    border-radius:18px 18px 0 0;
+    padding:10px 18px 20px;
+    max-height:85vh;
+    overflow-y:auto;
+    box-shadow:0 -10px 40px rgba(0,0,0,.5);
+    animation:mssSlideUp .3s cubic-bezier(.22,1,.36,1);
+    -webkit-overflow-scrolling:touch;
+  }
+  @keyframes mssSlideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+  .mss-grip{width:36px;height:4px;background:rgba(201,168,76,.3);border-radius:3px;margin:6px auto 12px}
+  .mss-close{
+    /* Push below Safari mobile chrome (URL/tab bar) via safe-area-inset.
+       In landscape, Safari covers the top ~50-70px; env() resolves to that height.
+       Falls back to 14px on browsers that don't expose the inset. */
+    position:absolute;
+    top:max(14px, calc(env(safe-area-inset-top, 0px) + 14px));
+    right:max(14px, calc(env(safe-area-inset-right, 0px) + 14px));
+    width:36px;height:36px;
+    background:rgba(30,30,40,.92);border:1px solid rgba(201,168,76,.4);
+    color:var(--ivory);border-radius:50%;font-size:20px;line-height:1;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;
+    padding:0;-webkit-tap-highlight-color:rgba(201,168,76,.25);touch-action:manipulation;
+    z-index:2;
+    box-shadow:0 4px 16px rgba(0,0,0,.6);
+  }
+  .mss-close:active{background:rgba(201,168,76,.3);transform:scale(0.95)}
+  .mss-cat{
+    display:inline-block;padding:3px 10px;border-radius:10px;
+    font-family:var(--font-mono);font-size:10px;font-weight:600;
+    letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px;
+  }
+  .mss-name{font-family:'Fraunces',serif;font-size:22px;font-weight:700;color:var(--ivory);line-height:1.15;letter-spacing:-.01em;margin-bottom:4px;padding-right:36px}
+  .mss-region{font-family:var(--font-mono);font-size:10px;color:var(--champagne);text-transform:uppercase;letter-spacing:.12em;margin-bottom:10px}
+  .mss-desc{font-size:13px;line-height:1.5;color:var(--cloud);margin-bottom:14px}
+  .mss-videos-label{font-family:var(--font-mono);font-size:10px;color:var(--mist);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
+  .mss-videos{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .mss-videos::-webkit-scrollbar{display:none}
+  .mss-vid{
+    flex-shrink:0;width:160px;
+    background:rgba(30,30,40,.6);
+    border:1px solid rgba(42,42,53,.5);
+    border-radius:10px;overflow:hidden;
+    padding:0;margin:0;text-align:left;cursor:pointer;
+    -webkit-appearance:none;appearance:none;
+    -webkit-tap-highlight-color:rgba(201,168,76,.25);touch-action:manipulation;
+    color:inherit;
+  }
+  .mss-vid *{pointer-events:none}
+  .mss-vid:active{transform:scale(.97);border-color:rgba(201,168,76,.4)}
+  .mss-vthumb{width:100%;height:90px;background-size:cover;background-position:center;background-color:rgba(13,13,18,.55)}
+  .mss-vtitle{padding:8px 10px;font-size:11px;color:var(--ivory);line-height:1.3;font-weight:500;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .mss-empty{padding:14px 0;font-size:12px;color:var(--mist);font-style:italic;text-align:center}
+
+
+}
 </style>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script defer src="/assets/js/analytics.js"></script>
@@ -26494,6 +26562,764 @@ function renderExploreNext(site) {
   return `<nav class="journey-next" aria-label="Keep exploring"><h3>Keep exploring</h3>${nearby.map(({site:s,distance}) => `<a href="/?site=${encodeURIComponent(s.n)}" onclick="event.preventDefault();selectSiteByName(decodeURIComponent(this.search.slice(6)))">${journeyEscape(s.n)} <span>${Math.round(distance)} km away</span></a>`).join('')}<a href="/creators/">Discover more creators →</a><a href="/creators/ancient-atlas.html">Ancient Atlas films →</a></nav>`;
 }
 
+const SITE_INTROS = {
+  "Derinkuyu Underground City": "Massive underground city extending 60m deep with 18 levels.",
+  "Kaymakli Underground City": "Connected to Derinkuyu by an 8km tunnel.",
+  "Özkonak Underground City": "Discovered in 1972 when a farmer noticed water disappearing into the ground.",
+  "Mazi Underground City": "One of the largest and oldest underground cities in Cappadocia.",
+  "Tatlarin Underground City": "Features uniquely well-preserved latrines and kitchen areas.",
+  "Gaziemir Underground City": "Located south of the main cluster.",
+  "Saratli Underground City": "Also called Muskovit.",
+  "Güzelyurt Underground City": "Ancient name Gelveri.",
+  "Nevşehir Underground City": "Discovered in 2014 during urban construction.",
+  "Acigöl Underground City": "Small underground shelter near a volcanic crater lake.",
+  "Özlüce Underground City": "Smaller underground complex connected to the broader Cappadocian network of carved shelters.",
+  "Sivasa (Gökçetoprak) Underground City": "Underground complex near Gülşehir with multiple levels and defense mechanisms.",
+  "Çardak Underground City": "Partially explored underground settlement southeast of Derinkuyu.",
+  "Göreme Open Air Museum": "UNESCO World Heritage complex of rock-cut churches, chapels, and monasteries with stunning Byzantine frescoes dating from the 10th-12th centuries.",
+  "Zelve Open Air Museum": "One of the oldest inhabited settlements in Cappadocia.",
+  "Selime Cathedral": "The largest rock-cut cathedral in Cappadocia, carved into a volcanic cliff face.",
+  "Uçhisar Castle": "The highest point in Cappadocia.",
+  "Ortahisar Castle": "Towering rock citadel with carved rooms and tunnels.",
+  "Ihlara Valley": "14km canyon with over 100 rock-cut churches and thousands of carved dwellings along the Melendiz River.",
+  "Göbekli Tepe": "Look closely at the animals carved into the great T-shaped pillars.",
+  "Karahan Tepe": "Sister site to Göbekli Tepe, discovered in 1997 with systematic excavation beginning in 2019.",
+  "Çatalhöyük": "One of the earliest urban settlements (7500-5700 BCE).",
+  "Hattusa": "Capital of the Hittite Empire (1600-1178 BCE).",
+  "Ephesus": "One of the greatest cities of the ancient world.",
+  "Troy (Hisarlik)": "Nine layers of settlement spanning 3000+ years, including Homer's legendary Troy.",
+  "Nemrut Dağı": "2,134m summit topped with colossal statues of gods and a pyramid tumulus built by Antiochus I of Commagene (62 BCE).",
+  "Ani": "Medieval Armenian capital on the Turkish-Armenian border.",
+  "Hierapolis": "Ancient thermal spa city built above the white calcium travertines of Pamukkale.",
+  "Perge": "One of the richest cities of ancient Pamphylia.",
+  "Myra": "Lycian rock-cut tombs carved into cliff faces resembling a miniature city of the dead.",
+  "Xanthos": "Ancient capital of Lycia.",
+  "Patara": "Birthplace of St.",
+  "Sagalassos": "Mountain city at 1,500m altitude in the Taurus range.",
+  "Aphrodisias": "Ancient center of Aphrodite worship and a renowned marble-sculpting school.",
+  "Sardis": "Capital of ancient Lydia where coinage was invented (~600 BCE).",
+  "Boncuklu Tarla": "Predating Göbekli Tepe by ~1,000 years.",
+  "Taş Tepeler (Stone Hills)": "Umbrella name for 12+ Neolithic sites near Göbekli Tepe including Karahan Tepe, Harbetsuvan, Sayburç.",
+  "Sayburç": "Discovered 2021.",
+  "Great Pyramid of Giza (Khufu)": "Last surviving Wonder of the Ancient World. 146m tall, 2.3 million blocks averaging 2.5 tons each.",
+  "Pyramid of Khafre": "Second largest pyramid at Giza.",
+  "Pyramid of Menkaure": "Smallest of the three main Giza pyramids.",
+  "Great Sphinx of Giza": "Largest monolith statue in the world, 73m long and 20m high.",
+  "Step Pyramid of Djoser": "The earliest colossal stone building in Egypt (~2670 BCE).",
+  "Bent Pyramid (Dahshur)": "Unique dual-angle profile: 54° lower section shifting to 43° upper.",
+  "Red Pyramid (Dahshur)": "Egypt's first successful true pyramid.",
+  "Black Pyramid (Dahshur)": "Mudbrick pyramid of Amenemhat III.",
+  "Pyramid of Meidum": "Three-stepped tower rising from rubble.",
+  "Abu Simbel": "Four colossal statues of Ramesses II guard this rock-cut temple.",
+  "Karnak Temple Complex": "The largest ancient religious complex ever built. 200+ acres of temples, pylons, and obelisks developed over 2,000 years.",
+  "Luxor Temple": "Temple of the living, connected to Karnak by a 3km avenue of sphinxes recently excavated.",
+  "Valley of the Kings": "63 known royal tombs cut deep into limestone cliffs, including Tutankhamun's intact tomb discovered in 1922.",
+  "Temple of Hatshepsut": "Dramatic colonnaded temple built into towering cliffs at Deir el-Bahari by Egypt's most successful female pharaoh (~1470 BCE).",
+  "Dendera Temple Complex": "Remarkably preserved Ptolemaic temple to Hathor.",
+  "Edfu Temple (Temple of Horus)": "Best-preserved ancient temple in Egypt.",
+  "Temple of Kom Ombo": "Unique double temple dedicated to both Sobek and Horus.",
+  "Philae Temple (Temple of Isis)": "Island temple relocated to Agilkia Island during the Aswan Dam project.",
+  "Abydos (Temple of Seti I)": "One of the most important archaeological sites in Egypt.",
+  "Colossi of Memnon": "Twin 18m statues of Amenhotep III weighing 720 tons each.",
+  "Unfinished Obelisk (Aswan)": "Would have been the largest obelisk ever: 42m tall, 1,168 tons.",
+  "Siwa Oracle Temple (Amun)": "Remote desert oracle consulted by Alexander the Great in 331 BCE, where he was proclaimed son of Amun-Ra.",
+  "Osireion (Abydos)": "Subterranean structure behind the Temple of Seti I using massive granite blocks in a style resembling much older construction.",
+  "Hawara Pyramid & Labyrinth": "Pyramid of Amenemhat III with the legendary Labyrinth, described by Herodotus as surpassing even the pyramids.",
+  "Nabta Playa": "Stone circle in the western desert aligned to summer solstice, dating to ~5000 BCE.",
+  "Serapeum of Saqqara": "Underground gallery of 24 massive granite sarcophagi, each weighing up to 70 tons with precision-machined lids.",
+  "Pyramid of Unas": "Smallest Old Kingdom pyramid at Saqqara but first to contain the Pyramid Texts: the oldest known religious writings in the world (~2350 BCE).",
+  "Saqqara Necropolis": "Vast burial ground spanning 3,000 years of Egyptian history.",
+  "Medinet Habu": "Mortuary temple of Ramesses III with vivid battle reliefs depicting victory over the Sea Peoples.",
+  "Machu Picchu": "Inca citadel at 2,430m in the Andes, built ~1450 CE.",
+  "Sacsayhuamán": "Look along the zigzag walls above Cusco and notice how the enormous stones meet.",
+  "Ollantaytambo": "Study the joints between six towering stones, then look across the valley toward their quarry.",
+  "Tiwanaku": "Pre-Inca city at 3,850m on the Altiplano near Lake Titicaca.",
+  "Puma Punku": "Part of the Tiwanaku complex.",
+  "Nazca Lines": "Hundreds of enormous geoglyphs etched into the desert, visible only from altitude.",
+  "Moray": "Descend through concentric terraces and see how this landscape changes with each level.",
+  "Pisac": "Major Inca site in the Sacred Valley of Peru, 30 km north of Cusco, occupying a 6 km mountain ridge above the Urubamba river at elevations of 3,000-3,500 meters.",
+  "Qenqo": "Massive limestone outcrop carved with zigzag channels, an amphitheater, and subterranean chambers.",
+  "Tambomachay": "Inca site of ritual water worship.",
+  "Chavín de Huántar": "Pre-Inca ceremonial center (900-200 BCE).",
+  "Chan Chan": "Largest adobe city in the world, capital of the Chimú Empire. 20 sq km of walled citadels, with elaborately decorated walls and sophisticated water management.",
+  "Caral": "Oldest known city in the Americas (~3000 BCE), contemporary with Egyptian pyramids.",
+  "Kuélap": "Chachapoyas fortress at 3,000m altitude predating the Inca.",
+  "Sillustani": "Pre-Inca funerary towers (chullpas) overlooking Lake Umayo near Puno.",
+  "Tipón": "Watch water move through the fountains, channels and terraces of an Inca estate.",
+  "Raqchi (Temple of Wiracocha)": "Massive temple with the tallest known Inca wall (12m high).",
+  "Choquequirao": "Sister city to Machu Picchu, accessible only by a two-day trek.",
+  "Gate of the Sun (Tiwanaku)": "Monolithic archway carved from a single block of andesite, featuring a central figure (Viracocha or sun god) surrounded by 48 winged attendants.",
+  "Huaca del Sol": "Largest pre-Columbian adobe structure in the Americas.",
+  "Huaca de la Luna": "Moche temple opposite Huaca del Sol with vivid polychrome murals of Ai Apaec (the Decapitator God) and scenes of ritual combat and sacrifice.",
+  "Líneas de Palpa": "Older and more complex than the Nazca Lines.",
+  "Stonehenge": "The world's most famous stone circle, built in stages from ~3000-2000 BCE.",
+  "Avebury": "Largest stone circle in the world by diameter (420m), enclosing a village.",
+  "Newgrange": "5,200-year-old passage tomb older than the pyramids.",
+  "Skara Brae": "Neolithic village on Orkney, occupied ~3100-2500 BCE.",
+  "Ring of Brodgar": "Neolithic henge and stone circle on Orkney. 27 of the original 60 stones still stand in a circle 104m across, surrounded by a rock-cut ditch.",
+  "Callanish Stones": "Cruciform stone setting on the Isle of Lewis, erected ~2900-2600 BCE.",
+  "Knowth": "Passage tomb in the Brú na Bóinne complex.",
+  "Dowth": "Third great passage tomb at Brú na Bóinne, aligned to winter solstice sunset.",
+  "Silbury Hill": "Largest artificial mound in Europe (40m high), built ~2400 BCE near Avebury.",
+  "West Kennet Long Barrow": "One of the largest Neolithic tombs in Britain (100m long).",
+  "Maeshowe": "Neolithic chambered cairn on Orkney.",
+  "Castlerigg Stone Circle": "One of the earliest stone circles in Britain (~3200 BCE), set in a natural amphitheater of Cumbrian mountains. 38 stones in an oval arrangement.",
+  "Carnac Stones": "Over 3,000 standing stones in parallel alignments stretching 4km across the Brittany countryside.",
+  "Gavrinis": "Island passage tomb in the Gulf of Morbihan with extraordinary carved stone surfaces.",
+  "Locmariaquer": "Home of the Grand Menhir Brisé: once the largest standing stone in Europe at 20m tall and 330 tons, now broken into four pieces.",
+  "Ġgantija Temples": "Megalithic temples on Gozo, Malta, dating to ~3600 BCE.",
+  "Ħaġar Qim": "Maltese megalithic temple (~3600-3200 BCE) on a clifftop above the sea.",
+  "Mnajdra": "Three megalithic temples aligned to equinox and solstice sunrises, functioning as a solar calendar.",
+  "Hypogeum of Ħal Saflieni": "Underground Neolithic temple/necropolis on three levels.",
+  "Knossos": "Bronze Age capital of Minoan Crete (~1900-1100 BCE).",
+  "Phaistos": "Second largest Minoan palace on Crete.",
+  "Mycenae": "Late Bronze Age citadel in the Argolid, Peloponnese, Greece.",
+  "Delphi": "Ancient Greeks considered this the center of the world (omphalos).",
+  "Epidaurus": "Ancient healing center of Asclepius with a 14,000-seat theater renowned for perfect acoustics.",
+  "Tiryns": "Mycenaean citadel with Cyclopean walls so massive the Greeks believed they were built by giants.",
+  "Baalbek (Heliopolis)": "Roman temple complex built on a platform of stones so massive they defy explanation.",
+  "Petra": "Nabataean capital carved into rose-red sandstone cliffs.",
+  "Ur": "Sumerian city-state with the Great Ziggurat (~2100 BCE).",
+  "Persepolis": "Ceremonial capital of the Achaemenid Empire (515-330 BCE).",
+  "Palmyra": "Oasis city that controlled Silk Road trade between Rome and Persia.",
+  "Jericho (Tell es-Sultan)": "Oldest continuously inhabited city on Earth, with fortification walls and a stone tower dating to ~8000 BCE. 10,000+ years of layered human occupation.",
+  "Jerash (Gerasa)": "One of the best-preserved Roman cities outside Italy.",
+  "Nimrud": "Assyrian capital (~880 BCE) with massive winged bull lamassu sculptures.",
+  "Hatra": "Fortified Parthian city that withstood Roman sieges.",
+  "Angkor Wat": "Largest religious monument ever built (162.6 hectares).",
+  "Angkor Thom": "Walled city enclosing 9 sq km, centered on the Bayon temple with its 216 massive smiling stone faces.",
+  "Borobudur": "World's largest Buddhist temple (9th century).",
+  "Sigiriya": "5th century fortress atop a 200m rock column in Sri Lanka.",
+  "Mohenjo-daro": "Indus Valley metropolis (~2500 BCE) with grid-planned streets, the Great Bath, advanced drainage, and standardized weights.",
+  "Harappa": "Co-capital of the Indus Valley Civilization alongside Mohenjo-daro.",
+  "Sanchi Stupa": "Oldest surviving Buddhist stupa, commissioned by Emperor Ashoka in the 3rd century BCE.",
+  "Hampi": "Ruins of the Vijayanagara Empire capital (14th-16th century).",
+  "Ajanta Caves": "30 Buddhist cave temples carved from a horseshoe-shaped cliff face (2nd century BCE to 6th century CE).",
+  "Ellora Caves": "34 caves spanning Buddhist, Hindu, and Jain traditions.",
+  "Konark Sun Temple": "13th century temple shaped as a massive stone chariot with 24 carved wheels and 7 horses.",
+  "Madain Saleh (Hegra)": "Second-largest city of the Nabataean Empire (after Petra), in AlUla, Saudi Arabia. 131 monumental tombs carved directly into sandstone mountains, c. 1st century BCE - 1st century CE.",
+  "Jiroft": "Bronze Age civilization (3rd millennium BCE) with distinctive chlorite vessels depicting mythological scenes.",
+  "Moai of Easter Island (Rapa Nui)": "Nearly 1,000 monolithic statues averaging 4m tall and 12.5 tons.",
+  "Nan Madol": "Artificial island city built on a coral reef off Pohnpei, Micronesia. 92 islands connected by canals, built from an estimated 750,000 tons of basalt columns.",
+  "Yonaguni Monument": "Submerged rock formation off Japan with apparent terraces, right angles, and carved features.",
+  "Osaka Castle": "Massive granite megaliths in the castle walls, the largest weighing ~130 tons (the 'Octopus Stone' / Takoishi).",
+  "Ishi-no-Hoden": "The 'Floating Stone' on the grounds of Ōshiko Jinja shrine in Takasago, Hyogo Prefecture (near Himeji).",
+  "Masuda no Iwafune": "The 'Stone Ship of Masuda' in Asuka, Nara.",
+  "Ishibutai Kofun": "7th-century megalithic burial chamber attributed to Soga no Umako.",
+  "Sakafune-ishi": "The 'Sake Boat Stone' of Asuka.",
+  "Daisen Kofun": "Japan's largest tomb and the centerpiece of the Mozu-Furuichi Kofun Group (UNESCO World Heritage).",
+  "Sannai-Maruyama": "Major Jomon-era settlement in Aomori, occupied 5500–4000 years ago.",
+  "Ōyu Stone Circles": "Two large Jomon stone circles in Akita (~4000 years old): Manno-Tai and Nonakado-Tai.",
+  "Mt. Kuromata": "The 'Pyramid of Japan' , a near-perfect pyramidal hill in Akita Prefecture, close to the Ōyu Stone Circles.",
+  "Oya Stone Quarry": "Vast hand-carved subterranean quarry in Tochigi Prefecture, now the Oya History Museum.",
+  "Gunung Padang": "Terraced andesite hill in West Java.",
+  "Terracotta Army": "8,000+ life-size terracotta warriors guarding the tomb of Qin Shi Huang (210 BCE).",
+  "Longyou Caves": "24 man-made caverns in China discovered in 1992, carved from siltstone.",
+  "Sanxingdui": "Mysterious Bronze Age site in Sichuan (1200-1000 BCE) with gold masks, bronze trees 4m tall, and artifacts unlike anything else in Chinese archaeology.",
+  "Yangshan Quarry": "Ming Dynasty quarry near Nanjing (commissioned by the Yongle Emperor, 1405).",
+  "Xi'an Pyramids": "Over 200 pyramidal earth mounds across Shaanxi Province, including the Great White Pyramid (sometimes claimed twice the size of Giza).",
+  "Huashan Grottoes": "36 hand-carved sandstone caverns near the Yellow River, similar in technique to Longyou Caves.",
+  "Guyaju Caves": "Largest cliff dwelling complex in China, ~50 miles northwest of Beijing. 117 caves and 350 chambers carved from solid granite across 25 acres.",
+  "Tomb of the General": "Stepped pyramid in Ji'an, Jilin Province.",
+  "Baigong Pipes": "Iron pipe-like structures embedded in rock formations on Mount Baigong, Qinghai Province.",
+  "Hejin City Fortress": "Cliff-top fortress in Shanxi Province, hidden by deep loess gorges and nearly invisible from below.",
+  "Guanlin Temple": "Temple complex near Luoyang in Henan Province, traditionally a memorial to the warlord Guan Yu.",
+  "Mamallapuram": "7th-8th century Pallava monolithic temples and granite-carved monuments on India's Coromandel Coast.",
+  "Vettuvan Koil": "Incomplete 8th-9th century rock-cut temple in Tamil Nadu, carved top-down from a single granite hill.",
+  "Kalavantin Durg": "Pinnacle fortress in Maharashtra with a stairway cut directly into vertical rock face, ascending to the summit.",
+  "Great Zimbabwe": "Medieval stone city (11th-15th century) in southern Africa.",
+  "Lalibela Rock-Hewn Churches": "11 medieval churches carved top-down from solid rock in Ethiopia.",
+  "Aksum Obelisks": "Giant stelae up to 33m tall carved from single granite blocks.",
+  "Meroe Pyramids": "Over 200 steep-sided pyramids built by the Kingdom of Kush (800 BCE - 350 CE).",
+  "Tassili n'Ajjer": "15,000+ rock paintings and engravings in the Sahara, some dating to 12,000 years ago.",
+  "Adam's Calendar": "Controversial stone circle in South Africa, claimed to be 75,000 years old by some researchers.",
+  "Teotihuacán": "City of the Gods with the Pyramid of the Sun (3rd largest pyramid on Earth) and Pyramid of the Moon along the Avenue of the Dead.",
+  "Chichén Itzá": "Maya-Toltec city with the Kukulkan Pyramid, which casts a serpent shadow during equinoxes.",
+  "Palenque": "Classic Maya city in the Chiapas jungle.",
+  "Monte Albán": "Zapotec capital atop a flattened mountaintop in Oaxaca.",
+  "Copán": "Maya city in Honduras renowned for its Hieroglyphic Stairway: the longest known Maya text with 2,200 glyphs recording the dynasty's history.",
+  "Tikal": "One of the largest Maya cities, with temples rising 70m above the jungle canopy.",
+  "Uxmal": "Puuc-style Maya city with the Pyramid of the Magician (unusual rounded edges) and the Governor's Palace, considered one of the finest examples of pre-Columbian architecture.",
+  "Tulum": "Walled Maya city perched on a cliff above the Caribbean Sea.",
+  "La Venta": "Olmec ceremonial center (900-400 BCE).",
+  "San Lorenzo Tenochtitlán": "Earliest Olmec center (1500-900 BCE) with 10 colossal heads.",
+  "El Mirador": "Preclassic Maya megacity in the Guatemalan jungle.",
+  "Calakmul": "Maya superpower rival to Tikal. 6,750+ structures across 70 sq km of jungle.",
+  "Cholula": "Great Pyramid of Cholula: the largest pyramid by volume in the world (4.45 million cubic meters), now hidden under a hill with a church on top.",
+  "Mitla": "Zapotec/Mixtec city known as the 'Place of the Dead.' Features elaborate geometric stone mosaics assembled from thousands of precisely cut stone pieces without mortar.",
+  "Barnenez": "One of the oldest man-made structures on Earth (~4800 BCE).",
+  "Bru na Boinne (Boyne Valley)": "UNESCO complex containing Newgrange, Knowth, and Dowth.",
+  "Tarxien Temples": "Maltese temple complex (~3150 BCE) with elaborate stone carvings including a massive 'Fat Lady' statue.",
+  "Sardinia Nuraghi (Su Nuraxi)": "Over 7,000 nuraghi (stone towers) dot Sardinia.",
+  "Externsteine": "Dramatic sandstone rock pillars in Germany with carved chambers, relief sculptures, and a chapel.",
+  "Bagan": "Over 2,200 surviving temples and pagodas across a 104 sq km plain in Myanmar.",
+  "Prambanan": "Largest Hindu temple complex in Southeast Asia (9th century). 240 temples with the central Shiva temple rising 47m.",
+  "My Son Sanctuary": "Champa kingdom Hindu temple complex (4th-14th century) in central Vietnam.",
+  "Derinkuyu-Kaymakli Tunnel": "8km tunnel connecting the two largest underground cities.",
+  "Uchisar Fairy Chimneys": "Iconic volcanic rock formations with carved rooms and passages.",
+  "Pasargadae": "First capital of the Achaemenid Empire and site of the Tomb of Cyrus the Great.",
+  "Jiahu": "Neolithic Chinese site (7000-5700 BCE).",
+  "Dolmen of Menga": "One of the largest megalithic structures in Europe.",
+  "Cairn of Barclodiad y Gawres": "Neolithic passage tomb on Anglesey, Wales.",
+  "Bryn Celli Ddu": "Neolithic passage tomb on Anglesey aligned to summer solstice sunrise.",
+  "Loughcrew Cairns": "Complex of 30+ passage tombs on hilltops in County Meath, Ireland.",
+  "Rujm el-Hiri (Gilgal Refaim)": "Massive stone circles in the Golan Heights visible only from above, dating to ~3000 BCE.",
+  "Bete Medhane Alem": "The largest monolithic church in the world, supported by 36 exterior and 36 interior columns, all carved from a single block of pink volcanic tuff during the reign of King Lalibela in the 12th-13th century.",
+  "Bete Maryam": "Possibly the oldest of the Lalibela churches and the most decorated, with frescoed ceilings and intricate interlocking arches dedicated to the Virgin Mary.",
+  "Bete Golgotha": "Contains the tomb traditionally believed to hold King Lalibela himself, alongside seven life-sized stone reliefs of the saints carved into the walls.",
+  "Bete Mikael": "Hidden chapel adjoining Bete Golgotha, considered one of the most sacred spots in the entire Lalibela complex.",
+  "Bete Denagel": "Modest chapel said to commemorate Roman virgin nuns martyred during the 4th-century reign of Julian the Apostate.",
+  "Bete Giyorgis (St. George)": "The iconic cross-shaped monolith, carved 12 meters down into the bedrock and visible from above as a perfect Greek cross.",
+  "Bete Amanuel": "The only freestanding monolithic church among the Lalibela complex.",
+  "Bete Merkorios": "Originally a courthouse before conversion to a church, with worn floors stained from generations of devotional foot traffic.",
+  "Bete Abba Libanos": "Tradition holds it was carved in a single night by King Lalibela's wife Meskel Kibra with the assistance of angels.",
+  "Bete Gabriel-Rufael": "Twin sanctuary connected by an underground tunnel, possibly originally a royal palace before its conversion to a church.",
+  "Bete Lehem": "Small chapel where the holy bread (Eucharist) was traditionally baked for the entire Lalibela complex.",
+  "Yemrehana Krestos": "12th-century church built (not carved) inside a vast cave near Lalibela, using alternating layers of wood and white gypsum stone.",
+  "Abuna Yemata Guh": "Carved into a sheer sandstone pinnacle requiring a 250-meter rope-and-handhold climb to reach.",
+  "Mikael Imba": "Monolithic church carved into the slopes of Mount Imba, accessed by a steep climb.",
+  "Wukro Cherkos": "Semi-monolithic church from the late 6th century with a cruciform plan, surviving original murals depicting the four evangelists, and a sunken courtyard carved into volcanic rock.",
+  "Abreha we Atsbeha": "Named after the 4th-century twin kings who introduced Christianity to Aksum.",
+  "Maryam Korkor": "Multi-chamber sanctuary carved into the Gheralta cliffs, with painted ceiling and pilgrimage paths to the smaller adjacent Daniel Korkor church.",
+  "Tall el-Hammam": "Bronze Age city in the Jordan Valley, possibly the biblical Sodom.",
+  "Barabar Caves": "India's oldest surviving rock-cut caves, commissioned by Emperor Ashoka in the 3rd century BCE for the Ajivika ascetic sect.",
+  "Abu Hureyra": "Neolithic settlement in northern Syria with destruction layer dated to ~12,800 BP , coincident with the Younger Dryas onset.",
+  "Naupa Huaca": "Small but precisely-carved rock-cut shrine in the Sacred Valley, Peru.",
+  "Vat Phou": "Pre-Angkorian Khmer temple complex in southern Laos, dating to the 5th century CE.",
+  "El Tajín": "Classic Veracruz ceremonial center, ~600-1200 CE.",
+  "Sambor Prei Kuk": "Pre-Angkorian Khmer capital of Chenla (~600-700 CE), 200+ years older than Angkor Wat.",
+  "Ta Keo": "Cambodia's 'Lightning Pyramid' , a five-tier pyramid built from an unusually hard, near-white sandstone found nowhere else in the Khmer corpus.",
+  "Koh Ker": "20,000-acre megalithic complex 100 km NE of Angkor, anchored by a solid stone seven-tier pyramid (Prasat Thom).",
+  "Ta Prohm": "'Tomb Raider Temple' inside the Angkor complex (~1186 CE), famous for the strangler figs and silk-cotton trees that have fused with its walls.",
+  "Beng Mealea": "Massive 12th-century Khmer temple 40 km east of Angkor, contemporary in style to Angkor Wat but left largely unrestored and consumed by jungle.",
+  "Preah Khan of Kompong Svay": "Largest single temple enclosure ever built by the Khmer (5 km × 5 km), 100 km east of Angkor along the ancient royal road.",
+  "Chalcatzingo": "Olmec-influenced ceremonial center in Morelos, Mexico (~1500-500 BCE).",
+  "Chankillo": "World's oldest known solar astronomical observatory.",
+  "Casma Valley Geoglyphs": "Pre-Inca geoglyphs and ground figures scattered across the Casma Valley, contemporaneous with the Casma-Sechin culture (3500-200 BCE).",
+  "Lima Geoglyphs": "Lesser-known pre-Columbian geoglyphs across the desert pampas south of Lima, including the Lurín valley.",
+  "Pikillaqta": "Largest Wari administrative center in southern Peru, ~600-1100 CE.",
+  "Mahabalipuram (Shore Temple)": "7th-century Pallava coastal complex south of Chennai.",
+  "Khajuraho Temples": "Chandela-dynasty temple complex (~950-1050 CE) in Madhya Pradesh.",
+  "Brihadeeswarar Temple (Thanjavur)": "The 'Big Temple' of the Chola dynasty (~1010 CE). 66-meter vimana topped by an 80-ton single granite capstone hauled into place without explanation.",
+  "Rani ki Vav (Queen's Stepwell)": "Subterranean inverted temple in Patan, Gujarat, built ~1063 CE by Queen Udayamati of the Solanki dynasty in memory of her husband Bhima I.",
+  "Lepakshi (Veerabhadra Temple)": "16th-century Vijayanagara temple in Andhra Pradesh, famous for the 'hanging pillar' that doesn't touch the ground, the world's largest monolithic Nandi bull (granite, single block), and ceiling frescoes covering 14m × 4m.",
+  "Elephanta Caves": "Rock-cut temple complex on Elephanta Island near Mumbai (~600 CE).",
+  "Bakong": "First state temple of the Khmer Empire (~881 CE), in the Roluos group near Siem Reap.",
+  "Banteay Srei": "'Citadel of the Women' (967 CE), 25 km northeast of Angkor.",
+  "Preah Ko": "'Sacred Bull' temple (879 CE), the earliest in the Roluos group.",
+  "Sukhothai": "First capital of the unified Thai kingdom (~1238-1438 CE).",
+  "My Son": "Cham religious center in central Vietnam, active from the 4th to 13th centuries CE.",
+  "Plain of Jars": "Hundreds of massive stone jars, some 3 meters tall and 14 tons, scattered across the Xiangkhoang Plateau in Laos.",
+  "Si Thep (Khao Klang Nok)": "Dvaravati-period (~600-900 CE) twin-walled city in Phetchabun, Thailand.",
+  "Abu Rawash": "Pyramid of Djedefre, son and successor of Khufu.",
+  "Abu Ghorab": "5th Dynasty sun temple of Niuserre (~2440 BCE), one of only two surviving sun temples.",
+  "Tell el Roba (Mendes)": "Ancient capital Per-Banebdjedet in the Nile Delta, occupied from Predynastic times (~4000 BCE) through the Late Period.",
+  "Hierakonpolis (Nekhen)": "Predynastic Egyptian capital (~3500-3100 BCE).",
+  "Naqada": "Predynastic settlement that named the Naqada culture (~4400-3000 BCE), which preceded and seeded pharaonic Egypt.",
+  "Zawyet el-Aryan": "Two unfinished pyramids of the 3rd or 4th Dynasty: the Layer Pyramid (Khaba) and the Unfinished Pyramid (sometimes attributed to Baka).",
+  "Al Rajajil Standing Stones": "'The Standing Men of Saudi Arabia.' Over 50 clusters of standing sandstone slabs in the northern Saudi desert, some over 3m tall, dated to ~4,000 BCE.",
+  "Senegambian Stone Circles": "Roughly 1,000 stone circles stretching 350 km along the Gambia River across Senegal and the Gambia.",
+  "Madghacen (Algerian Pyramids)": "Numidian royal mausoleum in eastern Algeria, ~3rd century BCE.",
+  "Bimini Road": "Underwater rock formation off North Bimini in the Bahamas, ~6m deep.",
+  "Cumbe Mayo": "Pre-Inca stone-cut aqueduct in the highlands above Cajamarca, northern Peru, at approximately 3,500 meters elevation.",
+  "Cahuachi Pyramids": "Adobe pyramid complex of the Nazca culture (~200 BCE – 600 CE), 28 km southwest of the city of Nazca.",
+  "Aramu Muru": "Carved doorway-shaped niche in a red sandstone outcrop on the Hayu Marca plateau near Juli, on the Peruvian shore of Lake Titicaca.",
+  "Samaipata (El Fuerte)": "Pre-Inca rock-cut megalithic complex on a sandstone outcrop in eastern Bolivia.",
+  "Templo Mayor (Tenochtitlan)": "Main temple of the Aztec capital, in present-day central Mexico City.",
+  "San Agustín Archaeological Park": "Largest concentration of pre-Columbian megalithic statuary in South America.",
+  "Leshan Giant Buddha": "71m-tall stone Buddha carved into the cliff at the confluence of three rivers in Sichuan, China.",
+  "Bada Valley Megaliths": "Hundreds of anthropomorphic megalithic statues scattered across the Bada, Besoa, and Napu Valleys of central Sulawesi, Indonesia.",
+  "Ganghwa Dolmens": "Part of the Korean dolmen corpus, one of the largest in the world: roughly 35,000 dolmens across the peninsula.",
+  "Tiger Cave (Saluvankuppam)": "Pallava-era rock-cut shrine on the Tamil Nadu coast, ~700 CE.",
+  "Bhaja Caves": "22 rock-cut Buddhist caves in the Western Ghats of Maharashtra, India, ~200 BCE.",
+  "Willong Khullen Megaliths": "Field of over 100 standing stones near Willong village in Manipur, northeast India.",
+  "Alatri Acropolis": "Cyclopean polygonal megalithic walls in central Italy, southeast of Rome.",
+  "Alba Fucens": "Roman colony founded 303 BCE on top of a much older polygonal megalithic citadel in the Abruzzo highlands.",
+  "Segni (Signia)": "Hilltop town in Lazio, Italy, with cyclopean polygonal walls comparable to Alatri's.",
+  "Cosa": "Follow the polygonal walls beneath a Roman hilltop town on the Tuscan coast.",
+  "Pyramid of Bomarzo": "A large peperino boulder carved with stairways and platforms in the woods near Bomarzo, within Soriano nel Cimino.",
+  "Filitosa (Corsica)": "Megalithic complex on the southern French island of Corsica, occupied from ~3300 BCE.",
+  "Daorson": "Cyclopean polygonal stone walls in southern Bosnia and Herzegovina, dated to the 4th–1st century BCE.",
+  "Thracian Megaliths (Buzovgrad)": "Bronze Age megalithic complex in central Bulgaria, including the Buzovgrad menhir and the carved 'Magura Dolmen.' Among ~750 documented Thracian megalithic structures, mostly dolmens, dated 18th–6th century BCE.",
+  "Arcadian Gate (Messene)": "Monumental gate of ancient Messene in the Peloponnese, built ~369 BCE.",
+  "Nekromanteion of Acheron": "'Oracle of the Dead' in Epirus, northwestern Greece.",
+  "Pnyx": "Open-air assembly ground in Athens where the citizens of the ancient democracy met to vote on civic matters from the 6th century BCE onward.",
+  "Panoias Sanctuary": "Pre-Roman and Roman rock-cut religious sanctuary in northern Portugal.",
+  "Hosn Suleiman": "Massive Phoenician / Roman-era temple complex in the Syrian mountains north of Tartus.",
+  "Naqsh-e Rustam": "Achaemenid rock-cut royal necropolis 12 km northwest of Persepolis, Iran.",
+  "Karahunj (Zorats Karer)": "'Armenian Stonehenge' in southern Armenia. 223 standing basalt stones, many with bored holes pointing at specific stars.",
+  "Vishap Stones": "'Dragon stones' of the Armenian highlands: tall basalt menhirs carved as stylized fish or bull-horn forms, often near water sources at altitudes above 2,000m.",
+  "Morongo Uta (Rapa Iti)": "Polynesian fortified hilltop settlement on Rapa Iti in French Polynesia.",
+  "Ha'amonga 'a Maui (Tonga Trilithon)": "Polynesian trilithon on the island of Tongatapu, Tonga.",
+  "Dolmens of the North Caucasus": "Bronze Age megalithic tomb complex spanning the Krasnodar and Adygea regions near the Black Sea.",
+  "Arkaim": "Sintashta-culture fortified settlement in the Southern Urals, dated to 2000-1700 BCE.",
+  "Khara-Hora Shaft": "A roughly 100-meter vertical shaft in the Khanty-Mansi region of Russia's Far East.",
+  "Chusovo Wall": "A polygonal stonework retaining wall ~85 meters long and up to 4 meters high along the Chusovaya River in the Middle Urals (Sverdlovsk Oblast).",
+  "Spean Praptos (Kampong Kdei Bridge)": "12th-century corbel-arch bridge spanning the Chikreng River in Cambodia's Siem Reap Province, roughly 65 km east of Angkor. 87 meters long, 30 feet wide, supported by 21 piers spaced to slow floodwater while restricting passage of…",
+  "Kbal Spean (Valley of a Thousand Lingams)": "Riverbed of carved sandstone in the Phnom Kulen mountains north of Angkor, where over a thousand Shiva lingams and yonis are cut directly into the living bedrock of the Stung Kbal Spean.",
+  "Phnom Bok": "Late-9th-century hilltop temple at 235 meters above the Angkor plain, built by Yasovarman I around 900 CE atop a 750-foot sandstone hill.",
+  "Tarawasi": "Megalithic ceremonial complex 70 km west of Cusco in Limatambo, Anta Province, at 2,700 m elevation along the ancient Inca road system.",
+  "Meydan Kalesi": "Cliff-edge megalithic complex along Turkey's southern coast in Mersin Province, near Silifke.",
+  "Syedra": "Hilltop city above the Mediterranean between Alanya and Gazipasa, settled in the 7th century BCE and abandoned in the 13th century CE, its upper town 400 m above its own harbour.",
+  "Alaca Höyük": "Hattian and Hittite site in central Anatolia, centered on the Spring of Arinna (still flowing).",
+  "Gümüşler Rock-Cut Monastery": "Top-down rock-cut Byzantine monastery complex in Niğde Province, carved into a single mass of volcanic tuff.",
+  "St. Mercurius Underground City": "Underground complex in the Cappadocia region associated with the early Christian veneration of St.",
+  "Kırkgöz Underground City": "Underground city in the Cappadocia region whose name (\"forty eyes\") refers to the multiple ventilation and access shafts cut through the complex.",
+  "Ağırnas Underground City": "Multi-level underground complex in Kayseri Province, in the village of Ağırnas , the birthplace of the Ottoman master architect Mimar Sinan.",
+  "Aydıntepe Underground City": "Underground city in Bayburt Province in northeastern Turkey, geographically separated from the main Cappadocia network.",
+  "Ersele Underground City": "Massive underground complex near Ozancık village in Ortaköy district, Aksaray Province, also referred to locally as Ozancık Underground City.",
+  "Dara Ancient City": "Late Roman / Byzantine frontier city in Mardin Province, southeastern Turkey, in ancient Mesopotamia.",
+  "Bazda Caves": "Ancient rock-cut quarry and cave system in Şanlıurfa Province near Harran, in the cradle of early Mesopotamian civilization.",
+  "Dulkadirli Underground City": "Underground city in Kırşehir Province featuring an extensive network of tunnels, chambers, and ventilation shafts.",
+  "Manazan Caves & Taşkale Granaries": "Two adjacent rock-cut complexes in Karaman Province, in central southern Turkey.",
+  "Matiate (Midyat) Underground City": "Massive underground city discovered in 2020 beneath the modern town of Midyat in Mardin Province.",
+  "Mucur Underground City": "Underground complex in Kırşehir Province at the edge of the broader Cappadocian underground network.",
+  "Höyük Underground City": "Underground city in Konya Province, geographically distinct from the primary Cappadocian network.",
+  "Vetulonia": "Etruscan cyclopean-wall city in Tuscany, on a hill above Castiglione della Pescaia.",
+  "Rusellae": "Etruscan and Roman city near Grosseto.",
+  "Orbetello": "Cyclopean-walled coastal site on the Tyrrhenian sea, where portions of the wall descend below the current waterline.",
+  "Cube of Zoroaster (Ka'bah-ye Zartosht)": "Square tower at Naqsh-e Rustam, facing the rock-cut tomb of Darius I.",
+  "Tall-e Takht (Cyclopean Wall of Pasargadae)": "Massive cyclopean platform at Pasargadae, just north of the Tomb of Cyrus.",
+  "Tomb of Cyrus the Great": "Stepped stone monument at Pasargadae, the burial place of Cyrus II the Great.",
+  "Zendan-e Soleyman (Tomb of Cambyses I?)": "Square tower at Pasargadae, one kilometre from the Tomb of Cyrus and of nearly identical design to the Cube of Zoroaster 37 km southwest at Naqsh-e Rustam.",
+  "Qadamgah": "Rock-cut monument complex in West Azerbaijan Province near Maku, northwestern Iran.",
+  "Gur Dokthar (Daughter's Tomb)": "Stepped stone monument in the Bushehr region of southwestern Iran, of similar design to the Tomb of Cyrus at Pasargadae but smaller.",
+  "Bayon Temple": "Buddhist temple at the center of Angkor Thom, built by Jayavarman VII in the late 12th/early 13th century.",
+  "Preah Khan (Angkor)": "Major late-12th-century Buddhist temple complex at Angkor, built by Jayavarman VII as a monastery and university.",
+  "Srah Srang": "Royal bathing pool 700m × 350m at Angkor, dating to mid-10th century with later modifications under Jayavarman VII.",
+  "Banteay Kdei": "Buddhist temple at Angkor built in the late 12th to early 13th century under Jayavarman VII.",
+  "West Baray": "Massive Angkor-era reservoir, approximately 8 km × 2.1 km, the largest hydraulic structure of the ancient world.",
+  "West Mebon": "Hindu temple on an artificial island at the center of the West Baray.",
+  "East Baray": "Now-dry Angkor-era reservoir approximately 7.5 km × 1.8 km, constructed in the late 9th century by Yasovarman I.",
+  "East Mebon": "10th-century Hindu temple dedicated to Shiva, built by Rajendravarman II in 952 CE on what was then an island in the East Baray.",
+  "Neak Poan (Jayatataka Baray)": "Buddhist temple on an artificial island in the center of the Jayatataka Baray at Angkor, built by Jayavarman VII in the late 12th century.",
+  "Bat Chum": "Small mid-10th-century Buddhist temple at Angkor with three brick shrines on a common platform.",
+  "Veal Phtei": "Small Angkor-era temple of which little official scholarship remains.",
+  "Kravan": "Prasat Kravan: five-shrine brick temple at Angkor, completed 921 CE.",
+  "Chaw Srei Vibol": "Hilltop temple complex 30 km east of Angkor on the Wat Trak hill, with three terraced enclosures climbing the slope.",
+  "Banteay Prei (Angkor)": "Small Bayon-style temple at Angkor, late 12th century.",
+  "Neam Rup (Pleasant Temple)": "Tiny temple at Angkor whose astronomical alignments and proportions seem to require disproportionate effort relative to its modest size.",
+  "Phnom Chisor": "11th-century hilltop Hindu temple in Takeo Province, southern Cambodia, dedicated to Shiva.",
+  "Banteay Chhmar": "Massive late-12th-century Buddhist temple complex in remote north-west Cambodia, built by Jayavarman VII.",
+  "Banteay Toap": "Khmer-era fortified temple in north-west Cambodia, traditionally associated with Banteay Chhmar's military function.",
+  "Banteay Prei Nokor": "Black-sandstone temple complex in Tboung Khmum Province, eastern Cambodia.",
+  "Ratu Boko": "Hilltop archaeological complex south of Prambanan in Central Java, dating to roughly the 8th century.",
+  "Sambisari": "9th-century Hindu temple in Yogyakarta sitting 6.5 metres below the surrounding ground level.",
+  "Sewu Temple": "8th-century Mahayana Buddhist temple complex in Central Java, the second-largest in Indonesia after Borobudur. 249 temples arranged in a mandala.",
+  "Plaosan": "Twin Mahayana Buddhist temples near Prambanan, 9th century, possibly commissioned by King Rakai Pikatan and Queen Pramodawardhani as symbols of religious harmony between their families' Hindu and Buddhist traditions.",
+  "Kalasan": "9th-century Buddhist temple in Central Java dedicated to the goddess Tara, the oldest Buddhist temple on the Prambanan plain.",
+  "Mendut": "Late-8th- to early-9th-century Buddhist temple near Borobudur.",
+  "Pawon": "Small Buddhist temple between Borobudur and Mendut, completing the three-temple axial alignment.",
+  "Ijo": "9th-century Hindu temple at the highest elevation in the Prambanan plain region.",
+  "Sojiwan": "9th-century Buddhist temple near Prambanan, recently restored.",
+  "Banyunibo": "9th-century Buddhist temple with distinctive single-chamber design and elaborate antefix decoration.",
+  "Barong": "Hilltop temple south of Prambanan.",
+  "Bubrah": "Small Buddhist temple in the Prambanan plain, possibly serving as a satellite to Sewu.",
+  "Lumbung": "Buddhist temple named 'rice barn' due to local interpretation.",
+  "Sari": "9th-century Buddhist monastery near Kalasan.",
+  "Kedulan": "Hindu temple in Yogyakarta found buried under approximately 7m of volcanic ash.",
+  "Tampaksiring (Gunung Kawi)": "11th-century rock-cut temple complex in Bali, with 10 large candi (shrine niches) carved directly into the cliffs of the Pakerisan river valley.",
+  "Pura Besakih": "The 'Mother Temple' of Bali, on the slopes of Mount Agung.",
+  "Pura Lempuyang Luhur": "Sacred Hindu temple in eastern Bali, one of the six holiest in Bali.",
+  "Sumba Megalithic Tombs": "Living megalithic tradition on Sumba island in eastern Indonesia.",
+  "Sumbawa Megaliths": "Multiple megalithic sites on Sumbawa island including Ai Renung (the 'Phantom Five' carved sarcophagi-like blocks) and Raboran.",
+  "Toraja Rock-Cut Burials": "Living rock-cut burial tradition in the Toraja highlands of South Sulawesi.",
+  "Nias Island Megaliths": "Monolithic stone tables, seats, and tall standing stones in traditional Nias villages in western Sumatra.",
+  "Maliabad Fort": "Massive fortified complex in the Karnataka region of central India near Raichur, with cyclopean polygonal walls that stretch approximately 5 km / 3.5 miles.",
+  "Debra Damo Monastery": "6th-century Aksumite-era monastery on a sheer-sided plateau (amba) in northern Tigray.",
+  "Daniel Korkor Rock-Cut Church": "Rock-hewn church carved high into the Gheralta cliffs of Tigray, adjacent to Maryam Korkor.",
+  "Abba Yohani Rock-Cut Church": "Cliff-face rock-hewn church in Tembien district of Tigray.",
+  "Geneta Mariam Monolithic Church": "13th-century monolithic rock-cut church in Lasta, Amhara region, attributed to King Yekuno Amlak.",
+  "Nazugn Mariam Monolithic Church": "Monolithic rock-hewn church in the Amhara region, related stylistically to the Lalibela complex.",
+  "Adadi Maryam Monolithic Church": "Rock-hewn church 60 km south of Addis Ababa, the southernmost monolithic church in Ethiopia.",
+  "Washa Mikael Rock-Cut Church": "Cave church carved into a rock outcrop on Yeka Mountain on the edge of Addis Ababa.",
+  "Ambager Church Complex": "Cluster of rock-cut churches in the Amhara region near the Lalibela tradition.",
+  "Medhane Alem Adi Kasho": "Rock-hewn church at Adi Kasho in Tigray's Gheralta cluster (distinct from the famous Bete Medhane Alem at Lalibela).",
+  "Kailasa Temple (Ellora Cave 16)": "The largest monolithic rock-cut structure in the world, carved top-down from a single mass of basalt at Ellora.",
+  "Padmanabhaswamy Temple": "Massive Hindu temple in Thiruvananthapuram (Kerala) dedicated to Vishnu in his reclining form.",
+  "Aurangabad Caves": "Cluster of 12 Buddhist rock-cut caves on a hillside in Maharashtra, near Aurangabad city.",
+  "Hoysaleshwara Temple": "12th-century Shiva temple at Halebidu, Karnataka, built by the Hoysala Empire.",
+  "Chennakeshava Temple (Belur)": "12th-century Hoysala temple at Belur, Karnataka, dedicated to Vishnu.",
+  "Sahasralinga (Shilmala River)": "Site on the Shalmala riverbed in Sirsi, Karnataka, where over a thousand Shiva lingas and yonis are carved directly into the bedrock.",
+  "Pitalkhora Caves": "14 rock-cut Buddhist caves in Maharashtra, predating the Ajanta Caves.",
+  "Naneghat": "Ancient mountain pass cut through the Western Ghats in Maharashtra, used as a trade route by the Satavahanas (~200 BCE).",
+  "Dharmrajeshwar Temple": "Top-down rock-cut monolithic temple in Mandsaur district, Madhya Pradesh, carved from a single rock outcrop in a manner directly comparable to Kailasa Temple at Ellora and the Lalibela churches in Ethiopia.",
+  "Mogao Grottoes": "UNESCO-listed Buddhist cave complex near Dunhuang, Gansu. 735 caves carved into a 1.6 km cliff face along the Silk Road, with murals covering 45,000 square meters of wall surface and over 2,400 painted clay sculptures.",
+  "Longmen Grottoes": "Cliff-face Buddhist cave complex outside Luoyang, Henan, carved into limestone over the Yi River.",
+  "Yungang Grottoes": "Buddhist cave complex outside Datong, Shanxi, with 252 caves carved into sandstone cliffs during the Northern Wei dynasty (5th-6th c.",
+  "Bingling Temple Grottoes": "Buddhist cave complex in Gansu, accessible only by boat across the Liujiaxia Reservoir. 183 caves and 694 statues across multiple cliffs.",
+  "Maijishan Grottoes": "Buddhist cave complex on a mountain shaped like a wheat-stack in Tianshui, Gansu. 194 caves with 7,200+ sculptures.",
+  "Dazu Rock Carvings": "Cliff-face Buddhist, Taoist, and Confucian carvings outside Chongqing. 50,000+ statues across 75 sites, mostly carved 9th-13th centuries CE under the Song dynasty.",
+  "Qin Shi Huang Mausoleum": "Tomb complex of China's first emperor, Qin Shi Huang (210 BCE), near Xi'an.",
+  "Maoling Mausoleum (Great White Pyramid)": "Tomb of Emperor Wu of Han (139-87 BCE) near Xianyang, Shaanxi.",
+  "Xuankong Temple (Hanging Temple)": "Buddhist-Taoist-Confucian temple built into a cliff face in Shanxi, 75 meters above the ground.",
+  "Tianlong Shan Grottoes": "Buddhist cave complex in Taiyuan, Shanxi. 25 caves carved during the Eastern Wei, Northern Qi, Sui, and Tang dynasties (6th-8th c.",
+  "Xumishan Grottoes": "Buddhist cave complex in Guyuan, Ningxia, with 162 caves carved into red sandstone.",
+  "Mengshan Giant Buddha": "Massive seated Buddha statue carved into Mount Meng outside Taiyuan, Shanxi.",
+  "Tiantishan Grottoes": "Buddhist cave complex on Heavenly Stairs Mountain (Tiantishan) near Wuwei, Gansu.",
+  "Matisi Grottoes": "Multi-level Buddhist cave complex in Zhangye, Gansu, carved into a red sandstone mountain.",
+  "Wushan Grottoes (Lashao Temple)": "Buddhist cave complex in Wushan County, Gansu.",
+  "Shaohao Mausoleum": "Pyramidal mausoleum near Qufu, Shandong, attributed to the mythological emperor Shaohao (c. 2600 BCE in traditional chronology).",
+  "Elephant Mountain Grottoes": "Buddhist cave complex on Elephant Mountain in Sichuan.",
+  "Yuji Mountain Buddha": "Giant seated Buddha statue carved into Yuji Mountain in Shaanxi.",
+  "Rongxian Giant Buddha": "36-meter-tall seated Buddha statue carved into a cliff face in Rongxian, Sichuan.",
+  "Keyan Big Buddha": "Stone Buddha carved into a granite cliff at Keyan, Shaoxing, Zhejiang.",
+  "Goguryeo Tombs (Jilin)": "Goguryeo Kingdom royal tombs in Ji'an, Jilin Province, near the North Korean border.",
+  "Zhangye Dafo Temple": "Buddhist temple in Zhangye, Gansu, founded 1098 CE.",
+  "Bamiyan": "Sandstone cliffs in central Afghanistan holding the niches of two monumental standing Buddhas (35m and 53m) carved into the cliff in the 6th century CE.",
+  "Takht-e Rustam (Afghanistan)": "Top-down rock-cut Buddhist stupa carved from a single bedrock outcrop in Samangan Province, northern Afghanistan.",
+  "Pyramid of the Sun (Teotihuacan)": "The third-largest pyramid in the world by base area, at the heart of Teotihuacan, Mexico. 65 m tall, 220 m base, oriented to the setting sun on the day the sun passes its zenith at Teotihuacan's latitude.",
+  "Pyramid of the Moon (Teotihuacan)": "Second-largest pyramid at Teotihuacan, aligned with the symmetry axis of the city and the contour of the sacred Mount Tlaloc behind it. 43 m tall.",
+  "Pyramid of the Feathered Serpent (Teotihuacan)": "Pyramid at the south of the Ciudadela complex at Teotihuacan, decorated with massive sculpted stone serpent heads and rain god (Tlaloc) panels.",
+  "Chichen Itza": "Maya-Toltec city in Yucatán with multiple iconic structures: the Pyramid of Kukulkan (El Castillo), the Great Ball Court, the Temple of the Warriors, the Observatory (El Caracol), the Sacred Cenote, and the Ossuary Pyramid.",
+  "Coba": "Maya city in the Yucatán jungle with the tallest pyramid in the northern Maya lowlands (Nohoch Mul, 42 m).",
+  "Chacchoben": "Maya ceremonial center in southern Quintana Roo, Mexico.",
+  "Dzibanche": "Important Maya city in southern Quintana Roo, capital of the Kaan dynasty during the Early Classic period.",
+  "Uaxactun": "Maya ceremonial center in the Petén jungle of Guatemala, 23 km north of Tikal.",
+  "Yaxha": "Maya city on the shore of Lake Yaxha in Guatemala's Petén region.",
+  "Nakum": "Large Maya city in Guatemala's Petén region, less studied than its neighbors.",
+  "Naranjo": "Major Maya city in Petén, Guatemala.",
+  "Zaculeu": "Late Postclassic Maya city in the western highlands of Guatemala, capital of the Mam Maya kingdom.",
+  "Caracol": "Largest Maya archaeological site in Belize.",
+  "Lamanai": "Maya city in northern Belize on the New River Lagoon, with one of the longest continuous occupations of any Maya site , from c. 1500 BCE to the 19th century.",
+  "Xunantunich": "Maya city in western Belize.",
+  "Necker Island Megalithic Site": "Small remote island in the Northwest Hawaiian Islands, 250 km from Kauai, with 33 documented stone shrines (heiau) on its ridge , far more per square kilometer than anywhere in the main Hawaiian chain.",
+  "Menehune Fishpond (Alekoko)": "Massive ancient fishpond near Lihue on Kauai, with a 270-meter-long curved stone wall enclosing 200,000 m² of water.",
+  "Menehune Ditch (Kīkīaola)": "Ancient stone-lined irrigation channel on Kauai with precisely fitted, cut-and-dressed basalt blocks resembling polygonal masonry traditions in Peru and Türkiye.",
+  "Wailua River Heiaus (Kauai)": "Cluster of seven major heiaus (sacred stone temples) along the Wailua River on Kauai, traditionally the seat of Kauai royalty.",
+  "Healing Stones of Kapaemahu (Oahu)": "Four massive boulders on Waikiki Beach, Oahu, traditionally said to embody the mana (spiritual power) of four mahu (third-gender) healers from Tahiti who arrived in Hawaii in the 15th-16th century.",
+  "Hawaiian Heiaus": "Stone temple platforms (heiau) found across all the Hawaiian Islands.",
+  "Latte Stones of Guam": "Distinctive pillar-and-capstone stone supports (latte) erected across the Mariana Islands by the ancient Chamorro people.",
+  "Latte Stones of Tinian": "House of Taga site on Tinian preserves the largest standing latte stones in the Mariana Islands , pillars up to 5 m tall, paired with hemispherical capstones weighing several tons each.",
+  "Rota Quarry (As Nieves)": "Ancient quarry on Rota (Northern Mariana Islands) where the largest unfinished latte stones in the world remain in situ.",
+  "Yap Rai Stones": "Massive limestone discs (rai) used as currency on Yap Island, Federated States of Micronesia.",
+  "Palau Megalithic Site": "Cluster of monolithic stones and earthwork terraces in the Republic of Palau, particularly the Badrulchau Stone Monoliths in northern Babeldaob , 37 standing basalt columns arranged in two rows, with some showing carved faces.",
+  "Kosrae Leluh Island": "Ancient walled city on Leluh Island just off Kosrae, Federated States of Micronesia.",
+  "Marquesas Islands": "French Polynesian archipelago with extensive megalithic stone platforms (paepae and tohua), tiki statues, and ceremonial complexes (me'ae).",
+  "Ozancık Höyük": "Bronze Age earthen mound approximately 100 m in diameter located adjacent to the Ersele Underground City complex near Ozancık village, Ortaköy district, Aksaray Province.",
+  "Zedekiah's Cave": "Massive man-made limestone cave system beneath the Muslim Quarter of the Old City of Jerusalem, extending 230 m into the bedrock under the Temple Mount.",
+  "Temple Mount Megaliths": "Massive stone blocks at the western and southern retaining walls of the Temple Mount (Har HaBayit) in Jerusalem.",
+  "Hezekiah's Tunnel": "533-meter rock-cut water tunnel in the City of David, Jerusalem, carved through solid bedrock to bring water from the Gihon Spring to the Pool of Siloam within the city walls.",
+  "Jerusalem Archaeological Park": "Open-air archaeological zone at the southwest corner of the Temple Mount in Jerusalem (the Davidson Center).",
+  "Horvat Midras": "Roman-era ruined city in the Judean Foothills with extensive underground cave system, a small step-pyramid, and unique carved stone wheels of unknown function.",
+  "Kidron Valley Tombs": "Cluster of monumental rock-cut tombs in the Kidron Valley between Jerusalem's Old City and the Mount of Olives.",
+  "Hodota Kofun Cluster": "Cluster of keyhole-shaped burial mounds (kofun) in Gunma Prefecture, Japan.",
+  "Sakitama Kofun Cluster": "Cluster of nine keyhole-shaped kofun in Saitama Prefecture, Japan, dating to the late 5th-6th c.",
+  "Saitobaru Kofun Cluster": "Vast cluster of 311+ kofun in Miyazaki Prefecture, southern Japan.",
+  "Koichi Kofun Cluster": "Lesser-documented kofun cluster in Japan whose size and proportions Ageless Rock investigates for parallels to the Mesoamerican and other monumental burial-mound traditions.",
+  "Gilmerton Cove": "Underground complex of chambers, tunnels, and stone-carved tables and benches in Edinburgh, Scotland.",
+  "Rosslyn Chapel & Castle": "15th-century chapel near Edinburgh built by William Sinclair, with adjacent ruined castle.",
+  "Tombs and Dolmens of Fornos de Algodres": "Megalithic tomb and dolmen cluster in the Fornos de Algodres municipality of central Portugal.",
+  "Forcadas Tombs & Cortiço Dolmen": "Megalithic tomb cluster and dolmen in central Portugal near Cortiço da Serra.",
+  "Necropolis of Sao Gens": "Medieval rock-cut tomb cluster (necropolis) in central Portugal.",
+  "Necropolis of Saint Michael (Sao Miguel)": "Rock-cut tomb cluster (necropolis) in central Portugal, with anthropomorphic graves carved into bedrock.",
+  "Necropolis of Moreira de Rei": "Rock-cut necropolis in Trancoso municipality, central Portugal.",
+  "Tarragona Cyclopean Walls": "Massive cyclopean polygonal wall complex around the ancient city of Tarraco (modern Tarragona) on Spain's Catalan coast.",
+  "Hagia Sophia": "Cathedral / mosque / museum / mosque in Istanbul, built 532-537 CE under Justinian I as the largest church in the Christian world. 31 m diameter dome over a square base, achieved through pendentives , a structural innovation that…",
+  "Yedikule Fortress": "Seven-towered fortress in Istanbul, built by Ottoman Sultan Mehmed II in 1458 incorporating earlier Byzantine Theodosian walls and the Golden Gate (Porta Aurea) , a 5th-century triumphal arch that was the ceremonial entrance to Byzantine Constantinople.",
+  "Harput Castle": "Ancient hilltop fortress in Elazığ Province, eastern Türkiye, with occupation phases spanning Hittite, Urartian, Roman, Byzantine, Artuqid, Mongol, and Ottoman periods.",
+  "Ankara Hidden Monastery": "Rock-hewn Byzantine-era monastery in the Ankara area, with chambers carved into volcanic tuff.",
+  "Selime Cathedral (Cave Mosque)": "Massive rock-cut cathedral complex in the Selime village of Aksaray Province, southern Cappadocia, carved into volcanic tuff spires.",
+  "Iznik (Ancient Nicaea)": "Ancient city in Bursa Province, site of the First Council of Nicaea (325 CE) and the Second Council of Nicaea (787 CE).",
+  "Zeugma Mosaic Museum": "Late Hellenistic / Roman city in Gaziantep Province, founded c. 300 BCE by Seleucus I Nicator at the crossing of the Euphrates.",
+  "Antalya Ancient Theaters": "Cluster of well-preserved ancient theaters in Antalya Province along Türkiye's southern Mediterranean coast.",
+  "Basilica Cistern (Yerebatan)": "Massive underground Byzantine cistern in Istanbul, built under Justinian I in 532 CE to supply water to the Great Palace. 138 m long, 65 m wide, 9 m high, supported by 336 marble columns.",
+  "Sefertepe": "Pre-pottery Neolithic site in Şanlıurfa Province, near Karahan Tepe.",
+  "Gürcütepe": "Cluster of four small Neolithic mounds in the valleys below Göbekli Tepe (visible from it).",
+  "Çakmaktepe": "Pre-pottery Neolithic site near Göbekli Tepe, recently proven to be older than Göbekli Tepe by ~500 years (potentially c. 12,000 years old).",
+  "Ayanlar Höyük": "Pre-pottery Neolithic mound site (also called Gre Filla) in Hilvan district, Şanlıurfa Province.",
+  "Harbetsuvan Tepesi": "Hilltop pre-pottery Neolithic site approximately 1 km from Karahan Tepe, hard to access and remote.",
+  "Yenimahalle Höyük": "Neolithic mound site in central Şanlıurfa, one of the 12 sites of the Taş Tepeler complex.",
+  "Qasr el Sagha": "Predynastic / Old Kingdom cyclopean temple on the northern edge of the Fayoum depression in middle Egypt.",
+  "Gornaya Shoria Megaliths": "Granite formations along the ridgecrests and summit of Mount Kuylyum (1,203 m) in the Kulyum-Surak massif, Kemerovo Oblast, roughly 8 km from the village of Orton in southern Siberia.",
+  "Sage Wall (Montana)": "Megalithic interlocking wall structure on a private ranch in the Tobacco Root Mountains, southwestern Montana.",
+  "Vilcabamba (Espíritu Pampa)": "Last stronghold of the Inca Empire after the Spanish conquest, deep in the Vilcabamba mountains northeast of Cusco.",
+  "Yakushima Megaliths": "Carved megalithic stones on Yakushima Island, off the southern tip of Japan's main island chain.",
+  "Carnac Stones (Brittany)": "Massive Neolithic alignment of approximately 4,000 standing stones in long parallel rows stretching across the landscape of Brittany, France.",
+  "Gochang Dolmens": "Dolmen field in Jeollabuk Province, South Korea , part of the Gochang-Hwasun-Ganghwa dolmen system that contains over 35,000 documented dolmens, more than 40% of the world's total.",
+  "Ikom Monoliths": "Cluster of approximately 350 anthropomorphic carved stone monoliths in Cross River State, southeastern Nigeria, ancestral territory of the Ekoi people.",
+  "Kotukal Cave Temple": "Rock-cut Hindu cave temple in Tamil Nadu, southern India, carved into a boulder-like outcrop that emerges from the ground.",
+  "San Andrea Priù": "Hypogeum (rock-cut tomb complex) in Bonorva, central Sardinia, Italy.",
+  "AlUla (Dadan & Lihyanite Capitals)": "Pre-Nabataean kingdom capital in the AlUla valley, northwestern Saudi Arabia, occupied by the Dadanite and later Lihyanite kingdoms from approximately the 8th century BCE through the 1st century BCE.",
+  "Elephant Rock (Jabal AlFil)": "Isolated sandstone formation in the AlUla region, named for its natural elephant-shaped silhouette.",
+  "Tayma Oasis": "Major Bronze Age and Iron Age oasis settlement in northwestern Arabia, anchored by deep wells tapping ancient aquifers.",
+  "Harat Khaybar": "Vast basalt lava field southeast of Khaybar in northwestern Saudi Arabia, containing thousands of mostly-undated stone structures: keyhole-shaped monuments, circular cairns, low-walled alignments, and the long converging guide-walls…",
+  "Dumat al-Jandal": "Frontier oasis town in northern Saudi Arabia near the Jordan border.",
+  "Qaryat al-Faw": "Pre-Islamic capital of the Kingdom of Kinda, deep in the Rub' al-Khali threshold of southern Saudi Arabia.",
+  "Jubbah Rock Art (Jabal Umm Sinman)": "UNESCO World Heritage rock-art complex on Jabal Umm Sinman in the Nefud Desert, northern Saudi Arabia, where ancient lakes once mirrored a greener Arabia.",
+  "Little Petra (Siq al-Barid)": "Nabataean rock-cut complex 8 km north of Petra in Jordan.",
+  "Richat Structure (Eye of the Sahara)": "Concentric ring structure ~50 km across in the Adrar Plateau of Mauritania, visible from space as a perfect series of geological rings.",
+  "Sogmatar": "Late Sabian astral cult sanctuary in Şanlıurfa Province, southeastern Türkiye, approximately 60 km from Göbekli Tepe.",
+  "Marae Arahurahu (Tahiti)": "Restored ancient Tahitian marae (ceremonial platform) in the Pa'ea district of Tahiti, French Polynesia.",
+  "Naveta des Tudons": "Bronze Age megalithic chamber tomb on the island of Menorca, Balearic Islands, Spain.",
+  "Azores Pyramids (Pico Alto)": "Possible megalithic pyramids and dolmen-like structures documented on multiple Azores islands (São Miguel, Terceira, Pico) by independent archaeologist Antonieta Costa and others.",
+  "Treasury of Atreus (Tomb of Agamemnon)": "Monumental Mycenaean tholos tomb at Mycenae, also called the Tomb of Agamemnon.",
+  "Pyramid of Hellinikon": "Small pyramidal structure in the Argolid, Greece, built of polygonal-fitted limestone blocks.",
+  "Tula (Tollan)": "Capital of the Toltec civilization in Hidalgo, central Mexico, occupied c. 900-1150 CE.",
+  "Malta Cart Ruts (Misraħ Għar il-Kbir)": "Maltese landscape feature also called \"Clapham Junction\" , a dense network of parallel grooves cut into the limestone bedrock, forming a complex intersection of cart-rut-like tracks.",
+  "Yeha": "Pre-Axumite temple complex in Tigray Province, northern Ethiopia.",
+  "Marib Dam (Old Dam of Ma'rib)": "Ancient hydraulic engineering monument near Marib, Yemen, capital of the Sabaean kingdom (c. 1200 BCE - 275 CE).",
+  "Baraqish (Yathill)": "Pre-Islamic fortified Minaean city in the Jawf region of northern Yemen.",
+  "Awwam Temple (Mahram Bilqis)": "Largest Sabaean temple, dedicated to the moon god Almaqah, near Marib in Yemen.",
+  "Barran Temple": "Sabaean temple complex near Marib, Yemen, also dedicated to the moon god Almaqah.",
+  "Timna (Hajar Kuhlan)": "Ancient capital of the Qatabanian kingdom in the Bayhan valley of southwestern Yemen.",
+  "Candi Sukuh": "15th-century Hindu pyramid temple on the western slope of Mount Lawu in Central Java, Indonesia.",
+  "Phimai (Prasat Hin Phimai)": "Largest Khmer sandstone temple complex in Thailand, located in Nakhon Ratchasima province.",
+  "Phanom Rung": "Khmer Hindu temple built on the rim of an extinct volcano in Buri Ram province, northeastern Thailand.",
+  "Banteay Samré": "Outlying Khmer temple in the Angkor complex, Cambodia, approximately 400 m east of the East Baray reservoir.",
+  "Abu Sir (Pyramid Complex)": "Old Kingdom pyramid complex on the west bank of the Nile between Giza and Saqqara, used as the royal necropolis of the 5th Dynasty (c. 2494-2345 BCE).",
+  "Abu Ghorab (Sun Temple of Niuserre)": "Sun temple of the 5th Dynasty pharaoh Niuserre (c. 2400 BCE) located between Abu Sir and Saqqara, on the desert edge above the Nile floodplain.",
+  "Elephantine Island": "Island in the Nile at Aswan, the southern frontier of ancient Egypt and the ritual home of the god Khnum.",
+  "Coricancha (Qorikancha)": "Most sacred Inca temple, located in central Cusco, Peru.",
+  "Tanis (San el-Hagar)": "Ancient royal capital of the 21st and 22nd Dynasties (c. 1069-715 BCE) in the northeastern Nile Delta.",
+  "Sphinx Temple": "Ritual structure directly east of the Great Sphinx at Giza, built from megalithic limestone core blocks subsequently cased in pink Aswan granite.",
+  "Khafre Valley Temple": "Megalithic ritual structure adjacent to the Sphinx Temple at Giza, traditionally attributed to Khafre (4th Dynasty).",
+  "Temple of Bastet (Bubastis)": "Ancient temple complex at Tell Basta in the eastern Nile Delta, dedicated to the cat goddess Bastet.",
+  "Telmessos (Fethiye)": "Ancient Lycian port city on the southwestern Mediterranean coast of Turkey, near modern Fethiye.",
+  "Tlos": "Ancient Lycian city in the Xanthos river valley of southern Turkey, occupied from approximately the 14th century BCE (Hittite-era 'Dalawa') through the Ottoman period.",
+  "Limyra": "Eastern Lycian capital city near modern Finike on Turkey's Mediterranean coast.",
+  "Termessos": "Pisidian mountain city at 1,050 meters elevation in the Taurus Mountains near Antalya, Turkey.",
+  "Aspendos": "Pamphylian city on the Eurymedon River in Antalya Province, Turkey.",
+  "Osiris Shaft (Giza)": "Three-level vertical shaft cut into the bedrock beneath the Khafre causeway on the Giza Plateau.",
+  "Killarumiyoq": "Megalithic site approximately 30 km west of Cusco, Peru, in the Anta district at ~3,700 meters elevation.",
+  "Vilcashuaman": "Inca administrative and ceremonial center in the Ayacucho region of central Peru at 3,470 meters elevation.",
+  "Saihuite Stone": "Andesite boulder approximately 4 meters wide and 2 meters high, located in Apurímac province of southern Peru.",
+  "Byblos (Jbeil)": "Ancient Phoenician port city on the Lebanese coast, 40 km north of Beirut.",
+  "Amarna (Akhetaten)": "Capital city built and inhabited under the heretic pharaoh Akhenaten (Amenhotep IV, c. 1346 BCE) on the east bank of the Nile in Middle Egypt, between Cairo and Luxor.",
+  "Chucuito (Inca Uyo)": "Lakeside ceremonial complex on the southern shore of Lake Titicaca, 18 km south of Puno, Peru.",
+  "Nazca Puquios": "Network of more than 40 spiral stone-cut access wells (puquios) distributed across the Nazca desert in southern Peru, providing year-round access to the aquifer beneath.",
+  "Wari (Huari)": "Capital city of the Wari Empire in central Peru, 22 km northeast of Ayacucho, occupied from approximately 500 to 1000 CE.",
+  "Memphis (Mit Rahina)": "Ancient capital of Lower Egypt, founded c. 3100 BCE by Menes (Narmer) at the strategic Nile delta head.",
+  "Mesa Verde": "Mesa Verde National Park in southwest Colorado preserves the largest and best-known cliff-dwelling complex of the Ancestral Puebloan people.",
+  "Chaco Canyon (Chaco Culture)": "Chaco Culture National Historical Park in northwestern New Mexico was the political, ceremonial, and economic center of the Ancestral Puebloan world from approximately 850-1150 CE.",
+  "Hovenweep": "Hovenweep National Monument on the Colorado-Utah border preserves six clusters of Ancestral Puebloan stone towers built at the heads of small box canyons.",
+  "Bandelier": "Bandelier National Monument on the Pajarito Plateau of northern New Mexico preserves the cliff dwellings and pueblos of the Ancestral Puebloan ancestors of the modern Cochiti and San Ildefonso Pueblo peoples.",
+  "Canyon de Chelly": "Canyon de Chelly National Monument in northeastern Arizona is the only NPS unit owned and lived-in by an indigenous community , the Navajo Nation.",
+  "Cefalù Polygonal Walls": "Massive polygonal masonry foundations on the slopes of the Rocca above Cefalù, on Sicily's northern coast.",
+  "Thornborough Henges": "Complex of three near-identical Neolithic henges in North Yorkshire, England, often called 'The Stonehenge of the North.' Each henge measures approximately 240 m in diameter with twin entrances oriented on the same line.",
+  "Stanton Drew Stone Circles": "Complex of three Neolithic stone circles in Somerset, England, including the Great Circle , the second-largest stone circle in the British Isles at 113 m in diameter, exceeded only by Avebury.",
+  "Long Man of Wilmington": "Chalk hill figure on Windover Hill in the South Downs of East Sussex, England , a 70-meter-tall outline of a standing human figure holding two staves.",
+  "Nagarjuni Caves": "Group of three rock-cut Mauryan-period caves on a low granite hill 1 km north of the Barabar Caves in Bihar, India.",
+  "Hirebenakal Megalithic Necropolis": "Massive dolmen necropolis on a granite hill in Karnataka, India , over 1,000 dolmens scattered across approximately 8 square kilometers, the largest such concentration in South Asia.",
+  "Cuicuilco": "Circular stepped pyramid buried under volcanic lava on the southern edge of Mexico City.",
+  "Xochicalco": "Fortified pre-Columbian city on a hilltop in Morelos, Mexico, dominated by the Pyramid of the Plumed Serpent , covered on all four sides with precision-cut bas-relief Quetzalcoatl iconography in the same iconographic tradition that…",
+  "Comalcalco": "Mayan city in the western lowlands of Tabasco, Mexico , the only major Mayan site built primarily of fired clay brick rather than the limestone block used everywhere else in the Maya world.",
+  "Aké": "Ancient Mayan city in Yucatán, Mexico, distinguished by the massive flat-topped Pyramid of the Pillars , a stepped platform crowned with thirty-six cylindrical limestone columns up to 4 m tall arranged in a 6×6 grid.",
+  "Izamal Satellite Pyramids": "Cluster of massive Mayan pyramids in and around the town of Izamal, Yucatán, Mexico, including Kinich Kak Moo , the largest pyramid in Yucatán by base area (200×180 m, 34 m tall) , and a constellation of satellite pyramids spread…",
+  "Chaltun Ha": "Little-documented Mayan pyramid site in Yucatán, Mexico, rediscovered in recent years and largely overlooked by mainstream archaeology.",
+  "Rollright Stones": "Complex of three Neolithic and Bronze Age megalithic monuments straddling the Oxfordshire-Warwickshire border in England: the King's Men stone circle (c. 2500-2000 BCE, 33 m diameter, ~77 limestone stones), the King Stone single…",
+  "Mên-an-Tol": "Small but iconic megalithic monument on the moorland of West Penwith in Cornwall, England , a holed stone roughly 1.3 m tall flanked by two upright menhirs, plus additional stones nearby that may once have formed a stone circle.",
+  "Merry Maidens": "Late Neolithic stone circle in the West Penwith peninsula of Cornwall, England , nineteen granite stones forming a near-perfect circle 24 m in diameter, conventionally dated c. 2500-1500 BCE.",
+  "Loughcrew": "Complex of approximately thirty passage tombs spread across the Loughcrew hills (Slieve na Calliagh , 'mountain of the hag') in County Meath, Ireland.",
+  "Carrowmore Megalithic Cemetery": "One of the oldest and largest megalithic cemeteries in Ireland and Europe , over thirty surviving dolmens and passage tombs across a 1 km² area of the Cúil Irra peninsula in County Sligo.",
+  "Giant's Ring": "Massive late-Neolithic henge enclosing a small passage dolmen, located at Ballynahatty just south of Belfast in County Down, Northern Ireland.",
+  "Langi Pyramid Platforms (Lapaha)": "Approximately 28 megalithic stepped pyramid platforms , langi , built of massive coral-limestone slabs at the ancient Tu'i Tonga capital of Mu'a (modern Lapaha), on the southern shore of the Fanga'uta lagoon in Tongatapu.",
+  "Gault Site (Buttermilk Creek)": "Open-air site on Buttermilk Creek near Florence, Texas, with one of the densest Clovis assemblages in the Americas , and, beneath it, the reason it matters: Area 15 yielded an assemblage stratigraphically below the Clovis horizon…",
+  "Pantelleria Vecchia Bank Monolith": "A 12-metre limestone block resting at a depth of about 40 metres on the Pantelleria Vecchia Bank in the Sicilian Channel, roughly 60 km south of Sicily.",
+  "Cista Velika Stećci Necropolis": "Largest Croatian necropolis of stećci , monumental limestone tombstones carved between the 12th and 16th centuries.",
+  "Bedse Caves": "Rock-cut Buddhist complex carved into hard Deccan basalt in the Western Ghats of Maharashtra, dated to the Satavahana period around the 1st century BCE.",
+  "Chinchero": "Royal estate of Tupac Inca Yupanqui (~1480 CE) at 3,760 m northwest of Cusco, built over an earlier Killke occupation: massive agricultural terraces, fine limestone palace walls with trapezoidal niches, and carved outcrop huacas…",
+  "Teteqaqa (Cusco)": "Monumental sculpted limestone outcrop (~40 × 30 m, 26 m high) above the Tullumayo valley in Cusco's San Blas sector, now engulfed by the city.",
+  "Inkilltambo": "Huaca complex carved around a large limestone outcrop northeast of Cusco within Sacsayhuamán Archaeological Park, attributed to Inca Wiracocha with remodeling under Pachacutec.",
+  "Unu Urqo": "Rock sanctuary and terrace complex at the foot of Pitusiray mountain near Calca in the Sacred Valley, with continuous Killke-to-Inca occupation (~1000-1533 CE).",
+  "Rumiwasi": "'Stone house' huaca above San Sebastián on Cusco's outskirts, combining carved bedrock with andesite masonry , polygonal ashlar mixed with cyclopean boulders.",
+  "Amaru Markawasi": "Carved limestone cave shrine in the hills northeast of Cusco near Qenqo, also known as the Temple of the Moon (Cusco) and traditionally linked to lunar and serpent (amaru) cults.",
+  "Cusilluchayoc": "Complex of carved limestone rocks, caves and corridors about 500 m east of Qenqo , the 'Temple of the Monkeys.' Zoomorphic relief figures read as monkeys, serpents and pumas accompany carved walls and stone water channels; Spanish…",
+  "Temple of the Moon (Huayna Picchu)": "Ceremonial complex of top-quality ashlar masonry set into an open granite cave (the Great Cavern) on the far side of Huayna Picchu, part of Pachacuti's Machu Picchu estate and rediscovered in 1936.",
+  "River Intihuatana": "Carved granite huaca on the Urubamba river at the foot of the Machu Picchu massif, near the hydroelectric station and San Miguel bridge.",
+  "Zone X (Cheqtaqaqa)": "Cluster of large carved limestone outcrops northeast of Sacsayhuamán , mapped as Zona X / Lanlakuyoc and including the Cheqtaqaqa ceremonial sector , cut with steps, seats and niches and honeycombed with roughly 15 caves and tunnels…",
+  "Hyrtakina": "Remote Dorian city on Kastri hill in southwest Crete, defended by polygonal masonry walls roughly half a mile long forming two 'cyclopic' circuits, with gate passages protected by projecting flanking walls.",
+  "Polyrrhenia": "Amphitheatre-like acropolis city above Kissamos in northwest Crete, its fortification walls still standing 3-5.5 m high in a mix of Hellenistic coursed work and later rebuilds over older masonry.",
+  "Falasarna": "The best-preserved ancient closed war harbour in Crete: an artificial basin ringed by cut-stone quays with mooring bollards still bearing rope marks, linked to the sea by chain-closable channels and guarded by dressed-stone towers.",
+  "Aptera": "Large city-state on a plateau commanding Souda Bay, attested as A-pa-ta-wa in Linear B and enclosed by a fortification circuit of which about 4 km survives in fine polygonal and coursed Hellenistic masonry.",
+  "Lato": "One of Crete's best-preserved Classical stone cities, saddled between twin acropolis peaks above Mirabello Bay.",
+  "Stylos Tholos Tomb": "Monumental corbel-vaulted tholos tomb of a Late Minoan III ruler on Azoires hill south of Aptera, approached by an exceptionally long stone-built dromos of 20.8 m with a Mycenaean-style relieving triangle above the entrance.",
+  "Kamilari Tholos Tomb": "The best-preserved Mesara-type circular tholos tomb, its drystone wall of large roughly shaped stones still standing about 2 m high around a chamber 7.6 m across, with five annex chambers and an offering area that yielded some 500 inverted vessels.",
+  "Eleutherai Fortress": "One of the best-preserved fortresses of ancient Greece, guarding the Kaza pass between Attica and Boeotia: an 860 m circuit of superb coursed trapezoidal ashlar averaging 2.6 m thick, with six towers still standing 4-6 m high along the north side.",
+  "Siphai (Tipha)": "Fortified harbour town of the Boeotian coast , mythical home of Tiphys, pilot of the Argo , whose late-4th-century BC ashlar circuit follows a rocky spine down into the Corinthian Gulf, leaving wall footings and a monumental building partly submerged.",
+  "Panopeus": "Acropolis above Agios Vlasios celebrated since the 19th century as a textbook example of fine polygonal masonry, with curtains standing 5-6 m high and one tower reaching 9 m.",
+  "Orchomenos (Boeotia)": "Minyan and Mycenaean centre that rivalled Thebes, anchored by the Treasury of Minyas , a monumental tholos tomb rivalling the Treasury of Atreus, with a ~6 m monolithic inner lintel and a side chamber whose ceiling slab is carved with…",
+  "Lilaia": "Towered acropolis above the springs of the Cephissus river in Phocis, its 4th-century BC circuit built in trapezoidal masonry with rectangular towers still standing to substantial height, commanding the entire upper valley.",
+  "Proerna": "Fortified acropolis at Neo Monastiri in Achaean Phthiotis, its Hellenistic circuit built as two faces of firmly jointed trapezoidal grey limestone with headers between sets of stretchers, the south flank surviving eight courses (~4.2 m) high.",
+  "Dodona": "Reputedly the oldest Hellenic oracle, centred on the sacred oak of Zeus below Mt.",
+  "Cassope": "A complete Hippodamian grid city on a high terrace under the Zalongo cliffs overlooking the Ambracian Gulf, founded in the mid-4th century BC as capital of the Kassopaians.",
+  "Oiniades": "Marsh-girt hill city on the lower Acheloos with a 5.5 km circuit regarded as one of the finest displays of polygonal masonry in Greece , tightly jointed curvilinear limestone following the crag line, its gates roofed with corbelled…",
+  "New Pleuron": "Superbly preserved Hellenistic city on Mt.",
+  "Methana Acropolis (Palaiokastro)": "Small fortified acropolis on a coastal lava dome of the volcanic Methana peninsula, its walls built of local andesite and dacite in rough megalithic style, first raised in Mycenaean times and rebuilt into the Byzantine era.",
+  "Kazarma Acropolis": "Steep fortress hill on the ancient Argos-Epidaurus road, its circuit walls 2.5 m thick and up to 5.2 m high in huge tightly fitted polygonal/cyclopean blocks with four round towers.",
+  "Agios Adrianos Fort": "Compact Hellenistic fort on the Palaiokastro hill east of Agios Adrianos village in the Argolid, built of grey limestone in fine polygonal masonry: a 50 × 26 m enclosure with a square keep surviving three storeys high, entered through…",
+  "Asine": "Triangular rocky headland rising straight from the sea beside Tolo, ringed by fortification walls of cyclopean character heavily rebuilt around 300 BCE , massive roughly polygonal limestone with a large landward bastion.",
+  "Midea": "The third great cyclopean citadel of the Argolid after Mycenae and Tiryns, crowning a 268 m conical hill: its circuit of enormous unworked and hammer-dressed conglomerate boulders runs ~450 m with walls 5-7 m thick and two gates.",
+  "Heraion of Argos": "Grand terraced sanctuary of Hera stepping down a spur of Mt.",
+  "Acropolis Oga (Methana)": "See how large volcanic stones form the surviving walls above the Methana peninsula.",
+  "Nuraghe Santu Antine": "The finest of Sardinia's nuraghi: a basalt keep 15.5 m across, preserved to 17.5 m (originally ~23 m), with three superimposed corbel-vaulted tholos chambers linked by a helical stone staircase, enclosed in a triangular bastion with…",
+  "Giants' Grave S'Ena e Thomes": "One of the best-preserved giants' tombs in Sardinia, built entirely of local granite: a semicircular exedra of knife-edge orthostats fronts an 11 m dolmenic corridor, centred on an arched monolithic stele ~4 m tall and around 7 tons…",
+  "Sacred Well of Sa Testa": "Nuragic water sanctuary near Olbia built of worked schist and granite: a paved circular courtyard leads through a trapezoidal vestibule down 17 corbel-roofed steps to a spring chamber under a tholos vault up to 6.8 m high.",
+  "Nuraghe Su Mulinu": "Marlstone complex combining an early corridor protonuraghe with later tholos towers and a four-tower antemural.",
+  "Hypogeum of Sas Puntas": "Rock-cut hypogeum at Tissi whose sculpted facade translates a giants'-tomb front entirely into living limestone: a 9.5 m exedra, a 3.25 m arched stele with lunette, benches, baetyl holes and cup marks, leading to an oval burial chamber.",
+  "Nuraghe Santa Barbara (Bauladu)": "Quadrilobate basalt nuraghe with an intact ground-floor tholos chamber and three collapsed lateral towers, surrounded by an extensive village of circular and courtyard huts including a large 'meeting house.' UCLA excavations (1986-89)…",
+  "Iloi Complex (Sedilo)": "Basalt plateau complex above Lake Omodeo: a trilobate nuraghe with a ~10 m central tower and an intact tholos vault, a Bronze-to-Iron Age village, two giants' tombs in isodomic masonry, and the adjacent Ispiluncas necropolis of at…",
+  "Protonuraghe Bruncu Madugui": "Corridor-type protonuraghe of cyclopean basalt on the Giara di Gesturi, an ellipsoidal mass ~28 × 16.5 m long regarded as a prototype of the corridor nuraghi, with entrance passage, corbelled stairway and pseudo-vaulted rooms instead of a single tholos.",
+  "Nuraghe Serbissi": "Limestone complex nuraghe perched at ~950 m on the dolomitic Taccu di Osini: a central tower with well-preserved tholos, three secondary towers around a small courtyard, and a village of eight huts.",
+  "Nuraghe Piscu": "Complex nuraghe dominating the Trexenta plain: a central tholos tower ~11 m across and 9 m high in regular courses of worked marl-limestone, enclosed by a lobed bastion and an outer antemural with village huts and a rainwater cistern.",
+  "Nuraghe Corbos": "Well-preserved single-tower basalt nuraghe near Silanus, ~11 m across and nearly 12 m tall with a markedly truncated-conical profile , polygonal lower courses, sub-square upper ones.",
+  "Nuraghe Piricu": "Complex basalt nuraghe in the Montiferru district of Santu Lussurgiu: the central tower preserves about twenty courses for ~12 m of height, its ground-floor tholos rising 8 m to an ogival closure with three niches, flanked by remains of four peripheral towers.",
+  "Giants' Grave of Imbertighe": "Giants' tomb outside Borore famed for its intact monolithic arched stele, 3.65 m tall with a relief cornice and a small portal at its base , Pinza called it the facade of the most beautiful giants' tomb known in Sardinia.",
+  "Giants' Grave Mura Cuada": "Isolated coursed-masonry giants' tomb on the Abbasanta basalt plateau, of the stele-less type: a concave exedra of well-dressed basalt courses fronts an architraved entrance and a funerary chamber 4.5 m long with orthostatic walls under corbelled courses.",
+  "Domus de Janas of Corongiu (Pimentel)": "Rock-cut tomb group in sandstone near Pimentel, its main chamber entered by a vertical shaft and carrying incised and red-painted symbolic decoration , a double spiral, a 'boat' motif with spiral ends, and zigzag bands , among the…",
+  "Giants' Grave Su Mont'e s'Abe": "One of Sardinia's largest giants' tombs, in granite near Olbia: a mound 28 m long enclosing a 13 m funerary corridor whose orthostatic walls , an Early Bronze Age gallery grave , were crowned with coursed blocks and a 21.5 m exedra…",
+  "Sacred Well Is Pirois": "Sacred well in the Rio Quirra valley built of green-blue schist in two masonry styles , polygonal blocks outside, thin slabs within: eight steps descend under an inverted-staircase ceiling to a still-flowing spring shaft capped by an…",
+  "Messapian Walls of Castro": "Stretches of the massive mid-4th-century BC Messapian circuit in large dry-laid limestone blocks survive beneath Castro's historic centre, alongside an intramural sanctuary of Athena with a Hellenistic Doric temple and a colossal…",
+  "Via Cava di San Sebastiano": "One of the deepest of the Etruscan vie cave of the Sorano-Pitigliano tuff plateau: a narrow sunken road hand-cut into volcanic tuff with sheer walls rising 20-25 m above the roadbed, running beside a rock-cut necropolis.",
+  "Bisenzio (Visentium)": "Protohistoric and Etruscan centre on a promontory above Lake Bolsena whose Iron Age settlement covered up to 100 hectares, famed for Villanovan bronze work.",
+  "Etruscan Necropolis of Puntone": "Small rural necropolis in oak woodland near Saturnia: tumuli on rectangular bases built entirely of large dry-laid travertine slabs, with dromos corridors leading to chambers roofed by pitched monolithic slabs , heavy slab…",
+  "Juvanum": "Samnite sanctuary and Roman municipium on an Abruzzo plateau: two temple podia of dry-laid limestone stand beside a Hellenistic theatre whose cavea is partly carved directly into the rock outcrop, above the paved forum and basilica of the Roman town.",
+  "Monte Pallano": "On a 1,020 m ridge in Abruzzo, a ~160 m stretch survives of a cyclopean dry-stone circuit originally at least 4 km long enclosing 35 hectares , identified with ancient Pallanum.",
+  "Hill of Tara": "Ancient royal ceremonial complex in Co.",
+  "Fourknocks Passage Tomb": "Decorated Neolithic passage tomb near the Meath–Dublin border, built around 3000 BCE, with a short passage opening into an unusually wide pear-shaped cruciform chamber with three recesses.",
+  "Baltray Standing Stones": "A pair of standing stones (about 3 m and 2 m tall, 9 m apart, originally likely three) near the Boyne estuary in Co.",
+  "Preah Vihear": "Khmer temple perched on a 625 m clifftop in the Dangrek Mountains on the Cambodia–Thailand border, laid out along an extraordinary 800 m north–south axis of five gopuras, causeways and courtyards climbing to a sanctuary at the cliff edge.",
+  "Norba": "Latin colony on the western scarp of the Monti Lepini, southeast of Rome above the Pontine Plain, its highest point standing at roughly 460 m.",
+  "Cutimbo": "Chullpa necropolis on a flat-topped volcanic promontory rising off the altiplano 22 km south of Puno, its summit at about 4,060 m.",
+  "Temple of Isis (Fondi)": "Terraced complex on Colle delle Monache above Fondi in southern Lazio, now occupied by Villa Placitelli.",
+  "Medamud": "Temple of Montu at Nag el-Madamud, 8 km east-north-east of Luxor, ancient Madu.",
+  "Necropolis of Remelluri": "Roughly 300 graves cut into bare sandstone on the slope below the Sierra de Toloño, at Remelluri , a settlement documented from the 9th century, deserted at an unknown date, now inside the Labastida municipality in the Rioja Alavesa.",
+  "Iglesia Vieja": "Granite city on the Cerro de la Cruz at 700 m, 4.5 km north of Tonalá where the Sierra Madre de Chiapas drops to the Pacific plain.",
+  "Olmec Rock Carvings of Pijijiapan": "Three granite boulders on the piedmont about a kilometre west of the Río Pijijiapan, where the first foothills of the Sierra Madre meet the Chiapas coastal plain.",
+  "Izapa": "Large Formative centre in the Soconusco of Chiapas, at the foot of Volcán Tacaná, running about 1.5 km north to south with 161 mapped mounds, six major plazas and roughly 250,000 cubic metres of architecture.",
+  "Piedras Negras": "Yo'k'ib', the great entrance : the largest Maya city of the Usumacinta basin, on the river's bank inside what is now the Sierra del Lacandón national park in Petén.",
+  "Río Bec": "Maya site in southern Campeche , not Petén, despite how it is often billed , that gave its name to an entire architectural style.",
+  "San Miguel Ixtapan": "Ceremonial centre in the Tierra Caliente of the State of México, in the municipality of Tejupilco, in a part of the country that has barely been surveyed.",
+  "Teotitlán del Valle": "Zapotec town in the Tlacolula valley, 31 km from Oaxaca at the foot of the Sierra Juárez, known in Zapotec as Xaguixe, the place at the foot of the mountain, and known to everyone else for the wool rugs woven here on hand looms.",
+  "Valle de Bravo Petroglyphs": "Carvings in the bed of the Presa Miguel Alemán in the State of México, a reservoir that drowned the valley in 1947.",
+  "Eastern Han Cliff Tombs (Sichuan)": "Location approximate.",
+  "Sichuan Cave Fortress (999 AD)": "Location approximate.",
+  "Hubei Cliff Dwelling": "Location approximate.",
+  "Paracas Candelabra": "A branching geoglyph cut into the northern face of the Paracas Peninsula, visible from boats crossing Pisco Bay.",
+  "Nuraghe Losa": "A Bronze Age basalt nuraghe on the Abbasanta plateau.",
+  "Nuraghe Arrubiu": "A large Bronze Age nuragic complex near Orroli, with a central tower enclosed by a five-tower bastion and additional outer defences.",
+  "Sacred Well of Santa Cristina": "A descending stairway of carefully dressed basalt leads to a circular water chamber beneath a corbelled roof.",
+  "Sacred Spring of Su Tempiesu": "A Nuragic water sanctuary built against a spring-bearing rock face near Orune.",
+  "Sanctuary of Santa Vittoria (Serri)": "A large Nuragic sanctuary on the plateau of Serri, with a sacred well, gathering spaces and the remains of other buildings.",
+  "Monte d'Accoddi": "A raised prehistoric altar-platform approached by a long ramp near Sassari.",
+  "Monte Baranta": "A Copper Age complex above Olmedo with a massive stone enclosure, a long wall and a horseshoe-shaped structure overlooking the cliff.",
+  "Nuraghe Orolo": "A multi-tower nuraghe near Bortigali, with a tall central tower and a surrounding bastion.",
+  "Pranu Muttedu": "A prehistoric funerary landscape near Goni, with standing stones, tombs and circular settings among cork oaks.",
+  "Tamuli Archaeological Complex": "A Nuragic complex near Macomer containing a nuraghe, settlement remains and giants’ tombs.",
+  "Sa Coveccada Dolmen": "A monumental slab-built dolmen near Mores, with an enormous capstone and an opening in its front slab.",
+  "Giants' Grave of Li Lolghi": "A long collective burial monument near Arzachena, with a curved forecourt of upright slabs and a tall central stele.",
+  "Giants' Grave of Coddu Vecchiu": "A giants’ tomb near Arzachena with a prominent arched stele, curved forecourt and a slab-roofed burial corridor.",
+  "Cucuruzzu (Corsica)": "A Bronze Age casteddu near Levie, where dry-stone walls and chambers incorporate enormous natural granite boulders.",
+  "Araghju (Corsica)": "A Bronze Age hilltop enclosure above the Porto-Vecchio plain.",
+  "Tappa (Corsica)": "A Bronze Age fortified settlement near Porto-Vecchio, with a stone tower and enclosure fitted to a rocky outcrop.",
+  "Ceccia (Corsica)": "A prehistoric tower site on a granite height near the village of Ceccia.",
+  "Funtanaccia Dolmen (Corsica)": "A collective burial chamber on the Cauria plateau, built from upright granite slabs supporting a single great capstone.",
+  "I Stantari (Corsica)": "Standing-stone alignments on the Cauria plateau, including human-shaped statue-menhirs with carved weapons and other details.",
+  "Renaghju (Corsica)": "A prehistoric standing-stone site on the Cauria plateau, with numerous granite menhirs in a landscape occupied over several periods.",
+  "Palaggiu (Corsica)": "A major concentration of standing stones in southern Corsica near Sartène.",
+  "Porta Saracena (Segni)": "A monumental gateway in the polygonal stone walls of ancient Segni.",
+  "Orto della Regina": "Polygonal stone enclosure on Monte La Frascara in the Roccamonfina volcanic landscape.",
+  "Giants’ Tomb of Uore": "Bronze Age collective tomb near Borore, with a semicircular facade and a partly buried arched stele.",
+  "Porta Aurea (Castellonorato)": "Monumental stone gateway and wall remains at Palombara near Castellonorato, Formia.",
+  "Ponte Alto (Terracina)": "Ancient road bridge on the Appian route northwest of Terracina.",
+  "Spacco della Regina (Ansedonia)": "Coastal rock cleft beside the ancient waterworks of Portus Cosanus, near Ansedonia.",
+  "Polygonal Walls of Amelia": "Large fitted limestone blocks form the surviving southern fortifications of ancient Ameria.",
+  "Grotte di Torri": "Polygonal masonry enclosure beneath a later rural building in Fara in Sabina.",
+  "Acropolis of Ferentino": "Ancient acropolis beneath the cathedral of Ferentino, with polygonal masonry and Roman monumental building phases.",
+  "Acropolis of Circeii": "Polygonal limestone fortifications on Monte Circeo above San Felice Circeo.",
+  "Polygonal Walls of Castel San Pietro Romano": "Large dry-laid limestone blocks form the ancient fortification circuit above Palestrina.",
+  "Pyrgi Walls (Santa Severa)": "Polygonal walls of the Roman maritime colony, partly incorporated into the later Castle of Santa Severa.",
+  "Kazarma Bridge (Arkadiko)": "Bronze Age stone bridge on the ancient route between Tiryns and Epidauros.",
+  "Fonte di Uore": "Spring structure near Borore, listed as Fonte Nuragica Uore in the Sardinian regional heritage inventory.",
+  "Caslasc (Giornico)": "Triangular dry-stone fortification above Giornico, also called Castellaccio.",
+  "Porta Foca (Segni)": "Ancient gateway in Segni’s polygonal stone fortifications.",
+  "Porta Sanguinaria (Ferentino)": "Southern gateway of Ferentino, with polygonal lower masonry, a Roman stone arch and later medieval work above.",
+  "Sanctuary of Pietrabbondante": "Samnite sanctuary at Calcatello, with a monumental theatre and temples.",
+  "Trebula Balliensis": "Archaeological area near Treglia, with large-block fortifications, a monumental gateway and Roman remains.",
+  "Santa María de la Piscina": "A rock-cut cemetery lies beside the Romanesque hermitage near Peciña in La Rioja.",
+  "San Vítor de Barxacova Necropolis": "Anthropomorphic graves cut into rock surround the remains of a medieval chapel above the Mao river in Parada de Sil.",
+  "San Andrés Necropolis (Sonsierra)": "About seventy rock-cut graves survive among the vineyards of San Vicente de la Sonsierra.",
+  "Regumiel de la Sierra Necropolis": "An extensive early medieval cemetery occupies the sandstone outcrop around the church of San Adrián Mártir.",
+  "Cuyacabras Necropolis": "Rock-cut graves and the remains of a church mark a deserted medieval settlement in the forest near Quintanar de la Sierra.",
+  "Castro de Ulaca": "Granite walls enclose a large Iron Age hilltop settlement above the Amblés valley.",
+  "Quinta da Regaleira Initiation Well": "Modern revival architecture, late 19th to early 20th century (estate construction programme: 1893–1920).",
+  "São João de Areias Churchyard Necropolis": "Rock-cut graves survive at the parish church of São João de Areias.",
+  "Longroiva Castle": "A granite keep and surviving enclosure preserve the medieval castle of Longroiva in Mêda.",
+  "Fontainhas Rock-cut Tombs (Folhadal)": "Two anthropomorphic graves are cut side by side into the same granite outcrop near Folhadal.",
+  "Largo do Colóquio Rock-cut Tomb": "A single anthropomorphic grave lies on exposed granite at Folhadal’s western edge.",
+  "Orca do Folhadal": "Granite slabs form the surviving chamber of this Neolithic funerary monument near Folhadal.",
+  "Orca de Pramelas": "A polygonal granite chamber and short passage survive at this dolmen near Canas de Senhorim.",
+  "Orca do Pinhal dos Amiais": "Nine granite uprights form the polygonal chamber of this passage grave near São João do Monte, in Senhorim.",
+  "Anta da Arquinha da Moura": "A substantial earthen mound encloses a granite chamber and passage at this Neolithic tomb in Lageosa do Dão.",
+  "Anta da Cunha Baixa": "A large capstone covers the granite chamber of this passage grave near Cunha Baixa in Mangualde.",
+  "Orca dos Padrões": "Granite uprights define a chamber and passage on elevated ground near Cunha Baixa.",
+  "Oriu di Cubia": "A doorway closes a naturally hollowed granite boulder on Monacia’s heritage trail.",
+  "Oriu di Grussettu": "A vast granite overhang shelters a stone-walled enclosure above Monacia-d’Aullène.",
+  "Oriu di i Canni": "A pointed granite shelter with a fitted stone façade, door and window."
+};
+const SITE_CHARACTER_ICONS = {
+  "polygonal": {
+    "label": "Polygonal walls",
+    "path": "M2 3h20v18H2z M2 11l7-3 5 5-3 8 M9 8l2-5 M14 13l8-3 M14 13l8 5"
+  },
+  "precision": {
+    "label": "Precision joinery",
+    "path": "M3 3h8v18H3z M13 3h8v18h-8z M7 7h2 M15 7h2 M7 17h2 M15 17h2"
+  },
+  "megalithic": {
+    "label": "Megalithic stonework",
+    "path": "M3 20V7l5-3 5 2 1 14M14 20V8l5-2 2 3v11M2 20h20"
+  }
+};
+
+function renderSiteCharacteristics(site) {
+  const keys = ['polygonal','precision'].filter(k => (site.criteria || []).includes(k));
+  if (site.cat === 'megalithic') keys.unshift('megalithic');
+  return keys.map(k => {
+    const icon = SITE_CHARACTER_ICONS[k];
+    const label = icon.label + (site.signal === 'open' && k !== 'megalithic' ? ' · look closer' : '');
+    return `<span class="oga-character" title="${k === 'megalithic' ? 'Site category' : 'An existing Atlas characteristic to examine in the footage'}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="${icon.path}"/></svg>${label}</span>`;
+  }).join('');
+}
+function renderSitePanel(site, mode='desktop', films=null) {
+  const videos = films || VIDEOS[site.n] || [];
+  const nearby = SITES.filter(s => s.n !== site.n).map(s => ({...s, dist:haversine(site.lat,site.lng,s.lat,s.lng)})).sort((a,b)=>a.dist-b.dist).slice(0,8);
+  const row = s => `<a href="/?site=${encodeURIComponent(s.n)}" onclick="event.preventDefault();visitPanelSite(decodeURIComponent(this.search.slice(6)))"><span>${journeyEscape(s.n)}</span><small>${s.dist.toFixed(1)} km →</small></a>`;
+  const credits = [...new Set(videos.map(v => v.cr).filter(k => CREATORS[k]))];
+  return `<div class="oga-panel">
+    ${mode === 'feed' ? '' : `<button class="oga-close" onclick="${mode === 'sheet' ? 'closeMobileSiteSheet()' : 'closeDetail()'}" aria-label="Close site panel">×</button>`}
+    <p class="oga-location">${journeyEscape(SITE_COUNTRIES[site.n] || site.region)}</p>
+    <h2>${journeyEscape(site.n)}</h2>
+    <p class="oga-intro">${journeyEscape(SITE_INTROS[site.n] || '')}</p>
+    ${videos.length > 1 ? `<p class="oga-voices">${videos.length} films · ${credits.length} creators<br>${credits.map(k => `<button class="oga-creator-jump" onclick="this.closest('.oga-panel').querySelector('[data-film-creator=${k}]').scrollIntoView({behavior:'smooth',block:'start'})">${journeyEscape(CREATORS[k].name)}</button>`).join(' · ')}</p>` : ''}
+    ${videos.map((v,i) => {
+      const cr = CREATORS[v.cr];
+      const handle = cr?.handle ? (cr.handle.startsWith('@') ? cr.handle : '@'+cr.handle) : '';
+      const youtube = `https://www.youtube.com/watch?v=${v.id}${v.t ? '&t='+Number(v.t)+'s' : ''}`;
+      return `<section data-film-creator="${journeyEscape(v.cr || 'unknown')}" aria-label="Film ${i+1}${cr ? ' by '+journeyEscape(cr.name) : ''}" class="oga-film">
+      <button class="oga-thumbnail" onclick="watchAtlasVideo('${v.id}',${Number(v.t)||0})" aria-label="Watch ${journeyEscape(v.title)}${v.noembed ? ' on YouTube' : ' here'}"><img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" loading="lazy" alt="${journeyEscape(v.title)}"><span aria-hidden="true">▶</span></button>
+      <p class="oga-film-title">${journeyEscape(v.title)}</p>
+      <p class="oga-credit">${cr ? `A film by <a href="https://www.youtube.com/${journeyEscape(handle)}" target="_blank" rel="noopener">${journeyEscape(cr.name)} ↗</a>` : 'Film on YouTube'}</p>
+      <button class="oga-watch" onclick="watchAtlasVideo('${v.id}',${Number(v.t)||0})">▶ ${v.noembed ? 'Watch on YouTube ↗' : 'Watch here'}${v.t ? ' · '+formatTimestamp(Number(v.t)) : ''}</button>
+      ${i===0 ? `<p class="oga-reassurance">${v.noembed ? 'This film opens on the creator’s YouTube channel.' : 'Plays in the Atlas. Keep exploring while you watch.'}</p>` : ''}
+      <a class="oga-youtube" href="${journeyEscape(youtube)}" target="_blank" rel="noopener">Open on YouTube ↗</a>
+    </section>`;
+    }).join('')}
+    ${!videos.length ? '<p class="oga-reassurance">No films linked yet. See the photographs and site details below.</p>' : ''}
+    <div class="oga-characteristics">${renderSiteCharacteristics(site)}</div>
+    <details class="oga-details"><summary>Site details</summary><p>${journeyEscape(CATS[site.cat]?.label || site.cat)}</p><p>${journeyEscape(site.desc || '')}</p><p class="oga-coords">${site.lat.toFixed(4)}°, ${site.lng.toFixed(4)}°</p>${SITE_YEARS[site.n] !== undefined ? `<p>${formatYear(SITE_YEARS[site.n])}</p>` : ''}${renderLibraryRef(site)}${site.signal === 'open' ? '<p>Dating or interpretation includes open questions. These characteristics are prompts for closer observation.</p>' : ''}<button class="oga-save" onclick="toggleFavorite(decodeURIComponent('${encodeURIComponent(site.n).replace(/'/g,'%27')}'));this.textContent=isFavorite(decodeURIComponent('${encodeURIComponent(site.n).replace(/'/g,'%27')}'))?'Saved to favorites':'Save this site'">${isFavorite(site.n) ? 'Saved to favorites' : 'Save this site'}</button> <button class="oga-save" onclick="shareSite(decodeURIComponent('${encodeURIComponent(site.n).replace(/'/g,'%27')}'))">Share site</button><p><a class="oga-youtube" href="/contact.html?site=${encodeURIComponent(site.n)}&amp;reason=Error%20report">Report a correction</a></p></details>
+    ${renderSitePhotos(site.n)}
+    <nav class="oga-nearby" aria-label="Nearby places"><h3>Nearby places</h3>${nearby.slice(0,3).map(row).join('')}<details><summary>More nearby</summary>${nearby.slice(3).map(row).join('')}</details></nav>
+  </div>`;
+}
+function visitPanelSite(name) {
+  const site = SITES.find(s => s.n === name);
+  if (!site) return;
+  selectedSite = site;
+  if (isMobileViewport()) { window._atlasWatchingSite = site; window.atlasExploreMap(); showMobileSiteSheet(site); }
+  else selectSite(site);
+}
+
 function showDetail(site) {
   window.atlasAnalytics?.('atlas_site_view', site.n);
   const cat = CATS[site.cat] || CATS.megalithic;
@@ -26501,119 +27327,9 @@ function showDetail(site) {
   detail.className = 'open';
   detail.style.display = 'flex';
   setRailDock(true);
+  detail.innerHTML = renderSitePanel(site);
+  return;
 
-  // Find nearby sites (within ~50km)
-  const nearby = FILTERED_SITES
-    .filter(s => s !== site)
-    .map(s => ({
-      ...s,
-      dist: haversine(site.lat, site.lng, s.lat, s.lng)
-    }))
-    .filter(s => s.dist < 50)
-    .sort((a, b) => a.dist - b.dist)
-    .slice(0, 8);
-
-  // Get videos for this site
-  const videos = VIDEOS[site.n] || [];
-
-  detail.innerHTML = `
-    <div class="dh">
-      <div class="dhero" style="background:linear-gradient(135deg,${cat.bg},rgba(13,13,18,.95))">
-        <div class="dhero-icon">${catIcon(site.cat)}</div>
-      </div>
-      <span class="badge" style="background:${cat.bg};color:${cat.color};border:1px solid ${cat.br}">${cat.label}</span>
-      <button class="cbtn" onclick="closeDetail()">×</button>
-    </div>
-    <div class="dbody">
-      <div style="display:flex;align-items:center;gap:8px;justify-content:space-between">
-        <h2 style="margin:0;flex:1">${site.n}</h2>
-        <span class="detail-fav ${isFavorite(site.n) ? 'on' : ''}" onclick="toggleFavorite('${site.n.replace(/'/g,"\\'")}')" title="${isFavorite(site.n) ? 'Remove from favorites' : 'Save to favorites'}">★</span>
-      </div>
-      <div class="dmeta">
-        <span>📍 ${site.region}</span>
-        <span>🏷 ${cat.label}</span>
-        ${site.tier === 1 ? '<span style="color:var(--champagne)">★ Major Site</span>' : ''}
-        ${videos.length > 0 ? `<span>🎬 ${videos.length} video${videos.length > 1 ? 's' : ''}</span>` : ''}
-      </div>
-      ${site.signal === 'open' ? `<div class="signal-pill-row">${buildSignalBadgeHtml(site, true)}</div>` : ''}
-      <p class="ddesc">${site.desc}</p>
-      ${renderSitePhotos(site.n)}
-      <div class="dcoords">
-        ${site.lat.toFixed(4)}°${site.lat >= 0 ? 'N' : 'S'}, ${Math.abs(site.lng).toFixed(4)}°${site.lng >= 0 ? 'E' : 'W'}
-      </div>
-      ${SITE_YEARS[site.n] !== undefined ? `
-        <div class="spark">
-          <div class="spark-label">Period on the Human Timeline</div>
-          <div class="spark-year">${formatYear(SITE_YEARS[site.n])}</div>
-          <div class="spark-bar">
-            <div class="spark-tick" style="left:${yearToPercent(-10000)}%"></div>
-            <div class="spark-tick" style="left:${yearToPercent(-5000)}%"></div>
-            <div class="spark-tick" style="left:${yearToPercent(0)}%"></div>
-            <div class="spark-tick" style="left:${yearToPercent(1500)}%"></div>
-            <div class="spark-dot" style="left:${yearToPercent(SITE_YEARS[site.n])}%"></div>
-          </div>
-          <div class="spark-labels">
-            <span>10,000 BCE</span>
-            <span>5,000 BCE</span>
-            <span>0 CE</span>
-            <span>1500 CE</span>
-          </div>
-        </div>
-      ` : ''}
-      ${videos.length > 0 ? `
-        <div class="divider"></div>
-        <div class="videos-title">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg>
-          Films and site visits
-        </div>
-        ${videos.map((v, i) => {
-          const cr = v.cr && CREATORS[v.cr] ? CREATORS[v.cr] : null;
-          const crName = cr ? cr.name : '';
-          return `
-          <div class="vcard" id="vc-${v.id}" role="button" tabindex="0" aria-label="Play ${journeyEscape(v.title)}" onkeydown="if(event.target === this &amp;&amp; (event.key === 'Enter' || event.key === ' ')){event.preventDefault();this.click()}" onclick="playVideo('${v.id}','${v.title.replace(/'/g,"\\'")}','${crName.replace(/'/g,"\\'")}',this,${v.t || 0})">
-            <div class="vthumb">
-              <img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="${v.title}" loading="lazy" />
-              <div class="play-overlay">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
-              </div>
-            </div>
-            <div class="vinfo">
-              <div class="vtitle">${isRecentlyAdded(v) ? '<span class="video-new-badge">New</span>' : ''}${v.title}</div>
-              ${cr ? `<div style="font-size:10px;margin-top:3px;display:flex;align-items:center;gap:4px"><span style="width:6px;height:6px;border-radius:50%;background:${cr.color};display:inline-block"></span><span style="color:${cr.color};font-family:var(--font-mono)">${cr.name}</span></div>` : ''}
-              <div class="vwatch">▶ ${v.t ? "Start at " + formatTimestamp(v.t) : "Play on site"}</div><div class="film-actions">${journeyChannel(v)}<a class="film-action" href="https://www.youtube.com/watch?v=${v.id}${v.t ? '&amp;t='+v.t+'s' : ''}" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Watch ${journeyEscape(v.title)} on YouTube">YouTube ↗</a></div>
-            </div>
-          </div>`;
-        }).join('')}
-      ` : ''}
-      ${nearby.length > 0 ? `
-        <div class="divider"></div>
-        <div class="nearby-title">Keep exploring · Nearby sites</div>
-        ${nearby.map(n => {
-          const nc = CATS[n.cat] || CATS.megalithic;
-          return `<div class="nearby-item" onclick="selectSiteByName('${n.n.replace(/'/g, "\\'")}')">
-            <span class="si-dot" style="background:${nc.color};width:6px;height:6px"></span>
-            <span>${n.n}</span>
-            <span class="nearby-dist" data-km="${n.dist}">${fmtDist(n.dist)}</span>
-          </div>`;
-        }).join('')}
-      ` : ''}
-      <div class="divider"></div>
-      <a class="journey-link" href="/creators/">Discover more creators →</a><a class="journey-link" href="/creators/ancient-atlas.html">Ancient Atlas films →</a>
-      <button class="detail-share" type="button" onclick="shareSite('${site.n.replace(/'/g, "\\'")}')" title="Copy a direct link to this site">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="6" cy="12" r="3"/>
-          <circle cx="18" cy="6" r="3"/>
-          <circle cx="18" cy="18" r="3"/>
-          <path d="M8.6 13.4 L15.4 16.6"/>
-          <path d="M15.4 7.4 L8.6 10.6"/>
-        </svg>
-        Share this site <span class="detail-share-arrow">&rarr;</span>
-      </button>
-      <a class="detail-report" href="contact.html?site=${encodeURIComponent(site.n)}&reason=Error%20report" title="Spot something wrong on this card? Tell us.">
-        Spot an error on this site? <span>Report it &rarr;</span>
-      </a>
-    </div>
-  `;
 }
 
 // ============================================================
@@ -27092,79 +27808,11 @@ function formatTimestamp(seconds) {
 }
 
 function renderMobileSiteSection(siteName, siteData, videos) {
-  const cat = (siteData && CATS[siteData.cat]) || CATS.megalithic;
-  const country = (typeof SITE_COUNTRIES !== 'undefined' && SITE_COUNTRIES[siteName]) || '';
-  const region = (siteData && siteData.region) || '';
-  const metaParts = [region, country].filter(Boolean);
-  const metaText = metaParts.join(' · ');
-  const videoSiteIndex = getVideoSiteIndex();
-
-  const cards = videos.map(v => {
-    const safeTitle = (v.title || '').replace(/"/g, '&quot;');
-    const cr = CREATORS[v.cr];
-    const crName = cr ? cr.name : '';
-    const crColor = cr ? cr.color : 'var(--mist)';
-
-    // "Also covers" — list of OTHER sites this video appears in
-    const allSites = videoSiteIndex[v.id] || [siteName];
-    const otherSites = allSites.filter(s => s !== siteName);
-    const hasOtherSites = otherSites.length > 0;
-    const tsLabel = v.t ? formatTimestamp(Number(v.t)) : '';
-
-    // Multi-site & timestamp badges
-    const badges = [];
-    if (hasOtherSites) {
-      badges.push(`<span class="mf-vbadge mf-vbadge-multi" title="This documentary also covers ${otherSites.join(', ')}">⌗ ${allSites.length} sites</span>`);
-    }
-    if (tsLabel) {
-      badges.push(`<span class="mf-vbadge mf-vbadge-ts">▶ from ${tsLabel}</span>`);
-    }
-    const badgeRow = badges.length ? `<div class="mf-vbadges">${badges.join('')}</div>` : '';
-
-    // Other-sites byline (only when there are 1-3 others; abbreviate for many)
-    let alsoLine = '';
-    if (hasOtherSites) {
-      const shown = otherSites.slice(0, 3).join(' · ');
-      const overflow = otherSites.length > 3 ? ` · +${otherSites.length - 3} more` : '';
-      alsoLine = `<div class="mf-valso">Also covers ${shown}${overflow}</div>`;
-    }
-
-    return `<div class="journey-film"><button class="mf-vcard" type="button" onclick="watchAtlasVideo('${v.id}', ${v.t || 0})" title="${safeTitle}">
-      <div class="mf-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)">
-        <div class="mf-vplay">▶</div>
-      </div>
-      <div class="mf-vbody">
-        ${badgeRow}
-        <div class="mf-vtitle">${isRecentlyAdded(v) ? '<span class="video-new-badge">New</span>' : ''}${v.title}</div>
-        ${crName ? `<div class="mf-vcreator" style="--cr-color:${crColor}"><span class="mf-vcreator-dot"></span>${crName}</div>` : ''}
-        ${alsoLine}
-      </div>
-    </button>${journeyChannel(v)}</div>`;
-  }).join('');
-
-  // Build a stable, URL-safe id so the deep-link handler can scrollIntoView() to this section
-  const slug = String(siteName).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-  const sectionId = `mf-site-${slug}`;
-
-  return `<div class="mf-site-section" id="${sectionId}" style="--cat-color:${cat.color}">
-    <div class="mf-site-head">
-      <div class="mf-site-cat">${cat.label}</div>
-      <div class="mf-site-name">${siteName}</div>
-      <div class="mf-site-foot">
-        <div class="mf-site-meta">${metaText}</div>
-        <div class="mf-site-count">${[videos.length ? videos.length + (videos.length === 1 ? ' film' : ' films') : '', SITE_PHOTOS[siteName]?.length ? SITE_PHOTOS[siteName].length + ' photos' : ''].filter(Boolean).join(' · ')}</div>
-      </div>
-    </div>
-    ${renderSitePhotos(siteName)}
-    <p class="journey-hint">Watch here, then keep exploring. Creator channels are linked below.</p><div class="mf-vgrid">${cards}</div>${renderExploreNext(siteData)}
-  </div>`;
+  if (!siteData) return '';
+  const slug = siteName.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
+  return `<section class="mf-site-section" id="mf-site-${slug}">${renderSitePanel(siteData,'feed',videos)}</section>`;
 }
 
-// Open a YouTube video in a new tab. Called from mobile feed video cards
-// AND the landscape bottom-sheet video tiles. Using window.open() inside a
-// button click handler is the most reliable path on iOS Safari + Chrome —
-// the tap is unambiguously user-initiated, so the popup blocker never fires.
-// On phones with the YouTube app installed, the new tab routes to the app.
 function openYouTubeVideo(videoId, ts) {
   window.atlasAnalytics?.('atlas_video_open', videoId);
   if (!videoId) return;
@@ -27196,38 +27844,7 @@ function showMobileSiteSheet(site) {
   const sheet = document.getElementById('mobile-site-sheet');
   const body = document.getElementById('mss-body');
   if (!sheet || !body || !site) return;
-  const cat = CATS[site.cat] || CATS.megalithic;
-  const videos = VIDEOS[site.n] || [];
-  const region = site.region || '';
-
-  // If we arrived here from a cluster, show a back button
-  const backButton = currentClusterContext
-    ? `<button class="mss-back" type="button" onclick="backToClusterList()">← Back to ${currentClusterContext.length} sites</button>`
-    : '';
-
-  let videosBlock = '';
-  if (videos.length > 0) {
-    videosBlock = `<div class="mss-videos-label">${videos.length} ${videos.length === 1 ? 'film' : 'films'} · watch here</div>
-      <div class="mss-videos">
-        ${videos.map(v => `<button class="mss-vid" type="button" onclick="watchAtlasVideo('${v.id}', ${v.t || 0})">
-          <div class="mss-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)"></div>
-          <div class="mss-vtitle">${v.title}<span class="journey-credit">Film by ${journeyEscape(CREATORS[v.cr]?.name || 'YouTube')}${v.t ? ' · From ' + formatTimestamp(Number(v.t)) : ''}</span></div>
-        </button>${journeyChannel(v)}`).join('')}
-      </div>`;
-  } else {
-    videosBlock = `<div class="mss-empty">No walkthroughs linked yet for this site.</div>`;
-  }
-
-  body.innerHTML = `
-    ${backButton}
-    <div class="mss-cat" style="background:${cat.bg};color:${cat.color};border:1px solid ${cat.br}">${cat.label}</div>
-    <div class="mss-name">${site.n}</div>
-    <div class="mss-region">${region}</div>
-    <div class="mss-desc">${site.desc || ''}</div>
-    ${renderSitePhotos(site.n)}
-    ${videosBlock}
-    ${renderExploreNext(site)}
-  `;
+  body.innerHTML = (currentClusterContext ? '<button class="mss-back" onclick="backToClusterList()">← Back to nearby sites</button>' : '') + renderSitePanel(site,'sheet');
   sheet.classList.add('open');
   if (typeof window._atlasOpenModalState === 'function') window._atlasOpenModalState();
   sheet.setAttribute('aria-hidden', 'false');

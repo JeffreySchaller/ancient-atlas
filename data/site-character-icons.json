@@ -1,0 +1,14 @@
+{
+  "polygonal": {
+    "label": "Polygonal walls",
+    "path": "M2 3h20v18H2z M2 11l7-3 5 5-3 8 M9 8l2-5 M14 13l8-3 M14 13l8 5"
+  },
+  "precision": {
+    "label": "Precision joinery",
+    "path": "M3 3h8v18H3z M13 3h8v18h-8z M7 7h2 M15 7h2 M7 17h2 M15 17h2"
+  },
+  "megalithic": {
+    "label": "Megalithic stonework",
+    "path": "M3 20V7l5-3 5 2 1 14M14 20V8l5-2 2 3v11M2 20h20"
+  }
+}
