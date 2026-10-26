@@ -8169,5 +8169,105 @@
       "added": "2026-10-26",
       "published": "2019-11-05"
     }
+  ],
+  "São João de Areias Churchyard Necropolis": [
+    {
+      "id": "2IHcg6B4hS0",
+      "title": "Necropolis of São João [St. John] de Areias Parish",
+      "cr": "agelessrock",
+      "t": 650,
+      "added": "2026-10-26",
+      "published": "2026-07-15"
+    }
+  ],
+  "Longroiva Castle": [
+    {
+      "id": "sJ7fhhe9F6I",
+      "title": "Longroiva Monuments",
+      "cr": "agelessrock",
+      "t": 235,
+      "added": "2026-10-26",
+      "published": "2026-06-15"
+    }
+  ],
+  "Fontainhas Rock-cut Tombs (Folhadal)": [
+    {
+      "id": "BV80xafPst0",
+      "title": "Tombs of Nelas",
+      "cr": "agelessrock",
+      "t": 65,
+      "added": "2026-10-26",
+      "published": "2026-07-05"
+    }
+  ],
+  "Largo do Colóquio Rock-cut Tomb": [
+    {
+      "id": "BV80xafPst0",
+      "title": "Tombs of Nelas",
+      "cr": "agelessrock",
+      "t": 95,
+      "added": "2026-10-26",
+      "published": "2026-07-05"
+    }
+  ],
+  "Orca do Folhadal": [
+    {
+      "id": "BV80xafPst0",
+      "title": "Tombs of Nelas",
+      "cr": "agelessrock",
+      "t": 125,
+      "added": "2026-10-26",
+      "published": "2026-07-05"
+    }
+  ],
+  "Orca de Pramelas": [
+    {
+      "id": "BV80xafPst0",
+      "title": "Tombs of Nelas",
+      "cr": "agelessrock",
+      "t": 250,
+      "added": "2026-10-26",
+      "published": "2026-07-05"
+    }
+  ],
+  "Orca do Pinhal dos Amiais": [
+    {
+      "id": "BV80xafPst0",
+      "title": "Tombs of Nelas",
+      "cr": "agelessrock",
+      "t": 307,
+      "added": "2026-10-26",
+      "published": "2026-07-05"
+    }
+  ],
+  "Anta da Arquinha da Moura": [
+    {
+      "id": "BV80xafPst0",
+      "title": "Tombs of Nelas",
+      "cr": "agelessrock",
+      "t": 410,
+      "added": "2026-10-26",
+      "published": "2026-07-05"
+    }
+  ],
+  "Anta da Cunha Baixa": [
+    {
+      "id": "BV80xafPst0",
+      "title": "Tombs of Nelas",
+      "cr": "agelessrock",
+      "t": 535,
+      "added": "2026-10-26",
+      "published": "2026-07-05"
+    }
+  ],
+  "Orca dos Padrões": [
+    {
+      "id": "BV80xafPst0",
+      "title": "Tombs of Nelas",
+      "cr": "agelessrock",
+      "t": 755,
+      "added": "2026-10-26",
+      "published": "2026-07-05"
+    }
   ]
 }

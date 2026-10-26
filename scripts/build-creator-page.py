@@ -132,13 +132,13 @@ def build_model():
             primary, {"site": site, "videos": [], "also": []})
         node["videos"].append(vid)
         if len(targets) > 1:
-            node["also"] = targets[1:]
+            node["also"] = sorted(set(node["also"]) | set(targets[1:]))
 
     stats = {
         "videos": len(catalogue),
         "placed": len(catalogue) - len(unplaced),
         "unplaced": len(unplaced),
-        "sites": sum(len(c) for r in tree.values() for c in r.values()),
+        "sites": len({name for targets in wire.values() for name in targets if name in sites}),
         "countries": len({c for r in tree.values() for c in r}),
         "regions": len(tree),
     }
@@ -170,7 +170,7 @@ def render_site(name, node):
     also = ""
     if node["also"]:
         also = ('<span class="also">also covers '
-                + ", ".join(e(a) for a in node["also"]) + "</span>")
+                + ", ".join(f'<a href="/sites/{slugify(a)}">{e(a)}</a>' for a in node["also"]) + "</span>")
     return f"""<section class="site" data-site="{e(name.lower())}">
   <header class="site-head">
     <h4><a href="/sites/{slugify(name)}">{e(name)}</a></h4>

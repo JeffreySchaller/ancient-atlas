@@ -1,0 +1,237 @@
+{
+  "reviewed": "2026-10-26",
+  "method": "Original captions (vidIQ for São João/Nelas; YouTube VTT for Longroiva), sampled frames at each linked timestamp, and independent archaeological/heritage sources. Films are compiled narrated studies. No full playback claim. Timeline years approximate except historical association at Longroiva; descriptions preserve uncertainty.",
+  "new_sites": [
+    {
+      "site": {
+        "n": "São João de Areias Churchyard Necropolis",
+        "lat": 40.386551,
+        "lng": -8.071406,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "Rock-cut graves survive at the parish church of São João de Areias. Archaeological research records a group of seven burials beneath the churchyard, part of a wider landscape of scattered early medieval cemeteries. This pin identifies the churchyard complex; other graves discussed in the film lie elsewhere in the parish."
+      },
+      "era": 1000,
+      "civilization": "Early medieval Portuguese",
+      "video_id": "2IHcg6B4hS0",
+      "start_seconds": 650,
+      "sources": [
+        "https://pt.wikipedia.org/wiki/Igreja_Matriz_de_S%C3%A3o_Jo%C3%A3o_de_Areias",
+        "https://www.museuarqueologicodocarmo.arqueologos.pt/publicacoes/arqueologia_historia/serie_13/Vol_73/X_completo_AH_vol73-AF_web.pdf"
+      ],
+      "verification": "Church coordinates verified against the named church. Frame at 10:50 explicitly labels Igreja Matriz and shows the excavated graves. Marker represents churchyard complex, not an individual grave."
+    },
+    {
+      "site": {
+        "n": "Longroiva Castle",
+        "lat": 40.96375,
+        "lng": -7.208551,
+        "cat": "settlement",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "A granite keep and surviving enclosure preserve the medieval castle of Longroiva in Mêda. The tower is associated with the Knights Templar and Gualdim Pais in the 12th century. Later alterations and reuse changed the enclosure, while the surviving masonry retains evidence of the building’s earlier floors and openings."
+      },
+      "era": 1176,
+      "civilization": "Medieval Portuguese",
+      "video_id": "sJ7fhhe9F6I",
+      "start_seconds": 235,
+      "sources": [
+        "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=71169",
+        "https://jflongroiva.pt/historia/"
+      ],
+      "verification": "National heritage coordinates. Frame at 3:55 shows the keep and enclosure. Earlier graves and later Côa imagery not assigned to this castle pin."
+    },
+    {
+      "site": {
+        "n": "Fontainhas Rock-cut Tombs (Folhadal)",
+        "lat": 40.505051,
+        "lng": -7.857862,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "Two anthropomorphic graves are cut side by side into the same granite outcrop near Folhadal. The municipal archaeological inventory identifies this pair as an early medieval burial site, registered as Fontainhas, CNS 27974. Their shared orientation and contrasting sizes can be compared in the surviving rock cuts."
+      },
+      "era": 1000,
+      "civilization": "Early medieval Portuguese",
+      "video_id": "BV80xafPst0",
+      "start_seconds": 65,
+      "sources": [
+        "https://www.cm-nelas.pt/download/163/plano-diretor-municipal-1-a-revisao-elementos-que-acompanham-pdm_2014/5100/patrimonio-arqueologico-plano-diretor-municipal-de-nelas.pdf",
+        "https://run.unl.pt/server/api/core/bitstreams/ec008cf3-752b-4b3f-8f45-a023cc2dc245/content",
+        "https://www.freguesias.pt/portal/patrimonios.php?cod=180903&pageNum_patrimonio=1&totalRows_patrimonio=31"
+      ],
+      "verification": "CNS 27974 ties municipal description to academic coordinate table. Frame 1:05 names Fontainhas and shows paired graves."
+    },
+    {
+      "site": {
+        "n": "Largo do Colóquio Rock-cut Tomb",
+        "lat": 40.512211,
+        "lng": -7.854423,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "A single anthropomorphic grave lies on exposed granite at Folhadal’s western edge. Listed as Rua do Pombal, or Sepultura de Colóquio, in the municipal inventory, it has a small channel at the foot that may reflect later reuse as a pressing basin. The burial is assigned to the early Middle Ages."
+      },
+      "era": 1000,
+      "civilization": "Early medieval Portuguese",
+      "video_id": "BV80xafPst0",
+      "start_seconds": 95,
+      "sources": [
+        "https://www.cm-nelas.pt/download/163/plano-diretor-municipal-1-a-revisao-elementos-que-acompanham-pdm_2014/5100/patrimonio-arqueologico-plano-diretor-municipal-de-nelas.pdf",
+        "https://run.unl.pt/server/api/core/bitstreams/ec008cf3-752b-4b3f-8f45-a023cc2dc245/content",
+        "https://www.freguesias.pt/portal/patrimonios.php?cod=180903&pageNum_patrimonio=2&totalRows_patrimonio=31"
+      ],
+      "verification": "CNS 27972 resolves alternate name Rua do Pombal. Frame 1:35 shows named Largo do Colóquio and roadside grave."
+    },
+    {
+      "site": {
+        "n": "Orca do Folhadal",
+        "lat": 40.50178,
+        "lng": -7.84521,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "Granite slabs form the surviving chamber of this Neolithic funerary monument near Folhadal. Local heritage accounts date it to approximately 4000–3600 BCE. It belongs to Nelas’s prehistoric circuit, alongside the dolmens of Pramelas, Lapa do Lobo and Pinhal dos Amiais."
+      },
+      "era": -3800,
+      "civilization": "Neolithic Iberian",
+      "video_id": "BV80xafPst0",
+      "start_seconds": 125,
+      "sources": [
+        "https://mapcarta.com/N4807730796",
+        "https://www.jf-nelas.pt/freguesia/historia",
+        "https://www.visitnelascoracaododao.pt/conhecer/roteiros/circuito-pre-historico-do-concelho/"
+      ],
+      "verification": "OSM monument node; named and photographed at 2:05."
+    },
+    {
+      "site": {
+        "n": "Orca de Pramelas",
+        "lat": 40.512941,
+        "lng": -7.913148,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "A polygonal granite chamber and short passage survive at this dolmen near Canas de Senhorim. The chamber had a paved floor, and Roman material recovered inside suggests later reuse of the prehistoric burial place. The monument is also known as Orca de Tramelas."
+      },
+      "era": -3500,
+      "civilization": "Neolithic Iberian",
+      "video_id": "BV80xafPst0",
+      "start_seconds": 250,
+      "sources": [
+        "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=72096",
+        "https://rotademegalitismo.visitviseudaolafoes.pt/rota/rota-de-megalitismo/monumentos/orca-de-pramelas/",
+        "https://api.openstreetmap.org/api/0.6/node/3994226756.json"
+      ],
+      "verification": "Use heritage-register coordinate corroborated by regional route and OSM; reject secondary -7.904 coordinate. Frame 4:10 labels Pramelas."
+    },
+    {
+      "site": {
+        "n": "Orca do Pinhal dos Amiais",
+        "lat": 40.528339,
+        "lng": -7.783607,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "Nine granite uprights form the polygonal chamber of this passage grave near São João do Monte, in Senhorim. The municipal archaeological inventory records a corridor and traces of a surrounding mound. Excavated material documents prehistoric use and later reuse, including a Roman-period burial."
+      },
+      "era": -3400,
+      "civilization": "Neolithic Iberian",
+      "video_id": "BV80xafPst0",
+      "start_seconds": 307,
+      "sources": [
+        "https://api.openstreetmap.org/api/0.6/node/4007453718.json",
+        "https://www.cm-nelas.pt/download/163/plano-diretor-municipal-1-a-revisao-elementos-que-acompanham-pdm_2014/5100/patrimonio-arqueologico-plano-diretor-municipal-de-nelas.pdf",
+        "https://www.uniarq.net/uniarqdigital91.html"
+      ],
+      "verification": "OSM node matched to CNS 15837; older research coordinates differ, so use monument node rather than historic map datum. Frame 5:07 names Pinhal dos Amiais."
+    },
+    {
+      "site": {
+        "n": "Anta da Arquinha da Moura",
+        "lat": 40.508406,
+        "lng": -8.008881,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "A substantial earthen mound encloses a granite chamber and passage at this Neolithic tomb in Lageosa do Dão. Seven uprights support the chamber, where painted motifs survive on some stones. Its preserved mound helps explain how passage graves originally sat within the landscape."
+      },
+      "era": -3500,
+      "civilization": "Neolithic Iberian",
+      "video_id": "BV80xafPst0",
+      "start_seconds": 410,
+      "sources": [
+        "https://rotademegalitismo.visitviseudaolafoes.pt/rota/rota-de-megalitismo/monumentos/anta-da-arquinha-da-moura/",
+        "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=74043"
+      ],
+      "verification": "Regional heritage route coordinate; reject malformed Wikipedia longitude. Frame 6:50 explicitly names and shows monument."
+    },
+    {
+      "site": {
+        "n": "Anta da Cunha Baixa",
+        "lat": 40.570075,
+        "lng": -7.770919,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "A large capstone covers the granite chamber of this passage grave near Cunha Baixa in Mangualde. Its long corridor retains standing slabs, and investigations recorded painted and engraved decoration. Portugal’s heritage register dates construction between the late fourth and mid-third millennia BCE, with later revisitation."
+      },
+      "era": -3000,
+      "civilization": "Late Neolithic / Chalcolithic Iberian",
+      "video_id": "BV80xafPst0",
+      "start_seconds": 535,
+      "sources": [
+        "https://imovel.patrimoniocultural.gov.pt/detalhes.php?code=70677",
+        "https://www.cvrdao.pt/pt/anta-da-cunha-baixa/"
+      ],
+      "verification": "Heritage-register coordinate matches regional wine-route listing. Frame 8:55 labels Cunha Baixa."
+    },
+    {
+      "site": {
+        "n": "Orca dos Padrões",
+        "lat": 40.554044,
+        "lng": -7.769467,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "Granite uprights define a chamber and passage on elevated ground near Cunha Baixa. Charcoal recovered during archaeological work places construction around 3140–2880 BCE. A large fallen slab lies beside the chamber, while remnants of the surrounding mound preserve part of its original funerary setting."
+      },
+      "era": -3000,
+      "civilization": "Late Neolithic Iberian",
+      "video_id": "BV80xafPst0",
+      "start_seconds": 755,
+      "sources": [
+        "https://rotademegalitismo.visitviseudaolafoes.pt/rota/rota-de-megalitismo/monumentos/orca-dos-padroes/"
+      ],
+      "verification": "Regional heritage route coordinate. Frame 12:35 labels Padrões and shows chamber and passage."
+    }
+  ],
+  "unresolved": [
+    {
+      "film": "2IHcg6B4hS0",
+      "places": "Requeiras, Roda, Caturela/Catura, Mascota, Lavoura, Mangas",
+      "reason": "Names in captions can be mistranscribed. Exact individual monument coordinates not corroborated; no parish-centre proxy pins."
+    },
+    {
+      "film": "BV80xafPst0",
+      "places": "Santar grave; unnamed building west of Folhadal",
+      "reason": "Santar has multiple archaeological records and conflicting locality coordinates. Building identity and dating unverified. No guessed placement."
+    },
+    {
+      "film": "sJ7fhhe9F6I",
+      "places": "Opening twin graves; Côa Valley circular stone",
+      "reason": "Graves likely near Nossa Senhora do Torrão but the exact pair is not independently matched. Côa stone has no specific locality; no valley-centre proxy pin."
+    }
+  ]
+}
