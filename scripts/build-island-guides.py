@@ -29,7 +29,7 @@ def corsica_films():
  cards=[]
  for f in data['films']:
   url='https://www.youtube.com/watch?v='+f['id']
-  cards.append(f'<article><a href="{url}"><img src="https://i.ytimg.com/vi/{f["id"]}/hqdefault.jpg" alt="{e(f["title"])}" loading="lazy" style="width:100%;max-width:640px;aspect-ratio:16/9;object-fit:cover;border-radius:10px"></a><div class="eyebrow">On-location film · {f["duration"]//60}:{f["duration"]%60:02d} · {e(f["area"])}</div><h3>{e(f["title"])}</h3><p>{e(f["note"])}</p><p>By <a href="{e(f["channel_url"])}">{e(f["creator"])}</a></p><a class="btn" href="{url}">Watch the original film ↗</a><a class="btn" href="{e(f["channel_url"])}">Explore {e(f["creator"])} ↗</a></article>')
+  cards.append(f'<article><a href="{url}"><img src="https://i.ytimg.com/vi/{f["id"]}/hqdefault.jpg" alt="{e(f["title"])}" loading="lazy" style="width:100%;max-width:640px;aspect-ratio:16/9;object-fit:cover;border-radius:10px"></a><div class="eyebrow">{e(f.get("format", "On-location film"))} · {f["duration"]//60}:{f["duration"]%60:02d} · {e(f["area"])}</div><h3>{e(f["title"])}</h3><p>{e(f["note"])}</p><p>By <a href="{e(f["channel_url"])}">{e(f["creator"])}</a></p><a class="btn" href="{url}">Watch the original film ↗</a><a class="btn" href="{e(f["channel_url"])}">Explore {e(f["creator"])} ↗</a></article>')
  return '<section id="films"><div class="eyebrow">Through the creators’ eyes</div><h2>Walk the ground in Corsica.</h2><div class="grid">'+''.join(cards)+'</div></section>'
 
 def films():
