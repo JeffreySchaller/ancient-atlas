@@ -1986,6 +1986,7 @@ body.present #broadcast-controls{
 .unit-toggle.unit-attention{animation:unitPulse 1.2s ease-out 2;box-shadow:0 0 0 0 rgba(201,168,76,.55)}@keyframes unitPulse{0%{box-shadow:0 0 0 0 rgba(201,168,76,.55)}60%{box-shadow:0 0 0 12px rgba(201,168,76,0)}100%{box-shadow:0 0 0 0 rgba(201,168,76,0)}}
 .mss-vtitle:has(.journey-credit){display:block;-webkit-line-clamp:unset;overflow:visible}.journey-film .mf-vcard{width:100%}.journey-link{display:block;color:var(--champagne);font-size:12px;padding:8px 4px;min-height:36px;overflow-wrap:anywhere}.journey-credit{display:block;font-size:12px;color:var(--champagne);margin-top:6px}.journey-hint{font-size:12px;color:var(--mist);margin:12px 0}.journey-next{border-top:1px solid var(--border, #39343a);padding:18px 0;margin-top:18px}.journey-next h3{font-size:15px;margin:0 0 10px}.journey-next a{display:block;padding:10px 0;color:var(--champagne);font-size:13px}.journey-next span{color:var(--mist);font-size:11px}.journey-link:focus-visible,.journey-next a:focus-visible{outline:2px solid var(--champagne);outline-offset:2px}
 #watch-feed-return{display:none}body.watch-map #mobile-feed{display:none!important}body.watch-map main{display:flex!important;width:100vw;height:100dvh}body.watch-map #map-wrap{display:block!important;width:100%;height:100%}body.watch-map #map{width:100%;height:100%}@media(max-width:950px){body.watch-map header,body.watch-map #sidebar,body.watch-map #detail{display:none!important}body.watch-map #watch-feed-return{display:block;position:fixed;top:12px;left:60px;z-index:3000;background:#15151c;color:#e8e4d8;padding:10px;border:1px solid #c9a84c;border-radius:6px}}
+.film-actions{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}.film-action{display:inline-flex;align-items:center;padding:4px 7px;min-height:26px;border:1px solid rgba(201,168,76,.28);border-radius:5px;color:var(--champagne);font:10px/1.2 var(--font-sans);text-decoration:none}.film-action:hover{background:rgba(201,168,76,.12)}.film-action:focus-visible{outline:2px solid var(--champagne);outline-offset:2px}.journey-film>.film-action{margin-top:4px}
 </style>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script defer src="/assets/js/analytics.js"></script>
@@ -26485,7 +26486,7 @@ function journeyChannel(v) {
   const cr = CREATORS[v.cr];
   if (!cr || !cr.handle) return '';
   const handle = cr.handle.startsWith('@') ? cr.handle : '@' + cr.handle;
-  return `<a class="journey-link" href="https://www.youtube.com/${journeyEscape(handle)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">More from ${journeyEscape(cr.name)} on YouTube ↗</a>`;
+  return `<a class="film-action" aria-label="${journeyEscape(cr.name)} channel on YouTube" href="https://www.youtube.com/${journeyEscape(handle)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Channel ↗</a>`;
 }
 function renderExploreNext(site) {
   if (!site) return '';
@@ -26579,9 +26580,9 @@ function showDetail(site) {
             <div class="vinfo">
               <div class="vtitle">${isRecentlyAdded(v) ? '<span class="video-new-badge">New</span>' : ''}${v.title}</div>
               ${cr ? `<div style="font-size:10px;margin-top:3px;display:flex;align-items:center;gap:4px"><span style="width:6px;height:6px;border-radius:50%;background:${cr.color};display:inline-block"></span><span style="color:${cr.color};font-family:var(--font-mono)">${cr.name}</span></div>` : ''}
-              <div class="vwatch">▶ ${v.t ? "Start at " + formatTimestamp(v.t) : "Play on site"}</div>
+              <div class="vwatch">▶ ${v.t ? "Start at " + formatTimestamp(v.t) : "Play on site"}</div><div class="film-actions">${journeyChannel(v)}<a class="film-action" href="https://www.youtube.com/watch?v=${v.id}${v.t ? '&amp;t='+v.t+'s' : ''}" target="_blank" rel="noopener" onclick="event.stopPropagation()" aria-label="Watch ${journeyEscape(v.title)} on YouTube">YouTube ↗</a></div>
             </div>
-          </div>${journeyChannel(v)}<a class="journey-link" href="https://www.youtube.com/watch?v=${v.id}${v.t ? '&amp;t='+v.t+'s' : ''}" target="_blank" rel="noopener">Watch on YouTube ↗</a>`;
+          </div>`;
         }).join('')}
       ` : ''}
       ${nearby.length > 0 ? `

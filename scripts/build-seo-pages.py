@@ -119,7 +119,7 @@ h2{font-size:14px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.16em;
 .vid{display:flex;gap:14px;align-items:center;border:1px solid rgba(255,255,255,.08);border-radius:10px;background:var(--panel);padding:10px;margin:0 0 10px;text-decoration:none}
 .vid img{width:132px;height:74px;object-fit:cover;border-radius:6px;flex-shrink:0}
 .vid .t{color:var(--ivory);font-size:15px;line-height:1.35}
-.film{margin-bottom:22px}.film-credit{display:inline-block;padding:5px 0;font-size:13px}.watch-label{display:block;color:var(--champagne);font-size:13px;margin-top:7px}.film-hint{color:var(--mist);font-size:14px;margin-bottom:14px}h3{font-size:16px;margin:18px 0 10px}a:focus-visible{outline:2px solid var(--champagne);outline-offset:4px}.vid>span{min-width:0;overflow-wrap:anywhere}.vid .c{display:block;font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--mist);margin-top:5px}
+.film{margin-bottom:12px}.film-credit{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:5px;padding:4px 8px;font-size:12px;text-decoration:none;min-height:28px}.film .vid{margin-bottom:5px}.watch-label{display:block;color:var(--champagne);font-size:13px;margin-top:7px}.film-hint{color:var(--mist);font-size:14px;margin-bottom:14px}h3{font-size:16px;margin:18px 0 10px}a:focus-visible{outline:2px solid var(--champagne);outline-offset:4px}.vid>span{min-width:0;overflow-wrap:anywhere}.vid .c{display:block;font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--mist);margin-top:5px}
 ul.nearby{list-style:none}
 ul.nearby li{margin:0 0 8px;font-size:15px}
 ul.nearby .d{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--mist);margin-left:8px}
@@ -275,12 +275,12 @@ def main():
                 cr = creator.get("name", "YouTube")
                 handle = creator.get("handle", "")
                 channel = "https://www.youtube.com/" + (handle if handle.startswith("@") else "@" + handle)
-                credit = f'<a class="film-credit" href="{html.escape(channel, quote=True)}" target="_blank" rel="noopener">More from {html.escape(cr)} on YouTube ↗</a>' if handle else ""
+                credit = f'<a class="film-credit" href="{html.escape(channel, quote=True)}" target="_blank" rel="noopener" aria-label="{html.escape(cr, quote=True)} channel on YouTube">Channel ↗</a>' if handle else ""
                 items.append(
                     f'<article class="film"><a data-atlas-video="{v["id"] if not v.get("noembed") else ""}" data-start="{seconds}" data-title="{html.escape(v["title"], quote=True)}" data-creator="{html.escape(cr, quote=True)}" data-handle="{html.escape(handle, quote=True)}" class="vid" href="https://www.youtube.com/watch?v={v["id"]}{jump}" target="_blank" rel="noopener">'
                     f'<img src="https://i.ytimg.com/vi/{v["id"]}/hqdefault.jpg" alt="{html.escape(v["title"])}" loading="lazy" />'
                     f'<span><span class="t">{html.escape(v["title"])}</span>'
-                    f'<span class="c">Film by {html.escape(cr)}{start_label}</span><span class="watch-label">{"Watch on YouTube ↗" if v.get("noembed") else "Watch here ▶"}</span></span></a>{credit}<a class="film-credit" style="margin-left:14px" href="https://www.youtube.com/watch?v={v["id"]}{jump}" target="_blank" rel="noopener">Watch on YouTube ↗</a></article>'
+                    f'<span class="c">Film by {html.escape(cr)}{start_label}</span><span class="watch-label">{"Watch on YouTube ↗" if v.get("noembed") else "Watch here ▶"}</span></span></a>{credit}<a class="film-credit" style="margin-left:6px" href="https://www.youtube.com/watch?v={v["id"]}{jump}" target="_blank" rel="noopener">YouTube ↗</a></article>'
                 )
             vid_html = f'<h2 id="films">Films and site visits ({len(wires)})</h2><p class="film-hint">Watch here while you explore. Open YouTube or the creator’s channel whenever you like.</p>' + "".join(items)
 
