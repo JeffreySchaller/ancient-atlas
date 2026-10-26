@@ -1,0 +1,171 @@
+{
+  "reviewed": "2026-10-26",
+  "note": "Original titles retained. These are attributed narrated research studies, not verified first-person walkthroughs. No automatic chapter timestamps used. Coordinate sources refer to monuments, not town centres. Regumiel marker represents church-and-necropolis complex. Santa Maria film linked only to named complex, not every monument suggested by title.",
+  "new_sites": [
+    {
+      "site": {
+        "n": "Santa María de la Piscina",
+        "lat": 42.5780556,
+        "lng": -2.7258333,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "A rock-cut cemetery lies beside the Romanesque hermitage near Peciña in La Rioja. The archaeological complex preserves traces of a medieval settlement and burials cut into the exposed stone, allowing the church and its surrounding funerary landscape to be explored together."
+      },
+      "era": 1000,
+      "civilization": "Medieval Iberian",
+      "tags": "Spain Santa María de la Piscina Ageless Rock Bernie Ong",
+      "sources": [
+        "https://lariojaturismo.com/lugar-de-interes/conjunto-arqueologico-de-santa-maria-de-la-piscina/4e718b2c-27c4-4bc9-b83c-7b3bfe575337",
+        "https://es.wikipedia.org/wiki/Ermita_de_Santa_Mar%C3%ADa_de_La_Piscina"
+      ]
+    },
+    {
+      "site": {
+        "n": "San Vítor de Barxacova Necropolis",
+        "lat": 42.37369,
+        "lng": -7.50279,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "Anthropomorphic graves cut into rock surround the remains of a medieval chapel above the Mao river in Parada de Sil. Excavations connect the cemetery with rural communities of the early Middle Ages. The surviving cuts preserve the shapes and arrangement of individual burials."
+      },
+      "era": 1000,
+      "civilization": "Early medieval Galician",
+      "tags": "Spain San Vítor de Barxacova Necropolis Ageless Rock Bernie Ong",
+      "sources": [
+        "https://turismo.ribeirasacra.org/en/recurso_en/rock-necropolis-of-san-vitor-de-barxacova",
+        "https://mapcarta.com/es/W487492713",
+        "https://patrimoniogalego.net/index.php/87413/2016/07/necropole-de-san-vitor-de-barxacova/"
+      ]
+    },
+    {
+      "site": {
+        "n": "San Andrés Necropolis (Sonsierra)",
+        "lat": 42.573561,
+        "lng": -2.74455,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "About seventy rock-cut graves survive among the vineyards of San Vicente de la Sonsierra. Remains of a hermitage and rock-cut wine presses place the cemetery within a wider worked landscape. The precise location of the settlement associated with these burials remains uncertain."
+      },
+      "era": 1000,
+      "civilization": "Early medieval Iberian",
+      "tags": "Spain San Andrés Necropolis (Sonsierra) Ageless Rock Bernie Ong",
+      "sources": [
+        "https://aytosanvicentedelasonsierra.larioja.org/es/qr/310-22"
+      ]
+    },
+    {
+      "site": {
+        "n": "Regumiel de la Sierra Necropolis",
+        "lat": 41.95891,
+        "lng": -2.98573,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "An extensive early medieval cemetery occupies the sandstone outcrop around the church of San Adrián Mártir. Roughly a hundred graves are documented, with further burials likely beneath later church alterations and access steps. This is the village church necropolis, distinct from nearby Revenga."
+      },
+      "era": 1000,
+      "civilization": "Early medieval Iberian",
+      "tags": "Spain Regumiel de la Sierra Necropolis Ageless Rock Bernie Ong",
+      "sources": [
+        "https://www.jcyl.es/jcyl/patrimoniocultural/GuiaLugaresArqueologicos/burgos/07burgos/index.html",
+        "https://mapcarta.com/W672365995"
+      ]
+    },
+    {
+      "site": {
+        "n": "Cuyacabras Necropolis",
+        "lat": 41.9913,
+        "lng": -2.9961917,
+        "cat": "tomb",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "Rock-cut graves and the remains of a church mark a deserted medieval settlement in the forest near Quintanar de la Sierra. Excavated between 1969 and 1971, the cemetery preserves a dense arrangement of burials shaped into the exposed rock."
+      },
+      "era": 1000,
+      "civilization": "Medieval Iberian",
+      "tags": "Spain Cuyacabras Necropolis Ageless Rock Bernie Ong",
+      "sources": [
+        "https://es.wikipedia.org/wiki/Yacimiento_arqueol%C3%B3gico_de_Cuyacabras",
+        "https://www.outdooractive.com/es/poi/burgos/necropolis-altomedieval-de-cuyacabras/807784038/"
+      ]
+    },
+    {
+      "site": {
+        "n": "Castro de Ulaca",
+        "lat": 40.53,
+        "lng": -4.8836111,
+        "cat": "settlement",
+        "region": "Europe",
+        "tier": 3,
+        "criteria": [],
+        "desc": "Granite walls enclose a large Iron Age hilltop settlement above the Amblés valley. Ulaca preserves houses, quarries and distinctive rock-cut monuments, including a stepped altar and a structure interpreted as a sauna. These remains illuminate the architecture and ritual life of the Vetton communities before Roman rule."
+      },
+      "era": -200,
+      "civilization": "Vetton Iron Age",
+      "tags": "Spain Castro de Ulaca Ageless Rock Bernie Ong",
+      "sources": [
+        "https://www.turismoavila.com/web/puntos_de_interes/visor/index.php?iid=5b21369464473-78",
+        "https://jovenes-geomorfologos-seg.quarto.pub/posts/25_02_10_RuizPedrosa_Serrano/post.html"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "site": "Santa María de la Piscina",
+      "id": "NWsmDGTBv0M"
+    },
+    {
+      "site": "San Vítor de Barxacova Necropolis",
+      "id": "of3xtCIgsbM"
+    },
+    {
+      "site": "San Andrés Necropolis (Sonsierra)",
+      "id": "4nTNnRPH9Xc"
+    },
+    {
+      "site": "Regumiel de la Sierra Necropolis",
+      "id": "xmo5kuoH5EY"
+    },
+    {
+      "site": "Cuyacabras Necropolis",
+      "id": "cZw2O1dM-mk"
+    },
+    {
+      "site": "Castro de Ulaca",
+      "id": "zrAogTbp-mU"
+    },
+    {
+      "site": "Maryam Korkor",
+      "id": "NZFdNMSSR0Y"
+    },
+    {
+      "site": "Abuna Yemata Guh",
+      "id": "IWhBeOlEEZw"
+    },
+    {
+      "site": "Wukro Cherkos",
+      "id": "J8Fww-MU5qw"
+    },
+    {
+      "site": "Mikael Imba",
+      "id": "grgL5S2ADkc"
+    },
+    {
+      "site": "Abreha we Atsbeha",
+      "id": "5ktd7APveuM"
+    }
+  ],
+  "pending_monument_identification": [
+    "2IHcg6B4hS0",
+    "BV80xafPst0",
+    "sJ7fhhe9F6I"
+  ]
+}

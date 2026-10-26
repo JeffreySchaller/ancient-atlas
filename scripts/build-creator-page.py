@@ -40,13 +40,8 @@ REPO_ROOT = Path(__file__).parent.parent
 DATA = REPO_ROOT / "data"
 OUT_DIR = REPO_ROOT / "public" / "creators"
 OUT = OUT_DIR / "ageless-rock-by-place.html"
-# The catalogue used to live in ~/Downloads, which is not a place a build
-# can depend on: the file went missing once and this builder became
-# unrunnable. Its sibling build-creator-feature.py was given the repo copy
-# as a fallback at the time and this one was missed. Same fix.
-_LOCAL = Path.home() / "Downloads" / "ageless-rock-videos.md"
-CATALOGUE = _LOCAL if _LOCAL.exists() else (
-    Path(__file__).resolve().parent.parent / "data" / "ageless-rock-catalogue.md")
+# The versioned catalogue is authoritative; stale Downloads copies must not override it.
+CATALOGUE = REPO_ROOT / "data" / "ageless-rock-catalogue.md"
 
 CREATOR_KEY = "agelessrock"
 HANDLE = "@AgelessRock888"
