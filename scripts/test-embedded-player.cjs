@@ -1,0 +1,33 @@
+const {chromium}=require('playwright');
+(async()=>{
+ const b=await chromium.launch({headless:true,channel:'chrome'});
+ for(const width of [390,1440]){
+ const p=await b.newPage({viewport:{width,height:900}});const errors=[];p.on('pageerror',e=>errors.push(e.message));
+ await p.route('https://www.youtube.com/embed/**',r=>r.fulfill({body:'Mock embedded video'}));
+ await p.goto('http://localhost:8765/sites/tipon.html');
+ await p.locator('[data-atlas-video="N0IvaD4xnMk"]').click();
+ await p.locator('#atlas-watch iframe').waitFor();
+ if(!(await p.locator('#atlas-watch').innerText()).includes('Earth Explorer'))throw Error('credit');
+ if(await p.context().pages().length!==1)throw Error('opened external');
+ await p.goto('http://localhost:8765/?site=Tip%C3%B3n');
+ await p.waitForFunction(()=>typeof watchAtlasVideo==='function' && window.AtlasPlayer);
+ await p.evaluate(()=>watchAtlasVideo('N0IvaD4xnMk',35));
+ const frame=await p.locator('#atlas-watch iframe').elementHandle();
+ await p.evaluate(()=>window.atlasExploreMap());
+ await p.waitForTimeout(300);
+ const map=await p.locator('#map').boundingBox();
+ if(!map||map.width<100||map.height<100)throw Error('map hidden '+width);
+ await p.evaluate(()=>selectSiteByName('Moray'));
+ if(!await frame.evaluate(e=>e.isConnected))throw Error('site selection reset player');
+ if(!await frame.getAttribute('src').then(s=>s.includes('start=35')))throw Error('timestamp');
+ await p.locator('[data-min]').click();
+ if(!await frame.evaluate(e=>e.isConnected))throw Error('minimize reset');
+ await p.locator('[data-min]').click();
+ await p.screenshot({path:`/tmp/atlas-embedded-${width}.png`});
+ await p.locator('[data-close]').click();
+ if(await p.locator('#atlas-watch iframe').count())throw Error('close did not remove iframe');
+ if(errors.length)throw Error(errors.join('\n'));
+ console.log(width,'embedded playback, credits, map, site switch, timestamp, minimize and close passed');
+ await p.close();
+ }await b.close();
+})().catch(e=>{console.error(e);process.exit(1)});

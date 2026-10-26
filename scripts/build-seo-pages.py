@@ -152,7 +152,7 @@ def page_shell(title, desc_meta, canonical, og_image, body, jsonld=None):
 <meta property="og:image" content="{og_image}" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
-<style>{CSS}</style>
+<style>{CSS}</style><link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script>
 <script defer src="/assets/js/analytics.js"></script>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 {ld}{photo_styles}</head>
@@ -277,12 +277,12 @@ def main():
                 channel = "https://www.youtube.com/" + (handle if handle.startswith("@") else "@" + handle)
                 credit = f'<a class="film-credit" href="{html.escape(channel, quote=True)}" target="_blank" rel="noopener">More from {html.escape(cr)} on YouTube ↗</a>' if handle else ""
                 items.append(
-                    f'<article class="film"><a class="vid" href="https://www.youtube.com/watch?v={v["id"]}{jump}" target="_blank" rel="noopener">'
+                    f'<article class="film"><a data-atlas-video="{v["id"] if not v.get("noembed") else ""}" data-start="{seconds}" data-title="{html.escape(v["title"], quote=True)}" data-creator="{html.escape(cr, quote=True)}" data-handle="{html.escape(handle, quote=True)}" class="vid" href="https://www.youtube.com/watch?v={v["id"]}{jump}" target="_blank" rel="noopener">'
                     f'<img src="https://i.ytimg.com/vi/{v["id"]}/hqdefault.jpg" alt="{html.escape(v["title"])}" loading="lazy" />'
                     f'<span><span class="t">{html.escape(v["title"])}</span>'
-                    f'<span class="c">Film by {html.escape(cr)}{start_label}</span><span class="watch-label">Watch on YouTube ↗</span></span></a>{credit}</article>'
+                    f'<span class="c">Film by {html.escape(cr)}{start_label}</span><span class="watch-label">{"Watch on YouTube ↗" if v.get("noembed") else "Watch here ▶"}</span></span></a>{credit}<a class="film-credit" style="margin-left:14px" href="https://www.youtube.com/watch?v={v["id"]}{jump}" target="_blank" rel="noopener">Watch on YouTube ↗</a></article>'
                 )
-            vid_html = f'<h2 id="films">Films and site visits ({len(wires)})</h2><p class="film-hint">Watch on the creator’s channel. This page stays open so you can keep exploring.</p>' + "".join(items)
+            vid_html = f'<h2 id="films">Films and site visits ({len(wires)})</h2><p class="film-hint">Watch here while you explore. Open YouTube or the creator’s channel whenever you like.</p>' + "".join(items)
 
         if name in SARDINIA_GUIDE_SITES:
             vid_html += '<p><a href="/creators/sardinia">Explore Sardinia with local guides and other creators →</a></p>'
