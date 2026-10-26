@@ -152,7 +152,7 @@ def page_shell(title, desc_meta, canonical, og_image, body, jsonld=None):
 <meta property="og:image" content="{og_image}" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
-<style>{CSS}</style><link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script>
+<style>{CSS}</style><link rel="stylesheet" href="/assets/atlas-player.css"><link rel="stylesheet" href="/assets/site-panel.css"><script defer src="/assets/js/atlas-player.js"></script>
 <script defer src="/assets/js/analytics.js"></script>
 <script data-goatcounter="https://ancientatlas.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 {ld}{photo_styles}</head>
@@ -214,6 +214,8 @@ def main():
             urls.append(f"{BASE}/{section}/{page.parent.name}/")
 
     photos = load('site-photos.json')
+    intros = load('site-intros.json')
+    icons = load('site-character-icons.json')
     count = 0
     for s in sites:
         name, slug = s["n"], slugs[s["n"]]
@@ -266,23 +268,27 @@ def main():
         vid_html = ""
         if wires:
             items = []
-            for v in wires:
-                seconds = int(v.get("t") or 0)
-                stamp = f"{seconds//3600}:{seconds%3600//60:02d}:{seconds%60:02d}" if seconds >= 3600 else f"{seconds//60}:{seconds%60:02d}"
-                jump = f"&amp;t={seconds}s" if seconds else ""
-                start_label = f" · Starts at {stamp}" if seconds else ""
-                creator = creators.get(v.get("cr"), {})
-                cr = creator.get("name", "YouTube")
-                handle = creator.get("handle", "")
-                channel = "https://www.youtube.com/" + (handle if handle.startswith("@") else "@" + handle)
-                credit = f'<a class="film-credit" href="{html.escape(channel, quote=True)}" target="_blank" rel="noopener" aria-label="{html.escape(cr, quote=True)} channel on YouTube">Channel ↗</a>' if handle else ""
-                items.append(
-                    f'<article class="film"><a data-atlas-video="{v["id"] if not v.get("noembed") else ""}" data-start="{seconds}" data-title="{html.escape(v["title"], quote=True)}" data-creator="{html.escape(cr, quote=True)}" data-handle="{html.escape(handle, quote=True)}" class="vid" href="https://www.youtube.com/watch?v={v["id"]}{jump}" target="_blank" rel="noopener">'
-                    f'<img src="https://i.ytimg.com/vi/{v["id"]}/hqdefault.jpg" alt="{html.escape(v["title"])}" loading="lazy" />'
-                    f'<span><span class="t">{html.escape(v["title"])}</span>'
-                    f'<span class="c">Film by {html.escape(cr)}{start_label}</span><span class="watch-label">{"Watch on YouTube ↗" if v.get("noembed") else "Watch here ▶"}</span></span></a>{credit}<a class="film-credit" style="margin-left:6px" href="https://www.youtube.com/watch?v={v["id"]}{jump}" target="_blank" rel="noopener">YouTube ↗</a></article>'
-                )
-            vid_html = f'<h2 id="films">Films and site visits ({len(wires)})</h2><p class="film-hint">Watch here while you explore. Open YouTube or the creator’s channel whenever you like.</p>' + "".join(items)
+            names = list(dict.fromkeys(creators.get(v.get('cr'), {}).get('name', 'YouTube') for v in wires))
+            for i, v in enumerate(wires):
+                seconds = int(v.get('t') or 0)
+                stamp = f"{seconds//60}:{seconds%60:02d}"
+                url = f"https://www.youtube.com/watch?v={v['id']}" + (f"&amp;t={seconds}s" if seconds else "")
+                creator = creators.get(v.get('cr'), {})
+                cr = creator.get('name','YouTube')
+                handle = creator.get('handle','')
+                channel = 'https://www.youtube.com/' + (handle if handle.startswith('@') else '@'+handle)
+                attrs = f'data-atlas-video="{v["id"] if not v.get("noembed") else ""}" data-title="{html.escape(v["title"],quote=True)}" data-creator="{html.escape(cr,quote=True)}" data-handle="{html.escape(handle,quote=True)}" data-start="{seconds}"'
+                credit = f'<a href="{html.escape(channel,quote=True)}" target="_blank" rel="noopener">{html.escape(cr)} ↗</a>' if handle else html.escape(cr)
+                label = 'Watch on YouTube ↗' if v.get('noembed') else '▶ Watch here'
+                if seconds: label += f' · {stamp}'
+                hint = '<p class="oga-reassurance">Plays in the Atlas. Creator channels are linked with each film.</p>' if i == 0 and not v.get('noembed') else ''
+                items.append(f'<article class="oga-film"><a class="oga-thumbnail" {attrs} href="{url}" target="_blank" rel="noopener" aria-label="Watch {html.escape(v["title"],quote=True)}"><img src="https://i.ytimg.com/vi/{v["id"]}/hqdefault.jpg" loading="lazy" alt="{html.escape(v["title"],quote=True)}"><span aria-hidden="true">▶</span></a><p class="oga-film-title">{html.escape(v["title"])}</p><p class="oga-credit">A film by {credit}</p><a class="oga-watch" {attrs} href="{url}" target="_blank" rel="noopener">{label}</a>{hint}<a class="oga-youtube" href="{url}" target="_blank" rel="noopener">Open on YouTube ↗</a></article>')
+            voices = f'<p class="oga-voices">{len(wires)} films · {len(names)} creators<br>{html.escape(" · ".join(names))}</p>' if len(wires)>1 else ''
+            vid_html = '<section class="site-film-list" aria-label="Films of this site">' + voices + ''.join(items) + '</section>'
+        else:
+            vid_html = '<p class="oga-reassurance">No films linked yet. Browse the photographs and site details below.</p>'
+        keys = (['megalithic'] if s.get('cat')=='megalithic' else []) + [k for k in ['polygonal','precision'] if k in s.get('criteria',[])]
+        characteristics = '<div class="oga-characteristics">' + ''.join(f'<span class="oga-character"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="{icons[k]["path"]}"/></svg>{icons[k]["label"]}{" · look closer" if s.get("signal")=="open" and k!="megalithic" else ""}</span>' for k in keys) + '</div>'
 
         if name in SARDINIA_GUIDE_SITES:
             vid_html += '<p><a href="/creators/sardinia">Explore Sardinia with local guides and other creators →</a></p>'
@@ -319,14 +325,17 @@ def main():
         if s.get("sources"):
             sources_html = '<p class="meta">Site reference: ' + ' · '.join(f'<a href="{html.escape(x["url"], quote=True)}">{html.escape(x["label"])}</a>' for x in s['sources']) + '</p>'
         body = f"""<h1>{html.escape(name)}</h1>
-<div class="badges">{badges}</div>
-<p class="desc">{html.escape(s.get('desc') or '')}</p>
-<p class="meta">{s['lat']:.4f}°, {s['lng']:.4f}°</p>
-{look}
-{sources_html}
-<a class="cta" href="/?site={quote(name)}">Open in the Atlas map →</a>
-{photo_html}{vid_html}
+<p class="oga-location">{html.escape(country or s.get('region',''))}</p>
+<p class="oga-intro">{html.escape(intros.get(name,''))}</p>
+{vid_html}
+{characteristics}
+<details class="oga-details"><summary>Site details</summary>
+<div class="badges">{badges}</div><p class="desc">{html.escape(s.get('desc') or '')}</p>
+<p class="meta">{s['lat']:.4f}°, {s['lng']:.4f}°</p>{look}{sources_html}</details>
+{photo_html}
+<p><a href="/?site={quote(name)}">See {html.escape(name)} on the Atlas map →</a></p>
 {near_html}"""
+
 
         (OUT / f"{slug}.html").write_text(
             page_shell(title, desc_meta, canonical, og_image, body, json.dumps(ld, ensure_ascii=False)),
