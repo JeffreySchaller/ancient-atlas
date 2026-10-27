@@ -305,6 +305,9 @@ def main():
         ['python3', __import__('os').path.join(__import__('os').path.dirname(__file__), 'build-seo-pages.py')],
         check=True)
 
+    __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'build-pattern-stories.py')], check=True)
+    __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'install-site-navigation.py')], check=True)
+
     # Include optional analytics on newly generated pages.
     __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'install-ga4.py')], check=True)
 

@@ -1,0 +1,5 @@
+:root{--atlas-nav-bg:#202124;--atlas-nav-text:#eeeae2;--atlas-nav-edge:#666159;--atlas-nav-focus:#e1c77f}
+a.atlas-return{display:inline-flex!important;align-items:center;justify-content:center;min-height:44px;padding:8px 12px!important;border:1px solid var(--atlas-nav-edge);border-radius:8px;background:var(--atlas-nav-bg);color:var(--atlas-nav-text)!important;font:500 13px/1.3 system-ui,sans-serif!important;letter-spacing:normal!important;text-transform:none!important;text-decoration:none!important;white-space:nowrap;flex-shrink:0}
+a.atlas-return:hover{background:#343536}a.atlas-return:focus-visible{outline:2px solid var(--atlas-nav-focus);outline-offset:3px}
+.atlas-return-rail{position:relative;z-index:10000;padding:8px 12px;background:#16161d}
+header:has(>.atlas-return){flex-wrap:wrap}
