@@ -1,0 +1,100 @@
+[
+  {
+    "id": "space",
+    "title": "The building is what remains",
+    "theme": "Making space",
+    "paragraphs": [
+      "Some builders assembled walls. Others removed the mountain around them. The Atlas puts these approaches beside a third: adapting a natural hollow with a doorway or a small wall. All create shelter, but they involve different decisions about material, access and the space left inside.",
+      "The useful comparison is the boundary between the natural and the made. Follow a room into its surrounding rock. Look for where excavation stops and masonry begins. An underground town and a carved church can share a method without sharing a purpose."
+    ],
+    "sites": [
+      "Derinkuyu Underground City",
+      "Lalibela Rock-Hewn Churches",
+      "Cucuruzzu (Corsica)"
+    ]
+  },
+  {
+    "id": "stone",
+    "title": "The unfinished work explains the finished work",
+    "theme": "Working stone",
+    "paragraphs": [
+      "A finished monument conceals much of its own making. An abandoned cut leaves the sequence exposed: the object taking shape, the surrounding material still attached, the space in which people worked. The Atlas’s quarries belong alongside its most polished buildings.",
+      "Compare extraction, shaping and fitting separately. A large stone is not necessarily a carefully fitted one; a fine joint does not tell us how a block travelled. These distinctions make the achievement more interesting, because they replace one broad mystery with several specific questions."
+    ],
+    "sites": [
+      "Unfinished Obelisk (Aswan)",
+      "Yangshan Quarry",
+      "Ollantaytambo"
+    ]
+  },
+  {
+    "id": "life",
+    "title": "The quiet infrastructure",
+    "theme": "Supporting life",
+    "paragraphs": [
+      "The facade draws the eye. Water helps explain the place. Channels, storage chambers and prepared ground recur throughout the Atlas, sometimes beside spectacular monuments and sometimes as the main surviving work. They invite us to look at a site as a functioning environment.",
+      "Petra’s water system is part of the story of its settlement. At Tipón, channels and terraces invite a different comparison. Follow what connects to what: where water arrives, where it is held, and where it leaves. Similar components need not have served identical practical or ceremonial purposes."
+    ],
+    "sites": [
+      "Petra",
+      "Tipón",
+      "Sacred Well of Santa Cristina"
+    ]
+  },
+  {
+    "id": "movement",
+    "title": "Architecture tells you where to go",
+    "theme": "Organizing movement",
+    "paragraphs": [
+      "A bridge connects. A gate restricts. A courtyard brings people together. Seen across the map, these are ways of organizing movement as much as forms of construction. The revealing detail may be the route through a place rather than its largest stone.",
+      "Watch a creator approach an entrance, turn a corner or emerge into an open space. The sequence gives scale and context that a photograph often misses. It also sharpens the question: was this arrangement meant for everyday passage, defence, gathering—or several uses over time?"
+    ],
+    "sites": [
+      "Kazarma Bridge (Arkadiko)",
+      "Araghju (Corsica)",
+      "Sanctuary of Pietrabbondante"
+    ]
+  },
+  {
+    "id": "memory",
+    "title": "Stone carries more than weight",
+    "theme": "Remembering & expressing",
+    "paragraphs": [
+      "The Atlas contains graves, carved figures and decorated passages as well as walls. Here, the workmanship is inseparable from what people chose to preserve or express. A stone may be a structural element and an image at the same time.",
+      "The correspondence worth following is not simply that carvings recur. Look at their placement: beside an entrance, along a passage, on a standing figure, around a burial space. Position changes how an image is encountered. Its meaning still belongs to its particular community and history."
+    ],
+    "sites": [
+      "Gavrinis",
+      "I Stantari (Corsica)",
+      "Giants' Grave of Coddu Vecchiu"
+    ]
+  },
+  {
+    "id": "orientation",
+    "title": "A place extends beyond its walls",
+    "theme": "Orienting in place & time",
+    "paragraphs": [
+      "Some sites make little sense when cropped to a single object. Rows, circles, entrances and distant horizons belong to the view. The map can restore part of that setting; a walkthrough can show how it changes as a person moves.",
+      "Newgrange offers a documented case of sunlight entering a passage at a particular season. That makes it a useful starting point, not a licence to turn every alignment into a calendar. Compare the visible arrangement first, then ask what evidence connects it to a deliberate observation."
+    ],
+    "sites": [
+      "Newgrange",
+      "Carnac Stones",
+      "Avebury"
+    ]
+  },
+  {
+    "id": "time",
+    "title": "The past kept being rebuilt",
+    "theme": "Changing over time",
+    "paragraphs": [
+      "A site is rarely one decision preserved intact. A later wall meets an earlier foundation; a doorway is blocked; an old place acquires a new use. These junctions make the Atlas a record of continued adaptation, not just completed ancient projects.",
+      "Look for the joins between phases as carefully as the joins between stones. Differences in workmanship can suggest a question, but they cannot establish a chronology by themselves. The most revealing comparison may be within one place: what was retained, what was altered, and what people still found useful."
+    ],
+    "sites": [
+      "Porta Sanguinaria (Ferentino)",
+      "Orca de Pramelas",
+      "Grotte di Torri"
+    ]
+  }
+]

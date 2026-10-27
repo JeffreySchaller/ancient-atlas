@@ -1,14 +1,72 @@
 {
   "polygonal": {
     "label": "Polygonal walls",
-    "path": "M2 3h20v18H2z M2 11l7-3 5 5-3 8 M9 8l2-5 M14 13l8-3 M14 13l8 5"
+    "path": "M3 4h18v16H3z M3 12l6-4 6 4-3 8 M9 8l1-4 M15 12l6-3 M15 12l6 5",
+    "description": "Irregular, many-sided blocks fitted into a wall.",
+    "details": [
+      "block geometry",
+      "corners",
+      "coursing",
+      "joint arrangement"
+    ]
   },
   "precision": {
-    "label": "Precision joinery",
-    "path": "M3 3h8v18H3z M13 3h8v18h-8z M7 7h2 M15 7h2 M7 17h2 M15 17h2"
+    "label": "Stone joints",
+    "path": "M3 4h8v16H3z M14 4h7v16h-7z M7 8h4 M14 16h4",
+    "description": "A close view of how worked stone faces meet.",
+    "details": [
+      "joint width",
+      "fitted corners",
+      "contact faces",
+      "measured tolerances, when sourced"
+    ]
+  },
+  "rock-cut": {
+    "label": "Rock-cut spaces",
+    "path": "M3 20V8l5-4 6 1 7 5v10H3 M9 20V10h6v10 M7 7h3",
+    "description": "Spaces or architectural forms cut into bedrock.",
+    "details": [
+      "chambers",
+      "facades",
+      "steps",
+      "recesses",
+      "material, when verified"
+    ]
+  },
+  "waterworks": {
+    "label": "Waterworks",
+    "path": "M4 3v7c0 3 3 3 3 6v5 M10 3v7c0 3 3 3 3 6v5 M17 5h4 M17 9h4 M17 13h4 M17 17h4",
+    "description": "Channels, basins and other visible water-management features.",
+    "details": [
+      "channels",
+      "basins",
+      "drainage",
+      "gradient",
+      "flow shown in footage",
+      "proposed function"
+    ]
   },
   "megalithic": {
-    "label": "Megalithic stonework",
-    "path": "M3 20V7l5-3 5 2 1 14M14 20V8l5-2 2 3v11M2 20h20"
+    "label": "Large stones",
+    "path": "M3 20V7l5-3 5 2 1 14 M14 20V8l5-2 2 3v11 M2 20h20",
+    "description": "Large blocks or monoliths with a visible sense of scale.",
+    "details": [
+      "scale reference",
+      "dimensions",
+      "quarry context",
+      "transport evidence"
+    ]
+  },
+  "surface": {
+    "label": "Surface marks",
+    "path": "M4 3h16v18H4z M8 7l3 3 M13 7l3 3 M8 12l3 3 M13 12l3 3 M8 17l1 1",
+    "description": "Marks and textures visible on a worked stone surface.",
+    "details": [
+      "grooves",
+      "holes",
+      "cut faces",
+      "tool-mark interpretation",
+      "weathering"
+    ]
   }
 }
