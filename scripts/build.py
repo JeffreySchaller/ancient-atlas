@@ -32,6 +32,8 @@ PUBLIC_DATA_DIR = REPO_ROOT / 'public' / 'data'
 # Mapping: data file → const NAME inside HTML
 # ============================================================
 BLOCKS = [
+    ('pattern-features.json', 'ATLAS_FEATURES', list),
+    ('site-features.json', 'SITE_FEATURES', dict),
     ('site-intros.json', 'SITE_INTROS', dict),
     ('site-character-icons.json', 'SITE_CHARACTER_ICONS', dict),
     # (json filename, const name, JSON type)

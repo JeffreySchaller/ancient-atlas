@@ -35,13 +35,14 @@
 <meta property="og:title" content="The Ancient Atlas — A map of the deep past" />
 <meta property="og:description" content="A hand-curated map of the world's most significant ancient sites, organized by region, era, and the creators who have walked them." />
 <meta property="og:url" content="https://theancientatlas.com" />
-<meta property="og:image" content="https://theancientatlas.com/og-image.png?v=2" />
+<meta property="og:image" content="https://theancientatlas.com/og-image.png?v=3" />
+<meta property="og:image:alt" content="Ancient Atlas. See the ancient world. Look a little closer. Stonework, water channels and underground spaces." />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="The Ancient Atlas — A map of the deep past" />
 <meta name="twitter:description" content="A hand-curated map of the world's most significant ancient sites." />
-<meta name="twitter:image" content="https://theancientatlas.com/og-image.png?v=2" />
+<meta name="twitter:image" content="https://theancientatlas.com/og-image.png?v=3" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -2066,7 +2067,7 @@ body.present #broadcast-controls{
 <script defer src="/assets/js/analytics.js"></script>
 <link rel="stylesheet" href="/assets/site-photos.css">
 <script src="/assets/js/site-photos.js"></script>
-<link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script></head>
+<link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script><link rel="stylesheet" href="/assets/atlas-features.css"></head>
 <body>
 <div id="app">
 <header>
@@ -2192,6 +2193,7 @@ body.present #broadcast-controls{
         <div class="search-suggestions" id="search-suggestions"></div>
       </div>
 <a class="patterns-map-entry" href="/patterns/"><strong>What people made possible →</strong><span>24 features · Places, films &amp; creators</span></a>
+<div class="atlas-feature-browser" aria-label="Browse site features"></div>
       <!-- Creators lead. An earlier pass moved them below Where and Type and
            folded the list away, on the reasoning that a newcomer does not know
            who anyone is yet. That reasoning is sound and it was still wrong:
@@ -2386,6 +2388,7 @@ body.present #broadcast-controls{
   </a>
 
   <!-- Unobtrusive mobile nav: Articles / Editions / Support / Contact -->
+  <div class="atlas-feature-browser atlas-feature-mobile" aria-label="Browse site features"></div>
   <div class="mf-mininav" aria-label="Site sections">
     <a class="mf-mininav-link" href="experiences/feel-the-weight/">
       <span class="mf-mininav-glyph" aria-hidden="true">⚖</span>
@@ -25022,6 +25025,7 @@ function wireFixedTooltips() {
 function getFiltered() {
   // Apply non-search filters first (cheap, deterministic)
   let pool = FILTERED_SITES.filter(s => {
+    if (activeFeature && !siteFeatureIds(s).includes(activeFeature)) return false;
     if (activeRegion && s.region !== activeRegion) return false;
     if (activeCountry && SITE_COUNTRIES[s.n] !== activeCountry) return false;
     if (activeCat && s.cat !== activeCat) return false;
@@ -25098,15 +25102,16 @@ function renderMarkers() {
       ? `<div style="position:absolute;inset:-3px;border-radius:50%;border:1.5px solid var(--champagne);opacity:.6"></div>`
       : '';
 
+    const featureGlyph = activeFeature && ATLAS_FEATURES.find(f=>f.id===activeFeature);
     const icon = L.divIcon({
       className: '',
-      html: `<div style="position:relative;width:${size}px;height:${size}px;opacity:${opacity}">
+      html: featureGlyph ? `<img src="${featureGlyph.glyph}" alt="" width="36" height="36" style="border-radius:9px;box-shadow:0 2px 7px #0006;border:1px solid #fff8">` : `<div style="position:relative;width:${size}px;height:${size}px;opacity:${opacity}">
         ${pulse}
         ${vidRing}
         <div style="width:${size}px;height:${size}px;border-radius:50%;background:${cat.color};${glow};${border};transition:all .2s"></div>
       </div>`,
-      iconSize: [size, size],
-      iconAnchor: [size/2, size/2]
+      iconSize: featureGlyph ? [36,36] : [size, size],
+      iconAnchor: featureGlyph ? [18,18] : [size/2, size/2]
     });
 
     const marker = L.marker([site.lat, site.lng], { icon });
@@ -26506,6 +26511,7 @@ function renderSupport() {
 
 // Reset all filters and search
 function resetFilters() {
+  activeFeature = null;
   searchTerm = '';
   activeRegion = null;
   activeCountry = null;
@@ -26515,6 +26521,7 @@ function resetFilters() {
   const searchEl = document.getElementById('search');
   if (searchEl) searchEl.value = '';
   document.getElementById('search-suggestions')?.classList.remove('open');
+  renderFeatureBrowsers();
   renderFilters();
   renderMarkers();
   renderSidebar();
@@ -27345,13 +27352,248 @@ const SITE_CHARACTER_ICONS = {
   }
 };
 
+const ATLAS_FEATURES = [
+  {
+    "id": "underground",
+    "group": "Making space",
+    "label": "Underground spaces",
+    "definition": "Chambers and passages below ground; distinguish habitation, burial, extraction and storage.",
+    "glyph": "/assets/glyphs/underground.webp",
+    "accent": "moss"
+  },
+  {
+    "id": "rockcut",
+    "group": "Making space",
+    "label": "Buildings cut from rock",
+    "definition": "Architecture made by removing bedrock, including free-standing carved structures and cliff facades.",
+    "glyph": "/assets/glyphs/rockcut.webp",
+    "accent": "clay"
+  },
+  {
+    "id": "shelters",
+    "group": "Making space",
+    "label": "Built into natural shelters",
+    "definition": "Walls and rooms added to existing caves, overhangs and boulders; not all cavities were excavated.",
+    "glyph": "/assets/glyphs/shelters.webp",
+    "accent": "moss"
+  },
+  {
+    "id": "polygonal",
+    "group": "Working stone",
+    "label": "Polygonal walls",
+    "definition": "Many-sided masonry blocks; do not confuse a polygonal room plan with polygonal masonry.",
+    "glyph": "/assets/glyphs/polygonal.webp",
+    "accent": "gold"
+  },
+  {
+    "id": "joints",
+    "group": "Working stone",
+    "label": "Fitted joints",
+    "definition": "Contact surfaces, corners and connections; a close fit is not a measured tolerance.",
+    "glyph": "/assets/glyphs/joints.webp",
+    "accent": "gold"
+  },
+  {
+    "id": "monoliths",
+    "group": "Working stone",
+    "label": "Single great stones",
+    "definition": "Individual large worked stones, standing or incorporated into a building; separate moved from unmoved.",
+    "glyph": "/assets/glyphs/monoliths.webp",
+    "accent": "gold"
+  },
+  {
+    "id": "quarries",
+    "group": "Working stone",
+    "label": "Quarries & unfinished work",
+    "definition": "Extraction faces, abandoned cuts and incomplete objects that preserve stages of work.",
+    "glyph": "/assets/glyphs/quarries.webp",
+    "accent": "clay"
+  },
+  {
+    "id": "marks",
+    "group": "Working stone",
+    "label": "Working marks",
+    "definition": "Grooves, holes and surface finish; the tool and process require separate evidence.",
+    "glyph": "/assets/glyphs/marks.webp",
+    "accent": "clay"
+  },
+  {
+    "id": "roofs",
+    "group": "Working stone",
+    "label": "Spanning a space",
+    "definition": "Lintels, corbelled roofs, arches and vaults: different solutions to carrying loads over an opening.",
+    "glyph": "/assets/glyphs/roofs.webp",
+    "accent": "gold"
+  },
+  {
+    "id": "flow",
+    "group": "Supporting life",
+    "label": "Water channels",
+    "definition": "Routes that collect, divert or distribute water; carved grooves alone do not establish function.",
+    "glyph": "/assets/glyphs/flow.webp",
+    "accent": "ocean"
+  },
+  {
+    "id": "storage",
+    "group": "Supporting life",
+    "label": "Wells & reservoirs",
+    "definition": "Accessing and holding water, including ritual settings; keep water supply and sacred purpose distinct.",
+    "glyph": "/assets/glyphs/storage.webp",
+    "accent": "ocean"
+  },
+  {
+    "id": "terraces",
+    "group": "Supporting life",
+    "label": "Terraces & shaped ground",
+    "definition": "Retaining, levelling and reshaping land; agricultural, residential and ceremonial uses differ.",
+    "glyph": "/assets/glyphs/terraces.webp",
+    "accent": "moss"
+  },
+  {
+    "id": "homes",
+    "group": "Supporting life",
+    "label": "Homes & provisioning",
+    "definition": "Rooms, hearths, stores and production spaces that show everyday life and upkeep.",
+    "glyph": "/assets/glyphs/homes.webp",
+    "accent": "clay"
+  },
+  {
+    "id": "defence",
+    "group": "Organizing movement",
+    "label": "Walls & gateways",
+    "definition": "Enclosures and controlled entrances; not every wall is defensive.",
+    "glyph": "/assets/glyphs/defence.webp",
+    "accent": "clay"
+  },
+  {
+    "id": "routes",
+    "group": "Organizing movement",
+    "label": "Routes & crossings",
+    "definition": "Roads, bridges, causeways and cut paths connecting places.",
+    "glyph": "/assets/glyphs/routes.webp",
+    "accent": "ocean"
+  },
+  {
+    "id": "gathering",
+    "group": "Organizing movement",
+    "label": "Places to gather",
+    "definition": "Courtyards, plazas, theatres and assembly spaces; identify local functions and periods.",
+    "glyph": "/assets/glyphs/gathering.webp",
+    "accent": "moss"
+  },
+  {
+    "id": "burial",
+    "group": "Remembering & expressing",
+    "label": "Burial spaces",
+    "definition": "Graves, tombs and cemeteries, with distinct local practices rather than a universal belief system.",
+    "glyph": "/assets/glyphs/burial.webp",
+    "accent": "violet"
+  },
+  {
+    "id": "images",
+    "group": "Remembering & expressing",
+    "label": "Images in stone",
+    "definition": "Reliefs, statues and rock art; keep deliberate imagery separate from production marks.",
+    "glyph": "/assets/glyphs/images.webp",
+    "accent": "clay"
+  },
+  {
+    "id": "writing",
+    "group": "Remembering & expressing",
+    "label": "Writing & records",
+    "definition": "Inscriptions and written signs whose content may identify people, events or dedication.",
+    "glyph": "/assets/glyphs/writing.webp",
+    "accent": "gold"
+  },
+  {
+    "id": "standing",
+    "group": "Orienting in place & time",
+    "label": "Standing stones",
+    "definition": "Uprights and rows whose arrangement matters beyond the size of any individual stone.",
+    "glyph": "/assets/glyphs/standing.webp",
+    "accent": "moss"
+  },
+  {
+    "id": "circles",
+    "group": "Orienting in place & time",
+    "label": "Circles & enclosures",
+    "definition": "Circular settings and their entrances, interiors and surrounding landscape; no automatic calendar claim.",
+    "glyph": "/assets/glyphs/circles.webp",
+    "accent": "violet"
+  },
+  {
+    "id": "earthfigures",
+    "group": "Orienting in place & time",
+    "label": "Marks across the landscape",
+    "definition": "Large ground figures, earthworks and layouts; do not assume a viewing height or purpose.",
+    "glyph": "/assets/glyphs/earthfigures.webp",
+    "accent": "clay"
+  },
+  {
+    "id": "sky",
+    "group": "Orienting in place & time",
+    "label": "Sun, sky & orientation",
+    "definition": "Documented alignments or light effects; intentional astronomy needs evidence beyond an attractive bearing.",
+    "glyph": "/assets/glyphs/sky.webp",
+    "accent": "ocean"
+  },
+  {
+    "id": "reuse",
+    "group": "Changing over time",
+    "label": "Rebuilding & reuse",
+    "definition": "Successive additions, repairs and changed uses; sequence requires context, not a ranking of workmanship.",
+    "glyph": "/assets/glyphs/reuse.webp",
+    "accent": "violet"
+  }
+];
+const SITE_FEATURES = {
+  "Tipón": [
+    "flow",
+    "terraces"
+  ],
+  "Petra": [
+    "flow",
+    "rockcut"
+  ],
+  "Sacred Well of Santa Cristina": [
+    "storage",
+    "roofs"
+  ]
+};
+let activeFeature = null;
+function siteFeatureIds(site) {
+  const ids = [...(SITE_FEATURES[site.n] || [])];
+  if ((site.criteria || []).includes('polygonal')) ids.push('polygonal');
+  if ((site.criteria || []).includes('precision')) ids.push('joints');
+  if (site.cat === 'underground') ids.push('underground');
+  if (site.cat === 'rock-cut') ids.push('rockcut');
+  return [...new Set(ids)];
+}
+function featureBadge(f, action, selected=false) {
+  return `<button class="atlas-feature-badge" onclick="${action}" ${selected ? 'aria-pressed="true"' : 'aria-pressed="false"'}><img src="${f.glyph}" alt="" width="36" height="36"><span>${journeyEscape(f.label)}</span></button>`;
+}
+function renderFeatureBrowsers() {
+  const featured = ['polygonal','joints','flow','underground','rockcut'];
+  document.querySelectorAll('.atlas-feature-browser').forEach(el => {
+    el.innerHTML = `<p class="atlas-feature-heading">Look for something remarkable</p><div class="atlas-feature-options">${featured.map(id => featureBadge(ATLAS_FEATURES.find(f=>f.id===id),`chooseAtlasFeature('${id}')`,activeFeature===id)).join('')}</div><div class="atlas-feature-status" aria-live="polite">${activeFeature ? `<span>${getFiltered().length} matching places</span><button onclick="chooseAtlasFeature(null)">Clear feature ×</button>` : '<a href="/patterns/">See all 24 features →</a>'}</div>`;
+  });
+}
+function chooseAtlasFeature(id) {
+  activeFeature = activeFeature === id ? null : id;
+  renderMarkers(); renderSidebar(); renderMobileFeed(); renderFeatureBrowsers();
+  const sites = getFiltered();
+  if (sites.length && map.getContainer().clientWidth) map.fitBounds(sites.map(s=>[s.lat,s.lng]),{padding:[45,45],maxZoom:10});
+}
+function jumpToSiteFilms(button) {
+  const film = button.closest('.oga-panel').querySelector('.oga-film');
+  if (film) { film.scrollIntoView({behavior:'smooth',block:'start'}); film.querySelector('.oga-watch')?.focus({preventScroll:true}); }
+}
 function renderSiteCharacteristics(site) {
-  const keys = ['polygonal','precision'].filter(k => (site.criteria || []).includes(k));
-  if (site.cat === 'megalithic') keys.unshift('megalithic');
-  return keys.map(k => {
-    const icon = SITE_CHARACTER_ICONS[k];
-    const label = icon.label + (site.signal === 'open' && k !== 'megalithic' ? ' · look closer' : '');
-    return `<span class="oga-character" title="${k === 'megalithic' ? 'Site category' : 'An existing Atlas characteristic to examine in the footage'}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="${icon.path}"/></svg>${label}</span>`;
+  const ids = siteFeatureIds(site);
+  return ids.map(id => {
+    const f = ATLAS_FEATURES.find(f=>f.id===id);
+    if (f && !(VIDEOS[site.n] || []).length) return `<a class="atlas-feature-badge" href="/patterns/#feature-${f.id}"><img src="${f.glyph}" width="36" height="36" alt=""><span>${journeyEscape(f.label)}</span></a>`;
+    return f ? `<button class="atlas-feature-badge" onclick="jumpToSiteFilms(this)" title="Site feature · see the creators’ films"><img src="${f.glyph}" width="36" height="36" alt=""><span>${journeyEscape(f.label)}</span></button>` : '';
   }).join('');
 }
 function renderSitePanel(site, mode='desktop', films=null) {
@@ -27364,6 +27606,7 @@ function renderSitePanel(site, mode='desktop', films=null) {
     <p class="oga-location">${journeyEscape(SITE_COUNTRIES[site.n] || site.region)}</p>
     <h2>${journeyEscape(site.n)}</h2>
     <p class="oga-intro">${journeyEscape(SITE_INTROS[site.n] || '')}</p>
+    <div class="oga-characteristics">${renderSiteCharacteristics(site)}</div>
     ${videos.length > 1 ? `<p class="oga-voices">${videos.length} films · ${credits.length} creators<br>${credits.map(k => `<button class="oga-creator-jump" onclick="this.closest('.oga-panel').querySelector('[data-film-creator=${k}]').scrollIntoView({behavior:'smooth',block:'start'})">${journeyEscape(CREATORS[k].name)}</button>`).join(' · ')}</p>` : ''}
     ${videos.map((v,i) => {
       const cr = CREATORS[v.cr];
@@ -27379,7 +27622,6 @@ function renderSitePanel(site, mode='desktop', films=null) {
     </section>`;
     }).join('')}
     ${!videos.length ? '<p class="oga-reassurance">No films linked yet. See the photographs and site details below.</p>' : ''}
-    <div class="oga-characteristics">${renderSiteCharacteristics(site)}</div>
     <details class="oga-details"><summary>Site details</summary><p>${journeyEscape(CATS[site.cat]?.label || site.cat)}</p><p>${journeyEscape(site.desc || '')}</p><p class="oga-coords">${site.lat.toFixed(4)}°, ${site.lng.toFixed(4)}°</p>${SITE_YEARS[site.n] !== undefined ? `<p>${formatYear(SITE_YEARS[site.n])}</p>` : ''}${renderLibraryRef(site)}${site.signal === 'open' ? '<p>Dating or interpretation includes open questions. These characteristics are prompts for closer observation.</p>' : ''}<button class="oga-save" onclick="toggleFavorite(decodeURIComponent('${encodeURIComponent(site.n).replace(/'/g,'%27')}'));this.textContent=isFavorite(decodeURIComponent('${encodeURIComponent(site.n).replace(/'/g,'%27')}'))?'Saved to favorites':'Save this site'">${isFavorite(site.n) ? 'Saved to favorites' : 'Save this site'}</button> <button class="oga-save" onclick="shareSite(decodeURIComponent('${encodeURIComponent(site.n).replace(/'/g,'%27')}'))">Share site</button><p><a class="oga-youtube" href="/contact.html?site=${encodeURIComponent(site.n)}&amp;reason=Error%20report">Report a correction</a></p></details>
     ${renderSitePhotos(site.n)}
     <nav class="oga-nearby" aria-label="Nearby places"><h3>Nearby places</h3>${nearby.slice(0,3).map(row).join('')}<details><summary>More nearby</summary>${nearby.slice(3).map(row).join('')}</details></nav>
@@ -27808,6 +28050,7 @@ function renderMobileFeed() {
 
   Object.keys({...VIDEOS, ...SITE_PHOTOS}).forEach(siteName => {
     const videos = VIDEOS[siteName] || [];
+    if (activeFeature && !siteFeatureIds(SITES.find(s=>s.n===siteName) || {n:siteName}).includes(activeFeature)) return;
     if (mobileFilter === 'photos' && !SITE_PHOTOS[siteName]?.length) return;
     if (!videos.length && !SITE_PHOTOS[siteName]?.length) return;
     // If a creator filter is active, only include sites that have a video by that creator
@@ -28803,5 +29046,6 @@ document.addEventListener('DOMContentLoaded', () => {
     <a href="/library/megaliths.html" target="_blank" rel="noopener" id="library-drawer-footer-link">Open in new tab →</a>
   </footer>
 </aside>
-<button id="watch-feed-return" onclick="returnToAtlasFeed()">Back to films</button></body>
+<button id="watch-feed-return" onclick="returnToAtlasFeed()">Back to films</button><script>renderFeatureBrowsers();</script>
+</body>
 </html>
