@@ -1,0 +1,8 @@
+[
+ {"path":"patterns/index.html","title":"What people made possible","lines":["What people","made possible."],"subtitle":"24 features. Places, films & creators.","description":"Discover 24 recurring features of the ancient world. Compare places and follow the creators onto the ground.","image":"patterns"},
+ {"path":"photos/index.html","title":"See the details","lines":["See the","details."],"subtitle":"A closer look at remarkable places.","description":"Browse site photographs across the Ancient Atlas and find the places and creators behind them.","image":"photos"},
+ {"path":"contact.html","title":"Get in touch","lines":["Get in","touch."],"subtitle":"Help make the Atlas better.","description":"Contact Ancient Atlas with questions, corrections and ideas.","image":"contact"},
+ {"path":"contribute.html","title":"Add your perspective","lines":["Add your","perspective."],"subtitle":"Places, films and discoveries to share.","description":"Help grow Ancient Atlas by contributing sites, films and observations.","image":"contribute"},
+ {"path":"creators/ageless-rock.html","title":"Ageless Rock","lines":["Ageless Rock"],"subtitle":"Bernie Ong’s journeys through ancient places.","description":"Follow Ageless Rock’s films across ancient sites on the Atlas.","image":"ageless-rock"},
+ {"path":"creators/ageless-rock-by-place.html","title":"Ageless Rock — by place","lines":["Ageless Rock","by place."],"subtitle":"Find a place. Watch Bernie’s films.","description":"Browse Ageless Rock’s site visits by place and watch Bernie Ong’s films.","image":"ageless-rock-by-place"}
+]
