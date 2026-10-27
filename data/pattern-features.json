@@ -3,144 +3,192 @@
     "id": "underground",
     "group": "Making space",
     "label": "Underground spaces",
-    "definition": "Chambers and passages below ground; distinguish habitation, burial, extraction and storage."
+    "definition": "Chambers and passages below ground; distinguish habitation, burial, extraction and storage.",
+    "glyph": "/assets/glyphs/underground.webp",
+    "accent": "moss"
   },
   {
     "id": "rockcut",
     "group": "Making space",
     "label": "Buildings cut from rock",
-    "definition": "Architecture made by removing bedrock, including free-standing carved structures and cliff facades."
+    "definition": "Architecture made by removing bedrock, including free-standing carved structures and cliff facades.",
+    "glyph": "/assets/glyphs/rockcut.webp",
+    "accent": "clay"
   },
   {
     "id": "shelters",
     "group": "Making space",
     "label": "Built into natural shelters",
-    "definition": "Walls and rooms added to existing caves, overhangs and boulders; not all cavities were excavated."
+    "definition": "Walls and rooms added to existing caves, overhangs and boulders; not all cavities were excavated.",
+    "glyph": "/assets/glyphs/shelters.webp",
+    "accent": "moss"
   },
   {
     "id": "polygonal",
     "group": "Working stone",
     "label": "Polygonal walls",
-    "definition": "Many-sided masonry blocks; do not confuse a polygonal room plan with polygonal masonry."
+    "definition": "Many-sided masonry blocks; do not confuse a polygonal room plan with polygonal masonry.",
+    "glyph": "/assets/glyphs/polygonal.webp",
+    "accent": "gold"
   },
   {
     "id": "joints",
     "group": "Working stone",
     "label": "Fitted joints",
-    "definition": "Contact surfaces, corners and connections; a close fit is not a measured tolerance."
+    "definition": "Contact surfaces, corners and connections; a close fit is not a measured tolerance.",
+    "glyph": "/assets/glyphs/joints.webp",
+    "accent": "gold"
   },
   {
     "id": "monoliths",
     "group": "Working stone",
     "label": "Single great stones",
-    "definition": "Individual large worked stones, standing or incorporated into a building; separate moved from unmoved."
+    "definition": "Individual large worked stones, standing or incorporated into a building; separate moved from unmoved.",
+    "glyph": "/assets/glyphs/monoliths.webp",
+    "accent": "gold"
   },
   {
     "id": "quarries",
     "group": "Working stone",
     "label": "Quarries & unfinished work",
-    "definition": "Extraction faces, abandoned cuts and incomplete objects that preserve stages of work."
+    "definition": "Extraction faces, abandoned cuts and incomplete objects that preserve stages of work.",
+    "glyph": "/assets/glyphs/quarries.webp",
+    "accent": "clay"
   },
   {
     "id": "marks",
     "group": "Working stone",
     "label": "Working marks",
-    "definition": "Grooves, holes and surface finish; the tool and process require separate evidence."
+    "definition": "Grooves, holes and surface finish; the tool and process require separate evidence.",
+    "glyph": "/assets/glyphs/marks.webp",
+    "accent": "clay"
   },
   {
     "id": "roofs",
     "group": "Working stone",
     "label": "Spanning a space",
-    "definition": "Lintels, corbelled roofs, arches and vaults: different solutions to carrying loads over an opening."
+    "definition": "Lintels, corbelled roofs, arches and vaults: different solutions to carrying loads over an opening.",
+    "glyph": "/assets/glyphs/roofs.webp",
+    "accent": "gold"
   },
   {
     "id": "flow",
     "group": "Supporting life",
     "label": "Water channels",
-    "definition": "Routes that collect, divert or distribute water; carved grooves alone do not establish function."
+    "definition": "Routes that collect, divert or distribute water; carved grooves alone do not establish function.",
+    "glyph": "/assets/glyphs/flow.webp",
+    "accent": "ocean"
   },
   {
     "id": "storage",
     "group": "Supporting life",
     "label": "Wells & reservoirs",
-    "definition": "Accessing and holding water, including ritual settings; keep water supply and sacred purpose distinct."
+    "definition": "Accessing and holding water, including ritual settings; keep water supply and sacred purpose distinct.",
+    "glyph": "/assets/glyphs/storage.webp",
+    "accent": "ocean"
   },
   {
     "id": "terraces",
     "group": "Supporting life",
     "label": "Terraces & shaped ground",
-    "definition": "Retaining, levelling and reshaping land; agricultural, residential and ceremonial uses differ."
+    "definition": "Retaining, levelling and reshaping land; agricultural, residential and ceremonial uses differ.",
+    "glyph": "/assets/glyphs/terraces.webp",
+    "accent": "moss"
   },
   {
     "id": "homes",
     "group": "Supporting life",
     "label": "Homes & provisioning",
-    "definition": "Rooms, hearths, stores and production spaces that show everyday life and upkeep."
+    "definition": "Rooms, hearths, stores and production spaces that show everyday life and upkeep.",
+    "glyph": "/assets/glyphs/homes.webp",
+    "accent": "clay"
   },
   {
     "id": "defence",
     "group": "Organizing movement",
     "label": "Walls & gateways",
-    "definition": "Enclosures and controlled entrances; not every wall is defensive."
+    "definition": "Enclosures and controlled entrances; not every wall is defensive.",
+    "glyph": "/assets/glyphs/defence.webp",
+    "accent": "clay"
   },
   {
     "id": "routes",
     "group": "Organizing movement",
     "label": "Routes & crossings",
-    "definition": "Roads, bridges, causeways and cut paths connecting places."
+    "definition": "Roads, bridges, causeways and cut paths connecting places.",
+    "glyph": "/assets/glyphs/routes.webp",
+    "accent": "ocean"
   },
   {
     "id": "gathering",
     "group": "Organizing movement",
     "label": "Places to gather",
-    "definition": "Courtyards, plazas, theatres and assembly spaces; identify local functions and periods."
+    "definition": "Courtyards, plazas, theatres and assembly spaces; identify local functions and periods.",
+    "glyph": "/assets/glyphs/gathering.webp",
+    "accent": "moss"
   },
   {
     "id": "burial",
     "group": "Remembering & expressing",
     "label": "Burial spaces",
-    "definition": "Graves, tombs and cemeteries, with distinct local practices rather than a universal belief system."
+    "definition": "Graves, tombs and cemeteries, with distinct local practices rather than a universal belief system.",
+    "glyph": "/assets/glyphs/burial.webp",
+    "accent": "violet"
   },
   {
     "id": "images",
     "group": "Remembering & expressing",
     "label": "Images in stone",
-    "definition": "Reliefs, statues and rock art; keep deliberate imagery separate from production marks."
+    "definition": "Reliefs, statues and rock art; keep deliberate imagery separate from production marks.",
+    "glyph": "/assets/glyphs/images.webp",
+    "accent": "clay"
   },
   {
     "id": "writing",
     "group": "Remembering & expressing",
     "label": "Writing & records",
-    "definition": "Inscriptions and written signs whose content may identify people, events or dedication."
+    "definition": "Inscriptions and written signs whose content may identify people, events or dedication.",
+    "glyph": "/assets/glyphs/writing.webp",
+    "accent": "gold"
   },
   {
     "id": "standing",
     "group": "Orienting in place & time",
     "label": "Standing stones",
-    "definition": "Uprights and rows whose arrangement matters beyond the size of any individual stone."
+    "definition": "Uprights and rows whose arrangement matters beyond the size of any individual stone.",
+    "glyph": "/assets/glyphs/standing.webp",
+    "accent": "moss"
   },
   {
     "id": "circles",
     "group": "Orienting in place & time",
     "label": "Circles & enclosures",
-    "definition": "Circular settings and their entrances, interiors and surrounding landscape; no automatic calendar claim."
+    "definition": "Circular settings and their entrances, interiors and surrounding landscape; no automatic calendar claim.",
+    "glyph": "/assets/glyphs/circles.webp",
+    "accent": "violet"
   },
   {
     "id": "earthfigures",
     "group": "Orienting in place & time",
     "label": "Marks across the landscape",
-    "definition": "Large ground figures, earthworks and layouts; do not assume a viewing height or purpose."
+    "definition": "Large ground figures, earthworks and layouts; do not assume a viewing height or purpose.",
+    "glyph": "/assets/glyphs/earthfigures.webp",
+    "accent": "clay"
   },
   {
     "id": "sky",
     "group": "Orienting in place & time",
     "label": "Sun, sky & orientation",
-    "definition": "Documented alignments or light effects; intentional astronomy needs evidence beyond an attractive bearing."
+    "definition": "Documented alignments or light effects; intentional astronomy needs evidence beyond an attractive bearing.",
+    "glyph": "/assets/glyphs/sky.webp",
+    "accent": "ocean"
   },
   {
     "id": "reuse",
     "group": "Changing over time",
     "label": "Rebuilding & reuse",
-    "definition": "Successive additions, repairs and changed uses; sequence requires context, not a ranking of workmanship."
+    "definition": "Successive additions, repairs and changed uses; sequence requires context, not a ranking of workmanship.",
+    "glyph": "/assets/glyphs/reuse.webp",
+    "accent": "violet"
   }
 ]
