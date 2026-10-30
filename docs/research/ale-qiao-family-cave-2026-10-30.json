@@ -1,0 +1,46 @@
+{
+  "reviewed": "2026-10-30",
+  "creatorKey": "aletravel",
+  "channelUrl": "https://www.youtube.com/@AleTravel77",
+  "channelId": "UCzyJNIkp10oSenlY6W5x_lg",
+  "observedChannel": {
+    "subscribersDisplay": "21.3K",
+    "videosDisplay": "48"
+  },
+  "videoId": "CeqNlfp6-nQ",
+  "videoUrl": "https://www.youtube.com/watch?v=CeqNlfp6-nQ",
+  "siteName": "Qiao Family Cave (English caption; Chinese spelling unverified)",
+  "location": {
+    "country": "China",
+    "province": "Sichuan",
+    "county": "Xichong",
+    "basis": "Creator description and English transcript at 0:05",
+    "coordinates": null,
+    "confidence": "creator-reported county; exact site unresolved"
+  },
+  "historicalAccount": {
+    "period": "Qing dynasty, according to creator",
+    "basis": "English transcript at 9:19 attributes construction to a wealthy local Qiao family as a wartime refuge",
+    "independentlyVerified": false
+  },
+  "nameEvidence": "Jeff photograph at 9:18 and English transcript cue at 9:14",
+  "apoMatch": "Jeff identifies this as a cave Apo visited; not independently matched. Do not merge with existing Apo entries or move their pins yet.",
+  "unverifiedChineseSearchVariants": [
+    "乔家洞",
+    "谯家洞"
+  ],
+  "furtherChannelLeads": [
+    "ibTKQrYZq2g",
+    "GbqZPlqW5Sk",
+    "Ap5le0hYb74",
+    "6aIEFRLZ8H0",
+    "jxcZdj2sloM",
+    "AIHgYSJhyTc"
+  ],
+  "nextSteps": [
+    "Verify original Chinese name from narration or inscription",
+    "Locate county-level heritage records or a second independently geolocated source",
+    "Match distinctive doorway, cut footholds and chamber layout to Apo footage before linking entries"
+  ],
+  "mappingDecision": "No new precise map pin. Creator registered; video retained as research lead pending location verification."
+}
