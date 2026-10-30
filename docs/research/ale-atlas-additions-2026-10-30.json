@@ -1,0 +1,40 @@
+{
+  "reviewed": "2026-10-30",
+  "authorization": "Jeff requested adding the shortlisted films with the closest defensible pins. Original Qiao Family Cave included.",
+  "coordinates": {
+    "Maijishan Grottoes": {
+      "lat": 34.3517,
+      "lng": 106.00401,
+      "source": "https://mapcarta.com/N4233543632",
+      "note": "Corrected existing pin to mapped grotto attraction."
+    },
+    "Jianmen Pass": {
+      "lat": 32.215,
+      "lng": 105.56333,
+      "source": "https://en.wikipedia.org/wiki/Jianmen_Pass"
+    },
+    "Qiao Family Cave": {
+      "lat": 30.99611,
+      "lng": 105.9,
+      "source": "https://en.wikipedia.org/wiki/Xichong_County",
+      "precision": "County-town reference only; creator names county."
+    },
+    "Rong County Cliff Houses": {
+      "lat": 29.4454,
+      "lng": 104.4174,
+      "source": "https://en.wikipedia.org/wiki/Rong_County,_Sichuan",
+      "precision": "County-town reference only; video description explicitly names 荣县."
+    },
+    "Sichuan Stone-Door Palace": {
+      "lat": 30.5,
+      "lng": 102.5,
+      "source": "https://geographic.org/geographic_names/name.php?c=china&fid=1074&uni=9309915",
+      "precision": "Province reference only. No site-level position established."
+    }
+  },
+  "unresolvedLead": {
+    "source": "https://www.zgm.cn/content/6548a87d11de1",
+    "text": "Zigong local reporting locates Qinglong Zhai at Xiaoshimen, Yangliugou Village, Dongxing Town, Rong County. No confirmed visual match to either Ale film; not used to narrow pins."
+  },
+  "deduplication": "Stone-door video retained as explicitly unlocated research entry. Possible duplicate of existing Apo fortress, not asserted as a separate confirmed complex."
+}

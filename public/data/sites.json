@@ -4505,8 +4505,8 @@
   },
   {
     "n": "Maijishan Grottoes",
-    "lat": 34.3567,
-    "lng": 105.8939,
+    "lat": 34.3517,
+    "lng": 106.00401,
     "cat": "rock-cut",
     "region": "Asia",
     "tier": 2,
@@ -8960,5 +8960,53 @@
         "url": "https://www.openstreetmap.org/node/4229995792"
       }
     ]
+  },
+  {
+    "n": "Qiao Family Cave (Xichong, approximate)",
+    "lat": 30.99611,
+    "lng": 105.9,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 3,
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Location approximate. The pin marks Xichong county town, not the cave entrance. Ale identifies this rock-cut refuge as Qiao Family Cave in Xichong County, Sichuan; its precise location and original Chinese name remain unverified. His account attributes it to a local Qiao family during the Qing dynasty."
+  },
+  {
+    "n": "Rong County Cliff Houses (approximate)",
+    "lat": 29.4454,
+    "lng": 104.4174,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 3,
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Location approximate. The pin marks Rong county town, not the cliff houses. Ale places this complex in Rong County, Sichuan, describing dozens of carved rooms with stone beds, cooking areas and water storage, reached by a steep climb. The precise site name, entrance and construction date remain unverified."
+  },
+  {
+    "n": "Sichuan Stone-Door Palace (unlocated)",
+    "lat": 30.5,
+    "lng": 102.5,
+    "cat": "rock-cut",
+    "region": "Asia",
+    "tier": 3,
+    "criteria": [
+      "scale"
+    ],
+    "desc": "Location unresolved. This is a province-level reference marker for Sichuan, not a cave location; the actual site could be hundreds of kilometres away. Ale describes interconnected chambers behind a 400-kilogram stone door and repeats a claimed date of 999 AD. It may be the fortress filmed by Apo, but that match and the historical date remain unverified."
+  },
+  {
+    "n": "Jianmen Pass",
+    "lat": 32.215,
+    "lng": 105.56333,
+    "cat": "city",
+    "region": "Asia",
+    "tier": 3,
+    "criteria": [
+      "scale"
+    ],
+    "desc": "A narrow mountain gateway on the historic route between the Sichuan Basin and northern China. Jianmen Pass combines steep natural cliffs with a fortified passage and a long history of strategic use. The present gate is reconstructed; Ale explores the pass and its cliff routes."
   }
 ]
