@@ -389,8 +389,8 @@ def main():
     llms = f"""# The Ancient Atlas
 
 > A hand-curated interactive map of {count} ancient sites — megalithic, pyramid, \
-rock-cut, underground, tombs and geoglyphs — each with an independently verified \
-location, a concise evidence-focused description, and {n_wires} curated field \
+rock-cut, underground, tombs and geoglyphs — with mapped locations \
+(provisional entries explicitly marked), a concise evidence-focused description, and {n_wires} curated field \
 walkthrough videos from {len(creators)} researchers and channels. Free, ad-free, \
 no signup. Sites with open engineering questions (precision joints in stone harder \
 than steel, blocks beyond period lifting capacity, thin stratigraphic dating) carry \
