@@ -111,6 +111,22 @@ rows = "\n".join(rows)
 
 share = AR_V / TOTAL_V * 100
 
+# Films remain available while exact map positions are researched.
+unmapped = load("unmapped-videos.json") if (DATA / "unmapped-videos.json").exists() else []
+import html as html_lib
+pending_cards = []
+for film in unmapped:
+    creator = creators[film['cr']]
+    payload = html_lib.escape(json.dumps({'id':film['id'],'title':film['title'],'creator':creator['name'],'handle':creator['handle']}), quote=True)
+    pending_cards.append(f'''<article style="max-width:700px;margin:24px 0;padding:22px;border:1px solid #45544e;border-radius:14px;background:#172421">
+    <button data-field-film="{payload}" onclick="AtlasPlayer.open(JSON.parse(this.dataset.fieldFilm))" aria-label="Watch this site visit" style="padding:0;border:0;background:none;width:100%;cursor:pointer"><img src="https://i.ytimg.com/vi/{film['id']}/hqdefault.jpg" alt="" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px"></button>
+    <h3>{esc(film['title'])}</h3><p>{esc(film['location'])}</p>
+    <p>A film by <a href="https://www.youtube.com/{creator['handle']}" target="_blank" rel="noopener">{esc(creator['name'])} ↗</a> · {esc(film['language'])} · Published {film['published']}</p>
+    <button class="btn btn-solid" data-field-film="{payload}" onclick="AtlasPlayer.open(JSON.parse(this.dataset.fieldFilm))">▶ Watch here</button>
+    <a class="btn btn-ghost" href="https://www.youtube.com/watch?v={film['id']}" target="_blank" rel="noopener">YouTube ↗</a>
+    <p class="note">{esc(film['note'])}</p></article>''')
+pending_section = ('<section id="field-visits"><div class="kicker">More creator journeys</div><h2>Watch now. A precise pin comes next.</h2><p>Site visits whose exact map positions are still being checked.</p>' + ''.join(pending_cards) + '</section>') if pending_cards else ''
+
 html = f'''<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
@@ -238,7 +254,8 @@ border:1px solid rgba(201,168,76,.22);border-radius:16px;padding:26px 28px;backg
 footer{{padding:44px 0 70px;border-top:1px solid rgba(201,168,76,.14);
 font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--mist)}}
 footer a{{color:var(--mist);text-decoration:none}} footer a:hover{{color:var(--amber)}}
-</style><script defer src="/assets/js/analytics.js"></script></head><body>
+@media(max-width:640px){{table{{table-layout:fixed;width:100%}}td,th{{overflow-wrap:anywhere}}td:first-child,th:first-child{{width:45%}}td:nth-child(2),th:nth-child(2){{width:40%}}td.bar,th.barh{{width:15%}}}}
+</style><script defer src="/assets/js/analytics.js"></script><link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script></head><body>
 <div class="wrap">
 <nav>
   <a class="brand" href="/">THE ANCIENT ATLAS</a>
@@ -308,6 +325,7 @@ footer a{{color:var(--mist);text-decoration:none}} footer a:hover{{color:var(--a
   see without being told the figure.</p>
 </section>
 
+{pending_section}
 <section>
   <div class="shop">
     <div>

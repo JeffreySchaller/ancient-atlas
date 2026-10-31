@@ -2193,6 +2193,7 @@ body.present #broadcast-controls{
         <div class="search-suggestions" id="search-suggestions"></div>
       </div>
 <a class="patterns-map-entry" href="/patterns/"><strong>What people made possible →</strong><span>24 features · Places, films &amp; creators</span></a>
+<p style="margin:10px 0;font-size:13px"><a href="/creators/#field-visits" style="color:#b8d6b2">New creator field visits →</a></p>
 <div class="atlas-feature-browser" aria-label="Browse site features"></div>
       <!-- Creators lead. An earlier pass moved them below Where and Type and
            folded the list away, on the reasoning that a newcomer does not know
@@ -2388,6 +2389,7 @@ body.present #broadcast-controls{
   </a>
 
   <!-- Unobtrusive mobile nav: Articles / Editions / Support / Contact -->
+  <p style="margin:12px 16px"><a href="/creators/#field-visits" style="color:#b8d6b2">New creator field visits →</a></p>
   <div class="atlas-feature-browser atlas-feature-mobile" aria-label="Browse site features"></div>
   <div class="mf-mininav" aria-label="Site sections">
     <a class="mf-mininav-link" href="experiences/feel-the-weight/">
@@ -11474,6 +11476,25 @@ const SITES = [
       "scale"
     ],
     "desc": "A narrow mountain gateway on the historic route between the Sichuan Basin and northern China. Jianmen Pass combines steep natural cliffs with a fortified passage and a long history of strategic use. The present gate is reconstructed; Ale explores the pass and its cliff routes."
+  },
+  {
+    "n": "Maukallacta (Paccaritambo)",
+    "lat": -13.703056,
+    "lng": -71.964722,
+    "cat": "settlement",
+    "region": "South America",
+    "tier": 3,
+    "desc": "An archaeological complex in Paccaritambo district, Paruro, south of Cusco, associated with Inca origin traditions. Courtyards, trapezoidal niches, different masonry treatments and water channels are visible in the site visit. The film discusses possible earlier construction phases; these interpretations are not established by differences in stonework alone.",
+    "sources": [
+      {
+        "label": "Cusco Ministry of Culture — Mauk’allaqta, Paccaritambo",
+        "url": "https://www.culturacusco.gob.pe/noticia/imagen/realizaron-trabajos-de-limpieza-de-vias-de-acceso-al-monumento-arqueologico-de-maukallaqta-en-paccaritambo-paruro/"
+      },
+      {
+        "label": "Wikidata — mapped site location",
+        "url": "https://www.wikidata.org/wiki/Q15950042"
+      }
+    ]
   }
 ];
 
@@ -12269,6 +12290,20 @@ const CREATORS = {
     "handle": "@AleTravel77",
     "subs": "On-location explorations of Chinese cliff dwellings, rock-cut refuges and historic sites.",
     "color": "#8CA99B",
+    "tier": 3
+  },
+  "cafewiedza": {
+    "name": "Cafe Wiedza",
+    "handle": "@CafeWiedza",
+    "subs": "Polish-language site visits and archaeology conversations.",
+    "color": "#83BDD4",
+    "tier": 3
+  },
+  "qingyunji": {
+    "name": "青云迹 Qingyunji",
+    "handle": "@Qingyunji",
+    "subs": "Chinese-language journeys through landscapes, heritage and local life.",
+    "color": "#8FBAA5",
     "tier": 3
   }
 };
@@ -14229,6 +14264,14 @@ const VIDEOS = {
       "id": "n2xET89pvHQ",
       "title": "New Carvings and Monumental Serpent at Karahan Tepe (Andrew Collins & Hugh Newman)",
       "cr": "megalithomania"
+    },
+    {
+      "id": "vhuPYVDQYBw",
+      "title": "Karahan Tepe: wycięli we wzgórzu pomieszczenie, po czym je zasypali, 12 tys. lat temu",
+      "cr": "cafewiedza",
+      "added": "2026-10-31",
+      "published": "2026-10-30",
+      "language": "Polish"
     },
     {
       "id": "9wcpoc0jmh4",
@@ -22339,6 +22382,16 @@ const VIDEOS = {
       "cr": "aletravel",
       "added": "2026-10-30"
     }
+  ],
+  "Maukallacta (Paccaritambo)": [
+    {
+      "id": "TqKT2Qn5Xp0",
+      "title": "The ancient mysteries of Maukallacta: Mixed masonry shows evidence for a lost civilization  #peru",
+      "cr": "sorcerersofstone",
+      "added": "2026-10-31",
+      "published": "2026-10-31",
+      "language": "English"
+    }
   ]
 };
 
@@ -23451,7 +23504,8 @@ const SITE_COUNTRIES = {
   "Qiao Family Cave (Xichong, approximate)": "China",
   "Rong County Cliff Houses (approximate)": "China",
   "Sichuan Stone-Door Palace (unlocated)": "China",
-  "Jianmen Pass": "China"
+  "Jianmen Pass": "China",
+  "Maukallacta (Paccaritambo)": "Peru"
 };
 
 const SITE_CULTURES = {
@@ -23717,7 +23771,8 @@ const SITE_CULTURES = {
   "Qiao Family Cave (Xichong, approximate)": "Not established",
   "Rong County Cliff Houses (approximate)": "Not established",
   "Sichuan Stone-Door Palace (unlocated)": "Not established",
-  "Jianmen Pass": "Chinese"
+  "Jianmen Pass": "Chinese",
+  "Maukallacta (Paccaritambo)": "Inca"
 };
 
 // Free-form tags for synonym/concept search (Bronze Age, sacred geometry, etc.)
@@ -23816,7 +23871,8 @@ const SITE_TAGS = {
   "Qiao Family Cave (Xichong, approximate)": "china sichuan xichong qiao cliff refuge approximate location",
   "Rong County Cliff Houses (approximate)": "china sichuan rong county cliff houses refuge approximate location",
   "Sichuan Stone-Door Palace (unlocated)": "china sichuan stone door palace approximate location unlocated",
-  "Jianmen Pass": "china sichuan jianmen pass jiange fortification shu road"
+  "Jianmen Pass": "china sichuan jianmen pass jiange fortification shu road",
+  "Maukallacta (Paccaritambo)": "Maukallacta Mawk’allaqta Paccaritambo Paruro water channels trapezoidal niches"
 };
 
 // Synonym expansion — common search terms that should pull broader sets
@@ -23854,7 +23910,10 @@ const SEARCH_ALIASES = {
   "oriu de cubia": "oriu di cubia",
   "oriu grussetu": "oriu di grussettu",
   "oriu de serraggia": "oriu di grussettu",
-  "oriu de canni": "oriu di i canni"
+  "oriu de canni": "oriu di i canni",
+  "maukallacta": "Maukallacta (Paccaritambo)",
+  "mawkallaqta": "Maukallacta (Paccaritambo)",
+  "pacaritambo": "Maukallacta (Paccaritambo)"
 };
 
 // ============================================================
@@ -27382,7 +27441,8 @@ const SITE_INTROS = {
   "Orca dos Padrões": "Granite uprights define a chamber and passage on elevated ground near Cunha Baixa.",
   "Oriu di Cubia": "A doorway closes a naturally hollowed granite boulder on Monacia’s heritage trail.",
   "Oriu di Grussettu": "A vast granite overhang shelters a stone-walled enclosure above Monacia-d’Aullène.",
-  "Oriu di i Canni": "A pointed granite shelter with a fitted stone façade, door and window."
+  "Oriu di i Canni": "A pointed granite shelter with a fitted stone façade, door and window.",
+  "Maukallacta (Paccaritambo)": "Look closely at trapezoidal niches, changing masonry and water channels in this complex south of Cusco."
 };
 const SITE_CHARACTER_ICONS = {
   "polygonal": {
@@ -27663,6 +27723,9 @@ const SITE_FEATURES = {
   "Sacred Well of Santa Cristina": [
     "storage",
     "roofs"
+  ],
+  "Maukallacta (Paccaritambo)": [
+    "flow"
   ]
 };
 let activeFeature = null;
@@ -27703,7 +27766,8 @@ function renderSiteCharacteristics(site) {
 }
 function renderSitePanel(site, mode='desktop', films=null) {
   const videos = films || VIDEOS[site.n] || [];
-  const nearby = SITES.filter(s => s.n !== site.n).map(s => ({...s, dist:haversine(site.lat,site.lng,s.lat,s.lng)})).sort((a,b)=>a.dist-b.dist).slice(0,8);
+  const provisional = s => /Location (approximate|unresolved)\./i.test(s.desc || '') || /\((?:[^)]*, )?(approximate|unlocated)\)/i.test(s.n);
+  const nearby = provisional(site) ? [] : SITES.filter(s => s.n !== site.n && !provisional(s)).map(s => ({...s, dist:haversine(site.lat,site.lng,s.lat,s.lng)})).sort((a,b)=>a.dist-b.dist).slice(0,8);
   const row = s => `<a href="/?site=${encodeURIComponent(s.n)}" onclick="event.preventDefault();visitPanelSite(decodeURIComponent(this.search.slice(6)))"><span>${journeyEscape(s.n)}</span><small>${s.dist.toFixed(1)} km →</small></a>`;
   const credits = [...new Set(videos.map(v => v.cr).filter(k => CREATORS[k]))];
   return `<div class="oga-panel">
@@ -27729,7 +27793,7 @@ function renderSitePanel(site, mode='desktop', films=null) {
     ${!videos.length ? '<p class="oga-reassurance">No films linked yet. See the photographs and site details below.</p>' : ''}
     <details class="oga-details"><summary>Site details</summary><p>${journeyEscape(CATS[site.cat]?.label || site.cat)}</p><p>${journeyEscape(site.desc || '')}</p><p class="oga-coords">${site.lat.toFixed(4)}°, ${site.lng.toFixed(4)}°</p>${SITE_YEARS[site.n] !== undefined ? `<p>${formatYear(SITE_YEARS[site.n])}</p>` : ''}${renderLibraryRef(site)}${site.signal === 'open' ? '<p>Dating or interpretation includes open questions. These characteristics are prompts for closer observation.</p>' : ''}<button class="oga-save" onclick="toggleFavorite(decodeURIComponent('${encodeURIComponent(site.n).replace(/'/g,'%27')}'));this.textContent=isFavorite(decodeURIComponent('${encodeURIComponent(site.n).replace(/'/g,'%27')}'))?'Saved to favorites':'Save this site'">${isFavorite(site.n) ? 'Saved to favorites' : 'Save this site'}</button> <button class="oga-save" onclick="shareSite(decodeURIComponent('${encodeURIComponent(site.n).replace(/'/g,'%27')}'))">Share site</button><p><a class="oga-youtube" href="/contact.html?site=${encodeURIComponent(site.n)}&amp;reason=Error%20report">Report a correction</a></p></details>
     ${renderSitePhotos(site.n)}
-    <nav class="oga-nearby" aria-label="Nearby places"><h3>Nearby places</h3>${nearby.slice(0,3).map(row).join('')}<details><summary>More nearby</summary>${nearby.slice(3).map(row).join('')}</details></nav>
+    ${nearby.length ? `<nav class="oga-nearby" aria-label="Nearby places"><h3>Nearby places</h3>${nearby.slice(0,3).map(row).join('')}<details><summary>More nearby</summary>${nearby.slice(3).map(row).join('')}</details></nav>` : '<p class="oga-reassurance">Nearby distances are unavailable until this location is verified.</p>'}
   </div>`;
 }
 function visitPanelSite(name) {
