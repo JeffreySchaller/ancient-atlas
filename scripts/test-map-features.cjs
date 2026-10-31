@@ -10,7 +10,7 @@ const assert=require('node:assert/strict');
   await page.waitForFunction(()=>window.AtlasPlayer && document.querySelector('.atlas-feature-options'));
   const browserPanel=page.locator('.atlas-feature-browser:visible').first();
   await browserPanel.getByRole('button',{name:'Water channels'}).click();
-  assert.deepEqual(await page.evaluate(()=>getFiltered().map(s=>s.n).sort()),['Petra','Tipón']);
+  assert.deepEqual(await page.evaluate(()=>getFiltered().map(s=>s.n).sort()),['Lalibela Rock-Hewn Churches','Maukallacta (Paccaritambo)','Petra','Tipón']);
   await browserPanel.getByRole('button',{name:'Clear feature'}).click();
   assert((await page.evaluate(()=>getFiltered().length))>600);
   await browserPanel.getByRole('button',{name:'Polygonal walls'}).click();

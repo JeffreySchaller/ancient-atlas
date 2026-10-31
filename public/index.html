@@ -25268,17 +25268,17 @@ function renderMarkers() {
 
     const featureGlyph = activeFeature && ATLAS_FEATURES.find(f=>f.id===activeFeature);
     const icon = L.divIcon({
-      className: '',
-      html: featureGlyph ? `<img src="${featureGlyph.glyph}" alt="" width="36" height="36" style="border-radius:9px;box-shadow:0 2px 7px #0006;border:1px solid #fff8">` : `<div style="position:relative;width:${size}px;height:${size}px;opacity:${opacity}">
+      className: isProvisionalSite(site) ? 'atlas-provisional-marker' : '',
+      html: isProvisionalSite(site) ? '<span class="atlas-provisional-symbol" aria-hidden="true">?</span>' : featureGlyph ? `<img src="${compactFeatureGlyph(featureGlyph)}" alt="" width="36" height="36" style="border-radius:9px;box-shadow:0 2px 7px #0006;border:1px solid #fff8">` : `<div style="position:relative;width:${size}px;height:${size}px;opacity:${opacity}">
         ${pulse}
         ${vidRing}
         <div style="width:${size}px;height:${size}px;border-radius:50%;background:${cat.color};${glow};${border};transition:all .2s"></div>
       </div>`,
-      iconSize: featureGlyph ? [36,36] : [size, size],
-      iconAnchor: featureGlyph ? [18,18] : [size/2, size/2]
+      iconSize: isProvisionalSite(site) ? [28,28] : featureGlyph ? [36,36] : [size, size],
+      iconAnchor: isProvisionalSite(site) ? [14,14] : featureGlyph ? [18,18] : [size/2, size/2]
     });
 
-    const marker = L.marker([site.lat, site.lng], { icon });
+    const marker = L.marker([site.lat, site.lng], { icon, title: site.n + (isProvisionalSite(site) ? " — approximate area, exact location unverified" : ""), alt: site.n });
     marker._site = site; // Tag for cluster hover lookup
 
     // Build rich hover preview
@@ -25298,7 +25298,7 @@ function renderMarkers() {
           <span class="hp-cat">${cat.label}</span>
           ${hpFav ? '<span class="hp-fav">★</span>' : (hpMajor ? '<span class="hp-major">★ MAJOR</span>' : '')}
         </div>
-        <div class="hp-name">${site.n}</div>
+        <div class="hp-name">${site.n}</div>${isProvisionalSite(site) ? '<p class="atlas-location-note">Approximate area · exact location unverified</p>' : ''}
         <div class="hp-region">${site.region}</div>
         <div class="hp-desc">${hpDesc}</div>
         ${hasVid ? `<div class="hp-vids">🎬 ${hpVidCount} walkthrough${hpVidCount > 1 ? 's' : ''}</div>` : SITE_PHOTOS[site.n]?.length ? `<div class="hp-vids">${SITE_PHOTOS[site.n].length} photographs</div>` : ''}
@@ -27726,6 +27726,13 @@ const SITE_FEATURES = {
   ],
   "Maukallacta (Paccaritambo)": [
     "flow"
+  ],
+  "Newgrange": [
+    "sky"
+  ],
+  "Lalibela Rock-Hewn Churches": [
+    "rockcut",
+    "flow"
   ]
 };
 let activeFeature = null;
@@ -27737,8 +27744,14 @@ function siteFeatureIds(site) {
   if (site.cat === 'rock-cut') ids.push('rockcut');
   return [...new Set(ids)];
 }
+function compactFeatureGlyph(f) {
+  return ['polygonal','joints','flow','underground','rockcut','sky'].includes(f.id) ? `/assets/glyphs/compact/${f.id}.svg` : f.glyph;
+}
+function isProvisionalSite(s) {
+  return /Location (approximate|unresolved)\./i.test(s.desc || '') || /\((?:[^)]*, )?(approximate|unlocated)\)/i.test(s.n);
+}
 function featureBadge(f, action, selected=false) {
-  return `<button class="atlas-feature-badge" onclick="${action}" ${selected ? 'aria-pressed="true"' : 'aria-pressed="false"'}><img src="${f.glyph}" alt="" width="36" height="36"><span>${journeyEscape(f.label)}</span></button>`;
+  return `<button class="atlas-feature-badge" onclick="${action}" ${selected ? 'aria-pressed="true"' : 'aria-pressed="false"'}><img src="${compactFeatureGlyph(f)}" alt="" width="36" height="36"><span>${journeyEscape(f.label)}</span></button>`;
 }
 function renderFeatureBrowsers() {
   const featured = ['polygonal','joints','flow','underground','rockcut'];
@@ -27760,20 +27773,20 @@ function renderSiteCharacteristics(site) {
   const ids = siteFeatureIds(site);
   return ids.map(id => {
     const f = ATLAS_FEATURES.find(f=>f.id===id);
-    if (f && !(VIDEOS[site.n] || []).length) return `<a class="atlas-feature-badge" href="/patterns/#feature-${f.id}"><img src="${f.glyph}" width="36" height="36" alt=""><span>${journeyEscape(f.label)}</span></a>`;
-    return f ? `<button class="atlas-feature-badge" onclick="jumpToSiteFilms(this)" title="Site feature · see the creators’ films"><img src="${f.glyph}" width="36" height="36" alt=""><span>${journeyEscape(f.label)}</span></button>` : '';
+    if (f && !(VIDEOS[site.n] || []).length) return `<a class="atlas-feature-badge" href="/patterns/#feature-${f.id}"><img src="${compactFeatureGlyph(f)}" width="36" height="36" alt=""><span>${journeyEscape(f.label)}</span></a>`;
+    return f ? `<button class="atlas-feature-badge" onclick="jumpToSiteFilms(this)" title="Site feature · see the creators’ films"><img src="${compactFeatureGlyph(f)}" width="36" height="36" alt=""><span>${journeyEscape(f.label)}</span></button>` : '';
   }).join('');
 }
 function renderSitePanel(site, mode='desktop', films=null) {
   const videos = films || VIDEOS[site.n] || [];
-  const provisional = s => /Location (approximate|unresolved)\./i.test(s.desc || '') || /\((?:[^)]*, )?(approximate|unlocated)\)/i.test(s.n);
+  const provisional = isProvisionalSite;
   const nearby = provisional(site) ? [] : SITES.filter(s => s.n !== site.n && !provisional(s)).map(s => ({...s, dist:haversine(site.lat,site.lng,s.lat,s.lng)})).sort((a,b)=>a.dist-b.dist).slice(0,8);
   const row = s => `<a href="/?site=${encodeURIComponent(s.n)}" onclick="event.preventDefault();visitPanelSite(decodeURIComponent(this.search.slice(6)))"><span>${journeyEscape(s.n)}</span><small>${s.dist.toFixed(1)} km →</small></a>`;
   const credits = [...new Set(videos.map(v => v.cr).filter(k => CREATORS[k]))];
   return `<div class="oga-panel">
     ${mode === 'feed' ? '' : `<button class="oga-close" onclick="${mode === 'sheet' ? 'closeMobileSiteSheet()' : 'closeDetail()'}" aria-label="Close site panel">×</button>`}
     <p class="oga-location">${journeyEscape(SITE_COUNTRIES[site.n] || site.region)}</p>
-    <h2>${journeyEscape(site.n)}</h2>
+    <h2>${journeyEscape(site.n)}</h2>${provisional(site) ? '<p class="atlas-location-note">Approximate area only. The exact monument location is still being verified.</p>' : ''}
     <p class="oga-intro">${journeyEscape(SITE_INTROS[site.n] || '')}</p>
     <div class="oga-characteristics">${renderSiteCharacteristics(site)}</div>
     ${videos.length > 1 ? `<p class="oga-voices">${videos.length} films · ${credits.length} creators<br>${credits.map(k => `<button class="oga-creator-jump" onclick="this.closest('.oga-panel').querySelector('[data-film-creator=${k}]').scrollIntoView({behavior:'smooth',block:'start'})">${journeyEscape(CREATORS[k].name)}</button>`).join(' · ')}</p>` : ''}
