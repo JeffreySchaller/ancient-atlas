@@ -704,7 +704,7 @@ body.climate-mode .zoom-hint{display:none!important}
 .cr-compact-stats{font-family:var(--font-mono);font-size:10px;color:var(--mist);letter-spacing:.04em;flex-shrink:0;white-space:nowrap}
 .cr-compact-stats strong{color:var(--cloud);font-weight:600}
 .cr-compact-preview{display:flex;gap:3px;margin-left:auto;flex-shrink:0;align-items:center}
-.cr-compact-thumb{width:54px;height:30px;border-radius:4px;background-size:cover;background-position:center;border:none;background-color:rgba(42,42,53,.5);cursor:pointer;flex-shrink:0;transition:transform .15s,box-shadow .15s;padding:0}
+.cr-compact-thumb{width:54px;height:30px;border-radius:4px;background-size:contain;background-repeat:no-repeat;background-position:center;border:none;background-color:rgba(42,42,53,.5);cursor:pointer;flex-shrink:0;transition:transform .15s,box-shadow .15s;padding:0}
 .cr-compact-thumb:hover{transform:scale(1.10);box-shadow:0 4px 12px rgba(0,0,0,.5),0 0 0 1px rgba(201,168,76,.6)}
 .cr-compact-more{font-family:var(--font-mono);font-size:10px;color:var(--champagne);background:rgba(201,168,76,.10);padding:6px 8px;border-radius:5px;letter-spacing:.04em;font-weight:600;border:1px solid rgba(201,168,76,.22);margin-left:2px}
 .cr-compact-expand{font-size:12px;color:var(--mist);transition:transform .2s;margin-left:4px;flex-shrink:0;width:14px;text-align:center}
@@ -773,7 +773,7 @@ body.climate-mode .zoom-hint{display:none!important}
 .cr-section-videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;padding-left:18px}
 .cr-vcard{background:rgba(22,22,29,.7);border:1px solid rgba(42,42,53,.4);border-radius:10px;overflow:hidden;cursor:pointer;transition:all .2s;display:flex;flex-direction:column;text-align:left}
 .cr-vcard:hover{border-color:rgba(201,168,76,.4);transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.5)}
-.cr-vthumb{height:124px;background-size:cover;background-position:center;background-color:rgba(13,13,18,.55);position:relative}
+.cr-vthumb{width:100%;aspect-ratio:16/9;background-size:contain;background-repeat:no-repeat;background-position:center;background-color:rgba(13,13,18,.55);position:relative}
 .cr-vthumb::after{content:'▶';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:14px;color:rgba(255,255,255,.85);width:34px;height:34px;background:rgba(13,13,18,.7);border-radius:50%;display:flex;align-items:center;justify-content:center;text-shadow:0 0 6px rgba(0,0,0,.6);opacity:0;transition:opacity .15s}
 .cr-vcard:hover .cr-vthumb::after{opacity:1}
 .cr-vbody{padding:10px 12px;flex:1;display:flex;flex-direction:column}
@@ -25875,7 +25875,7 @@ function openCreators(scrollToKey) {
           const escSite = v.site.replace(/'/g, "\\'");
           const safeTitle = v.title.replace(/"/g, '&quot;');
           return `<button class="cr-vcard" onclick="closeCreators();selectSiteByName('${escSite}')" title="${safeTitle}">
-            <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)"></div>
+            <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/mqdefault.jpg)"></div>
             <div class="cr-vbody">
               <div class="cr-vtitle">${v.title}</div>
               <div class="cr-vsite">${v.site}</div>
@@ -25909,7 +25909,7 @@ function openCreators(scrollToKey) {
             : 'Watch on YouTube ↗';
           return `<button class="cr-vcard cr-ccard" onclick="${go}" title="${safeTitle}">
             <span class="cr-cchip">Conversation</span>
-            <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${cv.id}/hqdefault.jpg)"></div>
+            <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${cv.id}/mqdefault.jpg)"></div>
             <div class="cr-vbody">
               <div class="cr-vtitle">${cv.title}</div>
               <div class="cr-vsite">${sub}</div>
@@ -25975,7 +25975,7 @@ function openCreators(scrollToKey) {
     const previews = s.videos.slice(0, previewCount).map(v => {
       const escSite = v.site.replace(/'/g, "\\'");
       const safeTitle = v.title.replace(/"/g, '&quot;');
-      return `<button class="cr-compact-thumb" onclick="event.stopPropagation();closeCreators();selectSiteByName('${escSite}')" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)" title="${safeTitle}"></button>`;
+      return `<button class="cr-compact-thumb" onclick="event.stopPropagation();closeCreators();selectSiteByName('${escSite}')" style="background-image:url(https://i.ytimg.com/vi/${v.id}/mqdefault.jpg)" title="${safeTitle}"></button>`;
     }).join('');
     const moreCount = s.videos.length - previewCount;
     const moreChip = moreCount > 0 ? `<span class="cr-compact-more">+${moreCount}</span>` : '';
@@ -26045,7 +26045,7 @@ function openCreators(scrollToKey) {
           const escSite = v.site.replace(/'/g, "\\'");
           const safeTitle = v.title.replace(/"/g, '&quot;');
           return `<button class="cr-vcard" onclick="closeCreators();selectSiteByName('${escSite}')" title="${safeTitle}">
-            <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)"></div>
+            <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/mqdefault.jpg)"></div>
             <div class="cr-vbody">
               <div class="cr-vtitle">${v.title}</div>
               <div class="cr-vsite">${v.site}</div>
@@ -26112,7 +26112,7 @@ function openCreators(scrollToKey) {
           ? `<div class="cr-vsite" style="color:${creator.color}"><span class="cr-vsite-dot" style="background:${creator.color}"></span>${creator.name}</div>`
           : `<div class="cr-vsite cr-vsite-yt"><span class="cr-vsite-yt-icon">▶</span>YouTube</div>`;
         return `<button class="cr-vcard" onclick="closeCreators();selectSiteByName('${escSite}')" title="${safeTitle}">
-          <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/hqdefault.jpg)"></div>
+          <div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/${v.id}/mqdefault.jpg)"></div>
           <div class="cr-vbody">
             <div class="cr-vtitle">${v.title}</div>
             ${credit}
@@ -26172,7 +26172,7 @@ function openCreators(scrollToKey) {
         ? '<div class="cr-vsite" style="color:' + creator.color + '"><span class="cr-vsite-dot" style="background:' + creator.color + '"></span>' + creator.name + ' · <em style="font-style:normal;opacity:.7">' + v._siteName + '</em></div>'
         : '<div class="cr-vsite cr-vsite-yt"><span class="cr-vsite-yt-icon">\u25B6</span>YouTube · <em style="font-style:normal;opacity:.7">' + v._siteName + '</em></div>';
       return '<button class="cr-vcard" onclick="closeCreators();selectSiteByName(\'' + escSite + '\')" title="' + safeTitle + '">' +
-        '<div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/' + v.id + '/hqdefault.jpg)"></div>' +
+        '<div class="cr-vthumb" style="background-image:url(https://i.ytimg.com/vi/' + v.id + '/mqdefault.jpg)"></div>' +
         '<div class="cr-vbody">' +
           '<div class="cr-vtitle">' + newBadge + v.title + '</div>' +
           credit +
