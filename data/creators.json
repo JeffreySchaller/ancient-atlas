@@ -776,5 +776,19 @@
     "subs": "On-location explorations of Chinese cliff dwellings, rock-cut refuges and historic sites.",
     "color": "#8CA99B",
     "tier": 3
+  },
+  "cafewiedza": {
+    "name": "Cafe Wiedza",
+    "handle": "@CafeWiedza",
+    "subs": "Polish-language site visits and archaeology conversations.",
+    "color": "#83BDD4",
+    "tier": 3
+  },
+  "qingyunji": {
+    "name": "青云迹 Qingyunji",
+    "handle": "@Qingyunji",
+    "subs": "Chinese-language journeys through landscapes, heritage and local life.",
+    "color": "#8FBAA5",
+    "tier": 3
   }
 }

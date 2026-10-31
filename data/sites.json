@@ -9008,5 +9008,24 @@
       "scale"
     ],
     "desc": "A narrow mountain gateway on the historic route between the Sichuan Basin and northern China. Jianmen Pass combines steep natural cliffs with a fortified passage and a long history of strategic use. The present gate is reconstructed; Ale explores the pass and its cliff routes."
+  },
+  {
+    "n": "Maukallacta (Paccaritambo)",
+    "lat": -13.703056,
+    "lng": -71.964722,
+    "cat": "settlement",
+    "region": "South America",
+    "tier": 3,
+    "desc": "An archaeological complex in Paccaritambo district, Paruro, south of Cusco, associated with Inca origin traditions. Courtyards, trapezoidal niches, different masonry treatments and water channels are visible in the site visit. The film discusses possible earlier construction phases; these interpretations are not established by differences in stonework alone.",
+    "sources": [
+      {
+        "label": "Cusco Ministry of Culture — Mauk’allaqta, Paccaritambo",
+        "url": "https://www.culturacusco.gob.pe/noticia/imagen/realizaron-trabajos-de-limpieza-de-vias-de-acceso-al-monumento-arqueologico-de-maukallaqta-en-paccaritambo-paruro/"
+      },
+      {
+        "label": "Wikidata — mapped site location",
+        "url": "https://www.wikidata.org/wiki/Q15950042"
+      }
+    ]
   }
 ]

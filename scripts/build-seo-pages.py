@@ -293,7 +293,8 @@ def main():
         if name in SARDINIA_GUIDE_SITES:
             vid_html += '<p><a href="/creators/sardinia">Explore Sardinia with local guides and other creators →</a></p>'
 
-        near = sorted((o for o in sites if o["n"] != name), key=lambda o: haversine(s, o))[:3]
+        provisional = lambda site: site.get('desc', '').startswith(('Location approximate.', 'Location unresolved.')) or '(unlocated)' in site['n'] or 'approximate)' in site['n']
+        near = [] if provisional(s) else sorted((o for o in sites if o["n"] != name and not provisional(o)), key=lambda o: haversine(s, o))[:3]
         near_html = f'<section aria-label="Keep exploring"><h2>Keep exploring</h2><p><a href="/?site={quote(name)}">Explore around {html.escape(name)} on the map →</a></p><h3>Nearby sites</h3><ul class="nearby">' + "".join(
             f'<li><a href="/sites/{slugs[o["n"]]}.html">{html.escape(o["n"])}</a>'
             f'<span class="d">{haversine(s, o):.0f} km</span></li>'
@@ -308,6 +309,9 @@ def main():
             "url": canonical,
             "geo": {"@type": "GeoCoordinates", "latitude": s["lat"], "longitude": s["lng"]},
         }
+        if provisional(s):
+            ld.pop('geo', None)
+            near_html = '<section aria-label="Keep exploring"><h2>Keep exploring</h2><p>Nearby distances are unavailable until this location is verified.</p><p><a href="/creators/">Discover more creators →</a></p></section>'
         if country:
             ld["containedInPlace"] = {"@type": "Country", "name": country}
         if wires:
