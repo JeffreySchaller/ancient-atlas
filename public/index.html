@@ -27776,7 +27776,7 @@ function renderWaterJourney(site) {
   const index = WATER_STOPS.findIndex(stop => stop.site === site.n);
   if (index < 0) return '';
   const next = index + 1;
-  return '<section class="water-guide" aria-label="Follow the water journey"><small>FOLLOW THE WATER · ' + next + ' OF 3</small><p>' + journeyEscape(WATER_STOPS[index].cue) + '</p><div>' +
+  return '<section class="water-guide" aria-label="Follow the water journey"><small>FOLLOW THE WATER · ' + next + ' OF 3</small><strong style="display:block;margin-top:6px">' + journeyEscape(site.n) + '</strong><p>' + journeyEscape(WATER_STOPS[index].cue) + '</p><div>' +
     (index > 0 ? '<button onclick="goToWaterStop(' + (index - 1) + ')">← Previous</button>' : '') +
     (next < WATER_STOPS.length ? '<button onclick="goToWaterStop(' + next + ')">Next place →</button>' : '<a href="/patterns/#life">Read about the connection →</a>') +
     '<button onclick="endWaterJourney()">Finish journey</button></div></section>';
