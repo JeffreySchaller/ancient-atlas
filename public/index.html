@@ -27744,7 +27744,7 @@ const SITE_FEATURES = {
 var waterJourneyActive = false;
 const WATER_STOPS = [
   {site: 'Tipón', film: 'N0IvaD4xnMk', cue: 'Peru · Follow the channels between terraces. How does the water change level?'},
-  {site: 'Petra', film: '4Tbd6g-uQWE', cue: 'Jordan · Look along the canyon walls for channels. Consider how water could reach a city in this landscape.'},
+  {site: 'Petra', film: '8-Pa0IKAQBs', start: 128, cue: 'Jordan · Walk the Siq with Brien Foerster. Look for the water channels he points out on both sides of the passage.'},
   {site: 'Sacred Well of Santa Cristina', film: 'q0YNkMIt3BY', cue: 'Sardinia · Follow the stairway down to the sacred well. Here, access to water also shaped a place of ritual.'}
 ];
 function startWaterJourney() {
@@ -27761,7 +27761,7 @@ function goToWaterStop(index) {
   const stop = WATER_STOPS[index];
   visitPanelSite(stop.site);
   const film = (VIDEOS[stop.site] || []).find(video => video.id === stop.film);
-  if (film) watchAtlasVideo(film.id, Number(film.t) || 0);
+  if (film) watchAtlasVideo(film.id, stop.start ?? (Number(film.t) || 0));
   if (isMobileViewport()) closeMobileSiteSheet();
   document.getElementById("water-route").innerHTML = renderWaterJourney(SITES.find(site => site.n === stop.site));
 }
@@ -27825,9 +27825,13 @@ function renderSiteCharacteristics(site) {
   }).join('');
 }
 function renderSitePanel(site, mode='desktop', films=null) {
-  const videos = [...(films || VIDEOS[site.n] || [])];
+  const videos = (films || VIDEOS[site.n] || []).map(video => ({...video}));
   const journeyStop = waterJourneyActive && WATER_STOPS.find(stop => stop.site === site.n);
-  if (journeyStop) videos.sort((a, b) => Number(b.id === journeyStop.film) - Number(a.id === journeyStop.film));
+  if (journeyStop) {
+    videos.sort((a, b) => Number(b.id === journeyStop.film) - Number(a.id === journeyStop.film));
+    const featuredFilm = videos.find(video => video.id === journeyStop.film);
+    if (featuredFilm && journeyStop.start !== undefined) featuredFilm.t = journeyStop.start;
+  }
   const provisional = isProvisionalSite;
   const nearby = provisional(site) ? [] : SITES.filter(s => s.n !== site.n && !provisional(s)).map(s => ({...s, dist:haversine(site.lat,site.lng,s.lat,s.lng)})).sort((a,b)=>a.dist-b.dist).slice(0,8);
   const row = s => `<a href="/?site=${encodeURIComponent(s.n)}" onclick="event.preventDefault();visitPanelSite(decodeURIComponent(this.search.slice(6)))"><span>${journeyEscape(s.n)}</span><small>${s.dist.toFixed(1)} km →</small></a>`;
