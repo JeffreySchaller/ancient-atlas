@@ -2192,6 +2192,7 @@ body.present #broadcast-controls{
         <input type="text" id="search" placeholder="Search ancient sites, regions, eras..." autocomplete="off" />
         <div class="search-suggestions" id="search-suggestions"></div>
       </div>
+<button class="water-entry" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water →</strong><small>Three places. Three ways to work with water.</small></span></button>
 <a class="patterns-map-entry" href="/patterns/"><strong>What people made possible →</strong><span>24 features · Places, films &amp; creators</span></a>
 <p style="margin:10px 0;font-size:13px"><a href="/creators/#field-visits" style="color:#b8d6b2">New creator field visits →</a></p>
 <div class="atlas-feature-browser" aria-label="Browse site features"></div>
@@ -2390,7 +2391,8 @@ body.present #broadcast-controls{
 
   <!-- Unobtrusive mobile nav: Articles / Editions / Support / Contact -->
   <p style="margin:12px 16px"><a href="/creators/#field-visits" style="color:#b8d6b2">New creator field visits →</a></p>
-  <div class="atlas-feature-browser atlas-feature-mobile" aria-label="Browse site features"></div>
+  <button class="water-entry" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water →</strong><small>Three places. Three ways to work with water.</small></span></button>
+<div class="atlas-feature-browser atlas-feature-mobile" aria-label="Browse site features"></div>
   <div class="mf-mininav" aria-label="Site sections">
     <a class="mf-mininav-link" href="experiences/feel-the-weight/">
       <span class="mf-mininav-glyph" aria-hidden="true">⚖</span>
@@ -25187,6 +25189,7 @@ function wireFixedTooltips() {
 // FILTERED SITES
 // ============================================================
 function getFiltered() {
+  if (waterJourneyActive) return SITES.filter(site => WATER_STOPS.some(stop => stop.site === site.n));
   // Apply non-search filters first (cheap, deterministic)
   let pool = FILTERED_SITES.filter(s => {
     if (activeFeature && !siteFeatureIds(s).includes(activeFeature)) return false;
@@ -26675,6 +26678,8 @@ function renderSupport() {
 
 // Reset all filters and search
 function resetFilters() {
+  document.getElementById("water-route")?.remove();
+  waterJourneyActive = false;
   activeFeature = null;
   searchTerm = '';
   activeRegion = null;
@@ -27735,6 +27740,48 @@ const SITE_FEATURES = {
     "flow"
   ]
 };
+
+var waterJourneyActive = false;
+const WATER_STOPS = [
+  {site: 'Tipón', film: 'N0IvaD4xnMk', cue: 'Peru · Follow the channels between terraces. How does the water change level?'},
+  {site: 'Petra', film: '4Tbd6g-uQWE', cue: 'Jordan · Look along the canyon walls for channels. Consider how water could reach a city in this landscape.'},
+  {site: 'Sacred Well of Santa Cristina', film: 'q0YNkMIt3BY', cue: 'Sardinia · Follow the stairway down to the sacred well. Here, access to water also shaped a place of ritual.'}
+];
+function startWaterJourney() {
+  waterJourneyActive = true;
+  if (!document.getElementById("water-route")) {
+    const guide = document.createElement("div");
+    guide.id = "water-route";
+    document.body.appendChild(guide);
+  }
+  renderMarkers();
+  goToWaterStop(0);
+}
+function goToWaterStop(index) {
+  const stop = WATER_STOPS[index];
+  visitPanelSite(stop.site);
+  const film = (VIDEOS[stop.site] || []).find(video => video.id === stop.film);
+  if (film) watchAtlasVideo(film.id, Number(film.t) || 0);
+  if (isMobileViewport()) closeMobileSiteSheet();
+  document.getElementById("water-route").innerHTML = renderWaterJourney(SITES.find(site => site.n === stop.site));
+}
+function endWaterJourney() {
+  document.getElementById("water-route")?.remove();
+  waterJourneyActive = false;
+  renderMarkers();
+  if (selectedSite) visitPanelSite(selectedSite.n);
+}
+function renderWaterJourney(site) {
+  if (!waterJourneyActive) return '';
+  const index = WATER_STOPS.findIndex(stop => stop.site === site.n);
+  if (index < 0) return '';
+  const next = index + 1;
+  return '<section class="water-guide" aria-label="Follow the water journey"><small>FOLLOW THE WATER · ' + next + ' OF 3</small><strong style="display:block;margin-top:6px">' + journeyEscape(site.n) + '</strong><p>' + journeyEscape(WATER_STOPS[index].cue) + '</p><div>' +
+    (index > 0 ? '<button onclick="goToWaterStop(' + (index - 1) + ')">← Previous</button>' : '') +
+    (next < WATER_STOPS.length ? '<button onclick="goToWaterStop(' + next + ')">Next place →</button>' : '<a href="/patterns/#life">Read about the connection →</a>') +
+    '<button onclick="endWaterJourney()">Finish journey</button></div></section>';
+}
+
 let activeFeature = null;
 function siteFeatureIds(site) {
   const ids = [...(SITE_FEATURES[site.n] || [])];
@@ -27778,7 +27825,9 @@ function renderSiteCharacteristics(site) {
   }).join('');
 }
 function renderSitePanel(site, mode='desktop', films=null) {
-  const videos = films || VIDEOS[site.n] || [];
+  const videos = [...(films || VIDEOS[site.n] || [])];
+  const journeyStop = waterJourneyActive && WATER_STOPS.find(stop => stop.site === site.n);
+  if (journeyStop) videos.sort((a, b) => Number(b.id === journeyStop.film) - Number(a.id === journeyStop.film));
   const provisional = isProvisionalSite;
   const nearby = provisional(site) ? [] : SITES.filter(s => s.n !== site.n && !provisional(s)).map(s => ({...s, dist:haversine(site.lat,site.lng,s.lat,s.lng)})).sort((a,b)=>a.dist-b.dist).slice(0,8);
   const row = s => `<a href="/?site=${encodeURIComponent(s.n)}" onclick="event.preventDefault();visitPanelSite(decodeURIComponent(this.search.slice(6)))"><span>${journeyEscape(s.n)}</span><small>${s.dist.toFixed(1)} km →</small></a>`;
