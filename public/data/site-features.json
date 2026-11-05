@@ -24,5 +24,77 @@
   "Caiazzo Polygonal Walls (Caiatia)": [
     "polygonal",
     "reuse"
+  ],
+  "Sacsayhuamán": [
+    "polygonal"
+  ],
+  "Tarawasi": [
+    "polygonal"
+  ],
+  "Pisac": [
+    "polygonal"
+  ],
+  "Rumiwasi": [
+    "polygonal"
+  ],
+  "Ollantaytambo": [
+    "polygonal"
+  ],
+  "Pyramid of Khafre": [
+    "polygonal"
+  ],
+  "Khafre Valley Temple": [
+    "polygonal"
+  ],
+  "Alatri Acropolis": [
+    "polygonal"
+  ],
+  "Alba Fucens": [
+    "polygonal"
+  ],
+  "Cosa": [
+    "polygonal"
+  ],
+  "Segni (Signia)": [
+    "polygonal"
+  ],
+  "Porta Saracena (Segni)": [
+    "polygonal"
+  ],
+  "Porta Foca (Segni)": [
+    "polygonal"
+  ],
+  "Acropolis of Ferentino": [
+    "polygonal"
+  ],
+  "Orbetello": [
+    "polygonal"
+  ],
+  "Norba": [
+    "polygonal"
+  ],
+  "Pyrgi Walls (Santa Severa)": [
+    "polygonal"
+  ],
+  "Rusellae": [
+    "polygonal"
+  ],
+  "Delphi": [
+    "polygonal"
+  ],
+  "Panopeus": [
+    "polygonal"
+  ],
+  "Oiniades": [
+    "polygonal"
+  ],
+  "Hyrtakina": [
+    "polygonal"
+  ],
+  "Kazarma Acropolis": [
+    "polygonal"
+  ],
+  "Agios Adrianos Fort": [
+    "polygonal"
   ]
 }
