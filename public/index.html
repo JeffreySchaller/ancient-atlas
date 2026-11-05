@@ -19772,7 +19772,8 @@ const VIDEOS = {
       "id": "z6yUigPi1nw",
       "title": "The Polygonal Pyramid of Hellinikon",
       "cr": "stoneriddles",
-      "added": "2026-07-11"
+      "added": "2026-07-11",
+      "polygonalStart": 174
     },
     {
       "id": "3tCUnligXxE",
@@ -20826,7 +20827,8 @@ const VIDEOS = {
       "id": "KirEaArhQKE",
       "title": "Polygonal Masonry, Megalithism and Precision Stone Cuts at Epidaurus",
       "cr": "stoneriddles",
-      "added": "2026-07-11"
+      "added": "2026-07-11",
+      "polygonalStart": 587
     }
   ],
   "Tiryns": [
@@ -20891,7 +20893,8 @@ const VIDEOS = {
       "id": "_LPW4WiEuLg",
       "title": "4 km of Polygonal Walls at Aptera!",
       "cr": "stoneriddles",
-      "added": "2026-07-11"
+      "added": "2026-07-11",
+      "polygonalStart": 10
     }
   ],
   "Lato": [
@@ -20899,7 +20902,8 @@ const VIDEOS = {
       "id": "jEbUvHHZWBA",
       "title": "The Stone City of Lato",
       "cr": "stoneriddles",
-      "added": "2026-07-11"
+      "added": "2026-07-11",
+      "polygonalStart": 311
     }
   ],
   "Stylos Tholos Tomb": [
@@ -20985,7 +20989,8 @@ const VIDEOS = {
       "id": "WhXLtIJmvRg",
       "title": "The Polygonal City of Cassope",
       "cr": "stoneriddles",
-      "added": "2026-07-11"
+      "added": "2026-07-11",
+      "polygonalStart": 60
     }
   ],
   "Oiniades": [
@@ -21033,7 +21038,8 @@ const VIDEOS = {
       "id": "82mjHuq-A_U",
       "title": "The Seaside Polygonal Walls of Asine",
       "cr": "stoneriddles",
-      "added": "2026-07-11"
+      "added": "2026-07-11",
+      "polygonalStart": 70
     }
   ],
   "Midea": [
@@ -22044,7 +22050,8 @@ const VIDEOS = {
       "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
       "cr": "stoneriddles",
       "t": 484,
-      "added": "2026-10-24"
+      "added": "2026-10-24",
+      "polygonalStart": 520
     }
   ],
   "Grotte di Torri": [
@@ -22053,7 +22060,8 @@ const VIDEOS = {
       "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
       "cr": "stoneriddles",
       "t": 711,
-      "added": "2026-10-24"
+      "added": "2026-10-24",
+      "polygonalStart": 790
     }
   ],
   "Alba Fucens": [
@@ -27835,6 +27843,30 @@ const SITE_FEATURES = {
   ],
   "Agios Adrianos Fort": [
     "polygonal"
+  ],
+  "Cassope": [
+    "polygonal"
+  ],
+  "Asine": [
+    "polygonal"
+  ],
+  "Epidaurus": [
+    "polygonal"
+  ],
+  "Polygonal Walls of Amelia": [
+    "polygonal"
+  ],
+  "Grotte di Torri": [
+    "polygonal"
+  ],
+  "Pyramid of Hellinikon": [
+    "polygonal"
+  ],
+  "Aptera": [
+    "polygonal"
+  ],
+  "Lato": [
+    "polygonal"
   ]
 };
 
@@ -27922,6 +27954,12 @@ function renderSiteCharacteristics(site) {
 }
 function renderSitePanel(site, mode='desktop', films=null) {
   const videos = (films || VIDEOS[site.n] || []).map(video => ({...video}));
+  if (activeFeature === 'polygonal') {
+    for (const film of videos) {
+      if (Number.isInteger(film.polygonalStart)) film.t = film.polygonalStart;
+    }
+    videos.sort((a, b) => Number(Number.isInteger(b.polygonalStart)) - Number(Number.isInteger(a.polygonalStart)));
+  }
   const journeyStop = waterJourneyActive && WATER_STOPS.find(stop => stop.site === site.n);
   if (journeyStop) {
     videos.sort((a, b) => Number(b.id === journeyStop.film) - Number(a.id === journeyStop.film));
