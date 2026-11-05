@@ -20,5 +20,9 @@
   "Lalibela Rock-Hewn Churches": [
     "rockcut",
     "flow"
+  ],
+  "Caiazzo Polygonal Walls (Caiatia)": [
+    "polygonal",
+    "reuse"
   ]
 }
