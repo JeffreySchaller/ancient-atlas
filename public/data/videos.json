@@ -1477,13 +1477,6 @@
   ],
   "Barabar Caves": [
     {
-      "id": "IrnsAWcPLqM",
-      "title": "Who Created Barabar Caves in India?",
-      "cr": "agelessrock",
-      "added": "2026-08-07",
-      "published": "2026-08-07"
-    },
-    {
       "id": "6RJ3Epd_SXk",
       "title": "BARABAR — Breathtaking Precision and Geometry Discovered in Ancient Indian Granite Caves",
       "cr": "unchartedx"
@@ -1492,6 +1485,13 @@
       "id": "YNmkfDWprdE",
       "title": "Lost Technology of Ancient India? The Enigmatic Barabar Caves",
       "cr": "ancientarch"
+    },
+    {
+      "id": "IrnsAWcPLqM",
+      "title": "Who Created Barabar Caves in India?",
+      "cr": "agelessrock",
+      "added": "2026-08-07",
+      "published": "2026-08-07"
     },
     {
       "id": "ZpYqvukAoLo",
@@ -2966,6 +2966,26 @@
   ],
   "Ellora Caves": [
     {
+      "id": "rkcUvwjrVLU",
+      "title": "Carved From One Block Of Stone | Who Built Kailasa Temple, India?",
+      "cr": "megalithomania"
+    },
+    {
+      "id": "_WypT8RPUxg",
+      "title": "The Mystery of the Kailasa Temple of India",
+      "cr": "ancientarch"
+    },
+    {
+      "id": "XXw8KcLQchk",
+      "title": "Who Built The Hirebenakal Dolmens of India?",
+      "cr": "megalithomania"
+    },
+    {
+      "id": "GQ64mE7U8sM",
+      "title": "Laser Cut Dolmens of India... built by Dwarfs!",
+      "cr": "megalithomania"
+    },
+    {
       "id": "rZUvCU6aLRs",
       "title": "Ellora Caves 1 to 10 : Intriguing India",
       "cr": "agelessrock",
@@ -3020,40 +3040,20 @@
       "cr": "agelessrock",
       "added": "2026-08-07",
       "published": "2026-08-07"
-    },
-    {
-      "id": "rkcUvwjrVLU",
-      "title": "Carved From One Block Of Stone | Who Built Kailasa Temple, India?",
-      "cr": "megalithomania"
-    },
-    {
-      "id": "_WypT8RPUxg",
-      "title": "The Mystery of the Kailasa Temple of India",
-      "cr": "ancientarch"
-    },
-    {
-      "id": "XXw8KcLQchk",
-      "title": "Who Built The Hirebenakal Dolmens of India?",
-      "cr": "megalithomania"
-    },
-    {
-      "id": "GQ64mE7U8sM",
-      "title": "Laser Cut Dolmens of India... built by Dwarfs!",
-      "cr": "megalithomania"
     }
   ],
   "Ajanta Caves": [
+    {
+      "id": "GkVS_KTLgdI",
+      "title": "Did Christianity Begin in India? Was the Cross Worshipped by Ancient Hindus?",
+      "cr": "praveenmohan"
+    },
     {
       "id": "yTWX9Nnyfy4",
       "title": "Amazing Ajanta and some Crazy Calculations.",
       "cr": "agelessrock",
       "added": "2026-08-07",
       "published": "2026-08-07"
-    },
-    {
-      "id": "GkVS_KTLgdI",
-      "title": "Did Christianity Begin in India? Was the Cross Worshipped by Ancient Hindus?",
-      "cr": "praveenmohan"
     }
   ],
   "Konark Sun Temple": [
@@ -7318,18 +7318,18 @@
   ],
   "Norba": [
     {
-      "id": "3WyGs5eiEp4",
-      "title": "Norba: the Great Wall of Italy",
-      "cr": "stoneriddles",
-      "added": "2026-08-07",
-      "published": "2026-08-07"
-    },
-    {
       "id": "HrdQDqa3G-w",
       "title": "Documentary Stone Riddles - Polygonal Walls of Italy - Full Version",
       "cr": "stoneriddles",
       "t": 2095,
       "added": "2026-10-24"
+    },
+    {
+      "id": "3WyGs5eiEp4",
+      "title": "Norba: the Great Wall of Italy",
+      "cr": "stoneriddles",
+      "added": "2026-08-07",
+      "published": "2026-08-07"
     }
   ],
   "Cutimbo": [
@@ -8356,6 +8356,15 @@
       "title": "Small but beautiful reimains at Caiazzo",
       "cr": "stoneriddles",
       "added": "2026-11-04"
+    }
+  ],
+  "Yongning Mountain Cliff Fortress (approximate)": [
+    {
+      "id": "dFFlXj87EH4",
+      "title": "探訪陝西千年崖居山寨，整座大山被掏空，內部設計非常巧妙｜Explore the millennium cliff dwellings on the cliffs of Shaanxi Province",
+      "cr": "aletravel",
+      "added": "2026-11-06",
+      "language": "Mandarin Chinese"
     }
   ]
 }
