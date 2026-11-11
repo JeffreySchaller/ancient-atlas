@@ -39,7 +39,7 @@
     }
   };
   const style = document.createElement('style');
-  style.textContent = '#atlas-analytics-panel{position:fixed;bottom:12px;left:12px;right:12px;margin:0 auto;max-width:680px;max-height:65vh;overflow:auto;z-index:10020;background:#15151c;color:#f0eee9;border:1px solid #8a6e2f;border-radius:10px;padding:18px;box-shadow:0 8px 30px #0008;font:14px/1.5 system-ui,sans-serif}#atlas-analytics-panel[hidden]{display:none}#atlas-analytics-panel p{margin:0 0 12px}#atlas-analytics-panel a{color:#f0d69b}#atlas-analytics-panel button{font:inherit;padding:9px 14px;border:1px solid #8a6e2f;border-radius:5px;background:#15151c;color:#f0eee9;cursor:pointer;margin:0 8px 0 0}#atlas-analytics-panel button:focus-visible,#atlas-analytics-settings:focus-visible{outline:2px solid #f0d69b;outline-offset:3px}#atlas-analytics-panel button[data-choice="granted"]{background:#c9a84c;color:#15151c}#atlas-analytics-settings{position:fixed;bottom:8px;right:8px;z-index:10010;background:#15151c;color:#f0eee9;border:1px solid #8a6e2f;border-radius:5px;padding:6px 9px;font:12px/1.3 system-ui,sans-serif;cursor:pointer}';
+  style.textContent = '#atlas-analytics-panel{position:fixed;bottom:12px;left:12px;right:12px;margin:0 auto;max-width:680px;max-height:65vh;overflow:auto;z-index:100020;background:#15151c;color:#f0eee9;border:1px solid #8a6e2f;border-radius:10px;padding:18px;box-shadow:0 8px 30px #0008;font:14px/1.5 system-ui,sans-serif}#atlas-analytics-panel[hidden]{display:none}#atlas-analytics-panel p{margin:0 0 12px}#atlas-analytics-panel a{color:#f0d69b}#atlas-analytics-panel button{font:inherit;padding:9px 14px;border:1px solid #8a6e2f;border-radius:5px;background:#15151c;color:#f0eee9;cursor:pointer;margin:0 8px 0 0}#atlas-analytics-panel button:focus-visible,#atlas-analytics-settings:focus-visible{outline:2px solid #f0d69b;outline-offset:3px}#atlas-analytics-panel button[data-choice="granted"]{background:#c9a84c;color:#15151c}#atlas-analytics-settings{position:fixed;bottom:8px;right:8px;z-index:10010;background:#15151c;color:#f0eee9;border:1px solid #8a6e2f;border-radius:5px;padding:6px 9px;font:12px/1.3 system-ui,sans-serif;cursor:pointer}';
   document.head.appendChild(style);
   const settings = document.createElement('button');
   settings.id = 'atlas-analytics-settings';
@@ -55,7 +55,7 @@
     panel.querySelector('[data-choice="granted"]').hidden = true;
     panel.querySelector('[data-choice="denied"]').textContent = 'Close';
   }
-  settings.addEventListener('click', () => { panel.hidden = false; panel.querySelector(blocked ? '[data-choice="denied"]' : 'button').focus(); });
+  settings.addEventListener('click', () => { const menu = document.getElementById('atlas-map-tools'); if (menu) menu.open = false; panel.hidden = false; panel.querySelector(blocked ? '[data-choice="denied"]' : 'button').focus(); });
   panel.querySelectorAll('[data-choice]').forEach(button => button.addEventListener('click', () => {
     consent = blocked ? 'denied' : button.dataset.choice;
     try { localStorage.setItem(key, consent); } catch (_) { /* Page-local choice. */ }
@@ -65,10 +65,11 @@
       gtag('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
       location.reload();
     }
-    settings.focus();
+    (document.querySelector('#atlas-map-tools summary') || settings).focus();
   }));
   document.body.appendChild(settings);
   document.body.appendChild(panel);
+  document.dispatchEvent(new Event('atlas-analytics-ready'));
   if (consent === 'granted') start();
   else if (!consent) panel.hidden = false;
 })();
