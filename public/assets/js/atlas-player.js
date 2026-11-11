@@ -1,17 +1,25 @@
 /* A single player, independent of replaceable site panels. */
 (() => {
   let panel, lastTrigger, drag;
+  function lowerEdge() {
+    const credits = document.querySelector('.leaflet-control-attribution');
+    const rect = credits?.getBoundingClientRect();
+    return rect && rect.height && rect.top > 0 ? Math.min(innerHeight, rect.top) : innerHeight;
+  }
   function place(x, y) {
     if (!panel) return;
     const box = panel.getBoundingClientRect();
     panel.style.left = Math.max(8, Math.min(x, innerWidth-box.width-8))+'px';
-    panel.style.top = Math.max(8, Math.min(y, innerHeight-box.height-8))+'px';
+    panel.style.top = Math.max(8, Math.min(y, lowerEdge()-box.height-8))+'px';
     panel.style.right = panel.style.bottom = 'auto';
   }
   function fit() {
     if (panel) { const b=panel.getBoundingClientRect(); place(b.left,b.top); }
   }
   window.addEventListener('resize', fit);
+  // Refit after credits wrap, mobile panels resize the map, or device rotation.
+  const credits = document.querySelector('.leaflet-control-attribution');
+  if (credits && window.ResizeObserver) new ResizeObserver(fit).observe(credits);
   const esc = s => String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function close() {
     if (panel) panel.remove();
@@ -76,4 +84,27 @@
     window.AtlasPlayer.open({id:a.dataset.atlasVideo,title:a.dataset.title,creator:a.dataset.creator,handle:a.dataset.handle,start:a.dataset.start});
   });
   document.addEventListener('keydown', e => {if(e.key==='Escape' && panel) close();});
+})();
+
+// Secondary controls belong beside the map's home control, not over its credits.
+(() => {
+  const mapWrap = document.getElementById('map-wrap');
+  if (!mapWrap) return;
+  const menu = document.createElement('details');
+  menu.id = 'atlas-map-tools';
+  menu.innerHTML = '<summary>Help &amp; settings</summary><div class="amt-content"><p>Drag the map to move. Select a site to watch its creators.</p><p><kbd>P</kbd> toggles broadcast mode.</p><div id="atlas-map-settings-slot"></div></div>';
+  mapWrap.append(menu);
+  document.getElementById('mode-hint')?.remove();
+  function moveSettings() {
+    const settings = document.getElementById('atlas-analytics-settings');
+    if (settings) menu.querySelector('#atlas-map-settings-slot').append(settings);
+  }
+  moveSettings();
+  document.addEventListener('atlas-analytics-ready', moveSettings);
+  // Keep pointer gestures inside the menu from panning the map.
+  for (const event of ['pointerdown', 'dblclick', 'wheel']) menu.addEventListener(event, e => e.stopPropagation());
+  document.addEventListener('click', e => { if (!menu.contains(e.target)) menu.open = false; });
+  menu.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { menu.open = false; menu.querySelector('summary').focus(); e.stopPropagation(); }
+  });
 })();
