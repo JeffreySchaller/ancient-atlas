@@ -14,6 +14,12 @@ const assert=require('node:assert/strict');
   });
   await page.route('https://www.youtube.com/embed/**',route=>route.fulfill({contentType:'text/html',body:'<p>Player fixture</p>'}));
   await page.goto('https://theancientatlas.com/',{waitUntil:'domcontentloaded'});
+  if(width<950) {
+    await page.locator('#atlas-map-tools summary').click();
+    await page.locator('#atlas-map-tools #atlas-analytics-settings').click();
+    await page.locator('#atlas-analytics-panel [data-choice="denied"]').click();
+    await page.evaluate(()=>window.atlasExploreMap());
+  }
   await page.locator('.leaflet-control-attribution').waitFor();
   await page.waitForTimeout(1000);
   assert.equal(await page.locator('#mode-hint').count(),0);
