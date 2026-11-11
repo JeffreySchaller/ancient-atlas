@@ -4,3 +4,21 @@
 .aw-info{display:flex;align-items:center;gap:14px;padding:4px 12px;min-height:44px}.aw-info a{color:#c9c6c0;font-size:12px;text-decoration:none;padding:8px 0}.aw-info a:hover{text-decoration:underline}.aw-info .aw-credit{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#e1c77f;font-weight:600}.aw-info button{font-size:12px}#atlas-watch.compact .aw-screen{display:none}#atlas-watch :focus-visible{outline:2px solid #e1c77f;outline-offset:-2px}
 @media(max-width:950px){#atlas-watch{width:min(320px,calc(100vw - 24px));right:12px;bottom:max(12px,env(safe-area-inset-bottom))}.aw-bar button{min-width:40px;min-height:44px}.aw-info{min-height:44px}}
 @media(max-height:500px){#atlas-watch{width:260px}.aw-bar button{min-width:32px;min-height:32px}}
+
+/* Leave a readable strip for map provider credits, even while watching. */
+body:not(.present) #mode-hint{display:none}
+#map-wrap .leaflet-control-attribution{font-size:11px!important;line-height:1.5;background:#15151c!important;color:#ddd!important;max-width:calc(100vw - 24px);white-space:normal;padding:3px 8px max(3px,env(safe-area-inset-bottom))!important}
+#atlas-watch{bottom:44px;max-height:calc(100dvh - 64px);overflow:auto}
+#atlas-map-tools{position:absolute;top:12px;left:60px;z-index:1000;color:#eeeae2;font:13px/1.5 system-ui,sans-serif}
+#atlas-map-tools summary{list-style:none;cursor:pointer;border:1px solid #55534e;border-radius:8px;background:#202124;padding:10px 12px;min-height:44px;box-sizing:border-box}
+#atlas-map-tools summary::-webkit-details-marker{display:none}
+#atlas-map-tools summary:focus-visible{outline:2px solid #e1c77f;outline-offset:2px}
+#atlas-map-tools .amt-content{position:absolute;top:50px;left:0;width:min(270px,calc(100vw - 88px));box-sizing:border-box;padding:14px;background:#202124;border:1px solid #55534e;border-radius:10px;box-shadow:0 8px 28px #0006}
+#atlas-map-tools p{margin:0 0 12px}
+#atlas-map-tools kbd{border:1px solid #777;border-radius:4px;padding:1px 5px;color:#e1c77f}
+#atlas-map-tools #atlas-analytics-settings{position:static;display:block;width:100%;min-height:44px;text-align:left;font:inherit;margin:0}
+body.present #atlas-map-tools{display:none}
+
+#atlas-map-tools.amt-in-feed{position:relative;inset:auto;margin:8px 0;flex-basis:100%}
+#atlas-map-tools.amt-in-feed .amt-content{position:static;margin-top:6px;width:100%}
+@media(max-width:950px){#map-wrap #atlas-map-tools{left:auto;right:12px}#map-wrap #atlas-map-tools .amt-content{left:auto;right:0}}

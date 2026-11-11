@@ -1,0 +1,25 @@
+name: Map corner UI
+on:
+  pull_request:
+    paths:
+      - 'public/assets/atlas-player.css'
+      - 'public/assets/js/atlas-player.js'
+      - 'public/assets/js/analytics.js'
+      - 'scripts/test-map-corner.cjs'
+      - '.github/workflows/map-corner.yml'
+jobs:
+  browser:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --package-lock=false playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/test-map-corner.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: map-corner-screenshots
+          path: map-corner-*.png
