@@ -93,7 +93,16 @@
   const menu = document.createElement('details');
   menu.id = 'atlas-map-tools';
   menu.innerHTML = '<summary>Help &amp; settings</summary><div class="amt-content"><p>Drag the map to move. Select a site to watch its creators.</p><p><kbd>P</kbd> toggles broadcast mode.</p><div id="atlas-map-settings-slot"></div></div>';
-  mapWrap.append(menu);
+  function positionMenu() {
+    const feed = document.querySelector('#mobile-feed .mf-mininav');
+    const inFeed = getComputedStyle(mapWrap).display === 'none' && feed;
+    const target = inFeed || mapWrap;
+    if (menu.parentElement !== target) target.append(menu);
+    menu.classList.toggle('amt-in-feed', Boolean(inFeed));
+  }
+  positionMenu();
+  window.addEventListener('resize', positionMenu);
+  new MutationObserver(positionMenu).observe(document.body, {attributes:true, attributeFilter:['class']});
   document.getElementById('mode-hint')?.remove();
   function moveSettings() {
     const settings = document.getElementById('atlas-analytics-settings');
