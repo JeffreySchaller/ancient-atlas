@@ -24664,10 +24664,18 @@ function init() {
   });
   map.addControl(new ResetViewControl());
 
+  const lidarPilot = new URLSearchParams(window.location.search).get('lidar') === '1';
+  if (lidarPilot) {
+    const script = document.createElement('script');
+    script.src = '/assets/js/atlas-lidar-pilot.js';
+    script.onload = () => window.initAtlasLidarPilot(map, FILTERED_SITES);
+    document.head.appendChild(script);
+  }
+
   // Rail steps aside at the zoom floor : see CINEMA MODE below.
   map.on('zoomend', syncCinema);
   setTimeout(initDepthRail, 300);
-  setTimeout(scheduleWelcome, 650);
+  if (!lidarPilot) setTimeout(scheduleWelcome, 650);
 
   // Voyager color tiles in a dedicated pane, heavily desaturated and tinted
   // navy for a moonlit-Milky-Way feel : modern infrastructure recedes to faint

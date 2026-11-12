@@ -1,0 +1,44 @@
+.lidar-pilot-panel {
+  display: grid;
+  gap: 7px;
+  width: min(218px, calc(100vw - 36px));
+  padding: 12px;
+  color: var(--cloud, #f0eee9);
+  background: var(--charcoal, #181820);
+  border: 1px solid var(--stone, #48464b);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px #0008;
+  font: 14px/1.35 var(--font-sans, system-ui, sans-serif);
+}
+.lidar-pilot-toggle, .lidar-pilot-opacity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.lidar-pilot-toggle {
+  flex-direction: row-reverse;
+  font-weight: 600;
+  cursor: pointer;
+}
+.lidar-pilot-panel input {
+  margin: 0;
+  accent-color: var(--champagne, #e0bd77);
+}
+.lidar-pilot-panel output { font-variant-numeric: tabular-nums; }
+.lidar-pilot-panel select {
+  width: 100%;
+  min-height: 34px;
+  color: inherit;
+  background: var(--obsidian, #0a0a0e);
+  border: 1px solid var(--stone, #48464b);
+  border-radius: 5px;
+  padding: 3px 6px;
+  font: inherit;
+}
+.lidar-pilot-status { margin: 0; }
+@media (max-width: 950px) and (orientation: portrait) {
+  body.lidar-pilot #mobile-feed { display: none !important; }
+  body.lidar-pilot main { display: flex !important; height: 100dvh; }
+  body.lidar-pilot #map-wrap { display: block !important; width: 100%; }
+}
