@@ -97,8 +97,11 @@
         imagery.addTo(map);
         terrain.addTo(map);
         map.invalidateSize({ pan: false });
-        const center = [nextSite.lat, nextSite.lng];
-        const zoom = nextSite.n === 'Stonehenge' ? 14.8 : 15.2;
+        const point = [nextSite.lat, nextSite.lng];
+        const coverage = areas.map(area => L.latLngBounds(area.bounds)).find(bounds => bounds.contains(point));
+        const center = coverage ? coverage.getCenter() : point;
+        // Leave roughly a third of the limiting dimension for satellite context.
+        const zoom = coverage ? map.getBoundsZoom(coverage, false, map.getSize().multiplyBy(0.35)) : 13;
         if (animate && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
           map.flyTo(center, zoom, { duration: 1.25 });
         } else {
