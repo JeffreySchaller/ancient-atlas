@@ -600,9 +600,13 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .atlas-explore-arrow{color:var(--champagne)}
 .lidar-directory[open] .atlas-explore-arrow{transform:rotate(90deg)}
 .lidar-directory-content{padding:0 10px 9px}
-.lidar-landscape-gallery{display:grid;grid-auto-flow:column;grid-auto-columns:76%;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 8px}
+.lidar-landscape-gallery{display:grid;grid-auto-flow:column;grid-auto-columns:100%;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 8px}
+.lidar-landscape-gallery::-webkit-scrollbar{display:none}
+.lidar-gallery-controls{display:flex;justify-content:center;align-items:center;gap:10px;margin:0 0 6px;color:#eadcbb}
+.lidar-gallery-controls[hidden]{display:none}
+.lidar-gallery-controls button{min-width:36px;min-height:36px;background:#262820;color:#f1d68d;border:1px solid #75674a;border-radius:7px;cursor:pointer}
 .lidar-landscape-card{position:relative;display:grid;align-content:end;min-height:112px;overflow:hidden;border:1px solid #75674a;border-radius:8px;background:#252822;color:#fff2ca;text-decoration:none;scroll-snap-align:start}
-.lidar-landscape-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 29%;filter:sepia(.13)}
+.lidar-landscape-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:sepia(.13)}
 .lidar-landscape-card span{position:relative;display:grid;gap:2px;padding:15px 8px 7px;background:linear-gradient(transparent,#151719 45%)}
 .lidar-landscape-card small{color:#ece1c6;font-size:11px}
 .lidar-landscape-card:hover,.lidar-landscape-card:focus-visible{border-color:#f1d68d;color:#fff}
@@ -2252,6 +2256,11 @@ body.present #broadcast-controls{
               <div class="lidar-world-map" aria-label="World map of LiDAR landscapes"></div>
               <button type="button" class="lidar-world-reset" hidden>← World map</button>
               <div class="lidar-landscape-gallery" aria-label="LiDAR landscape previews" hidden></div>
+              <div class="lidar-gallery-controls" hidden>
+                <button type="button" aria-label="Previous landscape">‹</button>
+                <span aria-live="polite"></span>
+                <button type="button" aria-label="Next landscape">›</button>
+              </div>
               <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
             </div>
           </details>
@@ -2466,6 +2475,11 @@ body.present #broadcast-controls{
               <div class="lidar-world-map" aria-label="World map of LiDAR landscapes"></div>
               <button type="button" class="lidar-world-reset" hidden>← World map</button>
               <div class="lidar-landscape-gallery" aria-label="LiDAR landscape previews" hidden></div>
+              <div class="lidar-gallery-controls" hidden>
+                <button type="button" aria-label="Previous landscape">‹</button>
+                <span aria-live="polite"></span>
+                <button type="button" aria-label="Next landscape">›</button>
+              </div>
               <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
             </div>
       </details>
@@ -28089,9 +28103,9 @@ function renderSiteCharacteristics(site) {
   }).join('');
 }
 const ATLAS_LIDAR_LANDSCAPES = [
-  { name: 'Stonehenge', image: 'stonehenge', feature: 'Barrows and earthworks', sites: ['Stonehenge'] },
-  { name: 'Avebury landscape', image: 'avebury', feature: 'Henge, mound and long barrow', sites: ['Avebury', 'Silbury Hill', 'West Kennet Long Barrow'] },
-  { name: 'Thornborough Henges', image: 'thornborough', feature: 'Three henges in a row', sites: ['Thornborough Henges'] }
+  { name: 'Stonehenge', image: 'stonehenge', feature: 'Spot the rows of burial mounds', sites: ['Stonehenge'] },
+  { name: 'Avebury landscape', image: 'avebury', feature: 'Trace the henge ditch around a village', sites: ['Avebury', 'Silbury Hill', 'West Kennet Long Barrow'] },
+  { name: 'Thornborough Henges', image: 'thornborough', feature: 'Find the ring beneath the trees', sites: ['Thornborough Henges'] }
 ];
 const ATLAS_LIDAR_SITES = ATLAS_LIDAR_LANDSCAPES.flatMap(landscape => landscape.sites);
 let atlasLidarScript;
@@ -29609,6 +29623,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const gallery = directory.querySelector('.lidar-landscape-gallery');
     const reset = directory.querySelector('.lidar-world-reset');
+    const controls = directory.querySelector('.lidar-gallery-controls');
+    const [previous, next] = controls.querySelectorAll('button');
+    const position = controls.querySelector('span');
+    const cards = gallery.children;
+    let current = 0;
+    function updateCarousel() {
+      const start = cards[0].offsetLeft;
+      current = Array.from(cards).reduce((closest, card, index) =>
+        Math.abs(card.offsetLeft - start - gallery.scrollLeft) <
+        Math.abs(cards[closest].offsetLeft - start - gallery.scrollLeft) ? index : closest, 0);
+      if (gallery.scrollLeft >= gallery.scrollWidth - gallery.clientWidth - 2) current = cards.length - 1;
+      position.textContent = (current + 1) + ' / ' + cards.length;
+    }
+    function moveCarousel(delta) {
+      const card = cards[(current + delta + cards.length) % cards.length];
+      gallery.scrollTo({
+        left: card.offsetLeft - cards[0].offsetLeft,
+        behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+      });
+    }
+    previous.addEventListener('click', () => moveCarousel(-1));
+    next.addEventListener('click', () => moveCarousel(1));
+    gallery.addEventListener('scroll', updateCarousel, { passive: true });
     let world;
     directory.addEventListener('toggle', () => {
       if (!directory.open) return;
@@ -29647,10 +29684,8 @@ document.addEventListener('DOMContentLoaded', () => {
       england.type = 'button';
       const englandPin = pin([52.8, -1.7], england, 'England · 3 LiDAR landscapes', '3');
       const caracol = document.createElement('a');
-      caracol.href = 'https://pmc.ncbi.nlm.nih.gov/articles/PMC3420181/#fig04';
-      caracol.target = '_blank';
-      caracol.rel = 'noopener';
-      const caracolPin = pin([16.7642, -88.9856], caracol, 'Caracol · published LiDAR', '↗', 'research');
+      caracol.href = '/sites/caracol.html';
+      const caracolPin = pin([16.7642, -88.9856], caracol, 'Caracol', '•', 'research');
       const overview = L.layerGroup([englandPin, caracolPin]);
       const landscapes = L.layerGroup(ATLAS_LIDAR_LANDSCAPES.map(landscape => {
         const site = SITES.find(candidate => candidate.n === landscape.sites[0]);
@@ -29665,6 +29700,7 @@ document.addEventListener('DOMContentLoaded', () => {
         overview.addTo(world);
         world.fitBounds([[-60, -179], [80, 179]], { padding: [3, 3], animate: false });
         gallery.hidden = true;
+        controls.hidden = true;
         reset.hidden = true;
       }
       england.addEventListener('click', () => {
@@ -29672,6 +29708,8 @@ document.addEventListener('DOMContentLoaded', () => {
         landscapes.addTo(world);
         world.fitBounds([[50.95, -2.2], [54.45, -1.2]], { padding: [16, 16], animate: false });
         gallery.hidden = false;
+        controls.hidden = false;
+        updateCarousel();
         reset.hidden = false;
         reset.focus({ preventScroll: true });
       });
@@ -29685,7 +29723,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const link = lidarDirectoryLink(landscape.sites[0], landscape.name);
       link.className = 'lidar-landscape-card';
       const image = document.createElement('img');
-      image.src = '/assets/lidar/' + landscape.image + '-hillshade.webp';
+      image.src = '/assets/lidar/' + landscape.image + '-preview.webp';
       image.alt = '';
       image.loading = 'lazy';
       const caption = document.createElement('span');
