@@ -43,3 +43,29 @@
   body.lidar-pilot main { display: flex !important; height: 100dvh; }
   body.lidar-pilot #map-wrap { display: block !important; width: 100%; }
 }
+.lidar-pilot-panel[hidden] { display: none; }
+.lidar-pilot-heading button {
+  color: #f1d68d;
+  background: transparent;
+  border: 1px solid #a78e58;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font: inherit;
+  cursor: pointer;
+}
+.lidar-pilot-note { margin: 0; color: #e0d7c4; font-size: 12px; }
+body.lidar-pilot #map-wrap { min-width: 0; }
+body.lidar-pilot #detail.open { position: relative; flex: 0 0 min(36vw, 420px); }
+body.lidar-pilot #depth-rail { display: none; }
+@media (max-width: 950px) and (orientation: portrait) {
+  body.lidar-pilot main { flex-direction: column; }
+  body.lidar-pilot #map-wrap { min-height: 0; }
+  body.lidar-pilot #detail.open {
+    display: flex !important;
+    flex: 0 0 35%;
+    width: 100%;
+    max-width: none;
+    min-height: 0;
+  }
+  body.lidar-pilot .lidar-pilot-panel { padding: 8px 10px; gap: 3px; }
+}

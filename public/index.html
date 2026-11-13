@@ -577,7 +577,8 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .lidar-discovery{display:grid;gap:4px;margin:12px 0;padding:12px 14px;border:1px solid #c9a84c88;border-radius:10px;background:#27231e;color:#f1d68d;text-decoration:none;line-height:1.35}
 .lidar-discovery:hover{background:#383023;text-decoration:none}
 .lidar-discovery small{color:#e0d7c4;font-size:13px}
-body.lidar-pilot #sidebar .lidar-discovery{display:none}
+.lidar-discovery strong{display:flex;align-items:center;gap:8px}
+.atlas-lidar-pin{position:absolute;top:-11px;left:calc(100% + 3px);width:18px;height:18px;border:1px solid #e2c778;background:#211e19;border-radius:5px;pointer-events:none}
 
 #map-wrap{flex:1;position:relative}
 #map{width:100%;height:100%}
@@ -2198,7 +2199,7 @@ body.present #broadcast-controls{
         <input type="text" id="search" placeholder="Search ancient sites, regions, eras..." autocomplete="off" />
         <div class="search-suggestions" id="search-suggestions"></div>
       </div>
-<a class="lidar-discovery" href="/?lidar=1&amp;lidarSite=Stonehenge"><strong>Reveal the earthworks with LiDAR →</strong><small>Slide between satellite and bare-earth views of Stonehenge.</small></a>
+<a class="lidar-discovery" href="/?lidar=1&amp;lidarSite=Stonehenge" onclick="event.preventDefault();openAtlasLidar('Stonehenge',this)"><strong>Reveal the earthworks with LiDAR →</strong><small>Slide between satellite and bare-earth views of Stonehenge.</small></a>
 <button class="water-entry" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water →</strong><small>Three places. Three ways to work with water.</small></span></button>
 <a class="patterns-map-entry" href="/patterns/"><strong>What people made possible →</strong><span>24 features · Places, films &amp; creators</span></a>
 <p style="margin:10px 0;font-size:13px"><a href="/creators/#field-visits" style="color:#b8d6b2">New creator field visits →</a></p>
@@ -2398,7 +2399,7 @@ body.present #broadcast-controls{
 
   <!-- Unobtrusive mobile nav: Articles / Editions / Support / Contact -->
   <p style="margin:12px 16px"><a href="/creators/#field-visits" style="color:#b8d6b2">New creator field visits →</a></p>
-  <a class="lidar-discovery" href="/?lidar=1&amp;lidarSite=Stonehenge"><strong>Reveal the earthworks with LiDAR →</strong><small>Slide between satellite and bare-earth views of Stonehenge.</small></a>
+  <a class="lidar-discovery" href="/?lidar=1&amp;lidarSite=Stonehenge" onclick="event.preventDefault();openAtlasLidar('Stonehenge',this)"><strong>Reveal the earthworks with LiDAR →</strong><small>Slide between satellite and bare-earth views of Stonehenge.</small></a>
   <button class="water-entry" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water →</strong><small>Three places. Three ways to work with water.</small></span></button>
 <div class="atlas-feature-browser atlas-feature-mobile" aria-label="Browse site features"></div>
   <div class="mf-mininav" aria-label="Site sections">
@@ -24672,12 +24673,11 @@ function init() {
   });
   map.addControl(new ResetViewControl());
 
-  const lidarPilot = new URLSearchParams(window.location.search).get('lidar') === '1';
+  const lidarParams = new URLSearchParams(window.location.search);
+  const lidarPilot = lidarParams.get('lidar') === '1';
   if (lidarPilot) {
-    const script = document.createElement('script');
-    script.src = '/assets/js/atlas-lidar-pilot.js';
-    script.onload = () => window.initAtlasLidarPilot(map, FILTERED_SITES);
-    document.head.appendChild(script);
+    const name = lidarParams.get('lidarSite') || 'Stonehenge';
+    requestAnimationFrame(() => openAtlasLidar(name));
   }
 
   // Rail steps aside at the zoom floor : see CINEMA MODE below.
@@ -25341,13 +25341,14 @@ function renderMarkers() {
       html: isProvisionalSite(site) ? '<span class="atlas-provisional-symbol" aria-hidden="true">?</span>' : featureGlyph ? `<img src="${compactFeatureGlyph(featureGlyph)}" alt="" width="36" height="36" style="border-radius:9px;box-shadow:0 2px 7px #0006;border:1px solid #fff8">` : `<div style="position:relative;width:${size}px;height:${size}px;opacity:${opacity}">
         ${pulse}
         ${vidRing}
+        ${ATLAS_LIDAR_SITES.includes(site.n) ? '<img class="atlas-lidar-pin" src="/assets/lidar/lidar-glyph.svg" alt="">' : ''}
         <div style="width:${size}px;height:${size}px;border-radius:50%;background:${cat.color};${glow};${border};transition:all .2s"></div>
       </div>`,
       iconSize: isProvisionalSite(site) ? [28,28] : featureGlyph ? [36,36] : [size, size],
       iconAnchor: isProvisionalSite(site) ? [14,14] : featureGlyph ? [18,18] : [size/2, size/2]
     });
 
-    const marker = L.marker([site.lat, site.lng], { icon, title: site.n + (isProvisionalSite(site) ? " — approximate area, exact location unverified" : ""), alt: site.n });
+    const marker = L.marker([site.lat, site.lng], { icon, title: site.n + (isProvisionalSite(site) ? " — approximate area, exact location unverified" : "") + (ATLAS_LIDAR_SITES.includes(site.n) ? " · LiDAR available" : ""), alt: site.n });
     marker._site = site; // Tag for cluster hover lookup
 
     // Build rich hover preview
@@ -27995,6 +27996,42 @@ function renderSiteCharacteristics(site) {
     return f ? `<button class="atlas-feature-badge" onclick="jumpToSiteFilms(this)" title="Site feature · see the creators’ films"><img src="${compactFeatureGlyph(f)}" width="36" height="36" alt=""><span>${journeyEscape(f.label)}</span></button>` : '';
   }).join('');
 }
+const ATLAS_LIDAR_SITES = ['Stonehenge', 'Avebury', 'Silbury Hill', 'West Kennet Long Barrow'];
+let atlasLidarScript;
+
+async function openAtlasLidar(name, trigger) {
+  const site = SITES.find(candidate => candidate.n === name && ATLAS_LIDAR_SITES.includes(name));
+  if (!site) return;
+  try {
+    atlasLidarScript ??= new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = '/assets/js/atlas-lidar-pilot.js';
+      script.onload = resolve;
+      script.onerror = () => {
+        script.remove();
+        atlasLidarScript = null;
+        reject(new Error('LiDAR controls unavailable'));
+      };
+      document.head.appendChild(script);
+    });
+    await atlasLidarScript;
+    window.initAtlasLidarPilot(map, SITES.filter(candidate => ATLAS_LIDAR_SITES.includes(candidate.n)), {
+      site,
+      openSite(nextSite) {
+        if (document.getElementById('mobile-site-sheet')?.classList.contains('open')) closeMobileSiteSheet();
+        if (selectedSite?.n !== nextSite.n || !document.getElementById('detail').classList.contains('open')) {
+          showDetail(nextSite);
+          renderSidebar();
+        }
+      }
+    });
+    if (trigger) document.getElementById('lidar-pilot-opacity').focus({ preventScroll: true });
+  } catch (error) {
+    console.warn(error);
+    showShareToast('LiDAR couldn’t open. Try again.');
+  }
+}
+
 function renderSitePanel(site, mode='desktop', films=null) {
   const videos = (films || VIDEOS[site.n] || []).map(video => ({...video}));
   if (activeFeature === 'polygonal') {
@@ -28018,7 +28055,7 @@ function renderSitePanel(site, mode='desktop', films=null) {
     <p class="oga-location">${journeyEscape(SITE_COUNTRIES[site.n] || site.region)}</p>
     <h2>${journeyEscape(site.n)}</h2>${provisional(site) ? '<p class="atlas-location-note">Approximate area only. The exact monument location is still being verified.</p>' : ''}
     <p class="oga-intro">${journeyEscape(SITE_INTROS[site.n] || '')}</p>
-    ${['Stonehenge', 'Avebury', 'Silbury Hill', 'West Kennet Long Barrow'].includes(site.n) ? `<a class="lidar-discovery" href="/?lidar=1&amp;lidarSite=${encodeURIComponent(site.n)}"><strong>Explore with LiDAR →</strong><small>See the shape of the ground beneath the vegetation.</small></a>` : ''}
+    ${ATLAS_LIDAR_SITES.includes(site.n) ? `<a class="lidar-discovery" href="/?lidar=1&amp;lidarSite=${encodeURIComponent(site.n)}" onclick="event.preventDefault();openAtlasLidar(new URL(this.href).searchParams.get('lidarSite'),this)"><strong><img src="/assets/lidar/lidar-glyph.svg" width="24" height="24" alt="">Explore with LiDAR →</strong><small>See the shape of the ground beneath the vegetation.</small></a>` : ''}
     <div class="oga-characteristics">${renderSiteCharacteristics(site)}</div>
     ${videos.length > 1 ? `<p class="oga-voices">${videos.length} films · ${credits.length} creators<br>${credits.map(k => `<button class="oga-creator-jump" onclick="this.closest('.oga-panel').querySelector('[data-film-creator=${k}]').scrollIntoView({behavior:'smooth',block:'start'})">${journeyEscape(CREATORS[k].name)}</button>`).join(' · ')}</p>` : ''}
     ${videos.map((v,i) => {
