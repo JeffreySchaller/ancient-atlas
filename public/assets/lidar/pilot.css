@@ -6,10 +6,20 @@
   width: min(238px, calc(100vw - 76px));
   padding: 6px 8px 10px 12px;
   color: var(--cloud, #f0eee9);
-  background: var(--charcoal, #181820);
-  border: 1px solid var(--stone, #48464b);
-  border-radius: 10px;
-  box-shadow: 0 8px 24px #0008;
+  background: linear-gradient(155deg, #373c3bee, #171922ef);
+  border: 1px solid #fff5;
+  border-radius: 16px;
+  box-shadow: inset 0 1px 0 #fff4, inset 0 -1px 0 #fff1, 0 8px 24px #0007;
+}
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  .lidar-pilot-panel {
+    background: linear-gradient(155deg, #282e2bd9, #141620dc);
+    -webkit-backdrop-filter: blur(16px) saturate(145%);
+    backdrop-filter: blur(16px) saturate(145%);
+  }
+}
+.lidar-pilot-panel {
+  position: relative;
   font: 14px/1.35 var(--font-sans, system-ui, sans-serif);
 }
 .lidar-pilot-endpoints {
@@ -45,7 +55,7 @@
   margin-top: -7px;
   border: 2px solid #29251e;
   border-radius: 50%;
-  background: #f6df9f;
+  background: radial-gradient(circle at 36% 28%, #fff8dc, #f5d888 52%, #b99349);
   box-shadow: 0 1px 4px #000a;
 }
 .lidar-pilot-panel input::-moz-range-thumb {
@@ -54,7 +64,7 @@
   height: 20px;
   border: 2px solid #29251e;
   border-radius: 50%;
-  background: #f6df9f;
+  background: radial-gradient(circle at 36% 28%, #fff8dc, #f5d888 52%, #b99349);
   box-shadow: 0 1px 4px #000a;
 }
 .lidar-pilot-status { grid-column: 1 / -1; margin: 6px 0 0; }
@@ -81,7 +91,25 @@
 }
 body.lidar-pilot #map-wrap { min-width: 0; }
 body.lidar-pilot #detail.open { position: relative; flex: 0 0 min(36vw, 420px); }
-body.lidar-pilot #depth-rail { display: none; }
+/* The open site card already takes up its own column in LiDAR mode. */
+body.lidar-pilot.detail-open #depth-rail { --dock: 0px; }
+.lidar-pilot-panel.lidar-intro::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border: 2px solid #ffe3a0;
+  border-radius: 19px;
+  pointer-events: none;
+  animation: lidar-intro-ring 1.35s ease-out 1 both;
+}
+@keyframes lidar-intro-ring {
+  0% { opacity: 0; transform: scale(.98); }
+  26% { opacity: .9; }
+  100% { opacity: 0; transform: scale(1.07); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lidar-pilot-panel.lidar-intro::after { animation: none; content: none; }
+}
 @media (max-width: 950px) and (orientation: portrait) {
   body.lidar-pilot main { flex-direction: column; }
   body.lidar-pilot #map-wrap { min-height: 0; }

@@ -70,6 +70,7 @@
         status.hidden = false;
       }));
       let activeArea;
+      let introduced = false;
       panel.querySelector('button').addEventListener('click', () => {
         imagery.remove();
         terrain.remove();
@@ -88,6 +89,10 @@
       activate = (nextSite, animate) => {
         document.body.classList.add('lidar-pilot');
         panel.hidden = false;
+        if (!introduced) {
+          panel.classList.add('lidar-intro');
+          introduced = true;
+        }
         openSite(nextSite);
         document.querySelectorAll('.lidar-directory a[data-lidar-site]').forEach(link => {
           const current = link.dataset.lidarSite === nextSite.n &&
