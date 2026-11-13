@@ -382,6 +382,15 @@ body.mobile #cinema-exit,body.present #cinema-exit{display:none}
   .wc-slide,.wc-arrow-g{opacity:1;transform:none}
   #welcome,.wc-card{transition:none}
 }
+#lidar-map-button{position:absolute;top:calc(50% - var(--lidar-rail-half, 140px) - 46px);right:37px;transform:translateX(50%);z-index:616;display:grid;place-items:center;box-sizing:border-box;width:30px;height:30px;padding:0;border:1px solid #e9d59b70;border-radius:12px;background:#202622e8;color:#fff1c9;box-shadow:0 3px 12px #0006;cursor:pointer;font:600 13px/1.2 var(--font-sans,system-ui);backdrop-filter:blur(12px)}
+#lidar-map-button[hidden]{display:none}
+#lidar-map-button:hover,#lidar-map-button[aria-expanded=true]{background:#414a36}
+body.detail-open:not(.lidar-pilot) #lidar-map-button{right:calc(var(--lidar-detail-width,420px) + 53px)}
+#lidar-map-button.lidar-available-cue{animation:lidar-available 1.2s ease-out 1}
+@keyframes lidar-available{0%{box-shadow:0 0 0 0 #ffe0a000} 30%{box-shadow:0 0 0 4px #ffe0a0aa} 100%{box-shadow:0 0 0 12px #ffe0a000}}
+@media(prefers-reduced-motion:reduce){#lidar-map-button.lidar-available-cue{animation:none}}
+body.mobile #lidar-map-button{top:132px;left:10px;right:auto;transform:none;width:44px;height:44px}
+body.present #lidar-map-button,body.grid-mode #lidar-map-button{display:none}
 #depth-rail{position:absolute;right:22px;top:50%;z-index:615;
   --dock:0px;
   transform:translateY(-50%) translateX(var(--dock));
@@ -573,6 +582,36 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .detail-fav.on{opacity:1;color:var(--champagne);text-shadow:0 0 12px rgba(201,168,76,.5)}
 
 /* Map */
+
+.lidar-discovery{display:grid;gap:4px;margin:12px 0;padding:12px 14px;border:1px solid #c9a84c88;border-radius:10px;background:#27231e;color:#f1d68d;text-decoration:none;line-height:1.35}
+.lidar-discovery:hover{background:#383023;text-decoration:none}
+.lidar-discovery small{color:#e0d7c4;font-size:13px}
+.lidar-discovery strong{display:flex;align-items:center;gap:8px}
+.atlas-explore{margin:16px 0 20px}
+#mobile-feed .atlas-explore{margin:16px}
+.atlas-explore h2{margin:0 0 8px;color:var(--ivory);font-size:15px;font-weight:650}
+.atlas-explore-list{background:#1b1c21;border:1px solid #383a43;border-radius:12px;overflow:hidden}
+.atlas-explore-list > * + *{border-top:1px solid #383a43}
+.atlas-explore-row{display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:11px;width:100%;padding:11px 12px;border:0;background:transparent;color:var(--ivory);text-align:left;text-decoration:none;font:inherit;cursor:pointer}
+.atlas-explore-row:hover,.atlas-explore-row:focus-visible{background:#282a31;text-decoration:none}
+.atlas-explore-row:focus-visible{outline-offset:-3px}
+.atlas-explore-row strong,.atlas-explore-row small{display:block}
+.atlas-explore-row small{margin-top:3px;color:var(--cloud);font-size:12px;line-height:1.35}
+.atlas-explore-arrow{color:var(--champagne)}
+.lidar-directory[open] .atlas-explore-arrow{transform:rotate(90deg)}
+.lidar-directory ul{list-style:none;margin:0;padding:0 12px 8px 67px}
+.lidar-directory a{display:block;padding:8px 4px;color:#f1d68d}
+.lidar-directory .lidar-landscape-link{display:flex;gap:8px;align-items:baseline;justify-content:space-between;font-weight:650;text-decoration:none}
+.lidar-landscape-link small{flex-shrink:0;font-weight:400;color:var(--cloud);font-size:11px}
+.lidar-directory .lidar-landscape-stops{border-left:1px solid #776745;margin:0 0 6px 5px;padding:0 0 0 9px;font-size:13px}
+.lidar-landscape-stops a[aria-current="true"]{color:var(--ivory);font-weight:650}
+.atlas-field-visits{display:block;margin:6px 0 12px;color:#b8d6b2;font-size:13px}
+.atlas-lidar-pin{position:absolute;top:-15px;left:calc(100% + 1px);display:grid;place-items:center;width:26px;height:26px;padding:0;border:0;border-radius:5px;background:transparent;cursor:pointer;filter:drop-shadow(0 1px 2px #000b)}
+.atlas-lidar-pin img{width:18px;height:18px;pointer-events:none}
+.atlas-lidar-pin::after{content:"Show LiDAR";position:absolute;bottom:100%;left:50%;transform:translateX(-50%);padding:4px 8px;border-radius:5px;background:#171922;color:#fff1c9;font:12px/1.3 system-ui;white-space:nowrap;pointer-events:none;visibility:hidden}
+.atlas-lidar-pin:hover::after,.atlas-lidar-pin:focus-visible::after{visibility:visible}
+@media(pointer:coarse){.atlas-lidar-pin{width:44px;height:44px;top:-23px}}
+
 #map-wrap{flex:1;position:relative}
 #map{width:100%;height:100%}
 
@@ -2192,9 +2231,17 @@ body.present #broadcast-controls{
         <input type="text" id="search" placeholder="Search ancient sites, regions, eras..." autocomplete="off" />
         <div class="search-suggestions" id="search-suggestions"></div>
       </div>
-<button class="water-entry" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water →</strong><small>Three places. Three ways to work with water.</small></span></button>
-<a class="patterns-map-entry" href="/patterns/"><strong>What people made possible →</strong><span>24 features · Places, films &amp; creators</span></a>
-<p style="margin:10px 0;font-size:13px"><a href="/creators/#field-visits" style="color:#b8d6b2">New creator field visits →</a></p>
+      <section class="atlas-explore" aria-label="Explore the Atlas">
+        <h2>Explore</h2>
+        <div class="atlas-explore-list">
+          <details class="lidar-directory">
+            <summary class="atlas-explore-row"><img src="/assets/lidar/lidar-glyph.svg" width="44" height="44" alt=""><span><strong>Explore LiDAR sites</strong><small>Reveal earthworks beneath the vegetation.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
+            <ul></ul>
+          </details>
+          <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
+          <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
 <div class="atlas-feature-browser" aria-label="Browse site features"></div>
       <!-- Creators lead. An earlier pass moved them below Where and Type and
            folded the list away, on the reasoning that a newcomer does not know
@@ -2209,6 +2256,7 @@ body.present #broadcast-controls{
         <span class="sb-section-rule"></span>
         <button class="sb-see-all" onclick="openCreators()" title="View all creators in the Hub">See all <span class="sb-see-all-arrow">↗</span></button>
       </div>
+      <a class="atlas-field-visits" href="/creators/#field-visits">New creator field visits →</a>
       <div id="creator-mini-list"></div>
       <a href="/photos/" style="display:block;margin:14px 0 22px;color:var(--champagne);font-size:12px;text-decoration:none">Explore site photographs →</a>
       <div class="sb-section">Where</div>
@@ -2241,6 +2289,7 @@ body.present #broadcast-controls{
   <div id="map-wrap">
     <div id="map"></div>
     <div id="cinema-exit" onclick="exitCinema(true)" title="Show the sidebar" role="button" aria-label="Show the sidebar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+    <button id="lidar-map-button" type="button" hidden aria-expanded="false" aria-label="LiDAR available here" title="Toggle LiDAR"><img src="/assets/lidar/lidar-glyph.svg" width="24" height="24" alt=""></button>
     <div id="depth-rail" tabindex="0" role="slider" aria-label="Map depth" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
       <div class="dr-strata"></div>
       <div class="dr-track">
@@ -2391,7 +2440,17 @@ body.present #broadcast-controls{
 
   <!-- Unobtrusive mobile nav: Articles / Editions / Support / Contact -->
   <p style="margin:12px 16px"><a href="/creators/#field-visits" style="color:#b8d6b2">New creator field visits →</a></p>
-  <button class="water-entry" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water →</strong><small>Three places. Three ways to work with water.</small></span></button>
+  <section class="atlas-explore" aria-label="Explore the Atlas">
+    <h2>Explore</h2>
+    <div class="atlas-explore-list">
+      <details class="lidar-directory">
+        <summary class="atlas-explore-row"><img src="/assets/lidar/lidar-glyph.svg" width="44" height="44" alt=""><span><strong>Explore LiDAR sites</strong><small>Reveal earthworks beneath the vegetation.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
+        <ul></ul>
+      </details>
+      <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
+      <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
 <div class="atlas-feature-browser atlas-feature-mobile" aria-label="Browse site features"></div>
   <div class="mf-mininav" aria-label="Site sections">
     <a class="mf-mininav-link" href="experiences/feel-the-weight/">
@@ -24664,10 +24723,22 @@ function init() {
   });
   map.addControl(new ResetViewControl());
 
+  const lidarParams = new URLSearchParams(window.location.search);
+  const lidarPilot = lidarParams.get('lidar') === '1';
+  loadAtlasLidar().then(() => window.watchAtlasLidarCoverage(map, {
+    getSite: () => selectedSite,
+    sites: SITES.filter(candidate => ATLAS_LIDAR_SITES.includes(candidate.n)),
+    open: name => openAtlasLidar(name, document.getElementById('lidar-map-button'), true)
+  })).catch(error => console.warn(error));
+  if (lidarPilot) {
+    const name = lidarParams.get('lidarSite') || 'Stonehenge';
+    requestAnimationFrame(() => openAtlasLidar(name));
+  }
+
   // Rail steps aside at the zoom floor : see CINEMA MODE below.
   map.on('zoomend', syncCinema);
   setTimeout(initDepthRail, 300);
-  setTimeout(scheduleWelcome, 650);
+  if (!lidarPilot) setTimeout(scheduleWelcome, 650);
 
   // Voyager color tiles in a dedicated pane, heavily desaturated and tinted
   // navy for a moonlit-Milky-Way feel : modern infrastructure recedes to faint
@@ -25325,13 +25396,14 @@ function renderMarkers() {
       html: isProvisionalSite(site) ? '<span class="atlas-provisional-symbol" aria-hidden="true">?</span>' : featureGlyph ? `<img src="${compactFeatureGlyph(featureGlyph)}" alt="" width="36" height="36" style="border-radius:9px;box-shadow:0 2px 7px #0006;border:1px solid #fff8">` : `<div style="position:relative;width:${size}px;height:${size}px;opacity:${opacity}">
         ${pulse}
         ${vidRing}
+        ${ATLAS_LIDAR_SITES.includes(site.n) ? '<button type="button" class="atlas-lidar-pin" aria-label="Show LiDAR"><img src="/assets/lidar/lidar-glyph.svg" alt=""></button>' : ''}
         <div style="width:${size}px;height:${size}px;border-radius:50%;background:${cat.color};${glow};${border};transition:all .2s"></div>
       </div>`,
       iconSize: isProvisionalSite(site) ? [28,28] : featureGlyph ? [36,36] : [size, size],
       iconAnchor: isProvisionalSite(site) ? [14,14] : featureGlyph ? [18,18] : [size/2, size/2]
     });
 
-    const marker = L.marker([site.lat, site.lng], { icon, title: site.n + (isProvisionalSite(site) ? " — approximate area, exact location unverified" : ""), alt: site.n });
+    const marker = L.marker([site.lat, site.lng], { icon, title: site.n + (isProvisionalSite(site) ? " — approximate area, exact location unverified" : "") + (ATLAS_LIDAR_SITES.includes(site.n) ? " · LiDAR available" : ""), alt: site.n });
     marker._site = site; // Tag for cluster hover lookup
 
     // Build rich hover preview
@@ -25362,6 +25434,21 @@ function renderMarkers() {
       className: 'hp-tooltip',
       direction: 'top',
       offset: [0, -size/2 - 6]
+    });
+    marker.on('add', () => {
+      const glyph = marker.getElement()?.querySelector('.atlas-lidar-pin');
+      if (!glyph) return;
+      marker.getElement().setAttribute('aria-label', site.n);
+      glyph.setAttribute('aria-label', 'Show LiDAR at ' + site.n);
+      L.DomEvent.disableClickPropagation(glyph);
+      glyph.addEventListener('mouseenter', () => marker.closeTooltip());
+      glyph.addEventListener('focus', () => marker.closeTooltip());
+      glyph.addEventListener('keydown', event => event.stopPropagation());
+      glyph.addEventListener('click', event => {
+        event.stopPropagation();
+        marker.closeTooltip();
+        openAtlasLidar(site.n, glyph, true);
+      });
     });
     marker.on('click', () => selectSite(site));
     markerCluster.addLayer(marker);
@@ -27979,6 +28066,51 @@ function renderSiteCharacteristics(site) {
     return f ? `<button class="atlas-feature-badge" onclick="jumpToSiteFilms(this)" title="Site feature · see the creators’ films"><img src="${compactFeatureGlyph(f)}" width="36" height="36" alt=""><span>${journeyEscape(f.label)}</span></button>` : '';
   }).join('');
 }
+const ATLAS_LIDAR_LANDSCAPES = [
+  { name: 'Stonehenge', sites: ['Stonehenge'] },
+  { name: 'Avebury landscape', sites: ['Avebury', 'Silbury Hill', 'West Kennet Long Barrow'] }
+];
+const ATLAS_LIDAR_SITES = ATLAS_LIDAR_LANDSCAPES.flatMap(landscape => landscape.sites);
+let atlasLidarScript;
+
+function loadAtlasLidar() {
+  atlasLidarScript ??= new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = '/assets/js/atlas-lidar-pilot.js';
+    script.onload = resolve;
+    script.onerror = () => {
+      script.remove();
+      atlasLidarScript = null;
+      reject(new Error('LiDAR controls unavailable'));
+    };
+    document.head.appendChild(script);
+  });
+  return atlasLidarScript;
+}
+
+async function openAtlasLidar(name, trigger, keepView = false) {
+  const site = SITES.find(candidate => candidate.n === name && ATLAS_LIDAR_SITES.includes(name));
+  if (!site) return;
+  try {
+    await loadAtlasLidar();
+    window.initAtlasLidarPilot(map, {
+      site,
+      keepView,
+      openSite(nextSite) {
+        if (document.getElementById('mobile-site-sheet')?.classList.contains('open')) closeMobileSiteSheet();
+        if (selectedSite?.n !== nextSite.n || !document.getElementById('detail').classList.contains('open')) {
+          showDetail(nextSite);
+          renderSidebar();
+        }
+      }
+    });
+    if (trigger) document.getElementById('lidar-pilot-opacity').focus({ preventScroll: true });
+  } catch (error) {
+    console.warn(error);
+    showShareToast('LiDAR couldn’t open. Try again.');
+  }
+}
+
 function renderSitePanel(site, mode='desktop', films=null) {
   const videos = (films || VIDEOS[site.n] || []).map(video => ({...video}));
   if (activeFeature === 'polygonal') {
@@ -28002,6 +28134,7 @@ function renderSitePanel(site, mode='desktop', films=null) {
     <p class="oga-location">${journeyEscape(SITE_COUNTRIES[site.n] || site.region)}</p>
     <h2>${journeyEscape(site.n)}</h2>${provisional(site) ? '<p class="atlas-location-note">Approximate area only. The exact monument location is still being verified.</p>' : ''}
     <p class="oga-intro">${journeyEscape(SITE_INTROS[site.n] || '')}</p>
+    ${ATLAS_LIDAR_SITES.includes(site.n) ? `<a class="lidar-discovery" href="/?lidar=1&amp;lidarSite=${encodeURIComponent(site.n)}" onclick="event.preventDefault();openAtlasLidar(new window.URL(this.href).searchParams.get('lidarSite'),this)"><strong><img src="/assets/lidar/lidar-glyph.svg" width="24" height="24" alt="">Explore with LiDAR →</strong><small>See the shape of the ground beneath the vegetation.</small></a>` : ''}
     <div class="oga-characteristics">${renderSiteCharacteristics(site)}</div>
     ${videos.length > 1 ? `<p class="oga-voices">${videos.length} films · ${credits.length} creators<br>${credits.map(k => `<button class="oga-creator-jump" onclick="this.closest('.oga-panel').querySelector('[data-film-creator=${k}]').scrollIntoView({behavior:'smooth',block:'start'})">${journeyEscape(CREATORS[k].name)}</button>`).join(' · ')}</p>` : ''}
     ${videos.map((v,i) => {
@@ -28089,6 +28222,7 @@ function closeDetail() {
   const detail = document.getElementById('detail');
   detail.style.display = 'none';
   detail.className = '';
+  if (!document.body.classList.contains('lidar-pilot')) document.body.classList.remove('lidar-map-open');
   setRailDock(false);
   selectedSite = null;
   renderSidebar();
@@ -28888,6 +29022,7 @@ function welcomeKey(ev) {
 }
 
 function maybeShowWelcome() {
+  if (document.body.classList.contains('lidar-pilot')) return true;
   var w = document.getElementById('welcome');
   if (!w) return true;
   // a deep link is a question already asked; do not answer a different one
@@ -29115,6 +29250,7 @@ function drawRail() {
   var h = Math.max(190, Math.min(280, Math.round(document.getElementById('map').clientHeight * 0.30)));
   e.track.style.height = h + 'px';
   e.root.style.height = h + 'px';
+  document.getElementById('map-wrap').style.setProperty('--lidar-rail-half', h / 2 + 'px');
 
   // ridge: width at each point is the measured resistance there
   var pts = [], N = 64;
@@ -29329,6 +29465,7 @@ function setRailDock(on) {
     var d = document.getElementById('detail');
     var w = d ? Math.round(d.getBoundingClientRect().width) : 420;
     rail.style.setProperty('--detail-w', w + 'px');
+    document.getElementById('map-wrap').style.setProperty('--lidar-detail-width', w + 'px');
   }
 }
 
@@ -29417,6 +29554,41 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   // After desktop init runs, evaluate mobile mode and render feed if needed
   updateMobileMode();
+  function lidarDirectoryLink(name, label) {
+    const link = document.createElement('a');
+    link.href = '/?lidar=1&lidarSite=' + encodeURIComponent(name);
+    link.textContent = label;
+    link.dataset.lidarSite = name;
+    link.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      openAtlasLidar(name, link);
+    });
+    return link;
+  }
+  for (const list of document.querySelectorAll('.lidar-directory > ul')) {
+    for (const landscape of ATLAS_LIDAR_LANDSCAPES) {
+      const item = document.createElement('li');
+      const link = lidarDirectoryLink(landscape.sites[0], landscape.name);
+      link.className = 'lidar-landscape-link';
+      const count = document.createElement('small');
+      count.textContent = landscape.sites.length === 1 ? '1 site' : landscape.sites.length + ' sites';
+      link.appendChild(count);
+      item.appendChild(link);
+      if (landscape.sites.length > 1) {
+        const stops = document.createElement('ul');
+        stops.className = 'lidar-landscape-stops';
+        stops.setAttribute('aria-label', 'Sites in the ' + landscape.name);
+        for (const name of landscape.sites) {
+          const stop = document.createElement('li');
+          stop.appendChild(lidarDirectoryLink(name, name));
+          stops.appendChild(stop);
+        }
+        item.appendChild(stops);
+      }
+      list.appendChild(item);
+    }
+  }
   // Auto-update copyright year — fire-and-forget, never needs touching
   document.querySelectorAll('.year').forEach(el => { el.textContent = new Date().getFullYear(); });
 });
