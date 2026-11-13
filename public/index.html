@@ -602,9 +602,24 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .lidar-directory-content{padding:0 10px 9px}
 .lidar-landscape-gallery{display:grid;grid-auto-flow:column;grid-auto-columns:100%;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 8px}
 .lidar-landscape-gallery::-webkit-scrollbar{display:none}
-.lidar-gallery-controls{display:flex;justify-content:center;align-items:center;gap:10px;margin:0 0 6px;color:#eadcbb}
+.lidar-gallery-controls{display:flex;justify-content:center;align-items:center;gap:8px;margin:0 0 6px;color:#f1d68d}
 .lidar-gallery-controls[hidden]{display:none}
-.lidar-gallery-controls button{min-width:36px;min-height:36px;background:#262820;color:#f1d68d;border:1px solid #75674a;border-radius:7px;cursor:pointer}
+.lidar-gallery-controls button{display:grid;place-items:center;min-height:40px;padding:0;border:0;color:inherit;background:transparent;cursor:pointer}
+.lidar-gallery-controls button:focus-visible{outline:2px solid #f1d68d;outline-offset:-2px;border-radius:999px}
+.lidar-gallery-pages,.lidar-gallery-controls .lidar-gallery-play{background:#27271f;border:1px solid #534a36;border-radius:999px}
+.lidar-gallery-pages{display:flex;align-items:center;padding:0 7px}
+.lidar-gallery-page{width:28px;transition:width 180ms ease}
+.lidar-gallery-page[aria-current]{width:47px}
+.lidar-gallery-page span{width:7px;height:6px;border-radius:99px;background:#a09880;overflow:hidden}
+.lidar-gallery-page[aria-current] span{width:33px;background:#786b4e}
+.lidar-gallery-page[aria-current] span::after{content:"";display:block;width:100%;height:100%;background:#f1d68d}
+.lidar-gallery-controls.is-timed .lidar-gallery-page[aria-current] span::after{transform-origin:left;animation:lidar-gallery-progress 7s linear both}
+.lidar-gallery-controls.is-held .lidar-gallery-page[aria-current] span::after{animation-play-state:paused}
+.lidar-gallery-controls .lidar-gallery-play{width:42px;height:42px}
+.lidar-gallery-play span{width:11px;height:13px;border-inline:3px solid currentColor}
+.lidar-gallery-play[aria-label="Play landscape previews"] span{border:0;background:currentColor;clip-path:polygon(0 0,100% 50%,0 100%)}
+@keyframes lidar-gallery-progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){.lidar-gallery-page{transition:none}}
 .lidar-landscape-card{position:relative;display:grid;align-content:end;min-height:112px;overflow:hidden;border:1px solid #75674a;border-radius:8px;background:#252822;color:#fff2ca;text-decoration:none;scroll-snap-align:start}
 .lidar-landscape-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:sepia(.13)}
 .lidar-landscape-card span{position:relative;display:grid;gap:2px;padding:15px 8px 7px;background:linear-gradient(transparent,#151719 45%)}
@@ -618,7 +633,6 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .lidar-world-map .leaflet-control-attribution{font-size:9px!important}
 .lidar-world-pin{display:grid;place-items:center;width:28px;height:28px;padding:0;background:#29261e;border:1px solid #e4c476;border-radius:50%;color:#fff2ca;font:bold 12px/1 system-ui;cursor:pointer;text-decoration:none}
 .lidar-world-pin:hover,.lidar-world-pin:focus-visible{background:#5b4b2c;color:#fff}
-.lidar-world-pin.research{background:#283e34;border-color:#a6cc91}
 .lidar-world-reset{padding:7px 0;background:none;border:0;color:#f1d68d;cursor:pointer;font:inherit}
 .lidar-landscape-gallery[hidden],.lidar-world-reset[hidden]{display:none}
 .atlas-field-visits{display:block;margin:6px 0 12px;color:#b8d6b2;font-size:13px}
@@ -2257,9 +2271,8 @@ body.present #broadcast-controls{
               <button type="button" class="lidar-world-reset" hidden>← World map</button>
               <div class="lidar-landscape-gallery" aria-label="LiDAR landscape previews" hidden></div>
               <div class="lidar-gallery-controls" hidden>
-                <button type="button" aria-label="Previous landscape">‹</button>
-                <span aria-live="polite"></span>
-                <button type="button" aria-label="Next landscape">›</button>
+                <div class="lidar-gallery-pages" role="group" aria-label="Choose a landscape preview"></div>
+                <button type="button" class="lidar-gallery-play" aria-label="Pause landscape previews"><span aria-hidden="true"></span></button>
               </div>
               <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
             </div>
@@ -2476,9 +2489,8 @@ body.present #broadcast-controls{
               <button type="button" class="lidar-world-reset" hidden>← World map</button>
               <div class="lidar-landscape-gallery" aria-label="LiDAR landscape previews" hidden></div>
               <div class="lidar-gallery-controls" hidden>
-                <button type="button" aria-label="Previous landscape">‹</button>
-                <span aria-live="polite"></span>
-                <button type="button" aria-label="Next landscape">›</button>
+                <div class="lidar-gallery-pages" role="group" aria-label="Choose a landscape preview"></div>
+                <button type="button" class="lidar-gallery-play" aria-label="Pause landscape previews"><span aria-hidden="true"></span></button>
               </div>
               <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
             </div>
@@ -29624,30 +29636,61 @@ document.addEventListener('DOMContentLoaded', () => {
     const gallery = directory.querySelector('.lidar-landscape-gallery');
     const reset = directory.querySelector('.lidar-world-reset');
     const controls = directory.querySelector('.lidar-gallery-controls');
-    const [previous, next] = controls.querySelectorAll('button');
-    const position = controls.querySelector('span');
+    const pages = controls.querySelector('.lidar-gallery-pages');
+    const play = controls.querySelector('.lidar-gallery-play');
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
     const cards = gallery.children;
+    let playing = !motion.matches;
     let current = 0;
-    function updateCarousel() {
+
+    function syncPlayback() {
+      controls.classList.toggle('is-timed', directory.open && !controls.hidden);
+      controls.classList.toggle('is-held', !playing || document.hidden || gallery.matches(':hover, :focus-within'));
+      play.setAttribute('aria-label', playing ? 'Pause landscape previews' : 'Play landscape previews');
+    }
+
+    function selectPreview(index) {
+      pages.children[current].removeAttribute('aria-current');
+      current = index;
+      pages.children[current].setAttribute('aria-current', 'true');
+    }
+
+    function moveCarousel(index) {
+      const left = cards[index].offsetLeft - cards[0].offsetLeft;
+      gallery.scrollTo({ left, behavior: 'instant' });
+      selectPreview(index);
+    }
+
+    gallery.addEventListener('scroll', () => {
+      if (gallery.hidden) return;
       const start = cards[0].offsetLeft;
-      current = Array.from(cards).reduce((closest, card, index) =>
+      const closest = Array.from(cards).reduce((best, card, index) =>
         Math.abs(card.offsetLeft - start - gallery.scrollLeft) <
-        Math.abs(cards[closest].offsetLeft - start - gallery.scrollLeft) ? index : closest, 0);
-      if (gallery.scrollLeft >= gallery.scrollWidth - gallery.clientWidth - 2) current = cards.length - 1;
-      position.textContent = (current + 1) + ' / ' + cards.length;
-    }
-    function moveCarousel(delta) {
-      const card = cards[(current + delta + cards.length) % cards.length];
-      gallery.scrollTo({
-        left: card.offsetLeft - cards[0].offsetLeft,
-        behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
-      });
-    }
-    previous.addEventListener('click', () => moveCarousel(-1));
-    next.addEventListener('click', () => moveCarousel(1));
-    gallery.addEventListener('scroll', updateCarousel, { passive: true });
+        Math.abs(cards[best].offsetLeft - start - gallery.scrollLeft) ? index : best, 0);
+      if (closest !== current) selectPreview(closest);
+    }, { passive: true });
+    gallery.addEventListener('pointerenter', syncPlayback);
+    gallery.addEventListener('pointerleave', syncPlayback);
+    gallery.addEventListener('focusin', syncPlayback);
+    gallery.addEventListener('focusout', () => requestAnimationFrame(syncPlayback));
+    document.addEventListener('visibilitychange', syncPlayback);
+    motion.addEventListener('change', () => {
+      playing = !motion.matches;
+      syncPlayback();
+    });
+    play.addEventListener('click', () => {
+      playing = !playing;
+      syncPlayback();
+    });
+    controls.addEventListener('animationend', event => {
+      if (event.animationName === 'lidar-gallery-progress' && playing && directory.open && !controls.hidden) {
+        moveCarousel((current + 1) % cards.length);
+      }
+    });
+    syncPlayback();
     let world;
     directory.addEventListener('toggle', () => {
+      syncPlayback();
       if (!directory.open) return;
       if (world) {
         world.invalidateSize({ pan: false });
@@ -29670,8 +29713,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }).addTo(world))
         .catch(error => console.warn(error));
 
-      function pin(point, element, label, text, className = '') {
-        element.className = 'lidar-world-pin ' + className;
+      function pin(point, element, label, text) {
+        element.className = 'lidar-world-pin';
         element.textContent = text;
         element.setAttribute('aria-label', label);
         return L.marker(point, {
@@ -29683,10 +29726,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const england = document.createElement('button');
       england.type = 'button';
       const englandPin = pin([52.8, -1.7], england, 'England · 3 LiDAR landscapes', '3');
-      const caracol = document.createElement('a');
-      caracol.href = '/sites/caracol.html';
-      const caracolPin = pin([16.7642, -88.9856], caracol, 'Caracol', '•', 'research');
-      const overview = L.layerGroup([englandPin, caracolPin]);
+      const overview = L.layerGroup([englandPin]);
       const landscapes = L.layerGroup(ATLAS_LIDAR_LANDSCAPES.map(landscape => {
         const site = SITES.find(candidate => candidate.n === landscape.sites[0]);
         const link = lidarDirectoryLink(site.n, landscape.name);
@@ -29701,6 +29741,7 @@ document.addEventListener('DOMContentLoaded', () => {
         world.fitBounds([[-60, -179], [80, 179]], { padding: [3, 3], animate: false });
         gallery.hidden = true;
         controls.hidden = true;
+        syncPlayback();
         reset.hidden = true;
       }
       england.addEventListener('click', () => {
@@ -29709,7 +29750,8 @@ document.addEventListener('DOMContentLoaded', () => {
         world.fitBounds([[50.95, -2.2], [54.45, -1.2]], { padding: [16, 16], animate: false });
         gallery.hidden = false;
         controls.hidden = false;
-        updateCarousel();
+        moveCarousel(0);
+        syncPlayback();
         reset.hidden = false;
         reset.focus({ preventScroll: true });
       });
@@ -29733,7 +29775,15 @@ document.addEventListener('DOMContentLoaded', () => {
       feature.textContent = landscape.feature;
       caption.append(name, feature);
       link.replaceChildren(image, caption);
+      const index = gallery.children.length;
       gallery.append(link);
+      const page = document.createElement('button');
+      page.type = 'button';
+      page.className = 'lidar-gallery-page';
+      page.setAttribute('aria-label', 'Preview ' + landscape.name);
+      page.append(document.createElement('span'));
+      page.addEventListener('click', () => moveCarousel(index));
+      pages.append(page);
     }
   }
   // Auto-update copyright year — fire-and-forget, never needs touching
