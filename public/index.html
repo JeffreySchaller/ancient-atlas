@@ -382,6 +382,15 @@ body.mobile #cinema-exit,body.present #cinema-exit{display:none}
   .wc-slide,.wc-arrow-g{opacity:1;transform:none}
   #welcome,.wc-card{transition:none}
 }
+#lidar-map-button{position:absolute;top:calc(50% - var(--lidar-rail-half, 140px) - 46px);right:14px;z-index:616;display:flex;align-items:center;gap:6px;padding:6px 9px;border:1px solid #e9d59b70;border-radius:12px;background:#202622e8;color:#fff1c9;box-shadow:0 3px 12px #0006;cursor:pointer;font:600 13px/1.2 var(--font-sans,system-ui);backdrop-filter:blur(12px)}
+#lidar-map-button[hidden]{display:none}
+#lidar-map-button:hover,#lidar-map-button[aria-expanded=true]{background:#414a36}
+body.detail-open:not(.lidar-pilot) #lidar-map-button{right:calc(var(--lidar-detail-width,420px) + 30px)}
+#lidar-map-button.lidar-available-cue{animation:lidar-available 1.2s ease-out 1}
+@keyframes lidar-available{0%{box-shadow:0 0 0 0 #ffe0a000} 30%{box-shadow:0 0 0 4px #ffe0a0aa} 100%{box-shadow:0 0 0 12px #ffe0a000}}
+@media(prefers-reduced-motion:reduce){#lidar-map-button.lidar-available-cue{animation:none}}
+body.mobile #lidar-map-button{top:86px;left:10px;right:auto;min-height:44px}
+body.present #lidar-map-button,body.grid-mode #lidar-map-button{display:none}
 #depth-rail{position:absolute;right:22px;top:50%;z-index:615;
   --dock:0px;
   transform:translateY(-50%) translateX(var(--dock));
@@ -2276,6 +2285,7 @@ body.present #broadcast-controls{
   <div id="map-wrap">
     <div id="map"></div>
     <div id="cinema-exit" onclick="exitCinema(true)" title="Show the sidebar" role="button" aria-label="Show the sidebar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+    <button id="lidar-map-button" type="button" hidden aria-expanded="false" aria-label="LiDAR available here"><img src="/assets/lidar/lidar-glyph.svg" width="24" height="24" alt="">LiDAR</button>
     <div id="depth-rail" tabindex="0" role="slider" aria-label="Map depth" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
       <div class="dr-strata"></div>
       <div class="dr-track">
@@ -24711,6 +24721,11 @@ function init() {
 
   const lidarParams = new URLSearchParams(window.location.search);
   const lidarPilot = lidarParams.get('lidar') === '1';
+  loadAtlasLidar().then(() => window.watchAtlasLidarCoverage(map, {
+    getSite: () => selectedSite,
+    sites: SITES.filter(candidate => ATLAS_LIDAR_SITES.includes(candidate.n)),
+    open: name => openAtlasLidar(name, document.getElementById('lidar-map-button'), true)
+  })).catch(error => console.warn(error));
   if (lidarPilot) {
     const name = lidarParams.get('lidarSite') || 'Stonehenge';
     requestAnimationFrame(() => openAtlasLidar(name));
@@ -28039,24 +28054,29 @@ const ATLAS_LIDAR_LANDSCAPES = [
 const ATLAS_LIDAR_SITES = ATLAS_LIDAR_LANDSCAPES.flatMap(landscape => landscape.sites);
 let atlasLidarScript;
 
-async function openAtlasLidar(name, trigger) {
+function loadAtlasLidar() {
+  atlasLidarScript ??= new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = '/assets/js/atlas-lidar-pilot.js';
+    script.onload = resolve;
+    script.onerror = () => {
+      script.remove();
+      atlasLidarScript = null;
+      reject(new Error('LiDAR controls unavailable'));
+    };
+    document.head.appendChild(script);
+  });
+  return atlasLidarScript;
+}
+
+async function openAtlasLidar(name, trigger, keepView = false) {
   const site = SITES.find(candidate => candidate.n === name && ATLAS_LIDAR_SITES.includes(name));
   if (!site) return;
   try {
-    atlasLidarScript ??= new Promise((resolve, reject) => {
-      const script = document.createElement('script');
-      script.src = '/assets/js/atlas-lidar-pilot.js';
-      script.onload = resolve;
-      script.onerror = () => {
-        script.remove();
-        atlasLidarScript = null;
-        reject(new Error('LiDAR controls unavailable'));
-      };
-      document.head.appendChild(script);
-    });
-    await atlasLidarScript;
+    await loadAtlasLidar();
     window.initAtlasLidarPilot(map, {
       site,
+      keepView,
       openSite(nextSite) {
         if (document.getElementById('mobile-site-sheet')?.classList.contains('open')) closeMobileSiteSheet();
         if (selectedSite?.n !== nextSite.n || !document.getElementById('detail').classList.contains('open')) {
@@ -29210,6 +29230,7 @@ function drawRail() {
   var h = Math.max(190, Math.min(280, Math.round(document.getElementById('map').clientHeight * 0.30)));
   e.track.style.height = h + 'px';
   e.root.style.height = h + 'px';
+  document.getElementById('map-wrap').style.setProperty('--lidar-rail-half', h / 2 + 'px');
 
   // ridge: width at each point is the measured resistance there
   var pts = [], N = 64;
@@ -29424,6 +29445,7 @@ function setRailDock(on) {
     var d = document.getElementById('detail');
     var w = d ? Math.round(d.getBoundingClientRect().width) : 420;
     rail.style.setProperty('--detail-w', w + 'px');
+    document.getElementById('map-wrap').style.setProperty('--lidar-detail-width', w + 'px');
   }
 }
 

@@ -15,10 +15,52 @@
   const imageryCredit = 'Imagery © <a href="https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9">Esri and its imagery contributors</a>';
 
   let activate;
+  let closeComparison;
+  let lastSite;
+  const coverageFor = point => areas.find(area => L.latLngBounds(area.bounds).contains(point));
 
-  window.initAtlasLidarPilot = (map, { site, openSite }) => {
+  window.watchAtlasLidarCoverage = (map, { getSite, sites, open }) => {
+    const button = document.getElementById('lidar-map-button');
+    const announced = new Set();
+    let destination;
+
+    function refresh() {
+      const view = map.getBounds();
+      const center = map.getCenter();
+      const site = getSite() || lastSite;
+      const preferred = site && coverageFor([site.lat, site.lng]);
+      const visible = areas.filter(area => {
+        const bounds = L.latLngBounds(area.bounds);
+        const size = map.project(bounds.getNorthEast()).subtract(map.project(bounds.getSouthWest()));
+        return view.overlaps(bounds) && Math.min(Math.abs(size.x), Math.abs(size.y)) >= 32;
+      });
+      const area = visible.includes(preferred) ? preferred :
+        visible.find(candidate => L.latLngBounds(candidate.bounds).contains(center)) ?? visible[0];
+      const active = document.body.classList.contains('lidar-pilot');
+      destination = area && (area === preferred ? site : sites.find(candidate => coverageFor([candidate.lat, candidate.lng]) === area));
+      button.hidden = !active && !destination;
+      button.setAttribute('aria-expanded', String(active));
+      button.setAttribute('aria-label', active ? 'Close LiDAR comparison' : 'LiDAR available here');
+      if (!active && area && destination && !announced.has(area)) {
+        announced.add(area);
+        button.classList.remove('lidar-available-cue');
+        void button.offsetWidth;
+        button.classList.add('lidar-available-cue');
+      }
+    }
+
+    L.DomEvent.disableClickPropagation(button);
+    button.addEventListener('click', () => {
+      if (document.body.classList.contains('lidar-pilot')) closeComparison();
+      else if (destination) open(destination.n);
+    });
+    map.on('moveend resize lidarstatechange', refresh);
+    refresh();
+  };
+
+  window.initAtlasLidarPilot = (map, { site, openSite, keepView }) => {
     if (activate) {
-      activate(site, true);
+      activate(site, true, keepView);
       return;
     }
 
@@ -71,7 +113,7 @@
       }));
       let activeArea;
       let introduced = false;
-      panel.querySelector('button').addEventListener('click', () => {
+      closeComparison = () => {
         imagery.remove();
         terrain.remove();
         panel.hidden = true;
@@ -84,10 +126,15 @@
         url.searchParams.delete('lidarSite');
         history.replaceState(history.state, '', url);
         map.invalidateSize({ pan: false });
-        document.querySelector('#detail .lidar-discovery')?.focus({ preventScroll: true });
-      });
+        map.fire('lidarstatechange');
+        const button = document.getElementById('lidar-map-button');
+        const nextFocus = button.hidden ? document.querySelector('#detail .lidar-discovery') : button;
+        nextFocus?.focus({ preventScroll: true });
+      };
+      panel.querySelector('button').addEventListener('click', closeComparison);
 
-      activate = (nextSite, animate) => {
+      activate = (nextSite, animate, preserveView) => {
+        lastSite = nextSite;
         document.body.classList.add('lidar-pilot');
         panel.hidden = false;
         if (!introduced) {
@@ -102,7 +149,7 @@
           else link.removeAttribute('aria-current');
         });
         const point = [nextSite.lat, nextSite.lng];
-        const area = areas.find(candidate => L.latLngBounds(candidate.bounds).contains(point));
+        const area = coverageFor(point);
         if (area && activeArea === area) return;
         activeArea = area;
         map.stop();
@@ -110,6 +157,8 @@
         imagery.addTo(map);
         terrain.addTo(map);
         map.invalidateSize({ pan: false });
+        map.fire('lidarstatechange');
+        if (preserveView) return;
         const coverage = area && L.latLngBounds(area.bounds);
         const center = coverage ? coverage.getCenter() : point;
         // Leave roughly a third of the limiting dimension for satellite context.
@@ -124,7 +173,7 @@
     };
     control.addTo(map);
     // Wait for the split map and walkthrough layout before flying.
-    stylesheet.addEventListener('load', () => activate(site, true), { once: true });
-    stylesheet.addEventListener('error', () => activate(site, false), { once: true });
+    stylesheet.addEventListener('load', () => activate(site, true, keepView), { once: true });
+    stylesheet.addEventListener('error', () => activate(site, false, keepView), { once: true });
   };
 })();
