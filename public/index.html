@@ -28117,7 +28117,8 @@ function renderSiteCharacteristics(site) {
 const ATLAS_LIDAR_LANDSCAPES = [
   { name: 'Stonehenge', image: 'stonehenge', feature: 'Spot the rows of burial mounds', sites: ['Stonehenge'] },
   { name: 'Avebury landscape', image: 'avebury', feature: 'Trace the henge ditch around a village', sites: ['Avebury', 'Silbury Hill', 'West Kennet Long Barrow'] },
-  { name: 'Thornborough Henges', image: 'thornborough', feature: 'Find the ring beneath the trees', sites: ['Thornborough Henges'] }
+  { name: 'Thornborough Henges', image: 'thornborough', feature: 'Find the ring beneath the trees', sites: ['Thornborough Henges'] },
+  { name: 'Chaco Canyon', region: 'New Mexico', sites: ['Chaco Canyon (Chaco Culture)'] }
 ];
 const ATLAS_LIDAR_SITES = ATLAS_LIDAR_LANDSCAPES.flatMap(landscape => landscape.sites);
 let atlasLidarScript;
@@ -29726,8 +29727,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const england = document.createElement('button');
       england.type = 'button';
       const englandPin = pin([52.8, -1.7], england, 'England · 3 LiDAR landscapes', '3');
-      const overview = L.layerGroup([englandPin]);
-      const landscapes = L.layerGroup(ATLAS_LIDAR_LANDSCAPES.map(landscape => {
+      const regionalLandscapes = ATLAS_LIDAR_LANDSCAPES.filter(landscape => !landscape.region);
+      const standalone = ATLAS_LIDAR_LANDSCAPES.filter(landscape => landscape.region);
+      const overview = L.layerGroup([englandPin, ...standalone.map(landscape => {
+        const site = SITES.find(candidate => candidate.n === landscape.sites[0]);
+        const label = landscape.name + ' · ' + landscape.region;
+        return pin([site.lat, site.lng], lidarDirectoryLink(site.n, label), label, '•');
+      })]);
+      const landscapes = L.layerGroup(regionalLandscapes.map(landscape => {
         const site = SITES.find(candidate => candidate.n === landscape.sites[0]);
         const link = lidarDirectoryLink(site.n, landscape.name);
         const marker = pin([site.lat, site.lng], link, landscape.name, '•');
@@ -29761,7 +29768,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       showWorld();
     });
-    for (const landscape of ATLAS_LIDAR_LANDSCAPES) {
+    for (const landscape of ATLAS_LIDAR_LANDSCAPES.filter(entry => !entry.region)) {
       const link = lidarDirectoryLink(landscape.sites[0], landscape.name);
       link.className = 'lidar-landscape-card';
       const image = document.createElement('img');

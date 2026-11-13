@@ -13,6 +13,11 @@
     {
       bounds: [[54.185, -1.587], [54.218, -1.530]],
       terrain: 'thornborough-hillshade.webp'
+    },
+    {
+      bounds: [[36.049, -107.978], [36.066, -107.953]],
+      terrain: 'chaco-hillshade.webp',
+      credit: 'LiDAR DTM: <a href="https://www.usgs.gov/3d-elevation-program">USGS 3DEP</a>, 1 meter'
     }
   ];
   const terrainCredit = 'LiDAR DTM © <a href="https://www.data.gov.uk/dataset/01b3ee39-da3f-47b6-83da-dc98e73a461f/lidar-composite-digital-terrain-model-dtm-1m">Environment Agency</a> copyright and/or database right 2022';
@@ -98,7 +103,7 @@
     }));
     const terrain = L.layerGroup(areas.map(area => L.imageOverlay(
       '/assets/lidar/' + area.terrain, area.bounds,
-      { pane: 'lidar-pilot-terrain', attribution: terrainCredit, alt: 'Bare-earth LiDAR hillshade' }
+      { pane: 'lidar-pilot-terrain', attribution: area.credit || terrainCredit, alt: 'Bare-earth LiDAR hillshade' }
     )));
 
     const control = L.control({ position: 'topright' });
@@ -138,7 +143,7 @@
         panel.hidden = true;
         panel.classList.remove("lidar-intro");
         activeArea = undefined;
-        document.querySelectorAll('.lidar-directory [aria-current]').forEach(link => link.removeAttribute('aria-current'));
+        document.querySelectorAll('.lidar-directory a[aria-current]').forEach(link => link.removeAttribute('aria-current'));
         document.body.classList.remove('lidar-pilot');
         const url = new window.URL(location.href);
         url.searchParams.delete('lidar');
