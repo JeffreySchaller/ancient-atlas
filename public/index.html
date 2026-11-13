@@ -578,13 +578,22 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .lidar-discovery:hover{background:#383023;text-decoration:none}
 .lidar-discovery small{color:#e0d7c4;font-size:13px}
 .lidar-discovery strong{display:flex;align-items:center;gap:8px}
-.lidar-directory{margin:12px 0;border:1px solid #c9a84c88;border-radius:10px;background:#27231e;color:#f1d68d}
-.lidar-directory summary{cursor:pointer;padding:12px 14px;font-weight:650}
-.lidar-directory summary img{vertical-align:middle;margin:0 8px 0 3px}
-.lidar-directory ul{list-style:none;margin:0;padding:0 10px 8px}
-.lidar-directory a{display:block;padding:9px 10px;color:#f1d68d;border-radius:5px}
-.lidar-directory a:hover,.lidar-directory a:focus-visible{background:#383023}
-.atlas-lidar-pin{position:absolute;top:-11px;left:calc(100% + 3px);width:18px;height:18px;border:1px solid #e2c778;background:#211e19;border-radius:5px;pointer-events:none}
+.atlas-explore{margin:16px 0 20px}
+#mobile-feed .atlas-explore{margin:16px}
+.atlas-explore h2{margin:0 0 8px;color:var(--ivory);font-size:15px;font-weight:650}
+.atlas-explore-list{background:#1b1c21;border:1px solid #383a43;border-radius:12px;overflow:hidden}
+.atlas-explore-list > * + *{border-top:1px solid #383a43}
+.atlas-explore-row{display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:11px;width:100%;padding:11px 12px;border:0;background:transparent;color:var(--ivory);text-align:left;text-decoration:none;font:inherit;cursor:pointer}
+.atlas-explore-row:hover,.atlas-explore-row:focus-visible{background:#282a31;text-decoration:none}
+.atlas-explore-row:focus-visible{outline-offset:-3px}
+.atlas-explore-row strong,.atlas-explore-row small{display:block}
+.atlas-explore-row small{margin-top:3px;color:var(--cloud);font-size:12px;line-height:1.35}
+.atlas-explore-arrow{color:var(--champagne)}
+.lidar-directory[open] .atlas-explore-arrow{transform:rotate(90deg)}
+.lidar-directory ul{list-style:none;margin:0;padding:0 12px 8px 67px}
+.lidar-directory a{display:block;padding:8px 4px;color:#f1d68d}
+.atlas-field-visits{display:block;margin:6px 0 12px;color:#b8d6b2;font-size:13px}
+.atlas-lidar-pin{position:absolute;top:-11px;left:calc(100% + 3px);width:18px;height:18px;filter:drop-shadow(0 1px 2px #000b);pointer-events:none}
 
 #map-wrap{flex:1;position:relative}
 #map{width:100%;height:100%}
@@ -2205,10 +2214,17 @@ body.present #broadcast-controls{
         <input type="text" id="search" placeholder="Search ancient sites, regions, eras..." autocomplete="off" />
         <div class="search-suggestions" id="search-suggestions"></div>
       </div>
-<details class="lidar-directory"><summary><img src="/assets/lidar/lidar-glyph.svg" width="24" height="24" alt="">Explore LiDAR sites</summary><ul></ul></details>
-<button class="water-entry" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water →</strong><small>Three places. Three ways to work with water.</small></span></button>
-<a class="patterns-map-entry" href="/patterns/"><strong>What people made possible →</strong><span>24 features · Places, films &amp; creators</span></a>
-<p style="margin:10px 0;font-size:13px"><a href="/creators/#field-visits" style="color:#b8d6b2">New creator field visits →</a></p>
+      <section class="atlas-explore" aria-label="Explore the Atlas">
+        <h2>Explore</h2>
+        <div class="atlas-explore-list">
+          <details class="lidar-directory">
+            <summary class="atlas-explore-row"><img src="/assets/lidar/lidar-glyph.svg" width="44" height="44" alt=""><span><strong>Explore LiDAR sites</strong><small>Reveal earthworks beneath the vegetation.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
+            <ul></ul>
+          </details>
+          <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
+          <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
+        </div>
+      </section>
 <div class="atlas-feature-browser" aria-label="Browse site features"></div>
       <!-- Creators lead. An earlier pass moved them below Where and Type and
            folded the list away, on the reasoning that a newcomer does not know
@@ -2223,6 +2239,7 @@ body.present #broadcast-controls{
         <span class="sb-section-rule"></span>
         <button class="sb-see-all" onclick="openCreators()" title="View all creators in the Hub">See all <span class="sb-see-all-arrow">↗</span></button>
       </div>
+      <a class="atlas-field-visits" href="/creators/#field-visits">New creator field visits →</a>
       <div id="creator-mini-list"></div>
       <a href="/photos/" style="display:block;margin:14px 0 22px;color:var(--champagne);font-size:12px;text-decoration:none">Explore site photographs →</a>
       <div class="sb-section">Where</div>
@@ -2405,8 +2422,17 @@ body.present #broadcast-controls{
 
   <!-- Unobtrusive mobile nav: Articles / Editions / Support / Contact -->
   <p style="margin:12px 16px"><a href="/creators/#field-visits" style="color:#b8d6b2">New creator field visits →</a></p>
-  <details class="lidar-directory"><summary><img src="/assets/lidar/lidar-glyph.svg" width="24" height="24" alt="">Explore LiDAR sites</summary><ul></ul></details>
-  <button class="water-entry" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water →</strong><small>Three places. Three ways to work with water.</small></span></button>
+  <section class="atlas-explore" aria-label="Explore the Atlas">
+    <h2>Explore</h2>
+    <div class="atlas-explore-list">
+      <details class="lidar-directory">
+        <summary class="atlas-explore-row"><img src="/assets/lidar/lidar-glyph.svg" width="44" height="44" alt=""><span><strong>Explore LiDAR sites</strong><small>Reveal earthworks beneath the vegetation.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
+        <ul></ul>
+      </details>
+      <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
+      <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
+    </div>
+  </section>
 <div class="atlas-feature-browser atlas-feature-mobile" aria-label="Browse site features"></div>
   <div class="mf-mininav" aria-label="Site sections">
     <a class="mf-mininav-link" href="experiences/feel-the-weight/">
