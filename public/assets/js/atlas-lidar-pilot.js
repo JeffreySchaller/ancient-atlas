@@ -9,6 +9,10 @@
     {
       bounds: [[51.153, -1.878], [51.213, -1.742]],
       terrain: 'stonehenge-hillshade.webp'
+    },
+    {
+      bounds: [[54.185, -1.587], [54.218, -1.530]],
+      terrain: 'thornborough-hillshade.webp'
     }
   ];
   const terrainCredit = 'LiDAR DTM © <a href="https://www.data.gov.uk/dataset/01b3ee39-da3f-47b6-83da-dc98e73a461f/lidar-composite-digital-terrain-model-dtm-1m">Environment Agency</a> copyright and/or database right 2022';
@@ -157,12 +161,7 @@
           introduced = true;
         }
         openSite(nextSite);
-        document.querySelectorAll('.lidar-directory a[data-lidar-site]').forEach(link => {
-          const current = link.dataset.lidarSite === nextSite.n &&
-            (!link.classList.contains('lidar-landscape-link') || !link.parentElement.querySelector('ul'));
-          if (current) link.setAttribute('aria-current', 'true');
-          else link.removeAttribute('aria-current');
-        });
+        map.fire('lidarsiteselected', { site: nextSite });
         const point = [nextSite.lat, nextSite.lng];
         const area = coverageFor(point);
         if (area && activeArea === area) return;
