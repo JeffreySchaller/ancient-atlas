@@ -27,16 +27,6 @@
   accent-color: var(--champagne, #e0bd77);
 }
 .lidar-pilot-panel output { font-variant-numeric: tabular-nums; }
-.lidar-pilot-panel select {
-  width: 100%;
-  min-height: 34px;
-  color: inherit;
-  background: var(--obsidian, #0a0a0e);
-  border: 1px solid var(--stone, #48464b);
-  border-radius: 5px;
-  padding: 3px 6px;
-  font: inherit;
-}
 .lidar-pilot-status { margin: 0; }
 @media (max-width: 950px) and (orientation: portrait) {
   body.lidar-pilot #mobile-feed { display: none !important; }

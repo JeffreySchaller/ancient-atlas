@@ -4,13 +4,11 @@
   const areas = [
     {
       bounds: [[51.391, -1.897], [51.448, -1.811]],
-      terrain: 'avebury-hillshade.webp',
-      names: ['Avebury', 'Silbury Hill', 'West Kennet Long Barrow']
+      terrain: 'avebury-hillshade.webp'
     },
     {
       bounds: [[51.153, -1.878], [51.213, -1.742]],
-      terrain: 'stonehenge-hillshade.webp',
-      names: ['Stonehenge']
+      terrain: 'stonehenge-hillshade.webp'
     }
   ];
   const terrainCredit = 'LiDAR DTM © <a href="https://www.data.gov.uk/dataset/01b3ee39-da3f-47b6-83da-dc98e73a461f/lidar-composite-digital-terrain-model-dtm-1m">Environment Agency</a> copyright and/or database right 2022';
@@ -18,7 +16,7 @@
 
   let activate;
 
-  window.initAtlasLidarPilot = (map, sites, { site, openSite }) => {
+  window.initAtlasLidarPilot = (map, { site, openSite }) => {
     if (activate) {
       activate(site);
       return;
@@ -51,8 +49,6 @@
           <h2>Reveal the earthworks</h2>
           <button type="button" aria-label="Close LiDAR comparison">Close</button>
         </div>
-        <label for="lidar-pilot-site">Explore a site</label>
-        <select id="lidar-pilot-site"></select>
         <label class="lidar-pilot-opacity" for="lidar-pilot-opacity">
           Drag to compare <output for="lidar-pilot-opacity">65% LiDAR</output>
         </label>
@@ -66,13 +62,7 @@
 
       const slider = panel.querySelector('#lidar-pilot-opacity');
       const output = panel.querySelector('output');
-      const picker = panel.querySelector('#lidar-pilot-site');
       const status = panel.querySelector('[role="status"]');
-      for (const area of areas) {
-        for (const name of area.names) {
-          if (sites.some(candidate => candidate.n === name)) picker.add(new Option(name, name));
-        }
-      }
 
       function setOpacity() {
         terrain.eachLayer(layer => layer.setOpacity(Number(slider.value) / 100));
@@ -85,7 +75,6 @@
         status.textContent = 'Some LiDAR imagery couldn’t load.';
         status.hidden = false;
       }));
-      picker.addEventListener('change', () => activate(sites.find(candidate => candidate.n === picker.value)));
       panel.querySelector('button').addEventListener('click', () => {
         imagery.remove();
         terrain.remove();
@@ -102,7 +91,6 @@
       activate = nextSite => {
         document.body.classList.add('lidar-pilot');
         panel.hidden = false;
-        picker.value = nextSite.n;
         openSite(nextSite);
         map.stop();
         setOpacity();

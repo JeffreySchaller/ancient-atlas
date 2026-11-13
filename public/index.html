@@ -28015,7 +28015,7 @@ async function openAtlasLidar(name, trigger) {
       document.head.appendChild(script);
     });
     await atlasLidarScript;
-    window.initAtlasLidarPilot(map, SITES.filter(candidate => ATLAS_LIDAR_SITES.includes(candidate.n)), {
+    window.initAtlasLidarPilot(map, {
       site,
       openSite(nextSite) {
         if (document.getElementById('mobile-site-sheet')?.classList.contains('open')) closeMobileSiteSheet();
