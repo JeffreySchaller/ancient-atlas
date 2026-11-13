@@ -29631,7 +29631,7 @@ document.addEventListener('DOMContentLoaded', () => {
         element.textContent = text;
         element.setAttribute('aria-label', label);
         return L.marker(point, {
-          keyboard: false, interactive: false,
+          keyboard: false, interactive: true,
           icon: L.divIcon({ html: element, className: '', iconSize: [28, 28] })
         }).bindTooltip(label, { direction: 'bottom', offset: [0, 14] });
       }
