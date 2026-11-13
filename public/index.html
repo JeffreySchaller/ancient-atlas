@@ -578,6 +578,12 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .lidar-discovery:hover{background:#383023;text-decoration:none}
 .lidar-discovery small{color:#e0d7c4;font-size:13px}
 .lidar-discovery strong{display:flex;align-items:center;gap:8px}
+.lidar-directory{margin:12px 0;border:1px solid #c9a84c88;border-radius:10px;background:#27231e;color:#f1d68d}
+.lidar-directory summary{cursor:pointer;padding:12px 14px;font-weight:650}
+.lidar-directory summary img{vertical-align:middle;margin:0 8px 0 3px}
+.lidar-directory ul{list-style:none;margin:0;padding:0 10px 8px}
+.lidar-directory a{display:block;padding:9px 10px;color:#f1d68d;border-radius:5px}
+.lidar-directory a:hover,.lidar-directory a:focus-visible{background:#383023}
 .atlas-lidar-pin{position:absolute;top:-11px;left:calc(100% + 3px);width:18px;height:18px;border:1px solid #e2c778;background:#211e19;border-radius:5px;pointer-events:none}
 
 #map-wrap{flex:1;position:relative}
@@ -2199,7 +2205,7 @@ body.present #broadcast-controls{
         <input type="text" id="search" placeholder="Search ancient sites, regions, eras..." autocomplete="off" />
         <div class="search-suggestions" id="search-suggestions"></div>
       </div>
-<a class="lidar-discovery" href="/?lidar=1&amp;lidarSite=Stonehenge" onclick="event.preventDefault();openAtlasLidar('Stonehenge',this)"><strong>Reveal the earthworks with LiDAR →</strong><small>Slide between satellite and bare-earth views of Stonehenge.</small></a>
+<details class="lidar-directory"><summary><img src="/assets/lidar/lidar-glyph.svg" width="24" height="24" alt="">Explore LiDAR sites</summary><ul></ul></details>
 <button class="water-entry" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water →</strong><small>Three places. Three ways to work with water.</small></span></button>
 <a class="patterns-map-entry" href="/patterns/"><strong>What people made possible →</strong><span>24 features · Places, films &amp; creators</span></a>
 <p style="margin:10px 0;font-size:13px"><a href="/creators/#field-visits" style="color:#b8d6b2">New creator field visits →</a></p>
@@ -2399,7 +2405,7 @@ body.present #broadcast-controls{
 
   <!-- Unobtrusive mobile nav: Articles / Editions / Support / Contact -->
   <p style="margin:12px 16px"><a href="/creators/#field-visits" style="color:#b8d6b2">New creator field visits →</a></p>
-  <a class="lidar-discovery" href="/?lidar=1&amp;lidarSite=Stonehenge" onclick="event.preventDefault();openAtlasLidar('Stonehenge',this)"><strong>Reveal the earthworks with LiDAR →</strong><small>Slide between satellite and bare-earth views of Stonehenge.</small></a>
+  <details class="lidar-directory"><summary><img src="/assets/lidar/lidar-glyph.svg" width="24" height="24" alt="">Explore LiDAR sites</summary><ul></ul></details>
   <button class="water-entry" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water →</strong><small>Three places. Three ways to work with water.</small></span></button>
 <div class="atlas-feature-browser atlas-feature-mobile" aria-label="Browse site features"></div>
   <div class="mf-mininav" aria-label="Site sections">
@@ -29472,6 +29478,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   // After desktop init runs, evaluate mobile mode and render feed if needed
   updateMobileMode();
+  for (const list of document.querySelectorAll('.lidar-directory ul')) {
+    for (const name of ATLAS_LIDAR_SITES) {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = '/?lidar=1&lidarSite=' + encodeURIComponent(name);
+      link.textContent = name;
+      link.addEventListener('click', event => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        openAtlasLidar(name, link);
+      });
+      item.appendChild(link);
+      list.appendChild(item);
+    }
+  }
   // Auto-update copyright year — fire-and-forget, never needs touching
   document.querySelectorAll('.year').forEach(el => { el.textContent = new Date().getFullYear(); });
 });

@@ -18,7 +18,7 @@
 
   window.initAtlasLidarPilot = (map, { site, openSite }) => {
     if (activate) {
-      activate(site);
+      activate(site, true);
       return;
     }
 
@@ -88,7 +88,7 @@
         document.querySelector('#detail .lidar-discovery')?.focus({ preventScroll: true });
       });
 
-      activate = nextSite => {
+      activate = (nextSite, animate) => {
         document.body.classList.add('lidar-pilot');
         panel.hidden = false;
         openSite(nextSite);
@@ -97,12 +97,19 @@
         imagery.addTo(map);
         terrain.addTo(map);
         map.invalidateSize({ pan: false });
-        map.setView([nextSite.lat, nextSite.lng], nextSite.n === 'Stonehenge' ? 14.8 : 15.2, { animate: false });
+        const center = [nextSite.lat, nextSite.lng];
+        const zoom = nextSite.n === 'Stonehenge' ? 14.8 : 15.2;
+        if (animate && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          map.flyTo(center, zoom, { duration: 1.25 });
+        } else {
+          map.setView(center, zoom, { animate: false });
+        }
       };
       return panel;
     };
     control.addTo(map);
-    stylesheet.addEventListener('load', () => activate(site), { once: true });
-    activate(site);
+    // Wait for the split map and walkthrough layout before flying.
+    stylesheet.addEventListener('load', () => activate(site, true), { once: true });
+    stylesheet.addEventListener('error', () => activate(site, false), { once: true });
   };
 })();
