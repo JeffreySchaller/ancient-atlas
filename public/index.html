@@ -29621,10 +29621,17 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollWheelZoom: false, dragging: false, doubleClickZoom: false,
         touchZoom: false, boxZoom: false, keyboard: false
       });
-      L.tileLayer('https://basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {
-        minZoom: -1, minNativeZoom: 0, noWrap: true,
-        attribution: '© <a href="https://www.openstreetmap.org/copyright">OSM</a> © <a href="https://carto.com/attributions">CARTO</a>'
-      }).addTo(world);
+      world.attributionControl.addAttribution('Natural Earth');
+      fetch('/assets/lidar/world-land.geojson')
+        .then(response => {
+          if (!response.ok) throw new Error('World outline unavailable');
+          return response.json();
+        })
+        .then(geometry => L.geoJSON(geometry, {
+          interactive: false,
+          style: { color: '#687c77', weight: 0.7, fillColor: '#43554d', fillOpacity: 1 }
+        }).addTo(world))
+        .catch(error => console.warn(error));
 
       function pin(point, element, label, text, className = '') {
         element.className = 'lidar-world-pin ' + className;
