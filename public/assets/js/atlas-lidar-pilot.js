@@ -45,29 +45,23 @@
       const panel = L.DomUtil.create('section', 'lidar-pilot-panel');
       panel.setAttribute('aria-label', 'LiDAR comparison');
       panel.innerHTML = `
-        <div class="lidar-pilot-heading">
-          <h2>Reveal the earthworks</h2>
-          <button type="button" aria-label="Close LiDAR comparison">Close</button>
+        <div class="lidar-pilot-blend">
+          <input type="range" id="lidar-pilot-opacity" min="0" max="100" value="65"
+            aria-label="Satellite to LiDAR blend">
+          <div class="lidar-pilot-endpoints" aria-hidden="true"><span>Satellite</span><span>LiDAR</span></div>
         </div>
-        <label class="lidar-pilot-opacity" for="lidar-pilot-opacity">
-          Drag to compare <output for="lidar-pilot-opacity">65% LiDAR</output>
-        </label>
-        <input type="range" id="lidar-pilot-opacity" min="0" max="100" value="65">
-        <div class="lidar-pilot-endpoints" aria-hidden="true"><span>Satellite</span><span>LiDAR</span></div>
-        <p class="lidar-pilot-note">LiDAR appears within surveyed areas.</p>
+        <button class="lidar-pilot-close" type="button" aria-label="Close LiDAR comparison">×</button>
         <p class="lidar-pilot-status" role="status" hidden></p>
       `;
       L.DomEvent.disableClickPropagation(panel);
       L.DomEvent.disableScrollPropagation(panel);
 
       const slider = panel.querySelector('#lidar-pilot-opacity');
-      const output = panel.querySelector('output');
       const status = panel.querySelector('[role="status"]');
 
       function setOpacity() {
         terrain.eachLayer(layer => layer.setOpacity(Number(slider.value) / 100));
-        output.value = slider.value + '% LiDAR';
-        slider.setAttribute('aria-valuetext', output.value);
+        slider.setAttribute('aria-valuetext', slider.value + '% LiDAR');
       }
 
       slider.addEventListener('input', setOpacity);
