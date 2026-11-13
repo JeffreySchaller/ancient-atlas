@@ -28055,7 +28055,7 @@ function renderSitePanel(site, mode='desktop', films=null) {
     <p class="oga-location">${journeyEscape(SITE_COUNTRIES[site.n] || site.region)}</p>
     <h2>${journeyEscape(site.n)}</h2>${provisional(site) ? '<p class="atlas-location-note">Approximate area only. The exact monument location is still being verified.</p>' : ''}
     <p class="oga-intro">${journeyEscape(SITE_INTROS[site.n] || '')}</p>
-    ${ATLAS_LIDAR_SITES.includes(site.n) ? `<a class="lidar-discovery" href="/?lidar=1&amp;lidarSite=${encodeURIComponent(site.n)}" onclick="event.preventDefault();openAtlasLidar(new URL(this.href).searchParams.get('lidarSite'),this)"><strong><img src="/assets/lidar/lidar-glyph.svg" width="24" height="24" alt="">Explore with LiDAR →</strong><small>See the shape of the ground beneath the vegetation.</small></a>` : ''}
+    ${ATLAS_LIDAR_SITES.includes(site.n) ? `<a class="lidar-discovery" href="/?lidar=1&amp;lidarSite=${encodeURIComponent(site.n)}" onclick="event.preventDefault();openAtlasLidar(new window.URL(this.href).searchParams.get('lidarSite'),this)"><strong><img src="/assets/lidar/lidar-glyph.svg" width="24" height="24" alt="">Explore with LiDAR →</strong><small>See the shape of the ground beneath the vegetation.</small></a>` : ''}
     <div class="oga-characteristics">${renderSiteCharacteristics(site)}</div>
     ${videos.length > 1 ? `<p class="oga-voices">${videos.length} films · ${credits.length} creators<br>${credits.map(k => `<button class="oga-creator-jump" onclick="this.closest('.oga-panel').querySelector('[data-film-creator=${k}]').scrollIntoView({behavior:'smooth',block:'start'})">${journeyEscape(CREATORS[k].name)}</button>`).join(' · ')}</p>` : ''}
     ${videos.map((v,i) => {

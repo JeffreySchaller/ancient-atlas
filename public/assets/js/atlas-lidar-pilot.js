@@ -91,7 +91,7 @@
         terrain.remove();
         panel.hidden = true;
         document.body.classList.remove('lidar-pilot');
-        const url = new URL(location.href);
+        const url = new window.URL(location.href);
         url.searchParams.delete('lidar');
         url.searchParams.delete('lidarSite');
         history.replaceState(history.state, '', url);
