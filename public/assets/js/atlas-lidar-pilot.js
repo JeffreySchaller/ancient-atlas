@@ -75,6 +75,7 @@
         imagery.remove();
         terrain.remove();
         panel.hidden = true;
+        panel.classList.remove("lidar-intro");
         activeArea = undefined;
         document.querySelectorAll('.lidar-directory [aria-current]').forEach(link => link.removeAttribute('aria-current'));
         document.body.classList.remove('lidar-pilot');
