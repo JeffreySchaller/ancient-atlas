@@ -1,7 +1,7 @@
 .lidar-pilot-panel {
   display: grid;
   gap: 7px;
-  width: min(218px, calc(100vw - 36px));
+  width: min(268px, calc(100vw - 76px));
   padding: 12px;
   color: var(--cloud, #f0eee9);
   background: var(--charcoal, #181820);
@@ -10,18 +10,19 @@
   box-shadow: 0 8px 24px #0008;
   font: 14px/1.35 var(--font-sans, system-ui, sans-serif);
 }
-.lidar-pilot-toggle, .lidar-pilot-opacity {
+.lidar-pilot-heading, .lidar-pilot-opacity, .lidar-pilot-endpoints {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
 }
-.lidar-pilot-toggle {
-  flex-direction: row-reverse;
-  font-weight: 600;
-  cursor: pointer;
-}
+.lidar-pilot-heading h2 { margin: 0; font-size: 16px; line-height: 1.3; }
+.lidar-pilot-heading a { color: #f1d68d; padding: 5px 0 5px 8px; }
+.lidar-pilot-opacity { margin-top: 6px; }
+.lidar-pilot-endpoints { color: #e0d7c4; font-size: 13px; }
 .lidar-pilot-panel input {
+  width: 100%;
+  min-height: 30px;
   margin: 0;
   accent-color: var(--champagne, #e0bd77);
 }

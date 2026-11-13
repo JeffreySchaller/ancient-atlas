@@ -62,56 +62,45 @@
       const panel = L.DomUtil.create('section', 'lidar-pilot-panel');
       panel.setAttribute('aria-label', 'LiDAR pilot');
       panel.innerHTML = `
-        <label class="lidar-pilot-toggle">
-          <input type="checkbox" role="switch" id="lidar-pilot-toggle">
-          <span>LiDAR hillshade</span>
-        </label>
-        <label class="lidar-pilot-opacity" for="lidar-pilot-opacity">
-          Opacity <output for="lidar-pilot-opacity">65%</output>
-        </label>
-        <input type="range" id="lidar-pilot-opacity" min="0" max="100" value="65" disabled>
-        <label class="lidar-pilot-site" for="lidar-pilot-site">Pilot site</label>
+        <div class="lidar-pilot-heading">
+          <h2>Reveal the earthworks</h2>
+          <a href="/" aria-label="Exit LiDAR comparison">Exit</a>
+        </div>
+        <label for="lidar-pilot-site">Explore a site</label>
         <select id="lidar-pilot-site"><option value="">Avebury area (three sites)</option></select>
+        <label class="lidar-pilot-opacity" for="lidar-pilot-opacity">
+          Drag to compare <output for="lidar-pilot-opacity">65% LiDAR</output>
+        </label>
+        <input type="range" id="lidar-pilot-opacity" min="0" max="100" value="65">
+        <div class="lidar-pilot-endpoints" aria-hidden="true"><span>Satellite</span><span>LiDAR</span></div>
         <p class="lidar-pilot-status" role="status" hidden></p>
       `;
       L.DomEvent.disableClickPropagation(panel);
       L.DomEvent.disableScrollPropagation(panel);
 
-      const toggle = panel.querySelector('#lidar-pilot-toggle');
       const slider = panel.querySelector('#lidar-pilot-opacity');
       const output = panel.querySelector('output');
       const picker = panel.querySelector('#lidar-pilot-site');
       const status = panel.querySelector('[role="status"]');
       for (const site of pilotSites) picker.add(new Option(site.n, site.n));
 
-      let activeLayers = layers.get(areas[0]);
+      picker.value = pilotSites.some(site => site.n === requestedSite) ? requestedSite : 'Stonehenge';
+      const initialSite = pilotSites.find(site => site.n === picker.value);
+      let activeLayers = layers.get(initialSite?.area ?? areas[0]);
 
       function setOpacity() {
         activeLayers.terrain.setOpacity(Number(slider.value) / 100);
-        output.value = slider.value + '%';
+        output.value = slider.value + '% LiDAR';
+        slider.setAttribute('aria-valuetext', output.value);
       }
 
-      toggle.addEventListener('change', () => {
-        status.hidden = true;
-        slider.disabled = !toggle.checked;
-        if (toggle.checked) {
-          if (activeLayers.terrain.getElement() && !activeLayers.terrain.getElement().naturalWidth) {
-            const image = activeLayers.terrain.getElement();
-            const source = image.src;
-            image.removeAttribute('src');
-            activeLayers.terrain.setUrl(source);
-          }
-          activeLayers.terrain.addTo(map);
-        } else activeLayers.terrain.remove();
-      });
       slider.addEventListener('input', setOpacity);
       for (const entry of layers.values()) {
         entry.terrain.on('error', () => {
-          if (entry !== activeLayers || !toggle.checked) return;
-          toggle.checked = false;
+          if (entry !== activeLayers) return;
           slider.disabled = true;
           entry.terrain.remove();
-          status.textContent = 'LiDAR could not load. Turn it on to retry.';
+          status.textContent = 'LiDAR couldn’t load. Reload the map to try again.';
           status.hidden = false;
         });
       }
@@ -125,17 +114,18 @@
           activeLayers = nextLayers;
           activeLayers.imagery.addTo(map);
           status.hidden = true;
+          slider.disabled = false;
           setOpacity();
-          if (toggle.checked) activeLayers.terrain.addTo(map);
+          activeLayers.terrain.addTo(map);
         }
         if (selected) {
           const zoom = selected.n === 'Stonehenge' ? 14.8 : 16;
           map.setView([selected.lat, selected.lng], zoom, { animate: false });
         } else showOverview();
       });
-      activeLayers.imagery.addTo(map);
       setOpacity();
-      if (pilotSites.some(site => site.n === requestedSite)) picker.value = requestedSite;
+      activeLayers.imagery.addTo(map);
+      activeLayers.terrain.addTo(map);
       return panel;
     };
 
