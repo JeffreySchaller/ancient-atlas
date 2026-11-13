@@ -28942,6 +28942,7 @@ function welcomeKey(ev) {
 }
 
 function maybeShowWelcome() {
+  if (document.body.classList.contains('lidar-pilot')) return true;
   var w = document.getElementById('welcome');
   if (!w) return true;
   // a deep link is a question already asked; do not answer a different one
