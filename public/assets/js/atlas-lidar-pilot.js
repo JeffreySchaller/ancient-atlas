@@ -135,7 +135,7 @@
 
       activate = (nextSite, animate, preserveView) => {
         lastSite = nextSite;
-        document.body.classList.add('lidar-pilot');
+        document.body.classList.add('lidar-pilot', 'lidar-map-open');
         panel.hidden = false;
         if (!introduced) {
           panel.classList.add('lidar-intro');

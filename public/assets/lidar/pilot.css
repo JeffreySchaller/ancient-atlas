@@ -69,9 +69,9 @@
 }
 .lidar-pilot-status { grid-column: 1 / -1; margin: 6px 0 0; }
 @media (max-width: 950px) and (orientation: portrait) {
-  body.lidar-pilot #mobile-feed { display: none !important; }
-  body.lidar-pilot main { display: flex !important; height: 100dvh; }
-  body.lidar-pilot #map-wrap { display: block !important; width: 100%; }
+  body.lidar-map-open #mobile-feed { display: none !important; }
+  body.lidar-map-open main { display: flex !important; height: 100dvh; }
+  body.lidar-map-open #map-wrap { display: block !important; width: 100%; }
 }
 .lidar-pilot-panel[hidden] { display: none; }
 .lidar-pilot-close {
@@ -111,9 +111,10 @@ body.lidar-pilot.detail-open #depth-rail { --dock: 0px; }
   .lidar-pilot-panel.lidar-intro::after { animation: none; content: none; }
 }
 @media (max-width: 950px) and (orientation: portrait) {
-  body.lidar-pilot main { flex-direction: column; }
-  body.lidar-pilot #map-wrap { min-height: 0; }
-  body.lidar-pilot #detail.open {
+  body.lidar-map-open main { flex-direction: column; }
+  body.lidar-map-open #map-wrap { min-height: 0; }
+  body.lidar-map-open #detail.open {
+    position: relative;
     display: flex !important;
     flex: 0 0 35%;
     width: 100%;
