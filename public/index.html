@@ -600,13 +600,13 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .atlas-explore-arrow{color:var(--champagne)}
 .lidar-directory[open] .atlas-explore-arrow{transform:rotate(90deg)}
 .lidar-directory-content{padding:0 10px 9px}
-.lidar-overview-map{height:178px;background:#242b30;border:1px solid #424b4b;border-radius:8px;overflow:hidden}
-.lidar-overview-pin{position:absolute;display:flex;align-items:center;gap:5px;color:#fff2ca;background:#242621;border:1px solid #8e8052;border-radius:7px;padding:5px 6px;font:600 11px/1.2 system-ui;white-space:nowrap;pointer-events:auto;text-decoration:none}
-.lidar-overview-pin::before{content:"";width:6px;height:6px;border-radius:50%;background:#ebc775}
-.lidar-overview-pin:hover,.lidar-overview-pin:focus-visible{background:#49442e;color:#fff}
-.lidar-overview-pin-1{top:5px;left:-3px}
-.lidar-overview-pin-2{bottom:5px;right:-3px}
-.lidar-overview-pin-3{bottom:5px;right:-4px}
+.lidar-landscape-gallery{display:grid;grid-auto-flow:column;grid-auto-columns:76%;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 8px}
+.lidar-landscape-card{position:relative;display:grid;align-content:end;min-height:112px;overflow:hidden;border:1px solid #75674a;border-radius:8px;background:#252822;color:#fff2ca;text-decoration:none;scroll-snap-align:start}
+.lidar-landscape-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 29%;filter:sepia(.13)}
+.lidar-landscape-card span{position:relative;display:grid;gap:2px;padding:15px 8px 7px;background:linear-gradient(transparent,#151719 45%)}
+.lidar-landscape-card small{color:#ece1c6;font-size:11px}
+.lidar-landscape-card:hover,.lidar-landscape-card:focus-visible{border-color:#f1d68d;color:#fff}
+.lidar-landscape-card:focus-visible{outline-offset:-3px}
 .lidar-landscape-stops{list-style:none;margin:7px 0 0;padding:4px 8px;border-left:1px solid #776745;font-size:13px}
 .lidar-landscape-stops a,.lidar-research-link{display:block;padding:6px 4px;color:#f1d68d}
 .lidar-landscape-stops a[aria-current="true"]{color:var(--ivory);font-weight:650}
@@ -2241,11 +2241,11 @@ body.present #broadcast-controls{
         <h2>Explore</h2>
         <div class="atlas-explore-list">
           <details class="lidar-directory">
-            <summary class="atlas-explore-row"><img src="/assets/lidar/lidar-glyph.svg" width="44" height="44" alt=""><span><strong>Explore LiDAR sites</strong><small>Pick a landscape on the map.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
+            <summary class="atlas-explore-row"><img src="/assets/lidar/lidar-glyph.svg" width="44" height="44" alt=""><span><strong>Explore LiDAR sites</strong><small>See what the terrain reveals.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
             <div class="lidar-directory-content">
-              <div class="lidar-overview-map" aria-label="Map of LiDAR landscapes"></div>
+              <div class="lidar-landscape-gallery" aria-label="LiDAR landscape previews"></div>
               <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
-              <a class="lidar-research-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3420181/#fig02" target="_blank" rel="noopener">Caracol, Belize · published LiDAR ↗</a>
+              <a class="lidar-research-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3420181/#fig04" target="_blank" rel="noopener">Caracol, Belize · published LiDAR ↗</a>
             </div>
           </details>
           <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
@@ -2454,11 +2454,11 @@ body.present #broadcast-controls{
     <h2>Explore</h2>
     <div class="atlas-explore-list">
       <details class="lidar-directory">
-        <summary class="atlas-explore-row"><img src="/assets/lidar/lidar-glyph.svg" width="44" height="44" alt=""><span><strong>Explore LiDAR sites</strong><small>Pick a landscape on the map.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
+        <summary class="atlas-explore-row"><img src="/assets/lidar/lidar-glyph.svg" width="44" height="44" alt=""><span><strong>Explore LiDAR sites</strong><small>See what the terrain reveals.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
         <div class="lidar-directory-content">
-              <div class="lidar-overview-map" aria-label="Map of LiDAR landscapes"></div>
+              <div class="lidar-landscape-gallery" aria-label="LiDAR landscape previews"></div>
               <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
-              <a class="lidar-research-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3420181/#fig02" target="_blank" rel="noopener">Caracol, Belize · published LiDAR ↗</a>
+              <a class="lidar-research-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3420181/#fig04" target="_blank" rel="noopener">Caracol, Belize · published LiDAR ↗</a>
             </div>
       </details>
       <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
@@ -28081,9 +28081,9 @@ function renderSiteCharacteristics(site) {
   }).join('');
 }
 const ATLAS_LIDAR_LANDSCAPES = [
-  { name: 'Stonehenge', sites: ['Stonehenge'] },
-  { name: 'Avebury landscape', sites: ['Avebury', 'Silbury Hill', 'West Kennet Long Barrow'] },
-  { name: 'Thornborough Henges', sites: ['Thornborough Henges'] }
+  { name: 'Stonehenge', image: 'stonehenge', feature: 'Barrows and earthworks', sites: ['Stonehenge'] },
+  { name: 'Avebury landscape', image: 'avebury', feature: 'Henge, mound and long barrow', sites: ['Avebury', 'Silbury Hill', 'West Kennet Long Barrow'] },
+  { name: 'Thornborough Henges', image: 'thornborough', feature: 'Three henges in a row', sites: ['Thornborough Henges'] }
 ];
 const ATLAS_LIDAR_SITES = ATLAS_LIDAR_LANDSCAPES.flatMap(landscape => landscape.sites);
 let atlasLidarScript;
@@ -29599,36 +29599,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     map.on('lidarsiteselected', event => showStops(event.site.n));
 
-    let overview;
-    directory.addEventListener('toggle', () => {
-      if (!directory.open) return;
-      if (!overview) {
-        const container = directory.querySelector('.lidar-overview-map');
-        overview = L.map(container, {
-          zoomControl: false, scrollWheelZoom: false, dragging: false,
-          doubleClickZoom: false, touchZoom: false, boxZoom: false, keyboard: false
-        });
-        L.tileLayer('https://basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {
-          attribution: '© <a href="https://www.openstreetmap.org/copyright">OSM</a> © <a href="https://carto.com/attributions">CARTO</a>'
-        }).addTo(overview);
-        const points = [];
-        for (const landscape of ATLAS_LIDAR_LANDSCAPES) {
-          const site = SITES.find(candidate => candidate.n === landscape.sites[0]);
-          if (!site) continue;
-          points.push([site.lat, site.lng]);
-          const link = lidarDirectoryLink(site.n, landscape.name);
-          link.className = 'lidar-overview-pin';
-          // Offset the two neighbors so their labels can be picked independently.
-          link.classList.add('lidar-overview-pin-' + points.length);
-          L.marker([site.lat, site.lng], {
-            keyboard: false, interactive: false,
-            icon: L.divIcon({ html: link, className: 'lidar-overview-marker', iconSize: [0, 0] })
-          }).addTo(overview);
-        }
-        overview.fitBounds(points, { padding: [42, 30], animate: false });
-      }
-      overview.invalidateSize({ pan: false });
-    });
+    const gallery = directory.querySelector('.lidar-landscape-gallery');
+    for (const landscape of ATLAS_LIDAR_LANDSCAPES) {
+      const link = lidarDirectoryLink(landscape.sites[0], landscape.name);
+      link.className = 'lidar-landscape-card';
+      const image = document.createElement('img');
+      image.src = '/assets/lidar/' + landscape.image + '-hillshade.webp';
+      image.alt = '';
+      image.loading = 'lazy';
+      const caption = document.createElement('span');
+      const name = document.createElement('strong');
+      name.textContent = landscape.name;
+      const feature = document.createElement('small');
+      feature.textContent = landscape.feature;
+      caption.append(name, feature);
+      link.replaceChildren(image, caption);
+      gallery.append(link);
+    }
   }
   // Auto-update copyright year — fire-and-forget, never needs touching
   document.querySelectorAll('.year').forEach(el => { el.textContent = new Date().getFullYear(); });
