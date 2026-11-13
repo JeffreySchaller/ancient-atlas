@@ -38,7 +38,7 @@
         visible.find(candidate => L.latLngBounds(candidate.bounds).contains(center)) ?? visible[0];
       const active = document.body.classList.contains('lidar-pilot');
       destination = area && (area === preferred ? site : sites.find(candidate => coverageFor([candidate.lat, candidate.lng]) === area));
-      button.hidden = !active && !destination;
+      button.hidden = !destination;
       button.setAttribute('aria-expanded', String(active));
       button.setAttribute('aria-label', active ? 'Close LiDAR comparison' : 'LiDAR available here');
       if (!active && area && destination && !announced.has(area)) {
