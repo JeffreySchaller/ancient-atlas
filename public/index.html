@@ -25438,6 +25438,7 @@ function renderMarkers() {
     marker.on('add', () => {
       const glyph = marker.getElement()?.querySelector('.atlas-lidar-pin');
       if (!glyph) return;
+      marker.getElement().setAttribute('aria-label', site.n);
       glyph.setAttribute('aria-label', 'Show LiDAR at ' + site.n);
       L.DomEvent.disableClickPropagation(glyph);
       glyph.addEventListener('mouseenter', () => marker.closeTooltip());
