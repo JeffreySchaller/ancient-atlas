@@ -592,6 +592,10 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .lidar-directory[open] .atlas-explore-arrow{transform:rotate(90deg)}
 .lidar-directory ul{list-style:none;margin:0;padding:0 12px 8px 67px}
 .lidar-directory a{display:block;padding:8px 4px;color:#f1d68d}
+.lidar-directory .lidar-landscape-link{display:flex;gap:8px;align-items:baseline;justify-content:space-between;font-weight:650;text-decoration:none}
+.lidar-landscape-link small{flex-shrink:0;font-weight:400;color:var(--cloud);font-size:11px}
+.lidar-directory .lidar-landscape-stops{border-left:1px solid #776745;margin:0 0 6px 5px;padding:0 0 0 9px;font-size:13px}
+.lidar-landscape-stops a[aria-current="true"]{color:var(--ivory);font-weight:650}
 .atlas-field-visits{display:block;margin:6px 0 12px;color:#b8d6b2;font-size:13px}
 .atlas-lidar-pin{position:absolute;top:-11px;left:calc(100% + 3px);width:18px;height:18px;filter:drop-shadow(0 1px 2px #000b);pointer-events:none}
 
@@ -28028,7 +28032,11 @@ function renderSiteCharacteristics(site) {
     return f ? `<button class="atlas-feature-badge" onclick="jumpToSiteFilms(this)" title="Site feature · see the creators’ films"><img src="${compactFeatureGlyph(f)}" width="36" height="36" alt=""><span>${journeyEscape(f.label)}</span></button>` : '';
   }).join('');
 }
-const ATLAS_LIDAR_SITES = ['Stonehenge', 'Avebury', 'Silbury Hill', 'West Kennet Long Barrow'];
+const ATLAS_LIDAR_LANDSCAPES = [
+  { name: 'Stonehenge', sites: ['Stonehenge'] },
+  { name: 'Avebury landscape', sites: ['Avebury', 'Silbury Hill', 'West Kennet Long Barrow'] }
+];
+const ATLAS_LIDAR_SITES = ATLAS_LIDAR_LANDSCAPES.flatMap(landscape => landscape.sites);
 let atlasLidarScript;
 
 async function openAtlasLidar(name, trigger) {
@@ -29504,18 +29512,38 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   // After desktop init runs, evaluate mobile mode and render feed if needed
   updateMobileMode();
-  for (const list of document.querySelectorAll('.lidar-directory ul')) {
-    for (const name of ATLAS_LIDAR_SITES) {
+  function lidarDirectoryLink(name, label) {
+    const link = document.createElement('a');
+    link.href = '/?lidar=1&lidarSite=' + encodeURIComponent(name);
+    link.textContent = label;
+    link.dataset.lidarSite = name;
+    link.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      openAtlasLidar(name, link);
+    });
+    return link;
+  }
+  for (const list of document.querySelectorAll('.lidar-directory > ul')) {
+    for (const landscape of ATLAS_LIDAR_LANDSCAPES) {
       const item = document.createElement('li');
-      const link = document.createElement('a');
-      link.href = '/?lidar=1&lidarSite=' + encodeURIComponent(name);
-      link.textContent = name;
-      link.addEventListener('click', event => {
-        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-        event.preventDefault();
-        openAtlasLidar(name, link);
-      });
+      const link = lidarDirectoryLink(landscape.sites[0], landscape.name);
+      link.className = 'lidar-landscape-link';
+      const count = document.createElement('small');
+      count.textContent = landscape.sites.length === 1 ? '1 site' : landscape.sites.length + ' sites';
+      link.appendChild(count);
       item.appendChild(link);
+      if (landscape.sites.length > 1) {
+        const stops = document.createElement('ul');
+        stops.className = 'lidar-landscape-stops';
+        stops.setAttribute('aria-label', 'Sites in the ' + landscape.name);
+        for (const name of landscape.sites) {
+          const stop = document.createElement('li');
+          stop.appendChild(lidarDirectoryLink(name, name));
+          stops.appendChild(stop);
+        }
+        item.appendChild(stops);
+      }
       list.appendChild(item);
     }
   }

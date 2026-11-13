@@ -69,10 +69,13 @@
         status.textContent = 'Some LiDAR imagery couldn’t load.';
         status.hidden = false;
       }));
+      let activeArea;
       panel.querySelector('button').addEventListener('click', () => {
         imagery.remove();
         terrain.remove();
         panel.hidden = true;
+        activeArea = undefined;
+        document.querySelectorAll('.lidar-directory [aria-current]').forEach(link => link.removeAttribute('aria-current'));
         document.body.classList.remove('lidar-pilot');
         const url = new window.URL(location.href);
         url.searchParams.delete('lidar');
@@ -86,13 +89,22 @@
         document.body.classList.add('lidar-pilot');
         panel.hidden = false;
         openSite(nextSite);
+        document.querySelectorAll('.lidar-directory a[data-lidar-site]').forEach(link => {
+          const current = link.dataset.lidarSite === nextSite.n &&
+            (!link.classList.contains('lidar-landscape-link') || !link.parentElement.querySelector('ul'));
+          if (current) link.setAttribute('aria-current', 'true');
+          else link.removeAttribute('aria-current');
+        });
+        const point = [nextSite.lat, nextSite.lng];
+        const area = areas.find(candidate => L.latLngBounds(candidate.bounds).contains(point));
+        if (area && activeArea === area) return;
+        activeArea = area;
         map.stop();
         setOpacity();
         imagery.addTo(map);
         terrain.addTo(map);
         map.invalidateSize({ pan: false });
-        const point = [nextSite.lat, nextSite.lng];
-        const coverage = areas.map(area => L.latLngBounds(area.bounds)).find(bounds => bounds.contains(point));
+        const coverage = area && L.latLngBounds(area.bounds);
         const center = coverage ? coverage.getCenter() : point;
         // Leave roughly a third of the limiting dimension for satellite context.
         const zoom = coverage ? map.getBoundsZoom(coverage, false, map.getSize().multiplyBy(0.35)) : 13;
