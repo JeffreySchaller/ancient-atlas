@@ -73,10 +73,25 @@
     imageryPane.style.zIndex = '380';
     const terrainPane = map.createPane('lidar-pilot-terrain');
     terrainPane.style.zIndex = '390';
-    const imagery = L.tileLayer(
-      'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-      { pane: 'lidar-pilot-imagery', attribution: imageryCredit, maxNativeZoom: 18, noWrap: true }
-    );
+    const imagery = L.layerGroup(areas.map(area => {
+      const bounds = L.latLngBounds(area.bounds);
+      const sw = map.options.crs.project(bounds.getSouthWest());
+      const ne = map.options.crs.project(bounds.getNorthEast());
+      const width = 1200;
+      const height = Math.round(width * (ne.y - sw.y) / (ne.x - sw.x));
+      const params = new URLSearchParams({
+        bbox: [sw.x, sw.y, ne.x, ne.y].join(','),
+        bboxSR: '3857',
+        imageSR: '3857',
+        size: [width, height].join(','),
+        format: 'jpg',
+        f: 'image'
+      });
+      return L.imageOverlay(
+        'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export?' + params,
+        bounds, { pane: 'lidar-pilot-imagery', attribution: imageryCredit, alt: 'Satellite imagery within the LiDAR survey' }
+      );
+    }));
     const terrain = L.layerGroup(areas.map(area => L.imageOverlay(
       '/assets/lidar/' + area.terrain, area.bounds,
       { pane: 'lidar-pilot-terrain', attribution: terrainCredit, alt: 'Bare-earth LiDAR hillshade' }

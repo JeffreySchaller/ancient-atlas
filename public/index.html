@@ -382,14 +382,14 @@ body.mobile #cinema-exit,body.present #cinema-exit{display:none}
   .wc-slide,.wc-arrow-g{opacity:1;transform:none}
   #welcome,.wc-card{transition:none}
 }
-#lidar-map-button{position:absolute;top:calc(50% - var(--lidar-rail-half, 140px) - 46px);right:14px;z-index:616;display:flex;align-items:center;gap:6px;padding:6px 9px;border:1px solid #e9d59b70;border-radius:12px;background:#202622e8;color:#fff1c9;box-shadow:0 3px 12px #0006;cursor:pointer;font:600 13px/1.2 var(--font-sans,system-ui);backdrop-filter:blur(12px)}
+#lidar-map-button{position:absolute;top:calc(50% - var(--lidar-rail-half, 140px) - 46px);right:37px;transform:translateX(50%);z-index:616;display:flex;align-items:center;gap:6px;padding:6px 9px;border:1px solid #e9d59b70;border-radius:12px;background:#202622e8;color:#fff1c9;box-shadow:0 3px 12px #0006;cursor:pointer;font:600 13px/1.2 var(--font-sans,system-ui);backdrop-filter:blur(12px)}
 #lidar-map-button[hidden]{display:none}
 #lidar-map-button:hover,#lidar-map-button[aria-expanded=true]{background:#414a36}
-body.detail-open:not(.lidar-pilot) #lidar-map-button{right:calc(var(--lidar-detail-width,420px) + 30px)}
+body.detail-open:not(.lidar-pilot) #lidar-map-button{right:calc(var(--lidar-detail-width,420px) + 53px)}
 #lidar-map-button.lidar-available-cue{animation:lidar-available 1.2s ease-out 1}
 @keyframes lidar-available{0%{box-shadow:0 0 0 0 #ffe0a000} 30%{box-shadow:0 0 0 4px #ffe0a0aa} 100%{box-shadow:0 0 0 12px #ffe0a000}}
 @media(prefers-reduced-motion:reduce){#lidar-map-button.lidar-available-cue{animation:none}}
-body.mobile #lidar-map-button{top:132px;left:10px;right:auto;min-height:44px}
+body.mobile #lidar-map-button{top:132px;left:10px;right:auto;transform:none;min-height:44px}
 body.mobile #lidar-map-button[aria-expanded=false]:not([hidden])::after{content:" available"}
 body.present #lidar-map-button,body.grid-mode #lidar-map-button{display:none}
 #depth-rail{position:absolute;right:22px;top:50%;z-index:615;
