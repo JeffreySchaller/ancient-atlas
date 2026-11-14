@@ -630,6 +630,7 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .lidar-landscape-stops a{display:block;padding:6px 4px;color:#f1d68d}
 .lidar-landscape-stops a[aria-current="true"]{color:var(--ivory);font-weight:650}
 .lidar-world-map{height:162px;background:#242b30;border-radius:8px;overflow:hidden}
+.lidar-world-label{position:absolute;z-index:800;max-width:calc(100% - 16px);box-sizing:border-box;padding:5px 8px;border:1px solid #75674a;border-radius:6px;background:#24241d;color:#fff2ca;font:12px/1.3 system-ui;overflow-wrap:anywhere;text-align:center;pointer-events:none}
 .lidar-world-map .leaflet-control-attribution{font-size:9px!important}
 .lidar-world-pin{display:grid;place-items:center;width:28px;height:28px;padding:0;background:#29261e;border:1px solid #e4c476;border-radius:50%;color:#fff2ca;font:bold 12px/1 system-ui;cursor:pointer;text-decoration:none}
 .lidar-world-pin:hover,.lidar-world-pin:focus-visible{background:#5b4b2c;color:#fff}
@@ -29697,7 +29698,8 @@ document.addEventListener('DOMContentLoaded', () => {
         world.invalidateSize({ pan: false });
         return;
       }
-      world = L.map(directory.querySelector('.lidar-world-map'), {
+      const inset = directory.querySelector('.lidar-world-map');
+      world = L.map(inset, {
         zoomControl: false, zoomSnap: 0, minZoom: -1, maxZoom: 7,
         scrollWheelZoom: false, dragging: false, doubleClickZoom: false,
         touchZoom: false, boxZoom: false, keyboard: false
@@ -29714,14 +29716,51 @@ document.addEventListener('DOMContentLoaded', () => {
         }).addTo(world))
         .catch(error => console.warn(error));
 
+      const hoverLabel = document.createElement('div');
+      hoverLabel.className = 'lidar-world-label';
+      hoverLabel.hidden = true;
+      hoverLabel.setAttribute('aria-hidden', 'true');
+      inset.append(hoverLabel);
+
       function pin(point, element, label, text) {
         element.className = 'lidar-world-pin';
         element.textContent = text;
         element.setAttribute('aria-label', label);
-        return L.marker(point, {
+        const marker = L.marker(point, {
           keyboard: false, interactive: true,
           icon: L.divIcon({ html: element, className: '', iconSize: [28, 28] })
-        }).bindTooltip(label, { direction: 'bottom', offset: [0, 14] });
+        });
+
+        function showLabel() {
+          hoverLabel.textContent = label;
+          hoverLabel.hidden = false;
+          const pinRect = element.getBoundingClientRect();
+          const bounds = inset.getBoundingClientRect();
+          const left = pinRect.left - bounds.left + (pinRect.width - hoverLabel.offsetWidth) / 2;
+          const below = pinRect.bottom - bounds.top + 6;
+          const above = pinRect.top - bounds.top - hoverLabel.offsetHeight - 6;
+          const fitsBelow = below + hoverLabel.offsetHeight <= inset.clientHeight - 20;
+          hoverLabel.style.left = Math.max(8, Math.min(left, inset.clientWidth - hoverLabel.offsetWidth - 8)) + 'px';
+          hoverLabel.style.top = Math.max(8, fitsBelow ? below : above) + 'px';
+        }
+
+        function hideLabel() {
+          if (hoverLabel.textContent === label) hoverLabel.hidden = true;
+        }
+
+        element.addEventListener('pointerenter', showLabel);
+        element.addEventListener('pointerleave', () => {
+          if (!element.matches(':focus-visible')) hideLabel();
+        });
+        element.addEventListener('focus', () => {
+          if (element.matches(':focus-visible')) showLabel();
+        });
+        element.addEventListener('blur', hideLabel);
+        marker.on('remove', hideLabel);
+        world.on('resize', () => {
+          if (!hoverLabel.hidden && hoverLabel.textContent === label) showLabel();
+        });
+        return marker;
       }
 
       const england = document.createElement('button');
@@ -29732,7 +29771,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const overview = L.layerGroup([englandPin, ...standalone.map(landscape => {
         const site = SITES.find(candidate => candidate.n === landscape.sites[0]);
         const label = landscape.name + ' · ' + landscape.region;
-        return pin([site.lat, site.lng], lidarDirectoryLink(site.n, label), label, '•');
+        return pin([site.lat, site.lng], lidarDirectoryLink(site.n, label), label, '1');
       })]);
       const landscapes = L.layerGroup(regionalLandscapes.map(landscape => {
         const site = SITES.find(candidate => candidate.n === landscape.sites[0]);
