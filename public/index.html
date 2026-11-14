@@ -599,12 +599,43 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .atlas-explore-row small{margin-top:3px;color:var(--cloud);font-size:12px;line-height:1.35}
 .atlas-explore-arrow{color:var(--champagne)}
 .lidar-directory[open] .atlas-explore-arrow{transform:rotate(90deg)}
-.lidar-directory ul{list-style:none;margin:0;padding:0 12px 8px 67px}
-.lidar-directory a{display:block;padding:8px 4px;color:#f1d68d}
-.lidar-directory .lidar-landscape-link{display:flex;gap:8px;align-items:baseline;justify-content:space-between;font-weight:650;text-decoration:none}
-.lidar-landscape-link small{flex-shrink:0;font-weight:400;color:var(--cloud);font-size:11px}
-.lidar-directory .lidar-landscape-stops{border-left:1px solid #776745;margin:0 0 6px 5px;padding:0 0 0 9px;font-size:13px}
+.lidar-directory-content{padding:0 10px 9px}
+.lidar-landscape-gallery{display:grid;grid-auto-flow:column;grid-auto-columns:100%;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 8px}
+.lidar-landscape-gallery::-webkit-scrollbar{display:none}
+.lidar-gallery-controls{display:flex;justify-content:center;align-items:center;gap:8px;margin:0 0 6px;color:#f1d68d}
+.lidar-gallery-controls[hidden]{display:none}
+.lidar-gallery-controls button{display:grid;place-items:center;min-height:40px;padding:0;border:0;color:inherit;background:transparent;cursor:pointer}
+.lidar-gallery-controls button:focus-visible{outline:2px solid #f1d68d;outline-offset:-2px;border-radius:999px}
+.lidar-gallery-pages,.lidar-gallery-controls .lidar-gallery-play{background:#27271f;border:1px solid #534a36;border-radius:999px}
+.lidar-gallery-pages{display:flex;align-items:center;padding:0 7px}
+.lidar-gallery-page{width:28px;transition:width 180ms ease}
+.lidar-gallery-page[aria-current]{width:47px}
+.lidar-gallery-page span{width:7px;height:6px;border-radius:99px;background:#a09880;overflow:hidden}
+.lidar-gallery-page[aria-current] span{width:33px;background:#786b4e}
+.lidar-gallery-page[aria-current] span::after{content:"";display:block;width:100%;height:100%;background:#f1d68d}
+.lidar-gallery-controls.is-timed .lidar-gallery-page[aria-current] span::after{transform-origin:left;animation:lidar-gallery-progress 7s linear both}
+.lidar-gallery-controls.is-held .lidar-gallery-page[aria-current] span::after{animation-play-state:paused}
+.lidar-gallery-controls .lidar-gallery-play{width:42px;height:42px}
+.lidar-gallery-play span{width:11px;height:13px;border-inline:3px solid currentColor}
+.lidar-gallery-play[aria-label="Play landscape previews"] span{border:0;background:currentColor;clip-path:polygon(0 0,100% 50%,0 100%)}
+@keyframes lidar-gallery-progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){.lidar-gallery-page{transition:none}}
+.lidar-landscape-card{position:relative;display:grid;align-content:end;min-height:112px;overflow:hidden;border:1px solid #75674a;border-radius:8px;background:#252822;color:#fff2ca;text-decoration:none;scroll-snap-align:start}
+.lidar-landscape-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:sepia(.13)}
+.lidar-landscape-card span{position:relative;display:grid;gap:2px;padding:15px 8px 7px;background:linear-gradient(transparent,#151719 45%)}
+.lidar-landscape-card small{color:#ece1c6;font-size:11px}
+.lidar-landscape-card:hover,.lidar-landscape-card:focus-visible{border-color:#f1d68d;color:#fff}
+.lidar-landscape-card:focus-visible{outline-offset:-3px}
+.lidar-landscape-stops{list-style:none;margin:7px 0 0;padding:4px 8px;border-left:1px solid #776745;font-size:13px}
+.lidar-landscape-stops a{display:block;padding:6px 4px;color:#f1d68d}
 .lidar-landscape-stops a[aria-current="true"]{color:var(--ivory);font-weight:650}
+.lidar-world-map{height:162px;background:#242b30;border-radius:8px;overflow:hidden}
+.lidar-world-label{position:absolute;z-index:800;max-width:calc(100% - 16px);box-sizing:border-box;padding:5px 8px;border:1px solid #75674a;border-radius:6px;background:#24241d;color:#fff2ca;font:12px/1.3 system-ui;overflow-wrap:anywhere;text-align:center;pointer-events:none}
+.lidar-world-map .leaflet-control-attribution{font-size:9px!important}
+.lidar-world-pin{display:grid;place-items:center;width:28px;height:28px;padding:0;background:#29261e;border:1px solid #e4c476;border-radius:50%;color:#fff2ca;font:bold 12px/1 system-ui;cursor:pointer;text-decoration:none}
+.lidar-world-pin:hover,.lidar-world-pin:focus-visible{background:#5b4b2c;color:#fff}
+.lidar-world-reset{padding:7px 0;background:none;border:0;color:#f1d68d;cursor:pointer;font:inherit}
+.lidar-landscape-gallery[hidden],.lidar-world-reset[hidden]{display:none}
 .atlas-field-visits{display:block;margin:6px 0 12px;color:#b8d6b2;font-size:13px}
 .atlas-lidar-pin{position:absolute;top:-15px;left:calc(100% + 1px);display:grid;place-items:center;width:26px;height:26px;padding:0;border:0;border-radius:5px;background:transparent;cursor:pointer;filter:drop-shadow(0 1px 2px #000b)}
 .atlas-lidar-pin img{width:18px;height:18px;pointer-events:none}
@@ -2235,8 +2266,17 @@ body.present #broadcast-controls{
         <h2>Explore</h2>
         <div class="atlas-explore-list">
           <details class="lidar-directory">
-            <summary class="atlas-explore-row"><img src="/assets/lidar/lidar-glyph.svg" width="44" height="44" alt=""><span><strong>Explore LiDAR sites</strong><small>Reveal earthworks beneath the vegetation.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
-            <ul></ul>
+            <summary class="atlas-explore-row"><img src="/assets/lidar/lidar-glyph.svg" width="44" height="44" alt=""><span><strong>Explore LiDAR sites</strong><small>See ancient earthworks hidden by vegetation.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
+            <div class="lidar-directory-content">
+              <div class="lidar-world-map" aria-label="World map of LiDAR landscapes"></div>
+              <button type="button" class="lidar-world-reset" hidden>← World map</button>
+              <div class="lidar-landscape-gallery" aria-label="LiDAR landscape previews" hidden></div>
+              <div class="lidar-gallery-controls" hidden>
+                <div class="lidar-gallery-pages" role="group" aria-label="Choose a landscape preview"></div>
+                <button type="button" class="lidar-gallery-play" aria-label="Pause landscape previews"><span aria-hidden="true"></span></button>
+              </div>
+              <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
+            </div>
           </details>
           <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
           <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
@@ -2444,8 +2484,17 @@ body.present #broadcast-controls{
     <h2>Explore</h2>
     <div class="atlas-explore-list">
       <details class="lidar-directory">
-        <summary class="atlas-explore-row"><img src="/assets/lidar/lidar-glyph.svg" width="44" height="44" alt=""><span><strong>Explore LiDAR sites</strong><small>Reveal earthworks beneath the vegetation.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
-        <ul></ul>
+        <summary class="atlas-explore-row"><img src="/assets/lidar/lidar-glyph.svg" width="44" height="44" alt=""><span><strong>Explore LiDAR sites</strong><small>See ancient earthworks hidden by vegetation.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
+        <div class="lidar-directory-content">
+              <div class="lidar-world-map" aria-label="World map of LiDAR landscapes"></div>
+              <button type="button" class="lidar-world-reset" hidden>← World map</button>
+              <div class="lidar-landscape-gallery" aria-label="LiDAR landscape previews" hidden></div>
+              <div class="lidar-gallery-controls" hidden>
+                <div class="lidar-gallery-pages" role="group" aria-label="Choose a landscape preview"></div>
+                <button type="button" class="lidar-gallery-play" aria-label="Pause landscape previews"><span aria-hidden="true"></span></button>
+              </div>
+              <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
+            </div>
       </details>
       <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
       <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
@@ -2528,6 +2577,17 @@ body.present #broadcast-controls{
 // SITE DATABASE — 180+ verified ancient & megalithic sites
 // ============================================================
 const SITES = [
+  {
+    "n": "Acre Ring Geoglyph",
+    "lat": -9.85486,
+    "lng": -67.27150,
+    "cat": "geoglyph",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": ["geometry"],
+    "desc": "An Indigenous earthwork in Acre, Brazil. The airborne LiDAR survey shows a circular ditch and faint lines leading outward."
+  },
   {
     "n": "Derinkuyu Underground City",
     "lat": 38.3746,
@@ -22912,6 +22972,7 @@ function yearToPercent(y){
 // + free-form tags (synonyms, periods, builders, materials)
 // ============================================================
 const SITE_COUNTRIES = {
+  "Acre Ring Geoglyph": "Brazil",
   "Abba Yohani Rock-Cut Church": "Ethiopia",
   "Abreha we Atsbeha": "Ethiopia",
   "Abu Ghorab": "Egypt",
@@ -26891,6 +26952,7 @@ function renderExploreNext(site) {
 }
 
 const SITE_INTROS = {
+  "Acre Ring Geoglyph": "Slide toward LiDAR to trace the circular ditch and the faint lines leading away from it.",
   "Derinkuyu Underground City": "Massive underground city extending 60m deep with 18 levels.",
   "Kaymakli Underground City": "Connected to Derinkuyu by an 8km tunnel.",
   "Özkonak Underground City": "Discovered in 1972 when a farmer noticed water disappearing into the ground.",
@@ -28067,8 +28129,11 @@ function renderSiteCharacteristics(site) {
   }).join('');
 }
 const ATLAS_LIDAR_LANDSCAPES = [
-  { name: 'Stonehenge', sites: ['Stonehenge'] },
-  { name: 'Avebury landscape', sites: ['Avebury', 'Silbury Hill', 'West Kennet Long Barrow'] }
+  { name: 'Stonehenge', image: 'stonehenge', feature: 'Spot the rows of burial mounds', sites: ['Stonehenge'] },
+  { name: 'Avebury landscape', image: 'avebury', feature: 'Trace the henge ditch around a village', sites: ['Avebury', 'Silbury Hill', 'West Kennet Long Barrow'] },
+  { name: 'Thornborough Henges', image: 'thornborough', feature: 'Find the ring beneath the trees', sites: ['Thornborough Henges'] },
+  { name: 'Chaco Canyon', region: 'New Mexico', sites: ['Chaco Canyon (Chaco Culture)'] },
+  { name: 'Acre Ring Geoglyph', region: 'Brazilian Amazon', sites: ['Acre Ring Geoglyph'] }
 ];
 const ATLAS_LIDAR_SITES = ATLAS_LIDAR_LANDSCAPES.flatMap(landscape => landscape.sites);
 let atlasLidarScript;
@@ -29566,27 +29631,219 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     return link;
   }
-  for (const list of document.querySelectorAll('.lidar-directory > ul')) {
-    for (const landscape of ATLAS_LIDAR_LANDSCAPES) {
-      const item = document.createElement('li');
-      const link = lidarDirectoryLink(landscape.sites[0], landscape.name);
-      link.className = 'lidar-landscape-link';
-      const count = document.createElement('small');
-      count.textContent = landscape.sites.length === 1 ? '1 site' : landscape.sites.length + ' sites';
-      link.appendChild(count);
-      item.appendChild(link);
-      if (landscape.sites.length > 1) {
-        const stops = document.createElement('ul');
-        stops.className = 'lidar-landscape-stops';
-        stops.setAttribute('aria-label', 'Sites in the ' + landscape.name);
-        for (const name of landscape.sites) {
-          const stop = document.createElement('li');
-          stop.appendChild(lidarDirectoryLink(name, name));
-          stops.appendChild(stop);
+  for (const directory of document.querySelectorAll('.lidar-directory')) {
+    const stops = directory.querySelector('.lidar-landscape-stops');
+    function showStops(name) {
+      const landscape = ATLAS_LIDAR_LANDSCAPES.find(entry => entry.sites.includes(name));
+      stops.replaceChildren();
+      if (landscape?.sites.length > 1) {
+        for (const site of landscape.sites) {
+          const item = document.createElement('li');
+          const link = lidarDirectoryLink(site, site);
+          if (site === name) link.setAttribute('aria-current', 'true');
+          item.append(link);
+          stops.append(item);
         }
-        item.appendChild(stops);
       }
-      list.appendChild(item);
+      stops.hidden = !stops.childElementCount;
+    }
+    map.on('lidarsiteselected', event => showStops(event.site.n));
+
+    const gallery = directory.querySelector('.lidar-landscape-gallery');
+    const reset = directory.querySelector('.lidar-world-reset');
+    const controls = directory.querySelector('.lidar-gallery-controls');
+    const pages = controls.querySelector('.lidar-gallery-pages');
+    const play = controls.querySelector('.lidar-gallery-play');
+    const motion = matchMedia('(prefers-reduced-motion: reduce)');
+    const cards = gallery.children;
+    let playing = !motion.matches;
+    let current = 0;
+
+    function syncPlayback() {
+      controls.classList.toggle('is-timed', directory.open && !controls.hidden);
+      controls.classList.toggle('is-held', !playing || document.hidden || gallery.matches(':hover, :focus-within'));
+      play.setAttribute('aria-label', playing ? 'Pause landscape previews' : 'Play landscape previews');
+    }
+
+    function selectPreview(index) {
+      pages.children[current].removeAttribute('aria-current');
+      current = index;
+      pages.children[current].setAttribute('aria-current', 'true');
+    }
+
+    function moveCarousel(index) {
+      const left = cards[index].offsetLeft - cards[0].offsetLeft;
+      gallery.scrollTo({ left, behavior: 'instant' });
+      selectPreview(index);
+    }
+
+    gallery.addEventListener('scroll', () => {
+      if (gallery.hidden) return;
+      const start = cards[0].offsetLeft;
+      const closest = Array.from(cards).reduce((best, card, index) =>
+        Math.abs(card.offsetLeft - start - gallery.scrollLeft) <
+        Math.abs(cards[best].offsetLeft - start - gallery.scrollLeft) ? index : best, 0);
+      if (closest !== current) selectPreview(closest);
+    }, { passive: true });
+    gallery.addEventListener('pointerenter', syncPlayback);
+    gallery.addEventListener('pointerleave', syncPlayback);
+    gallery.addEventListener('focusin', syncPlayback);
+    gallery.addEventListener('focusout', () => requestAnimationFrame(syncPlayback));
+    document.addEventListener('visibilitychange', syncPlayback);
+    motion.addEventListener('change', () => {
+      playing = !motion.matches;
+      syncPlayback();
+    });
+    play.addEventListener('click', () => {
+      playing = !playing;
+      syncPlayback();
+    });
+    controls.addEventListener('animationend', event => {
+      if (event.animationName === 'lidar-gallery-progress' && playing && directory.open && !controls.hidden) {
+        moveCarousel((current + 1) % cards.length);
+      }
+    });
+    syncPlayback();
+    let world;
+    directory.addEventListener('toggle', () => {
+      syncPlayback();
+      if (!directory.open) return;
+      if (world) {
+        world.invalidateSize({ pan: false });
+        return;
+      }
+      const inset = directory.querySelector('.lidar-world-map');
+      world = L.map(inset, {
+        zoomControl: false, zoomSnap: 0, minZoom: -1, maxZoom: 7,
+        scrollWheelZoom: false, dragging: false, doubleClickZoom: false,
+        touchZoom: false, boxZoom: false, keyboard: false
+      });
+      world.attributionControl.addAttribution('Natural Earth');
+      fetch('/assets/lidar/world-land.geojson')
+        .then(response => {
+          if (!response.ok) throw new Error('World outline unavailable');
+          return response.json();
+        })
+        .then(geometry => L.geoJSON(geometry, {
+          interactive: false,
+          style: { color: '#687c77', weight: 0.7, fillColor: '#43554d', fillOpacity: 1 }
+        }).addTo(world))
+        .catch(error => console.warn(error));
+
+      const hoverLabel = document.createElement('div');
+      hoverLabel.className = 'lidar-world-label';
+      hoverLabel.hidden = true;
+      hoverLabel.setAttribute('aria-hidden', 'true');
+      inset.append(hoverLabel);
+
+      function pin(point, element, label, text) {
+        element.className = 'lidar-world-pin';
+        element.textContent = text;
+        element.setAttribute('aria-label', label);
+        const marker = L.marker(point, {
+          keyboard: false, interactive: true,
+          icon: L.divIcon({ html: element, className: '', iconSize: [28, 28] })
+        });
+
+        function showLabel() {
+          hoverLabel.textContent = label;
+          hoverLabel.hidden = false;
+          const pinRect = element.getBoundingClientRect();
+          const bounds = inset.getBoundingClientRect();
+          const left = pinRect.left - bounds.left + (pinRect.width - hoverLabel.offsetWidth) / 2;
+          const below = pinRect.bottom - bounds.top + 6;
+          const above = pinRect.top - bounds.top - hoverLabel.offsetHeight - 6;
+          const fitsBelow = below + hoverLabel.offsetHeight <= inset.clientHeight - 20;
+          hoverLabel.style.left = Math.max(8, Math.min(left, inset.clientWidth - hoverLabel.offsetWidth - 8)) + 'px';
+          hoverLabel.style.top = Math.max(8, fitsBelow ? below : above) + 'px';
+        }
+
+        function hideLabel() {
+          if (hoverLabel.textContent === label) hoverLabel.hidden = true;
+        }
+
+        element.addEventListener('pointerenter', showLabel);
+        element.addEventListener('pointerleave', () => {
+          if (!element.matches(':focus-visible')) hideLabel();
+        });
+        element.addEventListener('focus', () => {
+          if (element.matches(':focus-visible')) showLabel();
+        });
+        element.addEventListener('blur', hideLabel);
+        marker.on('remove', hideLabel);
+        world.on('resize', () => {
+          if (!hoverLabel.hidden && hoverLabel.textContent === label) showLabel();
+        });
+        return marker;
+      }
+
+      const england = document.createElement('button');
+      england.type = 'button';
+      const englandPin = pin([52.8, -1.7], england, 'England · 3 LiDAR landscapes', '3');
+      const regionalLandscapes = ATLAS_LIDAR_LANDSCAPES.filter(landscape => !landscape.region);
+      const standalone = ATLAS_LIDAR_LANDSCAPES.filter(landscape => landscape.region);
+      const overview = L.layerGroup([englandPin, ...standalone.map(landscape => {
+        const site = SITES.find(candidate => candidate.n === landscape.sites[0]);
+        const label = landscape.name + ' · ' + landscape.region;
+        return pin([site.lat, site.lng], lidarDirectoryLink(site.n, label), label, '1');
+      })]);
+      const landscapes = L.layerGroup(regionalLandscapes.map(landscape => {
+        const site = SITES.find(candidate => candidate.n === landscape.sites[0]);
+        const link = lidarDirectoryLink(site.n, landscape.name);
+        const marker = pin([site.lat, site.lng], link, landscape.name, '•');
+        if (site.n === 'Stonehenge') marker.options.icon.options.iconAnchor = [-3, 9];
+        if (site.n === 'Avebury') marker.options.icon.options.iconAnchor = [31, 18];
+        return marker;
+      }));
+      function showWorld() {
+        landscapes.remove();
+        overview.addTo(world);
+        world.fitBounds([[-60, -179], [80, 179]], { padding: [3, 3], animate: false });
+        gallery.hidden = true;
+        controls.hidden = true;
+        syncPlayback();
+        reset.hidden = true;
+      }
+      england.addEventListener('click', () => {
+        overview.remove();
+        landscapes.addTo(world);
+        world.fitBounds([[50.95, -2.2], [54.45, -1.2]], { padding: [16, 16], animate: false });
+        gallery.hidden = false;
+        controls.hidden = false;
+        moveCarousel(0);
+        syncPlayback();
+        reset.hidden = false;
+        reset.focus({ preventScroll: true });
+      });
+      reset.addEventListener('click', () => {
+        showWorld();
+        england.focus({ preventScroll: true });
+      });
+      showWorld();
+    });
+    for (const landscape of ATLAS_LIDAR_LANDSCAPES.filter(entry => !entry.region)) {
+      const link = lidarDirectoryLink(landscape.sites[0], landscape.name);
+      link.className = 'lidar-landscape-card';
+      const image = document.createElement('img');
+      image.src = '/assets/lidar/' + landscape.image + '-preview.webp';
+      image.alt = '';
+      image.loading = 'lazy';
+      const caption = document.createElement('span');
+      const name = document.createElement('strong');
+      name.textContent = landscape.name;
+      const feature = document.createElement('small');
+      feature.textContent = landscape.feature;
+      caption.append(name, feature);
+      link.replaceChildren(image, caption);
+      const index = gallery.children.length;
+      gallery.append(link);
+      const page = document.createElement('button');
+      page.type = 'button';
+      page.className = 'lidar-gallery-page';
+      page.setAttribute('aria-label', 'Preview ' + landscape.name);
+      page.append(document.createElement('span'));
+      page.addEventListener('click', () => moveCarousel(index));
+      pages.append(page);
     }
   }
   // Auto-update copyright year — fire-and-forget, never needs touching

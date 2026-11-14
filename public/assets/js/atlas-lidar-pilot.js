@@ -9,6 +9,20 @@
     {
       bounds: [[51.153, -1.878], [51.213, -1.742]],
       terrain: 'stonehenge-hillshade.webp'
+    },
+    {
+      bounds: [[54.185, -1.587], [54.218, -1.530]],
+      terrain: 'thornborough-hillshade.webp'
+    },
+    {
+      bounds: [[36.049, -107.978], [36.066, -107.953]],
+      terrain: 'chaco-hillshade.webp',
+      credit: 'LiDAR DTM: <a href="https://www.usgs.gov/3d-elevation-program">USGS 3DEP</a>, 1 meter'
+    },
+    {
+      bounds: [[-9.8595, -67.2763], [-9.8502, -67.2667]],
+      terrain: 'acre-hillshade.webp',
+      credit: 'LiDAR: <a href="https://doi.org/10.5281/zenodo.7689909">INPE / EBA</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>), processed into hillshade'
     }
   ];
   const terrainCredit = 'LiDAR DTM © <a href="https://www.data.gov.uk/dataset/01b3ee39-da3f-47b6-83da-dc98e73a461f/lidar-composite-digital-terrain-model-dtm-1m">Environment Agency</a> copyright and/or database right 2022';
@@ -94,7 +108,7 @@
     }));
     const terrain = L.layerGroup(areas.map(area => L.imageOverlay(
       '/assets/lidar/' + area.terrain, area.bounds,
-      { pane: 'lidar-pilot-terrain', attribution: terrainCredit, alt: 'Bare-earth LiDAR hillshade' }
+      { pane: 'lidar-pilot-terrain', attribution: area.credit || terrainCredit, alt: 'Bare-earth LiDAR hillshade' }
     )));
 
     const control = L.control({ position: 'topright' });
@@ -134,7 +148,7 @@
         panel.hidden = true;
         panel.classList.remove("lidar-intro");
         activeArea = undefined;
-        document.querySelectorAll('.lidar-directory [aria-current]').forEach(link => link.removeAttribute('aria-current'));
+        document.querySelectorAll('.lidar-directory a[aria-current]').forEach(link => link.removeAttribute('aria-current'));
         document.body.classList.remove('lidar-pilot');
         const url = new window.URL(location.href);
         url.searchParams.delete('lidar');
@@ -157,12 +171,7 @@
           introduced = true;
         }
         openSite(nextSite);
-        document.querySelectorAll('.lidar-directory a[data-lidar-site]').forEach(link => {
-          const current = link.dataset.lidarSite === nextSite.n &&
-            (!link.classList.contains('lidar-landscape-link') || !link.parentElement.querySelector('ul'));
-          if (current) link.setAttribute('aria-current', 'true');
-          else link.removeAttribute('aria-current');
-        });
+        map.fire('lidarsiteselected', { site: nextSite });
         const point = [nextSite.lat, nextSite.lng];
         const area = coverageFor(point);
         if (area && activeArea === area) return;
