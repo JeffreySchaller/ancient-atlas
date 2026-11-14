@@ -2578,6 +2578,17 @@ body.present #broadcast-controls{
 // ============================================================
 const SITES = [
   {
+    "n": "Acre Ring Geoglyph",
+    "lat": -9.85486,
+    "lng": -67.27150,
+    "cat": "geoglyph",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": ["geometry"],
+    "desc": "An Indigenous earthwork in Acre, Brazil. The airborne LiDAR survey shows a circular ditch and faint lines leading outward."
+  },
+  {
     "n": "Derinkuyu Underground City",
     "lat": 38.3746,
     "lng": 34.734,
@@ -22961,6 +22972,7 @@ function yearToPercent(y){
 // + free-form tags (synonyms, periods, builders, materials)
 // ============================================================
 const SITE_COUNTRIES = {
+  "Acre Ring Geoglyph": "Brazil",
   "Abba Yohani Rock-Cut Church": "Ethiopia",
   "Abreha we Atsbeha": "Ethiopia",
   "Abu Ghorab": "Egypt",
@@ -26940,6 +26952,7 @@ function renderExploreNext(site) {
 }
 
 const SITE_INTROS = {
+  "Acre Ring Geoglyph": "Slide toward LiDAR to trace the circular ditch and the faint lines leading away from it.",
   "Derinkuyu Underground City": "Massive underground city extending 60m deep with 18 levels.",
   "Kaymakli Underground City": "Connected to Derinkuyu by an 8km tunnel.",
   "Özkonak Underground City": "Discovered in 1972 when a farmer noticed water disappearing into the ground.",
@@ -28119,7 +28132,8 @@ const ATLAS_LIDAR_LANDSCAPES = [
   { name: 'Stonehenge', image: 'stonehenge', feature: 'Spot the rows of burial mounds', sites: ['Stonehenge'] },
   { name: 'Avebury landscape', image: 'avebury', feature: 'Trace the henge ditch around a village', sites: ['Avebury', 'Silbury Hill', 'West Kennet Long Barrow'] },
   { name: 'Thornborough Henges', image: 'thornborough', feature: 'Find the ring beneath the trees', sites: ['Thornborough Henges'] },
-  { name: 'Chaco Canyon', region: 'New Mexico', sites: ['Chaco Canyon (Chaco Culture)'] }
+  { name: 'Chaco Canyon', region: 'New Mexico', sites: ['Chaco Canyon (Chaco Culture)'] },
+  { name: 'Acre Ring Geoglyph', region: 'Brazilian Amazon', sites: ['Acre Ring Geoglyph'] }
 ];
 const ATLAS_LIDAR_SITES = ATLAS_LIDAR_LANDSCAPES.flatMap(landscape => landscape.sites);
 let atlasLidarScript;

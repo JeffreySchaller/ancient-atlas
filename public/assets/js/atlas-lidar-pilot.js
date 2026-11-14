@@ -18,6 +18,11 @@
       bounds: [[36.049, -107.978], [36.066, -107.953]],
       terrain: 'chaco-hillshade.webp',
       credit: 'LiDAR DTM: <a href="https://www.usgs.gov/3d-elevation-program">USGS 3DEP</a>, 1 meter'
+    },
+    {
+      bounds: [[-9.8595, -67.2763], [-9.8502, -67.2667]],
+      terrain: 'acre-hillshade.webp',
+      credit: 'LiDAR: <a href="https://doi.org/10.5281/zenodo.7689909">INPE / EBA</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>), processed into hillshade'
     }
   ];
   const terrainCredit = 'LiDAR DTM © <a href="https://www.data.gov.uk/dataset/01b3ee39-da3f-47b6-83da-dc98e73a461f/lidar-composite-digital-terrain-model-dtm-1m">Environment Agency</a> copyright and/or database right 2022';
