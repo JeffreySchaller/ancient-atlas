@@ -2578,17 +2578,6 @@ body.present #broadcast-controls{
 // ============================================================
 const SITES = [
   {
-    "n": "Acre Ring Geoglyph",
-    "lat": -9.85486,
-    "lng": -67.27150,
-    "cat": "geoglyph",
-    "region": "South America",
-    "tier": 2,
-    "signal": "open",
-    "criteria": ["geometry"],
-    "desc": "An Indigenous earthwork in Acre, Brazil. The airborne LiDAR survey shows a circular ditch and faint lines leading outward."
-  },
-  {
     "n": "Derinkuyu Underground City",
     "lat": 38.3746,
     "lng": 34.734,
@@ -11634,6 +11623,82 @@ const SITES = [
     "region": "Asia",
     "tier": 3,
     "desc": "Location approximate. The pin follows a tourism listing for Yongning Mountain, not a verified entrance. Above the Luo River in Zhidan County, Shaanxi, this red-sandstone refuge has three connected levels of cliff rooms and narrow carved passages. Ale walks through door sockets, living chambers, stairs and drainage channels; some buildings and access routes have been rebuilt."
+  },
+  {
+    "n": "Choquechurco",
+    "lat": -13.4732,
+    "lng": -72.5396,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Hilltop Inca complex above Mollepata in the Cusco region, with terraces, stone enclosures and worked rock outcrops along an old Inca route. Carved steps and the relationship between masonry and exposed bedrock make it worth exploring closely. Aaron Hynes visits the ceremonial sector and a wall below the summit in his Megalithic Mystery walkthrough."
+  },
+  {
+    "n": "Muyuqhawa",
+    "lat": -14.78688,
+    "lng": -71.29594,
+    "cat": "settlement",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Fortified hilltop settlement near Espinar, also written Muyoqhawa or Molloqhawa. Successive defensive walls and trapezoidal entrances enclose circular and rectangular structures and funerary towers. Its mountain setting makes the relationship between fortification and terrain especially legible. Megalithic Mystery explores the gateways and interior, then shows the complex from the air."
+  },
+  {
+    "n": "Yaxunah",
+    "lat": 20.5416,
+    "lng": -88.66254,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Maya city east of the present-day village of Yaxunah in Yucatán. Monumental platforms, an acropolis and a ball court sit among woodland and cultivated land. Its long raised causeway to Cobá connects the site to a much wider political landscape. Megalithic Mystery walks the ruins in the first chapter of a four-site Yucatán film."
+  },
+  {
+    "n": "Kabah",
+    "lat": 20.247976,
+    "lng": -89.647521,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Puuc Maya city southeast of Uxmal, distinguished by the Codz Pop façade and its dense mosaic of carved stone masks. Multiroom palaces, vaulted interiors and carefully arranged plazas show the architectural ambition of the city during its Late Classic flourishing. The walkthrough follows the buildings and their sculptural details at ground level."
+  },
+  {
+    "n": "Sayil",
+    "lat": 20.178093,
+    "lng": -89.651912,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Puuc Maya city whose three-level Great Palace combines long colonnaded façades with finely cut stone decoration. Paths connect the palace with other architectural groups spread through the surrounding woodland. Megalithic Mystery’s visit places the monumental façade within that wider settlement."
+  },
+  {
+    "n": "Xlapak",
+    "lat": 20.174077,
+    "lng": -89.606149,
+    "cat": "settlement",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Small Puuc Maya settlement between Sayil and Labná, also spelled Xlapac. Its palace preserves elaborate stone mosaic decoration and masks associated with the rain deity Chaac. The community flourished around 750–950 CE, supported by the agricultural land in its small valley. The final chapter of Megalithic Mystery’s four-site film visits these surviving buildings."
+  },
+  {
+    "n": "Dzibilchaltún",
+    "lat": 21.090934,
+    "lng": -89.597261,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Long-lived Maya city north of Mérida, with plazas, raised causeways and the Temple of the Seven Dolls. The cenote Xlacah lies beside the monumental core, while a later open chapel records the site’s colonial history. Megalithic Mystery walks the central buildings and finishes at the temple, allowing the scale and layout to unfold on foot."
+  },
+  {
+    "n": "Acre Ring Geoglyph",
+    "lat": -9.85486,
+    "lng": -67.2715,
+    "cat": "geoglyph",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "An Indigenous earthwork in Acre, Brazil. The airborne LiDAR survey shows a circular ditch and faint lines leading outward."
   }
 ];
 
@@ -12443,6 +12508,13 @@ const CREATORS = {
     "handle": "@Qingyunji",
     "subs": "Chinese-language journeys through landscapes, heritage and local life.",
     "color": "#8FBAA5",
+    "tier": 3
+  },
+  "megalithicmystery": {
+    "name": "Megalithic Mystery",
+    "handle": "@megalithicmystery",
+    "subs": "Aaron Hynes · Peru and Mexico field walkthroughs",
+    "color": "#80B6A0",
     "tier": 3
   }
 };
@@ -15056,17 +15128,17 @@ const VIDEOS = {
   ],
   "Stonehenge": [
     {
-      "id": "YV785pzbE8E",
-      "title": "Sonic Temple in the Stonehenge Landscape | Durrington Shafts Mystery | Megalithomania Documentary",
-      "cr": "megalithomania",
-      "added": "2026-08-13"
-    },
-    {
       "id": "E8ADC7PwAZ8",
       "title": "He Found England's Most Impossible Ancient Site | Hugh Newman Vs Praveen Mohan",
       "cr": "praveenmohan",
       "added": "2026-06-09",
       "published": "2026-06-03"
+    },
+    {
+      "id": "YV785pzbE8E",
+      "title": "Sonic Temple in the Stonehenge Landscape | Durrington Shafts Mystery | Megalithomania Documentary",
+      "cr": "megalithomania",
+      "added": "2026-08-13"
     },
     {
       "id": "3BHEAy4_Zk0",
@@ -15659,6 +15731,14 @@ const VIDEOS = {
     }
   ],
   "Pikillaqta": [
+    {
+      "id": "j79nH5joF_4",
+      "title": "These stones don't match!! INEXPLICABLE NUBS and megaliths at Peru's Pikillaqta",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-09-15",
+      "t": 641
+    },
     {
       "id": "BUqidXgrLeU",
       "title": "The Strangest Structures of Ancient Peru",
@@ -16255,6 +16335,13 @@ const VIDEOS = {
       "cr": "brienf"
     },
     {
+      "id": "l5Ym2Xhl85Q",
+      "title": "Out of Place Tech at Tipon — The Inca Water System That Shouldn't Exist",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-09-19"
+    },
+    {
       "id": "N0IvaD4xnMk",
       "title": "The Megalithic Evidence They Don't Want You to See at Tipon",
       "cr": "earthexplorer",
@@ -16401,6 +16488,13 @@ const VIDEOS = {
       "id": "oHenvI1jTkE",
       "title": "Uxmal | The Pyramid of the Magician | The Maya, Dwarves, Serpents & Sorcery",
       "cr": "megalithomania"
+    },
+    {
+      "id": "sQCQqby8wIk",
+      "title": "Nobody Gets In After Dark. I Did.",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2026-04-30"
     }
   ],
   "Mitla": [
@@ -20789,6 +20883,13 @@ const VIDEOS = {
       "title": "Exploring Tambomachay: The Master Engineers of Ancient Peru",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "pZnXuaDlgeg",
+      "title": "The Megalithic Secret Inside Tambomachay — Cusco's Hidden Cave",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-11-11"
     }
   ],
   "Chinchero": [
@@ -20837,6 +20938,13 @@ const VIDEOS = {
       "title": "Other Worldly Inkilltambo",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "nsyE9P-DAAE",
+      "title": "There's NO WAY bronze chisels carved this",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-11-08"
     }
   ],
   "Unu Urqo": [
@@ -20861,6 +20969,13 @@ const VIDEOS = {
       "title": "Amaru Marca Wasi: The House of the Cave Snake",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "B1HOnxqImN4",
+      "title": "Laser-Cut Granite at the Moon Temple",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-10-03"
     }
   ],
   "Cusilluchayoc": [
@@ -20905,6 +21020,13 @@ const VIDEOS = {
       "title": "Cusco's Chincanas, Part 2: Zone X",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "bIH8zZXlSCc",
+      "title": "Zone X: The ruins without a name",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-10-21"
     }
   ],
   "Pnyx": [
@@ -22556,6 +22678,73 @@ const VIDEOS = {
       "added": "2026-11-06",
       "language": "Mandarin Chinese"
     }
+  ],
+  "Choquechurco": [
+    {
+      "id": "VwSpNmjL0qU",
+      "title": "I found MELTED quartz and bedrock on a peak in the Andes. Choquechurco, Peru",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-09-07"
+    }
+  ],
+  "Muyuqhawa": [
+    {
+      "id": "j-scw8Wg9YI",
+      "title": "EXCLUSIVE: I filmed these ruins for the first time ever - Muyoqhawa",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-10-07"
+    }
+  ],
+  "Yaxunah": [
+    {
+      "id": "2ukrxJGLVPE",
+      "title": "Nobody Talks About These 4 Maya Sites. Here's Why.",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2026-07-16",
+      "t": 100
+    }
+  ],
+  "Kabah": [
+    {
+      "id": "2ukrxJGLVPE",
+      "title": "Nobody Talks About These 4 Maya Sites. Here's Why.",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2026-07-16",
+      "t": 1183
+    }
+  ],
+  "Sayil": [
+    {
+      "id": "2ukrxJGLVPE",
+      "title": "Nobody Talks About These 4 Maya Sites. Here's Why.",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2026-07-16",
+      "t": 2163
+    }
+  ],
+  "Xlapak": [
+    {
+      "id": "2ukrxJGLVPE",
+      "title": "Nobody Talks About These 4 Maya Sites. Here's Why.",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2026-07-16",
+      "t": 2945
+    }
+  ],
+  "Dzibilchaltún": [
+    {
+      "id": "0fTp1N8sm5M",
+      "title": "The Door That Shouldn't Exist at Mexico's Oldest Maya Site",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2026-04-26"
+    }
   ]
 };
 
@@ -22953,7 +23142,14 @@ const SITE_YEARS = {
   "Orca do Pinhal dos Amiais": -3400,
   "Anta da Arquinha da Moura": -3500,
   "Anta da Cunha Baixa": -3000,
-  "Orca dos Padrões": -3000
+  "Orca dos Padrões": -3000,
+  "Choquechurco": 1450,
+  "Muyuqhawa": 1400,
+  "Yaxunah": 800,
+  "Kabah": 800,
+  "Sayil": 850,
+  "Xlapak": 850,
+  "Dzibilchaltún": 700
 };
 
 function formatYear(y){
@@ -22972,7 +23168,6 @@ function yearToPercent(y){
 // + free-form tags (synonyms, periods, builders, materials)
 // ============================================================
 const SITE_COUNTRIES = {
-  "Acre Ring Geoglyph": "Brazil",
   "Abba Yohani Rock-Cut Church": "Ethiopia",
   "Abreha we Atsbeha": "Ethiopia",
   "Abu Ghorab": "Egypt",
@@ -23672,7 +23867,15 @@ const SITE_COUNTRIES = {
   "Jianmen Pass": "China",
   "Maukallacta (Paccaritambo)": "Peru",
   "Caiazzo Polygonal Walls (Caiatia)": "Italy",
-  "Yongning Mountain Cliff Fortress (approximate)": "China"
+  "Yongning Mountain Cliff Fortress (approximate)": "China",
+  "Choquechurco": "Peru",
+  "Muyuqhawa": "Peru",
+  "Yaxunah": "Mexico",
+  "Kabah": "Mexico",
+  "Sayil": "Mexico",
+  "Xlapak": "Mexico",
+  "Dzibilchaltún": "Mexico",
+  "Acre Ring Geoglyph": "Brazil"
 };
 
 const SITE_CULTURES = {
@@ -23939,7 +24142,14 @@ const SITE_CULTURES = {
   "Rong County Cliff Houses (approximate)": "Not established",
   "Sichuan Stone-Door Palace (unlocated)": "Not established",
   "Jianmen Pass": "Chinese",
-  "Maukallacta (Paccaritambo)": "Inca"
+  "Maukallacta (Paccaritambo)": "Inca",
+  "Choquechurco": "Inca",
+  "Muyuqhawa": "K’ana / Inca",
+  "Yaxunah": "Maya",
+  "Kabah": "Maya (Puuc)",
+  "Sayil": "Maya (Puuc)",
+  "Xlapak": "Maya (Puuc)",
+  "Dzibilchaltún": "Maya"
 };
 
 // Free-form tags for synonym/concept search (Bronze Age, sacred geometry, etc.)
@@ -24039,7 +24249,14 @@ const SITE_TAGS = {
   "Rong County Cliff Houses (approximate)": "china sichuan rong county cliff houses refuge approximate location",
   "Sichuan Stone-Door Palace (unlocated)": "china sichuan stone door palace approximate location unlocated",
   "Jianmen Pass": "china sichuan jianmen pass jiange fortification shu road",
-  "Maukallacta (Paccaritambo)": "Maukallacta Mawk’allaqta Paccaritambo Paruro water channels trapezoidal niches"
+  "Maukallacta (Paccaritambo)": "Maukallacta Mawk’allaqta Paccaritambo Paruro water channels trapezoidal niches",
+  "Choquechurco": "Choquechurco Peru Inca archaeology Megalithic Mystery Aaron Hynes",
+  "Muyuqhawa": "Muyuqhawa Peru K’ana / Inca archaeology Megalithic Mystery Aaron Hynes",
+  "Yaxunah": "Yaxunah Mexico Maya archaeology Megalithic Mystery Aaron Hynes",
+  "Kabah": "Kabah Mexico Maya (Puuc) archaeology Megalithic Mystery Aaron Hynes",
+  "Sayil": "Sayil Mexico Maya (Puuc) archaeology Megalithic Mystery Aaron Hynes",
+  "Xlapak": "Xlapak Mexico Maya (Puuc) archaeology Megalithic Mystery Aaron Hynes",
+  "Dzibilchaltún": "Dzibilchaltún Mexico Maya archaeology Megalithic Mystery Aaron Hynes"
 };
 
 // Synonym expansion — common search terms that should pull broader sets
@@ -24085,7 +24302,12 @@ const SEARCH_ALIASES = {
   "largo fossi": "caiazzo caiatia",
   "永宁山": "Yongning Mountain",
   "永寧山": "Yongning Mountain",
-  "yongning ancient village": "Yongning Mountain"
+  "yongning ancient village": "Yongning Mountain",
+  "muyoqhawa": "Muyuqhawa",
+  "mullu qawa": "Muyuqhawa",
+  "molloqhawa": "Muyuqhawa",
+  "xlapac": "Xlapak",
+  "yaxuna": "Yaxunah"
 };
 
 // ============================================================
@@ -26952,7 +27174,6 @@ function renderExploreNext(site) {
 }
 
 const SITE_INTROS = {
-  "Acre Ring Geoglyph": "Slide toward LiDAR to trace the circular ditch and the faint lines leading away from it.",
   "Derinkuyu Underground City": "Massive underground city extending 60m deep with 18 levels.",
   "Kaymakli Underground City": "Connected to Derinkuyu by an 8km tunnel.",
   "Özkonak Underground City": "Discovered in 1972 when a farmer noticed water disappearing into the ground.",
@@ -27648,7 +27869,8 @@ const SITE_INTROS = {
   "Oriu di i Canni": "A pointed granite shelter with a fitted stone façade, door and window.",
   "Maukallacta (Paccaritambo)": "Look closely at trapezoidal niches, changing masonry and water channels in this complex south of Cusco.",
   "Caiazzo Polygonal Walls (Caiatia)": "Look at the raised stone faces and dressed edges beneath the later buildings.",
-  "Yongning Mountain Cliff Fortress (approximate)": "Step inside a cliff fortress: connected rooms, carved stairs and rainwater channels above the Luo River."
+  "Yongning Mountain Cliff Fortress (approximate)": "Step inside a cliff fortress: connected rooms, carved stairs and rainwater channels above the Luo River.",
+  "Acre Ring Geoglyph": "Slide toward LiDAR to trace the circular ditch and the faint lines leading away from it."
 };
 const SITE_CHARACTER_ICONS = {
   "polygonal": {

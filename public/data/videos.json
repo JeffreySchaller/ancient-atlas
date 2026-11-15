@@ -866,17 +866,17 @@
   ],
   "Stonehenge": [
     {
-      "id": "YV785pzbE8E",
-      "title": "Sonic Temple in the Stonehenge Landscape | Durrington Shafts Mystery | Megalithomania Documentary",
-      "cr": "megalithomania",
-      "added": "2026-08-13"
-    },
-    {
       "id": "E8ADC7PwAZ8",
       "title": "He Found England's Most Impossible Ancient Site | Hugh Newman Vs Praveen Mohan",
       "cr": "praveenmohan",
       "added": "2026-06-09",
       "published": "2026-06-03"
+    },
+    {
+      "id": "YV785pzbE8E",
+      "title": "Sonic Temple in the Stonehenge Landscape | Durrington Shafts Mystery | Megalithomania Documentary",
+      "cr": "megalithomania",
+      "added": "2026-08-13"
     },
     {
       "id": "3BHEAy4_Zk0",
@@ -1469,6 +1469,14 @@
     }
   ],
   "Pikillaqta": [
+    {
+      "id": "j79nH5joF_4",
+      "title": "These stones don't match!! INEXPLICABLE NUBS and megaliths at Peru's Pikillaqta",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-09-15",
+      "t": 641
+    },
     {
       "id": "BUqidXgrLeU",
       "title": "The Strangest Structures of Ancient Peru",
@@ -2065,6 +2073,13 @@
       "cr": "brienf"
     },
     {
+      "id": "l5Ym2Xhl85Q",
+      "title": "Out of Place Tech at Tipon — The Inca Water System That Shouldn't Exist",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-09-19"
+    },
+    {
       "id": "N0IvaD4xnMk",
       "title": "The Megalithic Evidence They Don't Want You to See at Tipon",
       "cr": "earthexplorer",
@@ -2211,6 +2226,13 @@
       "id": "oHenvI1jTkE",
       "title": "Uxmal | The Pyramid of the Magician | The Maya, Dwarves, Serpents & Sorcery",
       "cr": "megalithomania"
+    },
+    {
+      "id": "sQCQqby8wIk",
+      "title": "Nobody Gets In After Dark. I Did.",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2026-04-30"
     }
   ],
   "Mitla": [
@@ -6599,6 +6621,13 @@
       "title": "Exploring Tambomachay: The Master Engineers of Ancient Peru",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "pZnXuaDlgeg",
+      "title": "The Megalithic Secret Inside Tambomachay — Cusco's Hidden Cave",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-11-11"
     }
   ],
   "Chinchero": [
@@ -6647,6 +6676,13 @@
       "title": "Other Worldly Inkilltambo",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "nsyE9P-DAAE",
+      "title": "There's NO WAY bronze chisels carved this",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-11-08"
     }
   ],
   "Unu Urqo": [
@@ -6671,6 +6707,13 @@
       "title": "Amaru Marca Wasi: The House of the Cave Snake",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "B1HOnxqImN4",
+      "title": "Laser-Cut Granite at the Moon Temple",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-10-03"
     }
   ],
   "Cusilluchayoc": [
@@ -6715,6 +6758,13 @@
       "title": "Cusco's Chincanas, Part 2: Zone X",
       "cr": "sorcerersofstone",
       "added": "2026-07-09"
+    },
+    {
+      "id": "bIH8zZXlSCc",
+      "title": "Zone X: The ruins without a name",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-10-21"
     }
   ],
   "Pnyx": [
@@ -8365,6 +8415,73 @@
       "cr": "aletravel",
       "added": "2026-11-06",
       "language": "Mandarin Chinese"
+    }
+  ],
+  "Choquechurco": [
+    {
+      "id": "VwSpNmjL0qU",
+      "title": "I found MELTED quartz and bedrock on a peak in the Andes. Choquechurco, Peru",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-09-07"
+    }
+  ],
+  "Muyuqhawa": [
+    {
+      "id": "j-scw8Wg9YI",
+      "title": "EXCLUSIVE: I filmed these ruins for the first time ever - Muyoqhawa",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2025-10-07"
+    }
+  ],
+  "Yaxunah": [
+    {
+      "id": "2ukrxJGLVPE",
+      "title": "Nobody Talks About These 4 Maya Sites. Here's Why.",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2026-07-16",
+      "t": 100
+    }
+  ],
+  "Kabah": [
+    {
+      "id": "2ukrxJGLVPE",
+      "title": "Nobody Talks About These 4 Maya Sites. Here's Why.",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2026-07-16",
+      "t": 1183
+    }
+  ],
+  "Sayil": [
+    {
+      "id": "2ukrxJGLVPE",
+      "title": "Nobody Talks About These 4 Maya Sites. Here's Why.",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2026-07-16",
+      "t": 2163
+    }
+  ],
+  "Xlapak": [
+    {
+      "id": "2ukrxJGLVPE",
+      "title": "Nobody Talks About These 4 Maya Sites. Here's Why.",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2026-07-16",
+      "t": 2945
+    }
+  ],
+  "Dzibilchaltún": [
+    {
+      "id": "0fTp1N8sm5M",
+      "title": "The Door That Shouldn't Exist at Mexico's Oldest Maya Site",
+      "cr": "megalithicmystery",
+      "added": "2026-11-15",
+      "published": "2026-04-26"
     }
   ]
 }
