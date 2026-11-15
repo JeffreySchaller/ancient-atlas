@@ -790,5 +790,12 @@
     "subs": "Chinese-language journeys through landscapes, heritage and local life.",
     "color": "#8FBAA5",
     "tier": 3
+  },
+  "megalithicmystery": {
+    "name": "Megalithic Mystery",
+    "handle": "@megalithicmystery",
+    "subs": "Aaron Hynes · Peru and Mexico field walkthroughs",
+    "color": "#80B6A0",
+    "tier": 3
   }
 }

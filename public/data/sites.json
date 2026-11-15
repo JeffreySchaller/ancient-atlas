@@ -9045,5 +9045,81 @@
     "region": "Asia",
     "tier": 3,
     "desc": "Location approximate. The pin follows a tourism listing for Yongning Mountain, not a verified entrance. Above the Luo River in Zhidan County, Shaanxi, this red-sandstone refuge has three connected levels of cliff rooms and narrow carved passages. Ale walks through door sockets, living chambers, stairs and drainage channels; some buildings and access routes have been rebuilt."
+  },
+  {
+    "n": "Choquechurco",
+    "lat": -13.4732,
+    "lng": -72.5396,
+    "cat": "rock-cut",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Hilltop Inca complex above Mollepata in the Cusco region, with terraces, stone enclosures and worked rock outcrops along an old Inca route. Carved steps and the relationship between masonry and exposed bedrock make it worth exploring closely. Aaron Hynes visits the ceremonial sector and a wall below the summit in his Megalithic Mystery walkthrough."
+  },
+  {
+    "n": "Muyuqhawa",
+    "lat": -14.78688,
+    "lng": -71.29594,
+    "cat": "settlement",
+    "region": "South America",
+    "tier": 3,
+    "desc": "Fortified hilltop settlement near Espinar, also written Muyoqhawa or Molloqhawa. Successive defensive walls and trapezoidal entrances enclose circular and rectangular structures and funerary towers. Its mountain setting makes the relationship between fortification and terrain especially legible. Megalithic Mystery explores the gateways and interior, then shows the complex from the air."
+  },
+  {
+    "n": "Yaxunah",
+    "lat": 20.5416,
+    "lng": -88.66254,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Maya city east of the present-day village of Yaxunah in Yucatán. Monumental platforms, an acropolis and a ball court sit among woodland and cultivated land. Its long raised causeway to Cobá connects the site to a much wider political landscape. Megalithic Mystery walks the ruins in the first chapter of a four-site Yucatán film."
+  },
+  {
+    "n": "Kabah",
+    "lat": 20.247976,
+    "lng": -89.647521,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Puuc Maya city southeast of Uxmal, distinguished by the Codz Pop façade and its dense mosaic of carved stone masks. Multiroom palaces, vaulted interiors and carefully arranged plazas show the architectural ambition of the city during its Late Classic flourishing. The walkthrough follows the buildings and their sculptural details at ground level."
+  },
+  {
+    "n": "Sayil",
+    "lat": 20.178093,
+    "lng": -89.651912,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Puuc Maya city whose three-level Great Palace combines long colonnaded façades with finely cut stone decoration. Paths connect the palace with other architectural groups spread through the surrounding woodland. Megalithic Mystery’s visit places the monumental façade within that wider settlement."
+  },
+  {
+    "n": "Xlapak",
+    "lat": 20.174077,
+    "lng": -89.606149,
+    "cat": "settlement",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Small Puuc Maya settlement between Sayil and Labná, also spelled Xlapac. Its palace preserves elaborate stone mosaic decoration and masks associated with the rain deity Chaac. The community flourished around 750–950 CE, supported by the agricultural land in its small valley. The final chapter of Megalithic Mystery’s four-site film visits these surviving buildings."
+  },
+  {
+    "n": "Dzibilchaltún",
+    "lat": 21.090934,
+    "lng": -89.597261,
+    "cat": "city",
+    "region": "Central America",
+    "tier": 3,
+    "desc": "Long-lived Maya city north of Mérida, with plazas, raised causeways and the Temple of the Seven Dolls. The cenote Xlacah lies beside the monumental core, while a later open chapel records the site’s colonial history. Megalithic Mystery walks the central buildings and finishes at the temple, allowing the scale and layout to unfold on foot."
+  },
+  {
+    "n": "Acre Ring Geoglyph",
+    "lat": -9.85486,
+    "lng": -67.2715,
+    "cat": "geoglyph",
+    "region": "South America",
+    "tier": 2,
+    "signal": "open",
+    "criteria": [
+      "geometry"
+    ],
+    "desc": "An Indigenous earthwork in Acre, Brazil. The airborne LiDAR survey shows a circular ditch and faint lines leading outward."
   }
 ]
