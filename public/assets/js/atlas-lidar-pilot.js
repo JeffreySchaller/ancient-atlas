@@ -20,6 +20,11 @@
       credit: 'LiDAR DTM: <a href="https://www.usgs.gov/3d-elevation-program">USGS 3DEP</a>, 1 meter'
     },
     {
+      bounds: [[38.647, -90.077], [38.669, -90.054]],
+      terrain: 'cahokia-hillshade.webp',
+      credit: 'LiDAR DTM: <a href="https://www.usgs.gov/3d-elevation-program">USGS 3DEP</a>, 1 meter'
+    },
+    {
       bounds: [[-9.8595, -67.2763], [-9.8502, -67.2667]],
       terrain: 'acre-hillshade.webp',
       credit: 'LiDAR: <a href="https://doi.org/10.5281/zenodo.7689909">INPE / EBA</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>), processed into hillshade'
