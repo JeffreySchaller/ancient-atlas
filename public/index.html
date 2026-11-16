@@ -11699,6 +11699,15 @@ const SITES = [
       "geometry"
     ],
     "desc": "An Indigenous earthwork in Acre, Brazil. The airborne LiDAR survey shows a circular ditch and faint lines leading outward."
+  },
+  {
+    "n": "Cahokia Mounds",
+    "lat": 38.6602,
+    "lng": -90.0623,
+    "cat": "city",
+    "region": "North America",
+    "tier": 1,
+    "desc": "A major Mississippian city in present-day Illinois. Explore the terraces of Monks Mound and the smaller earthworks around the Grand Plaza."
   }
 ];
 
@@ -23875,6 +23884,7 @@ const SITE_COUNTRIES = {
   "Sayil": "Mexico",
   "Xlapak": "Mexico",
   "Dzibilchaltún": "Mexico",
+  "Cahokia Mounds": "United States",
   "Acre Ring Geoglyph": "Brazil"
 };
 
@@ -27870,6 +27880,7 @@ const SITE_INTROS = {
   "Maukallacta (Paccaritambo)": "Look closely at trapezoidal niches, changing masonry and water channels in this complex south of Cusco.",
   "Caiazzo Polygonal Walls (Caiatia)": "Look at the raised stone faces and dressed edges beneath the later buildings.",
   "Yongning Mountain Cliff Fortress (approximate)": "Step inside a cliff fortress: connected rooms, carved stairs and rainwater channels above the Luo River.",
+  "Cahokia Mounds": "Slide toward LiDAR to see the terraces of Monks Mound and the smaller mounds around the Grand Plaza.",
   "Acre Ring Geoglyph": "Slide toward LiDAR to trace the circular ditch and the faint lines leading away from it."
 };
 const SITE_CHARACTER_ICONS = {
@@ -28355,6 +28366,7 @@ const ATLAS_LIDAR_LANDSCAPES = [
   { name: 'Avebury landscape', image: 'avebury', feature: 'Trace the henge ditch around a village', sites: ['Avebury', 'Silbury Hill', 'West Kennet Long Barrow'] },
   { name: 'Thornborough Henges', image: 'thornborough', feature: 'Find the ring beneath the trees', sites: ['Thornborough Henges'] },
   { name: 'Chaco Canyon', region: 'New Mexico', sites: ['Chaco Canyon (Chaco Culture)'] },
+  { name: 'Cahokia Mounds', region: 'Illinois', sites: ['Cahokia Mounds'] },
   { name: 'Acre Ring Geoglyph', region: 'Brazilian Amazon', sites: ['Acre Ring Geoglyph'] }
 ];
 const ATLAS_LIDAR_SITES = ATLAS_LIDAR_LANDSCAPES.flatMap(landscape => landscape.sites);
@@ -30007,7 +30019,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const overview = L.layerGroup([englandPin, ...standalone.map(landscape => {
         const site = SITES.find(candidate => candidate.n === landscape.sites[0]);
         const label = landscape.name + ' · ' + landscape.region;
-        return pin([site.lat, site.lng], lidarDirectoryLink(site.n, label), label, '1');
+        const marker = pin([site.lat, site.lng], lidarDirectoryLink(site.n, label), label, '1');
+        if (site.n === 'Chaco Canyon (Chaco Culture)') marker.options.icon.options.iconAnchor = [24, 8];
+        if (site.n === 'Cahokia Mounds') marker.options.icon.options.iconAnchor = [4, 20];
+        return marker;
       })]);
       const landscapes = L.layerGroup(regionalLandscapes.map(landscape => {
         const site = SITES.find(candidate => candidate.n === landscape.sites[0]);
