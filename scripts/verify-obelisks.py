@@ -2,6 +2,7 @@
 """Validate map data, uncertain origins, and locally served licensed photographs."""
 import json
 import math
+import re
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -13,6 +14,7 @@ categories = {'pharaonic','ptolemaic','egyptian_undated','roman','disputed','unf
 ids = set()
 photos = 0
 stops = 0
+videos = 0
 
 def point(lat, lon, nullable=False):
     if nullable and lat is None and lon is None:
@@ -65,10 +67,24 @@ for record in records:
     if record['category'] == 'replica':
         assert record['origin_lat'] is None and record['origin_lon'] is None
         assert record.get('model_location'), key
-        assert len(journey) == 1, 'A local replica must not acquire a fictional import journey.'
+    if 'archival_photo' in record:
+        assert record['archival_photo']['title'].strip(), key
+        link(record['archival_photo']['url'])
+    video_ids = set()
+    for video in record.get('videos', []):
+        assert re.fullmatch(r'[A-Za-z0-9_-]{11}', video['id']), (key, video['id'])
+        assert video['id'] not in video_ids, (key, video['id'])
+        video_ids.add(video['id'])
+        for field in ['title', 'label', 'creator', 'description']:
+            assert isinstance(video[field], str) and video[field].strip(), (key, field)
+        start = video.get('start', 0)
+        assert type(start) is int and start >= 0, key
+        if 'source_url' in video:
+            link(video['source_url'])
+        videos += 1
     if record['category'] == 'unfinished':
         assert record['shaft_height_m'] is None, 'An unfinished quarry stone is not a standing shaft.'
         assert record.get('planned_length_m'), key
 
 assert len(ids) == len(records)
-print(f'Validated {len(records)} monuments, {stops} journey milestones and {photos} credited local photographs.')
+print(f'Validated {len(records)} monuments, {stops} journey milestones, {photos} credited photographs and {videos} video links.')

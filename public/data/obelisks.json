@@ -107,6 +107,16 @@
         "credit": "Livioandronico2013 · CC BY-SA 4.0 · Wikimedia Commons",
         "src": "/assets/obelisks/lateran.jpg"
       }
+    ],
+    "videos": [
+      {
+        "id": "jV-hcRpYHLs",
+        "title": "The Oldest Monument in Rome: Lateran Obelisk",
+        "label": "The Lateran Obelisk, from Karnak to Rome",
+        "creator": "Smarthistory",
+        "description": "Beth Harris and Steven Zucker visit the monument in Rome and trace its moves from Karnak to the Circus Maximus and St. John Lateran.",
+        "source_url": "https://smarthistory.org/lateran-obelisk/"
+      }
     ]
   },
   {
@@ -207,6 +217,16 @@
         "changes": "No edits; Wikimedia-supplied scaled image.",
         "credit": "Jebulon · CC0 · Wikimedia Commons",
         "src": "/assets/obelisks/vatican.jpg"
+      }
+    ],
+    "videos": [
+      {
+        "id": "bAcbG4Ad1t0",
+        "title": "Dominico Fontana e papa Sisto V, the architect describes moving of the Vatican Obelisk, manortiz",
+        "label": "Fontana’s account of moving the Vatican Obelisk",
+        "creator": "Luigi Manfredi",
+        "description": "An illustrated look at Domenico Fontana’s 1590 book documenting the move to St. Peter’s Square.",
+        "source_url": "https://www.getty.edu/news/obelisks-on-the-move/"
       }
     ]
   },
@@ -1468,6 +1488,16 @@
         "credit": "Photograph by Mike Peel (www.mikepeel.net). · CC BY-SA 4.0 · Wikimedia Commons",
         "src": "/assets/obelisks/new-york.jpg"
       }
+    ],
+    "videos": [
+      {
+        "id": "x_Yc79V2k6o",
+        "title": "Then & Now: Obelisk",
+        "label": "Cleopatra’s Needle in Central Park",
+        "creator": "Central Park Conservancy",
+        "description": "A short look at New York’s Egyptian obelisk and the conservators who cleaned and stabilized it.",
+        "source_url": "https://www.centralparknyc.org/locations/obelisk"
+      }
     ]
   },
   {
@@ -1581,6 +1611,16 @@
         "changes": "No edits; Wikimedia-supplied scaled image.",
         "credit": "MrsEllacott · CC BY-SA 4.0 · Wikimedia Commons",
         "src": "/assets/obelisks/london.jpg"
+      }
+    ],
+    "videos": [
+      {
+        "id": "MW-6afW1nbk",
+        "title": "Freak Ships of the Nineteenth Century: The Cleopatra",
+        "label": "How London’s obelisk crossed the sea",
+        "creator": "Mariner’s Mirror Podcast / Society for Nautical Research",
+        "description": "An animation explains the iron vessel built around the stone and its storm-hit voyage from Alexandria to London.",
+        "source_url": "https://snr.org.uk/the-mariners-mirror-podcast/freak-ships-of-the-nineteenth-century-iv-the-cleopatra/"
       }
     ]
   },
@@ -1696,6 +1736,16 @@
         "credit": "Jebulon · CC0 · Wikimedia Commons",
         "src": "/assets/obelisks/paris.jpg"
       }
+    ],
+    "videos": [
+      {
+        "id": "RzXfo8qjdzs",
+        "title": "Bande Annonce de l'exposition \"Le voyage de l'obélisque\" au musée national de la Marine",
+        "label": "From Luxor to the Place de la Concorde",
+        "creator": "Musée national de la Marine",
+        "description": "The museum’s illustrated exhibition trailer retraces the Luxor obelisk’s journey to Paris. In French.",
+        "source_url": "https://www.musee-marine.fr/nos-musees/paris/expositions-et-evenements/les-expositions/le-voyage-de-lobelisque-louxor/paris-1829-1836.html"
+      }
     ]
   },
   {
@@ -1796,6 +1846,17 @@
         "changes": "No edits; Wikimedia-supplied scaled image.",
         "credit": "Diego Delso · CC BY-SA 4.0 · Wikimedia Commons",
         "src": "/assets/obelisks/istanbul.jpg"
+      }
+    ],
+    "videos": [
+      {
+        "id": "kHDcg5A76Wk",
+        "title": "The Hippodrome of Constantinople | A Short Tour",
+        "label": "The Obelisk of Theodosius at the Hippodrome",
+        "creator": "Scenic Routes to the Past",
+        "description": "An on-site tour of the former Hippodrome. The chapter on the Obelisk of Theodosius begins at 2:40.",
+        "start": 160,
+        "source_url": "https://www.youtube.com/watch?v=kHDcg5A76Wk"
       }
     ]
   },
@@ -2709,6 +2770,16 @@
         "credit": "Diego Delso · CC BY-SA 4.0 · Wikimedia Commons",
         "src": "/assets/obelisks/unfinished-aswan.jpg"
       }
+    ],
+    "videos": [
+      {
+        "id": "8QInSsT_YkI",
+        "title": "Unfinished Obelisk of Aswan with UnchartedX | Fieldwork · Egypt",
+        "label": "Walk the Unfinished Obelisk quarry",
+        "creator": "Ancient Atlas with UnchartedX",
+        "description": "Ancient Atlas visits the Aswan granite quarry and examines the enormous unfinished stone still attached to the bedrock.",
+        "source_url": "https://theancientatlas.com/creators/ancient-atlas"
+      }
     ]
   },
   {
@@ -2831,8 +2902,13 @@
     "relocations": [
       {
         "date": "1937",
-        "place": "Rosicrucian Park, San Jose",
-        "note": "Constructed locally; not an imported ancient monument."
+        "place": "Original site in Rosicrucian Park",
+        "note": "The Rosicrucians placed the concrete replica in the park. A 1939 aerial photograph shows it at its earlier location."
+      },
+      {
+        "date": "By 2017",
+        "place": "Present site in Rosicrucian Park",
+        "note": "The Order’s 2017 retrospective identifies the location in its 1939 photograph as the previous one. The exact date of the move within the park is uncertain."
       }
     ],
     "sources": [
@@ -2843,12 +2919,16 @@
       {
         "title": "Rosicrucian Digest — 1937 construction retrospective",
         "url": "https://fb2169e74ac5a852ffab-2ec811d3f541d2c027e34c2171c44e78.ssl.cf5.rackcdn.com/A_Look_at_the_Cover_Digest_v100_n1_2022%20031822.pdf"
+      },
+      {
+        "title": "Rosicrucian Digest, 1939 aerial photograph and caption",
+        "url": "https://rosicrucian-files.sfo3.digitaloceanspaces.com/Digests/2017_no2/Digest%202017%20No.%202%20Then%20and%20Now.pdf#page=1"
       }
     ],
     "notes": "Modern reinforced concrete replica. The contemporaneous report gives forty feet; later scale descriptions conflict.",
     "checked_date": "2026-11-18",
     "creation_label": "1937; modern replica",
-    "summary": "Built locally from reinforced concrete with a granite-like finish, this Rosicrucian Park monument copies Senusret I’s obelisk at Heliopolis. It was never an ancient stone transported from Egypt.",
+    "summary": "The Rosicrucians erected this replica in 1937. Their January 1938 account describes reinforced concrete finished to look like rose-red granite. An archive photograph shows the obelisk being placed into position.",
     "origin_label": "Model for the replica",
     "origin_note": "The Egyptian obelisk supplied the design. The concrete replica was made in California; no Egypt-to-San-Jose relocation occurred.",
     "model_location": {
@@ -2859,11 +2939,19 @@
     "journey": [
       {
         "date": "1937",
-        "place": "Rosicrucian Park, San Jose",
-        "note": "Constructed locally; not an imported ancient monument.",
+        "place": "Original site in Rosicrucian Park",
+        "note": "The Rosicrucians placed the concrete replica in the park. A 1939 aerial photograph shows it at its earlier location.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "The exact earlier position is unverified."
+      },
+      {
+        "date": "By 2017",
+        "place": "Present site in Rosicrucian Park",
+        "note": "The Order’s 2017 retrospective identifies the location in its 1939 photograph as the previous one. The exact date of the move within the park is uncertain.",
         "lat": 37.334,
         "lon": -121.923,
-        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+        "coordinate_note": "approximate park center; not surveyed monument coordinates"
       }
     ],
     "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
@@ -2888,6 +2976,28 @@
         "credit": "The wub · CC BY-SA 4.0 · Wikimedia Commons",
         "src": "/assets/obelisks/san-jose-rosicrucian-replica.jpg"
       }
-    ]
+    ],
+    "videos": [
+      {
+        "id": "R8rTgVI7P64",
+        "title": "Rosicrucian Park Tour - Grand Master Julie Scott",
+        "label": "See the replica in the official park tour",
+        "creator": "RosicrucianTV",
+        "description": "Julie Scott’s tour shows the obelisk between its two sphinxes at 27:24.",
+        "start": 1644
+      },
+      {
+        "id": "qRFSz-fBr2A",
+        "title": "Walk Like an Egyptian! Exploring Rosicrucian Park in San Jose, California",
+        "label": "Walk up to the obelisk and sphinxes",
+        "creator": "Wander With Eric",
+        "description": "An on-site walk shows the replica, its gold hieroglyphs and the adjacent sphinxes from about 5:14.",
+        "start": 314
+      }
+    ],
+    "archival_photo": {
+      "title": "See the 1937 installation photograph",
+      "url": "https://b45e1c3778bbf3ebb96c-637cca54df3fd347e9c3d5d35c2f839a.ssl.cf5.rackcdn.com/Rosicrucian_Digest_v80_n2_2002_OCR.pdf#page=12"
+    }
   }
 ]

@@ -72,7 +72,9 @@ body::before{content:'';position:fixed;inset:0;opacity:0.03;pointer-events:none;
 
 /* Header */
 header{position:relative;z-index:1001;background:linear-gradient(180deg,rgba(13,13,18,.98),rgba(13,13,18,.9));backdrop-filter:blur(20px);border-bottom:1px solid rgba(42,42,53,.4);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-shrink:0}
-.brand{display:flex;align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:14px;color:inherit;text-decoration:none;border-radius:8px}
+.brand:hover .logo-box{filter:drop-shadow(0 2px 10px rgba(201,168,76,.42))}
+.brand:focus-visible{outline:2px solid var(--champagne);outline-offset:5px}
 .logo-box{width:44px;height:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0;filter:drop-shadow(0 2px 8px rgba(201,168,76,.18))}
 .logo-box svg{width:100%;height:100%;display:block}
 .brand h1{font-family:var(--font-serif);font-size:28px;font-weight:600;color:var(--ivory);line-height:1;letter-spacing:-.015em;font-variation-settings:"opsz" 36}
@@ -2137,18 +2139,18 @@ body.present #broadcast-controls{
 <script defer src="/assets/js/analytics.js"></script>
 <link rel="stylesheet" href="/assets/site-photos.css">
 <script src="/assets/js/site-photos.js"></script>
-<link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script><link rel="stylesheet" href="/assets/atlas-features.css">
-<link rel="stylesheet" href="/assets/obelisks.css?v=1">
-<script src="/assets/js/atlas-obelisks.js?v=1"></script></head>
+<link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script><link rel="stylesheet" href="/assets/atlas-features.css?v=2">
+<link rel="stylesheet" href="/assets/obelisks.css?v=2">
+<script src="/assets/js/atlas-obelisks.js?v=2"></script></head>
 <body>
 <div id="app">
 <header>
-  <div class="brand">
+  <a class="brand" id="atlas-brand-home" href="/" aria-label="Ancient Atlas home, return to the main map">
     <div class="logo-box" aria-hidden="true">
       <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Ancient Atlas"><defs><radialGradient id="bm_bg" cx="50%" cy="42%" r="78%"><stop offset="0%" stop-color="#221911"/><stop offset="55%" stop-color="#0d0a07"/><stop offset="100%" stop-color="#040303"/></radialGradient><radialGradient id="bm_gold" cx="42%" cy="34%" r="72%"><stop offset="0%" stop-color="#FBEBBE"/><stop offset="55%" stop-color="#E8B960"/><stop offset="100%" stop-color="#9A7A34"/></radialGradient></defs><circle cx="512" cy="512" r="492" fill="url(#bm_bg)"/><circle cx="512" cy="512" r="430" fill="none" stroke="#C9A84C" stroke-opacity=".32" stroke-width="8.2"/><line x1="931.8" y1="512.0" x2="890.9" y2="512.0" stroke="#C9A84C" stroke-opacity=".5" stroke-width="10" stroke-linecap="round"/><line x1="512.0" y1="931.8" x2="512.0" y2="890.9" stroke="#C9A84C" stroke-opacity=".5" stroke-width="10" stroke-linecap="round"/><line x1="92.2" y1="512.0" x2="133.1" y2="512.0" stroke="#C9A84C" stroke-opacity=".5" stroke-width="10" stroke-linecap="round"/><line x1="512.0" y1="92.2" x2="512.0" y2="133.1" stroke="#C9A84C" stroke-opacity=".5" stroke-width="10" stroke-linecap="round"/><polygon points="324.05,324.05 449.13,360.23 512.00,81.92 574.87,360.23 699.95,324.05 663.77,449.13 942.08,512.00 663.77,574.87 699.95,699.95 574.87,663.77 512.00,942.08 449.13,663.77 324.05,699.95 360.23,574.87 81.92,512.00 360.23,449.13" fill="url(#bm_gold)"/><circle cx="512" cy="512" r="31" fill="#FBEBBE"/></svg>
     </div>
     <div><h1>Ancient Atlas</h1><p>A map of the deep past</p></div>
-  </div>
+  </a>
   <div class="stats">
     <div class="hb-wrap"><div class="hb-tile"><div class="stat-val" id="stat-sites">0</div><div class="stat-lbl">Sites</div></div><div class="hb" aria-hidden="true"><p class="hb-k">The Atlas</p><p class="hb-t">Every stone here, someone stood next to.</p><p class="hb-s">Placed by hand and checked against the ground, not scraped from a list.</p><a class="hb-cta" href="sites/">Browse the index &rarr;</a><a class="hb-cta" href="/islands/">Corsica &amp; Sardinia: visual guides &rarr;</a></div></div>
     <div class="hb-wrap"><div class="hb-tile"><div class="stat-val" id="stat-vids">0</div><div class="stat-lbl">With Video</div></div><div class="hb" aria-hidden="true"><p class="hb-k">Walkthroughs</p><p class="hb-t">You do not have to take anyone's word.</p><p class="hb-s">Most of this map comes with someone walking you through it, camera in hand.</p><a class="hb-cta" href="creators/">See the creators &rarr;</a></div></div>
@@ -2280,7 +2282,7 @@ body.present #broadcast-controls{
               <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
             </div>
           </details>
-          <button type="button" class="atlas-explore-row" data-explore-obelisks><span class="ob-explore-glyph" aria-hidden="true"><svg viewBox="0 0 24 32"><path d="M8 27 9 8 12 3 15 8 16 27Z M9 8h6 M6 28h12"/></svg></span><span><strong>Explore obelisks</strong><small>Follow the stones from Egypt to the world.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
+          <button type="button" class="atlas-explore-row" data-explore-obelisks><img src="/assets/glyphs/compact/obelisk.svg" width="44" height="44" alt=""><span><strong>Explore obelisks</strong><small>Follow the stones from Egypt to the world.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
           <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
           <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
         </div>
@@ -2499,7 +2501,7 @@ body.present #broadcast-controls{
               <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
             </div>
       </details>
-      <button type="button" class="atlas-explore-row" data-explore-obelisks><span class="ob-explore-glyph" aria-hidden="true"><svg viewBox="0 0 24 32"><path d="M8 27 9 8 12 3 15 8 16 27Z M9 8h6 M6 28h12"/></svg></span><span><strong>Explore obelisks</strong><small>Follow the stones from Egypt to the world.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
+      <button type="button" class="atlas-explore-row" data-explore-obelisks><img src="/assets/glyphs/compact/obelisk.svg" width="44" height="44" alt=""><span><strong>Explore obelisks</strong><small>Follow the stones from Egypt to the world.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
           <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
       <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
     </div>
@@ -24872,6 +24874,8 @@ const ALL_REGIONS = [...new Set(FILTERED_SITES.map(s => s.region))].sort();
 // ============================================================
 // STATE
 // ============================================================
+const DEFAULT_MAP_VIEW = {center: [25, 30], zoom: 3};
+let atlasHomeUsed = false;
 let map, markerCluster, networkLayer;
 let activeRegion = null;
 let activeCountry = null;
@@ -24975,8 +24979,7 @@ function init() {
   }
 
   map = L.map('map', {
-    center: [25, 30],
-    zoom: 3,
+    ...DEFAULT_MAP_VIEW,
     minZoom: worldFitZoom(),
     maxZoom: 18,
     // A fractional minZoom is unreachable under Leaflet's default zoomSnap of 1:
@@ -24997,28 +25000,23 @@ function init() {
     worldCopyJump: false
   });
 
-  // Reset-view control — adds a "home" button below the +/- zoom buttons
-  const DEFAULT_VIEW = { center: [25, 30], zoom: 3 };
+  // The map home control and the header brand share the same reset.
   const ResetViewControl = L.Control.extend({
     options: { position: 'topleft' },
-    onAdd: function(m) {
+    onAdd() {
       const container = L.DomUtil.create('div', 'leaflet-bar reset-view-control');
       const link = L.DomUtil.create('a', '', container);
-      link.href = '#';
-      link.title = 'Reset to default view';
-      link.setAttribute('role', 'button');
+      link.href = '/';
+      link.title = 'Return to the main map';
       link.setAttribute('aria-label', 'Reset map to default view');
       link.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg>';
-      L.DomEvent.on(link, 'click', function(e) {
-        L.DomEvent.preventDefault(e);
-        L.DomEvent.stopPropagation(e);
-        m.flyTo(DEFAULT_VIEW.center, DEFAULT_VIEW.zoom, { duration: 0.8 });
-      });
+      link.addEventListener('click', handleAtlasHomeClick);
       L.DomEvent.disableClickPropagation(container);
       return container;
     }
   });
   map.addControl(new ResetViewControl());
+  document.getElementById('atlas-brand-home').addEventListener('click', handleAtlasHomeClick);
 
   const lidarParams = new URLSearchParams(window.location.search);
   const lidarPilot = lidarParams.get('lidar') === '1';
@@ -25352,7 +25350,9 @@ function init() {
         window._pendingDeepLinkSite = target;
         // Defer one tick so map tiles + cluster layer finish wiring
         // selectSite() handles desktop (right panel) + mobile-landscape (bottom sheet) automatically
-        setTimeout(() => selectSite(target), 50);
+        setTimeout(() => {
+          if (new URLSearchParams(location.search).get('site') === siteParam) selectSite(target);
+        }, 50);
         // Update browser tab title to match the site (helps tab switchers, screenshots, bookmarks)
         if (!window._defaultDocTitle) window._defaultDocTitle = document.title;
         document.title = `${target.n} — The Ancient Atlas`;
@@ -27132,6 +27132,53 @@ function resetFilters() {
   renderSidebar();
 }
 
+function handleAtlasHomeClick(event) {
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  event.preventDefault();
+  resetAtlasMap();
+}
+
+function resetAtlasMap() {
+  atlasHomeUsed = true;
+  atlasLidarRequest++;
+  window.closeAtlasLidar?.({restoreFocus: false});
+  window.atlasObelisks?.disable({restoreFocus: false, forgetSelection: true});
+  document.querySelectorAll('.lidar-directory').forEach(directory => {
+    directory.open = false;
+    directory.dispatchEvent(new Event('atlas-map-reset'));
+  });
+  const settings = document.getElementById('atlas-map-tools');
+  if (settings) settings.open = false;
+
+  if (waterJourneyActive) closeFloatingPlayer();
+  if (showGrid) toggleGrid(false);
+  if (showClimate) toggleClimate(false);
+  selectedEraIdx = CLIMATE_ERAS.length - 1;
+  if (showNetwork) toggleNetwork();
+  const sheetWasOpen = document.getElementById('mobile-site-sheet')?.classList.contains('open');
+  if (sheetWasOpen) closeMobileSiteSheet(true);
+  closeDetail();
+  window._pendingDeepLinkSite = null;
+  window._atlasWatchingSite = null;
+  openRegions.clear();
+  openCountries.clear();
+  resetFilters();
+  document.getElementById('sidebar').scrollTop = 0;
+
+  const url = new URL(location.href);
+  for (const key of ['site', 'lidar', 'lidarSite', 'obelisks', 'obelisk']) url.searchParams.delete(key);
+  const state = sheetWasOpen && history.state?.atlasModal ? null : history.state;
+  if (sheetWasOpen) window._atlasModalHistoryPushed = false;
+  history.replaceState(state, '', url);
+  if (window._defaultDocTitle) document.title = window._defaultDocTitle;
+
+  exitCinema(true);
+  map.stop();
+  map.closePopup();
+  map.invalidateSize({pan: false});
+  map.setView(DEFAULT_MAP_VIEW.center, DEFAULT_MAP_VIEW.zoom, {animate: false});
+}
+
 // ============================================================
 // SELECT SITE
 // ============================================================
@@ -28296,7 +28343,7 @@ function startWaterJourney() {
   if (!document.getElementById("water-route")) {
     const guide = document.createElement("div");
     guide.id = "water-route";
-    document.body.appendChild(guide);
+    document.getElementById('map-wrap').appendChild(guide);
   }
   renderMarkers();
   goToWaterStop(0);
@@ -28382,7 +28429,7 @@ let atlasLidarRequest = 0;
 function loadAtlasLidar() {
   atlasLidarScript ??= new Promise((resolve, reject) => {
     const script = document.createElement('script');
-    script.src = '/assets/js/atlas-lidar-pilot.js?v=obelisks-1';
+    script.src = '/assets/js/atlas-lidar-pilot.js?v=2';
     script.onload = resolve;
     script.onerror = () => {
       script.remove();
@@ -29333,7 +29380,7 @@ function welcomeKey(ev) {
 }
 
 function maybeShowWelcome() {
-  if (document.body.classList.contains('obelisks-enabled')) return true;
+  if (atlasHomeUsed || waterJourneyActive || document.body.classList.contains('obelisks-enabled')) return true;
   if (document.body.classList.contains('lidar-pilot')) return true;
   var w = document.getElementById('welcome');
   if (!w) return true;
@@ -30076,6 +30123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         reset.hidden = false;
         reset.focus({ preventScroll: true });
       });
+      directory.addEventListener('atlas-map-reset', showWorld);
       reset.addEventListener('click', () => {
         showWorld();
         england.focus({ preventScroll: true });
