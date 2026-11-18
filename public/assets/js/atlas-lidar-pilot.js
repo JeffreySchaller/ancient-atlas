@@ -35,6 +35,7 @@
 
   let activate;
   let closeComparison;
+  window.closeAtlasLidar = () => closeComparison?.();
   let lastSite;
   const coverageFor = point => areas.find(area => L.latLngBounds(area.bounds).contains(point));
 
