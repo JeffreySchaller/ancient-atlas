@@ -59,13 +59,14 @@
     const sidePanel = () => window.innerWidth > 950 || matchMedia('(orientation: landscape)').matches;
     function setURL(id) {
       const url = new URL(location.href);
-      if (enabled) url.pathname = collectionPath;
-      else if (url.pathname === collectionPath) url.pathname = '/';
+      if (enabled) {
+        url.pathname = id ? `${collectionPath}/${encodeURIComponent(id)}` : collectionPath;
+        ['site', 'lidar', 'lidarSite', 'explore'].forEach(key => url.searchParams.delete(key));
+      } else if (url.pathname === collectionPath || url.pathname.startsWith(collectionPath + '/')) {
+        url.pathname = '/';
+      }
       url.searchParams.delete('obelisks');
-      if (id) {
-        url.searchParams.set('obelisk', id);
-        ['site','lidar','lidarSite'].forEach(key => url.searchParams.delete(key));
-      } else url.searchParams.delete('obelisk');
+      url.searchParams.delete('obelisk');
       history.replaceState(history.state, '', url);
     }
     function syncButtons() {
@@ -234,7 +235,7 @@
           <p class="ob-map-note">Locations are approximate. Map lines connect known stops; they do not reconstruct the travel route.</p>
           <details class="ob-evidence"><summary>Measurements and historical sources</summary>${record.height_note?`<p>${escape(record.height_note)}</p>`:''}${record.mass_note?`<p>${escape(record.mass_note)}</p>`:''}<ul>${(record.sources||[]).map(source=>`<li>${external(source.url,source.title)}</li>`).join('')}</ul><p>Research checked ${escape(record.checked_date || '2026-11-18')}.</p></details>
           <nav class="ob-share-links" aria-label="Obelisks links">
-            <a class="ob-share" href="${collectionPath}?obelisk=${encodeURIComponent(record.id)}">Link to this monument ↗</a>
+            <a class="ob-share" href="${collectionPath}/${encodeURIComponent(record.id)}">Link to this monument ↗</a>
             <a class="ob-share" href="${collectionPath}">Link to collection ↗</a>
           </nav>
         </article>`;
@@ -248,7 +249,7 @@
       });
       body.querySelectorAll('[data-ob-step]').forEach(button=>button.addEventListener('click',()=>showStep(Number(button.dataset.obStep))));
     }
-    function select(id, {fit=true,focus=false} = {}) {
+    function select(id, {fit=true,focus=false,shareMonument=true} = {}) {
       if (!enabled) return;
       const record = records.find(item=>item.id===id);
       if (!record) return;
@@ -267,7 +268,7 @@
       if (fit) requestAnimationFrame(() => {
         if (enabled && !panel.hidden && selected === record) fitJourney();
       });
-      setURL(id);
+      setURL(shareMonument ? id : null);
       if (focus) body.querySelector('h3').focus({preventScroll:true});
       window.atlasAnalytics?.('atlas_obelisk_view',id);
     }
@@ -287,7 +288,7 @@
         if (version!==requestVersion) {syncButtons();return;}
         const requested=id || selected?.id || 'new-york';
         const initial=records.find(record=>record.id===requested) || records.find(record=>record.id==='new-york') || records[0];
-        select(initial.id,{fit:true,focus:Boolean(source)});
+        select(initial.id,{fit:true,focus:Boolean(source),shareMonument:id === initial.id});
         syncButtons();
       } catch(error) {
         if (!enabled || version!==requestVersion) return;
