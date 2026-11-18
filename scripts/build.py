@@ -326,5 +326,8 @@ def main():
     # Include optional analytics on newly generated pages.
     __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'install-ga4.py')], check=True)
 
+    # Share pages have their own lightweight markup and open the interactive map.
+    __import__('subprocess').run(['python3', str(REPO_ROOT / 'scripts' / 'build-map-share-pages.py')], check=True)
+
 if __name__ == '__main__':
     main()

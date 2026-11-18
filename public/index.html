@@ -27,9 +27,9 @@
 <title>The Ancient Atlas — A map of the deep past</title>
 <meta name="description" content="A hand-curated map of the world's most significant ancient sites, organized by region, era, and the creators who have walked them." />
 <meta name="theme-color" content="#0D0D12" />
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
-<link rel="icon" type="image/png" sizes="180x180" href="apple-touch-icon.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="The Ancient Atlas" />
 <meta property="og:title" content="The Ancient Atlas — A map of the deep past" />
@@ -602,6 +602,7 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .atlas-explore-arrow{color:var(--champagne)}
 .lidar-directory[open] .atlas-explore-arrow{transform:rotate(90deg)}
 .lidar-directory-content{padding:0 10px 9px}
+.lidar-share-link{display:inline-flex;align-items:center;min-height:36px;margin:4px 0;color:var(--champagne);font-size:12px;text-underline-offset:3px}
 .lidar-landscape-gallery{display:grid;grid-auto-flow:column;grid-auto-columns:100%;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 8px}
 .lidar-landscape-gallery::-webkit-scrollbar{display:none}
 .lidar-gallery-controls{display:flex;justify-content:center;align-items:center;gap:8px;margin:0 0 6px;color:#f1d68d}
@@ -2145,7 +2146,7 @@ body.present #broadcast-controls{
 <script src="/assets/js/site-photos.js"></script>
 <link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script><link rel="stylesheet" href="/assets/atlas-features.css?v=2">
 <link rel="stylesheet" href="/assets/obelisks.css?v=3">
-<script src="/assets/js/atlas-obelisks.js?v=3"></script></head>
+<script src="/assets/js/atlas-obelisks.js?v=4"></script></head>
 <body>
 <div id="app">
 <header>
@@ -2156,33 +2157,33 @@ body.present #broadcast-controls{
     <div><h1>Ancient Atlas</h1><p>A map of the deep past</p></div>
   </a>
   <div class="stats">
-    <div class="hb-wrap"><div class="hb-tile"><div class="stat-val" id="stat-sites">0</div><div class="stat-lbl">Sites</div></div><div class="hb" aria-hidden="true"><p class="hb-k">The Atlas</p><p class="hb-t">Every stone here, someone stood next to.</p><p class="hb-s">Placed by hand and checked against the ground, not scraped from a list.</p><a class="hb-cta" href="sites/">Browse the index &rarr;</a><a class="hb-cta" href="/islands/">Corsica &amp; Sardinia: visual guides &rarr;</a></div></div>
-    <div class="hb-wrap"><div class="hb-tile"><div class="stat-val" id="stat-vids">0</div><div class="stat-lbl">With Video</div></div><div class="hb" aria-hidden="true"><p class="hb-k">Walkthroughs</p><p class="hb-t">You do not have to take anyone's word.</p><p class="hb-s">Most of this map comes with someone walking you through it, camera in hand.</p><a class="hb-cta" href="creators/">See the creators &rarr;</a></div></div>
+    <div class="hb-wrap"><div class="hb-tile"><div class="stat-val" id="stat-sites">0</div><div class="stat-lbl">Sites</div></div><div class="hb" aria-hidden="true"><p class="hb-k">The Atlas</p><p class="hb-t">Every stone here, someone stood next to.</p><p class="hb-s">Placed by hand and checked against the ground, not scraped from a list.</p><a class="hb-cta" href="/sites/">Browse the index &rarr;</a><a class="hb-cta" href="/islands/">Corsica &amp; Sardinia: visual guides &rarr;</a></div></div>
+    <div class="hb-wrap"><div class="hb-tile"><div class="stat-val" id="stat-vids">0</div><div class="stat-lbl">With Video</div></div><div class="hb" aria-hidden="true"><p class="hb-k">Walkthroughs</p><p class="hb-t">You do not have to take anyone's word.</p><p class="hb-s">Most of this map comes with someone walking you through it, camera in hand.</p><a class="hb-cta" href="/creators/">See the creators &rarr;</a></div></div>
     
     
     <div class="stat-divider" aria-hidden="true"></div>
-    <div class="hb-wrap"><a class="nav-tile is-featured is-new" href="creators/" title="Creator Studies"><svg class="nav-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 2.2 L13.7 10.3 L21.8 12 L13.7 13.7 L12 21.8 L10.3 13.7 L2.2 12 L10.3 10.3 Z"/></svg><span class="nav-lbl">Studies</span></a><div class="hb" aria-hidden="true"><p class="hb-k">Creator Studies &middot; No. 01</p><p class="hb-t">One channel's life's work, laid back over the map.</p><p class="hb-s">A study takes a single creator and shows you everywhere they have actually been.</p><a class="hb-cta" href="/creators/ageless-rock.html">Read Study No. 01 &rarr;</a></div></div>
+    <div class="hb-wrap"><a class="nav-tile is-featured is-new" href="/creators/" title="Creator Studies"><svg class="nav-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 2.2 L13.7 10.3 L21.8 12 L13.7 13.7 L12 21.8 L10.3 13.7 L2.2 12 L10.3 10.3 Z"/></svg><span class="nav-lbl">Studies</span></a><div class="hb" aria-hidden="true"><p class="hb-k">Creator Studies &middot; No. 01</p><p class="hb-t">One channel's life's work, laid back over the map.</p><p class="hb-s">A study takes a single creator and shows you everywhere they have actually been.</p><a class="hb-cta" href="/creators/ageless-rock.html">Read Study No. 01 &rarr;</a></div></div>
     <div class="fw-wrap">
-      <a class="nav-tile is-featured is-new" href="experiences/feel-the-weight/" title="Experiences"><svg class="nav-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 6.4 V19.2"/><path d="M7.6 19.2 H16.4"/><path d="M4.4 9.2 H19.6"/><circle cx="12" cy="4.8" r="1.3"/><path d="M4.4 9.2 L2.1 14.4 H6.7 Z"/><path d="M19.6 9.2 L17.3 14.4 H21.9 Z"/></svg><span class="nav-lbl">Experiences</span></a>
+      <a class="nav-tile is-featured is-new" href="/experiences/feel-the-weight/" title="Experiences"><svg class="nav-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 6.4 V19.2"/><path d="M7.6 19.2 H16.4"/><path d="M4.4 9.2 H19.6"/><circle cx="12" cy="4.8" r="1.3"/><path d="M4.4 9.2 L2.1 14.4 H6.7 Z"/><path d="M19.6 9.2 L17.3 14.4 H21.9 Z"/></svg><span class="nav-lbl">Experiences</span></a>
       <div class="fw-bloom" aria-hidden="true">
         <div class="fw-stage">
-          <img class="fw-photo" src="img/experiences/feel-the-weight-card.jpg" alt="A person braced against the face of a colossal quarried megalith" loading="lazy" decoding="async" width="816" height="396" />
+          <img class="fw-photo" src="/img/experiences/feel-the-weight-card.jpg" alt="A person braced against the face of a colossal quarried megalith" loading="lazy" decoding="async" width="816" height="396" />
           <span class="fw-stage-tag">Giza → Baalbek</span>
           <span class="fw-stage-ft">Six stones</span>
         </div>
         <div class="fw-fleet"><div class="fw-frow"><span>One stone, in pickups</span><span class="fw-fride">Ford F-150</span></div><svg class="fw-fdef" width="0" height="0" aria-hidden="true" focusable="false"><defs><path id="fw-truck" d="M1.6 6L23.5 6L24.6 1.8L37.6 1.8L40.4 5.8L57 5.8L58.2 6.6L58.2 14.6L50 14.6A4.4 3 0 0 0 41.2 14.6L17.4 14.6A4.4 3 0 0 0 8.6 14.6L1.6 14.6ZM3.6 7.4L21.7 7.4L21.7 10.8L3.6 10.8ZM26.6 3.4L32.8 3.4L32.8 6.8L26.6 6.8ZM34 3.4L36.2 3.4L38 7L34 7ZM9.7 15.4a3.3 3.3 0 1 0 6.6 0a3.3 3.3 0 1 0 -6.6 0M11.65 15.4a1.35 1.35 0 1 0 2.7 0a1.35 1.35 0 1 0 -2.7 0M42.3 15.4a3.3 3.3 0 1 0 6.6 0a3.3 3.3 0 1 0 -6.6 0M44.25 15.4a1.35 1.35 0 1 0 2.7 0a1.35 1.35 0 1 0 -2.7 0"/></defs></svg><div class="fw-ffield" aria-hidden="true"><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg><svg class="fw-fv" viewBox="0 0 60 20" fill-rule="evenodd"><use href="#fw-truck"/></svg></div></div>
         <div class="fw-bloom-title">Stand next to it. Then count the trucks.</div>
         <div class="fw-bloom-sub">Weighed in the vehicle parked outside your own house.</div>
-        <a class="fw-cta-full" href="experiences/feel-the-weight/">Feel the weight →</a>
+        <a class="fw-cta-full" href="/experiences/feel-the-weight/">Feel the weight →</a>
       </div>
     </div>
-    <div class="hb-wrap"><a class="nav-tile" href="library/index.html" title="The Library"><svg class="nav-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 7.1 C10.1 5.4 7 4.9 4.1 5.3 V17.9 C7 17.5 10.1 18 12 19.7"/><path d="M12 7.1 C13.9 5.4 17 4.9 19.9 5.3 V17.9 C17 17.5 13.9 18 12 19.7"/><path d="M12 7.1 V19.7"/></svg><span class="nav-lbl">Articles</span></a><div class="hb" aria-hidden="true"><p class="hb-k">The Library</p><p class="hb-t">How to read a site before anyone tells you what it means.</p><p class="hb-s">The vocabulary: what counts as a megalith, what a joint can prove, what the ground remembers.</p><div class="hb-rows"><div class="hb-row"><span>What is a megalith?</span><b></b></div><div class="hb-row"><span>Stone Circles</span><b></b></div><div class="hb-row"><span>Mini Megaliths</span><b></b></div><div class="hb-row"><span>True Monoliths</span><b></b></div><div class="hb-row"><span>and more</span><b></b></div></div><a class="hb-cta" href="library/index.html">Open the Library &rarr;</a></div></div>
-    <div class="hb-wrap"><a class="nav-tile" href="patterns/" title="Patterns"><svg class="nav-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><circle cx="5.2" cy="7.6" r="1.7"/><circle cx="18.8" cy="6.8" r="1.7"/><circle cx="12" cy="17.2" r="1.7"/><path d="M6.9 7.4 L17.1 6.9"/><path d="M6.2 9.1 L11 15.7"/><path d="M13.1 15.8 L17.9 8.4"/></svg><span class="nav-lbl">Patterns</span></a><div class="hb" aria-hidden="true"><p class="hb-k">Patterns</p><div class="hb-glyphs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 8 C8 6.4, 16 6.4, 21 8"/><path d="M3 12 C8 10.4, 16 10.4, 21 12"/><path d="M3 16 C8 14.4, 16 14.4, 21 16"/><circle cx="17.6" cy="19.4" r="2.1"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 19 L3 8 L7 5 L11 5 L13 9 L13 19 Z"/><path d="M21 19 L21 6 L17 6 L13 9 L13 19 Z"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M10 2 L14 2 L15.5 5 L13 7 L9 7 L8.5 4 Z"/><path d="M3 13 L7 12 L9 15 L7 19 L3 18 L2 15 Z"/><path d="M16 14 L20 13 L22 16 L20 20 L17 20 L15 17 Z"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="12" r="7"/><circle cx="15" cy="12" r="7"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M4 8 L12 4 L20 8 L20 18 L12 22 L4 18 Z"/><path d="M4 8 L12 12 L20 8 M12 12 L12 22"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M9 3 L15 3 L15 14 L12 21 L9 14 Z"/><path d="M9 7 L15 7"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 5 L21 5" stroke-width="0.7" opacity="0.5"/><path d="M3 10 L21 10" stroke-width="0.9" opacity="0.7"/><path d="M3 15 L21 15" stroke-width="1.2" opacity="0.85"/><path d="M3 20 L21 20" stroke-width="1.7"/></svg></div><p class="hb-t">What people made possible.</p><p class="hb-s">24 ways to look closer. Discover recurring features and the creators who show them.</p><a class="hb-cta" href="patterns/">See the patterns &rarr;</a></div></div>
+    <div class="hb-wrap"><a class="nav-tile" href="/library/index.html" title="The Library"><svg class="nav-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 7.1 C10.1 5.4 7 4.9 4.1 5.3 V17.9 C7 17.5 10.1 18 12 19.7"/><path d="M12 7.1 C13.9 5.4 17 4.9 19.9 5.3 V17.9 C17 17.5 13.9 18 12 19.7"/><path d="M12 7.1 V19.7"/></svg><span class="nav-lbl">Articles</span></a><div class="hb" aria-hidden="true"><p class="hb-k">The Library</p><p class="hb-t">How to read a site before anyone tells you what it means.</p><p class="hb-s">The vocabulary: what counts as a megalith, what a joint can prove, what the ground remembers.</p><div class="hb-rows"><div class="hb-row"><span>What is a megalith?</span><b></b></div><div class="hb-row"><span>Stone Circles</span><b></b></div><div class="hb-row"><span>Mini Megaliths</span><b></b></div><div class="hb-row"><span>True Monoliths</span><b></b></div><div class="hb-row"><span>and more</span><b></b></div></div><a class="hb-cta" href="/library/index.html">Open the Library &rarr;</a></div></div>
+    <div class="hb-wrap"><a class="nav-tile" href="/patterns/" title="Patterns"><svg class="nav-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><circle cx="5.2" cy="7.6" r="1.7"/><circle cx="18.8" cy="6.8" r="1.7"/><circle cx="12" cy="17.2" r="1.7"/><path d="M6.9 7.4 L17.1 6.9"/><path d="M6.2 9.1 L11 15.7"/><path d="M13.1 15.8 L17.9 8.4"/></svg><span class="nav-lbl">Patterns</span></a><div class="hb" aria-hidden="true"><p class="hb-k">Patterns</p><div class="hb-glyphs"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 8 C8 6.4, 16 6.4, 21 8"/><path d="M3 12 C8 10.4, 16 10.4, 21 12"/><path d="M3 16 C8 14.4, 16 14.4, 21 16"/><circle cx="17.6" cy="19.4" r="2.1"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 19 L3 8 L7 5 L11 5 L13 9 L13 19 Z"/><path d="M21 19 L21 6 L17 6 L13 9 L13 19 Z"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M10 2 L14 2 L15.5 5 L13 7 L9 7 L8.5 4 Z"/><path d="M3 13 L7 12 L9 15 L7 19 L3 18 L2 15 Z"/><path d="M16 14 L20 13 L22 16 L20 20 L17 20 L15 17 Z"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="12" r="7"/><circle cx="15" cy="12" r="7"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M4 8 L12 4 L20 8 L20 18 L12 22 L4 18 Z"/><path d="M4 8 L12 12 L20 8 M12 12 L12 22"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M9 3 L15 3 L15 14 L12 21 L9 14 Z"/><path d="M9 7 L15 7"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M3 5 L21 5" stroke-width="0.7" opacity="0.5"/><path d="M3 10 L21 10" stroke-width="0.9" opacity="0.7"/><path d="M3 15 L21 15" stroke-width="1.2" opacity="0.85"/><path d="M3 20 L21 20" stroke-width="1.7"/></svg></div><p class="hb-t">What people made possible.</p><p class="hb-s">24 ways to look closer. Discover recurring features and the creators who show them.</p><a class="hb-cta" href="/patterns/">See the patterns &rarr;</a></div></div>
     <div class="ed-wrap">
       <a class="nav-tile is-featured" href="https://editions.theancientatlas.com" target="_blank" rel="noopener" title="Editions"><svg class="nav-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M4.6 8.9 L19.4 8.9 L18.6 20.6 L5.4 20.6 Z"/><path d="M8.4 8.9 L8.4 6 C8.4 4.5 9.9 3.1 12 3.1 C14.1 3.1 15.6 4.5 15.6 6 L15.6 8.9"/></svg><span class="nav-lbl">Editions</span></a>
       <div class="ed-bloom" aria-hidden="true">
         <div class="ed-bloom-imgs">
-          <figure class="ed-thumb"><img src="img/editions/mammoth-model.jpg" alt="Model wearing the Mammoth hoodie" loading="lazy" /><figcaption>The Mammoth · <b>$56</b></figcaption></figure>
+          <figure class="ed-thumb"><img src="/img/editions/mammoth-model.jpg" alt="Model wearing the Mammoth hoodie" loading="lazy" /><figcaption>The Mammoth · <b>$56</b></figcaption></figure>
           <figure class="ed-thumb"><img src="https://imgproxy.fourthwall.dev/UNIudsh7Lc1AqdgtuTKgWUY1DsBatKgV3tNPnJkl2CM/w:720/sm:1/enc/aWvsIkkgqW3y-2e0/WI51INxVJ45IMjuX/-_GOsce0CUB1iFlN/dKIK-AAYfT_5mbY8/awtlk46OAzVpDGct/QlaPglh5BX2Txjv_/E2huZkRjPiB8BzBb/dQya5a5JXUaVuCE4/TNe4BiPiRQ5_eFAk/JJVczahnrhebtEuR/wSxnGHIV0fO7dWtj/UED9Ebg9ldog8xHO/KFlZzTMnp7uPlypP/xMfTgZ_pYJo1WAbi/NaW_1YuplSM.jpg" alt="The Sabertooth Night Mug" loading="lazy" /><figcaption>The Sabertooth · <b>$18</b></figcaption></figure>
         </div>
         <div class="ed-bloom-title">Wear the deep past.</div>
@@ -2284,10 +2285,11 @@ body.present #broadcast-controls{
                 <button type="button" class="lidar-gallery-play" aria-label="Pause landscape previews"><span aria-hidden="true"></span></button>
               </div>
               <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
+              <a class="lidar-share-link" href="/lidar">Link to LiDAR collection ↗</a>
             </div>
           </details>
           <a href="/obelisks" class="atlas-explore-row" data-explore-obelisks><img src="/assets/glyphs/compact/obelisk.svg" width="44" height="44" alt=""><span><strong>Explore obelisks</strong><small>Follow the stones from Egypt to the world.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
-          <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
+          <a class="atlas-explore-row" href="/follow-the-water" data-explore-water><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
           <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
         </div>
       </section>
@@ -2333,7 +2335,7 @@ body.present #broadcast-controls{
     <button class="sb-how" onclick="replayWelcome()" title="How this works">
       <span aria-hidden="true">?</span><span class="sb-how-lbl">How this works</span>
     </button>
-    <a href="contact.html" class="sb-contact" title="Report an error or suggest a site">
+    <a href="/contact.html" class="sb-contact" title="Report an error or suggest a site">
       Spot an error? Suggest a site &rarr;
     </a>
     <div class="sb-copyright">© <span class="year">2026</span> The Ancient Atlas</div>
@@ -2461,7 +2463,7 @@ body.present #broadcast-controls{
   </div>
 
   <!-- Experiences — Feel the Weight (flagship interactive) -->
-  <a class="mf-exp-strip" href="experiences/feel-the-weight/">
+  <a class="mf-exp-strip" href="/experiences/feel-the-weight/">
     <span class="mf-exp-glyph" aria-hidden="true">⚖</span>
     <span class="mf-exp-t">
       <span class="mf-exp-eb">New · Experience</span>
@@ -2473,7 +2475,7 @@ body.present #broadcast-controls{
 
   <!-- Creator Studies — reuses the Experiences strip classes so it inherits
        styling exactly and adds no new CSS surface to the map page. -->
-  <a class="mf-exp-strip" href="creators/">
+  <a class="mf-exp-strip" href="/creators/">
     <span class="mf-exp-glyph" aria-hidden="true">✦</span>
     <span class="mf-exp-t">
       <span class="mf-exp-eb">New · Creator Study No. 01</span>
@@ -2484,7 +2486,7 @@ body.present #broadcast-controls{
   </a>
 
   <!-- Island guides: an editorial discovery link alongside creator studies. -->
-  <a class="mf-exp-strip" href="islands/">
+  <a class="mf-exp-strip" href="/islands/">
     <span class="mf-exp-glyph" aria-hidden="true">◈</span>
     <span class="mf-exp-t"><span class="mf-exp-eb">Visual field guides</span><span class="mf-exp-ti">Corsica &amp; Sardinia</span><span class="mf-exp-sb">Giant stonework, two islands, many perspectives.</span></span>
     <span class="mf-exp-ar" aria-hidden="true">→</span>
@@ -2508,31 +2510,32 @@ body.present #broadcast-controls{
                 <button type="button" class="lidar-gallery-play" aria-label="Pause landscape previews"><span aria-hidden="true"></span></button>
               </div>
               <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
+              <a class="lidar-share-link" href="/lidar">Link to LiDAR collection ↗</a>
             </div>
       </details>
       <a href="/obelisks" class="atlas-explore-row" data-explore-obelisks><img src="/assets/glyphs/compact/obelisk.svg" width="44" height="44" alt=""><span><strong>Explore obelisks</strong><small>Follow the stones from Egypt to the world.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
-          <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
+          <a class="atlas-explore-row" href="/follow-the-water" data-explore-water><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
       <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
     </div>
   </section>
 <div class="atlas-feature-browser atlas-feature-mobile" aria-label="Browse site features"></div>
   <div class="mf-mininav" aria-label="Site sections">
-    <a class="mf-mininav-link" href="experiences/feel-the-weight/">
+    <a class="mf-mininav-link" href="/experiences/feel-the-weight/">
       <span class="mf-mininav-glyph" aria-hidden="true">⚖</span>
       <span class="mf-mininav-label">Experiences</span>
     </a>
     <span class="mf-mininav-sep" aria-hidden="true">·</span>
-    <a class="mf-mininav-link" href="creators/">
+    <a class="mf-mininav-link" href="/creators/">
       <span class="mf-mininav-glyph" aria-hidden="true">✦</span>
       <span class="mf-mininav-label">Studies</span>
     </a>
     <span class="mf-mininav-sep" aria-hidden="true">·</span>
-    <a class="mf-mininav-link" href="library/index.html">
+    <a class="mf-mininav-link" href="/library/index.html">
       <span class="mf-mininav-glyph" aria-hidden="true">6</span>
       <span class="mf-mininav-label">Articles</span>
     </a>
     <span class="mf-mininav-sep" aria-hidden="true">·</span>
-    <a class="mf-mininav-link" href="patterns/">
+    <a class="mf-mininav-link" href="/patterns/">
       <span class="mf-mininav-glyph" aria-hidden="true">7</span>
       <span class="mf-mininav-label">What people made possible</span>
     </a>
@@ -2547,7 +2550,7 @@ body.present #broadcast-controls{
       <span class="mf-mininav-label">Support</span>
     </a>
     <span class="mf-mininav-sep" aria-hidden="true">·</span>
-    <a class="mf-mininav-link" href="contact.html">
+    <a class="mf-mininav-link" href="/contact.html">
       <span class="mf-mininav-glyph" aria-hidden="true">✉</span>
       <span class="mf-mininav-label">Contact</span>
     </a>
@@ -2555,7 +2558,7 @@ body.present #broadcast-controls{
 
   <!-- Editions — delicate shop strip -->
   <a class="mf-ed-strip" href="https://editions.theancientatlas.com" target="_blank" rel="noopener">
-    <img src="img/editions/mammoth-model.jpg" alt="Model wearing the Mammoth hoodie" loading="lazy" />
+    <img src="/img/editions/mammoth-model.jpg" alt="Model wearing the Mammoth hoodie" loading="lazy" />
     <span class="mf-ed-t">
       <span class="mf-ed-eb">The Editions</span>
       <span class="mf-ed-ti">Wear the deep past.</span>
@@ -25049,7 +25052,7 @@ function init() {
   // Rail steps aside at the zoom floor : see CINEMA MODE below.
   map.on('zoomend', syncCinema);
   setTimeout(initDepthRail, 300);
-  if (!lidarPilot && !lidarParams.has('obelisk') && lidarParams.get('obelisks') !== '1') setTimeout(scheduleWelcome, 650);
+  if (!lidarPilot && !lidarParams.has('explore') && !lidarParams.has('obelisk') && lidarParams.get('obelisks') !== '1') setTimeout(scheduleWelcome, 650);
 
   // Voyager color tiles in a dedicated pane, heavily desaturated and tinted
   // navy for a moonlit-Milky-Way feel : modern infrastructure recedes to faint
@@ -27091,7 +27094,7 @@ function renderSupport() {
       or email hello@theancientatlas.com.
     </p>
     <p class="sp-foot" style="margin-top:10px;border-top:1px solid rgba(201,168,76,0.12);padding-top:14px">
-      Spot an error or know a site we should add? <a href="contact.html" style="color:var(--champagne);text-decoration:none;border-bottom:1px dotted rgba(201,168,76,0.5)">Tell us &rarr;</a>
+      Spot an error or know a site we should add? <a href="/contact.html" style="color:var(--champagne);text-decoration:none;border-bottom:1px dotted rgba(201,168,76,0.5)">Tell us &rarr;</a>
     </p>
   `;
 
@@ -27132,6 +27135,7 @@ function renderSupport() {
 function resetFilters() {
   document.getElementById("water-route")?.remove();
   waterJourneyActive = false;
+  if (location.pathname === '/follow-the-water') setExploreSharePath('/');
   activeFeature = null;
   searchTerm = '';
   activeRegion = null;
@@ -27182,7 +27186,8 @@ function resetAtlasMap() {
   document.getElementById('sidebar').scrollTop = 0;
 
   const url = new URL(location.href);
-  for (const key of ['site', 'lidar', 'lidarSite', 'obelisks', 'obelisk']) url.searchParams.delete(key);
+  url.pathname = '/';
+  for (const key of ['site', 'lidar', 'lidarSite', 'obelisks', 'obelisk', 'explore']) url.searchParams.delete(key);
   const state = sheetWasOpen && history.state?.atlasModal ? null : history.state;
   if (sheetWasOpen) window._atlasModalHistoryPushed = false;
   history.replaceState(state, '', url);
@@ -28354,7 +28359,18 @@ const WATER_STOPS = [
   {site: 'Petra', film: '8-Pa0IKAQBs', start: 128, cue: 'Jordan · Walk the Siq with Brien Foerster. Look for the water channels he points out on both sides of the passage.'},
   {site: 'Sacred Well of Santa Cristina', film: 'q0YNkMIt3BY', cue: 'Sardinia · Follow the stairway down to the sacred well. Here, access to water also shaped a place of ritual.'}
 ];
+function setExploreSharePath(path) {
+  const url = new URL(location.href);
+  url.pathname = path;
+  url.searchParams.delete('explore');
+  history.replaceState(history.state, '', url);
+}
 function startWaterJourney() {
+  window.atlasObelisks?.disable({restoreFocus:false});
+  atlasLidarRequest++;
+  window.closeAtlasLidar?.({restoreFocus:false});
+  if (!document.getElementById('welcome').hidden) closeWelcome();
+  setExploreSharePath('/follow-the-water');
   waterJourneyActive = true;
   if (!document.getElementById("water-route")) {
     const guide = document.createElement("div");
@@ -28375,6 +28391,7 @@ function goToWaterStop(index) {
 function endWaterJourney() {
   document.getElementById("water-route")?.remove();
   waterJourneyActive = false;
+  if (location.pathname === '/follow-the-water') setExploreSharePath('/');
   renderMarkers();
   if (selectedSite) visitPanelSite(selectedSite.n);
 }
@@ -28459,6 +28476,10 @@ function loadAtlasLidar() {
 
 async function openAtlasLidar(name, trigger, keepView = false) {
   const request = ++atlasLidarRequest;
+  if (waterJourneyActive) {
+    closeFloatingPlayer();
+    endWaterJourney();
+  }
   if (window.atlasObelisks?.enabled) window.atlasObelisks.disable();
   const site = SITES.find(candidate => candidate.n === name && ATLAS_LIDAR_SITES.includes(name));
   if (!site) return;
@@ -29931,6 +29952,10 @@ document.addEventListener('DOMContentLoaded', () => {
   updateMobileMode();
   window.initAtlasObelisks?.(map, {
     prepareMap() {
+      if (waterJourneyActive) {
+        closeFloatingPlayer();
+        endWaterJourney();
+      }
       atlasLidarRequest++;
       window.closeAtlasLidar?.();
       if (showGrid) toggleGrid(false);
@@ -29952,7 +29977,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     return link;
   }
-  for (const directory of document.querySelectorAll('.lidar-directory')) {
+  document.querySelectorAll('[data-explore-water]').forEach(link => link.addEventListener('click', event => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    startWaterJourney();
+  }));
+  const exploreEntry = new URLSearchParams(location.search).get('explore');
+  if (exploreEntry === 'water') startWaterJourney();
+
+  const lidarDirectories = Array.from(document.querySelectorAll('.lidar-directory'));
+  const lidarEntryDirectory = exploreEntry === 'lidar'
+    ? lidarDirectories.find(directory => directory.getClientRects().length)
+    : null;
+  for (const directory of lidarDirectories) {
     const stops = directory.querySelector('.lidar-landscape-stops');
     function showStops(name) {
       const landscape = ATLAS_LIDAR_LANDSCAPES.find(entry => entry.sites.includes(name));
@@ -30028,7 +30065,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let world;
     directory.addEventListener('toggle', () => {
       syncPlayback();
-      if (!directory.open) return;
+      if (!directory.open) {
+        if (location.pathname === '/lidar' && !lidarDirectories.some(entry => entry.open)) setExploreSharePath('/');
+        return;
+      }
+      if (location.pathname === '/' && !new URLSearchParams(location.search).has('site')) setExploreSharePath('/lidar');
       if (world) {
         world.invalidateSize({ pan: false });
         return;
@@ -30171,6 +30212,11 @@ document.addEventListener('DOMContentLoaded', () => {
       pages.append(page);
     }
   }
+  if (lidarEntryDirectory) {
+    lidarEntryDirectory.open = true;
+    lidarEntryDirectory.scrollIntoView({block: 'nearest'});
+  }
+
   // Auto-update copyright year — fire-and-forget, never needs touching
   document.querySelectorAll('.year').forEach(el => { el.textContent = new Date().getFullYear(); });
 });
