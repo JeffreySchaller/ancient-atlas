@@ -73,7 +73,7 @@ The phases are ordered so each one's output becomes the next one's input. Skippi
 | **"Filmed for the Atlas" badge** : visual mark on videos created in response to the assignment desk | manual flag in JSON |
 | Contributor leaderboard at `/contributors.html` showing PR counts and tenure | regenerated on each build |
 | Tier-based self-merge privileges (5 PRs → existing sites, 20 PRs → new sites, 50 PRs → editorial team) | manual but documented |
-| OG image regeneration on every build via `generate-og.py` in CI | **fully automatic** |
+| Illustrated homepage sharing card updates when the artwork changes | editorial design |
 | Auto-attribution : when an editorial-team contributor merges, their name appears in the commit + the contributor page | **fully automatic** |
 | Public Discord or community space for editorial discussion (optional, if traction warrants it) | manual |
 
@@ -106,7 +106,6 @@ After Phase 4, here's what runs without human intervention :
 - ✅ Build script reassembles index.html from JSON files (GitHub Actions on push)
 - ✅ Every PR is verified for oEmbed + duplicates + schema (CI)
 - ✅ New creator uploads are discovered daily and turned into draft PRs (cron)
-- ✅ OG image regenerates with current site count on every build (CI)
 - ✅ Copyright year updates on every page load (client-side JS)
 - ✅ Audit script runs on every PR (CI)
 
