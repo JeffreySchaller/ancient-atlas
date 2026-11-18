@@ -4,18 +4,24 @@ from html import escape as e
 from pathlib import Path
 from urllib.parse import quote
 ROOT=Path(__file__).resolve().parent.parent
-LABELS={'fieldwork':'Field visits','conversation':'Conversations','museum':'Museum collections','short':'Shorts'}
+LABELS={'fieldwork':'Field visits','conversation':'Conversations','museum':'Museum collections','meditation':'Meditations','short':'Shorts'}
 def main():
     data=json.loads((ROOT/'data/ancientatlas-channel.json').read_text())
     cards=[]
     for x in data['items']:
         ident=x['id'];kind=x['kind'];duration=x.get('duration');dur=f'{int(duration)//60}:{int(duration)%60:02d}' if duration else ''
         watch=x['url']+(('&' if '?' in x['url'] else '?')+f't={x["start"]}s' if x.get('start') else '')
-        sites=''.join(f'<a class="place" href="/?site={quote(s,safe="")}">Explore {e(s)} on the map →</a>' for s in x.get('sites',[]))
-        if not sites and x.get('related_sites'):
-            sites=''.join(f'<a class="place" href="/?site={quote(s,safe="")}">Explore {e(s)} (discussed) →</a>' for s in x['related_sites'])
-        credit=x.get('credit','Ancient Atlas')
-        cards.append(f'''<article class="film" data-kind="{kind}" data-search="{e((x['title']+' '+credit+' '+' '.join(x.get('sites',[]))).lower(),quote=True)}"><a class="thumb" href="{e(watch,quote=True)}" aria-label="Watch {e(x['title'],quote=True)} on YouTube"><img src="https://i.ytimg.com/vi/{ident}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">{f'<span class="duration">{dur}</span>' if dur else ''}</a><div class="film-copy"><p class="eyebrow">{LABELS[kind]}</p><h2><a href="{e(watch,quote=True)}">{e(x['title'])}</a></h2><p class="credit">{e(credit)}</p><a class="watch" href="{e(watch,quote=True)}">Watch on YouTube ↗</a>{sites}</div></article>''')
+        mapped_sites = x.get('sites', [])
+        related_sites = x.get('related_sites', [])
+        place_names = list(dict.fromkeys(mapped_sites + related_sites))
+        place_links = []
+        for name in place_names:
+            suffix = ' (discussed)' if kind == 'conversation' and name in related_sites else ' on the map'
+            place_links.append(f'<a class="place" href="/?site={quote(name, safe="")}">Explore {e(name)}{suffix} →</a>')
+        sites = ''.join(place_links)
+        credit = x.get('credit', 'Ancient Atlas')
+        search_text = ' '.join([x['title'], credit, *place_names, *x.get('search_terms', [])]).lower()
+        cards.append(f'''<article class="film" data-kind="{kind}" data-search="{e(search_text,quote=True)}"><a class="thumb" href="{e(watch,quote=True)}" aria-label="Watch {e(x['title'],quote=True)} on YouTube"><img src="https://i.ytimg.com/vi/{ident}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">{f'<span class="duration">{dur}</span>' if dur else ''}</a><div class="film-copy"><p class="eyebrow">{LABELS[kind]}</p><h2><a href="{e(watch,quote=True)}">{e(x['title'])}</a></h2><p class="credit">{e(credit)}</p><a class="watch" href="{e(watch,quote=True)}">Watch on YouTube ↗</a>{sites}</div></article>''')
     counts={k:sum(x['kind']==k for x in data['items']) for k in LABELS}
     buttons='<button type="button" data-filter="all" aria-pressed="true">All '+str(len(cards))+'</button>'+''.join(f'<button type="button" data-filter="{k}" aria-pressed="false">{v} {counts[k]}</button>' for k,v in LABELS.items())
     page='''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ancient Atlas films and Shorts | The Ancient Atlas</title><meta name="description" content="Field visits, conversations and museum films from Ancient Atlas. Find a film, explore its place, and discover the creators who walk the ground."><link rel="canonical" href="https://theancientatlas.com/creators/ancient-atlas"><meta property="og:image" content="https://theancientatlas.com/og-image.png"><meta property="og:title" content="Ancient Atlas on film"><link rel="icon" href="/favicon.ico"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet"><style>
