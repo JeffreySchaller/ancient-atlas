@@ -1,8 +1,140 @@
 {
   "handle": "@AncientAtlasMap",
-  "checked": "2026-10-23",
-  "scope": "All public Videos and Shorts tabs checked 2026-10-23; channel has no public Streams tab.",
+  "checked": "2026-11-18",
+  "scope": "All public Videos and Shorts tabs checked 2026-11-18; channel has no public Streams tab.",
   "items": [
+    {
+      "id": "SY66i-7lVlQ",
+      "title": "What Made This Place Sacred?",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=SY66i-7lVlQ",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 377,
+      "published": "2026-11-15",
+      "kind": "conversation",
+      "credit": "Ancient Atlas with Camille Sauvé · field footage by Sorcerers of Stone",
+      "related_sites": [
+        "Cusilluchayoc"
+      ],
+      "search_terms": [
+        "Kusilluchayoq",
+        "Cusco",
+        "Peru"
+      ]
+    },
+    {
+      "id": "Kfm4VegMFKU",
+      "title": "Mycenae’s Massive Walls—Looking Closer with Mirko & Debora",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=Kfm4VegMFKU",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 624,
+      "published": "2026-11-07",
+      "kind": "conversation",
+      "credit": "Ancient Atlas · field footage by Mirko Kulig and Debora Marçal of Stone Riddles",
+      "related_sites": [
+        "Mycenae"
+      ],
+      "search_terms": [
+        "Lion Gate",
+        "Greece"
+      ]
+    },
+    {
+      "id": "QZ_bz_EVJL8",
+      "title": "The Stones of Sillustani: What We Walked Past",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=QZ_bz_EVJL8",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 784,
+      "published": "2026-11-07",
+      "kind": "conversation",
+      "credit": "Ancient Atlas with Val of Solstice Hunter · Ollantaytambo footage by Alex — Earth Explorer",
+      "related_sites": [
+        "Sillustani",
+        "Ollantaytambo"
+      ],
+      "search_terms": [
+        "Lake Umayo",
+        "Peru"
+      ]
+    },
+    {
+      "id": "l7Za7xgFKD4",
+      "title": "Tomales Point | Ancient Atlas + Solstice Hunter",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=l7Za7xgFKD4",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 530,
+      "published": "2026-11-01",
+      "kind": "fieldwork",
+      "credit": "Ancient Atlas with Val of Solstice Hunter",
+      "search_terms": [
+        "Point Reyes",
+        "Northern California"
+      ],
+      "placement_note": "Filmed at Tomales Point; the Atlas has no pin for this location."
+    },
+    {
+      "id": "ftyBJloQJCs",
+      "title": "The Wall Hidden in Ecuador’s Jungle",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=ftyBJloQJCs",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 347,
+      "published": "2026-10-31",
+      "kind": "conversation",
+      "credit": "Ancient Atlas · field footage by Daniel d viaje",
+      "search_terms": [
+        "Llanganates"
+      ],
+      "placement_note": "Discusses field footage from the Llanganates. The wall’s precise location and origin are unverified."
+    },
+    {
+      "id": "GW1eOAPp1ao",
+      "title": "Ten Minutes at Saqsaywaman | Stone and Sky (Music Only)",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=GW1eOAPp1ao",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 600,
+      "published": "2026-10-26",
+      "kind": "meditation",
+      "credit": "Ancient Atlas · original score by Jeffrey Schaller",
+      "related_sites": [
+        "Sacsayhuamán"
+      ],
+      "search_terms": [
+        "Sacsayhuaman",
+        "Cusco",
+        "Peru"
+      ],
+      "placement_note": "Music-only companion to the narrated film featured on the Sacsayhuamán pin."
+    },
+    {
+      "id": "Xm4gwAS8YHg",
+      "title": "Ten Minutes at Saqsaywaman | A Meditation on Noticing",
+      "format": "film",
+      "url": "https://www.youtube.com/watch?v=Xm4gwAS8YHg",
+      "catalog_status": "mapped",
+      "sites": [
+        "Sacsayhuamán"
+      ],
+      "duration": 600,
+      "published": "2026-10-25",
+      "kind": "meditation",
+      "credit": "Ancient Atlas · narration and original score by Jeffrey Schaller",
+      "search_terms": [
+        "Sacsayhuaman",
+        "Cusco",
+        "Peru"
+      ]
+    },
     {
       "id": "Xq_YM0s4nzA",
       "title": "Sardinia Has 7,000 Stone Towers. We Had Never Heard of Them.",
@@ -372,6 +504,197 @@
       "published": "2026-06-10",
       "kind": "fieldwork",
       "credit": "Ancient Atlas"
+    },
+    {
+      "id": "EpL6t7pDDBo",
+      "title": "Why Does This Stone Shine? | Camille Sauvé",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/EpL6t7pDDBo",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 36,
+      "published": "2026-11-15",
+      "kind": "short",
+      "credit": "Ancient Atlas · field footage by Camille Sauvé of Sorcerers of Stone",
+      "related_sites": [
+        "Cusilluchayoc"
+      ],
+      "search_terms": [
+        "Kusilluchayoq",
+        "Cusco",
+        "Peru"
+      ]
+    },
+    {
+      "id": "RSycT0hRDyg",
+      "title": "Why Does This Wall Change Halfway Across? | Mycenae",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/RSycT0hRDyg",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 34,
+      "published": "2026-11-08",
+      "kind": "short",
+      "credit": "Ancient Atlas · field footage by Mirko Kulig and Debora Marçal of Stone Riddles",
+      "related_sites": [
+        "Mycenae"
+      ],
+      "search_terms": [
+        "Greece"
+      ]
+    },
+    {
+      "id": "sFGxk998tTQ",
+      "title": "Why Is There a Hole in This Stone? | Sillustani, Peru",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/sFGxk998tTQ",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 13,
+      "published": "2026-11-07",
+      "kind": "short",
+      "credit": "Ancient Atlas with Val of Solstice Hunter",
+      "related_sites": [
+        "Sillustani"
+      ]
+    },
+    {
+      "id": "LmY92oIoP2Q",
+      "title": "Look Beneath the Water at Spokane Falls",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/LmY92oIoP2Q",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 38,
+      "published": "2026-11-06",
+      "kind": "short",
+      "credit": "Ancient Atlas",
+      "search_terms": [
+        "Riverfront Park",
+        "Washington"
+      ]
+    },
+    {
+      "id": "-0op7_PO-cA",
+      "title": "Look Closer at Ecuador’s Jungle Wall",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/-0op7_PO-cA",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 39,
+      "published": "2026-11-01",
+      "kind": "short",
+      "credit": "Ancient Atlas · field footage by Daniel d viaje",
+      "search_terms": [
+        "Llanganates"
+      ]
+    },
+    {
+      "id": "QmsvT1bT68A",
+      "title": "What Shaped Spokane? Look Closer.",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/QmsvT1bT68A",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 34,
+      "published": "2026-10-29",
+      "kind": "short",
+      "credit": "Ancient Atlas",
+      "search_terms": [
+        "Riverfront Park",
+        "Washington"
+      ]
+    },
+    {
+      "id": "SsmFJBIwb9Q",
+      "title": "Spend Ten Minutes Somewhere Different | Saqsaywaman",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/SsmFJBIwb9Q",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 30,
+      "published": "2026-10-27",
+      "kind": "short",
+      "credit": "Ancient Atlas",
+      "related_sites": [
+        "Sacsayhuamán"
+      ],
+      "search_terms": [
+        "Sacsayhuaman",
+        "Cusco",
+        "Peru"
+      ]
+    },
+    {
+      "id": "-IRM4y3BnLA",
+      "title": "These Stone Steps Lead Beneath Sardinia | Ancient Atlas",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/-IRM4y3BnLA",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 38,
+      "published": "2026-10-25",
+      "kind": "short",
+      "credit": "Ancient Atlas · field footage by Stone Riddles",
+      "related_sites": [
+        "Sacred Well of Santa Cristina"
+      ],
+      "search_terms": [
+        "Paulilatino",
+        "Italy"
+      ]
+    },
+    {
+      "id": "q8ZujIvkOy4",
+      "title": "A Stone Door. Rooms Carved Into Rock. | Ancient Atlas",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/q8ZujIvkOy4",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 37,
+      "published": "2026-10-24",
+      "kind": "short",
+      "credit": "Ancient Atlas · field footage by Luzhou Abo (@luzhouabo)",
+      "search_terms": [
+        "China",
+        "rock-cut caves"
+      ]
+    },
+    {
+      "id": "lJWeunGpM14",
+      "title": "We shined a light on the King's Chamber granite box",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/lJWeunGpM14",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 35,
+      "published": "2026-10-23",
+      "kind": "short",
+      "credit": "Ancient Atlas with UnchartedX",
+      "related_sites": [
+        "Great Pyramid of Giza (Khufu)"
+      ],
+      "search_terms": [
+        "Egypt"
+      ]
+    },
+    {
+      "id": "M2Rp54QCbgg",
+      "title": "Look at the fit. Ollantaytambo, Peru",
+      "format": "short",
+      "url": "https://www.youtube.com/shorts/M2Rp54QCbgg",
+      "catalog_status": "catalog_only",
+      "sites": [],
+      "duration": 27,
+      "published": "2026-10-23",
+      "kind": "short",
+      "credit": "Ancient Atlas",
+      "related_sites": [
+        "Ollantaytambo"
+      ],
+      "search_terms": [
+        "Sacred Valley"
+      ]
     },
     {
       "id": "-AyC2HA-cEg",
