@@ -1,31 +1,9 @@
 #!/usr/bin/env python3
-"""
-regenerate-og-image.py — Build the Open Graph preview image from current
-sites.json + videos.json data.
+"""Render the legacy dot-map card to _stage/legacy-dot-card.png for reference.
 
-Reads:
-  data/sites.json
-  data/videos.json
-
-Writes:
-  public/og-image.png  (1200×630, the size Apple/Facebook/X expect)
-
-Run from the repo root after any content batch:
-    python3 scripts/regenerate-og-image.py
-    git add public/og-image.png
-    git commit -m "Regenerate og-image with current site count"
-    git push origin main
-
-NOTE on Apple Messages caching: Apple's link preview service caches
-og-image and og-description aggressively — sometimes 24-48 hours. To
-force a refresh in iMessage:
-  1. Deploy the new og-image.
-  2. In iMessage, paste the URL again as a new message in a different
-     chat. That re-triggers Apple's parser.
-  3. Or wait ~24 hours and Apple's CDN will pick up the new image.
-Old previews already in chats will not update — they're permanent.
-
-Dependencies: pip install Pillow --break-system-packages
+Run from the repository root: python3 scripts/regenerate-og-image.py
+The published illustration is rendered by scripts/render-atlas-og.cjs.
+Requires Pillow.
 """
 import json, os, sys
 from pathlib import Path
@@ -33,7 +11,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 REPO_ROOT = Path(__file__).parent.parent
 DATA_DIR = REPO_ROOT / 'data'
-DEST = REPO_ROOT / 'public' / 'og-image.png'
+DEST = REPO_ROOT / '_stage' / 'legacy-dot-card.png'
 
 # Brand palette
 OBSIDIAN = (13, 13, 18)
@@ -198,8 +176,3 @@ draw.text((W - 80 - url_w, STAT_TOP + 30), url_text,
 DEST.parent.mkdir(parents=True, exist_ok=True)
 img.save(DEST, "PNG", optimize=True)
 print(f"Saved: {DEST}  ({os.path.getsize(DEST) / 1024:.0f} KB)")
-print()
-print("Next steps:")
-print(f"  git add public/og-image.png")
-print(f"  git commit -m \"Regenerate og-image: {site_count} sites, {vid_count} walkthroughs\"")
-print(f"  git push origin main")

@@ -26,11 +26,8 @@ python3 scripts/add-<topic>-batch.py
 # 3. Rebuild public/index.html and mirror public/data/
 python3 scripts/build.py
 
-# 4. Regenerate OG image if site count or walkthrough count changed
-python3 scripts/regenerate-og-image.py
-
-# 5. Commit and push
-git add data/ public/data/ public/index.html public/og-image.png scripts/
+# 4. Commit and push
+git add data/ public/data/ public/index.html scripts/
 git commit -m "<topic> batch: +N sites, +M wires"
 git push origin main
 ```
