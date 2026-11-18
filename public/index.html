@@ -2137,7 +2137,9 @@ body.present #broadcast-controls{
 <script defer src="/assets/js/analytics.js"></script>
 <link rel="stylesheet" href="/assets/site-photos.css">
 <script src="/assets/js/site-photos.js"></script>
-<link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script><link rel="stylesheet" href="/assets/atlas-features.css"></head>
+<link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script><link rel="stylesheet" href="/assets/atlas-features.css">
+<link rel="stylesheet" href="/assets/obelisks.css?v=1">
+<script src="/assets/js/atlas-obelisks.js?v=1"></script></head>
 <body>
 <div id="app">
 <header>
@@ -2278,6 +2280,7 @@ body.present #broadcast-controls{
               <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
             </div>
           </details>
+          <button type="button" class="atlas-explore-row" data-explore-obelisks><span class="ob-explore-glyph" aria-hidden="true"><svg viewBox="0 0 24 32"><path d="M8 27 9 8 12 3 15 8 16 27Z M9 8h6 M6 28h12"/></svg></span><span><strong>Explore obelisks</strong><small>Follow the stones from Egypt to the world.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
           <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
           <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
         </div>
@@ -2496,7 +2499,8 @@ body.present #broadcast-controls{
               <ul class="lidar-landscape-stops" aria-label="Sites in the selected landscape" hidden></ul>
             </div>
       </details>
-      <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
+      <button type="button" class="atlas-explore-row" data-explore-obelisks><span class="ob-explore-glyph" aria-hidden="true"><svg viewBox="0 0 24 32"><path d="M8 27 9 8 12 3 15 8 16 27Z M9 8h6 M6 28h12"/></svg></span><span><strong>Explore obelisks</strong><small>Follow the stones from Egypt to the world.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
+          <button class="atlas-explore-row" onclick="startWaterJourney()"><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></button>
       <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
     </div>
   </section>
@@ -25031,7 +25035,7 @@ function init() {
   // Rail steps aside at the zoom floor : see CINEMA MODE below.
   map.on('zoomend', syncCinema);
   setTimeout(initDepthRail, 300);
-  if (!lidarPilot) setTimeout(scheduleWelcome, 650);
+  if (!lidarPilot && !lidarParams.has('obelisk') && lidarParams.get('obelisks') !== '1') setTimeout(scheduleWelcome, 650);
 
   // Voyager color tiles in a dedicated pane, heavily desaturated and tinted
   // navy for a moonlit-Milky-Way feel : modern infrastructure recedes to faint
@@ -25498,6 +25502,8 @@ function renderFilters() {
   climWrap.appendChild(climBtn);
   climWrap.appendChild(climTip);
   tf.appendChild(climWrap);
+
+  window.atlasObelisks?.renderToggle(tf);
 
   // After all toggle buttons are in the DOM, wire fixed-position tooltips
   wireFixedTooltips();
@@ -28371,11 +28377,12 @@ const ATLAS_LIDAR_LANDSCAPES = [
 ];
 const ATLAS_LIDAR_SITES = ATLAS_LIDAR_LANDSCAPES.flatMap(landscape => landscape.sites);
 let atlasLidarScript;
+let atlasLidarRequest = 0;
 
 function loadAtlasLidar() {
   atlasLidarScript ??= new Promise((resolve, reject) => {
     const script = document.createElement('script');
-    script.src = '/assets/js/atlas-lidar-pilot.js';
+    script.src = '/assets/js/atlas-lidar-pilot.js?v=obelisks-1';
     script.onload = resolve;
     script.onerror = () => {
       script.remove();
@@ -28388,10 +28395,13 @@ function loadAtlasLidar() {
 }
 
 async function openAtlasLidar(name, trigger, keepView = false) {
+  const request = ++atlasLidarRequest;
+  if (window.atlasObelisks?.enabled) window.atlasObelisks.disable();
   const site = SITES.find(candidate => candidate.n === name && ATLAS_LIDAR_SITES.includes(name));
   if (!site) return;
   try {
     await loadAtlasLidar();
+    if (request !== atlasLidarRequest) return;
     window.initAtlasLidarPilot(map, {
       site,
       keepView,
@@ -28464,6 +28474,7 @@ function visitPanelSite(name) {
 }
 
 function showDetail(site) {
+  window.atlasObelisks?.closePanel();
   window.atlasAnalytics?.('atlas_site_view', site.n);
   const cat = CATS[site.cat] || CATS.megalithic;
   const detail = document.getElementById('detail');
@@ -28746,6 +28757,7 @@ window.atlasExploreMap = function() {
   if (site) map.setView([site.lat, site.lng], Math.max(map.getZoom(), 10));
 };
 function returnToAtlasFeed() {
+  window.atlasObelisks?.closePanel();
   document.body.classList.remove('watch-map');
   updateMobileMode();
 }
@@ -29321,6 +29333,7 @@ function welcomeKey(ev) {
 }
 
 function maybeShowWelcome() {
+  if (document.body.classList.contains('obelisks-enabled')) return true;
   if (document.body.classList.contains('lidar-pilot')) return true;
   var w = document.getElementById('welcome');
   if (!w) return true;
@@ -29853,6 +29866,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   // After desktop init runs, evaluate mobile mode and render feed if needed
   updateMobileMode();
+  window.initAtlasObelisks?.(map, {
+    prepareMap() {
+      atlasLidarRequest++;
+      window.closeAtlasLidar?.();
+      if (showGrid) toggleGrid(false);
+      if (!document.getElementById('welcome').hidden) closeWelcome();
+      closeDetail();
+      if (isMobileViewport()) window.atlasExploreMap();
+    },
+    refreshControls: renderFilters
+  });
   function lidarDirectoryLink(name, label) {
     const link = document.createElement('a');
     link.href = '/?lidar=1&lidarSite=' + encodeURIComponent(name);

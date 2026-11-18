@@ -1,0 +1,2893 @@
+[
+  {
+    "id": "lateran",
+    "name": "Lateran Obelisk",
+    "city": "Rome",
+    "country": "Italy",
+    "category": "pharaonic",
+    "material": "Red granite",
+    "lat": 41.886874,
+    "lon": 12.504396,
+    "coordinate_note": "Approximate location published by Rome municipal tourism; its map pin is a location guide, not a survey.",
+    "shaft_height_m": 32.18,
+    "height_note": "32.18 m published by Rome municipal tourism.",
+    "mass_t": null,
+    "mass_note": "Rome’s tourism record reports 455 tons. The unit and whether the figure describes the original or shortened shaft are unclear; published estimates differ.",
+    "original_site": "Temple of Amun, Karnak",
+    "origin_lat": 25.7184,
+    "origin_lon": 32.6583,
+    "relocations": [
+      {
+        "date": "4th century CE",
+        "place": "Alexandria",
+        "note": "Constantine began removal; project interrupted by his death."
+      },
+      {
+        "date": "357 CE",
+        "place": "Circus Maximus, Rome",
+        "note": "Constantius II completed shipment."
+      },
+      {
+        "date": "1588",
+        "place": "Piazza San Giovanni in Laterano",
+        "note": "Restored from broken sections and erected by Domenico Fontana."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rome municipal tourism monument record",
+        "url": "https://www.turismoroma.it/it/luoghi/obelisco-lateranense"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/lateran.htm"
+      }
+    ],
+    "notes": "Thutmose III / Thutmose IV. Tallest standing ancient Egyptian obelisk. Published mass figures disagree and may mix original versus shortened restored shaft.",
+    "mass_reported": 455.0,
+    "mass_unit": "tons (not standardized)",
+    "checked_date": "2026-11-18",
+    "creation_label": "Thutmose III and Thutmose IV",
+    "summary": "A colossal obelisk from Karnak, transported to Rome in 357 CE and raised again at the Lateran in 1588. Its surviving shaft is the tallest standing ancient Egyptian obelisk.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Thutmose III and Thutmose IV",
+        "place": "Temple of Amun, Karnak",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 25.7184,
+        "lon": 32.6583,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "4th century CE",
+        "place": "Alexandria",
+        "note": "Constantine began removal; project interrupted by his death.",
+        "lat": 31.2,
+        "lon": 29.92,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "357 CE",
+        "place": "Circus Maximus, Rome",
+        "note": "Constantius II completed shipment.",
+        "lat": 41.886,
+        "lon": 12.485,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1588",
+        "place": "Piazza San Giovanni in Laterano",
+        "note": "Restored from broken sections and erected by Domenico Fontana.",
+        "lat": 41.886874,
+        "lon": 12.504396,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Thutmose III and Thutmose IV",
+      "Red granite",
+      "32.18 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "lateran",
+        "title": "Lateran Obelisk HD",
+        "creator": "Livioandronico2013",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lateran_Obelisk_HD.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Lateran_Obelisk_HD.jpg/960px-Lateran_Obelisk_HD.jpg",
+        "width": 960,
+        "height": 2612,
+        "alt": "Lateran Obelisk in Rome",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Livioandronico2013 · CC BY-SA 4.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/lateran.jpg"
+      }
+    ]
+  },
+  {
+    "id": "vatican",
+    "name": "Vatican Obelisk",
+    "city": "Vatican City",
+    "country": "Vatican City",
+    "category": "egyptian_undated",
+    "material": "Red granite",
+    "lat": 41.902251,
+    "lon": 12.458371,
+    "coordinate_note": "Approximate location published by Rome municipal tourism; its map pin is a location guide, not a survey.",
+    "shaft_height_m": 25.36,
+    "height_note": "25.36 m Vatican record.",
+    "mass_t": 330,
+    "mass_note": "Vatican publishes approximately 330 tonnes.",
+    "original_site": "Alexandria (earlier original placement uncertain)",
+    "origin_lat": 31.2,
+    "origin_lon": 29.92,
+    "relocations": [
+      {
+        "date": "c. 37–40 CE",
+        "place": "Circus of Caligula and Nero, Rome",
+        "note": "Brought under Caligula; modern institutional accounts differ on exact year."
+      },
+      {
+        "date": "1586",
+        "place": "St Peter’s Square",
+        "note": "Moved and erected by Domenico Fontana for Sixtus V."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Vatican: The obelisk",
+        "url": "https://www.vatican.va/content/vatican/en/ra/obelisco.html"
+      },
+      {
+        "title": "Rome municipal tourism",
+        "url": "https://www.turismoroma.it/en/places/vatican-obelisk"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/vaticano.htm"
+      }
+    ],
+    "notes": "Uninscribed ancient Egyptian granite shaft. Its original patron and pharaonic date are not securely established.",
+    "mass_reported": 330,
+    "mass_unit": "metric tonnes",
+    "checked_date": "2026-11-18",
+    "creation_label": "Ancient Egyptian; date and patron uncertain",
+    "summary": "An uninscribed Egyptian granite obelisk brought from Alexandria to imperial Rome. Fontana moved it to St Peter’s Square in 1586, where a cross and new inscriptions gave it a Christian setting.",
+    "origin_label": "Earliest known setting",
+    "origin_note": "Alexandria is the earliest setting traced here. An earlier Egyptian location and the original patron are uncertain.",
+    "journey": [
+      {
+        "date": "Before c. 37–40 CE",
+        "place": "Alexandria (earlier original placement uncertain)",
+        "note": "Alexandria is the earliest setting traced here. An earlier Egyptian location and the original patron are uncertain.",
+        "lat": 31.2,
+        "lon": 29.92,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "c. 37–40 CE",
+        "place": "Circus of Caligula and Nero, Rome",
+        "note": "Brought under Caligula; modern institutional accounts differ on exact year.",
+        "lat": 41.9007,
+        "lon": 12.4554,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1586",
+        "place": "St Peter’s Square",
+        "note": "Moved and erected by Domenico Fontana for Sixtus V.",
+        "lat": 41.902251,
+        "lon": 12.458371,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Ancient Egyptian; date and patron uncertain",
+      "Red granite",
+      "25.36 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "vatican",
+        "title": "Obelisque Saint Peter's square Vatican City",
+        "creator": "Jebulon",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Obelisque_Saint_Peter%27s_square_Vatican_City.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Obelisque_Saint_Peter%27s_square_Vatican_City.jpg/960px-Obelisque_Saint_Peter%27s_square_Vatican_City.jpg",
+        "width": 960,
+        "height": 1648,
+        "alt": "Vatican Obelisk in Vatican City",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Jebulon · CC0 · Wikimedia Commons",
+        "src": "/assets/obelisks/vatican.jpg"
+      }
+    ]
+  },
+  {
+    "id": "flaminio",
+    "name": "Flaminio Obelisk",
+    "city": "Rome",
+    "country": "Italy",
+    "category": "pharaonic",
+    "material": "Red granite",
+    "lat": 41.910722,
+    "lon": 12.476333,
+    "coordinate_note": "Approximate precise monument pin from field guide; official municipal pin is offset within Piazza del Popolo.",
+    "shaft_height_m": 23.91,
+    "height_note": "23.91 m stone shaft in engineering study TableI,p 170. Tourism and field-guide pages publish differing figures.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Sun temple, Heliopolis",
+    "origin_lat": 30.1294,
+    "origin_lon": 31.3075,
+    "relocations": [
+      {
+        "date": "10 BCE",
+        "place": "Circus Maximus, Rome",
+        "note": "Augustus imported it."
+      },
+      {
+        "date": "1589",
+        "place": "Piazza del Popolo",
+        "note": "Re-erected for Sixtus V."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rome municipal tourism monument record",
+        "url": "https://www.turismoroma.it/it/luoghi/obelisco-flaminio"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/flaminio.htm"
+      },
+      {
+        "title": "ICCROM, Structural Conservation of Stone Masonry (1990), seismic assessment Table I, p 170",
+        "url": "https://www.iccrom.org/sites/default/files/2018-02/1990_stone_masonry_athens_49219_light.pdf"
+      }
+    ],
+    "notes": "Seti I and Ramesses II.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Seti I and Ramesses II",
+    "summary": "Augustus brought this Heliopolis obelisk to the Circus Maximus in 10 BCE. It was recovered and raised in Piazza del Popolo in 1589.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Seti I and Ramesses II",
+        "place": "Sun temple, Heliopolis",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 30.1294,
+        "lon": 31.3075,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "10 BCE",
+        "place": "Circus Maximus, Rome",
+        "note": "Augustus imported it.",
+        "lat": 41.886,
+        "lon": 12.485,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1589",
+        "place": "Piazza del Popolo",
+        "note": "Re-erected for Sixtus V.",
+        "lat": 41.910722,
+        "lon": 12.476333,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Seti I and Ramesses II",
+      "Red granite",
+      "23.91 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "flaminio",
+        "title": "Obelisco Flaminio, Plaza del Pueblo, Roma, Italia, 2022-09-14, DD 04",
+        "creator": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Obelisco_Flaminio,_Plaza_del_Pueblo,_Roma,_Italia,_2022-09-14,_DD_04.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Obelisco_Flaminio%2C_Plaza_del_Pueblo%2C_Roma%2C_Italia%2C_2022-09-14%2C_DD_04.jpg/960px-Obelisco_Flaminio%2C_Plaza_del_Pueblo%2C_Roma%2C_Italia%2C_2022-09-14%2C_DD_04.jpg",
+        "width": 960,
+        "height": 1440,
+        "alt": "Flaminio Obelisk in Rome",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Diego Delso · CC BY-SA 4.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/flaminio.jpg"
+      }
+    ]
+  },
+  {
+    "id": "montecitorio",
+    "name": "Montecitorio / Campense Obelisk",
+    "city": "Rome",
+    "country": "Italy",
+    "category": "pharaonic",
+    "material": "Red granite",
+    "lat": 41.900654,
+    "lon": 12.478624,
+    "coordinate_note": "Approximate location published by Rome municipal tourism; its map pin is a location guide, not a survey.",
+    "shaft_height_m": 21.79,
+    "height_note": "Stone shaft height only, approximate; excludes modern base and finial.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Heliopolis",
+    "origin_lat": 30.1294,
+    "origin_lon": 31.3075,
+    "relocations": [
+      {
+        "date": "10 BCE",
+        "place": "Campus Martius, Rome",
+        "note": "Imported by Augustus and used as a solar gnomon."
+      },
+      {
+        "date": "1792",
+        "place": "Piazza Monte Citorio",
+        "note": "Reconstructed and re-erected."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rome municipal tourism monument record",
+        "url": "https://www.turismoroma.it/it/luoghi/obelisco-campense-monte-citorio"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/montecitorio.htm"
+      }
+    ],
+    "notes": "Psammetichus II.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Psammetichus II",
+    "summary": "An Egyptian obelisk that Augustus brought to Rome in 10 BCE and used as a solar gnomon. Its pedestal connected the monument with Rome’s conquest of Egypt.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Psammetichus II",
+        "place": "Heliopolis",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 30.1294,
+        "lon": 31.3075,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "10 BCE",
+        "place": "Campus Martius, Rome",
+        "note": "Imported by Augustus and used as a solar gnomon.",
+        "lat": 41.904,
+        "lon": 12.476,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1792",
+        "place": "Piazza Monte Citorio",
+        "note": "Reconstructed and re-erected.",
+        "lat": 41.900654,
+        "lon": 12.478624,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Psammetichus II",
+      "Red granite",
+      "21.79 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "montecitorio",
+        "title": "Obelisk of montecitorio arp",
+        "creator": "Adrian Pingstone (Arpingstone)",
+        "license": "Public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Obelisk_of_montecitorio_arp.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Obelisk_of_montecitorio_arp.jpg/960px-Obelisk_of_montecitorio_arp.jpg",
+        "width": 960,
+        "height": 1281,
+        "alt": "Montecitorio / Campense Obelisk in Rome",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Adrian Pingstone (Arpingstone) · Public domain · Wikimedia Commons",
+        "src": "/assets/obelisks/montecitorio.jpg"
+      }
+    ]
+  },
+  {
+    "id": "macuteo",
+    "name": "Macuteo / Pantheon Obelisk",
+    "city": "Rome",
+    "country": "Italy",
+    "category": "pharaonic",
+    "material": "Red granite",
+    "lat": 41.898996,
+    "lon": 12.476993,
+    "coordinate_note": "Approximate location published by Rome municipal tourism; its map pin is a location guide, not a survey.",
+    "shaft_height_m": 6.34,
+    "height_note": "6.34 m from municipal overview; detailed record says about 6.5 m.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Heliopolis",
+    "origin_lat": 30.1294,
+    "origin_lon": 31.3075,
+    "relocations": [
+      {
+        "date": "Roman imperial period",
+        "place": "Iseum Campense, Rome",
+        "note": "Exact transport details uncertain."
+      },
+      {
+        "date": "Late 14th century",
+        "place": "San Macuto, Rome",
+        "note": "Re-erected after discovery."
+      },
+      {
+        "date": "1711",
+        "place": "Piazza della Rotonda",
+        "note": "Placed on fountain facing Pantheon."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rome municipal tourism",
+        "url": "https://www.turismoroma.it/en/places/macuteo-obelisk"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/rotonda.htm"
+      }
+    ],
+    "notes": "Ramesses II. Pantheon and Macuteo are alternative names for one object.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Ramesses II",
+    "summary": "A Heliopolis obelisk reused in Rome’s sanctuary of Isis. After a medieval setting near San Macuto, it joined the fountain in front of the Pantheon in 1711.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Ramesses II",
+        "place": "Heliopolis",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 30.1294,
+        "lon": 31.3075,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Roman imperial period",
+        "place": "Iseum Campense, Rome",
+        "note": "Exact transport details uncertain.",
+        "lat": 41.898,
+        "lon": 12.479,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Late 14th century",
+        "place": "San Macuto, Rome",
+        "note": "Re-erected after discovery.",
+        "lat": 41.899,
+        "lon": 12.479,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1711",
+        "place": "Piazza della Rotonda",
+        "note": "Placed on fountain facing Pantheon.",
+        "lat": 41.898996,
+        "lon": 12.476993,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Ramesses II",
+      "Red granite",
+      "6.34 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "macuteo",
+        "title": "Obelisk and fountaine of the Pantheon",
+        "creator": "Livioandronico2013",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Obelisk_and_fountaine_of_the_Pantheon.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Obelisk_and_fountaine_of_the_Pantheon.jpg/960px-Obelisk_and_fountaine_of_the_Pantheon.jpg",
+        "width": 960,
+        "height": 1483,
+        "alt": "Macuteo / Pantheon Obelisk in Rome",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Livioandronico2013 · CC BY-SA 4.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/macuteo.jpg"
+      }
+    ]
+  },
+  {
+    "id": "minerva",
+    "name": "Minerveo / Minerva Obelisk",
+    "city": "Rome",
+    "country": "Italy",
+    "category": "pharaonic",
+    "material": "Red granite",
+    "lat": 41.898138,
+    "lon": 12.477756,
+    "coordinate_note": "Approximate location published by Rome municipal tourism; its map pin is a location guide, not a survey.",
+    "shaft_height_m": 5.47,
+    "height_note": "Stone shaft height only, approximate; excludes modern base and finial.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Sais (attribution in specialist gazetteer)",
+    "origin_lat": 30.965,
+    "origin_lon": 30.768,
+    "relocations": [
+      {
+        "date": "Roman imperial period",
+        "place": "Iseum Campense, Rome",
+        "note": "Imported in antiquity; date uncertain."
+      },
+      {
+        "date": "1667",
+        "place": "Piazza della Minerva",
+        "note": "Mounted on Bernini-designed elephant."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rome municipal tourism monument record",
+        "url": "https://www.turismoroma.it/it/luoghi/obelisco-della-minerva-minerveo"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/minerva.htm"
+      }
+    ],
+    "notes": "Apries, 26th Dynasty. Sais is a specialist attribution for the original Egyptian setting; its exact placement is uncertain.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Apries, 26th Dynasty",
+    "summary": "An ancient Egyptian obelisk carried to Rome in the imperial period. Since 1667 it has stood on the elephant designed by Bernini in Piazza della Minerva.",
+    "origin_label": "Original setting",
+    "origin_note": "Sais is a specialist attribution; its exact first Egyptian setting still requires epigraphic confirmation.",
+    "journey": [
+      {
+        "date": "Apries, 26th Dynasty",
+        "place": "Sais (attribution in specialist gazetteer)",
+        "note": "Sais is a specialist attribution; its exact first Egyptian setting still requires epigraphic confirmation.",
+        "lat": 30.965,
+        "lon": 30.768,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Roman imperial period",
+        "place": "Iseum Campense, Rome",
+        "note": "Imported in antiquity; date uncertain.",
+        "lat": 41.898,
+        "lon": 12.479,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1667",
+        "place": "Piazza della Minerva",
+        "note": "Mounted on Bernini-designed elephant.",
+        "lat": 41.898138,
+        "lon": 12.477756,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Apries, 26th Dynasty",
+      "Red granite",
+      "5.47 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "minerva",
+        "title": "Elephant and Obelisk - Bernini",
+        "creator": "Petar Milošević",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Elephant_and_Obelisk_-_Bernini.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Elephant_and_Obelisk_-_Bernini.jpg/960px-Elephant_and_Obelisk_-_Bernini.jpg",
+        "width": 960,
+        "height": 1304,
+        "alt": "Minerveo / Minerva Obelisk in Rome",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Petar Milošević · CC BY-SA 4.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/minerva.jpg"
+      }
+    ]
+  },
+  {
+    "id": "dogali",
+    "name": "Dogali / Terme Obelisk",
+    "city": "Rome",
+    "country": "Italy",
+    "category": "pharaonic",
+    "material": "Red granite",
+    "lat": 41.902167,
+    "lon": 12.497472,
+    "coordinate_note": "Approximate monument pin from field guide; municipal location pin is offset south of shaft.",
+    "shaft_height_m": null,
+    "height_note": "Published dimensions differ: about 5.4 m for the shaft in a field guide and over 9 m in a municipal description. The latter may include the complete setting.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Heliopolis",
+    "origin_lat": 30.1294,
+    "origin_lon": 31.3075,
+    "relocations": [
+      {
+        "date": "Roman imperial period",
+        "place": "Iseum Campense, Rome",
+        "note": "Imported in antiquity."
+      },
+      {
+        "date": "1887",
+        "place": "Termini station square",
+        "note": "Erected as memorial to Italian dead at Dogali."
+      },
+      {
+        "date": "1924–1925",
+        "place": "Via delle Terme di Diocleziano",
+        "note": "Relocated nearby; sources differ by one year."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rome municipal tourism monument record",
+        "url": "https://www.turismoroma.it/it/luoghi/obelisco-di-dogali"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/terme.htm"
+      }
+    ],
+    "notes": "Ramesses II; paired historically with Boboli obelisk.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Ramesses II",
+    "summary": "An Egyptian obelisk later displayed in Rome’s sanctuary of Isis. In 1887 it became a memorial to Italian soldiers killed at Dogali, then moved nearby in the 1920s.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Ramesses II",
+        "place": "Heliopolis",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 30.1294,
+        "lon": 31.3075,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Roman imperial period",
+        "place": "Iseum Campense, Rome",
+        "note": "Imported in antiquity.",
+        "lat": 41.898,
+        "lon": 12.479,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1887",
+        "place": "Termini station square",
+        "note": "Erected as memorial to Italian dead at Dogali.",
+        "lat": 41.901,
+        "lon": 12.501,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1924–1925",
+        "place": "Via delle Terme di Diocleziano",
+        "note": "Relocated nearby; sources differ by one year.",
+        "lat": 41.902167,
+        "lon": 12.497472,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Ramesses II",
+      "Red granite"
+    ],
+    "photos": [
+      {
+        "id": "dogali",
+        "title": "Dogali-obelisk",
+        "creator": "Martin Knopp (Maus-Trauden); Wikimedia derivative",
+        "license": "Public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Dogali-obelisk.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Dogali-obelisk.jpg/960px-Dogali-obelisk.jpg",
+        "width": 960,
+        "height": 1377,
+        "alt": "Dogali / Terme Obelisk in Rome",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Martin Knopp (Maus-Trauden); Wikimedia derivative · Public domain · Wikimedia Commons",
+        "src": "/assets/obelisks/dogali.jpg"
+      }
+    ]
+  },
+  {
+    "id": "celimontana",
+    "name": "Celimontana / Mattei Obelisk",
+    "city": "Rome",
+    "country": "Italy",
+    "category": "pharaonic",
+    "material": "Red granite",
+    "lat": 41.883397,
+    "lon": 12.495303,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": 2.68,
+    "height_note": "2.68 m preserved ancient upper shaft in engineering study TableI,p 170; reconstructed lower portions excluded.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Heliopolis",
+    "origin_lat": 30.1294,
+    "origin_lon": 31.3075,
+    "relocations": [
+      {
+        "date": "Roman to medieval periods",
+        "place": "Capitoline / Aracoeli, Rome",
+        "note": "The ancient Roman setting is debated. Later evidence places the shaft around the Capitoline and the Aracoeli staircase."
+      },
+      {
+        "date": "1582; erected in the late 1580s",
+        "place": "Villa Mattei / Villa Celimontana",
+        "note": "The Senate gave it to Ciriaco Mattei in 1582; it was installed in his villa garden later in the decade."
+      },
+      {
+        "date": "c. 1817–1820",
+        "place": "Villa Celimontana",
+        "note": "Restored and repositioned within the villa. Published accounts differ on the date."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rome municipal tourism monument record",
+        "url": "https://www.turismoroma.it/it/luoghi/obelisco-mattejano-o-capitolino"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/celimontana.htm"
+      },
+      {
+        "title": "ICCROM, Structural Conservation of Stone Masonry (1990), seismic assessment Table I, p 170",
+        "url": "https://www.iccrom.org/sites/default/files/2018-02/1990_stone_masonry_athens_49219_light.pdf"
+      },
+      {
+        "title": "Rome heritage authority: Villa Celimontana",
+        "url": "https://www.sovraintendenzaroma.it/i_luoghi/ville_e_parchi_storici/ville_dei_nobili/villa_celimontana"
+      },
+      {
+        "title": "Rome: Villa Celimontana history",
+        "url": "https://www.turismoroma.it/en/places/villa-celimontana"
+      }
+    ],
+    "notes": "Ramesses II. Ancient Egyptian material survives only in upper portion; lower shaft is later reconstruction.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Ramesses II; surviving upper portion",
+    "summary": "Only the upper part of this reconstructed monument is an ancient Egyptian shaft. After a long history around Rome’s Capitoline, it passed to Ciriaco Mattei’s villa in the late sixteenth century.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Ramesses II",
+        "place": "Heliopolis",
+        "note": "The surviving ancient upper shaft is attributed to Ramesses II.",
+        "lat": 30.1294,
+        "lon": 31.3075,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Roman to medieval periods",
+        "place": "Capitoline / Aracoeli, Rome",
+        "note": "The ancient Roman setting is debated. Later evidence places the shaft around the Capitoline and the Aracoeli staircase.",
+        "lat": 41.894,
+        "lon": 12.483,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1582; erected in the late 1580s",
+        "place": "Villa Mattei / Villa Celimontana",
+        "note": "The Senate gave it to Ciriaco Mattei in 1582; it was installed in his villa garden later in the decade.",
+        "lat": 41.883397,
+        "lon": 12.495303,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "c. 1817–1820",
+        "place": "Villa Celimontana",
+        "note": "Restored and repositioned within the villa. Published accounts differ on the date.",
+        "lat": 41.883397,
+        "lon": 12.495303,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Ramesses II; surviving upper portion",
+      "Red granite",
+      "2.68 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "celimontana",
+        "title": "Villa Celimontana Obelisk",
+        "creator": "Tristantech",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Villa_Celimontana_Obelisk.JPG",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Villa_Celimontana_Obelisk.JPG/960px-Villa_Celimontana_Obelisk.JPG",
+        "width": 960,
+        "height": 1280,
+        "alt": "Celimontana / Mattei Obelisk in Rome",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Tristantech · CC BY-SA 3.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/celimontana.jpg"
+      }
+    ]
+  },
+  {
+    "id": "agonale",
+    "name": "Agonale / Piazza Navona Obelisk",
+    "city": "Rome",
+    "country": "Italy",
+    "category": "roman",
+    "material": "Granite",
+    "lat": 41.899237,
+    "lon": 12.472799,
+    "coordinate_note": "Approximate location published by Rome municipal tourism; its map pin is a location guide, not a survey.",
+    "shaft_height_m": 16.53,
+    "height_note": "Stone shaft height only, approximate; excludes modern base and finial.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Aswan quarry; carved for Domitian (not a pharaonic temple obelisk)",
+    "origin_lat": null,
+    "origin_lon": null,
+    "relocations": [
+      {
+        "date": "Late 1st century CE",
+        "place": "Rome",
+        "note": "Quarried in Egypt for Domitian, decorated in Rome."
+      },
+      {
+        "date": "c. 311 CE",
+        "place": "Circus of Maxentius",
+        "note": "Reused on Appian Way."
+      },
+      {
+        "date": "1651",
+        "place": "Piazza Navona",
+        "note": "Placed above Bernini’s Fountain of Four Rivers."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rome municipal tourism",
+        "url": "https://www.turismoroma.it/en/places/agonale-obelisk"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/navona.htm"
+      }
+    ],
+    "notes": "Roman imperial commission in Egyptian stone and hieroglyphic tradition. Separate from pharaonic exports.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Roman commission under Domitian",
+    "summary": "A Roman imperial commission in Egyptian granite and hieroglyphic tradition. Reused at the Circus of Maxentius, it became the centrepiece of Bernini’s Fountain of the Four Rivers in 1651.",
+    "origin_label": "Material and commission",
+    "origin_note": "Egyptian granite was used for a Roman commission under Domitian. The first installation and the precise place of carving are uncertain.",
+    "journey": [
+      {
+        "date": "Ancient period",
+        "place": "Aswan quarry; carved for Domitian (not a pharaonic temple obelisk)",
+        "note": "Egyptian granite was used for a Roman commission under Domitian. The first installation and the precise place of carving are uncertain.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "Historical location is not pinned because its position or the movement stage is uncertain."
+      },
+      {
+        "date": "Late 1st century CE",
+        "place": "Rome",
+        "note": "Quarried in Egypt for Domitian, decorated in Rome.",
+        "lat": 41.896,
+        "lon": 12.482,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "c. 311 CE",
+        "place": "Circus of Maxentius",
+        "note": "Reused on Appian Way.",
+        "lat": 41.854,
+        "lon": 12.519,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1651",
+        "place": "Piazza Navona",
+        "note": "Placed above Bernini’s Fountain of Four Rivers.",
+        "lat": 41.899237,
+        "lon": 12.472799,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Roman commission under Domitian",
+      "Granite",
+      "16.53 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "agonale",
+        "title": "Obelisco Agonale in Rome 02",
+        "creator": "Krzysztof Golik",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Obelisco_Agonale_in_Rome_02.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Obelisco_Agonale_in_Rome_02.jpg/960px-Obelisco_Agonale_in_Rome_02.jpg",
+        "width": 960,
+        "height": 1534,
+        "alt": "Agonale / Piazza Navona Obelisk in Rome",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Krzysztof Golik · CC BY-SA 4.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/agonale.jpg"
+      }
+    ]
+  },
+  {
+    "id": "pincio",
+    "name": "Pincian / Antinous Obelisk",
+    "city": "Rome",
+    "country": "Italy",
+    "category": "roman",
+    "material": "Red granite",
+    "lat": 41.910806,
+    "lon": 12.47975,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": 9.24,
+    "height_note": "Stone shaft height only, approximate; excludes modern base and finial.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Roman imperial commission for Antinous; original setting debated",
+    "origin_lat": null,
+    "origin_lon": null,
+    "relocations": [
+      {
+        "date": "2nd century CE",
+        "place": "Roman world",
+        "note": "Commissioned by Hadrian for cult of Antinous."
+      },
+      {
+        "date": "1822",
+        "place": "Pincian gardens, Rome",
+        "note": "Erected in current garden."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rome municipal tourism overview",
+        "url": "https://www.turismoroma.it/en/page/obelisks"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/pincio.htm"
+      },
+      {
+        "title": "Rome: Antinous obelisk journey",
+        "url": "https://www.turismoroma.it/en/node/1004"
+      }
+    ],
+    "notes": "Also called the Aurelian obelisk because of its findspot near the Aurelian wall. It was commissioned under Hadrian.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Hadrian; dedicated to Antinous",
+    "summary": "A Roman obelisk honoring Antinous whose first setting remains debated. Its later travels through Roman collections ended in the Pincian gardens in 1822.",
+    "origin_label": "Earliest known setting",
+    "origin_note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+    "journey": [
+      {
+        "date": "2nd century CE",
+        "place": "Original setting debated",
+        "note": "Hadrian commissioned the obelisk for the cult of Antinous; its first setting is debated.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "Historical location is not pinned because its position or the movement stage is uncertain."
+      },
+      {
+        "date": "1633",
+        "place": "Palazzo Barberini, Rome",
+        "note": "Moved to the Barberini courtyard, where it remained without being raised.",
+        "lat": 41.904,
+        "lon": 12.49,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "18th century",
+        "place": "Vatican gardens / Courtyard of the Pinecone",
+        "note": "Transferred into papal possession before its final erection on the Pincian.",
+        "lat": 41.906,
+        "lon": 12.454,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1822",
+        "place": "Pincian gardens, Rome",
+        "note": "Raised in its present garden setting under Pius VII.",
+        "lat": 41.910806,
+        "lon": 12.47975,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Hadrian; dedicated to Antinous",
+      "Red granite",
+      "9.24 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "pincio",
+        "title": "Antinous obelisk Rome",
+        "creator": "Jensens",
+        "license": "Public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Antinous_obelisk_Rome.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Antinous_obelisk_Rome.jpg/960px-Antinous_obelisk_Rome.jpg",
+        "width": 960,
+        "height": 1327,
+        "alt": "Pincian / Antinous Obelisk in Rome",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Jensens · Public domain · Wikimedia Commons",
+        "src": "/assets/obelisks/pincio.jpg"
+      }
+    ]
+  },
+  {
+    "id": "sallustian",
+    "name": "Sallustian Obelisk",
+    "city": "Rome",
+    "country": "Italy",
+    "category": "roman",
+    "material": "Red granite",
+    "lat": 41.907063,
+    "lon": 12.482852,
+    "coordinate_note": "Approximate location published by Rome municipal tourism; its map pin is a location guide, not a survey.",
+    "shaft_height_m": 13.91,
+    "height_note": "Stone shaft height only, approximate; excludes modern base and finial.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Gardens of Sallust, Rome (ancient known setting)",
+    "origin_lat": 41.908,
+    "origin_lon": 12.494,
+    "relocations": [
+      {
+        "date": "Roman imperial period",
+        "place": "Horti Sallustiani",
+        "note": "Hieroglyphs copy Flaminio inscriptions."
+      },
+      {
+        "date": "1789",
+        "place": "Trinità dei Monti",
+        "note": "Re-erected at top of Spanish Steps; municipal detailed page mistakenly gives1787."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rome municipal tourism monument record",
+        "url": "https://www.turismoroma.it/it/luoghi/obelisco-sallustiano"
+      },
+      {
+        "title": "Rome municipal overview",
+        "url": "https://www.turismoroma.it/en/page/obelisks"
+      }
+    ],
+    "notes": "Roman Egyptianizing monument. Exact dating and original commission debated.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Roman imperial period; precise date uncertain",
+    "summary": "A Roman Egyptian-style obelisk whose hieroglyphs copy the Flaminio inscriptions. It moved from the Gardens of Sallust to the top of the Spanish Steps in 1789.",
+    "origin_label": "Earliest known setting",
+    "origin_note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+    "journey": [
+      {
+        "date": "Ancient period",
+        "place": "Gardens of Sallust, Rome (ancient known setting)",
+        "note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+        "lat": 41.908,
+        "lon": 12.494,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Roman imperial period",
+        "place": "Horti Sallustiani",
+        "note": "Hieroglyphs copy Flaminio inscriptions.",
+        "lat": 41.908,
+        "lon": 12.494,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1789",
+        "place": "Trinità dei Monti",
+        "note": "Re-erected at the top of the Spanish Steps. Institutional summaries give 1789; another municipal page gives 1787.",
+        "lat": 41.907063,
+        "lon": 12.482852,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Roman imperial period; precise date uncertain",
+      "Red granite",
+      "13.91 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "sallustian",
+        "title": "Sallustian Obelisk - Rome 2016",
+        "creator": "José Luiz",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Sallustian_Obelisk_-_Rome_2016.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Sallustian_Obelisk_-_Rome_2016.jpg/960px-Sallustian_Obelisk_-_Rome_2016.jpg",
+        "width": 960,
+        "height": 1440,
+        "alt": "Sallustian Obelisk in Rome",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "José Luiz · CC BY-SA 4.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/sallustian.jpg"
+      }
+    ]
+  },
+  {
+    "id": "esquiline",
+    "name": "Esquiline Obelisk",
+    "city": "Rome",
+    "country": "Italy",
+    "category": "roman",
+    "material": "Red Aswan granite",
+    "lat": 41.898487,
+    "lon": 12.498042,
+    "coordinate_note": "Approximate location published by Rome municipal tourism; its map pin is a location guide, not a survey.",
+    "shaft_height_m": 14.75,
+    "height_note": "Stone shaft height only, approximate; excludes modern base and finial.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Mausoleum of Augustus, Rome (ancient known setting)",
+    "origin_lat": 41.906,
+    "origin_lon": 12.476,
+    "relocations": [
+      {
+        "date": "Roman imperial period",
+        "place": "Mausoleum of Augustus",
+        "note": "One of a pair; original creation date uncertain."
+      },
+      {
+        "date": "1587",
+        "place": "Piazza dell’Esquilino",
+        "note": "Reconstructed and re-erected."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rome municipal tourism",
+        "url": "https://www.turismoroma.it/it/node/994"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/esquilino.htm"
+      }
+    ],
+    "notes": "Usually classified as Roman-era Egyptianizing. Uninscribed; municipal record explicitly allows older Egyptian origin as alternative.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Roman-era attribution; earlier origin possible",
+    "summary": "One of two uninscribed granite obelisks associated with Augustus’s mausoleum. It was reconstructed and raised near Santa Maria Maggiore in 1587.",
+    "origin_label": "Earliest known setting",
+    "origin_note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+    "journey": [
+      {
+        "date": "Ancient period",
+        "place": "Mausoleum of Augustus, Rome (ancient known setting)",
+        "note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+        "lat": 41.906,
+        "lon": 12.476,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Roman imperial period",
+        "place": "Mausoleum of Augustus",
+        "note": "One of a pair; original creation date uncertain.",
+        "lat": 41.906,
+        "lon": 12.476,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1587",
+        "place": "Piazza dell’Esquilino",
+        "note": "Reconstructed and re-erected.",
+        "lat": 41.898487,
+        "lon": 12.498042,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Roman-era attribution; earlier origin possible",
+      "Red Aswan granite",
+      "14.75 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "esquiline",
+        "title": "Esquilino obelisk - Piazza dell'Esquilino - Rome, Italy - DSC05678",
+        "creator": "Daderot",
+        "license": "Public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Esquilino_obelisk_-_Piazza_dell%27Esquilino_-_Rome,_Italy_-_DSC05678.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Esquilino_obelisk_-_Piazza_dell%27Esquilino_-_Rome%2C_Italy_-_DSC05678.jpg/960px-Esquilino_obelisk_-_Piazza_dell%27Esquilino_-_Rome%2C_Italy_-_DSC05678.jpg",
+        "width": 960,
+        "height": 1440,
+        "alt": "Esquiline Obelisk in Rome",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Daderot · Public domain · Wikimedia Commons",
+        "src": "/assets/obelisks/esquiline.jpg"
+      }
+    ]
+  },
+  {
+    "id": "quirinal",
+    "name": "Quirinal Obelisk",
+    "city": "Rome",
+    "country": "Italy",
+    "category": "roman",
+    "material": "Granite",
+    "lat": 41.899204,
+    "lon": 12.486309,
+    "coordinate_note": "Approximate location published by Rome municipal tourism; its map pin is a location guide, not a survey.",
+    "shaft_height_m": 14.63,
+    "height_note": "Field-guide shaft measurement; municipal record says about 15 m.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Mausoleum of Augustus, Rome (ancient known setting)",
+    "origin_lat": 41.906,
+    "origin_lon": 12.476,
+    "relocations": [
+      {
+        "date": "Roman imperial period",
+        "place": "Mausoleum of Augustus",
+        "note": "Twin of Esquiline; creation date uncertain."
+      },
+      {
+        "date": "1786",
+        "place": "Piazza del Quirinale",
+        "note": "Restored and re-erected."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rome municipal tourism monument record",
+        "url": "https://www.turismoroma.it/it/luoghi/obelisco-quirinale"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/quirinale.htm"
+      }
+    ],
+    "notes": "Usually classified as Roman-era Egyptianizing. Uninscribed; dating uncertain.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Roman-era attribution; precise date uncertain",
+    "summary": "The partner of the Esquiline obelisk once associated with Augustus’s mausoleum. It was re-erected in Piazza del Quirinale in 1786.",
+    "origin_label": "Earliest known setting",
+    "origin_note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+    "journey": [
+      {
+        "date": "Ancient period",
+        "place": "Mausoleum of Augustus, Rome (ancient known setting)",
+        "note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+        "lat": 41.906,
+        "lon": 12.476,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Roman imperial period",
+        "place": "Mausoleum of Augustus",
+        "note": "Twin of Esquiline; creation date uncertain.",
+        "lat": 41.906,
+        "lon": 12.476,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1786",
+        "place": "Piazza del Quirinale",
+        "note": "Restored and re-erected.",
+        "lat": 41.899204,
+        "lon": 12.486309,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Roman-era attribution; precise date uncertain",
+      "Granite",
+      "14.63 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "quirinal",
+        "title": "Quirinale Piazza del Quirinale fontana Dioscuri e scuderie Roma",
+        "creator": "Wolfgang Moroder",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Quirinale_Piazza_del_Quirinale_fontana_Dioscuri_e_scuderie_Roma.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Quirinale_Piazza_del_Quirinale_fontana_Dioscuri_e_scuderie_Roma.jpg/960px-Quirinale_Piazza_del_Quirinale_fontana_Dioscuri_e_scuderie_Roma.jpg",
+        "width": 960,
+        "height": 1290,
+        "alt": "Quirinal Obelisk in Rome",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Wolfgang Moroder · CC BY-SA 3.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/quirinal.jpg"
+      }
+    ]
+  },
+  {
+    "id": "new-york",
+    "name": "Cleopatra’s Needle — New York",
+    "city": "New York City",
+    "country": "United States",
+    "category": "pharaonic",
+    "material": "Aswan granite",
+    "lat": 40.779625,
+    "lon": -73.965396,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": 21.03,
+    "height_note": "69 ft/approximately 21 m stone shaft.",
+    "mass_t": null,
+    "mass_note": "The Conservancy reports 220 tons without specifying the ton unit. The catalog keeps this as a reported figure rather than converting it to metric tonnes.",
+    "original_site": "Temple of the Sun, Heliopolis",
+    "origin_lat": 30.1294,
+    "origin_lon": 31.3075,
+    "relocations": [
+      {
+        "date": "c. 12 BCE",
+        "place": "Alexandria",
+        "note": "Moved by Romans, with its twin now in London."
+      },
+      {
+        "date": "1880",
+        "place": "New York harbor",
+        "note": "Arrived aboard Dessoug."
+      },
+      {
+        "date": "1881",
+        "place": "Central Park",
+        "note": "Raised January22; dedicated February22."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Central Park Conservancy",
+        "url": "https://www.centralparknyc.org/locations/obelisk"
+      },
+      {
+        "title": "Conservancy conservation history",
+        "url": "https://www.centralparknyc.org/restoration/obelisk"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/ny.htm"
+      }
+    ],
+    "notes": "Thutmose III with later Ramesses II inscriptions. Granite. Its nickname refers to its later Alexandrian setting rather than its original commissioner.",
+    "mass_reported": 220,
+    "mass_unit": "tons (not standardized)",
+    "checked_date": "2026-11-18",
+    "creation_label": "Thutmose III; later inscriptions of Ramesses II",
+    "summary": "One of a pair originally at Heliopolis and later moved to Alexandria. It crossed the Atlantic aboard Dessoug in 1880 and was raised in Central Park on 22 January 1881.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Thutmose III; later inscriptions of Ramesses II",
+        "place": "Temple of the Sun, Heliopolis",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 30.1294,
+        "lon": 31.3075,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "c. 12 BCE",
+        "place": "Alexandria",
+        "note": "Moved by Romans, with its twin now in London.",
+        "lat": 31.2,
+        "lon": 29.92,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1880",
+        "place": "New York harbor",
+        "note": "Arrived aboard Dessoug.",
+        "lat": 40.66,
+        "lon": -74.04,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1881",
+        "place": "Central Park",
+        "note": "Raised January 22; dedicated February 22.",
+        "lat": 40.779625,
+        "lon": -73.965396,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Thutmose III; later inscriptions of Ramesses II",
+      "Aswan granite",
+      "21.03 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "new-york",
+        "title": "Cleopatra's Needle, New York",
+        "creator": "Photograph by Mike Peel (www.mikepeel.net).",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cleopatra%27s_Needle,_New_York.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Cleopatra%27s_Needle%2C_New_York.jpg/960px-Cleopatra%27s_Needle%2C_New_York.jpg",
+        "width": 960,
+        "height": 1440,
+        "alt": "Cleopatra’s Needle — New York in New York City",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Photograph by Mike Peel (www.mikepeel.net). · CC BY-SA 4.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/new-york.jpg"
+      }
+    ]
+  },
+  {
+    "id": "london",
+    "name": "Cleopatra’s Needle — London",
+    "city": "London",
+    "country": "United Kingdom",
+    "category": "pharaonic",
+    "material": "Pink/red granite",
+    "lat": 51.508471,
+    "lon": -0.120335,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": 20.88,
+    "height_note": "Published heights differ: the field guide gives a 20.88 m shaft, while London Museum gives 18 m. The discrepancy remains unresolved.",
+    "mass_t": null,
+    "mass_note": "Field guide estimated 187 tons; London Museum >180,000kg. Approximate.",
+    "original_site": "Heliopolis",
+    "origin_lat": 30.1294,
+    "origin_lon": 31.3075,
+    "relocations": [
+      {
+        "date": "c. 12 BCE",
+        "place": "Alexandria",
+        "note": "Moved by Romans, twin now in NYC."
+      },
+      {
+        "date": "1877–1878",
+        "place": "Alexandria to Britain",
+        "note": "Towed in iron caisson Cleopatra; storm caused six rescue-party deaths."
+      },
+      {
+        "date": "1878",
+        "place": "Victoria Embankment",
+        "note": "Erected September12."
+      }
+    ],
+    "sources": [
+      {
+        "title": "London Museum transport history",
+        "url": "https://www.londonmuseum.org.uk/collections/london-stories/how-cleopatras-needle-came-london/"
+      },
+      {
+        "title": "Historic England record 1066169",
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1066169"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/london.htm"
+      }
+    ],
+    "notes": "Thutmose III with later Ramesses II inscriptions.",
+    "mass_reported": 187,
+    "mass_unit": "tons (not standardized)",
+    "checked_date": "2026-11-18",
+    "creation_label": "Thutmose III; later inscriptions of Ramesses II",
+    "summary": "The ancient partner of New York’s Cleopatra’s Needle. Its 1877–1878 journey in a floating iron cylinder survived a storm during which six rescue volunteers died.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Thutmose III; later inscriptions of Ramesses II",
+        "place": "Heliopolis",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 30.1294,
+        "lon": 31.3075,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "c. 12 BCE",
+        "place": "Alexandria",
+        "note": "Moved by Romans, twin now in NYC.",
+        "lat": 31.2,
+        "lon": 29.92,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1877–1878",
+        "place": "Alexandria to Britain",
+        "note": "Towed in iron caisson Cleopatra; storm caused six rescue-party deaths.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "Historical location is not pinned because its position or the movement stage is uncertain."
+      },
+      {
+        "date": "1878",
+        "place": "Victoria Embankment",
+        "note": "Erected September 12.",
+        "lat": 51.508471,
+        "lon": -0.120335,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Thutmose III; later inscriptions of Ramesses II",
+      "Pink/red granite",
+      "20.88 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "london",
+        "title": "Cleopatra-Needle",
+        "creator": "MrsEllacott",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Cleopatra-Needle.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Cleopatra-Needle.jpg/960px-Cleopatra-Needle.jpg",
+        "width": 960,
+        "height": 1590,
+        "alt": "Cleopatra’s Needle — London in London",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "MrsEllacott · CC BY-SA 4.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/london.jpg"
+      }
+    ]
+  },
+  {
+    "id": "paris",
+    "name": "Luxor Obelisk — Paris",
+    "city": "Paris",
+    "country": "France",
+    "category": "pharaonic",
+    "material": "Granite",
+    "lat": 48.865483,
+    "lon": 2.321122,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": 22.83,
+    "height_note": "Field guide 22.83 m; official sources round 22–23 m.",
+    "mass_t": 230,
+    "mass_note": "City district publication says 230 tonnes; specialist estimate 227. Approximate.",
+    "original_site": "Luxor Temple",
+    "origin_lat": 25.7003,
+    "origin_lon": 32.6398,
+    "relocations": [
+      {
+        "date": "1831",
+        "place": "Luxor",
+        "note": "Lowered for shipment."
+      },
+      {
+        "date": "1833",
+        "place": "Paris",
+        "note": "Arrived after Nile/Mediterranean/Atlantic/Seine journey."
+      },
+      {
+        "date": "1836",
+        "place": "Place de la Concorde",
+        "note": "Raised October25."
+      }
+    ],
+    "sources": [
+      {
+        "title": "City of Paris: heritage questions",
+        "url": "https://www.paris.fr/pages/parhistoire-repond-a-vos-questions-sur-le-patrimoine-et-l-histoire-de-paris-3568"
+      },
+      {
+        "title": "City of Paris district magazine 2022",
+        "url": "https://cdn.paris.fr/paris/2022/09/19/8e8d8e699cb3fc6dbac780de81cb18aa.pdf"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/paris.htm"
+      }
+    ],
+    "notes": "Ramesses II. Its partner remains at Luxor Temple.",
+    "mass_reported": 230,
+    "mass_unit": "metric tonnes",
+    "checked_date": "2026-11-18",
+    "creation_label": "Ramesses II",
+    "summary": "The western obelisk from Luxor Temple crossed the Nile, Mediterranean, Atlantic coast and Seine on its way to Paris. It was raised in Place de la Concorde in 1836; its partner remains at Luxor.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Ramesses II",
+        "place": "Luxor Temple",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 25.7003,
+        "lon": 32.6398,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1831",
+        "place": "Luxor",
+        "note": "Lowered for shipment.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "Historical location is not pinned because its position or the movement stage is uncertain."
+      },
+      {
+        "date": "1833",
+        "place": "Paris",
+        "note": "Arrived after Nile/Mediterranean/Atlantic/Seine journey.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "Historical location is not pinned because its position or the movement stage is uncertain."
+      },
+      {
+        "date": "1836",
+        "place": "Place de la Concorde",
+        "note": "Raised October 25.",
+        "lat": 48.865483,
+        "lon": 2.321122,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Ramesses II",
+      "Granite",
+      "22.83 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "paris",
+        "title": "Obélisque louqsor concorde vertical",
+        "creator": "Jebulon",
+        "license": "CC0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Ob%C3%A9lisque_louqsor_concorde_vertical.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Ob%C3%A9lisque_louqsor_concorde_vertical.jpg/960px-Ob%C3%A9lisque_louqsor_concorde_vertical.jpg",
+        "width": 960,
+        "height": 1602,
+        "alt": "Luxor Obelisk — Paris in Paris",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Jebulon · CC0 · Wikimedia Commons",
+        "src": "/assets/obelisks/paris.jpg"
+      }
+    ]
+  },
+  {
+    "id": "istanbul",
+    "name": "Theodosius / Thutmose III Obelisk",
+    "city": "Istanbul",
+    "country": "Türkiye",
+    "category": "pharaonic",
+    "material": "Red granite",
+    "lat": 41.005922,
+    "lon": 28.975384,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": 19.6,
+    "height_note": "19.6 m current preserved stone; does not represent full original shaft.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Karnak",
+    "origin_lat": 25.7184,
+    "origin_lon": 32.6583,
+    "relocations": [
+      {
+        "date": "4th century CE",
+        "place": "Alexandria",
+        "note": "Intermediate stage; exact transport chronology debated."
+      },
+      {
+        "date": "390 CE",
+        "place": "Hippodrome, Constantinople",
+        "note": "Erected under Theodosius I."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Hungarian National Museum: Theodosius obelisk",
+        "url": "https://seuso.mnm.hu/en/the-seuso-treasuer/chronology/obelisk-of-theodosius"
+      },
+      {
+        "title": "University of Bologna BYZART: pedestal inscription",
+        "url": "https://historica.unibo.it/entities/publication/100c044d-7645-400d-bdef-5646e172d990"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/istanbul.htm"
+      }
+    ],
+    "notes": "Only the upper portion of the ancient shaft survives. The neighboring Walled Obelisk is a separate masonry monument.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Thutmose III",
+    "summary": "The surviving upper part of a Karnak obelisk was raised in Constantinople’s Hippodrome in 390 CE. Its Roman pedestal records the new setting and the work of raising it.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Thutmose III",
+        "place": "Karnak",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 25.7184,
+        "lon": 32.6583,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "4th century CE",
+        "place": "Alexandria",
+        "note": "Intermediate stage; exact transport chronology debated.",
+        "lat": 31.2,
+        "lon": 29.92,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "390 CE",
+        "place": "Hippodrome, Constantinople",
+        "note": "Erected under Theodosius I.",
+        "lat": 41.005922,
+        "lon": 28.975384,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Thutmose III",
+      "Red granite",
+      "19.6 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "istanbul",
+        "title": "Obelisco de Teodosio, Estambul, Turquía, 2024-09-28, DD 128",
+        "creator": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Obelisco_de_Teodosio,_Estambul,_Turqu%C3%ADa,_2024-09-28,_DD_128.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Obelisco_de_Teodosio%2C_Estambul%2C_Turqu%C3%ADa%2C_2024-09-28%2C_DD_128.jpg/960px-Obelisco_de_Teodosio%2C_Estambul%2C_Turqu%C3%ADa%2C_2024-09-28%2C_DD_128.jpg",
+        "width": 960,
+        "height": 1440,
+        "alt": "Theodosius / Thutmose III Obelisk in Istanbul",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Diego Delso · CC BY-SA 4.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/istanbul.jpg"
+      }
+    ]
+  },
+  {
+    "id": "kingston-lacy",
+    "name": "Philae Obelisk — Kingston Lacy",
+    "city": "Wimborne, Dorset",
+    "country": "United Kingdom",
+    "category": "ptolemaic",
+    "material": "Pink granite",
+    "lat": 50.809695,
+    "lon": -2.032726,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": 3.66,
+    "height_note": "The field guide reports a 3.66 m shaft; National Trust records report 9 m, possibly for the complete setting. The differing measurement conventions remain unresolved.",
+    "mass_t": null,
+    "mass_note": "Field-guide estimate 6 tons.",
+    "original_site": "Temple of Isis, Philae",
+    "origin_lat": 24.02194,
+    "origin_lon": 32.88889,
+    "relocations": [
+      {
+        "date": "1819",
+        "place": "Philae / Nile",
+        "note": "Removal involved collapse of pier and recovery from Nile."
+      },
+      {
+        "date": "1821",
+        "place": "England",
+        "note": "Arrived in Britain."
+      },
+      {
+        "date": "1827–1839",
+        "place": "Kingston Lacy",
+        "note": "1827 foundation stone; institutional records give conflicting final erection dates."
+      }
+    ],
+    "sources": [
+      {
+        "title": "National Trust Collections 1257614.1",
+        "url": "https://www.nationaltrustcollections.org.uk/object/1257614.1"
+      },
+      {
+        "title": "National Trust Heritage Record MNA139009",
+        "url": "https://heritagerecords.nationaltrust.org.uk/HBSMR/MonRecord.aspx?uid=MNA139009"
+      },
+      {
+        "title": "Historic England Kingston Lacy landscape",
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1000718"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/philae.htm"
+      },
+      {
+        "title": "Former Philae Island: geographic reference",
+        "url": "https://en.wikipedia.org/wiki/Philae_Island"
+      }
+    ],
+    "notes": "Ptolemaic, associated with Ptolemy VIII / Cleopatra II and III in National Trust catalog. Greek base text and hieroglyphic shaft text are different, not a Rosetta-style translation.",
+    "mass_reported": 6,
+    "mass_unit": "tons (not standardized)",
+    "checked_date": "2026-11-18",
+    "creation_label": "Ptolemaic period; Ptolemy VIII and Cleopatra II / III",
+    "summary": "A Philae obelisk acquired by William John Bankes and brought to Britain in 1821. Its hieroglyphic shaft and Greek base contributed to the study of Egyptian writing.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "origin_coordinate_note": "Approximate former Philae island area, now inundated. This is separate from Agilkia, where the temple complex was relocated in the twentieth century. Not a surveyed obelisk position.",
+    "journey": [
+      {
+        "date": "Ptolemaic period",
+        "place": "Temple of Isis, Philae",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 24.02194,
+        "lon": 32.88889,
+        "coordinate_note": "Approximate former Philae island area, now inundated. This is separate from Agilkia, where the temple complex was relocated in the twentieth century. Not a surveyed obelisk position."
+      },
+      {
+        "date": "1819",
+        "place": "Philae / Nile",
+        "note": "Removal involved collapse of pier and recovery from Nile.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "Historical location is not pinned because its position or the movement stage is uncertain."
+      },
+      {
+        "date": "1821",
+        "place": "England",
+        "note": "Arrived in Britain.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "Historical location is not pinned because its position or the movement stage is uncertain."
+      },
+      {
+        "date": "1827–1839",
+        "place": "Kingston Lacy",
+        "note": "1827 foundation stone; institutional records give conflicting final erection dates.",
+        "lat": 50.809695,
+        "lon": -2.032726,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Ptolemaic period; Ptolemy VIII and Cleopatra II / III",
+      "Pink granite",
+      "3.66 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "kingston-lacy",
+        "title": "Wimborne Minster - Philae obelisk - 20210819132056",
+        "creator": "IanChristopherWeston",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Wimborne_Minster_-_Philae_obelisk_-_20210819132056.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Wimborne_Minster_-_Philae_obelisk_-_20210819132056.jpg/960px-Wimborne_Minster_-_Philae_obelisk_-_20210819132056.jpg",
+        "width": 960,
+        "height": 1280,
+        "alt": "Philae Obelisk — Kingston Lacy in Wimborne, Dorset",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "IanChristopherWeston · CC BY-SA 4.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/kingston-lacy.jpg"
+      }
+    ]
+  },
+  {
+    "id": "boboli",
+    "name": "Boboli / Medici Obelisk",
+    "city": "Florence",
+    "country": "Italy",
+    "category": "pharaonic",
+    "material": "Red granite",
+    "lat": 43.764075,
+    "lon": 11.250969,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": 4.87,
+    "height_note": "Stone shaft height only, approximate; excludes modern base and finial.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Heliopolis",
+    "origin_lat": 30.1294,
+    "origin_lon": 31.3075,
+    "relocations": [
+      {
+        "date": "Roman imperial period",
+        "place": "Iseum Campense, Rome",
+        "note": "Imported in antiquity."
+      },
+      {
+        "date": "18th century",
+        "place": "Florence",
+        "note": "Transferred from Villa Medici, Rome."
+      },
+      {
+        "date": "1790",
+        "place": "Boboli amphitheatre",
+        "note": "Erected in current setting."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Uffizi Galleries: Boboli Amphitheatre",
+        "url": "https://www.uffizi.it/en/artworks/boboli-amphitheatre"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/boboli.htm"
+      }
+    ],
+    "notes": "Ramesses II, historically paired with Dogali obelisk.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Ramesses II",
+    "summary": "An ancient Heliopolis obelisk that passed through Rome’s sanctuary of Isis and the Medici collection. It reached Florence in the eighteenth century and its Boboli setting in 1790.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Ramesses II",
+        "place": "Heliopolis",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 30.1294,
+        "lon": 31.3075,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Roman imperial period",
+        "place": "Iseum Campense, Rome",
+        "note": "Imported in antiquity.",
+        "lat": 41.898,
+        "lon": 12.479,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "18th century",
+        "place": "Florence",
+        "note": "Transferred from Villa Medici, Rome.",
+        "lat": 43.77,
+        "lon": 11.25,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1790",
+        "place": "Boboli amphitheatre",
+        "note": "Erected in current setting.",
+        "lat": 43.764075,
+        "lon": 11.250969,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Ramesses II",
+      "Red granite",
+      "4.87 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "boboli",
+        "title": "Boboli Gardens Obelisk",
+        "creator": "RoFra",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Boboli_Gardens_Obelisk.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Boboli_Gardens_Obelisk.jpg/960px-Boboli_Gardens_Obelisk.jpg",
+        "width": 960,
+        "height": 1280,
+        "alt": "Boboli / Medici Obelisk in Florence",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "RoFra · CC BY-SA 3.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/boboli.jpg"
+      }
+    ]
+  },
+  {
+    "id": "urbino",
+    "name": "Urbino Obelisk",
+    "city": "Urbino",
+    "country": "Italy",
+    "category": "pharaonic",
+    "material": "Pink Aswan granite",
+    "lat": 43.724268,
+    "lon": 12.636922,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": null,
+    "height_note": "Study reports about 4.90 m, but measurement convention is unclear; field guide leaves height unknown.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Egypt; original site of contributing pieces uncertain",
+    "origin_lat": null,
+    "origin_lon": null,
+    "relocations": [
+      {
+        "date": "Roman antiquity",
+        "place": "Iseum Campense, Rome",
+        "note": "Egyptian fragments reused in Rome; exact chronology varies."
+      },
+      {
+        "date": "1737",
+        "place": "Urbino",
+        "note": "Given to city by Cardinal Annibale Albani."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Peer-reviewed geological study of Urbino",
+        "url": "https://link.springer.com/article/10.1007/s12371-021-00606-3"
+      },
+      {
+        "title": "Touring Club: Piazza Rinascimento",
+        "url": "https://www.touringclub.it/destinazioni/urbino/vedere/136909-piazza-rinascimento"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/urbino.htm"
+      }
+    ],
+    "notes": "Composite reconstruction of five ancient granite pieces; scholar source says parts from more than one obelisk. Treat as composite, not surviving intact monolith.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Ancient Egyptian fragments; composite reconstruction",
+    "summary": "This monument combines five ancient Egyptian granite pieces, apparently from more than one obelisk. After reuse in Rome, the assembled monument was given to Urbino in 1737.",
+    "origin_label": "Earliest known setting",
+    "origin_note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+    "journey": [
+      {
+        "date": "Ancient Egyptian fragments; composite reconstruction",
+        "place": "Egypt; original site of contributing pieces uncertain",
+        "note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "Historical location is not pinned because its position or the movement stage is uncertain."
+      },
+      {
+        "date": "Roman antiquity",
+        "place": "Iseum Campense, Rome",
+        "note": "Egyptian fragments reused in Rome; exact chronology varies.",
+        "lat": 41.898,
+        "lon": 12.479,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "1737",
+        "place": "Urbino",
+        "note": "Given to city by Cardinal Annibale Albani.",
+        "lat": 43.724268,
+        "lon": 12.636922,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Ancient Egyptian fragments; composite reconstruction",
+      "Pink Aswan granite"
+    ],
+    "photos": [
+      {
+        "id": "urbino",
+        "title": "Urbino, obelisco 02",
+        "creator": "sailko",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Urbino,_obelisco_02.JPG",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Urbino%2C_obelisco_02.JPG/960px-Urbino%2C_obelisco_02.JPG",
+        "width": 960,
+        "height": 1280,
+        "alt": "Urbino Obelisk in Urbino",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "sailko · CC BY-SA 3.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/urbino.jpg"
+      }
+    ]
+  },
+  {
+    "id": "catania",
+    "name": "Elephant Fountain Obelisk — Catania",
+    "city": "Catania",
+    "country": "Italy",
+    "category": "disputed",
+    "material": "Granite",
+    "lat": 37.502493,
+    "lon": 15.087091,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": 3.66,
+    "height_note": "About 3.6–4 m, municipal guide says nearly 4 m.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Unknown; first setting has not been securely identified",
+    "origin_lat": null,
+    "origin_lon": null,
+    "relocations": [
+      {
+        "date": "1735–1737",
+        "place": "Piazza del Duomo",
+        "note": "Vaccarini assembled elephant fountain using older components."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Catania municipal cultural guide",
+        "url": "https://www.comune.catania.it/informazioni/news/amministrazione/allegati/01_guida_turistico_culturale_del_comune_catania.pdf"
+      },
+      {
+        "title": "FAI monument record",
+        "url": "https://fondoambiente.it/luoghi/fontana-dell-elefante"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/catania.htm"
+      }
+    ],
+    "notes": "Origin and chronology remain uncertain. A pharaonic Egyptian origin has not been established. The elephant is lava stone; its obelisk is granite.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Date and original setting uncertain",
+    "summary": "A granite Egyptian-style obelisk crowns Vaccarini’s eighteenth-century elephant fountain. Its original place and date remain uncertain; the elephant below is lava stone.",
+    "origin_label": "Earliest known setting",
+    "origin_note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+    "journey": [
+      {
+        "date": "Ancient period",
+        "place": "Unknown; first setting has not been securely identified",
+        "note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "Historical location is not pinned because its position or the movement stage is uncertain."
+      },
+      {
+        "date": "1735–1737",
+        "place": "Piazza del Duomo",
+        "note": "Vaccarini assembled elephant fountain using older components.",
+        "lat": 37.502493,
+        "lon": 15.087091,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Date and original setting uncertain",
+      "Granite",
+      "3.66 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "catania",
+        "title": "Catania obelisk BW 2012-10-06 09-52-47 (cropped)",
+        "creator": "Berthold Werner",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Catania_obelisk_BW_2012-10-06_09-52-47_(cropped).JPG",
+        "remote_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Catania_obelisk_BW_2012-10-06_09-52-47_%28cropped%29.JPG",
+        "width": 960,
+        "height": 1844,
+        "alt": "Elephant Fountain Obelisk — Catania in Catania",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Berthold Werner · CC BY-SA 3.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/catania.jpg"
+      }
+    ]
+  },
+  {
+    "id": "arles",
+    "name": "Roman Obelisk — Arles",
+    "city": "Arles",
+    "country": "France",
+    "category": "roman",
+    "material": "Granite",
+    "lat": 43.676419,
+    "lon": 4.627595,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": 15.26,
+    "height_note": "Arles tourism quotes 15.26 m stone, plus 4.55 m pedestal.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Roman circus, Arles; Egyptian origin not established",
+    "origin_lat": null,
+    "origin_lon": null,
+    "relocations": [
+      {
+        "date": "Late Antiquity",
+        "place": "Circus of Arles",
+        "note": "Roman circus monument."
+      },
+      {
+        "date": "1676",
+        "place": "Place de la République",
+        "note": "Re-erected before town hall."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Arles tourism monument record",
+        "url": "https://www.arlestourisme.com/fr/d%C3%A9tails.html?=L%27ob%C3%A9lisque+romain&dt=0&ident=5538540"
+      },
+      {
+        "title": "City of Arles heritage: circus",
+        "url": "https://www.patrimoine.ville-arles.fr/index.php?action=edifice&id=43"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/arles.htm"
+      }
+    ],
+    "notes": "Ancient Roman comparison object. A pharaonic Egyptian origin has not been established.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Ancient Roman circus monument",
+    "summary": "A Roman obelisk from the circus of Arles, re-erected before the town hall in 1676. It is included as a comparison with Egyptian exports; a pharaonic Egyptian origin is unproven.",
+    "origin_label": "Earliest known setting",
+    "origin_note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+    "journey": [
+      {
+        "date": "Ancient period",
+        "place": "Roman circus, Arles; Egyptian origin not established",
+        "note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "Historical location is not pinned because its position or the movement stage is uncertain."
+      },
+      {
+        "date": "Late Antiquity",
+        "place": "Circus of Arles",
+        "note": "Roman circus monument.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "Historical location is not pinned because its position or the movement stage is uncertain."
+      },
+      {
+        "date": "1676",
+        "place": "Place de la République",
+        "note": "Re-erected before town hall.",
+        "lat": 43.676419,
+        "lon": 4.627595,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Ancient Roman circus monument",
+      "Granite",
+      "15.26 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "arles",
+        "title": "Arles Obélisque",
+        "creator": "Wolfgang Moroder",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Arles_Ob%C3%A9lisque.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Arles_Ob%C3%A9lisque.jpg/960px-Arles_Ob%C3%A9lisque.jpg",
+        "width": 960,
+        "height": 1440,
+        "alt": "Roman Obelisk — Arles in Arles",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Wolfgang Moroder · CC BY-SA 3.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/arles.jpg"
+      }
+    ]
+  },
+  {
+    "id": "hatshepsut-karnak",
+    "name": "Hatshepsut Standing Obelisk",
+    "city": "Karnak / Luxor",
+    "country": "Egypt",
+    "category": "pharaonic",
+    "material": "Pink Aswan granite",
+    "lat": 25.7188,
+    "lon": 32.6575,
+    "coordinate_note": "Approximate individual monument location within Karnak; gazetteer gives temple-level coordinates.",
+    "shaft_height_m": 29.5,
+    "height_note": "29.5 m catalog height; exclude pedestal.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Karnak",
+    "origin_lat": 25.7184,
+    "origin_lon": 32.6583,
+    "relocations": [],
+    "sources": [
+      {
+        "title": "Bibliotheca Alexandrina inscriptions catalog",
+        "url": "https://inscriptionslibrary.bibalex.org/presentation/Monument.aspx?INS_ID=13&Lang=en&MON_ID=2893"
+      },
+      {
+        "title": "UC Santa Cruz Digital Karnak",
+        "url": "https://digitalkarnak.ucsc.edu/obelisks-of-wadjet-hall/"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/karnak.htm"
+      }
+    ],
+    "notes": "Egypt benchmark; standing in original position.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Hatshepsut",
+    "summary": "A major standing obelisk that remains at Karnak in its original setting. It provides a comparison with the Egyptian monuments later taken abroad.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Hatshepsut",
+        "place": "Karnak",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 25.7184,
+        "lon": 32.6583,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Today",
+        "place": "Karnak / Luxor",
+        "note": "Remains at the original Egyptian setting; no overseas relocation is recorded.",
+        "lat": 25.7188,
+        "lon": 32.6575,
+        "coordinate_note": "Approximate individual monument location within Karnak; gazetteer gives temple-level coordinates."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Hatshepsut",
+      "Pink Aswan granite",
+      "29.5 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "hatshepsut-karnak",
+        "title": "Obelisk of Hatshepsut, the tallest standing in Egypt. Can be identified by its single line of inscriptions (14024043077)",
+        "creator": "Jorge Láscar from Melbourne, Australia",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Obelisk_of_Hatshepsut,_the_tallest_standing_in_Egypt._Can_be_identified_by_its_single_line_of_inscriptions_(14024043077).jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Obelisk_of_Hatshepsut%2C_the_tallest_standing_in_Egypt._Can_be_identified_by_its_single_line_of_inscriptions_%2814024043077%29.jpg/960px-Obelisk_of_Hatshepsut%2C_the_tallest_standing_in_Egypt._Can_be_identified_by_its_single_line_of_inscriptions_%2814024043077%29.jpg",
+        "width": 960,
+        "height": 1445,
+        "alt": "Hatshepsut Standing Obelisk in Karnak / Luxor",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Jorge Láscar from Melbourne, Australia · CC BY 2.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/hatshepsut-karnak.jpg"
+      }
+    ]
+  },
+  {
+    "id": "thutmose-i-karnak",
+    "name": "Thutmose I Standing Obelisk",
+    "city": "Karnak / Luxor",
+    "country": "Egypt",
+    "category": "pharaonic",
+    "material": "Granite",
+    "lat": 25.7188,
+    "lon": 32.657,
+    "coordinate_note": "Approximate individual monument location within Karnak; field guide provides temple-level location.",
+    "shaft_height_m": 19.5,
+    "height_note": "Stone shaft height only, approximate; excludes modern base and finial.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Karnak",
+    "origin_lat": 25.7184,
+    "origin_lon": 32.6583,
+    "relocations": [],
+    "sources": [
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/karnak.htm"
+      },
+      {
+        "title": "UCL: Obelisks in ancient Egypt",
+        "url": "https://www.ucl.ac.uk/museums-static/digitalegypt/architecture/obelisks.html"
+      }
+    ],
+    "notes": "Egypt benchmark; remains at Karnak.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Thutmose I",
+    "summary": "A surviving standing obelisk at Karnak. Unlike the exported monuments in the layer, it remains within the temple complex where it was erected.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Thutmose I",
+        "place": "Karnak",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 25.7184,
+        "lon": 32.6583,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Today",
+        "place": "Karnak / Luxor",
+        "note": "Remains at the original Egyptian setting; no overseas relocation is recorded.",
+        "lat": 25.7188,
+        "lon": 32.657,
+        "coordinate_note": "Approximate individual monument location within Karnak; field guide provides temple-level location."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Thutmose I",
+      "Granite",
+      "19.5 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "thutmose-i-karnak",
+        "title": "Karnak-obelisk-thoutmesI",
+        "creator": "Kurohito",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Karnak-obelisk-thoutmesI.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Karnak-obelisk-thoutmesI.jpg/960px-Karnak-obelisk-thoutmesI.jpg",
+        "width": 960,
+        "height": 1280,
+        "alt": "Thutmose I Standing Obelisk in Karnak / Luxor",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Kurohito · CC BY-SA 3.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/thutmose-i-karnak.jpg"
+      }
+    ]
+  },
+  {
+    "id": "senusret-heliopolis",
+    "name": "Senusret I Obelisk — Heliopolis",
+    "city": "Cairo / Matariya",
+    "country": "Egypt",
+    "category": "pharaonic",
+    "material": "Red granite",
+    "lat": 30.129396,
+    "lon": 31.307496,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": 20.4,
+    "height_note": "Stone shaft height only, approximate; excludes modern base and finial.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Heliopolis",
+    "origin_lat": 30.1294,
+    "origin_lon": 31.3075,
+    "relocations": [],
+    "sources": [
+      {
+        "title": "Harvard excavation project",
+        "url": "https://whitelevy.fas.harvard.edu/heliopolis-excavations-italian-archaeological-mission-1903-1906"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/heliopolis.htm"
+      }
+    ],
+    "notes": "Egypt benchmark; major survivor at Heliopolis, where many exported shafts first stood.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Senusret I",
+    "summary": "A major survivor at Heliopolis, the city from which many exported obelisks came. This is the ancient model for San Jose’s twentieth-century concrete replica.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Senusret I",
+        "place": "Heliopolis",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 30.1294,
+        "lon": 31.3075,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Today",
+        "place": "Cairo / Matariya",
+        "note": "Remains at the original Egyptian setting; no overseas relocation is recorded.",
+        "lat": 30.129396,
+        "lon": 31.307496,
+        "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Senusret I",
+      "Red granite",
+      "20.4 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "senusret-heliopolis",
+        "title": "Obelisk-SesostrisI-Heliopolis",
+        "creator": "Didia (David Schmid)",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Obelisk-SesostrisI-Heliopolis.JPG",
+        "remote_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Obelisk-SesostrisI-Heliopolis.JPG",
+        "width": 960,
+        "height": 1389,
+        "alt": "Senusret I Obelisk — Heliopolis in Cairo / Matariya",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Didia (David Schmid) · CC BY-SA 3.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/senusret-heliopolis.jpg"
+      }
+    ]
+  },
+  {
+    "id": "luxor-remaining",
+    "name": "Ramesses II Obelisk — Luxor",
+    "city": "Luxor",
+    "country": "Egypt",
+    "category": "pharaonic",
+    "material": "Red granite",
+    "lat": 25.700272,
+    "lon": 32.639783,
+    "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed.",
+    "shaft_height_m": 25,
+    "height_note": "Stone shaft height only, approximate; excludes modern base and finial.",
+    "mass_t": null,
+    "mass_note": "",
+    "original_site": "Luxor Temple",
+    "origin_lat": 25.7003,
+    "origin_lon": 32.6398,
+    "relocations": [],
+    "sources": [
+      {
+        "title": "Egyptian Ministry: Luxor Temple",
+        "url": "https://egymonuments.gov.eg/en/monuments/luxor-temple/"
+      },
+      {
+        "title": "Obelisks of the World: field gazetteer and photographs",
+        "url": "https://www.obelisks.org/en/ramses.htm"
+      }
+    ],
+    "notes": "Egypt benchmark; partner of Paris obelisk, retained at Luxor.",
+    "mass_reported": null,
+    "mass_unit": null,
+    "checked_date": "2026-11-18",
+    "creation_label": "Ramesses II",
+    "summary": "The eastern obelisk remains at Luxor Temple. Its western partner was transported to Paris in the nineteenth century.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "Ramesses II",
+        "place": "Luxor Temple",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 25.7003,
+        "lon": 32.6398,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Today",
+        "place": "Luxor",
+        "note": "Remains at the original Egyptian setting; no overseas relocation is recorded.",
+        "lat": 25.700272,
+        "lon": 32.639783,
+        "coordinate_note": "Approximate monument pin published in cited Obelisks of the World field gazetteer; not surveyed."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Ramesses II",
+      "Red granite",
+      "25 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "luxor-remaining",
+        "title": "The remaining obelisk and the two 25m. statues of Ramses II - The entrance pylon - Luxor Temple (14259635932)",
+        "creator": "Jorge Láscar from Melbourne, Australia",
+        "license": "CC BY 2.0",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:The_remaining_obelisk_and_the_two_25m._statues_of_Ramses_II_-_The_entrance_pylon_-_Luxor_Temple_(14259635932).jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/The_remaining_obelisk_and_the_two_25m._statues_of_Ramses_II_-_The_entrance_pylon_-_Luxor_Temple_%2814259635932%29.jpg/960px-The_remaining_obelisk_and_the_two_25m._statues_of_Ramses_II_-_The_entrance_pylon_-_Luxor_Temple_%2814259635932%29.jpg",
+        "width": 960,
+        "height": 638,
+        "alt": "Ramesses II Obelisk — Luxor in Luxor",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Jorge Láscar from Melbourne, Australia · CC BY 2.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/luxor-remaining.jpg"
+      }
+    ]
+  },
+  {
+    "id": "unfinished-aswan",
+    "name": "Unfinished Obelisk — Aswan",
+    "city": "Aswan",
+    "country": "Egypt",
+    "category": "unfinished",
+    "material": "Granite",
+    "lat": 24.076,
+    "lon": 32.8955,
+    "coordinate_note": "Approximate quarry location; not surveyed. Egyptian Ministry page identifies monument and mapped site.",
+    "shaft_height_m": null,
+    "height_note": "Around 42 m planned/exposed length, not vertical shaft height.",
+    "mass_t": 1168,
+    "mass_note": "Estimated mass had it been completed; never transported.",
+    "original_site": "Aswan quarry",
+    "origin_lat": 24.076,
+    "origin_lon": 32.8955,
+    "relocations": [],
+    "sources": [
+      {
+        "title": "Egyptian Ministry of Tourism and Antiquities",
+        "url": "https://egymonuments.gov.eg/en/monuments/the-unfinished-obelisk/"
+      }
+    ],
+    "notes": "Never completed, detached or transported. Length around 42 m is intended size, not a standing height. Hatshepsut attribution is probable, not certain.",
+    "mass_reported": 1168,
+    "mass_unit": "metric tonnes",
+    "planned_length_m": 42,
+    "checked_date": "2026-11-18",
+    "creation_label": "Probably commissioned under Hatshepsut",
+    "summary": "Still attached to the Aswan quarry bed, this enormous unfinished obelisk was abandoned after cracks developed. Its planned length was about 42 metres; it was never transported or raised.",
+    "origin_label": "Original setting",
+    "origin_note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+    "journey": [
+      {
+        "date": "18th Dynasty; commission probably Hatshepsut",
+        "place": "Aswan quarry",
+        "note": "Approximate original setting. The journey connects documented places; lines do not reconstruct the ancient or modern shipping route.",
+        "lat": 24.076,
+        "lon": 32.8955,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Today",
+        "place": "Aswan",
+        "note": "Remains attached to the quarry bed. It was never completed, detached, transported or raised.",
+        "lat": 24.076,
+        "lon": 32.8955,
+        "coordinate_note": "Approximate quarry location; not surveyed. Egyptian Ministry page identifies monument and mapped site."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Probably commissioned under Hatshepsut",
+      "Granite"
+    ],
+    "photos": [
+      {
+        "id": "unfinished-aswan",
+        "title": "Obelisco inacabado, Asuán, Egipto, 2022-04-01, DD 166",
+        "creator": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Obelisco_inacabado,_Asu%C3%A1n,_Egipto,_2022-04-01,_DD_166.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Obelisco_inacabado%2C_Asu%C3%A1n%2C_Egipto%2C_2022-04-01%2C_DD_166.jpg/960px-Obelisco_inacabado%2C_Asu%C3%A1n%2C_Egipto%2C_2022-04-01%2C_DD_166.jpg",
+        "width": 960,
+        "height": 640,
+        "alt": "Unfinished Obelisk — Aswan in Aswan",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "Diego Delso · CC BY-SA 4.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/unfinished-aswan.jpg"
+      }
+    ]
+  },
+  {
+    "id": "caesarea",
+    "name": "Eastern Circus Obelisk — Caesarea",
+    "city": "Caesarea",
+    "country": "Israel",
+    "category": "egyptian_undated",
+    "material": "Red Aswan granite with modern restoration infills",
+    "lat": 32.498647,
+    "lon": 34.898606,
+    "coordinate_note": "Approximate monument pin from cited field gazetteer; its printed degrees label contains a latitude typo, so decimal coordinate is used. Not surveyed.",
+    "shaft_height_m": 10.5,
+    "height_note": "Field guide gives 10.5 m restored shaft plus 1.4 m pedestal; older excavation estimates differ. Not a secure original full-shaft dimension.",
+    "mass_t": null,
+    "mass_reported": "80–100",
+    "mass_unit": "tons (not standardized)",
+    "mass_note": "Field-guide estimate; not used as a standardized measured metric mass.",
+    "original_site": "Eastern Circus, Caesarea; earlier manufacture and setting uncertain",
+    "origin_lat": 32.498647,
+    "origin_lon": 34.898606,
+    "relocations": [
+      {
+        "date": "Roman imperial period",
+        "place": "Eastern Circus, Caesarea",
+        "note": "Ancient setting attested; precise date and pharaonic versus Roman commission are uncertain."
+      },
+      {
+        "date": "2001",
+        "place": "Eastern Circus, Caesarea",
+        "note": "Restored from three ancient pieces and re-erected at original circus position; conservation report published by IAA."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Israel Antiquities Authority: Yoram Sa’ad, Anastylosis of the Obelisk in the Eastern Circus at Caesarea Maritima, Atiqot 92,175–192",
+        "url": "https://publications.iaa.org.il/atiqot/vol92/iss1/12/"
+      },
+      {
+        "title": "Obelisks of the World: Caesarea field gazetteer",
+        "url": "https://www.obelisks.org/en/caesarea.htm"
+      }
+    ],
+    "notes": "Uninscribed. Egyptian granite alone does not establish that it is a pharaonic monument taken from an Egyptian temple. Earlier full height is uncertain; modern reconstruction uses pins and infills. This eastern circus is different from the seafront hippodrome prominently toured in the national park.",
+    "checked_date": "2026-11-18",
+    "creation_label": "Ancient; commission and date uncertain",
+    "summary": "Three ancient pieces of red Aswan granite were restored and raised in Caesarea’s eastern circus in 2001. The stone’s Egyptian material does not establish a pharaonic commission.",
+    "origin_label": "Earliest known setting",
+    "origin_note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+    "journey": [
+      {
+        "date": "Ancient period",
+        "place": "Eastern Circus, Caesarea; earlier manufacture and setting uncertain",
+        "note": "The place of manufacture or first erection is uncertain. The milestones begin with the earliest setting supported by the cited research.",
+        "lat": 32.498647,
+        "lon": 34.898606,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      },
+      {
+        "date": "Roman imperial period",
+        "place": "Eastern Circus, Caesarea",
+        "note": "Ancient setting attested; precise date and pharaonic versus Roman commission are uncertain.",
+        "lat": null,
+        "lon": null,
+        "coordinate_note": "Historical location is not pinned because its position or the movement stage is uncertain."
+      },
+      {
+        "date": "2001",
+        "place": "Eastern Circus, Caesarea",
+        "note": "Restored from three ancient pieces and re-erected at original circus position; conservation report published by IAA.",
+        "lat": 32.498647,
+        "lon": 34.898606,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "Ancient; commission and date uncertain",
+      "Red Aswan granite with modern restoration infills",
+      "10.5 m reported stone height"
+    ],
+    "photos": [
+      {
+        "id": "caesarea",
+        "title": "96454 caesarea obelisk and eastern hippodrome PikiWiki Israel",
+        "creator": "israel zeller ישראל זלר",
+        "license": "CC BY 2.5",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "source_url": "https://commons.wikimedia.org/wiki/File:96454_caesarea_obelisk_and_eastern_hippodrome_PikiWiki_Israel.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/96454_caesarea_obelisk_and_eastern_hippodrome_PikiWiki_Israel.jpg/960px-96454_caesarea_obelisk_and_eastern_hippodrome_PikiWiki_Israel.jpg",
+        "width": 960,
+        "height": 1705,
+        "alt": "Eastern Circus Obelisk — Caesarea in Caesarea",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "israel zeller ישראל זלר · CC BY 2.5 · Wikimedia Commons",
+        "src": "/assets/obelisks/caesarea.jpg"
+      }
+    ]
+  },
+  {
+    "id": "san-jose-rosicrucian-replica",
+    "name": "Rosicrucian Park obelisk",
+    "city": "San Jose",
+    "country": "United States",
+    "category": "replica",
+    "material": "reinforced concrete with finish imitating rose-red granite",
+    "lat": 37.334,
+    "lon": -121.923,
+    "coordinate_note": "approximate park center; not surveyed monument coordinates",
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Rosicrucian_Park",
+    "shaft_height_m": null,
+    "height_note": "January 1938 contemporary source reports forty feet. Later official sources describe three-quarter or two-thirds size; no surveyed modern height verified.",
+    "mass_t": null,
+    "mass_reported": null,
+    "mass_unit": null,
+    "mass_note": "",
+    "original_site": "Senusret I obelisk, Heliopolis, Egypt",
+    "origin_lat": null,
+    "origin_lon": null,
+    "relocations": [
+      {
+        "date": "1937",
+        "place": "Rosicrucian Park, San Jose",
+        "note": "Constructed locally; not an imported ancient monument."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Rosicrucian Digest — contemporary construction description",
+        "url": "https://b45e1c3778bbf3ebb96c-637cca54df3fd347e9c3d5d35c2f839a.ssl.cf5.rackcdn.com/The_Rosicrucian_Digest_v15_n12_1938.pdf"
+      },
+      {
+        "title": "Rosicrucian Digest — 1937 construction retrospective",
+        "url": "https://fb2169e74ac5a852ffab-2ec811d3f541d2c027e34c2171c44e78.ssl.cf5.rackcdn.com/A_Look_at_the_Cover_Digest_v100_n1_2022%20031822.pdf"
+      }
+    ],
+    "notes": "Modern reinforced concrete replica. The contemporaneous report gives forty feet; later scale descriptions conflict.",
+    "checked_date": "2026-11-18",
+    "creation_label": "1937; modern replica",
+    "summary": "Built locally from reinforced concrete with a granite-like finish, this Rosicrucian Park monument copies Senusret I’s obelisk at Heliopolis. It was never an ancient stone transported from Egypt.",
+    "origin_label": "Model for the replica",
+    "origin_note": "The Egyptian obelisk supplied the design. The concrete replica was made in California; no Egypt-to-San-Jose relocation occurred.",
+    "model_location": {
+      "place": "Heliopolis, Egypt",
+      "lat": 30.1294,
+      "lon": 31.3075
+    },
+    "journey": [
+      {
+        "date": "1937",
+        "place": "Rosicrucian Park, San Jose",
+        "note": "Constructed locally; not an imported ancient monument.",
+        "lat": 37.334,
+        "lon": -121.923,
+        "coordinate_note": "Approximate historical site or city location; schematic journey marker, not a surveyed position or shipping route."
+      }
+    ],
+    "journey_note": "Selected documented milestones. Intermediate handling and uncertain passages may be absent. Geographic links connect places and are not reconstructed transport routes.",
+    "highlights": [
+      "1937; modern replica",
+      "reinforced concrete with finish imitating rose-red granite",
+      "Modern replica made in California"
+    ],
+    "photos": [
+      {
+        "id": "san-jose-rosicrucian-replica",
+        "title": "Rosicrucian Park 2023-07-15 23",
+        "creator": "The wub",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Rosicrucian_Park_2023-07-15_23.jpg",
+        "remote_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Rosicrucian_Park_2023-07-15_23.jpg/1920px-Rosicrucian_Park_2023-07-15_23.jpg",
+        "width": 1920,
+        "height": 2880,
+        "alt": "Rosicrucian Park obelisk in San Jose",
+        "changes": "No edits; Wikimedia-supplied scaled image.",
+        "credit": "The wub · CC BY-SA 4.0 · Wikimedia Commons",
+        "src": "/assets/obelisks/san-jose-rosicrucian-replica.jpg"
+      }
+    ]
+  }
+]

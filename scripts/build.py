@@ -27,6 +27,7 @@ REPO_ROOT = Path(__file__).parent.parent
 DATA_DIR = REPO_ROOT / 'data'
 SRC_HTML = REPO_ROOT / 'public' / 'index.html'
 PUBLIC_DATA_DIR = REPO_ROOT / 'public' / 'data'
+RUNTIME_COLLECTIONS = ['obelisks.json']
 
 # ============================================================
 # Mapping: data file → const NAME inside HTML
@@ -241,6 +242,12 @@ def main():
     print(f"Data:    {DATA_DIR}\n")
 
     data = load_and_validate()
+    # These collections are fetched when their map layer opens, rather than
+    # embedded in the main HTML. Keep data/ as their editable source of truth.
+    for filename in RUNTIME_COLLECTIONS:
+        collection = json.loads((DATA_DIR / filename).read_text())
+        if not isinstance(collection, list) or not collection:
+            sys.exit(f'{filename}: expected a nonempty list')
     errors, warnings = cross_validate(data)
     rank_walkthroughs(data)
     if errors:
@@ -284,6 +291,10 @@ def main():
                 json.dump(data['VIDEOS'], f, indent=2, ensure_ascii=False)
         else:
             shutil.copy2(DATA_DIR / filename, PUBLIC_DATA_DIR / filename)
+        mirrored += 1
+
+    for filename in RUNTIME_COLLECTIONS:
+        shutil.copy2(DATA_DIR / filename, PUBLIC_DATA_DIR / filename)
         mirrored += 1
 
     # Print summary
