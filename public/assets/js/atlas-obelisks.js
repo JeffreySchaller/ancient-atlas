@@ -1,6 +1,7 @@
 (() => {
   'use strict';
 
+  const collectionPath = '/obelisks';
   const glyph = '<svg viewBox="0 0 24 32" aria-hidden="true"><path d="M8 27 9 8 12 3 15 8 16 27Z M9 8h6 M6 28h12"/></svg>';
   const labels = {
     pharaonic: 'Pharaonic Egyptian', ptolemaic: 'Ptolemaic Egyptian',
@@ -58,8 +59,9 @@
     const sidePanel = () => window.innerWidth > 950 || matchMedia('(orientation: landscape)').matches;
     function setURL(id) {
       const url = new URL(location.href);
-      if (enabled) url.searchParams.set('obelisks', '1');
-      else url.searchParams.delete('obelisks');
+      if (enabled) url.pathname = collectionPath;
+      else if (url.pathname === collectionPath) url.pathname = '/';
+      url.searchParams.delete('obelisks');
       if (id) {
         url.searchParams.set('obelisk', id);
         ['site','lidar','lidarSite'].forEach(key => url.searchParams.delete(key));
@@ -231,7 +233,10 @@
           <ol class="ob-timeline">${(record.journey||[]).map((stop,index)=>`<li><button type="button" data-ob-step="${index}" aria-pressed="false"${!validPoint(stop)?' disabled':''}><span class="ob-date">${escape(stop.date)}</span><strong>${escape(stop.place)}</strong></button><p>${escape(stop.note)}</p></li>`).join('')}</ol>
           <p class="ob-map-note">Locations are approximate. Map lines connect known stops; they do not reconstruct the travel route.</p>
           <details class="ob-evidence"><summary>Measurements and historical sources</summary>${record.height_note?`<p>${escape(record.height_note)}</p>`:''}${record.mass_note?`<p>${escape(record.mass_note)}</p>`:''}<ul>${(record.sources||[]).map(source=>`<li>${external(source.url,source.title)}</li>`).join('')}</ul><p>Research checked ${escape(record.checked_date || '2026-11-18')}.</p></details>
-          <a class="ob-share" href="/?obelisks=1&amp;obelisk=${encodeURIComponent(record.id)}">Link to this monument ↗</a>
+          <nav class="ob-share-links" aria-label="Obelisks links">
+            <a class="ob-share" href="${collectionPath}?obelisk=${encodeURIComponent(record.id)}">Link to this monument ↗</a>
+            <a class="ob-share" href="${collectionPath}">Link to collection ↗</a>
+          </nav>
         </article>`;
       body.querySelector('#obelisk-select').addEventListener('change',event=>{
         select(event.target.value,{fit:true,focus:false});
@@ -304,7 +309,11 @@
     panel.querySelector('.ob-close').addEventListener('click',disable);
     badge.querySelector('.ob-hide').addEventListener('click',disable);
     badge.querySelector('.ob-browse').addEventListener('click',()=>enable(selected?.id,badge.querySelector('.ob-browse')));
-    document.querySelectorAll('[data-explore-obelisks]').forEach(button=>button.addEventListener('click',()=>enable(null,button)));
+    document.querySelectorAll('[data-explore-obelisks]').forEach(link => link.addEventListener('click', event => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      enable(null, link);
+    }));
     document.addEventListener('keydown',event=>{
       if (event.key==='Escape' && !panel.hidden) {event.preventDefault();event.stopImmediatePropagation();closePanel({restoreFocus:true});}
     },true);
