@@ -35,7 +35,11 @@
 
   let activate;
   let closeComparison;
-  window.closeAtlasLidar = () => closeComparison?.();
+  let activationVersion = 0;
+  window.closeAtlasLidar = options => {
+    activationVersion++;
+    if (document.body.classList.contains('lidar-pilot')) closeComparison?.(options);
+  };
   let lastSite;
   const coverageFor = point => areas.find(area => L.latLngBounds(area.bounds).contains(point));
 
@@ -79,6 +83,7 @@
   };
 
   window.initAtlasLidarPilot = (map, { site, openSite, keepView }) => {
+    const version = ++activationVersion;
     if (activate) {
       activate(site, true, keepView);
       return;
@@ -148,7 +153,7 @@
       }));
       let activeArea;
       let introduced = false;
-      closeComparison = () => {
+      closeComparison = ({restoreFocus = true} = {}) => {
         imagery.remove();
         terrain.remove();
         panel.hidden = true;
@@ -164,7 +169,7 @@
         map.fire('lidarstatechange');
         const button = document.getElementById('lidar-map-button');
         const nextFocus = button.hidden ? document.querySelector('#detail .lidar-discovery') : button;
-        nextFocus?.focus({ preventScroll: true });
+        if (restoreFocus) nextFocus?.focus({ preventScroll: true });
       };
       panel.querySelector('button').addEventListener('click', closeComparison);
 
@@ -203,7 +208,11 @@
     };
     control.addTo(map);
     // Wait for the split map and walkthrough layout before flying.
-    stylesheet.addEventListener('load', () => activate(site, true, keepView), { once: true });
-    stylesheet.addEventListener('error', () => activate(site, false, keepView), { once: true });
+    stylesheet.addEventListener('load', () => {
+      if (version === activationVersion) activate(site, true, keepView);
+    }, { once: true });
+    stylesheet.addEventListener('error', () => {
+      if (version === activationVersion) activate(site, false, keepView);
+    }, { once: true });
   };
 })();

@@ -11,6 +11,27 @@
   const validPoint = stop => Number.isFinite(stop.lat) && Number.isFinite(stop.lon);
   const external = (url, title) => `<a href="${escape(url)}" target="_blank" rel="noopener noreferrer">${escape(title)} ↗</a>`;
 
+  function renderVideos(record) {
+    if (!record.videos?.length) return '';
+    return `<section class="ob-videos" aria-labelledby="ob-videos-title">
+      <h4 id="ob-videos-title">Watch</h4>
+      <ul>${record.videos.map(video => {
+        const url = new URL('https://www.youtube.com/watch');
+        url.searchParams.set('v', video.id);
+        if (video.start) url.searchParams.set('t', `${video.start}s`);
+        return `<li>
+          <a class="ob-video-link" href="${escape(url)}" target="_blank" rel="noopener noreferrer"
+             data-atlas-video="${escape(video.id)}" data-title="${escape(video.title)}"
+             data-creator="${escape(video.creator)}" data-start="${video.start || 0}">
+            <span aria-hidden="true">▶</span><strong>${escape(video.label)}</strong>
+          </a>
+          <p>${escape(video.description)}</p>
+          <small>${escape(video.creator)} · ${external(url, 'YouTube')}</small>
+        </li>`;
+      }).join('')}</ul>
+    </section>`;
+  }
+
   window.initAtlasObelisks = function(map, hooks = {}) {
     if (window.atlasObelisks) return window.atlasObelisks;
     let records, loading, selected, enabled = false, activeStep = -1, trigger, requestVersion = 0;
@@ -67,11 +88,12 @@
       syncButtons();
       if (restoreFocus && trigger?.isConnected) trigger.focus({preventScroll:true});
     }
-    function disable() {
+    function disable({restoreFocus = true, forgetSelection = false} = {}) {
       enabled = false;
       if (cluster) map.removeLayer(cluster);
       if (journeyLayer) map.removeLayer(journeyLayer);
-      closePanel({restoreFocus:true});
+      closePanel({restoreFocus});
+      if (forgetSelection) selected = null;
       setURL();
       syncButtons();
     }
@@ -125,7 +147,7 @@
     }
     async function load() {
       if (records) return records;
-      if (!loading) loading = fetch('/data/obelisks.json').then(response => {
+      if (!loading) loading = fetch('/data/obelisks.json', {cache: 'no-cache'}).then(response => {
         if (!response.ok) throw new Error('The obelisk catalog could not load.');
         return response.json();
       }).then(data => {
@@ -202,6 +224,8 @@
           <p class="ob-facts">${escape(facts.join(' · '))}</p>
           ${photos.map(photo=>`<figure class="ob-photo"><a href="${escape(photo.source_url)}" target="_blank" rel="noopener noreferrer" aria-label="Open photograph source for ${escape(record.name)}"><img src="${escape(photo.src)}" alt="${escape(photo.title || record.name)}" width="${photo.width||960}" height="${photo.height||1280}" decoding="async"></a><figcaption>${escape(photo.creator)} · ${external(photo.license_url,photo.license)} · ${external(photo.source_url,'Source')}</figcaption></figure>`).join('')}
           <p class="ob-summary">${escape(record.summary || record.notes)}</p>
+          ${record.archival_photo ? `<p class="ob-archive">${external(record.archival_photo.url, record.archival_photo.title)}</p>` : ''}
+          ${renderVideos(record)}
           <section class="ob-origin"><h4>${escape(record.origin_label || 'Original setting')}</h4><p><strong>${escape(record.original_site)}</strong></p><p>${escape(record.origin_note || '')}</p></section>
           <div class="ob-journey-heading"><h4>Journey milestones</h4><button type="button" data-ob-fit>Show whole journey</button></div>
           <ol class="ob-timeline">${(record.journey||[]).map((stop,index)=>`<li><button type="button" data-ob-step="${index}" aria-pressed="false"${!validPoint(stop)?' disabled':''}><span class="ob-date">${escape(stop.date)}</span><strong>${escape(stop.place)}</strong></button><p>${escape(stop.note)}</p></li>`).join('')}</ol>
@@ -235,7 +259,9 @@
       body.scrollTop=0;
       drawJourney();
       drawMonuments();
-      if (fit) requestAnimationFrame(fitJourney);
+      if (fit) requestAnimationFrame(() => {
+        if (enabled && !panel.hidden && selected === record) fitJourney();
+      });
       setURL(id);
       if (focus) body.querySelector('h3').focus({preventScroll:true});
       window.atlasAnalytics?.('atlas_obelisk_view',id);
