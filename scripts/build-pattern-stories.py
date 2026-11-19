@@ -43,7 +43,7 @@ for feature in features_catalog:
         last_theme=theme
     feature_id=feature['id']
     map_link=(
-        f'<a class="feature-map-link" href="/?feature={quote(feature_id, safe="")}" '
+        f'<a class="feature-map-link" href="/building-styles?feature={quote(feature_id, safe="")}" '
         f'aria-label="Show {e(feature["label"].lower())} on map">Show on map →</a>'
         if feature_id in mapped_features else ''
     )

@@ -608,6 +608,7 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .atlas-style-controls output{display:block;margin:8px 0 2px;color:var(--champagne)}
 .atlas-style-controls a,.atlas-style-controls button{display:inline-flex;align-items:center;min-height:36px;color:#d8d9b0;text-underline-offset:3px}
 .atlas-style-controls button{background:transparent;border:0;padding:0;text-decoration:underline;cursor:pointer;font:inherit;margin-right:12px}
+.atlas-style-controls .atlas-style-share{margin-left:12px;color:var(--cloud)}
 .atlas-style-controls [hidden]{display:none}
 .atlas-style-directory[open] .atlas-explore-arrow{transform:rotate(90deg)}
 .lidar-directory[open] .atlas-explore-arrow{transform:rotate(90deg)}
@@ -2301,7 +2302,7 @@ body.present #broadcast-controls{
             </div>
           </details>
           <a href="/obelisks" class="atlas-explore-row" data-explore-obelisks><img src="/assets/glyphs/compact/obelisk.svg" width="44" height="44" alt=""><span><strong>Explore obelisks</strong><small>Follow the stones from Egypt to the world.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
-          <a class="atlas-explore-row" href="/?explore=stone-weights" data-explore-stone-weights><img src="/assets/glyphs/monoliths.webp" width="44" height="44" alt=""><span><strong>Compare stone weights</strong><small>Find sites with stones above a weight you choose.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
+          <a class="atlas-explore-row" href="/stone-weights" data-explore-stone-weights><img src="/assets/glyphs/monoliths.webp" width="44" height="44" alt=""><span><strong>Compare stone weights</strong><small>Find sites with stones above a weight you choose.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
           <details class="atlas-style-directory">
             <summary class="atlas-explore-row"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Building styles</strong><small>Find out where builders used similar techniques.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
             <div class="atlas-style-controls">
@@ -2312,6 +2313,7 @@ body.present #broadcast-controls{
               <output data-atlas-style-count aria-live="polite" hidden></output>
               <button type="button" data-atlas-style-map onclick="viewSelectedStyleMap()" hidden>Show matching pins →</button>
               <a href="/patterns/">Read the illustrated Patterns →</a>
+              <a class="atlas-style-share" href="/building-styles">Link to building styles ↗</a>
             </div>
           </details>
           <a class="atlas-explore-row" href="/follow-the-water" data-explore-water><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
@@ -2533,7 +2535,7 @@ body.present #broadcast-controls{
             </div>
       </details>
       <a href="/obelisks" class="atlas-explore-row" data-explore-obelisks><img src="/assets/glyphs/compact/obelisk.svg" width="44" height="44" alt=""><span><strong>Explore obelisks</strong><small>Follow the stones from Egypt to the world.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
-      <a class="atlas-explore-row" href="/?explore=stone-weights" data-explore-stone-weights><img src="/assets/glyphs/monoliths.webp" width="44" height="44" alt=""><span><strong>Compare stone weights</strong><small>Find sites with stones above a weight you choose.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
+      <a class="atlas-explore-row" href="/stone-weights" data-explore-stone-weights><img src="/assets/glyphs/monoliths.webp" width="44" height="44" alt=""><span><strong>Compare stone weights</strong><small>Find sites with stones above a weight you choose.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
       <details class="atlas-style-directory">
         <summary class="atlas-explore-row"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Building styles</strong><small>Find out where builders used similar techniques.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
         <div class="atlas-style-controls">
@@ -2544,6 +2546,7 @@ body.present #broadcast-controls{
           <output data-atlas-style-count aria-live="polite" hidden></output>
           <button type="button" data-atlas-style-map onclick="viewSelectedStyleMap()" hidden>Show matching pins →</button>
           <a href="/patterns/">Read the illustrated Patterns →</a>
+          <a class="atlas-style-share" href="/building-styles">Link to building styles ↗</a>
         </div>
       </details>
           <a class="atlas-explore-row" href="/follow-the-water" data-explore-water><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
@@ -28455,10 +28458,10 @@ function setExploreSharePath(path) {
 }
 function clearStoneWeightURL() {
   const url = new URL(location.href);
-  if (url.searchParams.get('explore') === 'stone-weights') {
-    url.searchParams.delete('explore');
-    history.replaceState(history.state, '', url);
-  }
+  if (url.pathname !== '/stone-weights' && url.searchParams.get('explore') !== 'stone-weights') return;
+  if (url.pathname === '/stone-weights') url.pathname = '/';
+  url.searchParams.delete('explore');
+  history.replaceState(history.state, '', url);
 }
 function closeAtlasStoneWeights(options) {
   if (window.atlasStoneWeights?.enabled) {
@@ -28559,7 +28562,7 @@ function renderFeatureBrowsers() {
 function setAtlasFeatureURL(id) {
   const url = new URL(location.href);
   if (id) {
-    url.pathname = '/';
+    url.pathname = '/building-styles';
     for (const key of ['site', 'lidar', 'lidarSite', 'explore']) url.searchParams.delete(key);
     url.searchParams.set('feature', id);
   } else {
@@ -28643,6 +28646,7 @@ async function openAtlasLidar(name, trigger, keepView = false) {
   if (!keepView) {
     closeAtlasStoneWeights({restoreFocus: false, restoreMap: false});
     if (activeFeature) chooseAtlasFeature(null);
+    if (location.pathname === '/building-styles') setExploreSharePath('/lidar');
   }
   const request = ++atlasLidarRequest;
   if (waterJourneyActive) {
@@ -30139,9 +30143,8 @@ document.addEventListener('DOMContentLoaded', () => {
         window.atlasExploreMap();
       }
       const url = new URL(location.href);
-      url.pathname = '/';
-      for (const key of ['site', 'lidar', 'lidarSite', 'obelisks', 'obelisk', 'feature']) url.searchParams.delete(key);
-      url.searchParams.set('explore', 'stone-weights');
+      url.pathname = '/stone-weights';
+      for (const key of ['explore', 'site', 'lidar', 'lidarSite', 'obelisks', 'obelisk', 'feature']) url.searchParams.delete(key);
       history.replaceState(history.state, '', url);
     },
     restoreMap: clearStoneWeightURL
@@ -30189,13 +30192,30 @@ document.addEventListener('DOMContentLoaded', () => {
   if (exploreEntry === 'water') startWaterJourney();
   if (exploreEntry === 'stone-weights') stoneWeights?.open();
   const style = new URLSearchParams(location.search).get('feature');
-  if (style && ATLAS_FEATURES.some(entry => entry.id === style) && SITES.some(site => siteFeatureIds(site).includes(style))) {
-    const styleDirectory = [...document.querySelectorAll('.atlas-style-directory')].find(directory => directory.getClientRects().length);
-    if (styleDirectory) {
-      styleDirectory.open = true;
-      styleDirectory.scrollIntoView({block: 'nearest'});
+  const mappedStyle = style && ATLAS_FEATURES.some(entry => entry.id === style)
+    && SITES.some(site => siteFeatureIds(site).includes(style));
+  const styleDirectories = Array.from(document.querySelectorAll('.atlas-style-directory'));
+  if (mappedStyle || exploreEntry === 'building-styles') {
+    const directory = styleDirectories.find(entry => entry.getClientRects().length);
+    if (directory) {
+      directory.open = true;
+      directory.scrollIntoView({block: 'nearest'});
     }
-    chooseAtlasFeature(style);
+    if (mappedStyle) chooseAtlasFeature(style);
+    else {
+      setAtlasFeatureURL(null);
+      setExploreSharePath('/building-styles');
+    }
+  }
+  for (const directory of styleDirectories) {
+    directory.addEventListener('toggle', () => {
+      const {pathname, search} = location;
+      if (directory.open && pathname === '/' && !new URLSearchParams(search).has('site')) {
+        setExploreSharePath('/building-styles');
+      } else if (pathname === '/building-styles' && !activeFeature && !styleDirectories.some(entry => entry.open)) {
+        setExploreSharePath('/');
+      }
+    });
   }
 
   const lidarDirectories = Array.from(document.querySelectorAll('.lidar-directory'));
