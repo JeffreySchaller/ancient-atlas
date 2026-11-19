@@ -1,7 +1,8 @@
 {
   "Tipón": [
     "flow",
-    "terraces"
+    "terraces",
+    "polygonal"
   ],
   "Petra": [
     "flow",
@@ -177,5 +178,110 @@
   ],
   "Sanctuary of Pietrabbondante": [
     "gathering"
+  ],
+  "Machu Picchu": [
+    "polygonal"
+  ],
+  "Chucuito (Inca Uyo)": [
+    "polygonal"
+  ],
+  "Killarumiyoq": [
+    "polygonal"
+  ],
+  "Qenqo": [
+    "polygonal"
+  ],
+  "Cusilluchayoc": [
+    "polygonal"
+  ],
+  "Tambomachay": [
+    "polygonal"
+  ],
+  "Inkilltambo": [
+    "polygonal"
+  ],
+  "Teteqaqa (Cusco)": [
+    "polygonal"
+  ],
+  "Vilcashuaman": [
+    "polygonal"
+  ],
+  "Amaru Markawasi": [
+    "polygonal"
+  ],
+  "Raqchi (Temple of Wiracocha)": [
+    "polygonal"
+  ],
+  "Zone X (Cheqtaqaqa)": [
+    "polygonal"
+  ],
+  "Sillustani": [
+    "polygonal"
+  ],
+  "Cutimbo": [
+    "polygonal"
+  ],
+  "Chinchero": [
+    "polygonal"
+  ],
+  "Mycenae": [
+    "polygonal"
+  ],
+  "Eleutherai Fortress": [
+    "polygonal"
+  ],
+  "Xanthos": [
+    "polygonal"
+  ],
+  "Termessos": [
+    "polygonal"
+  ],
+  "Hattusa": [
+    "polygonal"
+  ],
+  "Alaca Höyük": [
+    "polygonal"
+  ],
+  "Qasr el Sagha": [
+    "polygonal"
+  ],
+  "Acropolis of Circeii": [
+    "polygonal"
+  ],
+  "Temple of Isis (Fondi)": [
+    "polygonal"
+  ],
+  "Porta Sanguinaria (Ferentino)": [
+    "polygonal"
+  ],
+  "Cefalù Polygonal Walls": [
+    "polygonal"
+  ],
+  "Orto della Regina": [
+    "polygonal"
+  ],
+  "Persepolis": [
+    "polygonal"
+  ],
+  "Monte Pallano": [
+    "polygonal"
+  ],
+  "Vetulonia": [
+    "polygonal"
+  ],
+  "Nuraghe Corbos": [
+    "polygonal"
+  ],
+  "Hatun Rumiyoc (Twelve-Angled Stone)": [
+    "polygonal"
+  ],
+  "Qespihuanka (Palace of Huayna Cápac)": [
+    "polygonal"
+  ],
+  "Ahu Vinapu (Rapa Nui)": [
+    "polygonal"
+  ],
+  "Shuri Castle (Okinawa)": [
+    "polygonal"
   ]
 }
