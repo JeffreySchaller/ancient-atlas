@@ -124,5 +124,58 @@
   "Yongning Mountain Cliff Fortress (approximate)": [
     "rockcut",
     "flow"
+  ],
+  "Unfinished Obelisk (Aswan)": [
+    "quarries"
+  ],
+  "Yangshan Quarry": [
+    "quarries"
+  ],
+  "Locmariaquer": [
+    "monoliths",
+    "standing"
+  ],
+  "Stonehenge": [
+    "monoliths",
+    "standing",
+    "circles"
+  ],
+  "Avebury": [
+    "standing",
+    "circles"
+  ],
+  "Carnac Stones": [
+    "standing"
+  ],
+  "Baalbek (Heliopolis)": [
+    "monoliths"
+  ],
+  "Dolmen of Menga": [
+    "monoliths",
+    "burial"
+  ],
+  "Ishibutai Kofun": [
+    "monoliths",
+    "burial"
+  ],
+  "Giants' Grave of Coddu Vecchiu": [
+    "burial"
+  ],
+  "Gavrinis": [
+    "burial",
+    "images"
+  ],
+  "I Stantari (Corsica)": [
+    "standing",
+    "images"
+  ],
+  "Araghju (Corsica)": [
+    "defence"
+  ],
+  "Kazarma Bridge (Arkadiko)": [
+    "routes"
+  ],
+  "Sanctuary of Pietrabbondante": [
+    "gathering"
   ]
 }

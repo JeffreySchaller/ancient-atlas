@@ -600,6 +600,16 @@ body:not(.mobile) .leaflet-control-zoom{display:none}
 .atlas-explore-row strong,.atlas-explore-row small{display:block}
 .atlas-explore-row small{margin-top:3px;color:var(--cloud);font-size:12px;line-height:1.35}
 .atlas-explore-arrow{color:var(--champagne)}
+.atlas-explore-row .explore-field-photo{border-radius:8px;object-fit:cover;box-shadow:0 0 0 1px #f0eee92b}
+.atlas-style-controls{padding:1px 12px 12px;color:var(--cloud);font-size:13px;line-height:1.45}
+.atlas-style-controls label{display:block;margin:0 0 4px}
+.atlas-style-controls select{width:100%;min-height:44px;padding:6px 8px;background:var(--charcoal);color:var(--ivory);border:1px solid #5e594e;border-radius:7px;font:inherit}
+.atlas-style-controls p{margin:8px 0 0}
+.atlas-style-controls output{display:block;margin:8px 0 2px;color:var(--champagne)}
+.atlas-style-controls a,.atlas-style-controls button{display:inline-flex;align-items:center;min-height:36px;color:#d8d9b0;text-underline-offset:3px}
+.atlas-style-controls button{background:transparent;border:0;padding:0;text-decoration:underline;cursor:pointer;font:inherit;margin-right:12px}
+.atlas-style-controls [hidden]{display:none}
+.atlas-style-directory[open] .atlas-explore-arrow{transform:rotate(90deg)}
 .lidar-directory[open] .atlas-explore-arrow{transform:rotate(90deg)}
 .lidar-directory-content{padding:0 10px 9px}
 .lidar-share-link{display:inline-flex;align-items:center;min-height:36px;margin:4px 0;color:var(--champagne);font-size:12px;text-underline-offset:3px}
@@ -2144,9 +2154,11 @@ body.present #broadcast-controls{
 <script defer src="/assets/js/analytics.js"></script>
 <link rel="stylesheet" href="/assets/site-photos.css">
 <script src="/assets/js/site-photos.js"></script>
-<link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script><link rel="stylesheet" href="/assets/atlas-features.css?v=2">
+<link rel="stylesheet" href="/assets/atlas-player.css"><script defer src="/assets/js/atlas-player.js"></script><link rel="stylesheet" href="/assets/atlas-features.css?v=3">
 <link rel="stylesheet" href="/assets/obelisks.css?v=3">
-<script src="/assets/js/atlas-obelisks.js?v=4"></script></head>
+<link rel="stylesheet" href="/assets/stone-weights.css?v=1">
+<script src="/assets/js/atlas-obelisks.js?v=4"></script>
+<script src="/assets/js/atlas-stone-weights.js?v=1"></script></head>
 <body>
 <div id="app">
 <header>
@@ -2289,11 +2301,23 @@ body.present #broadcast-controls{
             </div>
           </details>
           <a href="/obelisks" class="atlas-explore-row" data-explore-obelisks><img src="/assets/glyphs/compact/obelisk.svg" width="44" height="44" alt=""><span><strong>Explore obelisks</strong><small>Follow the stones from Egypt to the world.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
+          <a class="atlas-explore-row" href="/?explore=stone-weights" data-explore-stone-weights><img src="/assets/glyphs/monoliths.webp" width="44" height="44" alt=""><span><strong>Compare stone weights</strong><small>Find sites with stones above a weight you choose.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
+          <details class="atlas-style-directory">
+            <summary class="atlas-explore-row"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Building styles</strong><small>Find out where builders used similar techniques.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
+            <div class="atlas-style-controls">
+              <label>Show places with
+                <select data-atlas-style-select onchange="chooseAtlasFeature(this.value || null)"><option value="">All styles and features</option></select>
+              </label>
+              <p data-atlas-style-definition hidden></p>
+              <output data-atlas-style-count aria-live="polite" hidden></output>
+              <button type="button" data-atlas-style-map onclick="viewSelectedStyleMap()" hidden>Show matching pins →</button>
+              <a href="/patterns/">Read the illustrated Patterns →</a>
+            </div>
+          </details>
           <a class="atlas-explore-row" href="/follow-the-water" data-explore-water><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
-          <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
+          <a class="atlas-explore-row" href="/islands/"><img class="explore-field-photo" src="/img/islands/sardinia-6.webp" width="44" height="44" alt="" loading="lazy"><span><strong>Corsica &amp; Sardinia</strong><small>Field guides to towers, tombs, and stonework.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
         </div>
       </section>
-<div class="atlas-feature-browser" aria-label="Browse site features"></div>
       <!-- Creators lead. An earlier pass moved them below Where and Type and
            folded the list away, on the reasoning that a newcomer does not know
            who anyone is yet. That reasoning is sound and it was still wrong:
@@ -2466,7 +2490,7 @@ body.present #broadcast-controls{
   <a class="mf-exp-strip" href="/experiences/feel-the-weight/">
     <span class="mf-exp-glyph" aria-hidden="true">⚖</span>
     <span class="mf-exp-t">
-      <span class="mf-exp-eb">New · Experience</span>
+      <span class="mf-exp-eb">Interactive experience</span>
       <span class="mf-exp-ti">Feel the Weight</span>
       <span class="mf-exp-sb">Try to lift a 2.5-ton Giza block — you can’t.</span>
     </span>
@@ -2486,11 +2510,6 @@ body.present #broadcast-controls{
   </a>
 
   <!-- Island guides: an editorial discovery link alongside creator studies. -->
-  <a class="mf-exp-strip" href="/islands/">
-    <span class="mf-exp-glyph" aria-hidden="true">◈</span>
-    <span class="mf-exp-t"><span class="mf-exp-eb">Visual field guides</span><span class="mf-exp-ti">Corsica &amp; Sardinia</span><span class="mf-exp-sb">Giant stonework, two islands, many perspectives.</span></span>
-    <span class="mf-exp-ar" aria-hidden="true">→</span>
-  </a>
 
   <div class="atlas-creator-links">
     <a href="/creators/#field-visits">New creator field visits →</a>
@@ -2514,11 +2533,23 @@ body.present #broadcast-controls{
             </div>
       </details>
       <a href="/obelisks" class="atlas-explore-row" data-explore-obelisks><img src="/assets/glyphs/compact/obelisk.svg" width="44" height="44" alt=""><span><strong>Explore obelisks</strong><small>Follow the stones from Egypt to the world.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
+      <a class="atlas-explore-row" href="/?explore=stone-weights" data-explore-stone-weights><img src="/assets/glyphs/monoliths.webp" width="44" height="44" alt=""><span><strong>Compare stone weights</strong><small>Find sites with stones above a weight you choose.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
+      <details class="atlas-style-directory">
+        <summary class="atlas-explore-row"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Building styles</strong><small>Find out where builders used similar techniques.</small></span><span class="atlas-explore-arrow" aria-hidden="true">›</span></summary>
+        <div class="atlas-style-controls">
+          <label>Show places with
+            <select data-atlas-style-select onchange="chooseAtlasFeature(this.value || null)"><option value="">All styles and features</option></select>
+          </label>
+          <p data-atlas-style-definition hidden></p>
+          <output data-atlas-style-count aria-live="polite" hidden></output>
+          <button type="button" data-atlas-style-map onclick="viewSelectedStyleMap()" hidden>Show matching pins →</button>
+          <a href="/patterns/">Read the illustrated Patterns →</a>
+        </div>
+      </details>
           <a class="atlas-explore-row" href="/follow-the-water" data-explore-water><img src="/assets/glyphs/compact/flow.svg" width="44" height="44" alt=""><span><strong>Follow the water</strong><small>Three places shaped by water.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
-      <div><a class="atlas-explore-row" href="/patterns/"><img src="/assets/glyphs/compact/polygonal.svg" width="44" height="44" alt=""><span><strong>Explore patterns</strong><small>Find recurring features across sites.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a></div>
+      <a class="atlas-explore-row" href="/islands/"><img class="explore-field-photo" src="/img/islands/sardinia-6.webp" width="44" height="44" alt="" loading="lazy"><span><strong>Corsica &amp; Sardinia</strong><small>Field guides to towers, tombs, and stonework.</small></span><span class="atlas-explore-arrow" aria-hidden="true">→</span></a>
     </div>
   </section>
-<div class="atlas-feature-browser atlas-feature-mobile" aria-label="Browse site features"></div>
   <div class="mf-mininav" aria-label="Site sections">
     <a class="mf-mininav-link" href="/experiences/feel-the-weight/">
       <span class="mf-mininav-glyph" aria-hidden="true">⚖</span>
@@ -25891,6 +25922,7 @@ function buildSiteCardHtml(site) {
 }
 
 function renderSidebar() {
+  renderFeatureBrowsers();
   const filtered = getFiltered();
   const countEl = document.getElementById('sidebar-count');
   countEl.textContent = `${filtered.length} site${filtered.length !== 1 ? 's' : ''} found`;
@@ -27137,6 +27169,7 @@ function resetFilters() {
   waterJourneyActive = false;
   if (location.pathname === '/follow-the-water') setExploreSharePath('/');
   activeFeature = null;
+  setAtlasFeatureURL(null);
   searchTerm = '';
   activeRegion = null;
   activeCountry = null;
@@ -27163,6 +27196,8 @@ function resetAtlasMap() {
   atlasLidarRequest++;
   window.closeAtlasLidar?.({restoreFocus: false});
   window.atlasObelisks?.disable({restoreFocus: false, forgetSelection: true});
+  closeAtlasStoneWeights({restoreFocus: false, restoreMap: false});
+  document.querySelectorAll('.atlas-style-directory').forEach(directory => { directory.open = false; });
   document.querySelectorAll('.lidar-directory').forEach(directory => {
     directory.open = false;
     directory.dispatchEvent(new Event('atlas-map-reset'));
@@ -27187,7 +27222,7 @@ function resetAtlasMap() {
 
   const url = new URL(location.href);
   url.pathname = '/';
-  for (const key of ['site', 'lidar', 'lidarSite', 'obelisks', 'obelisk', 'explore']) url.searchParams.delete(key);
+  for (const key of ['site', 'lidar', 'lidarSite', 'obelisks', 'obelisk', 'explore', 'feature']) url.searchParams.delete(key);
   const state = sheetWasOpen && history.state?.atlasModal ? null : history.state;
   if (sheetWasOpen) window._atlasModalHistoryPushed = false;
   history.replaceState(state, '', url);
@@ -28350,6 +28385,59 @@ const SITE_FEATURES = {
   "Yongning Mountain Cliff Fortress (approximate)": [
     "rockcut",
     "flow"
+  ],
+  "Unfinished Obelisk (Aswan)": [
+    "quarries"
+  ],
+  "Yangshan Quarry": [
+    "quarries"
+  ],
+  "Locmariaquer": [
+    "monoliths",
+    "standing"
+  ],
+  "Stonehenge": [
+    "monoliths",
+    "standing",
+    "circles"
+  ],
+  "Avebury": [
+    "standing",
+    "circles"
+  ],
+  "Carnac Stones": [
+    "standing"
+  ],
+  "Baalbek (Heliopolis)": [
+    "monoliths"
+  ],
+  "Dolmen of Menga": [
+    "monoliths",
+    "burial"
+  ],
+  "Ishibutai Kofun": [
+    "monoliths",
+    "burial"
+  ],
+  "Giants' Grave of Coddu Vecchiu": [
+    "burial"
+  ],
+  "Gavrinis": [
+    "burial",
+    "images"
+  ],
+  "I Stantari (Corsica)": [
+    "standing",
+    "images"
+  ],
+  "Araghju (Corsica)": [
+    "defence"
+  ],
+  "Kazarma Bridge (Arkadiko)": [
+    "routes"
+  ],
+  "Sanctuary of Pietrabbondante": [
+    "gathering"
   ]
 };
 
@@ -28365,7 +28453,22 @@ function setExploreSharePath(path) {
   url.searchParams.delete('explore');
   history.replaceState(history.state, '', url);
 }
+function clearStoneWeightURL() {
+  const url = new URL(location.href);
+  if (url.searchParams.get('explore') === 'stone-weights') {
+    url.searchParams.delete('explore');
+    history.replaceState(history.state, '', url);
+  }
+}
+function closeAtlasStoneWeights(options) {
+  if (window.atlasStoneWeights?.enabled) {
+    window.atlasStoneWeights.close(options);
+    clearStoneWeightURL();
+  }
+}
 function startWaterJourney() {
+  closeAtlasStoneWeights({restoreFocus: false, restoreMap: false});
+  if (activeFeature) chooseAtlasFeature(null);
   window.atlasObelisks?.disable({restoreFocus:false});
   atlasLidarRequest++;
   window.closeAtlasLidar?.({restoreFocus:false});
@@ -28424,16 +28527,77 @@ function featureBadge(f, action, selected=false) {
   return `<button class="atlas-feature-badge" onclick="${action}" ${selected ? 'aria-pressed="true"' : 'aria-pressed="false"'}><img src="${compactFeatureGlyph(f)}" alt="" width="36" height="36"><span>${journeyEscape(f.label)}</span></button>`;
 }
 function renderFeatureBrowsers() {
-  const featured = ['polygonal','joints','flow','underground','rockcut'];
-  document.querySelectorAll('.atlas-feature-browser').forEach(el => {
-    el.innerHTML = `<p class="atlas-feature-heading">Look for something remarkable</p><div class="atlas-feature-options">${featured.map(id => featureBadge(ATLAS_FEATURES.find(f=>f.id===id),`chooseAtlasFeature('${id}')`,activeFeature===id)).join('')}</div><div class="atlas-feature-status" aria-live="polite">${activeFeature ? `<span>${getFiltered().length} matching places</span><button onclick="chooseAtlasFeature(null)">Clear feature ×</button>` : '<a href="/patterns/">See all 24 features →</a>'}</div>`;
-  });
+  const directories = document.querySelectorAll('.atlas-style-controls');
+  const feature = ATLAS_FEATURES.find(entry => entry.id === activeFeature);
+  const matches = feature ? getFiltered().length : 0;
+  for (const directory of directories) {
+    const select = directory.querySelector('select');
+    if (select.options.length === 1) {
+      const mappedFeatures = new Set(SITES.flatMap(siteFeatureIds));
+      const groups = new Map();
+      for (const entry of ATLAS_FEATURES) {
+        if (!mappedFeatures.has(entry.id)) continue;
+        if (!groups.has(entry.group)) {
+          const group = document.createElement('optgroup');
+          group.label = entry.group;
+          groups.set(entry.group, group);
+          select.append(group);
+        }
+        groups.get(entry.group).append(new Option(entry.label, entry.id));
+      }
+    }
+    select.value = activeFeature || '';
+    const definition = directory.querySelector('[data-atlas-style-definition]');
+    definition.hidden = !feature;
+    definition.textContent = feature?.definition || '';
+    const count = directory.querySelector('[data-atlas-style-count]');
+    count.hidden = !feature;
+    count.textContent = matches ? `${matches} matching ${matches === 1 ? 'place' : 'places'}` : 'No matches with the current filters.';
+    directory.querySelector('[data-atlas-style-map]').hidden = !matches || !isMobileViewport();
+  }
+}
+function setAtlasFeatureURL(id) {
+  const url = new URL(location.href);
+  if (id) {
+    url.pathname = '/';
+    for (const key of ['site', 'lidar', 'lidarSite', 'explore']) url.searchParams.delete(key);
+    url.searchParams.set('feature', id);
+  } else {
+    if (!url.searchParams.has('feature')) return;
+    url.searchParams.delete('feature');
+  }
+  history.replaceState(history.state, '', url);
+}
+function fitFeatureMatches() {
+  const sites = getFiltered();
+  if (sites.length && map.getContainer().clientWidth) {
+    map.fitBounds(sites.map(site => [site.lat, site.lng]), {padding: [45, 45], maxZoom: 10});
+  }
+}
+function viewSelectedStyleMap() {
+  window._atlasWatchingSite = null;
+  window.atlasExploreMap();
+  fitFeatureMatches();
 }
 function chooseAtlasFeature(id) {
+  if (id) {
+    closeAtlasStoneWeights({restoreFocus: false, restoreMap: false});
+    if (window.atlasObelisks?.enabled) window.atlasObelisks.disable({restoreFocus: false});
+    if (waterJourneyActive) {
+      closeFloatingPlayer();
+      endWaterJourney();
+    }
+    atlasLidarRequest++;
+    window.closeAtlasLidar?.({restoreFocus: false});
+    closeDetail();
+  }
   activeFeature = activeFeature === id ? null : id;
-  renderMarkers(); renderSidebar(); renderMobileFeed(); renderFeatureBrowsers();
-  const sites = getFiltered();
-  if (sites.length && map.getContainer().clientWidth) map.fitBounds(sites.map(s=>[s.lat,s.lng]),{padding:[45,45],maxZoom:10});
+  setAtlasFeatureURL(activeFeature);
+  renderMarkers();
+  renderSidebar();
+  renderMobileFeed();
+  renderFeatureBrowsers();
+  if (activeFeature) fitFeatureMatches();
 }
 function jumpToSiteFilms(button) {
   const film = button.closest('.oga-panel').querySelector('.oga-film');
@@ -28475,6 +28639,11 @@ function loadAtlasLidar() {
 }
 
 async function openAtlasLidar(name, trigger, keepView = false) {
+  if (keepView && (window.atlasStoneWeights?.enabled || activeFeature)) return;
+  if (!keepView) {
+    closeAtlasStoneWeights({restoreFocus: false, restoreMap: false});
+    if (activeFeature) chooseAtlasFeature(null);
+  }
   const request = ++atlasLidarRequest;
   if (waterJourneyActive) {
     closeFloatingPlayer();
@@ -28841,6 +29010,7 @@ window.atlasExploreMap = function() {
   if (site) map.setView([site.lat, site.lng], Math.max(map.getZoom(), 10));
 };
 function returnToAtlasFeed() {
+  closeAtlasStoneWeights({restoreFocus: false, restoreMap: false});
   window.atlasObelisks?.closePanel();
   document.body.classList.remove('watch-map');
   updateMobileMode();
@@ -28884,6 +29054,7 @@ function updateMobileMode() {
   document.body.classList.toggle('mobile', mobile);
   document.body.classList.toggle('mobile-portrait', mobile && portrait);
   document.body.classList.toggle('mobile-landscape', mobile && !portrait);
+  renderFeatureBrowsers();
   if (mobile && portrait) {
     renderMobileFeed();
   } else if (mobile && !portrait) {
@@ -29950,8 +30121,40 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   // After desktop init runs, evaluate mobile mode and render feed if needed
   updateMobileMode();
+  const stoneWeights = window.initAtlasStoneWeights?.(map, {
+    prepareMap() {
+      if (window.atlasObelisks?.enabled) window.atlasObelisks.disable({restoreFocus: false});
+      if (waterJourneyActive) {
+        closeFloatingPlayer();
+        endWaterJourney();
+      }
+      atlasLidarRequest++;
+      window.closeAtlasLidar?.({restoreFocus: false});
+      if (activeFeature) chooseAtlasFeature(null);
+      if (!document.getElementById('welcome').hidden) closeWelcome();
+      closeFloatingPlayer();
+      closeDetail();
+      if (isMobileViewport()) {
+        window._atlasWatchingSite = null;
+        window.atlasExploreMap();
+      }
+      const url = new URL(location.href);
+      url.pathname = '/';
+      for (const key of ['site', 'lidar', 'lidarSite', 'obelisks', 'obelisk', 'feature']) url.searchParams.delete(key);
+      url.searchParams.set('explore', 'stone-weights');
+      history.replaceState(history.state, '', url);
+    },
+    restoreMap: clearStoneWeightURL
+  });
+  document.querySelectorAll('[data-explore-stone-weights]').forEach(link => link.addEventListener('click', event => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || !stoneWeights) return;
+    event.preventDefault();
+    stoneWeights.open(link);
+  }));
   window.initAtlasObelisks?.(map, {
     prepareMap() {
+      closeAtlasStoneWeights({restoreFocus: false, restoreMap: false});
+      if (activeFeature) chooseAtlasFeature(null);
       if (waterJourneyActive) {
         closeFloatingPlayer();
         endWaterJourney();
@@ -29984,6 +30187,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }));
   const exploreEntry = new URLSearchParams(location.search).get('explore');
   if (exploreEntry === 'water') startWaterJourney();
+  if (exploreEntry === 'stone-weights') stoneWeights?.open();
+  const style = new URLSearchParams(location.search).get('feature');
+  if (style && ATLAS_FEATURES.some(entry => entry.id === style) && SITES.some(site => siteFeatureIds(site).includes(style))) {
+    const styleDirectory = [...document.querySelectorAll('.atlas-style-directory')].find(directory => directory.getClientRects().length);
+    if (styleDirectory) {
+      styleDirectory.open = true;
+      styleDirectory.scrollIntoView({block: 'nearest'});
+    }
+    chooseAtlasFeature(style);
+  }
 
   const lidarDirectories = Array.from(document.querySelectorAll('.lidar-directory'));
   const lidarEntryDirectory = exploreEntry === 'lidar'

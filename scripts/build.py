@@ -27,7 +27,7 @@ REPO_ROOT = Path(__file__).parent.parent
 DATA_DIR = REPO_ROOT / 'data'
 SRC_HTML = REPO_ROOT / 'public' / 'index.html'
 PUBLIC_DATA_DIR = REPO_ROOT / 'public' / 'data'
-RUNTIME_COLLECTIONS = ['obelisks.json']
+RUNTIME_COLLECTIONS = ['obelisks.json', 'stone-weights.json']
 
 # ============================================================
 # Mapping: data file → const NAME inside HTML
