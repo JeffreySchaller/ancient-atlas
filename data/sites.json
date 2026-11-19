@@ -9121,5 +9121,101 @@
       "geometry"
     ],
     "desc": "An Indigenous earthwork in Acre, Brazil. The airborne LiDAR survey shows a circular ditch and faint lines leading outward."
+  },
+  {
+    "n": "Hatun Rumiyoc (Twelve-Angled Stone)",
+    "lat": -13.51596106,
+    "lng": -71.97630663,
+    "cat": "megalithic",
+    "region": "South America",
+    "tier": 2,
+    "criteria": [
+      "polygonal"
+    ],
+    "desc": "On Hatun Rumiyoc Street in Cusco, the Twelve-Angled Stone fits into the polygonal wall traditionally associated with the palace of Inca Roca. The wall runs beneath the later Archbishop’s Palace.",
+    "sources": [
+      {
+        "label": "Peru MINCETUR heritage inventory",
+        "url": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=2230"
+      },
+      {
+        "label": "Peru MINCETUR coordinate inventory, record 2230",
+        "url": "https://transparencia.mincetur.gob.pe/documentos/newweb/portals/0/transparencia/pmi/Anexo_4-CPS-CB-ZonaDesarrolloTuristico-14102025.pdf"
+      }
+    ]
+  },
+  {
+    "n": "Qespihuanka (Palace of Huayna Cápac)",
+    "lat": -13.3009267,
+    "lng": -72.1143644,
+    "cat": "city",
+    "region": "South America",
+    "tier": 2,
+    "criteria": [
+      "polygonal"
+    ],
+    "desc": "The surviving Inca palace precinct in Urubamba includes agricultural terraces, gateways and a niche wall. The national heritage inventory documents cushion-faced polygonal stonework in the terraces and the niche wall.",
+    "sources": [
+      {
+        "label": "Peru MINCETUR heritage inventory",
+        "url": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=12387"
+      },
+      {
+        "label": "Peru MINCETUR coordinate inventory, record 12387",
+        "url": "https://transparencia.mincetur.gob.pe/documentos/newweb/portals/0/transparencia/pmi/Anexo_4-CPS-CB-ZonaDesarrolloTuristico-14102025.pdf"
+      }
+    ]
+  },
+  {
+    "n": "Ahu Vinapu (Rapa Nui)",
+    "lat": -27.176383,
+    "lng": -109.406356,
+    "cat": "megalithic",
+    "region": "Pacific",
+    "tier": 2,
+    "criteria": [
+      "polygonal"
+    ],
+    "desc": "At Vinapu on Rapa Nui, the seaward face of the Ahu Tahira ceremonial platform is built of large, closely fitted basalt slabs. Angled joints are visible in the facing over the platform’s rubble core.",
+    "sources": [
+      {
+        "label": "Sue Hamilton, Materialising Island Worlds, figure 1",
+        "url": "https://discovery.ucl.ac.uk/id/eprint/10085198/1/08_Hamilton_Rapa_Nui%2810%29.pdf"
+      },
+      {
+        "label": "Chile SERNATUR heritage inventory, Ahu Tahira",
+        "url": "https://www.sernatur.cl/wp-content/uploads/2018/09/V-REGION-DE-VALPARAISO.pdf"
+      },
+      {
+        "label": "Urbipedia architectural site coordinates",
+        "url": "https://www.urbipedia.org/hoja/Vinap%C3%BA"
+      }
+    ]
+  },
+  {
+    "n": "Shuri Castle (Okinawa)",
+    "lat": 26.21703,
+    "lng": 127.71948,
+    "cat": "city",
+    "region": "Asia",
+    "tier": 2,
+    "criteria": [
+      "polygonal"
+    ],
+    "desc": "This former Ryukyu royal castle in Naha has limestone retaining and enclosure walls. The restoration record documents aikata-zumi, a technique using irregular cut stones fitted to one another, in sections of the outer walls. The visible complex includes restored fabric.",
+    "sources": [
+      {
+        "label": "Okinawa park restoration record, p. 123",
+        "url": "https://oki-park.jp/userfiles/files/shurijo/digital_museum/data/akahon_03.pdf"
+      },
+      {
+        "label": "UNESCO Ryukyu World Heritage nomination",
+        "url": "https://whc.unesco.org/uploads/nominations/972.pdf"
+      },
+      {
+        "label": "Wikimedia Commons, geolocated Shuri Castle photograph",
+        "url": "https://commons.wikimedia.org/wiki/File:Naha_Shuri_Castle50s3s4500.jpg"
+      }
+    ]
   }
 ]
