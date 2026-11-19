@@ -15,14 +15,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent
 OUT = ROOT / "public" / "experiences" / "feel-the-weight" / "index.html"
 BASE = "https://theancientatlas.com/experiences/feel-the-weight/"
-VER = "3"          # bump when the artwork changes; iMessage caches hard
+VER = "1"
 
-TITLE = "Feel the Weight · try to move it · The Ancient Atlas"
-DESC = ("Six of the heaviest stones ever cut. Turn each one, stand a person "
-        "beside it, and see the weight drawn out in pickup trucks.")
-IMG = BASE + "og.png?v=" + VER
-ALT = ("A scale drawing of the Western Stone with a person standing beside it, "
-       "and the same weight drawn as a field of pickup trucks.")
+TITLE = "How heavy is one stone?"
+DESC = "Try moving one, then measure it in pickup trucks."
+IMAGE_PATH = "/assets/social/feel-the-weight-og.jpg"
+IMG = "https://theancientatlas.com" + IMAGE_PATH + "?v=" + VER
+ALT = ("Ancient Atlas card asking “How heavy is one stone?” beside a photograph "
+       "of the Wall of the Six Monoliths at Ollantaytambo, Peru.")
 
 BLOCK = "\n".join([
     '  <!-- share card - patch-og-meta.py, re-run after inject.py -->',
@@ -34,6 +34,7 @@ BLOCK = "\n".join([
     '  <meta property="og:description" content="%s">' % DESC,
     '  <meta property="og:url" content="%s">' % BASE,
     '  <meta property="og:image" content="%s">' % IMG,
+    '  <meta property="og:image:type" content="image/jpeg">',
     '  <meta property="og:image:width" content="1200">',
     '  <meta property="og:image:height" content="630">',
     '  <meta property="og:image:alt" content="%s">' % ALT,
@@ -76,9 +77,9 @@ want("?v=" + VER in head, "the image URL is not cache-busted")
 want("You cannot lift it" not in src, "the wrapper still carries the old promise")
 want(len(DESC) < 300 and len(ALT) < 300, "a meta value is too long to be used")
 
-png = OUT.parent / "og.png"
-want(png.exists() and png.stat().st_size > 40000,
-     "og.png is missing or empty, so the card would 404")
+image_file = ROOT / "public" / IMAGE_PATH.lstrip("/")
+want(image_file.is_file() and image_file.stat().st_size > 40000,
+     "The share image is missing or empty")
 
 if fails:
     for f in fails:
