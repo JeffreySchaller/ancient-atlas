@@ -29597,7 +29597,8 @@ function maybeShowWelcome() {
   var w = document.getElementById('welcome');
   if (!w) return true;
   // a deep link is a question already asked; do not answer a different one
-  if (welcomeSeen() || location.hash.length > 1 || location.search.length > 1) return true;
+  var isMainMap = location.pathname === '/' || location.pathname === '/index.html';
+  if (welcomeSeen() || !isMainMap || location.hash.length > 1 || location.search.length > 1) return true;
   if (document.body.classList.contains('present')) return true;
 
   // The card teaches one thing: a pin opens a walkthrough and it plays here.
